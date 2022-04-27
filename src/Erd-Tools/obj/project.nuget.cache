@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Duf5mf05sBXWZ97FyNXytnb2ZIVNFQ5Kk3BIuoEQpQjFV+ASBflmgsWNe77pM3arU3ftX41siBE8yGywdkqrnA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Nord\\source\\repos\\Erd-Tools\\src\\Erd-Tools\\Erd-Tools.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nord\\.nuget\\packages\\keystoneengine.csharp\\0.9.1.1\\keystoneengine.csharp.0.9.1.1.nupkg.sha512",
+    "C:\\Users\\Nord\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\Nord\\.nuget\\packages\\system.text.encoding.codepages\\5.0.0\\system.text.encoding.codepages.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

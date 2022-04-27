@@ -1,0 +1,177 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Nord\\source\\repos\\Elden-Ring-Debug-Tool\\src\\Elden Ring Debug Tool\\Elden-Ring-Debug-Tool.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Nord\\source\\repos\\Elden-Ring-Debug-Tool\\src\\Elden Ring Debug Tool\\Elden-Ring-Debug-Tool.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nord\\source\\repos\\Elden-Ring-Debug-Tool\\src\\Elden Ring Debug Tool\\Elden-Ring-Debug-Tool.csproj",
+        "projectName": "Elden-Ring-Debug-Tool",
+        "projectPath": "C:\\Users\\Nord\\source\\repos\\Elden-Ring-Debug-Tool\\src\\Elden Ring Debug Tool\\Elden-Ring-Debug-Tool.csproj",
+        "packagesPath": "C:\\Users\\Nord\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nord\\source\\repos\\Elden-Ring-Debug-Tool\\src\\Elden Ring Debug Tool\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nord\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Nord\\source\\repos\\Elden-Ring-Debug-Tool\\src\\PropertyHook\\PropertyHook\\PropertyHook.csproj": {
+                "projectPath": "C:\\Users\\Nord\\source\\repos\\Elden-Ring-Debug-Tool\\src\\PropertyHook\\PropertyHook\\PropertyHook.csproj"
+              },
+              "C:\\Users\\Nord\\source\\repos\\Elden-Ring-Debug-Tool\\src\\SoulsFormats\\SoulsFormats\\SoulsFormats.csproj": {
+                "projectPath": "C:\\Users\\Nord\\source\\repos\\Elden-Ring-Debug-Tool\\src\\SoulsFormats\\SoulsFormats\\SoulsFormats.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "keystoneengine.csharp": {
+              "target": "Package",
+              "version": "[0.9.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Nord\\source\\repos\\Elden-Ring-Debug-Tool\\src\\PropertyHook\\PropertyHook\\PropertyHook.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nord\\source\\repos\\Elden-Ring-Debug-Tool\\src\\PropertyHook\\PropertyHook\\PropertyHook.csproj",
+        "projectName": "PropertyHook",
+        "projectPath": "C:\\Users\\Nord\\source\\repos\\Elden-Ring-Debug-Tool\\src\\PropertyHook\\PropertyHook\\PropertyHook.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\Nord\\source\\repos\\Elden-Ring-Debug-Tool\\src\\SoulsFormats\\SoulsFormats\\SoulsFormats.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nord\\source\\repos\\Elden-Ring-Debug-Tool\\src\\SoulsFormats\\SoulsFormats\\SoulsFormats.csproj",
+        "projectName": "SoulsFormats",
+        "projectPath": "C:\\Users\\Nord\\source\\repos\\Elden-Ring-Debug-Tool\\src\\SoulsFormats\\SoulsFormats\\SoulsFormats.csproj",
+        "packagesPath": "C:\\Users\\Nord\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nord\\source\\repos\\Elden-Ring-Debug-Tool\\src\\SoulsFormats\\SoulsFormats\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nord\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net46",
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net46": {
+            "targetAlias": "net46",
+            "projectReferences": {}
+          },
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net46": {
+          "targetAlias": "net46",
+          "dependencies": {
+            "System.Text.Encoding.CodePages": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "System.Text.Encoding.CodePages": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

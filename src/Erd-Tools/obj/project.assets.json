@@ -1,0 +1,240 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "keystoneengine.csharp/0.9.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Keystone.Net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Keystone.Net.dll": {}
+        },
+        "build": {
+          "build/keystoneengine.csharp.targets": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "System.Text.Encoding.CodePages/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "PropertyHook/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PropertyHook.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PropertyHook.dll": {}
+        }
+      },
+      "SoulsFormats/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "System.Text.Encoding.CodePages": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SoulsFormats.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SoulsFormats.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "keystoneengine.csharp/0.9.1.1": {
+      "sha512": "zDGl3WRslq4J/T/4gaDw8lv//DSnZQQpBwAFnQ1n6wljPW6DX8wB5dsZNAY1aBPXI34xt7IATNFr7xI6zP9LrQ==",
+      "type": "package",
+      "path": "keystoneengine.csharp/0.9.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/keystoneengine.csharp.targets",
+        "build/x64/keystone.dll",
+        "build/x86/keystone.dll",
+        "keystoneengine.csharp.0.9.1.1.nupkg.sha512",
+        "keystoneengine.csharp.nuspec",
+        "lib/netstandard2.0/Keystone.Net.dll",
+        "lib/netstandard2.0/Keystone.Net.xml"
+      ]
+    },
+    "Microsoft.NETCore.Platforms/5.0.0": {
+      "sha512": "VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Text.Encoding.CodePages/5.0.0": {
+      "sha512": "NyscU59xX6Uo91qvhOs2Ccho3AR2TnZPomo1Z0K6YpyztBPM/A5VbkzOO19sy3A3i1TtEnTxA7bCe3Us+r5MWg==",
+      "type": "package",
+      "path": "system.text.encoding.codepages/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Text.Encoding.CodePages.dll",
+        "lib/net461/System.Text.Encoding.CodePages.dll",
+        "lib/net461/System.Text.Encoding.CodePages.xml",
+        "lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
+        "system.text.encoding.codepages.5.0.0.nupkg.sha512",
+        "system.text.encoding.codepages.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "PropertyHook/1.0.0": {
+      "type": "project",
+      "path": "../PropertyHook/PropertyHook/PropertyHook.csproj",
+      "msbuildProject": "../PropertyHook/PropertyHook/PropertyHook.csproj"
+    },
+    "SoulsFormats/1.0.0": {
+      "type": "project",
+      "path": "../SoulsFormats/SoulsFormats/SoulsFormats.csproj",
+      "msbuildProject": "../SoulsFormats/SoulsFormats/SoulsFormats.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "PropertyHook >= 1.0.0",
+      "SoulsFormats >= 1.0.0",
+      "keystoneengine.csharp >= 0.9.1.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Nord\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Nord\\source\\repos\\Erd-Tools\\src\\Erd-Tools\\Erd-Tools.csproj",
+      "projectName": "Erd-Tools",
+      "projectPath": "C:\\Users\\Nord\\source\\repos\\Erd-Tools\\src\\Erd-Tools\\Erd-Tools.csproj",
+      "packagesPath": "C:\\Users\\Nord\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nord\\source\\repos\\Erd-Tools\\src\\Erd-Tools\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Nord\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "projectReferences": {
+            "C:\\Users\\Nord\\source\\repos\\Erd-Tools\\src\\PropertyHook\\PropertyHook\\PropertyHook.csproj": {
+              "projectPath": "C:\\Users\\Nord\\source\\repos\\Erd-Tools\\src\\PropertyHook\\PropertyHook\\PropertyHook.csproj"
+            },
+            "C:\\Users\\Nord\\source\\repos\\Erd-Tools\\src\\SoulsFormats\\SoulsFormats\\SoulsFormats.csproj": {
+              "projectPath": "C:\\Users\\Nord\\source\\repos\\Erd-Tools\\src\\SoulsFormats\\SoulsFormats\\SoulsFormats.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
+        "dependencies": {
+          "keystoneengine.csharp": {
+            "target": "Package",
+            "version": "[0.9.1.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

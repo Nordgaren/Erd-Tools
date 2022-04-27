@@ -1,0 +1,86 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Elden-Ring-Debug-Tool/1.0.0": {
+        "dependencies": {
+          "PropertyHook": "1.0.0",
+          "SoulsFormats": "1.0.0",
+          "keystoneengine.csharp": "0.9.1.1"
+        },
+        "runtime": {
+          "Elden-Ring-Debug-Tool.dll": {}
+        }
+      },
+      "keystoneengine.csharp/0.9.1.1": {
+        "runtime": {
+          "lib/netstandard2.0/Keystone.Net.dll": {
+            "assemblyVersion": "0.9.1.1",
+            "fileVersion": "0.9.1.1"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/5.0.0": {},
+      "System.Text.Encoding.CodePages/5.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0"
+        }
+      },
+      "PropertyHook/1.0.0": {
+        "runtime": {
+          "PropertyHook.dll": {}
+        }
+      },
+      "SoulsFormats/1.0.0": {
+        "dependencies": {
+          "System.Text.Encoding.CodePages": "5.0.0"
+        },
+        "runtime": {
+          "SoulsFormats.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Elden-Ring-Debug-Tool/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "keystoneengine.csharp/0.9.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zDGl3WRslq4J/T/4gaDw8lv//DSnZQQpBwAFnQ1n6wljPW6DX8wB5dsZNAY1aBPXI34xt7IATNFr7xI6zP9LrQ==",
+      "path": "keystoneengine.csharp/0.9.1.1",
+      "hashPath": "keystoneengine.csharp.0.9.1.1.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
+      "path": "microsoft.netcore.platforms/5.0.0",
+      "hashPath": "microsoft.netcore.platforms.5.0.0.nupkg.sha512"
+    },
+    "System.Text.Encoding.CodePages/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NyscU59xX6Uo91qvhOs2Ccho3AR2TnZPomo1Z0K6YpyztBPM/A5VbkzOO19sy3A3i1TtEnTxA7bCe3Us+r5MWg==",
+      "path": "system.text.encoding.codepages/5.0.0",
+      "hashPath": "system.text.encoding.codepages.5.0.0.nupkg.sha512"
+    },
+    "PropertyHook/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SoulsFormats/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
