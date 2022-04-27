@@ -17,21 +17,25 @@
     <Optimize>True</Optimize>
   </PropertyGroup>
 
-  <!--<ItemGroup>
+
+	<!--Move below code and uncomment for single file distro-->
+	<!--<ItemGroup>
     <ResourceFiles Include="$(ProjectDir)Resources\**\*.*" />
-  </ItemGroup>
-
-
-	--><!-- Copy all resources to the build output directy except when building in publish mode, to have them exist in a debug/release build, but not have them packed into an executable when publishing --><!--
-  <Target Name="CopyResources" Condition="'$(Configuration)'!='Publish'" AfterTargets="Build">
+  </ItemGroup>-->
+	
+	<!--Move below code and uncomment for single file distro-->
+	<!--Copy all resources to the build output directy except when building in publish mode, to have them exist in a debug/release build, but not have them packed into an executable when publishing -->
+ <!--<Target Name="CopyResources" Condition="'$(Configuration)'!='Publish'" AfterTargets="Build">
   <Message Text="Copy resource files" Importance="High" />
   <Message Text="Files: @(ResourceFiles)" Importance="High" />
   <Message Text="directory: $(OutDir)" Importance="High" />
   <Copy SourceFiles="@(ResourceFiles)" DestinationFolder="$(OutDir)Resources\%(RecursiveDir)" SkipUnchangedFiles="true" />
-  </Target>
+  </Target>-->
 
-  --><!-- Copy all resources to the published output --><!--
-  <Target Name="CopyResourcesPublish" Condition="'$(Configuration)'=='Publish'" AfterTargets="Publish">
+	
+	<!--Move below code and uncomment for single file distro-->
+    <!--Copy all resources to the published output-->
+  <!--<Target Name="CopyResourcesPublish" Condition="'$(Configuration)'=='Publish'" AfterTargets="Publish">
     <Message Text="Copy resource files" Importance="High" />
     <Message Text="Files: @(ResourceFiles)" Importance="High" />
     <Message Text="Directory: $(PublishDir)" Importance="High" />
