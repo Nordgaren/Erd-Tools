@@ -11,9 +11,6 @@ A C# library for making Elden Ring mods
 
 My fork of [Property Hook](https://github.com/Nordgaren/PropertyHook) by [TKGP](https://github.com/JKAnderson/)  
 
-[SettingsProviders](https://github.com/Bluegrams/SettingsProviders) By [Bluegrams](https://github.com/Bluegrams/)
-
-
 ## How to Use
 
 * Demo code coming soon.  
