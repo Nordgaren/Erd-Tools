@@ -14,9 +14,14 @@ My fork of [Property Hook](https://github.com/Nordgaren/PropertyHook) by [TKGP](
 [SettingsProviders](https://github.com/Bluegrams/SettingsProviders) By [Bluegrams](https://github.com/Bluegrams/)
 
 
-## Usage
+## How to Use
 
 * Demo code coming soon.  
+
+## Usage
+If you have used this tool in a mod and want it listed here, let me know.
+
+* [Elden-Ring-Debug-Tool](https://github.com/Nordgaren/Elden-Ring-Debug-Tool) by Me  
 
 ## Thank You  
 **[TKGP](https://github.com/JKAnderson/)** Author of [DS Gadget](https://github.com/JKAnderson/DS-Gadget) [Property Hook](https://github.com/JKAnderson/PropertyHook) and [SoulsFormats](https://github.com/JKAnderson/SoulsFormats)  
@@ -26,3 +31,9 @@ My fork of [Property Hook](https://github.com/Nordgaren/PropertyHook) by [TKGP](
 **[King Borehaha](https://github.com/kingborehaha/DS-Gadget-Local-Loader)** Who's local loading system has worked really well for a lot of things, including this project  
 **jamesq7** For helping figure out the cheat for enabling the map during combat and his rewrite of Wulfs Target script
 **wulf2k** For helping figure out the cheat for enabling the map during combat and his rewrite of Wulfs Target script
+
+
+# Change Log 
+### Beta 0.7
+
+* Split into it's own library. Keeping versioning parallel until 1.0   
