@@ -32,11 +32,17 @@ namespace Erd_Tools
             var assembly = Assembly.GetExecutingAssembly();
             var resourceName = $"Elden_Ring_Debug_Tool.{item}";
 
-            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-            using (StreamReader reader = new StreamReader(stream))
+            using (Stream? stream = assembly.GetManifestResourceStream(resourceName))
             {
-                return reader.ReadToEnd();
+                if (stream == null)
+                    throw new NullReferenceException($"Could not find embedded resource: {item} in the {Assembly.GetExecutingAssembly().GetName()}");
+
+                using (StreamReader reader = new StreamReader(stream))
+                {
+                    return reader.ReadToEnd();
+                }
             }
+            
         }
 
 

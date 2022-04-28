@@ -31,7 +31,7 @@ namespace Erd_Tools
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
 
-        public event EventHandler<PHEventArgs> OnSetup;
+        public event EventHandler<PHEventArgs>? OnSetup;
         private void RaiseOnSetup()
         {
             OnSetup?.Invoke(this, new PHEventArgs(this));
@@ -53,7 +53,7 @@ namespace Erd_Tools
         public PHPointer WorldAreaWeather { get; set; }
         public static bool Reading { get; set; }
         public string ID => Process?.Id.ToString() ?? "Not Hooked";
-        public List<PHPointer> Params;
+        public List<PHPointer>? ParamPointers { get; set; }
         //private PHPointer DurabilityAddr { get; set; }
         //private PHPointer DurabilitySpecialAddr { get; set; }
         public bool Loaded => PlayerIns != null ? PlayerIns.Resolve() != IntPtr.Zero : false;
@@ -86,7 +86,7 @@ namespace Erd_Tools
             CombatCloseMap = RegisterAbsoluteAOB(EROffsets.CombatCloseMapAoB);
             WorldAreaWeather = RegisterRelativeAOB(EROffsets.WorldAreaWeatherAoB, EROffsets.RelativePtrAddressOffset, EROffsets.RelativePtrInstructionSize, 0x0);
 
-            BuildItemEventDictionary();
+            ItemEventDictionary = BuildItemEventDictionary();
             ERItemCategory.GetItemCategories();
 
         }
@@ -110,9 +110,9 @@ namespace Erd_Tools
             //IntPtr disableOpenMap = DisableOpenMap.Resolve();
             //IntPtr combatCloseMap = CombatCloseMap.Resolve();
 
-
-            RaiseOnSetup();
+            Params = GetParams();
             ReadParams();
+            RaiseOnSetup();
             Setup = true;
 
             //LogABunchOfStuff();
@@ -166,12 +166,13 @@ namespace Erd_Tools
             OnPropertyChanged(nameof(TargetEnemyInsPtr));
         }
 
-        public ERParam EquipParamAccessory;
-        public ERParam EquipParamGem;
-        public ERParam EquipParamGoods;
-        public ERParam EquipParamProtector;
-        public ERParam EquipParamWeapon;
-        public ERParam MagicParam;
+        public ERParam? EquipParamAccessory;
+        public ERParam? EquipParamGem;
+        public ERParam? EquipParamGoods;
+        public ERParam? EquipParamProtector;
+        public ERParam? EquipParamWeapon;
+        public ERParam? MagicParam;
+        public ERParam? NpcParam;
 
         private Engine Engine = new Engine(Architecture.X86, Mode.X64);
         //TKCode
@@ -213,7 +214,9 @@ namespace Erd_Tools
 
         #region Params
 
-        public List<ERParam> GetParams()
+        public List<ERParam> Params;
+
+        private List<ERParam> GetParams()
         {
             List<ERParam> paramList = new List<ERParam>();
             string paramPath = $"{Util.ExeDir}/Resources/Params/";
@@ -282,6 +285,9 @@ namespace Erd_Tools
                 case "Magic":
                     MagicParam = param;
                     break;
+                case "NpcParam":
+                    NpcParam = param;
+                    break;
                 default:
                     break;
             }
@@ -326,9 +332,9 @@ namespace Erd_Tools
 
         private static Dictionary<int, int> ItemEventDictionary;
 
-        private void BuildItemEventDictionary()
+        private Dictionary<int, int> BuildItemEventDictionary()
         {
-            ItemEventDictionary = new Dictionary<int, int>();
+            Dictionary<int, int> itemEventDictionary = new Dictionary<int, int>();
             string[] goodsEvents = Util.GetListResource("Resources/Events/GoodsEvents.txt");
             foreach (string line in goodsEvents)
             {
@@ -338,8 +344,10 @@ namespace Erd_Tools
                 Match itemEntry = ItemEventEntryRx.Match(line.TrimComment());
                 int eventID = Convert.ToInt32(itemEntry.Groups["event"].Value);
                 int itemID = Convert.ToInt32(itemEntry.Groups["item"].Value);
-                ItemEventDictionary.Add(itemID + (int)Category.Goods, eventID);
+                itemEventDictionary.Add(itemID + (int)Category.Goods, eventID);
             }
+
+            return itemEventDictionary;
         }
         private void ReadParams()
         {
@@ -414,7 +422,7 @@ namespace Erd_Tools
             Free(itemInfo);
         }
 
-        List<ERInventoryEntry> Inventory;
+        List<ERInventoryEntry>? Inventory;
         public int InventoryCount => PlayerGameData.ReadInt32((int)EROffsets.PlayerGameDataStruct.InventoryCount);
         public int LastInventoryCount { get; set; }
 
@@ -472,8 +480,8 @@ namespace Erd_Tools
 
         private int CurrentTargetHandle => PlayerIns?.ReadInt32((int)EROffsets.PlayerIns.TargetHandle) ?? 0;
         private int CurrentTargetArea => PlayerIns?.ReadInt32((int)EROffsets.PlayerIns.TargetArea) ?? 0;
-        private PHPointer _targetEnemyIns { get; set; }
-        private PHPointer TargetEnemyIns
+        private PHPointer? _targetEnemyIns { get; set; }
+        private PHPointer? TargetEnemyIns
         {
             get => _targetEnemyIns;
             set
@@ -488,10 +496,10 @@ namespace Erd_Tools
         public string TargetEnemyInsPtr => _targetEnemyIns?.Resolve().ToString("X2") ?? "";
         public int TargetEnemyHandle => PlayerIns?.ReadInt32((int)EROffsets.EnemyIns.EnemyHandle) ?? 0;
         public int TargetEnemyArea => PlayerIns?.ReadInt32((int)EROffsets.EnemyIns.EnemyArea) ?? 0;
-        private PHPointer TargetEnemyModuleBase;
-        private PHPointer TargetEnemyData;
-        private PHPointer TargetEnemyResistance;
-        private PHPointer TargetEnemyStagger;
+        private PHPointer? TargetEnemyModuleBase;
+        private PHPointer? TargetEnemyData;
+        private PHPointer? TargetEnemyResistance;
+        private PHPointer? TargetEnemyStagger;
 
         private int TargetHandle => _targetEnemyIns?.ReadInt32((int)EROffsets.EnemyIns.EnemyHandle) ?? 0;
         public string TargetModel => TargetEnemyData?.ReadString((int)EROffsets.EnemyData.Model, Encoding.Unicode, 0x10) ?? "No Target";
@@ -640,6 +648,21 @@ namespace Erd_Tools
 
         public void UpdateLastEnemy()
         {
+            //var lol = TargetEnemyIns?.Resolve();
+
+            //if (lol != null)
+            //{
+            //    var targetPtr = CreateChildPointer(TargetEnemyIns, 0x58, 0x18, 0xC0, 0x18);
+            //    var pointer = targetPtr.Resolve().ToInt64();
+            //    var npcParamPtr = NpcParam.Pointer.Resolve().ToInt64();
+
+            //    foreach (var p in NpcParam.OffsetDict.Keys)
+            //    {
+            //        if (NpcParam.OffsetDict[p] + npcParamPtr == pointer)
+            //            Console.WriteLine();
+            //    }
+            //}
+
             if (CurrentTargetHandle == -1 || CurrentTargetHandle == TargetHandle)
                 return;
 
@@ -747,7 +770,7 @@ namespace Erd_Tools
 
         #region Cheats
 
-        byte[] OriginalCombatCloseMap;
+        byte[]? OriginalCombatCloseMap;
         private bool _enableMapCombat { get; set; }
 
         public bool EnableMapCombat

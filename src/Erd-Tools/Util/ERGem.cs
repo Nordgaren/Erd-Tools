@@ -27,7 +27,7 @@ namespace Erd_Tools
             if (WeaponAttr == 0)
                 return;
 
-            for (int i = 1; i < AllInfusions.Count; i++)
+            for (int i = 0; i < AllInfusions.Count; i++)
             {
                 if ((WeaponAttr & (1 << i)) != 0)
                     Infusions.Add(AllInfusions[i]);
