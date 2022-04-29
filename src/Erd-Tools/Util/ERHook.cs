@@ -8,17 +8,10 @@ using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
-using System.Threading.Tasks;
-using System.Timers;
-using System.Windows.Threading;
-using Infusion = Erd_Tools.ERWeapon.Infusion;
 using Category = Erd_Tools.ERItem.Category;
-using WeaponType = Erd_Tools.ERWeapon.WeaponType;
 using static SoulsFormats.PARAMDEF;
 using System.Collections;
 using System.Text.RegularExpressions;
-using System.Collections.ObjectModel;
-using System.ComponentModel.DataAnnotations;
 using SoulsFormats;
 
 namespace Erd_Tools

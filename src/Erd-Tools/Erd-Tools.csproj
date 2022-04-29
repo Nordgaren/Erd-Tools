@@ -17,10 +17,9 @@
     <Optimize>True</Optimize>
   </PropertyGroup>
 
-
 	<!--Move below code and uncomment for single file distro-->
 	<!--<ItemGroup>
-    <ResourceFiles Include="$(ProjectDir)Resources\**\*.*" />
+    <ResourceFiles Include="$(ProjectDir)Path\to\Erd-Tools\Resources\**\*.*" />
   </ItemGroup>-->
 	
 	<!--Move below code and uncomment for single file distro-->
