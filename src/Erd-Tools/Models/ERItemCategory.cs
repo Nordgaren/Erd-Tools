@@ -59,11 +59,11 @@ namespace Erd_Tools
                     continue;
 
                 Match itemEntry = CategoryEntryRx.Match(line.TrimComment());
-                var name = itemEntry.Groups["name"].Value;
-                var show = Convert.ToBoolean(itemEntry.Groups["show"].Value);
-                var cat = itemEntry.Groups["category"].Value;
-                var category = (Category)Convert.ToUInt32(cat, 16);
-                var path = itemEntry.Groups["path"].Value;
+                string name = itemEntry.Groups["name"].Value;
+                bool show = Convert.ToBoolean(itemEntry.Groups["show"].Value);
+                string cat = itemEntry.Groups["category"].Value;
+                Category category = (Category)Convert.ToUInt32(cat, 16);
+                string path = itemEntry.Groups["path"].Value;
                 All.Add(new ERItemCategory(name, category, Util.GetListResource($"Resources/{path}"), show));
             };
         }

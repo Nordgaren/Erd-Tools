@@ -19,12 +19,12 @@ namespace Erd_Tools
             Name = "Unknown";
             GaItemHandle = BitConverter.ToInt32(Bytes, (int)EROffsets.InventoryEntry.GaItemHandle);
 
-            var buffer = new byte[4];
+            byte[] buffer = new byte[4];
             Array.Copy(Bytes, (int)EROffsets.InventoryEntry.ItemID, buffer, 0, buffer.Length);
             buffer[3] &= 0xF;
             ItemID = BitConverter.ToInt32(buffer);
 
-            var cat = Bytes[(int)EROffsets.InventoryEntry.ItemCategory];
+            byte cat = Bytes[(int)EROffsets.InventoryEntry.ItemCategory];
             byte mask = 0xF0;
             cat &= mask;
             Category =  (Category)(cat * 0x1000000);
@@ -36,9 +36,9 @@ namespace Erd_Tools
             switch (Category)
             {
                 case Category.Weapons:
-                    var id = Util.DeleteFromEnd(ItemID, 2) * 100;
-                    var upgradeLevel = ItemID - id;
-                    var levelString = upgradeLevel > 0 ? $"+{upgradeLevel.ToString() }" : "";
+                    int id = Util.DeleteFromEnd(ItemID, 2) * 100;
+                    int upgradeLevel = ItemID - id;
+                    string levelString = upgradeLevel > 0 ? $"+{ upgradeLevel }" : "";
                     if (hook.EquipParamWeapon?.NameDictionary.ContainsKey(id) ?? false)
                         Name = $"{hook.EquipParamWeapon.NameDictionary[id]}{levelString}";
                     break;

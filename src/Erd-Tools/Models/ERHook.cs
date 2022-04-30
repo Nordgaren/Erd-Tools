@@ -641,21 +641,6 @@ namespace Erd_Tools
 
         public void UpdateLastEnemy()
         {
-            //var lol = TargetEnemyIns?.Resolve();
-
-            //if (lol != null)
-            //{
-            //    var targetPtr = CreateChildPointer(TargetEnemyIns, 0x58, 0x18, 0xC0, 0x18);
-            //    var pointer = targetPtr.Resolve().ToInt64();
-            //    var npcParamPtr = NpcParam.Pointer.Resolve().ToInt64();
-
-            //    foreach (var p in NpcParam.OffsetDict.Keys)
-            //    {
-            //        if (NpcParam.OffsetDict[p] + npcParamPtr == pointer)
-            //            Console.WriteLine();
-            //    }
-            //}
-
             if (CurrentTargetHandle == -1 || CurrentTargetHandle == TargetHandle)
                 return;
 
@@ -703,43 +688,6 @@ namespace Erd_Tools
 
         }
 
-        public void GetTargetBackup()
-        {
-            TargetEnemyIns = null;
-            int count = WorldChrMan.ReadInt32((int)EROffsets.WorldChrMan.NumWorldBlockChr);
-            PHPointer worldBlockChr = CreateBasePointer(WorldChrMan.Resolve() + (int)EROffsets.WorldChrMan.WorldBlockChr);
-            int targetHandle = CurrentTargetHandle; //Only read from memory once
-            int targetArea = CurrentTargetArea;
-
-            for (int i = 0; i <= count; i++)
-            {
-                int numChrs = worldBlockChr.ReadInt32((int)EROffsets.WorldBlockChr.NumChr + (i * 0x160));
-                PHPointer chrSet = CreateChildPointer(worldBlockChr, (int)EROffsets.WorldBlockChr.ChrSet + (i * 0x160));
-
-                for (int j = 0; j <= numChrs; j++)
-                {
-                    PHPointer enemyIns = CreateBasePointer(chrSet.Resolve() + (j * (int)EROffsets.ChrSet.EnemyIns));
-                    int enemyHandle = enemyIns.ReadInt32((int)EROffsets.EnemyIns.EnemyHandle);
-                    int enemyArea = enemyIns.ReadInt32((int)EROffsets.EnemyIns.EnemyArea);
-
-                    if (targetHandle == enemyHandle && targetArea == enemyArea)
-                        TargetEnemyIns = enemyIns;
-
-                    if (TargetEnemyIns != null)
-                        return;
-                }
-
-            }
-
-            TryGetEnemy(targetHandle, targetArea, (int)EROffsets.WorldChrMan.ChrSet1);
-
-            if (TargetEnemyIns != null)
-                return;
-
-            TryGetEnemy(targetHandle, targetArea, (int)EROffsets.WorldChrMan.ChrSet2);
-
-        }
-
         public void TryGetEnemy(int targetHandle, int targetArea, int offset)
         {
             PHPointer chrSet1 = CreateChildPointer(WorldChrMan, offset);
@@ -756,6 +704,7 @@ namespace Erd_Tools
                     return;
             }
         }
+
         #endregion
 
         public int Level => PlayerGameData.ReadInt32((int)EROffsets.Player.Level);
@@ -764,19 +713,15 @@ namespace Erd_Tools
         #region Cheats
 
         byte[]? OriginalCombatCloseMap;
-        private bool _enableMapCombat { get; set; }
 
-        public bool EnableMapCombat
+        public bool CombatMapEnabled { get; set; }
+
+        public void EnableMapCombat(bool enable)
         {
-            get => _enableMapCombat;
-            set
-            {
-                _enableMapCombat = value;
-                if (value)
-                    EnableMapInCombat();
-                else
-                    DisableMapInCombat();
-            }
+            if (enable)
+                EnableMapInCombat();
+            else
+                DisableMapInCombat();
         }
 
         private void EnableMapInCombat()
@@ -786,12 +731,14 @@ namespace Erd_Tools
 
             DisableOpenMap.WriteByte(0x0, 0xEB); //Write Jump
             CombatCloseMap.WriteBytes(0x0, assembly);
+            CombatMapEnabled = true;
         }
 
         private void DisableMapInCombat()
         {
             DisableOpenMap.WriteByte(0x0, 0x74); //Write Jump Equals
             CombatCloseMap.WriteBytes(0x0, OriginalCombatCloseMap); //Place original bytes back for combat close map
+            CombatMapEnabled = false;
         }
         private short WeatherParamID => WorldAreaWeather?.ReadInt16((int)EROffsets.WorldAreaWeather.WeatherParamID) ?? 0;
         private short ForceWeatherParamID 
