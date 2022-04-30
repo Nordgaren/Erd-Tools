@@ -25,8 +25,8 @@ namespace Erd_Tools
 
         public static string GetEmbededResource(string item)
         {
-            var assembly = Assembly.GetCallingAssembly();
-            var resourceName = $"Erd_Tools.{item}";
+            Assembly assembly = Assembly.GetCallingAssembly();
+            string resourceName = $"Erd_Tools.{item}";
 
             using (Stream? stream = assembly.GetManifestResourceStream(resourceName))
             {
