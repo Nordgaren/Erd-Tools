@@ -358,13 +358,21 @@ namespace Erd_Tools
                 tasks.Add(Task.Run(() => SetupItems(category)));
             }
 
+            await AwaitTasks(tasks);
+
             foreach (ERItemCategory category in ERItemCategory.All)
             {
                 if (category.Category == Category.Weapons)
                     tasks.Add(Task.Run(() => SetupGems(category)));
             }
 
-            for (int i = 0; i < tasks.Count; i++)
+            await AwaitTasks(tasks);
+
+        }
+
+        private static async Task AwaitTasks(List<Task> tasks)
+        {
+            for (int i = tasks.Count - 1; i >= 0; i--)
             {
                 await tasks[i];
                 tasks.RemoveAt(i);
