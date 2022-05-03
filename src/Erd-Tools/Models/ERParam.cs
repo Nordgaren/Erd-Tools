@@ -95,9 +95,12 @@ namespace Erd_Tools
         {
             return Name;
         }
-        public int CompareTo(ERParam? other)
+        public int CompareTo(ERParam? otherParam)
         {
-            return this.Name.CompareTo(other.Name);
+            if (otherParam == null)
+                throw new ArgumentNullException(nameof(otherParam));
+
+            return Name.CompareTo(otherParam.Name);
         }
         public void RestoreParam()
         {

@@ -44,8 +44,11 @@ namespace Erd_Tools
                 return Name;
         }
 
-        public virtual void SetupItem(ERParam param)
+        public virtual void SetupItem(ERParam? param)
         {
+            if (param == null)
+                throw new ArgumentNullException(nameof(param)); 
+
             if (!param.OffsetDict.ContainsKey(ID))
                 throw new Exception($"{Name} does not have a param entry in this version of Elden Ring!");
 

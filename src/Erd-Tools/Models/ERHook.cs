@@ -13,6 +13,7 @@ using static SoulsFormats.PARAMDEF;
 using System.Collections;
 using System.Text.RegularExpressions;
 using SoulsFormats;
+using System.Threading.Tasks;
 
 namespace Erd_Tools
 {
@@ -103,12 +104,18 @@ namespace Erd_Tools
             //IntPtr disableOpenMap = DisableOpenMap.Resolve();
             //IntPtr combatCloseMap = CombatCloseMap.Resolve();
 
-            Params = GetParams();
-            ReadParams();
-            RaiseOnSetup();
-            Setup = true;
+            Task t = Task.Run(() => AsyncSetup());
+            t.GetAwaiter().GetResult();
 
             //LogABunchOfStuff();
+        }
+
+        private async Task AsyncSetup()
+        {
+            Params = GetParams();
+            await ReadParams();
+            RaiseOnSetup();
+            Setup = true;
         }
 
         private void LogABunchOfStuff()
@@ -342,27 +349,45 @@ namespace Erd_Tools
 
             return itemEventDictionary;
         }
-        private void ReadParams()
+        private async Task ReadParams()
         {
+            List<Task> tasks = new List<Task>();
+
             foreach (ERItemCategory category in ERItemCategory.All)
             {
-                foreach (ERItem item in category.Items)
-                {
-                    SetupItem(item);
-                    int fullID = item.ID + (int)Category.Goods;
-                    item.EventID = ItemEventDictionary.ContainsKey(fullID) ? ItemEventDictionary[fullID] : -1;
-                }
+                tasks.Add(Task.Run(() => SetupItems(category)));
             }
 
             foreach (ERItemCategory category in ERItemCategory.All)
             {
                 if (category.Category == Category.Weapons)
-                    foreach (ERWeapon weapon in category.Items)
-                    {
-                        ERGem gem = ERGem.All.FirstOrDefault(gem => gem.SwordArtID == weapon.SwordArtId);
-                        if (gem != null)
-                            weapon.DefaultGem = gem;
-                    }
+                    tasks.Add(Task.Run(() => SetupGems(category)));
+            }
+
+            for (int i = 0; i < tasks.Count; i++)
+            {
+                await tasks[i];
+                tasks.RemoveAt(i);
+            }
+        }
+
+        private void SetupGems(ERItemCategory category)
+        {
+            foreach (ERWeapon weapon in category.Items)
+            {
+                ERGem? gem = ERGem.All.FirstOrDefault(gem => gem.SwordArtID == weapon.SwordArtId);
+                if (gem != null)
+                    weapon.DefaultGem = gem;
+            }
+        }
+
+        private void SetupItems(ERItemCategory category)
+        {
+            foreach (ERItem item in category.Items)
+            {
+                SetupItem(item);
+                int fullID = item.ID + (int)Category.Goods;
+                item.EventID = ItemEventDictionary.ContainsKey(fullID) ? ItemEventDictionary[fullID] : -1;
             }
         }
 
@@ -716,7 +741,7 @@ namespace Erd_Tools
 
         public bool CombatMapEnabled { get; set; }
 
-        public void EnableMapCombat(bool enable)
+        public void ToggleMapCombat(bool enable)
         {
             if (enable)
                 EnableMapInCombat();
@@ -745,6 +770,7 @@ namespace Erd_Tools
         {
             set => WorldAreaWeather?.WriteInt16((int)EROffsets.WorldAreaWeather.ForceWeatherParamID, value); 
         }
+
         public enum WeatherTypes
         {
             [Description("Slightly Cloudy")]
@@ -817,32 +843,50 @@ namespace Erd_Tools
             Weather4260 = 4260,
         }
         private WeatherTypes _selectedWeather;
-        public WeatherTypes SelectedWeather {
-            get => _selectedWeather;
-            set 
-            { 
-                _selectedWeather = value;
-                if (_forceWeather)
-                    ForceWeatherParamID = (short)_selectedWeather;
-            }
-        }
+        //public WeatherTypes SelectedWeather {
+        //    get => _selectedWeather;
+        //    set 
+        //    { 
+        //        _selectedWeather = value;
+        //        if (_forceWeather)
+        //            ForceWeatherParamID = (short)_selectedWeather;
+        //    }
+        //}
         private WeatherTypes _lastSelectedWeather;
 
         private bool _forceWeather { get; set; }
-        public bool ForceWeather
+        //public bool ForceWeather
+        //{
+        //    get { return _forceWeather; }
+        //    set 
+        //    {
+        //        ForceWeatherParamID = (short)_selectedWeather;
+        //        _forceWeather = value;
+
+        //        if (_forceWeather)
+        //            _lastSelectedWeather = (WeatherTypes)WeatherParamID;
+        //        else
+        //            ForceWeatherParamID = (short)_lastSelectedWeather;
+
+        //    }
+        //}
+
+        public void SetForcedWeatherValue(WeatherTypes weather)
         {
-            get { return _forceWeather; }
-            set 
-            {
-                ForceWeatherParamID = (short)_selectedWeather;
-                _forceWeather = value;
+            _selectedWeather = weather;
+        }
 
-                if (_forceWeather)
-                    _lastSelectedWeather = (WeatherTypes)WeatherParamID;
-                else
-                    ForceWeatherParamID = (short)_lastSelectedWeather;
+        public void ToggleForceWeather(bool enable)
+        {
+            if (enable)
+                _lastSelectedWeather = (WeatherTypes)WeatherParamID;
+            else
+                ForceWeatherParamID = (short)_lastSelectedWeather;
+        }
 
-            }
+        public void ForceWeather()
+        {
+            ForceWeatherParamID = (short)_selectedWeather;
         }
 
         public void ForceSetWeather()
