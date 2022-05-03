@@ -14,6 +14,7 @@ using System.Collections;
 using System.Text.RegularExpressions;
 using SoulsFormats;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace Erd_Tools
 {
@@ -106,7 +107,7 @@ namespace Erd_Tools
 
             Task t = Task.Run(() => AsyncSetup());
             t.GetAwaiter().GetResult();
-
+            GetInventoryList();
             //LogABunchOfStuff();
         }
 
@@ -358,7 +359,12 @@ namespace Erd_Tools
                 tasks.Add(Task.Run(() => SetupItems(category)));
             }
 
-            await AwaitTasks(tasks);
+            Task setupItems = Task.WhenAll(tasks);
+            await setupItems;
+            if (setupItems.Exception != null)
+                throw setupItems.Exception;
+
+            tasks.Clear();
 
             foreach (ERItemCategory category in ERItemCategory.All)
             {
@@ -366,8 +372,12 @@ namespace Erd_Tools
                     tasks.Add(Task.Run(() => SetupGems(category)));
             }
 
-            await AwaitTasks(tasks);
+            Task setupGems = Task.WhenAll(tasks);
+            await setupGems;
+            if (setupGems.Exception != null)
+                throw setupGems.Exception;
 
+            tasks.Clear();
         }
 
         private static async Task AwaitTasks(List<Task> tasks)
@@ -462,7 +472,6 @@ namespace Erd_Tools
         private void GetInventoryList()
         {
             Inventory = new List<ERInventoryEntry>();
-            LastInventoryCount = InventoryCount;
 
             byte[] bytes = PlayerInventory.ReadBytes(0x0, (uint)InventoryCount * EROffsets.PlayerInventoryEntrySize);
 
@@ -470,8 +479,13 @@ namespace Erd_Tools
             {
                 byte[] entry = new byte[EROffsets.PlayerInventoryEntrySize];
                 Array.Copy(bytes, i * EROffsets.PlayerInventoryEntrySize, entry, 0, entry.Length);
+
+                if (BitConverter.ToInt32(entry, (int)EROffsets.InventoryEntry.ItemID) == -1)
+                    continue;
+
                 Inventory.Add(new ERInventoryEntry(entry, this));
             }
+            LastInventoryCount = Inventory.Count;
         }
 
         public void ResetInventory()
