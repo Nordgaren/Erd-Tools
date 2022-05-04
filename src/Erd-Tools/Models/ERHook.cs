@@ -98,7 +98,6 @@ namespace Erd_Tools
             //IntPtr itemGive = ItemGive.Resolve();
             //IntPtr mapItemMan = MapItemMan.Resolve();
             //IntPtr eventFlagMan = EventFlagMan.Resolve();
-            //IntPtr setEventFlagFunction = SetEventFlagFunction.Resolve();
             //IntPtr capParamCall = CapParamCall.Resolve();
             //IntPtr worldChrMan = WorldChrMan.Resolve();
 
@@ -127,44 +126,6 @@ namespace Erd_Tools
             list.Add($"GameDataMan {GameDataMan.Resolve():X2}");
             list.Add($"SoloParamRepository {SoloParamRepository.Resolve():X2}");
             File.WriteAllLines(Environment.CurrentDirectory + @"\HookLog.txt", list);
-        }
-
-        public void Update()
-        {
-            OnPropertyChanged(nameof(Setup));
-            OnPropertyChanged(nameof(ID));
-
-            if (!Setup)
-                return;
-
-            OnPropertyChanged(nameof(Loaded));
-            OnPropertyChanged(nameof(InventoryCount));
-            OnPropertyChanged(nameof(TargetEnemyHandle));
-            OnPropertyChanged(nameof(TargetHp));
-            OnPropertyChanged(nameof(TargetHpMax));
-            OnPropertyChanged(nameof(TargetFp));
-            OnPropertyChanged(nameof(TargetFpMax));
-            OnPropertyChanged(nameof(TargetStam));
-            OnPropertyChanged(nameof(TargetStamMax));
-            OnPropertyChanged(nameof(TargetPoison));
-            OnPropertyChanged(nameof(TargetPoisonMax));
-            OnPropertyChanged(nameof(TargetRot));
-            OnPropertyChanged(nameof(TargetRotMax));
-            OnPropertyChanged(nameof(TargetBleed));
-            OnPropertyChanged(nameof(TargetBleedMax));
-            OnPropertyChanged(nameof(TargetBlight));
-            OnPropertyChanged(nameof(TargetBlightMax));
-            OnPropertyChanged(nameof(TargetFrost));
-            OnPropertyChanged(nameof(TargetFrostMax));
-            OnPropertyChanged(nameof(TargetSleep));
-            OnPropertyChanged(nameof(TargetSleepMax));
-            OnPropertyChanged(nameof(TargetMadness));
-            OnPropertyChanged(nameof(TargetMadnessMax));
-            OnPropertyChanged(nameof(TargetStagger));
-            OnPropertyChanged(nameof(TargetStaggerMax));
-            OnPropertyChanged(nameof(TargetResetTime));
-            OnPropertyChanged(nameof(TargetChrType));
-            OnPropertyChanged(nameof(TargetEnemyInsPtr));
         }
 
         public ERParam? EquipParamAccessory;
@@ -517,178 +478,13 @@ namespace Erd_Tools
             InvalidInvader2 = 0x22,
         }
 
+        private EREnemy LastTargetEnemy { get; set; }
 
         private int CurrentTargetHandle => PlayerIns?.ReadInt32((int)EROffsets.PlayerIns.TargetHandle) ?? 0;
         private int CurrentTargetArea => PlayerIns?.ReadInt32((int)EROffsets.PlayerIns.TargetArea) ?? 0;
-        private PHPointer? _targetEnemyIns { get; set; }
-        private PHPointer? TargetEnemyIns
-        {
-            get => _targetEnemyIns;
-            set
-            {
-                _targetEnemyIns = value;
-                TargetEnemyModuleBase = _targetEnemyIns != null ? CreateChildPointer(_targetEnemyIns, (int)EROffsets.EnemyIns.ModuleBase) : null;
-                TargetEnemyData = _targetEnemyIns != null ? CreateChildPointer(TargetEnemyModuleBase, (int)EROffsets.ModuleBase.EnemyData) : null;
-                TargetEnemyResistance = _targetEnemyIns != null ? CreateChildPointer(TargetEnemyModuleBase, (int)EROffsets.ModuleBase.ResistenceData) : null;
-                TargetEnemyStagger = _targetEnemyIns != null ? CreateChildPointer(TargetEnemyModuleBase, (int)EROffsets.ModuleBase.StaggerData) : null;
-            }
-        }
-        public string TargetEnemyInsPtr => _targetEnemyIns?.Resolve().ToString("X2") ?? "";
-        public int TargetEnemyHandle => PlayerIns?.ReadInt32((int)EROffsets.EnemyIns.EnemyHandle) ?? 0;
-        public int TargetEnemyArea => PlayerIns?.ReadInt32((int)EROffsets.EnemyIns.EnemyArea) ?? 0;
-        private PHPointer? TargetEnemyModuleBase;
-        private PHPointer? TargetEnemyData;
-        private PHPointer? TargetEnemyResistance;
-        private PHPointer? TargetEnemyStagger;
-
-        private int TargetHandle => _targetEnemyIns?.ReadInt32((int)EROffsets.EnemyIns.EnemyHandle) ?? 0;
-        public string TargetModel => TargetEnemyData?.ReadString((int)EROffsets.EnemyData.Model, Encoding.Unicode, 0x10) ?? "No Target";
-        public string TargetName => TargetEnemyData?.ReadString((int)EROffsets.EnemyData.Name, Encoding.Unicode, 0x28) ?? "No Target";
-        public int TargetChrType
-        {
-            get => _targetEnemyIns?.ReadInt32((int)EROffsets.EnemyIns.ChrType) ?? 0;
-            set => _targetEnemyIns?.WriteInt32((int)EROffsets.EnemyIns.ChrType, value);
-        }
-        public int TargetHp
-        {
-            get => TargetEnemyData?.ReadInt32((int)EROffsets.EnemyData.Hp) ?? 0;
-            set => _ = value; 
-        }
-        public int TargetHpMax
-        {
-            get => TargetEnemyData?.ReadInt32((int)EROffsets.EnemyData.HpMax) ?? 0;
-            set => _ = value;
-
-        }
-        public int TargetFp
-        {
-            get => TargetEnemyData?.ReadInt32((int)EROffsets.EnemyData.Fp) ?? 0;
-            set => _ = value;
-
-        }
-        public int TargetFpMax
-        {
-            get => TargetEnemyData?.ReadInt32((int)EROffsets.EnemyData.FpMax) ?? 0;
-            set => _ = value;
-
-        }
-        public int TargetStam
-        {
-            get => TargetEnemyData?.ReadInt32((int)EROffsets.EnemyData.Stam) ?? 0;
-            set => _ = value;
-
-        }
-        public int TargetStamMax
-        {
-            get => TargetEnemyData?.ReadInt32((int)EROffsets.EnemyData.StamMax) ?? 0;
-            set => _ = value;
-
-        }
-        public int TargetPoison
-        {
-            get => TargetEnemyResistance?.ReadInt32((int)EROffsets.ResistenceData.Poison) ?? 0;
-            set => _ = value;
-
-        }
-        public int TargetPoisonMax
-        {
-            get => TargetEnemyResistance?.ReadInt32((int)EROffsets.ResistenceData.PoisonMax) ?? 0;
-            set => _ = value;
-
-        }
-        public int TargetRot
-        {
-            get => TargetEnemyResistance?.ReadInt32((int)EROffsets.ResistenceData.Rot) ?? 0;
-            set => _ = value;
-
-        }
-        public int TargetRotMax
-        {
-            get => TargetEnemyResistance?.ReadInt32((int)EROffsets.ResistenceData.RotMax) ?? 0;
-            set => _ = value;
-
-        }
-        public int TargetBleed
-        {
-            get => TargetEnemyResistance?.ReadInt32((int)EROffsets.ResistenceData.Bleed) ?? 0;
-            set => _ = value;
-
-        }
-        public int TargetBleedMax
-        {
-            get => TargetEnemyResistance?.ReadInt32((int)EROffsets.ResistenceData.BleedMax) ?? 0;
-            set => _ = value;
-
-        }
-        public int TargetFrost
-        {
-            get => TargetEnemyResistance?.ReadInt32((int)EROffsets.ResistenceData.Frost) ?? 0;
-            set => _ = value;
-
-        }
-        public int TargetFrostMax
-        {
-            get => TargetEnemyResistance?.ReadInt32((int)EROffsets.ResistenceData.FrostMax) ?? 0;
-            set => _ = value;
-
-        }
-        public int TargetBlight
-        {
-            get => TargetEnemyResistance?.ReadInt32((int)EROffsets.ResistenceData.Blight) ?? 0;
-            set => _ = value;
-
-        }
-        public int TargetBlightMax
-        {
-            get => TargetEnemyResistance?.ReadInt32((int)EROffsets.ResistenceData.BlightMax) ?? 0;
-            set => _ = value;
-
-        }
-        public int TargetSleep
-        {
-            get => TargetEnemyResistance?.ReadInt32((int)EROffsets.ResistenceData.Sleep) ?? 0;
-            set => _ = value;
-
-        }
-        public int TargetSleepMax
-        {
-            get => TargetEnemyResistance?.ReadInt32((int)EROffsets.ResistenceData.SleepMax) ?? 0;
-            set => _ = value;
-
-        }
-        public int TargetMadness
-        {
-            get => TargetEnemyResistance?.ReadInt32((int)EROffsets.ResistenceData.Madness) ?? 0;
-            set => _ = value;
-
-        }
-        public int TargetMadnessMax
-        {
-            get => TargetEnemyResistance?.ReadInt32((int)EROffsets.ResistenceData.MadnessMax) ?? 0;
-            set => _ = value;
-
-        }
-        public float TargetStagger
-        {
-            get => TargetEnemyStagger?.ReadSingle((int)EROffsets.StaggerData.Stagger) ?? 0;
-            set => _ = value;
-
-        }
-        public float TargetStaggerMax
-        {
-            get => TargetEnemyStagger?.ReadSingle((int)EROffsets.StaggerData.StaggerMax) ?? 0;
-            set => _ = value;
-
-        }
-        public float TargetResetTime
-        {
-            get => TargetEnemyStagger?.ReadSingle((int)EROffsets.StaggerData.ResetTime) ?? 0;
-            set => _ = value;
-        }
-
         public void UpdateLastEnemy()
         {
-            if (CurrentTargetHandle == -1 || CurrentTargetHandle == TargetHandle)
+            if (CurrentTargetHandle == -1 || CurrentTargetHandle == LastTargetEnemy.TargetHandle)
                 return;
 
             GetTarget();
