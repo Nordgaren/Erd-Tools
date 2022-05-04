@@ -44,7 +44,6 @@ namespace Erd_Tools
 
         public int GetTargetHp() => TargetEnemyData?.ReadInt32((int)EROffsets.EnemyData.Hp) ?? 0;
         public void SetTargetHp(int val) => TargetEnemyData?.WriteInt32((int)EROffsets.EnemyData.Hp, val);
-        WriteInt32
         public int GetTargetHpMax() => TargetEnemyData?.ReadInt32((int)EROffsets.EnemyData.HpMax) ?? 0;
         public void SetTargetHpMax(int val) => TargetEnemyData?.WriteInt32((int)EROffsets.EnemyData.HpMax, val);
 
