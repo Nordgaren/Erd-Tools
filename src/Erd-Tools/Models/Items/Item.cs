@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 
-namespace Erd_Tools
+namespace Erd_Tools.Models
 {
-    public class ERItem
+    public class Item
     {
         public enum Category : uint
         {
@@ -26,7 +26,7 @@ namespace Erd_Tools
         public bool IsMultiplayerShare;
         public bool CanAquireFromOtherPlayers => IsDrop && IsMultiplayerShare;
 
-        public ERItem(string config, Category category, bool showID)
+        public Item(string config, Category category, bool showID)
         {
             Match itemEntry = ItemEntryRx.Match(config);
             Name = itemEntry.Groups["name"].Value.Replace("\r", "");
@@ -44,7 +44,7 @@ namespace Erd_Tools
                 return Name;
         }
 
-        public virtual void SetupItem(ERParam? param)
+        public virtual void SetupItem(Param? param)
         {
             if (param == null)
                 throw new ArgumentNullException(nameof(param)); 
@@ -56,22 +56,22 @@ namespace Erd_Tools
             switch (ItemCategory)
             {
                 case Category.Protector:
-                    bitfield = param.Bytes[param.OffsetDict[ID] + (int)EROffsets.EquipParamProtector.IsDiscard];
+                    bitfield = param.Bytes[param.OffsetDict[ID] + (int)Offsets.EquipParamProtector.IsDiscard];
                     IsDrop = (bitfield & (1 << 1)) != 0;
                     IsMultiplayerShare = (bitfield & (1 << 2)) == 0;
                     break;
                 case Category.Accessory:
-                    bitfield = param.Bytes[param.OffsetDict[ID] + (int)EROffsets.EquipParamAccessory.IsDeposit];
+                    bitfield = param.Bytes[param.OffsetDict[ID] + (int)Offsets.EquipParamAccessory.IsDeposit];
                     IsMultiplayerShare = (bitfield & (1 << 2)) == 0;
                     IsDrop = (bitfield & (1 << 4)) != 0;
                     break;
                 case Category.Goods:
-                    MaxQuantity = BitConverter.ToInt16(param.Bytes, param.OffsetDict[ID] + (int)EROffsets.EquipParamGoods.MaxNum);
+                    MaxQuantity = BitConverter.ToInt16(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamGoods.MaxNum);
 
-                    bitfield = param.Bytes[param.OffsetDict[ID] + (int)EROffsets.EquipParamGoods.IsFullSuppleItem];
+                    bitfield = param.Bytes[param.OffsetDict[ID] + (int)Offsets.EquipParamGoods.IsFullSuppleItem];
                     IsMultiplayerShare = (bitfield & (1 << 3)) == 0;
 
-                    bitfield = param.Bytes[param.OffsetDict[ID] + (int)EROffsets.EquipParamGoods.IsDrop];
+                    bitfield = param.Bytes[param.OffsetDict[ID] + (int)Offsets.EquipParamGoods.IsDrop];
                     IsDrop = (bitfield & (1 << 0)) != 0;
                     break;
                 case Category.Gem:

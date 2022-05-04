@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Erd_Tools
+namespace Erd_Tools.Models
 {
-    public class ERWeapon : ERItem
+    public class Weapon : Item
     {
         public enum Infusion : short
         {
@@ -76,18 +76,18 @@ namespace Erd_Tools
         public int MaxUpgrade { get; set; }
         public WeaponType Type { get; set; }
         public AmmoType TypeAmmo { get; set; }
-        public ERGem DefaultGem { get; set; }
-        public ERWeapon(string config, Category category, bool showIDs) : base(config, category, showIDs)
+        public Gem DefaultGem { get; set; }
+        public Weapon(string config, Category category, bool showIDs) : base(config, category, showIDs)
         {
             RealID = Util.DeleteFromEnd(ID, 4);
-            DefaultGem = ERGem.Default;
+            DefaultGem = Gem.Default;
         }
 
-        public override void SetupItem(ERParam param)
+        public override void SetupItem(Param param)
         {
-            MaxQuantity = param.Bytes[param.OffsetDict[ID] + (int)EROffsets.EquipParamWeapon.MaxArrowQuantity];
+            MaxQuantity = param.Bytes[param.OffsetDict[ID] + (int)Offsets.EquipParamWeapon.MaxArrowQuantity];
 
-            byte bitfield = param.Bytes[param.OffsetDict[ID] + (int)EROffsets.EquipParamWeapon.DisableMultiDropShare];
+            byte bitfield = param.Bytes[param.OffsetDict[ID] + (int)Offsets.EquipParamWeapon.DisableMultiDropShare];
             IsMultiplayerShare = (bitfield & (1 << 0)) == 0;
             IsDrop = (bitfield & (1 << 2)) != 0;
             Infisible = (bitfield & (1 << 7)) == 0;
@@ -95,26 +95,26 @@ namespace Erd_Tools
             if (!param.OffsetDict.ContainsKey(ID))
                 throw new Exception($"No offset present for {Name}");
 
-            Unique = BitConverter.ToInt32(param.Bytes, param.OffsetDict[ID] + (int)EROffsets.EquipParamWeapon.MaterialSetID) == 2200;
+            Unique = BitConverter.ToInt32(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamWeapon.MaterialSetID) == 2200;
 
-            SwordArtId = BitConverter.ToInt32(param.Bytes, param.OffsetDict[ID] + (int)EROffsets.EquipParamWeapon.SwordArtsParamId);
+            SwordArtId = BitConverter.ToInt32(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamWeapon.SwordArtsParamId);
 
 
-            Type = (WeaponType)BitConverter.ToInt16(param.Bytes, param.OffsetDict[ID] + (int)EROffsets.EquipParamWeapon.WepType);
-            TypeAmmo = (AmmoType)BitConverter.ToInt16(param.Bytes, param.OffsetDict[ID] + (int)EROffsets.EquipParamWeapon.WepType);
+            Type = (WeaponType)BitConverter.ToInt16(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamWeapon.WepType);
+            TypeAmmo = (AmmoType)BitConverter.ToInt16(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamWeapon.WepType);
 
 
             int val = 0;
             for (int i = 1; i < 16 && val != -1; i++)
             {
-                val = BitConverter.ToInt32(param.Bytes, param.OffsetDict[ID] + (int)EROffsets.EquipParamWeapon.OriginEquipWep + (i * 4));
+                val = BitConverter.ToInt32(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamWeapon.OriginEquipWep + (i * 4));
                 if (val != -1)
                     MaxUpgrade++;
             }
 
             for (int i = 0; i < 10 && val != -1; i++)
             {
-                val = BitConverter.ToInt32(param.Bytes, param.OffsetDict[ID] + (int)EROffsets.EquipParamWeapon.OriginEquipWep16 + (i * 4));
+                val = BitConverter.ToInt32(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamWeapon.OriginEquipWep16 + (i * 4));
                 if (val != -1)
                     MaxUpgrade++;
             }

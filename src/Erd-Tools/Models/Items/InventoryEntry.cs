@@ -1,9 +1,9 @@
 ﻿using System;
-using static Erd_Tools.ERItem;
+using static Erd_Tools.Models.Item;
 
-namespace Erd_Tools
+namespace Erd_Tools.Models
 {
-    public class ERInventoryEntry
+    public class InventoryEntry
     {
         public byte[] Bytes { get;  }
         public string Name { get;  }
@@ -13,25 +13,25 @@ namespace Erd_Tools
         public int Quantity {  get; }
         public int DisplayID { get; }
 
-        public ERInventoryEntry(byte[] bytes, ERHook hook)
+        public InventoryEntry(byte[] bytes, ErdHook hook)
         {
             Bytes = bytes;
             Name = "Unknown";
-            GaItemHandle = BitConverter.ToInt32(Bytes, (int)EROffsets.InventoryEntry.GaItemHandle);
+            GaItemHandle = BitConverter.ToInt32(Bytes, (int)Offsets.InventoryEntry.GaItemHandle);
 
             byte[] buffer = new byte[4];
-            Array.Copy(Bytes, (int)EROffsets.InventoryEntry.ItemID, buffer, 0, buffer.Length);
+            Array.Copy(Bytes, (int)Offsets.InventoryEntry.ItemID, buffer, 0, buffer.Length);
             buffer[3] &= 0xF;
             ItemID = BitConverter.ToInt32(buffer);
 
-            byte cat = Bytes[(int)EROffsets.InventoryEntry.ItemCategory];
+            byte cat = Bytes[(int)Offsets.InventoryEntry.ItemCategory];
             byte mask = 0xF0;
             cat &= mask;
             Category =  (Category)(cat * 0x1000000);
 
-            Quantity = BitConverter.ToInt32(Bytes, (int)EROffsets.InventoryEntry.Quantity);
+            Quantity = BitConverter.ToInt32(Bytes, (int)Offsets.InventoryEntry.Quantity);
 
-            DisplayID = BitConverter.ToInt32(Bytes, (int)EROffsets.InventoryEntry.DispalyID);
+            DisplayID = BitConverter.ToInt32(Bytes, (int)Offsets.InventoryEntry.DispalyID);
 
             switch (Category)
             {

@@ -6,9 +6,9 @@ using System.Text;
 using System.Text.RegularExpressions;
 using static SoulsFormats.PARAMDEF;
 
-namespace Erd_Tools
+namespace Erd_Tools.Models
 {
-    public class ERParam : IComparable<ERParam>
+    public class Param : IComparable<Param>
     {
         public PHPointer Pointer { get; private set; }
         public int Offset { get; private set; }
@@ -24,7 +24,7 @@ namespace Erd_Tools
         public Dictionary<int, int> OffsetDict { get; private set; }
         public int RowLength { get; private set; }
        
-        public ERParam(PHPointer pointer, int offset, PARAMDEF Paramdef, string name)
+        public Param(PHPointer pointer, int offset, PARAMDEF Paramdef, string name)
         {
             Pointer = pointer;
             Offset = offset;
@@ -40,7 +40,7 @@ namespace Erd_Tools
         {
             Rows = new List<Row>();
             OffsetDict = new Dictionary<int, int>();
-            Length = Pointer.ReadInt32((int)EROffsets.Param.NameOffset);
+            Length = Pointer.ReadInt32((int)Offsets.Param.NameOffset);
             
             string paramType = Pointer.ReadString(Length, Encoding.UTF8, (uint)Type.Length);
             if (paramType != Type)
@@ -48,7 +48,7 @@ namespace Erd_Tools
 
             Bytes = Pointer.ReadBytes(0x0, (uint)Length);
 
-            int tableLength = BitConverter.ToInt32(Bytes ,(int)EROffsets.Param.TableLength);
+            int tableLength = BitConverter.ToInt32(Bytes ,(int)Offsets.Param.TableLength);
             int Param = 0x40;
             int ParamID = 0x0;
             int ParamOffset = 0x8;
@@ -95,7 +95,7 @@ namespace Erd_Tools
         {
             return Name;
         }
-        public int CompareTo(ERParam? otherParam)
+        public int CompareTo(Param? otherParam)
         {
             if (otherParam == null)
                 throw new ArgumentNullException(nameof(otherParam));
@@ -108,12 +108,12 @@ namespace Erd_Tools
         }
         public class Row
         {
-            public ERParam Param { get; private set; }
+            public Param Param { get; private set; }
             public string Name { get; private set; }
             public int ID { get; private set; }
             public int DataOffset { get; private set; }
 
-            public Row(ERParam param, string name, int id, int offset)
+            public Row(Param param, string name, int id, int offset)
             {
                 Param = param;
                 Name = name;

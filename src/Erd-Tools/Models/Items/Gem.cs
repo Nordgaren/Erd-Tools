@@ -1,21 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Infusion = Erd_Tools.ERWeapon.Infusion;
-using WeaponType = Erd_Tools.ERWeapon.WeaponType;
+using Infusion = Erd_Tools.Models.Weapon.Infusion;
+using WeaponType = Erd_Tools.Models.Weapon.WeaponType;
 
-namespace Erd_Tools
+namespace Erd_Tools.Models
 {
-    public class ERGem : ERItem
+    public class Gem : Item
     {
-        public static List<ERGem> All = new List<ERGem>();
+        public static List<Gem> All = new List<Gem>();
 
         public long CanMountBitfield;
         public int SwordArtID;
         public short WeaponAttr;
         public List<Infusion> Infusions;
         public List<WeaponType> WeaponTypes = new List<WeaponType>();
-        public static ERGem Default = new ERGem("-1 None", Category.Gem, false);
+        public static Gem Default = new Gem("-1 None", Category.Gem, false);
 
         private void GetInfusions()
         {
@@ -45,26 +45,26 @@ namespace Erd_Tools
             }
         }
 
-        public override void SetupItem(ERParam param)
+        public override void SetupItem(Param param)
         {
             MaxQuantity = 1;
-            byte bitfield = param.Bytes[param.OffsetDict[ID] + (int)EROffsets.EquipParamGem.IsDiscard];
+            byte bitfield = param.Bytes[param.OffsetDict[ID] + (int)Offsets.EquipParamGem.IsDiscard];
             IsDrop = (bitfield & (1 << 1)) != 0;
             IsMultiplayerShare = (bitfield & (1 << 3)) == 0;
 
-            SwordArtID = BitConverter.ToInt32(param.Bytes, param.OffsetDict[ID] + (int)EROffsets.EquipParamGem.SwordArtsParamId);
-            CanMountBitfield = BitConverter.ToInt64(param.Bytes, param.OffsetDict[ID] + (int)EROffsets.EquipParamGem.CanMountWep_Dagger);
-            WeaponAttr = BitConverter.ToInt16(param.Bytes, param.OffsetDict[ID] + (int)EROffsets.EquipParamGem.ConfigurableWepAttr);
+            SwordArtID = BitConverter.ToInt32(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamGem.SwordArtsParamId);
+            CanMountBitfield = BitConverter.ToInt64(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamGem.CanMountWep_Dagger);
+            WeaponAttr = BitConverter.ToInt16(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamGem.ConfigurableWepAttr);
             GetWeapons();
             GetInfusions();
         }
 
-        public ERGem(string config, Category category, bool showIDs) : base(config, category, showIDs)
+        public Gem(string config, Category category, bool showIDs) : base(config, category, showIDs)
         {
             All.Add(this);
         }
 
-        static ERGem()
+        static Gem()
         {
             Default.Infusions = new List<Infusion>() { Infusion.Standard };
         }

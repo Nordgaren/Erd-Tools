@@ -1,6 +1,6 @@
 ﻿namespace Erd_Tools
 {
-    public class EROffsets
+    public class Offsets
     {
         public const int IsLoadedOffset1 = 0x320;
         public const int IsLoadedOffset2 = 0xC8;
@@ -110,7 +110,7 @@
 
         public const int EquipInventoryDataOffset = 0x5B8;
         public const int PlayerInventoryOffset = 0x10;
-        public const int PlayerInventoryEntrySize = 0x14;
+        public const int PlayInventoryEntrySize = 0x14;
 
         public enum InventoryEntry
         {

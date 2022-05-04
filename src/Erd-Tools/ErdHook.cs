@@ -8,17 +8,19 @@ using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
-using Category = Erd_Tools.ERItem.Category;
+using Category = Erd_Tools.Models.Item.Category;
 using static SoulsFormats.PARAMDEF;
 using System.Collections;
 using System.Text.RegularExpressions;
 using SoulsFormats;
 using System.Threading.Tasks;
 using System.Threading;
+using Erd_Tools.Models;
+using Erd_Tools.Models;
 
 namespace Erd_Tools
 {
-    public class ERHook : PHook, INotifyPropertyChanged
+    public class ErdHook : PHook, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler? PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string? name = null)
@@ -55,43 +57,43 @@ namespace Erd_Tools
         public bool Setup = false;
         public bool Focused => Hooked && User32.GetForegroundProcessID() == Process.Id;
 
-        public ERHook(int refreshInterval, int minLifetime, Func<Process, bool> processSelector)
+        public ErdHook(int refreshInterval, int minLifetime, Func<Process, bool> processSelector)
             : base(refreshInterval, minLifetime, processSelector)
         {
-            OnHooked += ERHook_OnHooked;
-            OnUnhooked += ERHook_OnUnhooked;
+            OnHooked += ErdHook_OnHooked;
+            OnUnhooked += ErdHook_OnUnhooked;
 
-            GameDataMan = RegisterRelativeAOB(EROffsets.GameDataManAoB, EROffsets.RelativePtrAddressOffset, EROffsets.RelativePtrInstructionSize, 0x0);
-            PlayerGameData = CreateChildPointer(GameDataMan, EROffsets.PlayerGameData);
-            PlayerInventory = CreateChildPointer(PlayerGameData, EROffsets.EquipInventoryDataOffset, EROffsets.PlayerInventoryOffset);
+            GameDataMan = RegisterRelativeAOB(Offsets.GameDataManAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
+            PlayerGameData = CreateChildPointer(GameDataMan, Offsets.PlayerGameData);
+            PlayerInventory = CreateChildPointer(PlayerGameData, Offsets.EquipInventoryDataOffset, Offsets.PlayerInventoryOffset);
 
-            SoloParamRepository = RegisterRelativeAOB(EROffsets.SoloParamRepositoryAoB, EROffsets.RelativePtrAddressOffset, EROffsets.RelativePtrInstructionSize, 0x0);
+            SoloParamRepository = RegisterRelativeAOB(Offsets.SoloParamRepositoryAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
 
-            ItemGive = RegisterAbsoluteAOB(EROffsets.ItemGiveAoB);
-            MapItemMan = RegisterRelativeAOB(EROffsets.MapItemManAoB, EROffsets.RelativePtrAddressOffset, EROffsets.RelativePtrInstructionSize);
-            EventFlagMan = RegisterRelativeAOB(EROffsets.EventFlagManAoB, EROffsets.RelativePtrAddressOffset, EROffsets.RelativePtrInstructionSize, 0x0);
-            SetEventFlagFunction = RegisterAbsoluteAOB(EROffsets.EventCallAoB);
+            ItemGive = RegisterAbsoluteAOB(Offsets.ItemGiveAoB);
+            MapItemMan = RegisterRelativeAOB(Offsets.MapItemManAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize);
+            EventFlagMan = RegisterRelativeAOB(Offsets.EventFlagManAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
+            SetEventFlagFunction = RegisterAbsoluteAOB(Offsets.EventCallAoB);
 
-            CapParamCall = RegisterAbsoluteAOB(EROffsets.CapParamCallAoB);
+            CapParamCall = RegisterAbsoluteAOB(Offsets.CapParamCallAoB);
 
-            WorldChrMan = RegisterRelativeAOB(EROffsets.WorldChrManAoB, EROffsets.RelativePtrAddressOffset, EROffsets.RelativePtrInstructionSize, 0x0);
-            PlayerIns = CreateChildPointer(WorldChrMan, EROffsets.PlayerInsOffset);
+            WorldChrMan = RegisterRelativeAOB(Offsets.WorldChrManAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
+            PlayerIns = CreateChildPointer(WorldChrMan, Offsets.PlayerInsOffset);
 
-            DisableOpenMap = RegisterAbsoluteAOB(EROffsets.DisableOpenMapAoB);
-            CombatCloseMap = RegisterAbsoluteAOB(EROffsets.CombatCloseMapAoB);
-            WorldAreaWeather = RegisterRelativeAOB(EROffsets.WorldAreaWeatherAoB, EROffsets.RelativePtrAddressOffset, EROffsets.RelativePtrInstructionSize, 0x0);
+            DisableOpenMap = RegisterAbsoluteAOB(Offsets.DisableOpenMapAoB);
+            CombatCloseMap = RegisterAbsoluteAOB(Offsets.CombatCloseMapAoB);
+            WorldAreaWeather = RegisterRelativeAOB(Offsets.WorldAreaWeatherAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
 
             ItemEventDictionary = BuildItemEventDictionary();
-            ERItemCategory.GetItemCategories();
+            ItemCategory.GetItemCategories();
 
         }
 
-        private void ERHook_OnUnhooked(object? sender, PHEventArgs e)
+        private void ErdHook_OnUnhooked(object? sender, PHEventArgs e)
         {
             Setup = false;
         }
 
-        private void ERHook_OnHooked(object? sender, PHEventArgs e)
+        private void ErdHook_OnHooked(object? sender, PHEventArgs e)
         {
             //IntPtr gameDataMan = GameDataMan.Resolve();
             //IntPtr paramss = SoloParamRepository.Resolve();
@@ -128,13 +130,13 @@ namespace Erd_Tools
             File.WriteAllLines(Environment.CurrentDirectory + @"\HookLog.txt", list);
         }
 
-        public ERParam? EquipParamAccessory;
-        public ERParam? EquipParamGem;
-        public ERParam? EquipParamGoods;
-        public ERParam? EquipParamProtector;
-        public ERParam? EquipParamWeapon;
-        public ERParam? MagicParam;
-        public ERParam? NpcParam;
+        public Param? EquipParamAccessory;
+        public Param? EquipParamGem;
+        public Param? EquipParamGoods;
+        public Param? EquipParamProtector;
+        public Param? EquipParamWeapon;
+        public Param? MagicParam;
+        public Param? NpcParam;
 
         private Engine Engine = new Engine(Architecture.X86, Mode.X64);
         //TKCode
@@ -176,11 +178,11 @@ namespace Erd_Tools
 
         #region Params
 
-        public List<ERParam> Params;
+        public List<Param> Params;
 
-        private List<ERParam> GetParams()
+        private List<Param> GetParams()
         {
-            List<ERParam> paramList = new List<ERParam>();
+            List<Param> paramList = new List<Param>();
             string paramPath = $"{Util.ExeDir}/Resources/Params/";
 
             string pointerPath = $"{paramPath}/Pointers/";
@@ -194,7 +196,7 @@ namespace Erd_Tools
             return paramList;
         }
 
-        public void AddParam(List<ERParam> paramList, string paramPath, string path, string[] pointers)
+        public void AddParam(List<Param> paramList, string paramPath, string path, string[] pointers)
         {
             foreach (string entry in pointers)
             {
@@ -216,7 +218,7 @@ namespace Erd_Tools
 
                 PARAMDEF paramDef = XmlDeserialize(defPath);
 
-                ERParam param = new ERParam(pointer, offset, paramDef, name);
+                Param param = new Param(pointer, offset, paramDef, name);
 
                 SetParamPtrs(param);
 
@@ -225,7 +227,7 @@ namespace Erd_Tools
             paramList.Sort();
         }
 
-        private void SetParamPtrs(ERParam param)
+        private void SetParamPtrs(Param param)
         {
             switch (param.Name)
             {
@@ -259,7 +261,7 @@ namespace Erd_Tools
         {
             return CreateChildPointer(SoloParamRepository, new int[] { offset, 0x80, 0x80 });
         }
-        public void SaveParam(ERParam param)
+        public void SaveParam(Param param)
         {
             string asmString = Util.GetEmbededResource("Assembly.SaveParams.asm");
             string asm = string.Format(asmString, SoloParamRepository.Resolve(), param.Offset, CapParamCall.Resolve());
@@ -315,7 +317,7 @@ namespace Erd_Tools
         {
             List<Task> tasks = new List<Task>();
 
-            foreach (ERItemCategory category in ERItemCategory.All)
+            foreach (ItemCategory category in ItemCategory.All)
             {
                 tasks.Add(Task.Run(() => SetupItems(category)));
             }
@@ -327,7 +329,7 @@ namespace Erd_Tools
 
             tasks.Clear();
 
-            foreach (ERItemCategory category in ERItemCategory.All)
+            foreach (ItemCategory category in ItemCategory.All)
             {
                 if (category.Category == Category.Weapons)
                     tasks.Add(Task.Run(() => SetupGems(category)));
@@ -350,19 +352,19 @@ namespace Erd_Tools
             }
         }
 
-        private void SetupGems(ERItemCategory category)
+        private void SetupGems(ItemCategory category)
         {
-            foreach (ERWeapon weapon in category.Items)
+            foreach (Weapon weapon in category.Items)
             {
-                ERGem? gem = ERGem.All.FirstOrDefault(gem => gem.SwordArtID == weapon.SwordArtId);
+                Gem? gem = Gem.All.FirstOrDefault(gem => gem.SwordArtID == weapon.SwordArtId);
                 if (gem != null)
                     weapon.DefaultGem = gem;
             }
         }
 
-        private void SetupItems(ERItemCategory category)
+        private void SetupItems(ItemCategory category)
         {
-            foreach (ERItem item in category.Items)
+            foreach (Item item in category.Items)
             {
                 SetupItem(item);
                 int fullID = item.ID + (int)Category.Goods;
@@ -370,7 +372,7 @@ namespace Erd_Tools
             }
         }
 
-        private void SetupItem(ERItem item)
+        private void SetupItem(Item item)
         {
             switch (item.ItemCategory)
             {
@@ -400,27 +402,27 @@ namespace Erd_Tools
             IntPtr itemInfo = GetPrefferedIntPtr(0x34);
 
             byte[] bytes = BitConverter.GetBytes(0x1);
-            Array.Copy(bytes, 0x0, itemInfobytes, (int)EROffsets.ItemGiveStruct.Count, bytes.Length);
+            Array.Copy(bytes, 0x0, itemInfobytes, (int)Offsets.ItemGiveStruct.Count, bytes.Length);
 
             bytes = BitConverter.GetBytes(id + infusion + upgrade);
-            Array.Copy(bytes, 0x0, itemInfobytes, (int)EROffsets.ItemGiveStruct.ID, bytes.Length);
+            Array.Copy(bytes, 0x0, itemInfobytes, (int)Offsets.ItemGiveStruct.ID, bytes.Length);
 
             bytes = BitConverter.GetBytes(quantity);
-            Array.Copy(bytes, 0x0, itemInfobytes, (int)EROffsets.ItemGiveStruct.Quantity, bytes.Length);
+            Array.Copy(bytes, 0x0, itemInfobytes, (int)Offsets.ItemGiveStruct.Quantity, bytes.Length);
 
             bytes = BitConverter.GetBytes(gem);
-            Array.Copy(bytes, 0x0, itemInfobytes, (int)EROffsets.ItemGiveStruct.Gem, bytes.Length);
+            Array.Copy(bytes, 0x0, itemInfobytes, (int)Offsets.ItemGiveStruct.Gem, bytes.Length);
 
             Kernel32.WriteBytes(Handle, itemInfo, itemInfobytes);
 
             string asmString = Util.GetEmbededResource("Assembly.ItemGive.asm");
-            string asm = string.Format(asmString, itemInfo.ToString("X2"), MapItemMan.Resolve(), ItemGive.Resolve() + EROffsets.ItemGiveOffset);
+            string asm = string.Format(asmString, itemInfo.ToString("X2"), MapItemMan.Resolve(), ItemGive.Resolve() + Offsets.ItemGiveOffset);
             AsmExecute(asm);
             Free(itemInfo);
         }
 
-        List<ERInventoryEntry>? Inventory;
-        public int InventoryCount => PlayerGameData.ReadInt32((int)EROffsets.PlayerGameDataStruct.InventoryCount);
+        List<InventoryEntry>? Inventory;
+        public int InventoryCount => PlayerGameData.ReadInt32((int)Offsets.PlayerGameDataStruct.InventoryCount);
         public int LastInventoryCount { get; set; }
 
         public IEnumerable GetInventory()
@@ -432,26 +434,26 @@ namespace Erd_Tools
         }
         private void GetInventoryList()
         {
-            Inventory = new List<ERInventoryEntry>();
+            Inventory = new List<InventoryEntry>();
 
-            byte[] bytes = PlayerInventory.ReadBytes(0x0, (uint)InventoryCount * EROffsets.PlayerInventoryEntrySize);
+            byte[] bytes = PlayerInventory.ReadBytes(0x0, (uint)InventoryCount * Offsets.PlayInventoryEntrySize);
 
             for (int i = 0; i < InventoryCount; i++)
             {
-                byte[] entry = new byte[EROffsets.PlayerInventoryEntrySize];
-                Array.Copy(bytes, i * EROffsets.PlayerInventoryEntrySize, entry, 0, entry.Length);
+                byte[] entry = new byte[Offsets.PlayInventoryEntrySize];
+                Array.Copy(bytes, i * Offsets.PlayInventoryEntrySize, entry, 0, entry.Length);
 
-                if (BitConverter.ToInt32(entry, (int)EROffsets.InventoryEntry.ItemID) == -1)
+                if (BitConverter.ToInt32(entry, (int)Offsets.InventoryEntry.ItemID) == -1)
                     continue;
 
-                Inventory.Add(new ERInventoryEntry(entry, this));
+                Inventory.Add(new InventoryEntry(entry, this));
             }
             LastInventoryCount = Inventory.Count;
         }
 
         public void ResetInventory()
         {
-            Inventory = new List<ERInventoryEntry>();
+            Inventory = new List<InventoryEntry>();
             LastInventoryCount = 0;
         }
         #endregion
@@ -478,10 +480,10 @@ namespace Erd_Tools
             InvalidInvader2 = 0x22,
         }
 
-        private EREnemy? LastTargetEnemy { get; set; }
+        private Enemy? LastTargetEnemy { get; set; }
 
-        private int CurrentTargetHandle => PlayerIns?.ReadInt32((int)EROffsets.PlayerIns.TargetHandle) ?? 0;
-        private int CurrentTargetArea => PlayerIns?.ReadInt32((int)EROffsets.PlayerIns.TargetArea) ?? 0;
+        private int CurrentTargetHandle => PlayerIns?.ReadInt32((int)Offsets.PlayerIns.TargetHandle) ?? 0;
+        private int CurrentTargetArea => PlayerIns?.ReadInt32((int)Offsets.PlayerIns.TargetArea) ?? 0;
         public void UpdateLastEnemy()
         {
             if (CurrentTargetHandle == -1 || CurrentTargetHandle == LastTargetEnemy.TargetHandle)
@@ -493,23 +495,23 @@ namespace Erd_Tools
         public void GetTarget()
         {
             LastTargetEnemy = null;
-            PHPointer worldBlockChr = CreateBasePointer(WorldChrMan.Resolve() + (int)EROffsets.WorldChrMan.WorldBlockChr);
+            PHPointer worldBlockChr = CreateBasePointer(WorldChrMan.Resolve() + (int)Offsets.WorldChrMan.WorldBlockChr);
             int targetHandle = CurrentTargetHandle; //Only read from memory once
             int targetArea = CurrentTargetArea;
 
             while (true)
             {
-                int numChrs = worldBlockChr.ReadInt32((int)EROffsets.WorldBlockChr.NumChr);
-                PHPointer chrSet = CreateChildPointer(worldBlockChr, (int)EROffsets.WorldBlockChr.ChrSet);
+                int numChrs = worldBlockChr.ReadInt32((int)Offsets.WorldBlockChr.NumChr);
+                PHPointer chrSet = CreateChildPointer(worldBlockChr, (int)Offsets.WorldBlockChr.ChrSet);
 
                 for (int j = 0; j <= numChrs; j++)
                 {
-                    PHPointer enemyIns = CreateChildPointer(chrSet, (j * (int)EROffsets.ChrSet.EnemyIns));
-                    int enemyHandle = enemyIns.ReadInt32((int)EROffsets.EnemyIns.EnemyHandle);
-                    int enemyArea = enemyIns.ReadInt32((int)EROffsets.EnemyIns.EnemyArea);
+                    PHPointer enemyIns = CreateChildPointer(chrSet, (j * (int)Offsets.ChrSet.EnemyIns));
+                    int enemyHandle = enemyIns.ReadInt32((int)Offsets.EnemyIns.EnemyHandle);
+                    int enemyArea = enemyIns.ReadInt32((int)Offsets.EnemyIns.EnemyArea);
 
                     if (targetHandle == enemyHandle && targetArea == enemyArea)
-                        LastTargetEnemy = new EREnemy(enemyIns, this);
+                        LastTargetEnemy = new Enemy(enemyIns, this);
 
                     if (LastTargetEnemy != null)
                         return;
@@ -522,26 +524,26 @@ namespace Erd_Tools
                     break;
             }
 
-            TryGetEnemy(targetHandle, targetArea, (int)EROffsets.WorldChrMan.ChrSet1);
+            TryGetEnemy(targetHandle, targetArea, (int)Offsets.WorldChrMan.ChrSet1);
 
             if (LastTargetEnemy != null)
                 return;
 
-            TryGetEnemy(targetHandle, targetArea, (int)EROffsets.WorldChrMan.ChrSet2);
+            TryGetEnemy(targetHandle, targetArea, (int)Offsets.WorldChrMan.ChrSet2);
 
         }
 
         public void TryGetEnemy(int targetHandle, int targetArea, int offset)
         {
             PHPointer chrSet1 = CreateChildPointer(WorldChrMan, offset);
-            int numEntries1 = chrSet1.ReadInt32((int)EROffsets.ChrSet.NumEntries);
+            int numEntries1 = chrSet1.ReadInt32((int)Offsets.ChrSet.NumEntries);
 
             for (int i = 0; i <= numEntries1; i++)
             {
                 int enemyHandle = chrSet1.ReadInt32(0x78 + (i * 0x10));
                 int enemyArea = chrSet1.ReadInt32(0x78 + 4 + (i * 0x10));
                 if (targetHandle == enemyHandle && targetArea == enemyArea)
-                    LastTargetEnemy = new EREnemy(CreateChildPointer(chrSet1, 0x78 + 8 + (i * 0x10)), this);
+                    LastTargetEnemy = new Enemy(CreateChildPointer(chrSet1, 0x78 + 8 + (i * 0x10)), this);
 
                 if (LastTargetEnemy != null)
                     return;
@@ -550,8 +552,8 @@ namespace Erd_Tools
 
         #endregion
 
-        public int Level => PlayerGameData.ReadInt32((int)EROffsets.Player.Level);
-        public string LevelString => PlayerGameData?.ReadInt32((int)EROffsets.Player.Level).ToString() ?? "";
+        public int Level => PlayerGameData.ReadInt32((int)Offsets.Player.Level);
+        public string LevelString => PlayerGameData?.ReadInt32((int)Offsets.Player.Level).ToString() ?? "";
 
         #region Cheats
 
@@ -583,10 +585,10 @@ namespace Erd_Tools
             CombatCloseMap.WriteBytes(0x0, OriginalCombatCloseMap); //Place original bytes back for combat close map
             CombatMapEnabled = false;
         }
-        private short WeatherParamID => WorldAreaWeather?.ReadInt16((int)EROffsets.WorldAreaWeather.WeatherParamID) ?? 0;
+        private short WeatherParamID => WorldAreaWeather?.ReadInt16((int)Offsets.WorldAreaWeather.WeatherParamID) ?? 0;
         private short ForceWeatherParamID 
         {
-            set => WorldAreaWeather?.WriteInt16((int)EROffsets.WorldAreaWeather.ForceWeatherParamID, value); 
+            set => WorldAreaWeather?.WriteInt16((int)Offsets.WorldAreaWeather.ForceWeatherParamID, value); 
         }
 
         public enum WeatherTypes
@@ -717,132 +719,132 @@ namespace Erd_Tools
         #region ChrAsm
         public byte ArmStyle
         {
-            get => PlayerGameData.ReadByte((int)EROffsets.ChrIns.ArmStyle);
+            get => PlayerGameData.ReadByte((int)Offsets.ChrIns.ArmStyle);
             set
             {
                 if (!Loaded)
                     return;
-                PlayerGameData.WriteByte((int)EROffsets.ChrIns.ArmStyle, value);
+                PlayerGameData.WriteByte((int)Offsets.ChrIns.ArmStyle, value);
             }
         }
         public int CurrWepSlotOffsetLeft
         {
-            get => PlayerGameData.ReadInt32((int)EROffsets.ChrIns.CurrWepSlotOffsetLeft);
+            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.CurrWepSlotOffsetLeft);
             set
             {
                 if (!Loaded)
                     return;
-                PlayerGameData.WriteInt32((int)EROffsets.ChrIns.CurrWepSlotOffsetLeft, value);
+                PlayerGameData.WriteInt32((int)Offsets.ChrIns.CurrWepSlotOffsetLeft, value);
             }
         }
         public int CurrWepSlotOffsetRight
         {
-            get => PlayerGameData.ReadInt32((int)EROffsets.ChrIns.CurrWepSlotOffsetRight);
+            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.CurrWepSlotOffsetRight);
             set
             {
                 if (!Loaded)
                     return;
-                PlayerGameData.WriteInt32((int)EROffsets.ChrIns.CurrWepSlotOffsetRight, value);
+                PlayerGameData.WriteInt32((int)Offsets.ChrIns.CurrWepSlotOffsetRight, value);
             }
         }
         public int RHandWeapon1
         {
-            get => PlayerGameData.ReadInt32((int)EROffsets.ChrIns.RHandWeapon1);
+            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.RHandWeapon1);
             set
             {
                 if (!Loaded)
                     return;
-                PlayerGameData.WriteInt32((int)EROffsets.ChrIns.RHandWeapon1, value);
+                PlayerGameData.WriteInt32((int)Offsets.ChrIns.RHandWeapon1, value);
             }
         }
         public int RHandWeapon2
         {
-            get => PlayerGameData.ReadInt32((int)EROffsets.ChrIns.RHandWeapon2);
+            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.RHandWeapon2);
             set
             {
                 if (!Loaded)
                     return;
-                PlayerGameData.WriteInt32((int)EROffsets.ChrIns.RHandWeapon2, value);
+                PlayerGameData.WriteInt32((int)Offsets.ChrIns.RHandWeapon2, value);
             }
         }
         public int RHandWeapon3
         {
-            get => PlayerGameData.ReadInt32((int)EROffsets.ChrIns.RHandWeapon3);
+            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.RHandWeapon3);
             set
             {
                 if (!Loaded)
                     return;
-                PlayerGameData.WriteInt32((int)EROffsets.ChrIns.RHandWeapon3, value);
+                PlayerGameData.WriteInt32((int)Offsets.ChrIns.RHandWeapon3, value);
             }
         }
         public int LHandWeapon1
         {
-            get => PlayerGameData.ReadInt32((int)EROffsets.ChrIns.LHandWeapon1);
+            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.LHandWeapon1);
             set
             {
                 if (!Loaded)
                     return;
-                PlayerGameData.WriteInt32((int)EROffsets.ChrIns.LHandWeapon1, value);
+                PlayerGameData.WriteInt32((int)Offsets.ChrIns.LHandWeapon1, value);
             }
         }
         public int LHandWeapon2
         {
-            get => PlayerGameData.ReadInt32((int)EROffsets.ChrIns.LHandWeapon2);
+            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.LHandWeapon2);
             set
             {
                 if (!Loaded)
                     return;
-                PlayerGameData.WriteInt32((int)EROffsets.ChrIns.LHandWeapon2, value);
+                PlayerGameData.WriteInt32((int)Offsets.ChrIns.LHandWeapon2, value);
             }
         }
         public int LHandWeapon3
         {
-            get => PlayerGameData.ReadInt32((int)EROffsets.ChrIns.LHandWeapon3);
+            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.LHandWeapon3);
             set
             {
                 if (!Loaded)
                     return;
-                PlayerGameData.WriteInt32((int)EROffsets.ChrIns.LHandWeapon3, value);
+                PlayerGameData.WriteInt32((int)Offsets.ChrIns.LHandWeapon3, value);
             }
         }
         public int Arrow1
         {
-            get => PlayerGameData.ReadInt32((int)EROffsets.ChrIns.Arrow1);
+            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.Arrow1);
             set
             {
                 if (!Loaded)
                     return;
-                PlayerGameData.WriteInt32((int)EROffsets.ChrIns.Arrow1, value);
+                PlayerGameData.WriteInt32((int)Offsets.ChrIns.Arrow1, value);
             }
         }
         public int Arrow2
         {
-            get => PlayerGameData.ReadInt32((int)EROffsets.ChrIns.Arrow2);
+            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.Arrow2);
             set
             {
                 if (!Loaded)
                     return;
-                PlayerGameData.WriteInt32((int)EROffsets.ChrIns.Arrow2, value);
+                PlayerGameData.WriteInt32((int)Offsets.ChrIns.Arrow2, value);
             }
         }
         public int Bolt1
         {
-            get => PlayerGameData.ReadInt32((int)EROffsets.ChrIns.Bolt1);
+            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.Bolt1);
             set
             {
                 if (!Loaded)
                     return;
-                PlayerGameData.WriteInt32((int)EROffsets.ChrIns.Bolt1, value);
+                PlayerGameData.WriteInt32((int)Offsets.ChrIns.Bolt1, value);
             }
         }
         public int Bolt2
         {
-            get => PlayerGameData.ReadInt32((int)EROffsets.ChrIns.Bolt2);
+            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.Bolt2);
             set
             {
                 if (!Loaded)
                     return;
-                PlayerGameData.WriteInt32((int)EROffsets.ChrIns.Bolt2, value);
+                PlayerGameData.WriteInt32((int)Offsets.ChrIns.Bolt2, value);
             }
         }
         #endregion
@@ -854,8 +856,8 @@ namespace Erd_Tools
         }
         private int OGRHandWeapon1SwordArtID
         {
-            get => OGRHandWeapon1Param?.ReadInt32((int)EROffsets.EquipParamWeapon.SwordArtsParamId) ?? 0;
-            set => OGRHandWeapon1Param?.WriteInt32((int)EROffsets.EquipParamWeapon.SwordArtsParamId, value);
+            get => OGRHandWeapon1Param?.ReadInt32((int)Offsets.EquipParamWeapon.SwordArtsParamId) ?? 0;
+            set => OGRHandWeapon1Param?.WriteInt32((int)Offsets.EquipParamWeapon.SwordArtsParamId, value);
         }
         private int OGLHandWeapon1 { get; set; }
         private PHPointer OGLHandWeapon1Param
@@ -864,8 +866,8 @@ namespace Erd_Tools
         }
         private int OGLHandWeapon1SwordArtID
         {
-            get => OGLHandWeapon1Param?.ReadInt32((int)EROffsets.EquipParamWeapon.SwordArtsParamId) ?? 0;
-            set => OGLHandWeapon1Param?.WriteInt32((int)EROffsets.EquipParamWeapon.SwordArtsParamId, value);
+            get => OGLHandWeapon1Param?.ReadInt32((int)Offsets.EquipParamWeapon.SwordArtsParamId) ?? 0;
+            set => OGLHandWeapon1Param?.WriteInt32((int)Offsets.EquipParamWeapon.SwordArtsParamId, value);
         }
 
     }

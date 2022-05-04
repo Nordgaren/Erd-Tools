@@ -57,7 +57,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Resources\ERItemCategories.txt">
+    <None Update="Resources\ItemCategories.txt">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
     <None Update="Resources\Events\GoodsEvents.txt">

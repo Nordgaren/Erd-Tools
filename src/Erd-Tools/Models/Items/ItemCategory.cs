@@ -1,25 +1,27 @@
-﻿using System;
+﻿using Erd_Tools;
+using Erd_Tools.Models;
+using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
-using Category = Erd_Tools.ERItem.Category;
+using Category = Erd_Tools.Models.Item.Category;
 
-namespace Erd_Tools
+namespace Erd_Tools.Models
 {
-    public class ERItemCategory
+    public class ItemCategory
     {
 
         public string Name;
-        public List<ERItem> Items;
+        public List<Item> Items;
         public Category Category;
         public bool ShowID;
-        public static List<ERItemCategory> All = new List<ERItemCategory>();
+        public static List<ItemCategory> All = new List<ItemCategory>();
 
         private static Regex CategoryEntryRx = new Regex(@"^(?<category>\S+) (?<show>\S+) (?<path>\S+) (?<name>.+)$", RegexOptions.CultureInvariant);
 
-        private ERItemCategory(string name, Category category, string[] itemList, bool showIDs)
+        private ItemCategory(string name, Category category, string[] itemList, bool showIDs)
         {
             Name = name;
-            Items = new List<ERItem>();
+            Items = new List<Item>();
             Category = category;
             foreach (string line in itemList)
             {
@@ -33,15 +35,15 @@ namespace Erd_Tools
             switch (category)
             {
                 case Category.Weapons:
-                    Items.Add(new ERWeapon(line, category, showIDs));
+                    Items.Add(new Weapon(line, category, showIDs));
                     break;
                 case Category.Protector:
                 case Category.Accessory:
                 case Category.Goods:
-                    Items.Add(new ERItem(line, category, showIDs));
+                    Items.Add(new Item(line, category, showIDs));
                     break;
                 case Category.Gem:
-                    Items.Add(new ERGem(line, category, showIDs));
+                    Items.Add(new Gem(line, category, showIDs));
                     break;
                 default:
                     throw new Exception("Incorrect Category");
@@ -50,8 +52,8 @@ namespace Erd_Tools
 
         public static void GetItemCategories()
         {
-            string[] result = Util.GetListResource("Resources/ERItemCategories.txt");
-            All = new List<ERItemCategory>();
+            string[] result = Util.GetListResource("Resources/ItemCategories.txt");
+            All = new List<ItemCategory>();
 
             foreach (string line in result)
             {
@@ -64,7 +66,7 @@ namespace Erd_Tools
                 string cat = itemEntry.Groups["category"].Value;
                 Category category = (Category)Convert.ToUInt32(cat, 16);
                 string path = itemEntry.Groups["path"].Value;
-                All.Add(new ERItemCategory(name, category, Util.GetListResource($"Resources/{path}"), show));
+                All.Add(new ItemCategory(name, category, Util.GetListResource($"Resources/{path}"), show));
             };
         }
 
