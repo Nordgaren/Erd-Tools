@@ -478,7 +478,7 @@ namespace Erd_Tools
             InvalidInvader2 = 0x22,
         }
 
-        private EREnemy LastTargetEnemy { get; set; }
+        private EREnemy? LastTargetEnemy { get; set; }
 
         private int CurrentTargetHandle => PlayerIns?.ReadInt32((int)EROffsets.PlayerIns.TargetHandle) ?? 0;
         private int CurrentTargetArea => PlayerIns?.ReadInt32((int)EROffsets.PlayerIns.TargetArea) ?? 0;
@@ -492,7 +492,7 @@ namespace Erd_Tools
 
         public void GetTarget()
         {
-            TargetEnemyIns = null;
+            LastTargetEnemy = null;
             PHPointer worldBlockChr = CreateBasePointer(WorldChrMan.Resolve() + (int)EROffsets.WorldChrMan.WorldBlockChr);
             int targetHandle = CurrentTargetHandle; //Only read from memory once
             int targetArea = CurrentTargetArea;
@@ -509,9 +509,9 @@ namespace Erd_Tools
                     int enemyArea = enemyIns.ReadInt32((int)EROffsets.EnemyIns.EnemyArea);
 
                     if (targetHandle == enemyHandle && targetArea == enemyArea)
-                        TargetEnemyIns = enemyIns;
+                        LastTargetEnemy = new EREnemy(enemyIns, this);
 
-                    if (TargetEnemyIns != null)
+                    if (LastTargetEnemy != null)
                         return;
                 }
 
@@ -524,7 +524,7 @@ namespace Erd_Tools
 
             TryGetEnemy(targetHandle, targetArea, (int)EROffsets.WorldChrMan.ChrSet1);
 
-            if (TargetEnemyIns != null)
+            if (LastTargetEnemy != null)
                 return;
 
             TryGetEnemy(targetHandle, targetArea, (int)EROffsets.WorldChrMan.ChrSet2);
@@ -541,9 +541,9 @@ namespace Erd_Tools
                 int enemyHandle = chrSet1.ReadInt32(0x78 + (i * 0x10));
                 int enemyArea = chrSet1.ReadInt32(0x78 + 4 + (i * 0x10));
                 if (targetHandle == enemyHandle && targetArea == enemyArea)
-                    TargetEnemyIns = CreateChildPointer(chrSet1, 0x78 + 8 + (i * 0x10));
+                    LastTargetEnemy = new EREnemy(CreateChildPointer(chrSet1, 0x78 + 8 + (i * 0x10)), this);
 
-                if (TargetEnemyIns != null)
+                if (LastTargetEnemy != null)
                     return;
             }
         }
