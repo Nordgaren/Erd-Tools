@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace Erd_Tools
+namespace Erd_Tools.Utils
 {
     internal static class User32
     {

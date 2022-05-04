@@ -1,4 +1,5 @@
-﻿using PropertyHook;
+﻿using Erd_Tools.Utils;
+using PropertyHook;
 using SoulsFormats;
 using System;
 using System.Collections.Generic;

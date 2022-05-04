@@ -3,7 +3,7 @@ using System.IO;
 using System.Reflection;
 using System.Text.RegularExpressions;
 
-namespace Erd_Tools
+namespace Erd_Tools.Utils
 {
     internal static class Util
     {
