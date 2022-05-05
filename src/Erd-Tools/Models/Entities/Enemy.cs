@@ -32,9 +32,9 @@ namespace Erd_Tools.Models
         private PHPointer _targetEnemyResistance;
         private PHPointer _targetEnemyStagger;
 
-        public int TargetHandle => _targetEnemyIns.ReadInt32((int)Offsets.EnemyIns.EnemyHandle);
-        public string TargetModel => _targetEnemyData.ReadString((int)Offsets.EnemyData.Model, Encoding.Unicode, 0x10);
-        public string TargetName => _targetEnemyData.ReadString((int)Offsets.EnemyData.Name, Encoding.Unicode, 0x28);
+        public int EnemyHandle => _targetEnemyIns.ReadInt32((int)Offsets.EnemyIns.EnemyHandle);
+        public string EnemyModel => _targetEnemyData.ReadString((int)Offsets.EnemyData.Model, Encoding.Unicode, 0x10);
+        public string EnemyName => _targetEnemyData.ReadString((int)Offsets.EnemyData.Name, Encoding.Unicode, 0x28);
 
         public int TargetChrType
         {

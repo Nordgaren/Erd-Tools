@@ -16,7 +16,6 @@ using SoulsFormats;
 using System.Threading.Tasks;
 using System.Threading;
 using Erd_Tools.Models;
-using Erd_Tools.Models;
 using Erd_Tools.Utils;
 
 namespace Erd_Tools
@@ -487,7 +486,7 @@ namespace Erd_Tools
         private int CurrentTargetArea => PlayerIns?.ReadInt32((int)Offsets.PlayerIns.TargetArea) ?? 0;
         public void UpdateLastEnemy()
         {
-            if (CurrentTargetHandle == -1 || CurrentTargetHandle == LastTargetEnemy.TargetHandle)
+            if (CurrentTargetHandle == -1 || CurrentTargetHandle == LastTargetEnemy.EnemyHandle)
                 return;
 
             GetTarget();

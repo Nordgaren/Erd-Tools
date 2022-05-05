@@ -149,56 +149,77 @@
 
         public enum EnemyIns
         {
-            EnemyHandle = 0x8,
-            EnemyArea = 0xC,
-            NpcParam = 0x60,
-            ChrType = 0x68,
-            ModuleBase = 0x190
+            EnemyHandle = 0x8,  //int EnemyHandle
+            EnemyArea = 0xC,    //int EnemyArea
+            EnemyCtrl = 0x58,   //IntPtr EnemyCtrl
+            NpcParam = 0x60,    //int NpcParamID
+            ModelNumber = 0x64, //int ModelNumber
+            ChrType = 0x68,     //int ChrType
+            TeamType = 0x190,   //byte TeamType;
+            ModuleBase = 0x190  //IntPtr ModuleBase
         }
 
         public enum ModuleBase
         {
-            EnemyData = 0x0,
-            ResistenceData = 0x20,
-            StaggerData = 0x40
+            EnemyData = 0x0,        //IntPtr EnemyData
+            ResistenceData = 0x20,  //IntPtr ResistanceData
+            StaggerData = 0x40,     //IntPtr StaggerData
+            PhysicsData = 0x68      //IntPtr PhysicsData
         }
 
         public enum EnemyData
         {
-            Model = 0xC8,
-            Hp = 0x138,
-            HpMax = 0x140,
-            Fp = 0x148,
-            FpMax = 0x14C,
-            Stam = 0x154,
-            StamMax = 0x158,
-            Name = 0x1A0
+            Model = 0xC8,       //UnicodeString[16] Model
+            Hp = 0x138,         //int Hp
+            HpMax = 0x13C,      //int HpMax
+            HpMax2 = 0x140,     //int HpMax
+            Fp = 0x148,         //int Fp
+            FpMax = 0x14C,      //int FpMax
+            FpBase = 0x150,     //int FpBase
+            Stam = 0x154,       //int Stam
+            StamMax = 0x158,    //int StamMax
+            StamBase = 0x15C,   //int StamBase
+            Name = 0x1A0        //UnicodeString[20]
 
         }
 
         public enum ResistenceData
         {
-            Poison = 0x10,
-            Rot = 0x14,
-            Bleed = 0x18,
-            Blight = 0x1C,
-            Frost = 0x20,
-            Sleep = 0x24,
-            Madness = 0x28,
-            PoisonMax = 0x2C,
-            RotMax = 0x30,
-            BleedMax = 0x34,
-            BlightMax = 0x38,
-            FrostMax = 0x3C,
-            SleepMax = 0x40,
-            MadnessMax = 0x44   
+            Poison = 0x10,      //int Poison
+            Rot = 0x14,         //int Rot
+            Bleed = 0x18,       //int Bleed
+            Blight = 0x1C,      //int Blight
+            Frost = 0x20,       //int Frost
+            Sleep = 0x24,       //int Sleep
+            Madness = 0x28,     //int Madness
+            PoisonMax = 0x2C,   //int PoisonMax
+            RotMax = 0x30,      //int RotMax
+            BleedMax = 0x34,    //int BleedMax
+            BlightMax = 0x38,   //int BlightMax
+            FrostMax = 0x3C,    //int FrostMax
+            SleepMax = 0x40,    //int SleepMax
+            MadnessMax = 0x44,  //int MadnessMax
+            PoisonMod = 0x80,   //float PoisonMod
+            RotMod = 0x84,      //float RotMod
+            BleedMod = 0x88,    //float BleedMod
+            BlightMod = 0x8C,   //float BlightMod
+            ForstMod = 0x90,    //float FrostMod
+            SleepMod = 0x94,    //float SleepMod
+            MadnessMod = 0x98,  //float MadnessMod
+            PoisonMul = 0x9C,   //float PoisonMul
+            RotMul = 0xA0,      //float RotMul
+            BleedMul = 0xA4,    //float BleedMul
+            BlightMul = 0xA8,   //float BlightMul
+            ForstMul = 0xAC,    //float FrostMul
+            SleepMul = 0xB0,    //float SleepMul
+            MadnessMul = 0xB4,  //float MadnessMul
         }
 
         public enum StaggerData
         {
-            Stagger = 0x10,
-            StaggerMax = 0x14,
-            ResetTime = 0x1C
+            Stagger = 0x10,     //float Stagger
+            StaggerMax = 0x14,  //float StaggerMax
+            ResetTime = 0x1C    //float ResetTimer
         }
 
         public const int PlayerInsOffset = 0x18468;
