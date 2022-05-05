@@ -482,19 +482,18 @@ namespace Erd_Tools
 
         private Enemy? LastTargetEnemy { get; set; }
 
-        private int CurrentTargetHandle => PlayerIns?.ReadInt32((int)Offsets.PlayerIns.TargetHandle) ?? 0;
-        private int CurrentTargetArea => PlayerIns?.ReadInt32((int)Offsets.PlayerIns.TargetArea) ?? 0;
+        public int CurrentTargetHandle => PlayerIns?.ReadInt32((int)Offsets.PlayerIns.TargetHandle) ?? 0;
+        public int CurrentTargetArea => PlayerIns?.ReadInt32((int)Offsets.PlayerIns.TargetArea) ?? 0;
         public void UpdateLastEnemy()
         {
-            if (CurrentTargetHandle == -1 || CurrentTargetHandle == LastTargetEnemy.EnemyHandle)
+            if (CurrentTargetHandle == -1 || CurrentTargetHandle == LastTargetEnemy?.Handle)
                 return;
 
             GetTarget();
         }
 
-        public void GetTarget()
+        public Enemy GetTarget()
         {
-            LastTargetEnemy = null;
             PHPointer worldBlockChr = CreateBasePointer(WorldChrMan.Resolve() + (int)Offsets.WorldChrMan.WorldBlockChr);
             int targetHandle = CurrentTargetHandle; //Only read from memory once
             int targetArea = CurrentTargetArea;
@@ -511,10 +510,8 @@ namespace Erd_Tools
                     int enemyArea = enemyIns.ReadInt32((int)Offsets.EnemyIns.EnemyArea);
 
                     if (targetHandle == enemyHandle && targetArea == enemyArea)
-                        LastTargetEnemy = new Enemy(enemyIns, this);
+                        return new Enemy(enemyIns, this);
 
-                    if (LastTargetEnemy != null)
-                        return;
                 }
 
                 long assertVal = worldBlockChr.ReadInt64(0x80);
@@ -524,16 +521,16 @@ namespace Erd_Tools
                     break;
             }
 
-            TryGetEnemy(targetHandle, targetArea, (int)Offsets.WorldChrMan.ChrSet1);
+            Enemy lastTargetEnemy = TryGetEnemy(targetHandle, targetArea, (int)Offsets.WorldChrMan.ChrSet1);
 
-            if (LastTargetEnemy != null)
-                return;
+            if (lastTargetEnemy != null)
+                return lastTargetEnemy;
 
-            TryGetEnemy(targetHandle, targetArea, (int)Offsets.WorldChrMan.ChrSet2);
+            return TryGetEnemy(targetHandle, targetArea, (int)Offsets.WorldChrMan.ChrSet2);
 
         }
 
-        public void TryGetEnemy(int targetHandle, int targetArea, int offset)
+        public Enemy TryGetEnemy(int targetHandle, int targetArea, int offset)
         {
             PHPointer chrSet1 = CreateChildPointer(WorldChrMan, offset);
             int numEntries1 = chrSet1.ReadInt32((int)Offsets.ChrSet.NumEntries);
@@ -543,11 +540,10 @@ namespace Erd_Tools
                 int enemyHandle = chrSet1.ReadInt32(0x78 + (i * 0x10));
                 int enemyArea = chrSet1.ReadInt32(0x78 + 4 + (i * 0x10));
                 if (targetHandle == enemyHandle && targetArea == enemyArea)
-                    LastTargetEnemy = new Enemy(CreateChildPointer(chrSet1, 0x78 + 8 + (i * 0x10)), this);
-
-                if (LastTargetEnemy != null)
-                    return;
+                    return new Enemy(CreateChildPointer(chrSet1, 0x78 + 8 + (i * 0x10)), this);
             }
+
+            return null;
         }
 
         #endregion

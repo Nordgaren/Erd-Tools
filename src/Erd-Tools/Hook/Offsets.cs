@@ -149,77 +149,238 @@
 
         public enum EnemyIns
         {
-            EnemyHandle = 0x8,  //int EnemyHandle
-            EnemyArea = 0xC,    //int EnemyArea
-            EnemyCtrl = 0x58,   //IntPtr EnemyCtrl
-            NpcParam = 0x60,    //int NpcParamID
-            ModelNumber = 0x64, //int ModelNumber
-            ChrType = 0x68,     //int ChrType
-            TeamType = 0x190,   //byte TeamType;
-            ModuleBase = 0x190  //IntPtr ModuleBase
+            /// <summary>
+            /// int EnemyHandle
+            /// </summary>
+            EnemyHandle = 0x8, 
+            /// <summary>
+            /// int EnemyArea
+            /// </summary>
+            EnemyArea = 0xC,   
+            /// <summary>
+            /// IntPtr EnemyCtrl
+            /// </summary>
+            EnemyCtrl = 0x58,   
+            /// <summary>
+            /// int NpcParamID
+            /// </summary>
+            NpcParam = 0x60,  
+            /// <summary>
+            /// int ModelNumber
+            /// </summary>
+            ModelNumber = 0x64, 
+            /// <summary>
+            /// int ChrType
+            /// </summary>
+            ChrType = 0x68,     
+            /// <summary>
+            /// byte TeamType
+            /// </summary>
+            TeamType = 0x6C,
+            /// <summary>
+            /// IntPtr ModuleBase
+            /// </summary>
+            ModuleBase = 0x190 
         }
 
         public enum ModuleBase
         {
-            EnemyData = 0x0,        //IntPtr EnemyData
-            ResistenceData = 0x20,  //IntPtr ResistanceData
-            StaggerData = 0x40,     //IntPtr StaggerData
-            PhysicsData = 0x68      //IntPtr PhysicsData
+            /// <summary>
+            /// IntPtr EnemyData
+            /// </summary>
+            EnemyData = 0x0,
+            /// <summary>
+            /// IntPtr ResistanceData
+            /// </summary>
+            ResistenceData = 0x20,
+            /// <summary>
+            /// IntPtr StaggerData
+            /// </summary>
+            StaggerData = 0x40,   
+            /// <summary>
+            /// IntPtr PhysicsData
+            /// </summary>
+            PhysicsData = 0x68  
         }
 
         public enum EnemyData
         {
-            Model = 0xC8,       //UnicodeString[16] Model
-            Hp = 0x138,         //int Hp
-            HpMax = 0x13C,      //int HpMax
-            HpMax2 = 0x140,     //int HpMax
-            Fp = 0x148,         //int Fp
-            FpMax = 0x14C,      //int FpMax
-            FpBase = 0x150,     //int FpBase
-            Stam = 0x154,       //int Stam
-            StamMax = 0x158,    //int StamMax
-            StamBase = 0x15C,   //int StamBase
-            Name = 0x1A0        //UnicodeString[20]
-
+            /// <summary>
+            /// UnicodeString[16] Model
+            /// </summary>
+            Model = 0xC8, 
+            /// <summary>
+            /// int Hp
+            /// </summary>
+            Hp = 0x138,
+            /// <summary>
+            /// int HpMax
+            /// </summary>
+            HpMax = 0x140,  
+            /// <summary>
+            /// int HpBase
+            /// </summary>
+            HpBase = 0x144,
+            /// <summary>
+            /// int Fp
+            /// </summary>
+            Fp = 0x148, 
+            /// <summary>
+            /// int FpMax
+            /// </summary>
+            FpMax = 0x14C, 
+            /// <summary>
+            /// int FpBase
+            /// </summary>
+            FpBase = 0x150, 
+            /// <summary>
+            /// int Stam
+            /// </summary>
+            Stam = 0x154, 
+            /// <summary>
+            /// int StamMax
+            /// </summary>
+            StamMax = 0x158, 
+            /// <summary>
+            /// int StamBase
+            /// </summary>
+            StamBase = 0x15C,
+            /// <summary>
+            /// UnicodeString[20]
+            /// </summary>
+            Name = 0x1A0 
         }
 
         public enum ResistenceData
         {
-            Poison = 0x10,      //int Poison
-            Rot = 0x14,         //int Rot
-            Bleed = 0x18,       //int Bleed
-            Blight = 0x1C,      //int Blight
-            Frost = 0x20,       //int Frost
-            Sleep = 0x24,       //int Sleep
-            Madness = 0x28,     //int Madness
-            PoisonMax = 0x2C,   //int PoisonMax
-            RotMax = 0x30,      //int RotMax
-            BleedMax = 0x34,    //int BleedMax
-            BlightMax = 0x38,   //int BlightMax
-            FrostMax = 0x3C,    //int FrostMax
-            SleepMax = 0x40,    //int SleepMax
-            MadnessMax = 0x44,  //int MadnessMax
-            PoisonMod = 0x80,   //float PoisonMod
-            RotMod = 0x84,      //float RotMod
-            BleedMod = 0x88,    //float BleedMod
-            BlightMod = 0x8C,   //float BlightMod
-            ForstMod = 0x90,    //float FrostMod
-            SleepMod = 0x94,    //float SleepMod
-            MadnessMod = 0x98,  //float MadnessMod
-            PoisonMul = 0x9C,   //float PoisonMul
-            RotMul = 0xA0,      //float RotMul
-            BleedMul = 0xA4,    //float BleedMul
-            BlightMul = 0xA8,   //float BlightMul
-            ForstMul = 0xAC,    //float FrostMul
-            SleepMul = 0xB0,    //float SleepMul
-            MadnessMul = 0xB4,  //float MadnessMul
+            /// <summary>
+            /// int Poison
+            /// </summary>
+            Poison = 0x10,  
+            /// <summary>
+            /// int Rot
+            /// </summary>
+            Rot = 0x14,
+            /// <summary>
+            /// int Bleed
+            /// </summary>
+            Bleed = 0x18, 
+            /// <summary>
+            /// int Blight
+            /// </summary>
+            Blight = 0x1C, 
+            /// <summary>
+            /// int Frost
+            /// </summary>
+            Frost = 0x20,     
+            /// <summary>
+            /// int Sleep
+            /// </summary>
+            Sleep = 0x24,     
+            /// <summary>
+            /// int Madness
+            /// </summary>
+            Madness = 0x28,   
+            /// <summary>
+            /// int PoisonMax
+            /// </summary>
+            PoisonMax = 0x2C, 
+            /// <summary>
+            /// int RotMax
+            /// </summary>
+            RotMax = 0x30,    
+            /// <summary>
+            /// int BleedMax
+            /// </summary>
+            BleedMax = 0x34,  
+            /// <summary>
+            /// int BlightMax
+            /// </summary>
+            BlightMax = 0x38, 
+            /// <summary>
+            /// int FrostMax
+            /// </summary>
+            FrostMax = 0x3C, 
+            /// <summary>
+            /// int SleepMax
+            /// </summary>
+            SleepMax = 0x40,  
+            /// <summary>
+            /// int MadnessMax
+            /// </summary>
+            MadnessMax = 0x44,
+            /// <summary>
+            /// float PoisonMod
+            /// </summary>
+            PoisonMod = 0x80, 
+            /// <summary>
+            /// float RotMod
+            /// </summary>
+            RotMod = 0x84,    
+            /// <summary>
+            /// float BleedMod
+            /// </summary>
+            BleedMod = 0x88,  
+            /// <summary>
+            /// float BlightMod
+            /// </summary>
+            BlightMod = 0x8C, 
+            /// <summary>
+            /// float FrostMod
+            /// </summary>
+            ForstMod = 0x90,  
+            /// <summary>
+            /// float SleepMod
+            /// </summary>
+            SleepMod = 0x94, 
+            /// <summary>
+            /// float MadnessMod
+            /// </summary>
+            MadnessMod = 0x98, 
+            /// <summary>
+            /// float PoisonMul
+            /// </summary>
+            PoisonMul = 0x9C,  
+            /// <summary>
+            /// float RotMul
+            /// </summary>
+            RotMul = 0xA0,  
+            /// <summary>
+            /// float BleedMul
+            /// </summary>
+            BleedMul = 0xA4,  
+            /// <summary>
+            /// float BlightMul
+            /// </summary>
+            BlightMul = 0xA8, 
+            /// <summary>
+            /// float FrostMul
+            /// </summary>
+            ForstMul = 0xAC,  
+            /// <summary>
+            /// float SleepMul
+            /// </summary>
+            SleepMul = 0xB0, 
+            /// <summary>
+            /// float MadnessMul
+            /// </summary>
+            MadnessMul = 0xB4, 
         }
 
         public enum StaggerData
         {
-            Stagger = 0x10,     //float Stagger
-            StaggerMax = 0x14,  //float StaggerMax
-            ResetTime = 0x1C    //float ResetTimer
+            /// <summary>
+            /// float Stagger
+            /// </summary>
+            Stagger = 0x10,
+            /// <summary>
+            /// float StaggerMax
+            /// </summary>
+            StaggerMax = 0x14,
+            /// <summary>
+            /// float ResetTimer
+            /// </summary>
+            ResetTime = 0x1C   
         }
 
         public const int PlayerInsOffset = 0x18468;
