@@ -7,7 +7,8 @@
   <FormatVersion>203</FormatVersion>
   <Fields>
     <Field Def="f32 lowerFpsThreshold = 23">
-      <Description>このFPSを下回ったら、ロードバランスレベルを1上げる</Description>
+      <DisplayName>lowerFpsThreshold - lowerFpsThreshold</DisplayName>
+      <Description>If it falls below this FPS, increase the load balance level by 1. - このFPSを下回ったら、ロードバランスレベルを1上げる</Description>
       <EditFlags>None</EditFlags>
       <Minimum>0</Minimum>
       <Maximum>60</Maximum>
@@ -15,7 +16,8 @@
       <UnkC8>基本設定</UnkC8>
     </Field>
     <Field Def="f32 upperFpsThreshold = 27">
-      <Description>このFPSを上回ったら、ロードバランスレベルを1下げる</Description>
+      <DisplayName>upperFpsThreshold - upperFpsThreshold</DisplayName>
+      <Description>If you exceed this FPS, lower the load balance level by 1. - このFPSを上回ったら、ロードバランスレベルを1下げる</Description>
       <EditFlags>None</EditFlags>
       <Minimum>0</Minimum>
       <Maximum>60</Maximum>
@@ -24,7 +26,8 @@
       <UnkC8>基本設定</UnkC8>
     </Field>
     <Field Def="u32 lowerFpsContinousCount = 5">
-      <Description>このフレーム連続してしきい値を下回ったら、レベルアップ</Description>
+      <DisplayName>lowerFpsContinousCount - lowerFpsContinousCount</DisplayName>
+      <Description>If this frame continues below the threshold, level up - このフレーム連続してしきい値を下回ったら、レベルアップ</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>999</Maximum>
@@ -32,7 +35,8 @@
       <UnkC8>基本設定</UnkC8>
     </Field>
     <Field Def="u32 upperFpsContinousCount = 20">
-      <Description>このフレーム連続してしきい値を上回ったら、レベルダウン</Description>
+      <DisplayName>upperFpsContinousCount - upperFpsContinousCount</DisplayName>
+      <Description>If the threshold is exceeded continuously for this frame, level down - このフレーム連続してしきい値を上回ったら、レベルダウン</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>999</Maximum>
@@ -40,7 +44,8 @@
       <UnkC8>基本設定</UnkC8>
     </Field>
     <Field Def="u32 downAfterChangeSleep = 30">
-      <Description>レベルダウン後のスリープフレームカウント</Description>
+      <DisplayName>downAfterChangeSleep - downAfterChangeSleep</DisplayName>
+      <Description>Sleep frame count after level down - レベルダウン後のスリープフレームカウント</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>999</Maximum>
@@ -48,7 +53,8 @@
       <UnkC8>基本設定</UnkC8>
     </Field>
     <Field Def="u32 upAfterChangeSleep = 10">
-      <Description>レベルアップ後のスリープフレームカウント</Description>
+      <DisplayName>upAfterChangeSleep - upAfterChangeSleep</DisplayName>
+      <Description>Sleep frame count after leveling up - レベルアップ後のスリープフレームカウント</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>999</Maximum>
@@ -56,8 +62,8 @@
       <UnkC8>基本設定</UnkC8>
     </Field>
     <Field Def="u8 postProcessLightShaft = 20">
-      <DisplayName>ライトシャフト</DisplayName>
-      <Description>フィルタのライトシャフト</Description>
+      <DisplayName>Light shaft - ライトシャフト</DisplayName>
+      <Description>Light shaft of filter - フィルタのライトシャフト</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -65,8 +71,8 @@
       <UnkC8>ポストプロセス</UnkC8>
     </Field>
     <Field Def="u8 postProcessBloom = 20">
-      <DisplayName>Bloom</DisplayName>
-      <Description>ブルーム</Description>
+      <DisplayName>Bloom - Bloom</DisplayName>
+      <Description>Bloom - ブルーム</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -74,8 +80,8 @@
       <UnkC8>ポストプロセス</UnkC8>
     </Field>
     <Field Def="u8 postProcessGlow = 20">
-      <DisplayName>Glow</DisplayName>
-      <Description>グロー</Description>
+      <DisplayName>Glow - Glow</DisplayName>
+      <Description>Glow - グロー</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -83,8 +89,8 @@
       <UnkC8>ポストプロセス</UnkC8>
     </Field>
     <Field Def="u8 postProcessAA = 20">
-      <DisplayName>AA</DisplayName>
-      <Description>アンチエイリアス</Description>
+      <DisplayName>AA - AA</DisplayName>
+      <Description>Antialiasing - アンチエイリアス</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -92,8 +98,8 @@
       <UnkC8>ポストプロセス</UnkC8>
     </Field>
     <Field Def="u8 postProcessSSAO = 20">
-      <DisplayName>SSAO</DisplayName>
-      <Description>SSAO</Description>
+      <DisplayName>SSAO - SSAO</DisplayName>
+      <Description>SSAO - SSAO</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -101,8 +107,8 @@
       <UnkC8>ポストプロセス</UnkC8>
     </Field>
     <Field Def="u8 postProcessDOF = 20">
-      <DisplayName>DOF</DisplayName>
-      <Description>DOF</Description>
+      <DisplayName>DOF - DOF</DisplayName>
+      <Description>DOF - DOF</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -110,8 +116,8 @@
       <UnkC8>ポストプロセス</UnkC8>
     </Field>
     <Field Def="u8 postProcessMotionBlur = 20">
-      <DisplayName>MotionBlur</DisplayName>
-      <Description>MotionBlur</Description>
+      <DisplayName>Motion Blur - MotionBlur</DisplayName>
+      <Description>Motion Blur - MotionBlur</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -119,8 +125,8 @@
       <UnkC8>ポストプロセス</UnkC8>
     </Field>
     <Field Def="u8 postProcessMotionBlurIteration = 20">
-      <DisplayName>MotionBlurIteration</DisplayName>
-      <Description>MotionBlurのイテレーション回数を下げる</Description>
+      <DisplayName>MotionBlurIteration - MotionBlurIteration</DisplayName>
+      <Description>Reduce the number of Motion Blur iterations - MotionBlurのイテレーション回数を下げる</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -128,15 +134,15 @@
       <UnkC8>ポストプロセス</UnkC8>
     </Field>
     <Field Def="dummy8 reserve0[1]">
-      <DisplayName>予備</DisplayName>
-      <Description>予備</Description>
+      <DisplayName>Reserve - 予備</DisplayName>
+      <Description>Reserve - 予備</Description>
       <DisplayFormat>%u</DisplayFormat>
       <SortID>108</SortID>
       <UnkC8>その他</UnkC8>
     </Field>
     <Field Def="u8 shadowBlur = 20">
-      <DisplayName>Shadow Blur</DisplayName>
-      <Description>影のブラーを切る</Description>
+      <DisplayName>Shadow Blur - Shadow Blur</DisplayName>
+      <Description>Cut the shadow blur - 影のブラーを切る</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -144,8 +150,8 @@
       <UnkC8>シャドウ</UnkC8>
     </Field>
     <Field Def="u8 sfxParticleHalf = 20">
-      <DisplayName>SFXのエミット回り</DisplayName>
-      <Description>エミット間隔、エミット数、LOD距離をグラフィックスコンフィグの半分に</Description>
+      <DisplayName>Around the SFX Emit - SFXのエミット回り</DisplayName>
+      <Description>Emit interval, number of emits, LOD distance halved in graphics config - エミット間隔、エミット数、LOD距離をグラフィックスコンフィグの半分に</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -153,8 +159,8 @@
       <UnkC8>SFX</UnkC8>
     </Field>
     <Field Def="u8 sfxReflection = 20">
-      <DisplayName>SFXの反射</DisplayName>
-      <Description>反射シーンSFXをオミット</Description>
+      <DisplayName>SFX reflection - SFXの反射</DisplayName>
+      <Description>Omit the reflection scene SFX - 反射シーンSFXをオミット</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -162,8 +168,8 @@
       <UnkC8>SFX</UnkC8>
     </Field>
     <Field Def="u8 sfxWaterInteraction = 20">
-      <DisplayName>水面インタラクション</DisplayName>
-      <Description>水面インタラクトSFXをオミット</Description>
+      <DisplayName>Water interaction - 水面インタラクション</DisplayName>
+      <Description>Omit water surface interact SFX - 水面インタラクトSFXをオミット</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -171,8 +177,8 @@
       <UnkC8>SFX</UnkC8>
     </Field>
     <Field Def="u8 sfxGlow = 20">
-      <DisplayName>SFXのグロー</DisplayName>
-      <Description>SFXでかけてるGlowをオミット</Description>
+      <DisplayName>SFX glow - SFXのグロー</DisplayName>
+      <Description>Omit Glow playing with SFX - SFXでかけてるGlowをオミット</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -180,8 +186,8 @@
       <UnkC8>SFX</UnkC8>
     </Field>
     <Field Def="u8 sfxDistortion = 20">
-      <DisplayName>SFXの歪み</DisplayName>
-      <Description>SFXでかけてる歪みのオミット</Description>
+      <DisplayName>SFX distortion - SFXの歪み</DisplayName>
+      <Description>Omit of distortion applied by SFX - SFXでかけてる歪みのオミット</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -189,8 +195,8 @@
       <UnkC8>SFX</UnkC8>
     </Field>
     <Field Def="u8 sftSoftSprite = 20">
-      <DisplayName>ソフトスプライト</DisplayName>
-      <Description>SFXでかけてるソフトスプライトのオミット</Description>
+      <DisplayName>Soft sprite - ソフトスプライト</DisplayName>
+      <Description>Soft sprite omit with SFX - SFXでかけてるソフトスプライトのオミット</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -198,8 +204,8 @@
       <UnkC8>SFX</UnkC8>
     </Field>
     <Field Def="u8 sfxLightShaft = 20">
-      <DisplayName>ライトシャフト</DisplayName>
-      <Description>SFXのライトシャフトのオミット</Description>
+      <DisplayName>Light shaft - ライトシャフト</DisplayName>
+      <Description>SFX Light Shaft Omit - SFXのライトシャフトのオミット</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -207,8 +213,8 @@
       <UnkC8>SFX</UnkC8>
     </Field>
     <Field Def="u8 sfxScaleRenderDistanceScale = 20">
-      <DisplayName>動的に縮小バッファに登録されるエフェクトの距離判定にスケール</DisplayName>
-      <Description>SFXの距離で動的に縮小バッファに登録されるエフェクトの距離判定にスケール</Description>
+      <DisplayName>Scale to the distance judgment of the effect dynamically registered in the reduction buffer - 動的に縮小バッファに登録されるエフェクトの距離判定にスケール</DisplayName>
+      <Description>Scale to the distance judgment of the effect dynamically registered in the reduction buffer by the distance of SFX - SFXの距離で動的に縮小バッファに登録されるエフェクトの距離判定にスケール</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -216,8 +222,8 @@
       <UnkC8>SFX</UnkC8>
     </Field>
     <Field Def="u8 dynamicResolution = 1">
-      <DisplayName>動的解像度</DisplayName>
-      <Description>動的解像度</Description>
+      <DisplayName>Dynamic resolution - 動的解像度</DisplayName>
+      <Description>Dynamic resolution - 動的解像度</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -225,8 +231,8 @@
       <UnkC8>その他</UnkC8>
     </Field>
     <Field Def="u8 shadowCascade0ResolutionHalf">
-      <DisplayName>Shadow Cascade0 ResolutionHalf</DisplayName>
-      <Description>影（カスケード0）の解像度を半分に下げる</Description>
+      <DisplayName>Shadow Cascade0 Resolution Half - Shadow Cascade0 ResolutionHalf</DisplayName>
+      <Description>Cut the shadow (cascade 0) resolution in half - 影（カスケード0）の解像度を半分に下げる</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -234,8 +240,8 @@
       <UnkC8>シャドウ</UnkC8>
     </Field>
     <Field Def="u8 shadowCascade1ResolutionHalf = 13">
-      <DisplayName>Shadow Cascade1 ResolutionHalf</DisplayName>
-      <Description>影（カスケード1）の解像度を半分に下げる</Description>
+      <DisplayName>Shadow Cascade1 Resolution Half - Shadow Cascade1 ResolutionHalf</DisplayName>
+      <Description>Cut the shadow (cascade 1) resolution in half - 影（カスケード1）の解像度を半分に下げる</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -243,8 +249,8 @@
       <UnkC8>シャドウ</UnkC8>
     </Field>
     <Field Def="u8 chrWetDisablePlayer = 21">
-      <DisplayName>ローカルプレイヤー</DisplayName>
-      <Description>ローカルプレイヤーの水濡れ処理を切る</Description>
+      <DisplayName>Local player - ローカルプレイヤー</DisplayName>
+      <Description>Turn off the water wetting process for local players - ローカルプレイヤーの水濡れ処理を切る</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -252,8 +258,8 @@
       <UnkC8>キャラ水濡れOFF</UnkC8>
     </Field>
     <Field Def="u8 chrWetDisableRemotePlayer = 21">
-      <DisplayName>リモートプレイヤー</DisplayName>
-      <Description>リモートプレイヤーの水濡れ処理を切る</Description>
+      <DisplayName>Remote player - リモートプレイヤー</DisplayName>
+      <Description>Turn off the water wetting process of the remote player - リモートプレイヤーの水濡れ処理を切る</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -261,8 +267,8 @@
       <UnkC8>キャラ水濡れOFF</UnkC8>
     </Field>
     <Field Def="u8 chrWetDisableEnemy = 21">
-      <DisplayName>敵キャラ</DisplayName>
-      <Description>敵キャラの水濡れ処理を切る</Description>
+      <DisplayName>Enemy character - 敵キャラ</DisplayName>
+      <Description>Turn off the water wetting process of enemy characters - 敵キャラの水濡れ処理を切る</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>21</Maximum>
@@ -270,8 +276,8 @@
       <UnkC8>キャラ水濡れOFF</UnkC8>
     </Field>
     <Field Def="u8 dynamicResolutionPercentageMin = 100">
-      <DisplayName>解像度引き下げ 下限(%)</DisplayName>
-      <Description>解像度引き下げ 下限(%)</Description>
+      <DisplayName>Resolution reduction lower limit (%) - 解像度引き下げ 下限(%)</DisplayName>
+      <Description>Resolution reduction lower limit (%) - 解像度引き下げ 下限(%)</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>100</Maximum>
@@ -279,8 +285,8 @@
       <UnkC8>動的解像度</UnkC8>
     </Field>
     <Field Def="u8 dynamicResolutionPercentageMax = 100">
-      <DisplayName>解像度引き下げ 上限(%)</DisplayName>
-      <Description>解像度引き下げ 上限(%)</Description>
+      <DisplayName>Resolution reduction upper limit (%) - 解像度引き下げ 上限(%)</DisplayName>
+      <Description>Resolution reduction upper limit (%) - 解像度引き下げ 上限(%)</Description>
       <DisplayFormat>%u</DisplayFormat>
       <EditFlags>None</EditFlags>
       <Maximum>100</Maximum>
@@ -288,8 +294,8 @@
       <UnkC8>動的解像度</UnkC8>
     </Field>
     <Field Def="dummy8 reserve1[30]">
-      <DisplayName>予備</DisplayName>
-      <Description>予備</Description>
+      <DisplayName>Reserve - 予備</DisplayName>
+      <Description>Reserve - 予備</Description>
       <SortID>124</SortID>
       <UnkC8>その他</UnkC8>
     </Field>
