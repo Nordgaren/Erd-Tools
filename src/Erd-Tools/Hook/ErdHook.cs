@@ -275,7 +275,35 @@ namespace Erd_Tools
             EquipParamWeapon.RestoreParam();
             EquipParamGem.RestoreParam();
         }
+        private async Task ReadParams()
+        {
+            List<Task> tasks = new List<Task>();
 
+            foreach (ItemCategory category in ItemCategory.All)
+            {
+                tasks.Add(Task.Run(() => SetupItems(category)));
+            }
+
+            Task setupItems = Task.WhenAll(tasks);
+            await setupItems;
+            if (setupItems.Exception != null)
+                throw setupItems.Exception;
+
+            tasks.Clear();
+
+            foreach (ItemCategory category in ItemCategory.All)
+            {
+                if (category.Category == Category.Weapons)
+                    tasks.Add(Task.Run(() => SetupGems(category)));
+            }
+
+            Task setupGems = Task.WhenAll(tasks);
+            await setupGems;
+            if (setupGems.Exception != null)
+                throw setupGems.Exception;
+
+            tasks.Clear();
+        }
 
         #endregion
 
@@ -312,44 +340,6 @@ namespace Erd_Tools
             }
 
             return itemEventDictionary;
-        }
-        private async Task ReadParams()
-        {
-            List<Task> tasks = new List<Task>();
-
-            foreach (ItemCategory category in ItemCategory.All)
-            {
-                tasks.Add(Task.Run(() => SetupItems(category)));
-            }
-
-            Task setupItems = Task.WhenAll(tasks);
-            await setupItems;
-            if (setupItems.Exception != null)
-                throw setupItems.Exception;
-
-            tasks.Clear();
-
-            foreach (ItemCategory category in ItemCategory.All)
-            {
-                if (category.Category == Category.Weapons)
-                    tasks.Add(Task.Run(() => SetupGems(category)));
-            }
-
-            Task setupGems = Task.WhenAll(tasks);
-            await setupGems;
-            if (setupGems.Exception != null)
-                throw setupGems.Exception;
-
-            tasks.Clear();
-        }
-
-        private static async Task AwaitTasks(List<Task> tasks)
-        {
-            for (int i = tasks.Count - 1; i >= 0; i--)
-            {
-                await tasks[i];
-                tasks.RemoveAt(i);
-            }
         }
 
         private void SetupGems(ItemCategory category)
@@ -422,23 +412,21 @@ namespace Erd_Tools
         }
 
         List<InventoryEntry>? Inventory;
-        public int InventoryCount => PlayerGameData.ReadInt32((int)Offsets.PlayerGameDataStruct.InventoryCount);
-        public int LastInventoryCount { get; set; }
+        public int InventoryEntries => PlayerGameData.ReadInt32((int)Offsets.PlayerGameDataStruct.InventoryCount);
+        //public int LastInventoryCount => GetInventoryCount();
 
         public IEnumerable GetInventory()
         {
-            if (InventoryCount != LastInventoryCount)
-                GetInventoryList();
-
+            Inventory = GetInventoryList();
             return Inventory;
         }
-        private void GetInventoryList()
+        private List<InventoryEntry> GetInventoryList()
         {
-            Inventory = new List<InventoryEntry>();
+            List<InventoryEntry> inventory = new List<InventoryEntry>();
 
-            byte[] bytes = PlayerInventory.ReadBytes(0x0, (uint)InventoryCount * Offsets.PlayInventoryEntrySize);
+            byte[] bytes = PlayerInventory.ReadBytes(0x0, (uint)InventoryEntries * Offsets.PlayInventoryEntrySize);
 
-            for (int i = 0; i < InventoryCount; i++)
+            for (int i = 0; i < InventoryEntries; i++)
             {
                 byte[] entry = new byte[Offsets.PlayInventoryEntrySize];
                 Array.Copy(bytes, i * Offsets.PlayInventoryEntrySize, entry, 0, entry.Length);
@@ -446,15 +434,34 @@ namespace Erd_Tools
                 if (BitConverter.ToInt32(entry, (int)Offsets.InventoryEntry.ItemID) == -1)
                     continue;
 
-                Inventory.Add(new InventoryEntry(entry, this));
+                inventory.Add(new InventoryEntry(entry, this));
             }
-            LastInventoryCount = Inventory.Count;
+
+            return inventory;
         }
+
+        //private int GetInventoryCount()
+        //{
+        //    int count = 0;
+
+        //    byte[] bytes = PlayerInventory.ReadBytes(0x0, (uint)InventoryEntries * Offsets.PlayInventoryEntrySize);
+
+        //    for (int i = 0; i < InventoryEntries; i++)
+        //    {
+        //        byte[] entry = new byte[Offsets.PlayInventoryEntrySize];
+        //        Array.Copy(bytes, i * Offsets.PlayInventoryEntrySize, entry, 0, entry.Length);
+
+        //        if (BitConverter.ToInt32(entry, (int)Offsets.InventoryEntry.ItemID) == -1)
+        //            continue;
+
+        //        count++;
+        //    }
+        //    return count;
+        //}
 
         public void ResetInventory()
         {
             Inventory = new List<InventoryEntry>();
-            LastInventoryCount = 0;
         }
         #endregion
 
