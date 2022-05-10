@@ -306,7 +306,10 @@ namespace Erd_Tools
         }
 
         #endregion
-
+        /// <summary>
+        /// Sets the event flag in game by calling the "Set Event Flag" function.
+        /// </summary>
+        /// <param name="flag"></param>
         public void SetEventFlag(int flag)
         {
             IntPtr idPointer = GetPrefferedIntPtr(sizeof(int));

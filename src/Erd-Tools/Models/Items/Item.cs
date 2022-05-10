@@ -47,10 +47,11 @@ namespace Erd_Tools.Models
         public virtual void SetupItem(Param? param)
         {
             if (param == null)
-                throw new ArgumentNullException(nameof(param)); 
+                throw new ArgumentNullException(nameof(param));
 
             if (!param.OffsetDict.ContainsKey(ID))
-                throw new Exception($"{Name} does not have a param entry in this version of Elden Ring!");
+                return;
+                //throw new Exception($"{Name} does not have a param entry in this version of Elden Ring!");
 
             byte bitfield;
             switch (ItemCategory)

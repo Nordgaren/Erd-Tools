@@ -94,7 +94,8 @@ namespace Erd_Tools.Models
             Infisible = (bitfield & (1 << 7)) == 0;
 
             if (!param.OffsetDict.ContainsKey(ID))
-                throw new Exception($"No offset present for {Name}");
+                return;
+                //throw new Exception($"No offset present for {Name}");
 
             Unique = BitConverter.ToInt32(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamWeapon.MaterialSetID) == 2200;
 
