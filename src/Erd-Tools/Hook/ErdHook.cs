@@ -116,8 +116,8 @@ namespace Erd_Tools
         {
             Params = GetParams();
             await ReadParams();
-            RaiseOnSetup();
             Setup = true;
+            RaiseOnSetup();
         }
 
         private void LogABunchOfStuff()
