@@ -3,6 +3,7 @@ using PropertyHook;
 using SoulsFormats;
 using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Text.RegularExpressions;
 using static SoulsFormats.PARAMDEF;
@@ -101,7 +102,7 @@ namespace Erd_Tools.Models
             if (otherParam == null)
                 throw new ArgumentNullException(nameof(otherParam));
 
-            return Name.CompareTo(otherParam.Name);
+            return string.Compare(Name, otherParam.Name, StringComparison.Ordinal);
         }
         public void RestoreParam()
         {
@@ -146,7 +147,8 @@ namespace Erd_Tools.Models
                     int bitOffset = field.BitSize;
                     DefType bitType = type == DefType.dummy8 ? DefType.u8 : type;
                     int bitLimit = ParamUtil.GetBitLimit(bitType);
-                    Fields.Add(new BitField(field, totalSize - size, bitOffset - 1));
+                    Fields.Add(GetBitField(field, totalSize, size, bitOffset));
+
 
                     for (; i < ParamDef.Fields.Count - 1; i++)
                     {
@@ -156,7 +158,7 @@ namespace Erd_Tools.Models
                             || (nextType == DefType.dummy8 ? DefType.u8 : nextType) != bitType)
                             break;
                         bitOffset += nextField.BitSize;
-                        Fields.Add(new BitField(nextField, totalSize - size, bitOffset - 1));
+                        Fields.Add(GetBitField(nextField, totalSize, size, bitOffset));
                     }
                     continue;
                 }
@@ -188,10 +190,32 @@ namespace Erd_Tools.Models
                 }
             }
         }
+        private static BitField GetBitField(PARAMDEF.Field field, int totalSize, int size, int bitOffset)
+        {
+
+            switch (field.DisplayType)
+            {
+                case DefType.u8:
+                case DefType.dummy8:
+                    return field.BitSize > 1
+                        ? new PartialByteField(field, totalSize - size, bitOffset - field.BitSize, field.BitSize)
+                        : new BitField(field, totalSize - size, bitOffset - 1);
+                case DefType.u16:
+                    return field.BitSize > 1 
+                        ? new PartialUShortField(field, totalSize - size, bitOffset - field.BitSize, field.BitSize) 
+                        : new BitField(field, totalSize - size, bitOffset - 1);
+                case DefType.u32:
+                    return field.BitSize > 1
+                        ? new PartialUIntField(field, totalSize - size, bitOffset - field.BitSize, field.BitSize)
+                        : new BitField(field, totalSize - size, bitOffset - 1);
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+        }
 
         public abstract class Field
         {
-            private PARAMDEF.Field _paramdefField;
+            private PARAMDEF.Field _paramdefField { get; }
             public DefType Type => _paramdefField.DisplayType;
             public string InternalName => _paramdefField.InternalName;
             public string DisplayName => _paramdefField.DisplayName;
@@ -236,6 +260,33 @@ namespace Erd_Tools.Models
             public BitField(PARAMDEF.Field field, int fieldOffset, int bitPosition) : base(field, fieldOffset)
             {
                 BitPosition = bitPosition;
+            }
+        }
+
+        public class PartialByteField : BitField
+        {
+            public int Width;
+            public PartialByteField(PARAMDEF.Field field, int fieldOffset, int bitPosition, int width) : base(field, fieldOffset, bitPosition)
+            {
+                Width = width;
+            }
+        }
+
+        public class PartialUShortField : BitField
+        {
+            public int Width;
+            public PartialUShortField(PARAMDEF.Field field, int fieldOffset, int bitPosition, int width) : base(field, fieldOffset, bitPosition)
+            {
+                Width = width;
+            }
+        }
+
+        public class PartialUIntField : BitField
+        {
+            public int Width;
+            public PartialUIntField(PARAMDEF.Field field, int fieldOffset, int bitPosition, int width) : base(field, fieldOffset, bitPosition)
+            {
+                Width = width;
             }
         }
 
