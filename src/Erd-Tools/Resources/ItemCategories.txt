@@ -12,6 +12,7 @@
 0x40000000 false Items/Goods/Consumables.txt Consumables
 0x40000000 false Items/Goods/CraftingMaterials.txt Crafting Materials
 0x40000000 false Items/Goods/KeyItems.txt Key Items
+0x40000000 false Items/Goods/CrystalTears.txt Crystal Tears
 0x40000000 false Items/Goods/Flasks.txt Flasks
 0x40000000 false Items/Goods/Ashes.txt Ashes
 0x40000000 false Items/Goods/Emotes.txt Emotes
