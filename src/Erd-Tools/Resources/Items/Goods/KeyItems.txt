@@ -91,6 +91,7 @@
 8197 Sewer-Gaol Key
 8198 Meeting Place Map
 8199 Discarded Palace Key
+8500 Crafting Kit
 8970 Iron Whetblade
 8971 Red-Hot Whetblade
 8972 Sanctified Whetblade

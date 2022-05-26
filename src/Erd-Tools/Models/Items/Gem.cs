@@ -15,7 +15,6 @@ namespace Erd_Tools.Models
         public short WeaponAttr;
         public List<Infusion> Infusions;
         public List<WeaponType> WeaponTypes = new List<WeaponType>();
-        public static Gem Default = new Gem("-1 None", Category.Gem, false);
 
         private void GetInfusions()
         {
@@ -48,6 +47,14 @@ namespace Erd_Tools.Models
         public override void SetupItem(Param param)
         {
             MaxQuantity = 1;
+
+            if (ID == -1)
+            {
+                WeaponTypes = Enum.GetValues(typeof(WeaponType)).Cast<WeaponType>().ToList();
+                Infusions = new List<Infusion>() { Infusion.Standard };
+                return;
+            }
+
             byte bitfield = param.Bytes[param.OffsetDict[ID] + (int)Offsets.EquipParamGem.IsDiscard];
             IsDrop = (bitfield & (1 << 1)) != 0;
             IsMultiplayerShare = (bitfield & (1 << 3)) == 0;
@@ -62,11 +69,6 @@ namespace Erd_Tools.Models
         public Gem(string config, Category category, bool showIDs) : base(config, category, showIDs)
         {
             All.Add(this);
-        }
-
-        static Gem()
-        {
-            Default.Infusions = new List<Infusion>() { Infusion.Standard };
         }
 
         public static List<WeaponType> Weapons = Enum.GetValues(typeof(WeaponType)).Cast<WeaponType>().ToList();

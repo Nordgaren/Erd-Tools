@@ -1,4 +1,5 @@
-﻿10000 Ash of War: Lion's Claw
+﻿-1 None
+10000 Ash of War: Lion's Claw
 10100 Ash of War: Impaling Thrust
 10200 Ash of War: Piercing Fang
 10300 Ash of War: Spinning Slash

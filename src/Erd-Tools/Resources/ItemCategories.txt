@@ -1,4 +1,4 @@
-﻿//Format: Item Category; 
+﻿//Format: Item Category; ShowIDs; Path/To/Items.txt; Category Name; 
 0x00000000 false Items/Weapons/MeleeWeapons.txt Melee Weapons
 0x00000000 false Items/Weapons/RangedWeapons.txt Ranged Weapons
 0x80000000 false Items/Gems.txt Gems
@@ -21,5 +21,5 @@
 0x40000000 false Items/Goods/Cookbooks.txt Cookbooks
 0x40000000 false Items/Goods/MerchantItems.txt Merchant Items
 0x40000000 false Items/Magic.txt Magic
-0x10000000 false Items/CutContent/Armor.txt Cut Content Armor
-0x20000000 false Items/CutContent/Talismans.txt Cut Content Talismans
+//0x10000000 false Items/CutContent/Armor.txt Cut Content Armor
+//0x20000000 false Items/CutContent/Talismans.txt Cut Content Talismans

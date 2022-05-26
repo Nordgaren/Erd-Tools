@@ -408,7 +408,7 @@ namespace Erd_Tools
 
             Kernel32.WriteBytes(Handle, itemInfo, itemInfobytes);
 
-            string asmString = Util.GetEmbededResource("Assembly.ItemGive.asm");
+            string asmString = Util.GetEmbededResource("Assembly.ItemGib.asm");
             string asm = string.Format(asmString, itemInfo.ToString("X2"), MapItemMan.Resolve(), ItemGive.Resolve() + Offsets.ItemGiveOffset);
             AsmExecute(asm);
             Free(itemInfo);

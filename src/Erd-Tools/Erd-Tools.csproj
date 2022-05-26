@@ -1821,7 +1821,7 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Assembly\DisableMapClose.asm" />
-    <EmbeddedResource Include="Assembly\ItemGive.asm" />
+    <EmbeddedResource Include="Assembly\ItemGib.asm" />
     <EmbeddedResource Include="Assembly\SaveParams.asm" />
     <EmbeddedResource Include="Assembly\SetEventFlag.asm" />
   </ItemGroup>

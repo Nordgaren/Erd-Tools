@@ -1,5 +1,6 @@
 ﻿using Erd_Tools.Utils;
 using System;
+using System.Linq;
 
 namespace Erd_Tools.Models
 {
@@ -81,7 +82,7 @@ namespace Erd_Tools.Models
         public Weapon(string config, Category category, bool showIDs) : base(config, category, showIDs)
         {
             RealID = Util.DeleteFromEnd(ID, 4);
-            DefaultGem = Gem.Default;
+            DefaultGem = Gem.All.FirstOrDefault(g => g.ID == -1);
         }
 
         public override void SetupItem(Param param)

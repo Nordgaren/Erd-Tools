@@ -1,4 +1,5 @@
 ﻿sub rsp,0x48
+xor r9d, r9d
 mov r8,0x{0:X2}		;Item Give Struct
 lea rdx,[r8+0x20]	
 mov r10,0x{1:X2}	;MapItemMan
