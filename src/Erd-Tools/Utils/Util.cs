@@ -2,6 +2,8 @@
 using System.IO;
 using System.Reflection;
 using System.Text.RegularExpressions;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace Erd_Tools.Utils
 {
@@ -106,6 +108,14 @@ namespace Erd_Tools.Utils
         public static string[] RegexSplit(string source, string pattern)
         {
             return Regex.Split(source, pattern);
+        }
+
+        public static T? DeserializeXml<T>(string filePath)
+        {
+            var xml = new XmlDocument();
+            TextReader textReader = new StreamReader(@$"{ExeDir}/{filePath}");
+            XmlSerializer serializer = new(typeof(T));
+            return (T?)serializer.Deserialize(textReader);
         }
     }
 }

@@ -21,7 +21,7 @@ namespace Erd_Tools.Models
         public byte[] Bytes { get; private set; }
         public List<Row> Rows { get; private set; }
         public List<Field> Fields { get; private set; }
-        private static Regex ParamEntryRx = new Regex(@"^\s*(?<id>\S+)\s+(?<name>.*)$", RegexOptions.CultureInvariant);
+        private static Regex _paramEntryRx { get; } = new(@"^\s*(?<id>\S+)\s+(?<name>.*)$", RegexOptions.CultureInvariant);
         public Dictionary<int, string> NameDictionary { get; private set; }
         public Dictionary<int, int> OffsetDict { get; private set; }
         public int RowLength { get; private set; }
@@ -84,7 +84,7 @@ namespace Erd_Tools.Models
                 if (!Util.IsValidTxtResource(line)) //determine if line is a valid resource or not
                     continue;
 
-                Match itemEntry = ParamEntryRx.Match(line);
+                Match itemEntry = _paramEntryRx.Match(line);
                 string name = itemEntry.Groups["name"].Value;//.Replace("\r", "");
                 int id = Convert.ToInt32(itemEntry.Groups["id"].Value);
                 if (NameDictionary.ContainsKey(id))

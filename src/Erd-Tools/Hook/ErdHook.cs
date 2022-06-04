@@ -15,8 +15,12 @@ using System.Text.RegularExpressions;
 using SoulsFormats;
 using System.Threading.Tasks;
 using System.Threading;
+using System.Xml;
+using System.Xml.Serialization;
 using Erd_Tools.Models;
+using Erd_Tools.Models.Old;
 using Erd_Tools.Utils;
+using Grace = Erd_Tools.Models.Grace;
 
 namespace Erd_Tools
 {
@@ -48,6 +52,9 @@ namespace Erd_Tools
         public PHPointer DisableOpenMap { get; set; }
         public PHPointer CombatCloseMap { get; set; }
         public PHPointer WorldAreaWeather { get; set; }
+        public PHPointer CSFD4VirtualMemoryFlag { get; set; }
+        public PHPointer CSLuaEventManager { get; set; }
+        public PHPointer LuaWarp_01 { get; set; }
         public static bool Reading { get; set; }
         public string ID => Process?.Id.ToString() ?? "Not Hooked";
         public List<PHPointer>? ParamPointers { get; set; }
@@ -83,9 +90,45 @@ namespace Erd_Tools
             CombatCloseMap = RegisterAbsoluteAOB(Offsets.CombatCloseMapAoB);
             WorldAreaWeather = RegisterRelativeAOB(Offsets.WorldAreaWeatherAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
 
+            CSFD4VirtualMemoryFlag = RegisterRelativeAOB(Offsets.CSFD4VirtualMemoryFlag, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
+            CSLuaEventManager = RegisterRelativeAOB(Offsets.CSLuaEventManager, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
+            LuaWarp_01 = RegisterAbsoluteAOB(Offsets.LuaWarp_01);
+
+
             ItemEventDictionary = BuildItemEventDictionary();
             ItemCategory.GetItemCategories();
 
+            Continent.GetContinents();
+
+            //List<Grace> graces = new();
+
+            //foreach (Continent continent in Continent.Continents)
+            //{
+            //    foreach (Hub hub in continent.Hubs)
+            //    {
+            //        foreach (Models.Old.Grace grace in hub.Graces)
+            //        {
+            //            graces.Add(new Grace()
+            //            {
+            //                Name = grace.Name,
+            //                Continent = continent.Name,
+            //                Hub = hub.Name,
+            //                Offsets = grace.Offsets,
+            //                BitStart = grace.BitStart
+            //            });
+            //        }
+            //    }
+              
+            //}
+
+            //XmlSerializer ser = new(typeof(List<Grace>));
+            //XmlWriterSettings settings = new() { Indent = true };
+            //TextWriter writer = new StreamWriter(@"C:\Users\Nord\source\repos\CSharp\Elden-Ring-Debug-Tool\src\Erd-Tools\src\Erd-Tools\Resources\Systems\SitesOfGraceNew.xml");
+
+            //using (XmlWriter xw = XmlWriter.Create(writer, settings))
+            //{
+            //    ser.Serialize(xw, graces);
+            //}
         }
 
         private void ErdHook_OnUnhooked(object? sender, PHEventArgs e)
@@ -138,7 +181,7 @@ namespace Erd_Tools
         public Param? MagicParam;
         public Param? NpcParam;
 
-        private Engine Engine = new Engine(Architecture.X86, Mode.X64);
+        private Engine Engine = new(Architecture.X86, Mode.X64);
         //TKCode
         private void AsmExecute(string asm)
         {
@@ -170,7 +213,7 @@ namespace Erd_Tools
             Debug.WriteLine("");
             foreach (byte b in bytes)
             {
-                Debug.Write($"{b.ToString("X2")} ");
+                Debug.Write($"{b.ToString("X2")}");
             }
             Debug.WriteLine("");
         }
@@ -425,11 +468,11 @@ namespace Erd_Tools
         }
         private List<InventoryEntry> GetInventoryList()
         {
-            List<InventoryEntry> inventory = new List<InventoryEntry>();
+            List<InventoryEntry> inventory = new();
+            uint inventoryEntries = (uint)InventoryEntries;
+            byte[] bytes = PlayerInventory.ReadBytes(0x0, inventoryEntries * Offsets.PlayInventoryEntrySize);
 
-            byte[] bytes = PlayerInventory.ReadBytes(0x0, (uint)InventoryEntries * Offsets.PlayInventoryEntrySize);
-
-            for (int i = 0; i < InventoryEntries; i++)
+            for (int i = 0; i < inventoryEntries; i++)
             {
                 byte[] entry = new byte[Offsets.PlayInventoryEntrySize];
                 Array.Copy(bytes, i * Offsets.PlayInventoryEntrySize, entry, 0, entry.Length);
@@ -442,25 +485,6 @@ namespace Erd_Tools
 
             return inventory;
         }
-
-        //private int GetInventoryCount()
-        //{
-        //    int count = 0;
-
-        //    byte[] bytes = PlayerInventory.ReadBytes(0x0, (uint)InventoryEntries * Offsets.PlayInventoryEntrySize);
-
-        //    for (int i = 0; i < InventoryEntries; i++)
-        //    {
-        //        byte[] entry = new byte[Offsets.PlayInventoryEntrySize];
-        //        Array.Copy(bytes, i * Offsets.PlayInventoryEntrySize, entry, 0, entry.Length);
-
-        //        if (BitConverter.ToInt32(entry, (int)Offsets.InventoryEntry.ItemID) == -1)
-        //            continue;
-
-        //        count++;
-        //    }
-        //    return count;
-        //}
 
         public void ResetInventory()
         {
