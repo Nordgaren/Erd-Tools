@@ -39,6 +39,7 @@ namespace Erd_Tools
         }
 
         private PHPointer GameDataMan { get; set; }
+        private PHPointer GameMan { get; set; }
         private PHPointer PlayerGameData { get; set; }
         private PHPointer PlayerInventory { get; set; }
         private PHPointer SoloParamRepository { get; set; }
@@ -54,6 +55,7 @@ namespace Erd_Tools
         public PHPointer WorldAreaWeather { get; set; }
         public PHPointer CSFD4VirtualMemoryFlag { get; set; }
         public PHPointer CSLuaEventManager { get; set; }
+        public PHPointer LuaWarp_01AoB { get; set; }
         public PHPointer LuaWarp_01 { get; set; }
         public static bool Reading { get; set; }
         public string ID => Process?.Id.ToString() ?? "Not Hooked";
@@ -71,6 +73,7 @@ namespace Erd_Tools
             OnUnhooked += ErdHook_OnUnhooked;
 
             GameDataMan = RegisterRelativeAOB(Offsets.GameDataManAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
+            GameMan = RegisterRelativeAOB(Offsets.GameManAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize);
             PlayerGameData = CreateChildPointer(GameDataMan, Offsets.PlayerGameData);
             PlayerInventory = CreateChildPointer(PlayerGameData, Offsets.EquipInventoryDataOffset, Offsets.PlayerInventoryOffset);
 
@@ -90,9 +93,9 @@ namespace Erd_Tools
             CombatCloseMap = RegisterAbsoluteAOB(Offsets.CombatCloseMapAoB);
             WorldAreaWeather = RegisterRelativeAOB(Offsets.WorldAreaWeatherAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
 
-            CSFD4VirtualMemoryFlag = RegisterRelativeAOB(Offsets.CSFD4VirtualMemoryFlag, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
-            CSLuaEventManager = RegisterRelativeAOB(Offsets.CSLuaEventManager, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
-            LuaWarp_01 = RegisterAbsoluteAOB(Offsets.LuaWarp_01);
+            CSFD4VirtualMemoryFlag = RegisterRelativeAOB(Offsets.CSFD4VirtualMemoryFlagAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
+            CSLuaEventManager = RegisterRelativeAOB(Offsets.CSLuaEventManagerAoB, Offsets.RelativePtrAddressOffset, Offsets.LargeRelativePtrInstructionSize);
+            LuaWarp_01AoB = RegisterAbsoluteAOB(Offsets.LuaWarp_01AoB);
 
 
             ItemEventDictionary = BuildItemEventDictionary();
@@ -100,66 +103,7 @@ namespace Erd_Tools
 
             Continent.GetContinents();
 
-            var lol = File.ReadAllLines(@"C:\Users\Nord\Desktop\Grace Events.txt");
-
-            Dictionary<string, int> events = new();
-            Regex paramEntryRx = new(@"^\s*(?<id>\S+)\s+(?<name>.*)$", RegexOptions.CultureInvariant);
-
-            foreach (string line in lol)
-            {
-                Match itemEntry = paramEntryRx.Match(line);
-                string name = itemEntry.Groups["name"].Value;//.Replace("\r", "");
-                int id = Convert.ToInt32(itemEntry.Groups["id"].Value);
-                if (events.ContainsKey(name))
-                    continue;
-                events.Add(name, id);
-            }
-
-            var graces = new List<Grace>();
-            foreach (Continent continent in Continent.Continents)
-            {
-                foreach (Hub hub in continent.Hubs)
-                {
-                    for (int index = 0; index < hub.Graces.Count; index++)
-                    {
-                        hub.Graces[index] = new Grace()
-                        {
-                            Name = hub.Graces[index].Name,
-                            Continent = continent.Name,
-                            Hub = hub.Name,
-                            Offsets = hub.Graces[index].Offsets,
-                            BitStart = hub.Graces[index].BitStart
-                        };
-                        graces.Add(hub.Graces[index]);
-                    }
-                }
-
-            }
-
-
-            List<string> missed = new();
-
-            foreach (Grace grace in graces)
-            {
-                if (!events.ContainsKey(grace.Name))
-                {
-                    missed.Add(grace.Name);
-                    continue;
-                }
-
-                grace.ParamRowID = events[grace.Name];
-                events.Remove(grace.Name);
-            }
-
-
-            //XmlSerializer ser = new(typeof(List<Grace>));
-            //XmlWriterSettings settings = new() { Indent = true };
-            //TextWriter writer = new StreamWriter(@"C:\Users\Nord\source\repos\CSharp\Elden-Ring-Debug-Tool\src\Erd-Tools\src\Erd-Tools\Resources\Systems\SitesOfGraceNew.xml");
-
-            //using (XmlWriter xw = XmlWriter.Create(writer, settings))
-            //{
-            //    ser.Serialize(xw, graces);
-            //}
+            
         }
 
         private void ErdHook_OnUnhooked(object? sender, PHEventArgs e)
@@ -169,6 +113,9 @@ namespace Erd_Tools
 
         private void ErdHook_OnHooked(object? sender, PHEventArgs e)
         {
+            LuaWarp_01 = CreateBasePointer(LuaWarp_01AoB.Resolve() + 2);
+
+            var kek = GameMan.Resolve();
             //IntPtr gameDataMan = GameDataMan.Resolve();
             //IntPtr paramss = SoloParamRepository.Resolve();
             //IntPtr itemGive = ItemGive.Resolve();
@@ -182,7 +129,72 @@ namespace Erd_Tools
 
             Task t = Task.Run(() => AsyncSetup());
             t.GetAwaiter().GetResult();
-            GetInventoryList();
+            //GetInventoryList();
+
+            //var lol = File.ReadAllLines(@"C:\Users\Nord\Desktop\Grace Events.txt");
+
+            //Dictionary<string, int> events = new();
+            //Regex paramEntryRx = new(@"^\s*(?<id>\S+)\s+(?<name>.*)$", RegexOptions.CultureInvariant);
+
+            //foreach (string line in lol)
+            //{
+            //    Match itemEntry = paramEntryRx.Match(line);
+            //    string name = itemEntry.Groups["name"].Value;//.Replace("\r", "");
+            //    int id = Convert.ToInt32(itemEntry.Groups["id"].Value);
+            //    if (events.ContainsKey(name))
+            //        continue;
+            //    events.Add(name, id);
+            //}
+
+            //var graces = new List<Grace>();
+            //foreach (Continent continent in Continent.All)
+            //{
+            //    foreach (Hub hub in continent.Hubs)
+            //    {
+            //        for (int index = 0; index < hub.Graces.Count; index++)
+            //        {
+            //            hub.Graces[index] = new Grace()
+            //            {
+            //                Name = hub.Graces[index].Name,
+            //                Continent = continent.Name,
+            //                Hub = hub.Name,
+            //                Offsets = hub.Graces[index].Offsets,
+            //                PtrOffset = int.Parse(hub.Graces[index].Offsets[1], NumberStyles.HexNumber),
+            //                DataOffset = int.Parse(hub.Graces[index].Offsets[0], NumberStyles.HexNumber),
+            //                BitStart = hub.Graces[index].BitStart
+            //            };
+            //            graces.Add(hub.Graces[index]);
+            //        }
+            //    }
+
+            //}
+
+
+            //List<string> missed = new();
+
+            //foreach (Grace grace in graces)
+            //{
+            //    if (!events.ContainsKey(grace.Name))
+            //    {
+            //        missed.Add(grace.Name);
+            //        continue;
+            //    }
+
+            //    grace.EventFlagID = BitConverter.ToInt32(BonfireWarpParam.Bytes, BonfireWarpParam.OffsetDict[events[grace.Name]] + 0x4);
+            //    grace.EntityID = BitConverter.ToInt32(BonfireWarpParam.Bytes, BonfireWarpParam.OffsetDict[events[grace.Name]] + 0x8);
+            //    events.Remove(grace.Name);
+            //}
+
+
+            //XmlSerializer ser = new(typeof(List<Continent>));
+            //XmlWriterSettings settings = new() { Indent = true };
+            //TextWriter writer = new StreamWriter(@"C:\Users\Nord\source\repos\CSharp\Elden-Ring-Debug-Tool\src\Erd-Tools\src\Erd-Tools\Resources\Systems\SitesOfGraceNew.xml");
+
+            //using (XmlWriter xw = XmlWriter.Create(writer, settings))
+            //{
+            //    ser.Serialize(xw, Continent.All);
+            //}
+
             //LogABunchOfStuff();
         }
 
@@ -224,7 +236,7 @@ namespace Erd_Tools
             if (error != KeystoneError.KS_ERR_OK)
                 throw new Exception("Something went wrong during assembly. Code could not be assembled.");
 
-            IntPtr insertPtr = GetPrefferedIntPtr(bytes.Buffer.Length, Kernel32.PAGE_EXECUTE_READWRITE);
+            IntPtr insertPtr = GetPrefferedIntPtr(bytes.Buffer.Length, flProtect :Kernel32.PAGE_EXECUTE_READWRITE);
 
             //Reassemble with the location of the isertPtr to support relative instructions
             bytes = Engine.Assemble(asm, (ulong)insertPtr);
@@ -245,7 +257,7 @@ namespace Erd_Tools
             Debug.WriteLine("");
             foreach (byte b in bytes)
             {
-                Debug.Write($"{b.ToString("X2")}");
+                Debug.Write($"{b.ToString("X2")} ");
             }
             Debug.WriteLine("");
         }
@@ -938,19 +950,25 @@ namespace Erd_Tools
 
         #region Grace
 
-        public bool CheckGraceStatus(Grace grace)
+        public bool CheckGraceStatus(int ptrOffset, int dataOffset, int bitStart)
         {
-            PHPointer bonfireInfo = CreateChildPointer(CSFD4VirtualMemoryFlag, int.Parse(grace.Offsets[0], NumberStyles.HexNumber));
-            byte bitfield = bonfireInfo.ReadByte(int.Parse(grace.Offsets[1], NumberStyles.HexNumber));
-            return (bitfield & (1 << grace.BitStart)) != 0;
+            PHPointer bonfireInfo = CreateChildPointer(CSFD4VirtualMemoryFlag, ptrOffset);
+            byte bitfield = bonfireInfo.ReadByte(dataOffset);
+            return (bitfield & (1 << bitStart)) != 0;
         }
 
         #endregion
 
-        public void Warp(int bonfireId)
+        public void Warp(int bonfireID)
         {
+            IntPtr warpLocation = GetPrefferedIntPtr(sizeof(int));
+            Kernel32.WriteInt32(Handle, warpLocation, bonfireID);
+
             string asmString = Util.GetEmbededResource("Assembly.Warp.asm");
-            string asm = string.Format(asmString, CSLuaEventManager.Resolve(), bonfireId.ToString("X2"), LuaWarp_01.Resolve());
+            var lol = CSLuaEventManager.Resolve();
+            var lol2 = LuaWarp_01AoB.Resolve();
+            var lol3 = LuaWarp_01.Resolve();
+            string asm = string.Format(asmString, CSLuaEventManager.Resolve(), bonfireID, LuaWarp_01.Resolve());
             AsmExecute(asm);
         }
     }

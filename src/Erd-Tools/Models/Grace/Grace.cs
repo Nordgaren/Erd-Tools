@@ -15,8 +15,10 @@ namespace Erd_Tools.Models
         public string Name { get; set; }
         public string Continent { get; init; }
         public string Hub { get; init; }
-        public int ParamRowID { get; set; }
-        public List<string> Offsets { get; set; } = new();
+        public int EntityID { get; set; }
+        public int EventFlagID { get; set; }
+        public int PtrOffset { get; set; }
+        public int DataOffset { get; set; }
         public int BitStart { get; set; }
     }
     public class Hub
@@ -27,7 +29,7 @@ namespace Erd_Tools.Models
 
     public class Continent
     {
-        public static List<Continent> Continents { get; set; }
+        public static List<Continent> All { get; set; }
         public string Name { get; set; } = "";
         public List<Hub> Hubs { get; set; } = new();
 
@@ -35,7 +37,7 @@ namespace Erd_Tools.Models
         {
             XmlSerializer xmlSerializer = new(typeof(List<Continent>));
             List<Continent>? c = Util.DeserializeXml<List<Continent>>(@"Resources\Systems\SitesOfGrace.xml");
-            Continents = c ?? throw new NullReferenceException("Continent list is null."); 
+            All = c ?? throw new NullReferenceException("Continent list is null."); 
         }
     }
 

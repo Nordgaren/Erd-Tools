@@ -10,8 +10,10 @@
 
         public const int RelativePtrAddressOffset = 0x3;
         public const int RelativePtrInstructionSize = 0x7;
+        public const int LargeRelativePtrInstructionSize = 0x8;
 
         public const string GameDataManAoB = "48 8B 05 ? ? ? ? 48 85 C0 74 05 48 8B 40 58 C3 C3";
+        public const string GameManAoB = "48 8B 05 ? ? ? ? 80 B8 ? ? ? ? 0D 0F 94 C0 C3";
 
         public const int PlayerGameData = 0x8;
         public enum PlayerGameDataStruct
@@ -403,8 +405,9 @@
             ResetWeather = 0x88
         }
 
-        public const string CSFD4VirtualMemoryFlag = "48 8B 3D ? ? ? ? 48 85 FF 74 ? 48 8B 49";
-        public const string CSLuaEventManager = "48 83 3D ? ? ? ? 00 48 8B F9 0F 84 ? ? ? ? 48";
-        public const string LuaWarp_01 = "48 89 5C 24 10 57 48 83 EC 20 48 8B FA 44";
+        public const string CSFD4VirtualMemoryFlagAoB = "48 8B 3D ? ? ? ? 48 85 FF 74 ? 48 8B 49";
+        public const string CSLuaEventManagerAoB = "48 83 3D ? ? ? ? 00 48 8B F9 0F 84 ? ? ? ? 48";
+        public const string LuaWarp_01AoB = "C3 ? ? ? ? ? ? 57 48 83 EC ? 48 8B FA 44";
+
     }
 }
