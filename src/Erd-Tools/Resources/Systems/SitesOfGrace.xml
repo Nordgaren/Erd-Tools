@@ -1,6 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfContinent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Continent>
+    <Name>Misc</Name>
+    <Hubs>
+      <Hub>
+        <Name>Roundtable Hold</Name>
+        <Graces>
+          <Grace>
+            <Name>Table of Lost Grace</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A58</string>
+            </Offsets>
+            <BitStart>1</BitStart>
+          </Grace>
+        </Graces>
+      </Hub>
+      <Hub>
+        <Name>Crumbling Farum Azula</Name>
+        <Graces>
+          <Grace>
+            <Name>Beside the Great Bridge</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A67</string>
+            </Offsets>
+            <BitStart>1</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Crumbling Beast Grave</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A66</string>
+            </Offsets>
+            <BitStart>0</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Crumbling Beast Grave Depths</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A67</string>
+            </Offsets>
+            <BitStart>7</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Dragon Temple</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A67</string>
+            </Offsets>
+            <BitStart>5</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Dragon Temple Altar</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A66</string>
+            </Offsets>
+            <BitStart>1</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Dragon Temple Lift</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A67</string>
+            </Offsets>
+            <BitStart>3</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Dragon Temple Rooftop</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A67</string>
+            </Offsets>
+            <BitStart>2</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Dragon Temple Transept</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A67</string>
+            </Offsets>
+            <BitStart>4</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Dragonlord Placidusax</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A66</string>
+            </Offsets>
+            <BitStart>2</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Maliketh, the Black Blade</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A66</string>
+            </Offsets>
+            <BitStart>3</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Tempest-Facing Balcony</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A67</string>
+            </Offsets>
+            <BitStart>6</BitStart>
+          </Grace>
+        </Graces>
+      </Hub>
+      <Hub>
+        <Name>Deeproot Depths</Name>
+        <Graces>
+          <Grace>
+            <Name>Across the Roots</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A5E</string>
+            </Offsets>
+            <BitStart>4</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Deeproot Depths</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A5E</string>
+            </Offsets>
+            <BitStart>6</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Great Waterfall Crest</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A5E</string>
+            </Offsets>
+            <BitStart>7</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Prince of Death's Throne</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A5D</string>
+            </Offsets>
+            <BitStart>1</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Root-Facing Cliffs</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A5D</string>
+            </Offsets>
+            <BitStart>0</BitStart>
+          </Grace>
+          <Grace>
+            <Name>The Nameless Eternal City</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A5E</string>
+            </Offsets>
+            <BitStart>5</BitStart>
+          </Grace>
+        </Graces>
+      </Hub>
+    </Hubs>
+  </Continent>
+  <Continent>
     <Name>Limgrave</Name>
     <Hubs>
       <Hub>
@@ -12,7 +176,7 @@
               <string>28</string>
               <string>CBE</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Church of Elleh</Name>
@@ -20,7 +184,7 @@
               <string>28</string>
               <string>CBE</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Gatefront</Name>
@@ -36,7 +200,7 @@
               <string>28</string>
               <string>CC1</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Artist's Shack (Limgrave)</Name>
@@ -52,7 +216,7 @@
               <string>28</string>
               <string>CBF</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Fort Haight West</Name>
@@ -60,7 +224,7 @@
               <string>28</string>
               <string>CBF</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>Agheel Lake South</Name>
@@ -68,7 +232,7 @@
               <string>28</string>
               <string>CBF</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Agheel Lake North</Name>
@@ -76,7 +240,7 @@
               <string>28</string>
               <string>CBF</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Church of Dragon Communion</Name>
@@ -84,7 +248,7 @@
               <string>28</string>
               <string>CBF</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Seaside Ruins</Name>
@@ -92,7 +256,7 @@
               <string>28</string>
               <string>CC0</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>Mistwood Outskirts</Name>
@@ -100,7 +264,7 @@
               <string>28</string>
               <string>CC0</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Murkwater Coast</Name>
@@ -108,7 +272,7 @@
               <string>28</string>
               <string>CC0</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Summonwater Village Outskirts</Name>
@@ -124,7 +288,7 @@
               <string>28</string>
               <string>B3B</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Murkwater Catacombs</Name>
@@ -132,7 +296,7 @@
               <string>28</string>
               <string>B3B</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Groveside Cave</Name>
@@ -148,7 +312,7 @@
               <string>28</string>
               <string>B49</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>Murkwater Cave</Name>
@@ -156,7 +320,7 @@
               <string>28</string>
               <string>B47</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Highroad Cave</Name>
@@ -164,7 +328,7 @@
               <string>28</string>
               <string>B49</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Limgrave Tunnels</Name>
@@ -172,7 +336,7 @@
               <string>28</string>
               <string>B54</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -185,7 +349,7 @@
               <string>28</string>
               <string>AA5</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Stranded Graveyard</Name>
@@ -193,7 +357,7 @@
               <string>28</string>
               <string>AA5</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -206,7 +370,7 @@
               <string>28</string>
               <string>CBE</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Castleward Tunnel</Name>
@@ -214,7 +378,7 @@
               <string>28</string>
               <string>A41</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Margit, the Fell Omen</Name>
@@ -222,7 +386,7 @@
               <string>28</string>
               <string>A41</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>Warmaster's Shack</Name>
@@ -230,7 +394,7 @@
               <string>28</string>
               <string>CC0</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Saintsbridge</Name>
@@ -238,7 +402,7 @@
               <string>28</string>
               <string>CC0</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Deathtouched Catacombs</Name>
@@ -246,7 +410,7 @@
               <string>28</string>
               <string>B3C</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>Limgrave Tower Bridge</Name>
@@ -254,7 +418,7 @@
               <string>28</string>
               <string>B6E</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Divine Tower of Limgrave</Name>
@@ -262,7 +426,7 @@
               <string>28</string>
               <string>B6E</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -275,7 +439,7 @@
               <string>28</string>
               <string>CC4</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Castle Morne Rampart</Name>
@@ -291,7 +455,7 @@
               <string>28</string>
               <string>CC5</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>South of the Lookout Tower</Name>
@@ -299,7 +463,7 @@
               <string>28</string>
               <string>CC5</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>Ailing Village Outskirts</Name>
@@ -307,7 +471,7 @@
               <string>28</string>
               <string>CC5</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Beside the Crater-Pocked Glade</Name>
@@ -315,7 +479,7 @@
               <string>28</string>
               <string>CC5</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>Isolated Merchant's Shack (Limgrave)</Name>
@@ -323,7 +487,7 @@
               <string>28</string>
               <string>CC5</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Fourth Church of Marika</Name>
@@ -331,7 +495,7 @@
               <string>28</string>
               <string>CC6</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Bridge of Sacrifice</Name>
@@ -339,7 +503,7 @@
               <string>28</string>
               <string>CC5</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Castle Morne Lift</Name>
@@ -347,10 +511,10 @@
               <string>28</string>
               <string>CC5</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
-            <Name>Behind The Castle</Name>
+            <Name>Behind the Castle</Name>
             <Offsets>
               <string>28</string>
               <string>CC5</string>
@@ -363,7 +527,7 @@
               <string>28</string>
               <string>CC6</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Morne Moangrave</Name>
@@ -371,7 +535,7 @@
               <string>28</string>
               <string>CC6</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>Impaler's Catacombs</Name>
@@ -379,7 +543,7 @@
               <string>28</string>
               <string>B3B</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>Tombsward Catacombs</Name>
@@ -387,7 +551,7 @@
               <string>28</string>
               <string>B3B</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Earthbore Cave</Name>
@@ -395,7 +559,7 @@
               <string>28</string>
               <string>B47</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Tombsward Cave</Name>
@@ -403,7 +567,7 @@
               <string>28</string>
               <string>B47</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Morne Tunnel</Name>
@@ -411,7 +575,7 @@
               <string>28</string>
               <string>B54</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -424,7 +588,7 @@
               <string>28</string>
               <string>A42</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Gateside Chamber</Name>
@@ -432,7 +596,7 @@
               <string>28</string>
               <string>A41</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>Stormveil Cliffside</Name>
@@ -440,7 +604,7 @@
               <string>28</string>
               <string>A41</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Rampart Tower</Name>
@@ -448,7 +612,7 @@
               <string>28</string>
               <string>A41</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Liftside Chamber</Name>
@@ -456,7 +620,7 @@
               <string>28</string>
               <string>A41</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Secluded Cell</Name>
@@ -472,7 +636,7 @@
               <string>28</string>
               <string>A41</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -490,15 +654,15 @@
               <string>28</string>
               <string>A73</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
-            <Name>Debate Parlour</Name>
+            <Name>Debate Parlor</Name>
             <Offsets>
               <string>28</string>
               <string>A73</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>Raya Lucaria Grand Library</Name>
@@ -506,7 +670,7 @@
               <string>28</string>
               <string>A73</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Schoolhouse Classroom</Name>
@@ -514,7 +678,7 @@
               <string>28</string>
               <string>A73</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -527,7 +691,7 @@
               <string>28</string>
               <string>CCB</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Laskyar Ruins</Name>
@@ -535,7 +699,7 @@
               <string>28</string>
               <string>CCB</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Liurnia Lake Shore</Name>
@@ -543,7 +707,7 @@
               <string>28</string>
               <string>CCB</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>Academy Gate Town</Name>
@@ -551,7 +715,7 @@
               <string>28</string>
               <string>CCB</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Artist's Shack (Liurnia of the Lakes)</Name>
@@ -559,7 +723,7 @@
               <string>28</string>
               <string>CCD</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>Eastern Liurnia Lake Shore</Name>
@@ -575,7 +739,7 @@
               <string>28</string>
               <string>CCD</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Liurnia Highway North</Name>
@@ -583,7 +747,7 @@
               <string>28</string>
               <string>CCD</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Liurnia Highway South</Name>
@@ -591,7 +755,7 @@
               <string>28</string>
               <string>CD0</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Main Academy Gate</Name>
@@ -599,7 +763,7 @@
               <string>28</string>
               <string>CCB</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Scenic Isle</Name>
@@ -607,7 +771,7 @@
               <string>28</string>
               <string>CCB</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>South Raya Lucaria Gate</Name>
@@ -615,7 +779,7 @@
               <string>28</string>
               <string>CCB</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Ruined Labyrinth</Name>
@@ -623,7 +787,7 @@
               <string>28</string>
               <string>CCE</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>Boilprawn Shack</Name>
@@ -631,7 +795,7 @@
               <string>28</string>
               <string>CCD</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Church of Vows</Name>
@@ -639,7 +803,7 @@
               <string>28</string>
               <string>CCE</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Converted Tower</Name>
@@ -647,7 +811,7 @@
               <string>28</string>
               <string>CCF</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Eastern Tableland</Name>
@@ -655,7 +819,7 @@
               <string>28</string>
               <string>CCF</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Fallen Ruins of the Lake</Name>
@@ -663,7 +827,7 @@
               <string>28</string>
               <string>CCF</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Folly on the Lake</Name>
@@ -671,7 +835,7 @@
               <string>28</string>
               <string>CCD</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>Jarburg</Name>
@@ -679,7 +843,7 @@
               <string>28</string>
               <string>CD0</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Mausoleum Compound</Name>
@@ -687,7 +851,7 @@
               <string>28</string>
               <string>CCE</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Ranni's Chamber</Name>
@@ -703,7 +867,7 @@
               <string>28</string>
               <string>CCD</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Slumbering Wolf's Shack</Name>
@@ -719,7 +883,7 @@
               <string>28</string>
               <string>CCD</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Crystalline Woods</Name>
@@ -727,7 +891,7 @@
               <string>28</string>
               <string>CD0</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>East Gate Bridge Trestle</Name>
@@ -735,7 +899,7 @@
               <string>28</string>
               <string>CD0</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Foot of the Four Belfries</Name>
@@ -743,7 +907,7 @@
               <string>28</string>
               <string>CCC</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Gate Town North</Name>
@@ -751,7 +915,7 @@
               <string>28</string>
               <string>CCF</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>Main Caria Manor Gate</Name>
@@ -759,7 +923,7 @@
               <string>28</string>
               <string>CCC</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Manor Lower Level</Name>
@@ -775,7 +939,7 @@
               <string>28</string>
               <string>CCE</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Northern Liurnia Lake Shore</Name>
@@ -783,7 +947,7 @@
               <string>28</string>
               <string>CCC</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Road to the Manor</Name>
@@ -791,7 +955,7 @@
               <string>28</string>
               <string>CCC</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Royal Moongazing Grounds</Name>
@@ -799,7 +963,7 @@
               <string>28</string>
               <string>CCF</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Sorcerer's Isle</Name>
@@ -807,7 +971,7 @@
               <string>28</string>
               <string>CCC</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>Temple Quarter</Name>
@@ -815,7 +979,7 @@
               <string>28</string>
               <string>CD0</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>The Four Belfries</Name>
@@ -823,7 +987,7 @@
               <string>28</string>
               <string>CCE</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>Academy Crystal Cave</Name>
@@ -831,7 +995,7 @@
               <string>28</string>
               <string>B48</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Behind Caria Manor</Name>
@@ -839,7 +1003,7 @@
               <string>28</string>
               <string>CCF</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Black Knife Catacombs</Name>
@@ -847,7 +1011,7 @@
               <string>28</string>
               <string>B3B</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Cliffbottom Catacombs</Name>
@@ -855,7 +1019,7 @@
               <string>28</string>
               <string>B3B</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Lakeside Crystal Cave</Name>
@@ -863,7 +1027,7 @@
               <string>28</string>
               <string>B48</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>Liurnia Tower Bridge</Name>
@@ -871,7 +1035,7 @@
               <string>28</string>
               <string>B6F</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Ranni's Rise</Name>
@@ -879,7 +1043,7 @@
               <string>28</string>
               <string>CCE</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Ravine-Veiled Village</Name>
@@ -887,7 +1051,7 @@
               <string>28</string>
               <string>CCE</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Raya Lucaria Crystal Tunnel</Name>
@@ -895,7 +1059,7 @@
               <string>28</string>
               <string>B54</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Road's End Catacombs</Name>
@@ -903,7 +1067,7 @@
               <string>28</string>
               <string>B3B</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>Stillwater Cave</Name>
@@ -911,7 +1075,7 @@
               <string>28</string>
               <string>B48</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Study Hall Entrance</Name>
@@ -919,7 +1083,7 @@
               <string>28</string>
               <string>B6F</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>The Ravine</Name>
@@ -927,7 +1091,7 @@
               <string>28</string>
               <string>CCF</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>Divine Tower of Liurnia</Name>
@@ -935,7 +1099,7 @@
               <string>28</string>
               <string>B6F</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -948,7 +1112,7 @@
               <string>28</string>
               <string>CCC</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Church of Inhibition</Name>
@@ -956,7 +1120,7 @@
               <string>28</string>
               <string>CD0</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>East Raya Lucaria Gate</Name>
@@ -980,7 +1144,7 @@
               <string>28</string>
               <string>CCC</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -993,7 +1157,7 @@
               <string>28</string>
               <string>BAB</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Ruin-Strewn Precipice</Name>
@@ -1001,7 +1165,7 @@
               <string>28</string>
               <string>BAB</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Ruin-Strewn Precipice Overlook</Name>
@@ -1009,7 +1173,7 @@
               <string>28</string>
               <string>BAB</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -1022,7 +1186,7 @@
               <string>28</string>
               <string>CD1</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Cathedral of Manus Celes</Name>
@@ -1030,7 +1194,7 @@
               <string>28</string>
               <string>CD1</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>Moonlight Altar</Name>
@@ -1038,7 +1202,540 @@
               <string>28</string>
               <string>CD1</string>
             </Offsets>
+            <BitStart>5</BitStart>
+          </Grace>
+        </Graces>
+      </Hub>
+    </Hubs>
+  </Continent>
+  <Continent>
+    <Name>Altus Plateau</Name>
+    <Hubs>
+      <Hub>
+        <Name>Altus Plateau</Name>
+        <Graces>
+          <Grace>
+            <Name>Abandoned Coffin</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CD7</string>
+            </Offsets>
+            <BitStart>3</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Altus Highway Junction</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CD7</string>
+            </Offsets>
             <BitStart>0</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Altus Plateau</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CD7</string>
+            </Offsets>
+            <BitStart>2</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Bower of Bounty</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CD8</string>
+            </Offsets>
+            <BitStart>5</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Erdtree-Gazing Hill</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CD7</string>
+            </Offsets>
+            <BitStart>1</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Forest-Spanning Greatbridge</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CD8</string>
+            </Offsets>
+            <BitStart>7</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Rampartside Path</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CD8</string>
+            </Offsets>
+            <BitStart>6</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Road of Iniquity Side Path</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CD8</string>
+            </Offsets>
+            <BitStart>4</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Shaded Castle Inner Gate</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CDA</string>
+            </Offsets>
+            <BitStart>6</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Shaded Castle Ramparts</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CDA</string>
+            </Offsets>
+            <BitStart>7</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Windmill Heights</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CD9</string>
+            </Offsets>
+            <BitStart>6</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Windmill Village</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CD8</string>
+            </Offsets>
+            <BitStart>3</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Altus Tunnel</Name>
+            <Offsets>
+              <string>28</string>
+              <string>B54</string>
+            </Offsets>
+            <BitStart>2</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Castellan's Hall</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CDA</string>
+            </Offsets>
+            <BitStart>5</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Old Altus Tunnel</Name>
+            <Offsets>
+              <string>28</string>
+              <string>B54</string>
+            </Offsets>
+            <BitStart>3</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Perfumer's Grotto</Name>
+            <Offsets>
+              <string>28</string>
+              <string>B49</string>
+            </Offsets>
+            <BitStart>1</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Sage's Cave</Name>
+            <Offsets>
+              <string>28</string>
+              <string>B49</string>
+            </Offsets>
+            <BitStart>0</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Sainted Hero's Grave</Name>
+            <Offsets>
+              <string>28</string>
+              <string>B3C</string>
+            </Offsets>
+            <BitStart>7</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Unsightly Catacombs</Name>
+            <Offsets>
+              <string>28</string>
+              <string>B3C</string>
+            </Offsets>
+            <BitStart>3</BitStart>
+          </Grace>
+        </Graces>
+      </Hub>
+      <Hub>
+        <Name>Mt. Gelmir</Name>
+        <Graces>
+          <Grace>
+            <Name>Bridge of Iniquity</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CDD</string>
+            </Offsets>
+            <BitStart>1</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Craftsman's Shack</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CDE</string>
+            </Offsets>
+            <BitStart>3</BitStart>
+          </Grace>
+          <Grace>
+            <Name>First Mt. Gelmir Campsite</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CDD</string>
+            </Offsets>
+            <BitStart>0</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Gelmir Hero's Grave</Name>
+            <Offsets>
+              <string>28</string>
+              <string>B3C</string>
+            </Offsets>
+            <BitStart>6</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Ninth Mt. Gelmir Campsite</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CDE</string>
+            </Offsets>
+            <BitStart>7</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Primeval Sorcerer Azur</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CDE</string>
+            </Offsets>
+            <BitStart>2</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Road of Iniquity</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CDE</string>
+            </Offsets>
+            <BitStart>6</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Seethewater Cave</Name>
+            <Offsets>
+              <string>28</string>
+              <string>B48</string>
+            </Offsets>
+            <BitStart>4</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Seethewater River</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CDE</string>
+            </Offsets>
+            <BitStart>5</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Seethewater Terminus</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CDE</string>
+            </Offsets>
+            <BitStart>4</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Volcano Cave</Name>
+            <Offsets>
+              <string>28</string>
+              <string>B48</string>
+            </Offsets>
+            <BitStart>2</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Wyndham Catacombs</Name>
+            <Offsets>
+              <string>28</string>
+              <string>B3B</string>
+            </Offsets>
+            <BitStart>0</BitStart>
+          </Grace>
+        </Graces>
+      </Hub>
+      <Hub>
+        <Name>Leyndell, Royal Capital</Name>
+        <Graces>
+          <Grace>
+            <Name>Auriza Side Tomb</Name>
+            <Offsets>
+              <string>28</string>
+              <string>B3C</string>
+            </Offsets>
+            <BitStart>2</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Auzira Hero's Grave</Name>
+            <Offsets>
+              <string>28</string>
+              <string>B3C</string>
+            </Offsets>
+            <BitStart>5</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Capital Rampart</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CD9</string>
+            </Offsets>
+            <BitStart>5</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Divine Tower of West Altus</Name>
+            <Offsets>
+              <string>28</string>
+              <string>B70</string>
+            </Offsets>
+            <BitStart>1</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Divine Tower of West Altus: Gate</Name>
+            <Offsets>
+              <string>28</string>
+              <string>B71</string>
+            </Offsets>
+            <BitStart>7</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Hermit Merchant's Shack</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CD8</string>
+            </Offsets>
+            <BitStart>0</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Minor Erdtree Church</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CD8</string>
+            </Offsets>
+            <BitStart>1</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Outer Wall Battleground</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CD9</string>
+            </Offsets>
+            <BitStart>7</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Outer Wall Phantom Tree</Name>
+            <Offsets>
+              <string>28</string>
+              <string>CD8</string>
+            </Offsets>
+            <BitStart>2</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Sealed Tunnel</Name>
+            <Offsets>
+              <string>28</string>
+              <string>B70</string>
+            </Offsets>
+            <BitStart>0</BitStart>
+          </Grace>
+        </Graces>
+      </Hub>
+      <Hub>
+        <Name>Volcano Manor</Name>
+        <Graces>
+          <Grace>
+            <Name>Abductor Virgin</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A8C</string>
+            </Offsets>
+            <BitStart>1</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Audience Pathway</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A8C</string>
+            </Offsets>
+            <BitStart>2</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Guest Hall</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A8C</string>
+            </Offsets>
+            <BitStart>3</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Prison Town Church</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A8C</string>
+            </Offsets>
+            <BitStart>4</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Rykard, Lord of Blasphemy</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A8C</string>
+            </Offsets>
+            <BitStart>7</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Subterranean Inquisition Chamber</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A8C</string>
+            </Offsets>
+            <BitStart>0</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Temple of Eiglay</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A8C</string>
+            </Offsets>
+            <BitStart>6</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Volcano Manor</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A8C</string>
+            </Offsets>
+            <BitStart>5</BitStart>
+          </Grace>
+        </Graces>
+      </Hub>
+    </Hubs>
+  </Continent>
+  <Continent>
+    <Name>Leyndell, Royal Capital</Name>
+    <Hubs>
+      <Hub>
+        <Name>Subterranean Shunning-Grounds</Name>
+        <Graces>
+          <Grace>
+            <Name>Cathedral of the Forsaken</Name>
+            <Offsets>
+              <string>28</string>
+              <string>B79</string>
+            </Offsets>
+            <BitStart>3</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Forsaken Depths</Name>
+            <Offsets>
+              <string>28</string>
+              <string>B79</string>
+            </Offsets>
+            <BitStart>1</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Frenzied Flame Proscription</Name>
+            <Offsets>
+              <string>28</string>
+              <string>B7A</string>
+            </Offsets>
+            <BitStart>7</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Leyndell Catacombs</Name>
+            <Offsets>
+              <string>28</string>
+              <string>B79</string>
+            </Offsets>
+            <BitStart>0</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Underground Roadside</Name>
+            <Offsets>
+              <string>28</string>
+              <string>B79</string>
+            </Offsets>
+            <BitStart>2</BitStart>
+          </Grace>
+        </Graces>
+      </Hub>
+      <Hub>
+        <Name>Leyndell, Ashen Capital</Name>
+        <Graces>
+          <Grace>
+            <Name>Divine Bridge (Ashen)</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A50</string>
+            </Offsets>
+            <BitStart>2</BitStart>
+          </Grace>
+          <Grace>
+            <Name>East Capital Rampart (Ashen)</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A50</string>
+            </Offsets>
+            <BitStart>5</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Elden Throne (Ashen)</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A50</string>
+            </Offsets>
+            <BitStart>7</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Erdtree Sanctuary (Ashen)</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A50</string>
+            </Offsets>
+            <BitStart>6</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Leyndell, Capital of Ash</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A50</string>
+            </Offsets>
+            <BitStart>4</BitStart>
+          </Grace>
+          <Grace>
+            <Name>Queen's Bedchamber (Ashen)</Name>
+            <Offsets>
+              <string>28</string>
+              <string>A50</string>
+            </Offsets>
+            <BitStart>3</BitStart>
+          </Grace>
+        </Graces>
+      </Hub>
+      <Hub>
+        <Name>Stone Platform</Name>
+        <Graces>
+          <Grace>
+            <Name>Fractured Marika</Name>
+            <Offsets>
+              <string>28</string>
+              <string>AB1</string>
+            </Offsets>
+            <BitStart>3</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -1056,7 +1753,7 @@
               <string>28</string>
               <string>CE4</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>Caelid Highway South</Name>
@@ -1064,7 +1761,7 @@
               <string>28</string>
               <string>CE4</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Cathedral of Dragon Communion</Name>
@@ -1072,7 +1769,7 @@
               <string>28</string>
               <string>CE4</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Chair-Crypt of Sellia</Name>
@@ -1088,7 +1785,7 @@
               <string>28</string>
               <string>CE6</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Fort Gael North</Name>
@@ -1096,7 +1793,7 @@
               <string>28</string>
               <string>CE4</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Rotview Balcony</Name>
@@ -1104,7 +1801,7 @@
               <string>28</string>
               <string>CE4</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>Sellia Backstreets</Name>
@@ -1112,7 +1809,7 @@
               <string>28</string>
               <string>CE5</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Sellia Under-Stair</Name>
@@ -1120,7 +1817,7 @@
               <string>28</string>
               <string>CE6</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Smoldering Church</Name>
@@ -1128,7 +1825,7 @@
               <string>28</string>
               <string>CE4</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Smoldering Wall</Name>
@@ -1136,7 +1833,7 @@
               <string>28</string>
               <string>CE5</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>Southern Aeonia Swamp Bank</Name>
@@ -1144,7 +1841,7 @@
               <string>28</string>
               <string>CE5</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>Abandoned Cave</Name>
@@ -1152,7 +1849,7 @@
               <string>28</string>
               <string>B4A</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Caelid Catacombs</Name>
@@ -1168,7 +1865,7 @@
               <string>28</string>
               <string>CE6</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Deep Siofra Well</Name>
@@ -1176,7 +1873,7 @@
               <string>28</string>
               <string>CE5</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Gael Tunnel</Name>
@@ -1192,7 +1889,7 @@
               <string>28</string>
               <string>B4A</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>Impassable Greatbridge</Name>
@@ -1200,15 +1897,15 @@
               <string>28</string>
               <string>CE6</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
-            <Name>Minor Eerdtree Catacombs</Name>
+            <Name>Minor Erdtree Catacombs</Name>
             <Offsets>
               <string>28</string>
               <string>B3C</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Rear Gael Tunnel Entrance</Name>
@@ -1216,7 +1913,7 @@
               <string>28</string>
               <string>B5B</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>Redmane Castle Plaza</Name>
@@ -1224,7 +1921,7 @@
               <string>28</string>
               <string>CE6</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>Sellia Crystal Tunnel</Name>
@@ -1232,7 +1929,7 @@
               <string>28</string>
               <string>B55</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Starscourge Radahn</Name>
@@ -1240,7 +1937,7 @@
               <string>28</string>
               <string>CE6</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>War-Dead Catacombs</Name>
@@ -1248,7 +1945,7 @@
               <string>28</string>
               <string>B3D</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -1261,7 +1958,7 @@
               <string>28</string>
               <string>CE4</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Astray from Caelid Highway North</Name>
@@ -1272,12 +1969,12 @@
             <BitStart>0</BitStart>
           </Grace>
           <Grace>
-            <Name>Heart of Aenoia</Name>
+            <Name>Heart of Aeonia</Name>
             <Offsets>
               <string>28</string>
               <string>CE5</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Inner Aeonia</Name>
@@ -1285,7 +1982,7 @@
               <string>28</string>
               <string>CE5</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -1298,7 +1995,7 @@
               <string>28</string>
               <string>CEA</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Divine Tower of Caelid: Basement</Name>
@@ -1306,7 +2003,7 @@
               <string>28</string>
               <string>B72</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Divine Tower of Caelid: Center</Name>
@@ -1314,7 +2011,7 @@
               <string>28</string>
               <string>B72</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>Dragonbarrow Cave</Name>
@@ -1322,7 +2019,7 @@
               <string>28</string>
               <string>B48</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Dragonbarrow Fork</Name>
@@ -1330,7 +2027,7 @@
               <string>28</string>
               <string>CEA</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Dragonbarrow West</Name>
@@ -1338,7 +2035,7 @@
               <string>28</string>
               <string>CEA</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Farum Greatbridge</Name>
@@ -1346,7 +2043,7 @@
               <string>28</string>
               <string>CEB</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Fort Faroth</Name>
@@ -1354,7 +2051,7 @@
               <string>28</string>
               <string>CEA</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Isolated Divine Tower</Name>
@@ -1362,7 +2059,7 @@
               <string>28</string>
               <string>B74</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Isolated Merchant's Shack (Greyoll's Dragonbarrow)</Name>
@@ -1370,7 +2067,7 @@
               <string>28</string>
               <string>CEA</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>Lenne's Rise</Name>
@@ -1393,559 +2090,26 @@
     </Hubs>
   </Continent>
   <Continent>
-    <Name>Altus Plateau</Name>
-    <Hubs>
-      <Hub>
-        <Name>Altus Plateau</Name>
-        <Graces>
-          <Grace>
-            <Name>Abandoned Coffin</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD7</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Altus Highway Junction</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD7</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Altus Plateau</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD7</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Bower of Bounty</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD8</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Erdtree-Gazing Hill</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD7</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Forest-Spanning Greatbridge</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD8</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Rampartside Path</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD8</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Road of Iniquity Side Path</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD8</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Shaded Castle Inner Gate</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDA</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Shaded Castle Ramparts</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDA</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Windmill Heights</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD9</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Windmill Village</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD8</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Altus Tunnel</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B54</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Castellan's Hall</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDA</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Old Altus Tunnel</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B54</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Perfumer's Grotto</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B49</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Sage's Cave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B49</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Sainted Hero's Grave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3C</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Unsightly Catacombs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3C</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Mt. Gelmir</Name>
-        <Graces>
-          <Grace>
-            <Name>Bridge of Iniquity</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDD</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Craftsman's Shack</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDE</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>First Mt. Gelmir Campsite</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDD</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Gelmir Hero's Grave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3C</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Ninth Mt. Gelmir Campsite</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDE</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Primeval Sorcerer Azur</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDE</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Road of Iniquity</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDE</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Seethewater Cave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B48</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Seethewater River</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDE</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Seethewater Terminus</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDE</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Volcano Cave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B48</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Wyndham Catacombs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3B</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Leyndell, Royal Capital</Name>
-        <Graces>
-          <Grace>
-            <Name>Auriza Side Tomb</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3C</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Auzira Hero's Grave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3C</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Capital Rampart</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD9</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Divine Tower of West Altus</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B70</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Divine Tower of West Altus: Gate</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B71</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Hermit Merchant's Shack</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD8</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Minor Eerdtree Church</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD8</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Outer Wall Battleground</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD9</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Outer Wall Phantom Tree</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD8</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Sealed Tunnel</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B70</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Volcano Manor</Name>
-        <Graces>
-          <Grace>
-            <Name>Abductor Virgin</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A8C</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Audience Pathway</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A8C</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Guest Hall</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A8C</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Prison Town Church</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A8C</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Rykard, Lord of Blasphemy</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A8C</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Subterranean Inquisition Chamber</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A8C</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Temple of Eiglay</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A8C</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Volcano Manor</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A8C</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-    </Hubs>
-  </Continent>
-  <Continent>
-    <Name>Leyndell, Royal Capital</Name>
-    <Hubs>
-      <Hub>
-        <Name>Subterranean Shunning-Grounds</Name>
-        <Graces>
-          <Grace>
-            <Name>Cathedral of the Forsaken</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B79</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Forsaken Depths</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B79</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Frenzied Flame Proscription</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B7A</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Leyndell Catacombs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B79</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Underground Roadside</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B79</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Leyndell, Ashen Capital</Name>
-        <Graces>
-          <Grace>
-            <Name>Divine Bridge</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A50</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>East Capital Rampart</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A50</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Elden Throne</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A50</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Erdtree Sanctuary</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A50</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Leyendell, Capital of Ash</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A50</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Queen's Bedchamber</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A50</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Stone Platform</Name>
-        <Graces>
-          <Grace>
-            <Name>Fractured Marika</Name>
-            <Offsets>
-              <string>28</string>
-              <string>AB1</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-    </Hubs>
-  </Continent>
-  <Continent>
     <Name>Mountaintops of the Giants</Name>
     <Hubs>
       <Hub>
         <Name>Forbiden Lands</Name>
         <Graces>
           <Grace>
-            <Name>Divine Tower of the East Altus</Name>
+            <Name>Divine Tower of East Altus</Name>
             <Offsets>
               <string>28</string>
               <string>B73</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
-            <Name>Divine Tower of the East Altus: Gate</Name>
+            <Name>Divine Tower of East Altus: Gate</Name>
             <Offsets>
               <string>28</string>
               <string>B73</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Forbidden Lands</Name>
@@ -1953,7 +2117,7 @@
               <string>28</string>
               <string>CF0</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Grand Lift of Rold</Name>
@@ -1961,7 +2125,7 @@
               <string>28</string>
               <string>CF0</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Hidden Path to the Haligtree</Name>
@@ -1969,7 +2133,7 @@
               <string>28</string>
               <string>B3D</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -1990,7 +2154,7 @@
               <string>28</string>
               <string>CF3</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Castle Sol Rooftop</Name>
@@ -1998,7 +2162,7 @@
               <string>28</string>
               <string>CF3</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Church of the Eclipse</Name>
@@ -2006,7 +2170,7 @@
               <string>28</string>
               <string>CF3</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>First Church of Marika</Name>
@@ -2014,7 +2178,7 @@
               <string>28</string>
               <string>CF1</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>Freezing Lake</Name>
@@ -2022,7 +2186,7 @@
               <string>28</string>
               <string>CF1</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Snow Valley Ruins Overlook</Name>
@@ -2030,7 +2194,7 @@
               <string>28</string>
               <string>CF3</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>Spiritcaller's Cave</Name>
@@ -2038,7 +2202,7 @@
               <string>28</string>
               <string>B4A</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Whiteridge Road</Name>
@@ -2046,7 +2210,7 @@
               <string>28</string>
               <string>CF3</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Zamor Ruins</Name>
@@ -2054,7 +2218,7 @@
               <string>28</string>
               <string>CF0</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -2067,7 +2231,7 @@
               <string>28</string>
               <string>CF1</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>Fire Giant</Name>
@@ -2075,7 +2239,7 @@
               <string>28</string>
               <string>CF1</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Foot of the Forge</Name>
@@ -2083,7 +2247,7 @@
               <string>28</string>
               <string>CF1</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Forge of the Giants</Name>
@@ -2091,7 +2255,7 @@
               <string>28</string>
               <string>CF1</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Giant's Gravepost</Name>
@@ -2099,7 +2263,7 @@
               <string>28</string>
               <string>CF1</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Giant's Mountaintop Catacombs</Name>
@@ -2107,7 +2271,7 @@
               <string>28</string>
               <string>B3D</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Giant-Conquering Hero's Grave</Name>
@@ -2115,7 +2279,7 @@
               <string>28</string>
               <string>B3D</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -2128,7 +2292,7 @@
               <string>28</string>
               <string>D03</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Cave of the Forlorn</Name>
@@ -2136,7 +2300,7 @@
               <string>28</string>
               <string>B49</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Consecrated Snowfield</Name>
@@ -2144,7 +2308,7 @@
               <string>28</string>
               <string>CF6</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Consecrated Snowfield Catacombs</Name>
@@ -2152,7 +2316,7 @@
               <string>28</string>
               <string>B3D</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>Inner Consecrated Snowfield</Name>
@@ -2168,7 +2332,7 @@
               <string>28</string>
               <string>D03</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Yelough Anix Tunnel</Name>
@@ -2176,7 +2340,7 @@
               <string>28</string>
               <string>B55</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -2194,7 +2358,7 @@
               <string>28</string>
               <string>A80</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Haligtree Promenade</Name>
@@ -2202,7 +2366,7 @@
               <string>28</string>
               <string>A80</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>Haligtree Town</Name>
@@ -2210,7 +2374,7 @@
               <string>28</string>
               <string>A80</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>Haligtree Town Plaza</Name>
@@ -2218,7 +2382,7 @@
               <string>28</string>
               <string>A80</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -2239,7 +2403,7 @@
               <string>28</string>
               <string>A7F</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Haligtree Roots</Name>
@@ -2247,15 +2411,15 @@
               <string>28</string>
               <string>A80</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
-            <Name>Malenia, Godess of Rot</Name>
+            <Name>Malenia, Goddess of Rot</Name>
             <Offsets>
               <string>28</string>
               <string>A7F</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Prayer Room</Name>
@@ -2263,7 +2427,7 @@
               <string>28</string>
               <string>A7F</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -2281,7 +2445,7 @@
               <string>28</string>
               <string>A5B</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Ainsel River Sluice Gate</Name>
@@ -2289,7 +2453,7 @@
               <string>28</string>
               <string>A5B</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Ainsel River Well Depths</Name>
@@ -2297,7 +2461,7 @@
               <string>28</string>
               <string>A5B</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>Astel, Naturalborn of the Void</Name>
@@ -2305,7 +2469,7 @@
               <string>28</string>
               <string>A5F</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Dragonkin Soldier of Nokstella</Name>
@@ -2313,7 +2477,7 @@
               <string>28</string>
               <string>A5B</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -2326,7 +2490,7 @@
               <string>28</string>
               <string>A5B</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Nokstella, Eternal City</Name>
@@ -2342,7 +2506,7 @@
               <string>28</string>
               <string>A5C</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -2355,7 +2519,7 @@
               <string>28</string>
               <string>A5C</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Lake of Rot Shoreside</Name>
@@ -2363,7 +2527,7 @@
               <string>28</string>
               <string>A5C</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -2389,7 +2553,7 @@
               <string>28</string>
               <string>A5D</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>7</BitStart>
           </Grace>
           <Grace>
             <Name>Aqueduct-Facing Cliffs</Name>
@@ -2397,7 +2561,7 @@
               <string>28</string>
               <string>A5D</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>6</BitStart>
           </Grace>
           <Grace>
             <Name>Great Waterfall Basin</Name>
@@ -2405,7 +2569,7 @@
               <string>28</string>
               <string>A5C</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Mimic Tear</Name>
@@ -2413,7 +2577,7 @@
               <string>28</string>
               <string>A5C</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Night's Sacred Ground</Name>
@@ -2421,7 +2585,7 @@
               <string>28</string>
               <string>A5D</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
         </Graces>
       </Hub>
@@ -2434,7 +2598,7 @@
               <string>28</string>
               <string>A5D</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
           <Grace>
             <Name>Siofra River Bank</Name>
@@ -2442,7 +2606,7 @@
               <string>28</string>
               <string>A5C</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Siofra River Well Depths</Name>
@@ -2450,7 +2614,7 @@
               <string>28</string>
               <string>A62</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>1</BitStart>
           </Grace>
           <Grace>
             <Name>Worshippers' Woods</Name>
@@ -2471,7 +2635,7 @@
               <string>28</string>
               <string>A60</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>5</BitStart>
           </Grace>
           <Grace>
             <Name>Dynasty Mausoleum Entrance</Name>
@@ -2479,7 +2643,7 @@
               <string>28</string>
               <string>A60</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>3</BitStart>
           </Grace>
           <Grace>
             <Name>Dynasty Mausoleum Midpoint</Name>
@@ -2487,7 +2651,7 @@
               <string>28</string>
               <string>A60</string>
             </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>2</BitStart>
           </Grace>
           <Grace>
             <Name>Palace Approach Ledge-Road</Name>
@@ -2495,171 +2659,7 @@
               <string>28</string>
               <string>A60</string>
             </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-    </Hubs>
-  </Continent>
-    <Continent>
-    <Name>Misc</Name>
-    <Hubs>
-      <Hub>
-        <Name>Roundtable Hold</Name>
-        <Graces>
-          <Grace>
-            <Name>Table of Lost Grace</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A58</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Crumbling Farum Azula</Name>
-        <Graces>
-          <Grace>
-            <Name>Beside the great Bridge</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A67</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Crumbling Beast Grave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A66</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Crumbling Beast Grave Depths</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A67</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Dragon Temple</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A67</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Dragon Temple Altar</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A66</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Dragon Temple Lift</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A67</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Dragon Temple Rooftop</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A67</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Dragon Temple Transept</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A67</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Dragonlord Placidusax</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A66</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Maliketh, the Black Blade</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A66</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Tempest-Facing Balcony</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A67</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Deeproot Depths</Name>
-        <Graces>
-          <Grace>
-            <Name>Across the Roots</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5E</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Deeproot Depths</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5E</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Great Waterfall Crest</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5E</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Prince of Death's Throne</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5D</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Root-Facing Cliffs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5D</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>The Nameless Eternal City</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5E</string>
-            </Offsets>
-            <BitStart>0</BitStart>
+            <BitStart>4</BitStart>
           </Grace>
         </Graces>
       </Hub>

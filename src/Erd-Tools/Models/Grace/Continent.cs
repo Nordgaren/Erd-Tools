@@ -33,6 +33,9 @@ namespace Erd_Tools.Models
     public class Grace
     {
         public string Name { get; set; }
+        public string Continent { get; init; }
+        public string Hub { get; init; }
+        public int ParamRowID { get; set; }
         public List<string> Offsets { get; set; } = new();
         public int BitStart { get; set; }
     }

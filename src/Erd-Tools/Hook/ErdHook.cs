@@ -18,7 +18,6 @@ using System.Threading;
 using System.Xml;
 using System.Xml.Serialization;
 using Erd_Tools.Models;
-using Erd_Tools.Models.Old;
 using Erd_Tools.Utils;
 using Grace = Erd_Tools.Models.Grace;
 
@@ -100,26 +99,55 @@ namespace Erd_Tools
 
             Continent.GetContinents();
 
-            //List<Grace> graces = new();
+            var lol = File.ReadAllLines(@"C:\Users\Nord\Desktop\Grace Events.txt");
 
-            //foreach (Continent continent in Continent.Continents)
-            //{
-            //    foreach (Hub hub in continent.Hubs)
-            //    {
-            //        foreach (Models.Old.Grace grace in hub.Graces)
-            //        {
-            //            graces.Add(new Grace()
-            //            {
-            //                Name = grace.Name,
-            //                Continent = continent.Name,
-            //                Hub = hub.Name,
-            //                Offsets = grace.Offsets,
-            //                BitStart = grace.BitStart
-            //            });
-            //        }
-            //    }
-              
-            //}
+            Dictionary<string, int> events = new();
+            Regex paramEntryRx = new(@"^\s*(?<id>\S+)\s+(?<name>.*)$", RegexOptions.CultureInvariant);
+
+            foreach (string line in lol)
+            {
+                Match itemEntry = paramEntryRx.Match(line);
+                string name = itemEntry.Groups["name"].Value;//.Replace("\r", "");
+                int id = Convert.ToInt32(itemEntry.Groups["id"].Value);
+                events.Add(name, id);
+            }
+
+            var graces = new List<Grace>();
+            foreach (Continent continent in Continent.Continents)
+            {
+                foreach (Hub hub in continent.Hubs)
+                {
+                    for (int index = 0; index < hub.Graces.Count; index++)
+                    {
+                        hub.Graces[index] = new Grace()
+                        {
+                            Name = hub.Graces[index].Name,
+                            Continent = continent.Name,
+                            Hub = hub.Name,
+                            Offsets = hub.Graces[index].Offsets,
+                            BitStart = hub.Graces[index].BitStart
+                        };
+                        graces.Add(hub.Graces[index]);
+                    }
+                }
+
+            }
+
+
+            List<string> missed = new();
+
+            foreach (Grace grace in graces)
+            {
+                if (!events.ContainsKey(grace.Name))
+                {
+                    missed.Add(grace.Name);
+                    continue;
+                }
+
+                grace.ParamRowID = events[grace.Name];
+                events.Remove(grace.Name);
+            }
+
 
             //XmlSerializer ser = new(typeof(List<Grace>));
             //XmlWriterSettings settings = new() { Indent = true };
@@ -180,6 +208,7 @@ namespace Erd_Tools
         public Param? EquipParamWeapon;
         public Param? MagicParam;
         public Param? NpcParam;
+        public Param? BonfireWarpParam;
 
         private Engine Engine = new(Architecture.X86, Mode.X64);
         //TKCode
@@ -295,6 +324,9 @@ namespace Erd_Tools
                 case "NpcParam":
                     NpcParam = param;
                     break;
+                case "BonfireWarpParam":
+                    BonfireWarpParam = param;
+                    break;
                 default:
                     break;
             }
@@ -353,13 +385,14 @@ namespace Erd_Tools
         /// Sets the event flag in game by calling the "Set Event Flag" function.
         /// </summary>
         /// <param name="flag"></param>
-        public void SetEventFlag(int flag)
+        public void SetEventFlag(int flag, bool state)
         {
             IntPtr idPointer = GetPrefferedIntPtr(sizeof(int));
             Kernel32.WriteInt32(Handle, idPointer, flag);
 
             string asmString = Util.GetEmbededResource("Assembly.SetEventFlag.asm");
-            string asm = string.Format(asmString, EventFlagMan.Resolve(), idPointer.ToString("X2"), SetEventFlagFunction.Resolve());
+            var lol = SetEventFlagFunction.Resolve();
+            string asm = string.Format(asmString, EventFlagMan.Resolve(), (state ? 1 : 0), idPointer.ToString("X2"), SetEventFlagFunction.Resolve());
             AsmExecute(asm);
             Free(idPointer);
         }

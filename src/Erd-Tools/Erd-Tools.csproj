@@ -1843,4 +1843,8 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Resources\Systems\" />
+  </ItemGroup>
+
 </Project>
