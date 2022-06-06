@@ -11,6 +11,7 @@ using System.Text;
 using Category = Erd_Tools.Models.Item.Category;
 using static SoulsFormats.PARAMDEF;
 using System.Collections;
+using System.Globalization;
 using System.Text.RegularExpressions;
 using SoulsFormats;
 using System.Threading.Tasks;
@@ -109,6 +110,8 @@ namespace Erd_Tools
                 Match itemEntry = paramEntryRx.Match(line);
                 string name = itemEntry.Groups["name"].Value;//.Replace("\r", "");
                 int id = Convert.ToInt32(itemEntry.Groups["id"].Value);
+                if (events.ContainsKey(name))
+                    continue;
                 events.Add(name, id);
             }
 
@@ -933,5 +936,22 @@ namespace Erd_Tools
             set => OGLHandWeapon1Param?.WriteInt32((int)Offsets.EquipParamWeapon.SwordArtsParamId, value);
         }
 
+        #region Grace
+
+        public bool CheckGraceStatus(Grace grace)
+        {
+            PHPointer bonfireInfo = CreateChildPointer(CSFD4VirtualMemoryFlag, int.Parse(grace.Offsets[0], NumberStyles.HexNumber));
+            byte bitfield = bonfireInfo.ReadByte(int.Parse(grace.Offsets[1], NumberStyles.HexNumber));
+            return (bitfield & (1 << grace.BitStart)) != 0;
+        }
+
+        #endregion
+
+        public void Warp(int bonfireId)
+        {
+            string asmString = Util.GetEmbededResource("Assembly.Warp.asm");
+            string asm = string.Format(asmString, CSLuaEventManager.Resolve(), bonfireId.ToString("X2"), LuaWarp_01.Resolve());
+            AsmExecute(asm);
+        }
     }
 }
