@@ -42,6 +42,7 @@ namespace Erd_Tools
         private PHPointer GameDataMan { get; set; }
         private PHPointer GameMan { get; set; }
         private PHPointer PlayerGameData { get; set; }
+        private PHPointer ClassWhereTheNameIsStored { get; set; }
         private PHPointer PlayerInventory { get; set; }
         private PHPointer SoloParamRepository { get; set; }
         private PHPointer CapParamCall { get; set; }
@@ -74,6 +75,7 @@ namespace Erd_Tools
             OnUnhooked += ErdHook_OnUnhooked;
 
             GameDataMan = RegisterRelativeAOB(Offsets.GameDataManAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
+            ClassWhereTheNameIsStored = CreateChildPointer(GameDataMan, (int)Offsets.GameDataMan.ClassWhereTheNameIsStored);
             GameMan = RegisterRelativeAOB(Offsets.GameManAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
             PlayerGameData = CreateChildPointer(GameDataMan, Offsets.PlayerGameData);
             PlayerInventory = CreateChildPointer(PlayerGameData, Offsets.EquipInventoryDataOffset, Offsets.PlayerInventoryOffset);
@@ -603,8 +605,21 @@ namespace Erd_Tools
         }
         #endregion
 
-        #region Target  
+        #region Target
 
+        public string Name
+        {
+            get => ClassWhereTheNameIsStored.ReadString((int) Offsets.ClassWhereTheNameIsStored.Name, Encoding.Unicode,
+                32);
+            set
+            {
+                if (value.Length > 16)
+                    return;
+
+                ClassWhereTheNameIsStored.WriteString((int)Offsets.ClassWhereTheNameIsStored.Name, Encoding.Unicode,
+                    32, value);
+            }
+        }
         public enum PhantomParam
         {
             Normal = 0x00,

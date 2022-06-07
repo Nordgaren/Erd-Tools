@@ -20,6 +20,16 @@
             LastGrace = 0xB30
         }
 
+        public enum GameDataMan
+        {
+            ClassWhereTheNameIsStored = 0x8
+        }
+
+        public enum ClassWhereTheNameIsStored
+        {
+            Name = 0x9C
+        }
+
         public const int PlayerGameData = 0x8;
         public enum PlayerGameDataStruct
         {
