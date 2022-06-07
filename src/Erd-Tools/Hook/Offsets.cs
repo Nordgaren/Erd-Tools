@@ -15,6 +15,11 @@
         public const string GameDataManAoB = "48 8B 05 ? ? ? ? 48 85 C0 74 05 48 8B 40 58 C3 C3";
         public const string GameManAoB = "48 8B 05 ? ? ? ? 80 B8 ? ? ? ? 0D 0F 94 C0 C3";
 
+        public enum GameMan
+        {
+            LastGrace = 0xB30
+        }
+
         public const int PlayerGameData = 0x8;
         public enum PlayerGameDataStruct
         {
@@ -102,11 +107,11 @@
 
         public enum ItemGiveStruct
         {
+            ItemStructHeaderSize = 0x24,
+            ItemStructEntrySize = 0x10,
             Count = 0x20,
             ID = 0x24,
             Quantity = 0x28,
-            Infusion = 0x2C,
-            Upgrade = 0x2E,
             Gem = 0x30
         }
 

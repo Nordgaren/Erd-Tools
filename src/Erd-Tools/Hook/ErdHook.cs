@@ -19,6 +19,7 @@ using System.Threading;
 using System.Xml;
 using System.Xml.Serialization;
 using Erd_Tools.Models;
+using Erd_Tools.Models.Items;
 using Erd_Tools.Utils;
 using Grace = Erd_Tools.Models.Grace;
 
@@ -73,7 +74,7 @@ namespace Erd_Tools
             OnUnhooked += ErdHook_OnUnhooked;
 
             GameDataMan = RegisterRelativeAOB(Offsets.GameDataManAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
-            GameMan = RegisterRelativeAOB(Offsets.GameManAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize);
+            GameMan = RegisterRelativeAOB(Offsets.GameManAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
             PlayerGameData = CreateChildPointer(GameDataMan, Offsets.PlayerGameData);
             PlayerInventory = CreateChildPointer(PlayerGameData, Offsets.EquipInventoryDataOffset, Offsets.PlayerInventoryOffset);
 
@@ -103,7 +104,7 @@ namespace Erd_Tools
 
             Continent.GetContinents();
 
-            
+
         }
 
         private void ErdHook_OnUnhooked(object? sender, PHEventArgs e)
@@ -114,8 +115,6 @@ namespace Erd_Tools
         private void ErdHook_OnHooked(object? sender, PHEventArgs e)
         {
             LuaWarp_01 = CreateBasePointer(LuaWarp_01AoB.Resolve() + 2);
-
-            var kek = GameMan.Resolve();
             //IntPtr gameDataMan = GameDataMan.Resolve();
             //IntPtr paramss = SoloParamRepository.Resolve();
             //IntPtr itemGive = ItemGive.Resolve();
@@ -236,7 +235,7 @@ namespace Erd_Tools
             if (error != KeystoneError.KS_ERR_OK)
                 throw new Exception("Something went wrong during assembly. Code could not be assembled.");
 
-            IntPtr insertPtr = GetPrefferedIntPtr(bytes.Buffer.Length, flProtect :Kernel32.PAGE_EXECUTE_READWRITE);
+            IntPtr insertPtr = GetPrefferedIntPtr(bytes.Buffer.Length, flProtect: Kernel32.PAGE_EXECUTE_READWRITE);
 
             //Reassemble with the location of the isertPtr to support relative instructions
             bytes = Engine.Assemble(asm, (ulong)insertPtr);
@@ -480,21 +479,21 @@ namespace Erd_Tools
             }
         }
 
-        public void GetItem(int id, int quantity, int infusion, int upgrade, int gem)
+        public void GetItem(ItemSpawnInfo item)
         {
-            byte[]   itemInfobytes = new byte[0x34];
-            IntPtr itemInfo = GetPrefferedIntPtr(0x34);
+            byte[] itemInfobytes = new byte[(int)Offsets.ItemGiveStruct.ItemStructHeaderSize + (int)Offsets.ItemGiveStruct.ItemStructEntrySize];
+            IntPtr itemInfo = GetPrefferedIntPtr(itemInfobytes.Length);
 
             byte[] bytes = BitConverter.GetBytes(0x1);
             Array.Copy(bytes, 0x0, itemInfobytes, (int)Offsets.ItemGiveStruct.Count, bytes.Length);
 
-            bytes = BitConverter.GetBytes(id + infusion + upgrade);
+            bytes = BitConverter.GetBytes(item.ID + item.Infusion + item.Upgrade + (int)item.Category);
             Array.Copy(bytes, 0x0, itemInfobytes, (int)Offsets.ItemGiveStruct.ID, bytes.Length);
 
-            bytes = BitConverter.GetBytes(quantity);
+            bytes = BitConverter.GetBytes(item.Quantity);
             Array.Copy(bytes, 0x0, itemInfobytes, (int)Offsets.ItemGiveStruct.Quantity, bytes.Length);
 
-            bytes = BitConverter.GetBytes(gem);
+            bytes = BitConverter.GetBytes(item.Gem);
             Array.Copy(bytes, 0x0, itemInfobytes, (int)Offsets.ItemGiveStruct.Gem, bytes.Length);
 
             Kernel32.WriteBytes(Handle, itemInfo, itemInfobytes);
@@ -503,6 +502,70 @@ namespace Erd_Tools
             string asm = string.Format(asmString, itemInfo.ToString("X2"), MapItemMan.Resolve(), ItemGive.Resolve() + Offsets.ItemGiveOffset);
             AsmExecute(asm);
             Free(itemInfo);
+
+            if (item.EventID != -1)
+                SetEventFlag(item.EventID, true);
+        }
+
+        public void GetItem(List<ItemSpawnInfo> items, CancellationToken token)
+        {
+            List<InventoryEntry> inventory = GetInventoryList();
+
+            IEnumerable<IEnumerable<ItemSpawnInfo>> chunks = items.Chunk(10);
+
+            foreach (IEnumerable<ItemSpawnInfo> chunk in chunks)
+            {
+                List<int> eventIDs = new();
+                int position = 0;
+                byte[] itemInfoBytes = new byte[(int)Offsets.ItemGiveStruct.ItemStructHeaderSize + (chunk.Count() * (int)Offsets.ItemGiveStruct.ItemStructEntrySize)];
+                IntPtr itemInfo = GetPrefferedIntPtr(itemInfoBytes.Length);
+                int count = 0;
+                byte[] bytes;
+                foreach (ItemSpawnInfo item in chunk)
+                {
+                    InventoryEntry? entry = inventory.FirstOrDefault(x => x.ItemID == item.ID + item.Infusion + item.Upgrade && x.Category == item.Category);
+
+                    if (entry != null && entry.Quantity >= item.MaxQuantity)
+                        continue;
+
+                    bytes = BitConverter.GetBytes(item.ID + item.Infusion + item.Upgrade + (int)item.Category);
+                    Array.Copy(bytes, 0x0, itemInfoBytes, (int)Offsets.ItemGiveStruct.ID + position, bytes.Length);
+
+                    int quantity = Math.Max(item.Quantity, item.MaxQuantity - entry?.Quantity ?? 0);
+
+                    if (quantity == 0)
+                        continue;
+
+                    bytes = BitConverter.GetBytes(quantity);
+                    Array.Copy(bytes, 0x0, itemInfoBytes, (int)Offsets.ItemGiveStruct.Quantity + position, bytes.Length);
+
+                    bytes = BitConverter.GetBytes(item.Gem);
+                    Array.Copy(bytes, 0x0, itemInfoBytes, (int)Offsets.ItemGiveStruct.Gem + position, bytes.Length);
+
+                    if (item.EventID != -1)
+                            eventIDs.Add(item.EventID);
+
+                    position += (int)Offsets.ItemGiveStruct.ItemStructEntrySize;
+                    count++;
+                }
+
+                bytes = BitConverter.GetBytes(count);
+                Array.Copy(bytes, 0x0, itemInfoBytes, (int)Offsets.ItemGiveStruct.Count, bytes.Length);
+
+                Kernel32.WriteBytes(Handle, itemInfo, itemInfoBytes);
+
+                string asmString = Util.GetEmbededResource("Assembly.ItemGib.asm");
+                string asm = string.Format(asmString, itemInfo.ToString("X2"), MapItemMan.Resolve(), ItemGive.Resolve() + Offsets.ItemGiveOffset);
+                AsmExecute(asm);
+                Free(itemInfo);
+
+                foreach (int eventID in eventIDs)
+                {
+                    SetEventFlag(eventID, true);
+                }
+                token.ThrowIfCancellationRequested();
+            }
+
         }
 
         List<InventoryEntry>? Inventory;
@@ -664,9 +727,9 @@ namespace Erd_Tools
             CombatMapEnabled = false;
         }
         private short WeatherParamID => WorldAreaWeather?.ReadInt16((int)Offsets.WorldAreaWeather.WeatherParamID) ?? 0;
-        private short ForceWeatherParamID 
+        private short ForceWeatherParamID
         {
-            set => WorldAreaWeather?.WriteInt16((int)Offsets.WorldAreaWeather.ForceWeatherParamID, value); 
+            set => WorldAreaWeather?.WriteInt16((int)Offsets.WorldAreaWeather.ForceWeatherParamID, value);
         }
 
         public enum WeatherTypes
@@ -950,6 +1013,12 @@ namespace Erd_Tools
 
         #region Grace
 
+        public int LastGrace
+        {
+            get => GameMan.ReadInt32((int)Offsets.GameMan.LastGrace);
+            set => GameMan.WriteInt32((int)Offsets.GameMan.LastGrace, value);
+        }
+
         public bool CheckGraceStatus(int ptrOffset, int dataOffset, int bitStart)
         {
             PHPointer bonfireInfo = CreateChildPointer(CSFD4VirtualMemoryFlag, ptrOffset);
@@ -957,19 +1026,18 @@ namespace Erd_Tools
             return (bitfield & (1 << bitStart)) != 0;
         }
 
-        #endregion
-
         public void Warp(int bonfireID)
         {
             IntPtr warpLocation = GetPrefferedIntPtr(sizeof(int));
             Kernel32.WriteInt32(Handle, warpLocation, bonfireID);
 
             string asmString = Util.GetEmbededResource("Assembly.Warp.asm");
-            var lol = CSLuaEventManager.Resolve();
-            var lol2 = LuaWarp_01AoB.Resolve();
-            var lol3 = LuaWarp_01.Resolve();
             string asm = string.Format(asmString, CSLuaEventManager.Resolve(), bonfireID, LuaWarp_01.Resolve());
             AsmExecute(asm);
         }
+
+        #endregion
+
+
     }
 }
