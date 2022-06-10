@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 001(1) = act0
 002(1) = act1
 003(1) = act2

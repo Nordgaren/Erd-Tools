@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 002(2) = atk0_EzStateId
 004(2) = atk1_EzStateId
 006(2) = atk2_EzStateId

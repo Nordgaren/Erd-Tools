@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 004(4) = RangeMin
 008(4) = RangeMax
 00C(4) = LifeTimeMin

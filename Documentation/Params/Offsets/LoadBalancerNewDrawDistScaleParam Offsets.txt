@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 001(1) = DrawDist_LvBegin
 002(1) = DrawDist_LvEnd
 004(2) = reserve0

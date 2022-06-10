@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 004(4) = correctionRate
 006(2) = minToughness
 007(1) = isNonEffectiveCorrectionForMin

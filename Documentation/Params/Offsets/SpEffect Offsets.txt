@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 004(4) = iconId
 008(4) = conditionHp
 00C(4) = effectEndurance

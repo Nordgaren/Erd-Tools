@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 001(1) = isStrengthCorrect_byPhysics : 1
 001(1) = isDexterityCorrect_byPhysics : 2
 001(1) = isMagicCorrect_byPhysics : 3

@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 004(4) = midstSfxId
 008(4) = midstSeId
 00C(4) = initSfxId

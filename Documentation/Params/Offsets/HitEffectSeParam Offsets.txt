@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 004(4) = Iron_Slash_S
 008(4) = Iron_Slash_L
 00C(4) = Iron_Slash_LL

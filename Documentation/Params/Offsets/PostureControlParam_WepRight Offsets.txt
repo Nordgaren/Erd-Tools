@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 002(2) = a000_rightArmFB
 004(2) = a000_rightWristFB
 006(2) = a000_rightWristIO

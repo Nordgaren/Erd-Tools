@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 004(4) = lv01_BorderDist
 008(4) = lv01_PlayDist
 00C(4) = lv12_BorderDist

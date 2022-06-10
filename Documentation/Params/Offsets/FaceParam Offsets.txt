@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 001(1) = face_partsId
 002(1) = skin_color_R
 003(1) = skin_color_G

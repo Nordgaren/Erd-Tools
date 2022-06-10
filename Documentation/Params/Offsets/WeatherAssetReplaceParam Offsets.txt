@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 004(4) = mapId
 006(2) = TransitionSrcWeather
 008(2) = padding0

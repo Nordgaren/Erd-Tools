@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 002(2) = RadarRange
 003(1) = RadarAngleX
 004(1) = RadarAngleY

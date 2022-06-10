@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 004(4) = LOD0_range
 008(4) = LOD0_play
 00C(4) = LOD1_range

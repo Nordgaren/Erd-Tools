@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 001(1) = slot0 : 1
 001(1) = slot1 : 2
 001(1) = slot2 : 3

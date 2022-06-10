@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 004(4) = baseToughnessRecoverTime
 008(4) = chrEventTrun_byLeft90
 00C(4) = chrEventTrun_byRight90

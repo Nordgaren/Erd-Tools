@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 004(4) = Slash_Normal
 008(4) = Slash_S
 00C(4) = Slash_L

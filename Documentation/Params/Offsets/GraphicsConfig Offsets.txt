@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 001(1) = m_textureFilterQuality
 002(1) = m_aaQuality
 003(1) = m_ssaoQuality

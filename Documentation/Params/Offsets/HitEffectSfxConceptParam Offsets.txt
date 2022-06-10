@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 002(2) = atkIron_1
 004(2) = atkIron_2
 006(2) = atkLeather_1

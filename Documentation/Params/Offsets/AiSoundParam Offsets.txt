@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 004(4) = radius
 008(4) = lifeFrame
 009(1) = bSpEffectEnable

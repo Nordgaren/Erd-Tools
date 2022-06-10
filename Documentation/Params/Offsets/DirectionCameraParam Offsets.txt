@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 001(1) = isUseOption : 1
 001(1) = pad2 : 4
 010(15) = pad1

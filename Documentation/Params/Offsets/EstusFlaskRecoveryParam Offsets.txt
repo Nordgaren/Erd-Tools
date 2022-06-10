@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 001(1) = host
 002(1) = invadeOrb_None
 003(1) = invadeOrb_Umbasa

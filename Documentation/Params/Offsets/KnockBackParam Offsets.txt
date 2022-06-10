@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 004(4) = damage_Min_ContTime
 008(4) = damage_S_ContTime
 00C(4) = damage_M_ContTime

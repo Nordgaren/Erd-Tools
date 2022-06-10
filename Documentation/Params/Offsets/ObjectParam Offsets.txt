@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 002(2) = hp
 004(2) = defense
 006(2) = extRefTexId

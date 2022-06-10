@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 001(1) = sssEnabled
 002(1) = tessellationEnabled
 003(1) = highPrecisionNormalEnabled

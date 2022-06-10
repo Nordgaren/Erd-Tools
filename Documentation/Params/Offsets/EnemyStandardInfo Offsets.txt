@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 004(4) = EnemyBehaviorID
 006(2) = HP
 008(2) = AttackPower

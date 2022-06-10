@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 008(8) = reserved0
 00C(4) = soundTargetTryApproachTime
 010(4) = searchTargetTryApproachTime

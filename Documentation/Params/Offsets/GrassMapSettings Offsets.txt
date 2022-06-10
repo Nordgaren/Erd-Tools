@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 004(4) = grassType0
 008(4) = grassType1
 00C(4) = grassType2

@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 004(4) = hit0_Radius
 008(4) = hit1_Radius
 00C(4) = hit2_Radius

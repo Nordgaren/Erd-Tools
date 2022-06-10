@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 002(2) = lodRange
 003(1) = lod0ClusterType
 004(1) = lod1ClusterType

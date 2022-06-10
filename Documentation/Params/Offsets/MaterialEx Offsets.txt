@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 040(64) = paramName
 044(4) = materialId
 048(4) = materialParamValue0

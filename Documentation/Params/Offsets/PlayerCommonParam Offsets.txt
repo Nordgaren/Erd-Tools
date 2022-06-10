@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 004(4) = playerFootEffect_bySFX
 008(4) = snipeModeDrawAlpha_FadeTime
 00C(4) = toughnessRecoverCorrection

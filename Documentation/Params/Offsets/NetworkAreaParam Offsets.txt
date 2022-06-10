@@ -1,4 +1,4 @@
-//Format[hex]:Index(size) = Name 
+//Format[hex]:Index(size) = Name : BitSize
 004(4) = cellSizeX
 008(4) = cellSizeY
 00C(4) = cellSizeZ
