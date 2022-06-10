@@ -1,6 +1,6 @@
-Offset(size) = Name
-
+//Format[hex]:Index(size) = Name 
 000(1) = disableParam_NT
+Bitfield: 8
 001(3) = disableParamReserve2
 004(4) = behaviorVariationId
 008(4) = sortId
@@ -99,10 +99,15 @@ Offset(size) = Name
 103(1) = curseGuardResist
 104(1) = atkAttribute
 105(1) = rightHandEquipable
+Bitfield: 8
 106(1) = enableSorcery
+Bitfield: 8
 107(1) = isHeroPointCorrect
+Bitfield: 8
 108(1) = baseChangeCategory
+Bitfield: 8
 109(1) = disableMultiDropShare
+Bitfield: 8
 10A(2) = defSfxMaterial1
 10C(1) = wepCollidableType0
 10D(1) = wepCollidableType1
@@ -137,6 +142,7 @@ Offset(size) = Name
 174(4) = absorpParamId
 178(4) = toughnessCorrectRate
 17C(1) = isValidTough_ProtSADmg
+Bitfield: 8
 17D(1) = correctType_Magic
 17E(1) = correctType_Fire
 17F(1) = correctType_Thunder
@@ -198,6 +204,7 @@ Offset(size) = Name
 234(1) = reinforceShopCategory
 235(1) = maxArrowQuantity
 236(1) = residentSfx_1_IsVisibleForHang
+Bitfield: 8
 237(1) = wepSeIdOffset
 238(4) = baseChangePrice
 23C(2) = levelSyncCorrectId

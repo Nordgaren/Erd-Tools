@@ -1,4 +1,6 @@
+//Format[hex]:Index(size) = Name 
 000(1) = disableParam_NT
+Bitfield: 8
 001(3) = disableParamReserve2
 004(2) = iconId
 006(1) = rank
@@ -15,17 +17,26 @@
 02C(2) = compTrophySedId
 02E(2) = trophySeqId
 030(1) = configurableWepAttr00
+Bitfield: 8
 031(1) = configurableWepAttr08
+Bitfield: 8
 032(1) = rarity
 033(1) = configurableWepAttr16
+Bitfield: 8
 034(1) = isDiscard
+Bitfield: 8
 035(1) = defaultWepAttr
 036(2) = pad2
 038(1) = canMountWep_Dagger
+Bitfield: 8
 039(1) = canMountWep_SwordPierce
+Bitfield: 8
 03A(1) = canMountWep_SpearLarge
+Bitfield: 8
 03B(1) = canMountWep_BowSmall
+Bitfield: 8
 03C(1) = canMountWep_ShieldSmall
+Bitfield: 8
 03D(3) = reserved2_canMountWep
 040(4) = spEffectMsgId0
 044(4) = spEffectMsgId1
