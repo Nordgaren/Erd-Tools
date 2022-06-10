@@ -7,8 +7,8 @@
     <UseWPF>true</UseWPF>
     <PackageIcon>elden_ring_logo-freelogovectors.net_White_Border.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <AssemblyVersion>0.7</AssemblyVersion>
-    <FileVersion>0.7</FileVersion>
+    <AssemblyVersion>0.8</AssemblyVersion>
+    <FileVersion>0.8</FileVersion>
 	  <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
 	  <PackageId>$(TargetPath)</PackageId>
     <Configurations>Debug;Release;Publish</Configurations>
@@ -16,6 +16,9 @@
 	  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Publish|AnyCPU'">
     <Optimize>True</Optimize>
   </PropertyGroup>
+	  <ItemGroup>
+	    <None Remove="Assembly\Warp.asm" />
+	  </ItemGroup>
 
 	<!--Move below code and uncomment for single file distro-->
 	<!--<ItemGroup>
@@ -1824,6 +1827,7 @@
     <EmbeddedResource Include="Assembly\ItemGib.asm" />
     <EmbeddedResource Include="Assembly\SaveParams.asm" />
     <EmbeddedResource Include="Assembly\SetEventFlag.asm" />
+    <EmbeddedResource Include="Assembly\Warp.asm" />
   </ItemGroup>
 
   <ItemGroup>
