@@ -1,0 +1,5 @@
+//Format[hex]:Index(size) = Name 
+004(4) = limitationTime_Normal
+008(4) = limitationTime_NormalDriedFinger
+00C(4) = limitationTime_Guardian
+010(4) = limitationTime_GuardianDriedFinger

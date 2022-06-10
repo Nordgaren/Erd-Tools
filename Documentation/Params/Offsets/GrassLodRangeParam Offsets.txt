@@ -1,0 +1,7 @@
+//Format[hex]:Index(size) = Name 
+004(4) = LOD0_range
+008(4) = LOD0_play
+00C(4) = LOD1_range
+010(4) = LOD1_play
+014(4) = LOD2_range
+018(4) = LOD2_play

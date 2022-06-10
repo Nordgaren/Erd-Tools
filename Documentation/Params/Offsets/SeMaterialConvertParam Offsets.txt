@@ -1,0 +1,3 @@
+//Format[hex]:Index(size) = Name 
+001(1) = seMaterialId
+004(3) = pad

@@ -1,0 +1,4 @@
+//Format[hex]:Index(size) = Name 
+001(1) = filter
+004(3) = dmy
+008(4) = maxAnisoLevel

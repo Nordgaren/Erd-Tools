@@ -1,0 +1,7 @@
+//Format[hex]:Index(size) = Name 
+004(4) = titleMsgId
+008(4) = contentMsgId
+00C(4) = value
+010(4) = sortId
+014(4) = eventId
+020(12) = Pad

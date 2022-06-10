@@ -1,0 +1,5 @@
+//Format[hex]:Index(size) = Name 
+004(4) = baseWepId
+008(4) = gemId
+009(1) = reinforceLv
+010(7) = pad

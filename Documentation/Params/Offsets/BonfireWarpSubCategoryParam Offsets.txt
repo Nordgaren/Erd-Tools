@@ -1,0 +1,8 @@
+//Format[hex]:Index(size) = Name 
+001(1) = disableParam_NT : 1
+001(1) = disableParamReserve1 : 8
+004(3) = disableParamReserve2
+008(4) = textId
+00A(2) = tabId
+00C(2) = sortId
+010(4) = pad

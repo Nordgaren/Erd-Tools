@@ -1,0 +1,6 @@
+//Format[hex]:Index(size) = Name 
+001(1) = enabled
+002(1) = cs_reprojEnabledType
+003(1) = cs_upScaleEnabledType
+004(1) = cs_useNormalEnabledType
+005(1) = dmy

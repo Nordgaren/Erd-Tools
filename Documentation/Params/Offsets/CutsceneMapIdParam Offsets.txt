@@ -1,0 +1,15 @@
+//Format[hex]:Index(size) = Name 
+001(1) = disableParam_NT : 1
+001(1) = disableParam_Debug : 2
+001(1) = disableParamReserve1 : 8
+004(3) = disableParamReserve2
+008(4) = PlayMapId
+00C(4) = RequireMapId0
+010(4) = RequireMapId1
+014(4) = RequireMapId2
+018(4) = RefCamPosHitPartsID
+024(12) = reserved_2
+026(2) = ClientDisableViewTimeForProgress
+028(2) = reserved
+02C(4) = HitParts_0
+030(4) = HitParts_1

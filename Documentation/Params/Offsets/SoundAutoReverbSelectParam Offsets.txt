@@ -1,0 +1,12 @@
+//Format[hex]:Index(size) = Name 
+004(4) = reverbType
+008(4) = AreaNo
+009(1) = IndoorOutdoor
+00A(1) = useDistNoA
+00B(1) = useDistNoB
+00C(1) = pad0
+010(4) = DistMinA
+014(4) = DistMaxA
+018(4) = DistMinB
+01C(4) = DistMaxB
+020(4) = NoHitNumMin

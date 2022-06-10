@@ -1,0 +1,14 @@
+//Format[hex]:Index(size) = Name 
+001(1) = disableParam_NT : 1
+001(1) = disableParam_Debug : 2
+001(1) = disableParamReserve1 : 8
+004(3) = disableParamReserve2
+005(1) = DstTimezone_Morning
+006(1) = DstTimezone_Noon
+007(1) = DstTimezone_AfterNoon
+008(1) = DstTimezone_Evening
+009(1) = DstTimezone_Night
+00A(1) = DstTimezone_DeepNightA
+00B(1) = DstTimezone_DeepNightB
+00C(1) = reserved
+010(4) = PostPlayIngameTime

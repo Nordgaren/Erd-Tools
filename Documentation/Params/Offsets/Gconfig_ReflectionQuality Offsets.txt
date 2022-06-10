@@ -1,0 +1,13 @@
+//Format[hex]:Index(size) = Name 
+001(1) = enabled
+002(1) = localLightEnabled
+003(1) = localLightForceEnabled
+004(1) = dmy
+008(4) = resolutionDivider
+009(1) = ssrEnabled
+00A(1) = ssrGaussianBlurEnabled
+00C(2) = dmy2
+010(4) = ssrDepthRejectThresholdScale
+014(4) = ssrRayTraceStepScale
+018(4) = ssrFadeToViewerBias
+01C(4) = ssrFresnelRejectBias

@@ -1,0 +1,2 @@
+//Format[hex]:Index(size) = Name 
+004(4) = activateRange
