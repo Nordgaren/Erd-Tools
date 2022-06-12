@@ -1270,18 +1270,18 @@
 600885 Default - Heavy Thrusting Sword
 600890 Default - Heavy Thrusting Sword
 600895 Default - Heavy Thrusting Sword
-601100 Great epee
-601105 Great epee
-601110 Great epee
-601115 Great epee
-601175 Great epee
-601176 Great epee
-601300 Great epee
-601305 Great epee
-601310 Great epee
-601315 Great epee
-601375 Great epee
-601376 Great epee
+601100 Great Epee
+601105 Great Epee
+601110 Great Epee
+601115 Great Epee
+601175 Great Epee
+601176 Great Epee
+601300 Great Epee
+601305 Great Epee
+601310 Great Epee
+601315 Great Epee
+601375 Great Epee
+601376 Great Epee
 602100 Godskin Stitcher
 602105 Godskin Stitcher
 602106 Godskin Stitcher
@@ -4425,6 +4425,7 @@
 5019875 Stormwing Bone Arrow
 5020300 Lightningbone Arrow (Fletched)
 5020310 Lightningbone Arrow (Fletched)
+5020400 Lightningbone Arrow (Fletched)
 5020810 Lightningbone Arrow (Fletched)
 5020811 Lightningbone Arrow (Fletched)
 5020815 Lightningbone Arrow (Fletched)
@@ -4440,6 +4441,7 @@
 5020870 Lightningbone Arrow (Fletched)
 5020875 Lightningbone Arrow (Fletched)
 5020890 Lightningbone Arrow (Fletched)
+5020895 Lightningbone Arrow (Fletched)
 5021300 Lightningbone Arrow
 5021310 Lightningbone Arrow
 5021400 Lightningbone Arrow
@@ -4458,8 +4460,10 @@
 5021870 Lightningbone Arrow
 5021875 Lightningbone Arrow
 5021890 Lightningbone Arrow
+5021895 Lightningbone Arrow
 5022300 Rainbow Stone Arrow
 5022310 Rainbow Stone Arrow
+5022400 Rainbow Stone Arrow
 5022810 Rainbow Stone Arrow
 5022811 Rainbow Stone Arrow
 5022815 Rainbow Stone Arrow
@@ -4905,6 +4909,9 @@
 10361000 Acid Spraymist [Hit]
 30090011 Dragon Halberd
 30200921 Golden Great Arrow
+30300850 [Ash of War] Gravitas
+30300851 [Ash of War] Gravitas
+30300852 [Ash of War] Gravitas
 300000920 Gargoyle's Blackblade
 300100310 Default - Dagger
 300100311 Default - Dagger

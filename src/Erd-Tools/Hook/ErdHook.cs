@@ -44,6 +44,8 @@ namespace Erd_Tools
         private PHPointer PlayerGameData { get; set; }
         private PHPointer ClassWhereTheNameIsStored { get; set; }
         private PHPointer PlayerInventory { get; set; }
+        private PHPointer HeldNormalItemsPtr { get; set; }
+        private PHPointer HeldSpecialItemsPtr { get; set; }
         private PHPointer SoloParamRepository { get; set; }
         private PHPointer CapParamCall { get; set; }
         public PHPointer ItemGive { get; set; }
@@ -79,6 +81,8 @@ namespace Erd_Tools
             GameMan = RegisterRelativeAOB(Offsets.GameManAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
             PlayerGameData = CreateChildPointer(GameDataMan, Offsets.PlayerGameData);
             PlayerInventory = CreateChildPointer(PlayerGameData, Offsets.EquipInventoryDataOffset, Offsets.PlayerInventoryOffset);
+            HeldNormalItemsPtr = CreateChildPointer(PlayerGameData, (int)Offsets.PlayerGameDataStruct.HeldNormalItems);
+            HeldSpecialItemsPtr = CreateChildPointer(PlayerGameData, (int)Offsets.PlayerGameDataStruct.HeldSpecialItems);
 
             SoloParamRepository = RegisterRelativeAOB(Offsets.SoloParamRepositoryAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
 
@@ -415,6 +419,26 @@ namespace Erd_Tools
 
         #region Inventory
 
+        public int MaxNormalItems => PlayerGameData.ReadInt32((int)Offsets.PlayerGameDataStruct.MaximumNormalItems);
+        public int MaxSpecialItems => PlayerGameData.ReadInt32((int)Offsets.PlayerGameDataStruct.MaximumSpecialItems);
+
+        public int HeldNormalItems
+        {
+            get => HeldNormalItemsPtr.ReadInt32(0x0);
+            set => HeldNormalItemsPtr.WriteInt32(0x0, value);
+        }
+
+        public int HeldSpecialItems
+        {
+            get => HeldSpecialItemsPtr.ReadInt32(0x0);
+            set => HeldSpecialItemsPtr.WriteInt32(0x0, value);
+        }
+
+        //HeldNormalItemsPtr = 0x414,
+        //HeldSpecialItemsPtr = 0x424, 
+        //HeldNormalItems = 0x450,
+        //HeldSpecialItems = 0x460
+
         private static Regex ItemEventEntryRx = new Regex(@"^(?<event>\S+) (?<item>\S+)$", RegexOptions.CultureInvariant);
 
         private static Dictionary<int, int> ItemEventDictionary;
@@ -572,7 +596,11 @@ namespace Erd_Tools
 
         List<InventoryEntry>? Inventory;
         public int InventoryEntries => PlayerGameData.ReadInt32((int)Offsets.PlayerGameDataStruct.InventoryCount);
+        public int InventoryLength => PlayerGameData.ReadInt32((int)Offsets.PlayerGameDataStruct.InventoryLength);
         //public int LastInventoryCount => GetInventoryCount();
+
+        private int _inventoryLength;
+
 
         public IEnumerable GetInventory()
         {
@@ -583,9 +611,9 @@ namespace Erd_Tools
         {
             List<InventoryEntry> inventory = new();
             uint inventoryEntries = (uint)InventoryEntries;
-            byte[] bytes = PlayerInventory.ReadBytes(0x0, inventoryEntries * Offsets.PlayInventoryEntrySize);
+            byte[] bytes = PlayerInventory.ReadBytes(0x0, (uint)InventoryLength * Offsets.PlayInventoryEntrySize);
 
-            for (int i = 0; i < inventoryEntries; i++)
+            for (int i = 0; inventory.Count < inventoryEntries; i++)
             {
                 byte[] entry = new byte[Offsets.PlayInventoryEntrySize];
                 Array.Copy(bytes, i * Offsets.PlayInventoryEntrySize, entry, 0, entry.Length);
@@ -593,7 +621,7 @@ namespace Erd_Tools
                 if (BitConverter.ToInt32(entry, (int)Offsets.InventoryEntry.ItemID) == -1)
                     continue;
 
-                inventory.Add(new InventoryEntry(entry, this));
+                inventory.Add(new InventoryEntry(CreateBasePointer(PlayerInventory.Resolve() + i * Offsets.PlayInventoryEntrySize) ,entry, this));
             }
 
             return inventory;

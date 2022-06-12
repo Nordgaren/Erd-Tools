@@ -33,7 +33,12 @@
         public const int PlayerGameData = 0x8;
         public enum PlayerGameDataStruct
         {
-            InventoryCount = 0x420
+            MaximumNormalItems = 0x414,
+            InventoryCount = 0x420,
+            MaximumSpecialItems = 0x424, 
+            InventoryLength = 0x488,
+            HeldNormalItems = 0x450,
+            HeldSpecialItems = 0x460
         }
         public enum ChrIns
         {

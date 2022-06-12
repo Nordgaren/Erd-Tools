@@ -98,7 +98,7 @@
 300700 [Mt. Gelmir] Wyndham Catacombs
 300800 [Altus Plateau] Sainted Hero's Grave
 300900 [Mt. Gelmir] Gelmir Hero's Grave
-301000 [Capital Outskirts] Auzira Hero's Grave
+301000 [Capital Outskirts] Auriza Hero's Grave
 301100 [Stormhill] Deathtouched Catacombs
 301200 [Altus Plateau] Unsightly Catacombs
 301300 [Capital Outskirts] Auriza Side Tomb

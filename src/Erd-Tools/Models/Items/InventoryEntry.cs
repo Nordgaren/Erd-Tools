@@ -1,11 +1,13 @@
 ﻿using Erd_Tools.Utils;
 using System;
+using PropertyHook;
 using static Erd_Tools.Models.Item;
 
 namespace Erd_Tools.Models
 {
     public class InventoryEntry
     {
+        private PHPointer Pointer { get; }
         public byte[] Bytes { get;  }
         public string Name { get;  }
         public int GaItemHandle { get; }
@@ -14,8 +16,9 @@ namespace Erd_Tools.Models
         public int Quantity {  get; }
         public int DisplayID { get; }
 
-        public InventoryEntry(byte[] bytes, ErdHook hook)
+        public InventoryEntry(PHPointer pointer, byte[] bytes, ErdHook hook)
         {
+            Pointer = pointer;
             Bytes = bytes;
             Name = "Unknown";
             GaItemHandle = BitConverter.ToInt32(Bytes, (int)Offsets.InventoryEntry.GaItemHandle);

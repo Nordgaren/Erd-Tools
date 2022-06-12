@@ -466,57 +466,57 @@
 101805 [Twin Maiden Husks - Haligtree] Lord's Divine Fortification
 101806 [Twin Maiden Husks - Mohgwyn] Fevor's Cookbook [3]
 101807 [Twin Maiden Husks - Mohg] Law of Causality
-101808 [Twin Maiden Husks] Smithing Stone [1]
-101809 [Twin Maiden Husks] Smithing Stone [2]
-101810 [Twin Maiden Husks] Glintstone Scrap
-101811 [Twin Maiden Husks] Smithing Stone [3]
-101812 [Twin Maiden Husks] Smithing Stone [4]
-101813 [Twin Maiden Husks] Explosive Stone
-101814 [Twin Maiden Husks] Smithing Stone [5]
-101815 [Twin Maiden Husks] Smithing Stone [6]
-101816 [Twin Maiden Husks] Smithing Stone [7]
-101817 [Twin Maiden Husks] Smithing Stone [8]
-101818 [Twin Maiden Husks] Somber Smithing Stone [1]
-101819 [Twin Maiden Husks] Somber Smithing Stone [2]
-101820 [Twin Maiden Husks] Somber Smithing Stone [3]
-101821 [Twin Maiden Husks] Somber Smithing Stone [4]
-101822 [Twin Maiden Husks] Cracked Crystal
-101823 [Twin Maiden Husks] Somber Smithing Stone [5]
-101824 [Twin Maiden Husks] Somber Smithing Stone [6]
-101825 [Twin Maiden Husks] Somber Smithing Stone [7]
-101826 [Twin Maiden Husks] Somber Smithing Stone [8]
-101827 [Twin Maiden Husks] Sanctuary Stone
-101828 [Twin Maiden Husks] Somber Smithing Stone [9]
-101829 [Twin Maiden Husks] Grave Glovewort [1]
-101830 [Twin Maiden Husks] Grave Glovewort [2]
-101831 [Twin Maiden Husks] Grave Glovewort [3]
-101832 [Twin Maiden Husks] Grave Glovewort [4]
-101833 [Twin Maiden Husks] Grave Glovewort [5]
-101834 [Twin Maiden Husks] Grave Glovewort [6]
-101835 [Twin Maiden Husks] Grave Glovewort [7]
-101836 [Twin Maiden Husks] Grave Glovewort [8]
-101837 [Twin Maiden Husks] Grave Glovewort [9]
-101838 [Twin Maiden Husks] Ghost Glovewort [1]
-101839 [Twin Maiden Husks] Ghost Glovewort [2]
-101840 [Twin Maiden Husks] Ghost Glovewort [3]
-101841 [Twin Maiden Husks] Ghost Glovewort [4]
-101842 [Twin Maiden Husks] Ghost Glovewort [5]
-101843 [Twin Maiden Husks] Ghost Glovewort [6]
-101844 [Twin Maiden Husks] Ghost Glovewort [7]
-101845 [Twin Maiden Husks] Ghost Glovewort [8]
-101846 [Twin Maiden Husks] Ghost Glovewort [9]
-101847 [Twin Maiden Husks] Thin Beast Bones
-101848 [Twin Maiden Husks] Hefty Beast Bone
-101849 [Twin Maiden Husks] Sliver of Meat
-101850 [Twin Maiden Husks] Lump of Flesh
-101851 [Twin Maiden Husks] Turtle Neck Meat
-101852 [Twin Maiden Husks] Neutralizing Boluses
-101853 [Twin Maiden Husks] Stanching Boluses
-101854 [Twin Maiden Husks] Thawfrost Boluses
-101855 [Twin Maiden Husks] Stimulating Boluses
-101856 [Twin Maiden Husks] Gravity Stone Fan
-101857 [Twin Maiden Husks] Gravity Stone Chunk
-101858 [Twin Maiden Husks] Ruin Fragment
+101808 [Twin Maiden Husks - Smithing-Stone Miner's Bell Bearing [1]] Smithing Stone [1]
+101809 [Twin Maiden Husks - Smithing-Stone Miner's Bell Bearing [1]] Smithing Stone [2]
+101810 [Twin Maiden Husks - Smithing-Stone Miner's Bell Bearing [1]] Glintstone Scrap
+101811 [Twin Maiden Husks - Smithing-Stone Miner's Bell Bearing [2]] Smithing Stone [3]
+101812 [Twin Maiden Husks - Smithing-Stone Miner's Bell Bearing [2]] Smithing Stone [4]
+101813 [Twin Maiden Husks - Smithing-Stone Miner's Bell Bearing [2]] Explosive Stone
+101814 [Twin Maiden Husks - Smithing-Stone Miner's Bell Bearing [3]] Smithing Stone [5]
+101815 [Twin Maiden Husks - Smithing-Stone Miner's Bell Bearing [3]] Smithing Stone [6]
+101816 [Twin Maiden Husks - Smithing-Stone Miner's Bell Bearing [4]] Smithing Stone [7]
+101817 [Twin Maiden Husks - Smithing-Stone Miner's Bell Bearing [4]] Smithing Stone [8]
+101818 [Twin Maiden Husks - Somberstone Miner's Bell Bearing [1]] Somber Smithing Stone [1]
+101819 [Twin Maiden Husks - Somberstone Miner's Bell Bearing [1]] Somber Smithing Stone [2]
+101820 [Twin Maiden Husks - Somberstone Miner's Bell Bearing [2]] Somber Smithing Stone [3]
+101821 [Twin Maiden Husks - Somberstone Miner's Bell Bearing [2]] Somber Smithing Stone [4]
+101822 [Twin Maiden Husks - Somberstone Miner's Bell Bearing [2]] Cracked Crystal
+101823 [Twin Maiden Husks - Somberstone Miner's Bell Bearing [3]] Somber Smithing Stone [5]
+101824 [Twin Maiden Husks - Somberstone Miner's Bell Bearing [3]] Somber Smithing Stone [6]
+101825 [Twin Maiden Husks - Somberstone Miner's Bell Bearing [4]] Somber Smithing Stone [7]
+101826 [Twin Maiden Husks - Somberstone Miner's Bell Bearing [4]] Somber Smithing Stone [8]
+101827 [Twin Maiden Husks - Somberstone Miner's Bell Bearing [4]] Sanctuary Stone
+101828 [Twin Maiden Husks - Somberstone Miner's Bell Bearing [5]] Somber Smithing Stone [9]
+101829 [Twin Maiden Husks - Glovewort Picker's Bell Bearing [1]] Grave Glovewort [1]
+101830 [Twin Maiden Husks - Glovewort Picker's Bell Bearing [1]] Grave Glovewort [2]
+101831 [Twin Maiden Husks - Glovewort Picker's Bell Bearing [1]] Grave Glovewort [3]
+101832 [Twin Maiden Husks - Glovewort Picker's Bell Bearing [2]] Grave Glovewort [4]
+101833 [Twin Maiden Husks - Glovewort Picker's Bell Bearing [2]] Grave Glovewort [5]
+101834 [Twin Maiden Husks - Glovewort Picker's Bell Bearing [2]] Grave Glovewort [6]
+101835 [Twin Maiden Husks - Glovewort Picker's Bell Bearing [3]] Grave Glovewort [7]
+101836 [Twin Maiden Husks - Glovewort Picker's Bell Bearing [3]] Grave Glovewort [8]
+101837 [Twin Maiden Husks - Glovewort Picker's Bell Bearing [3]] Grave Glovewort [9]
+101838 [Twin Maiden Husks - Ghost-Glovewort Picker's Bell Bearing [1]] Ghost Glovewort [1]
+101839 [Twin Maiden Husks - Ghost-Glovewort Picker's Bell Bearing [1]] Ghost Glovewort [2]
+101840 [Twin Maiden Husks - Ghost-Glovewort Picker's Bell Bearing [1]] Ghost Glovewort [3]
+101841 [Twin Maiden Husks - Ghost-Glovewort Picker's Bell Bearing [2]] Ghost Glovewort [4]
+101842 [Twin Maiden Husks - Ghost-Glovewort Picker's Bell Bearing [2]] Ghost Glovewort [5]
+101843 [Twin Maiden Husks - Ghost-Glovewort Picker's Bell Bearing [2]] Ghost Glovewort [6]
+101844 [Twin Maiden Husks - Ghost-Glovewort Picker's Bell Bearing [3]] Ghost Glovewort [7]
+101845 [Twin Maiden Husks - Ghost-Glovewort Picker's Bell Bearing [3]] Ghost Glovewort [8]
+101846 [Twin Maiden Husks - Ghost-Glovewort Picker's Bell Bearing [3]] Ghost Glovewort [9]
+101847 [Twin Maiden Husks - Bone Peddler's Bell Bearing] Thin Beast Bones
+101848 [Twin Maiden Husks - Bone Peddler's Bell Bearing] Hefty Beast Bone
+101849 [Twin Maiden Husks - Meat Peddler's Bell Bearing] Sliver of Meat
+101850 [Twin Maiden Husks - Meat Peddler's Bell Bearing] Lump of Flesh
+101851 [Twin Maiden Husks - Meat Peddler's Bell Bearing] Turtle Neck Meat
+101852 [Twin Maiden Husks - Medicine Peddler's Bell Bearing] Neutralizing Boluses
+101853 [Twin Maiden Husks - Medicine Peddler's Bell Bearing] Stanching Boluses
+101854 [Twin Maiden Husks - Medicine Peddler's Bell Bearing] Thawfrost Boluses
+101855 [Twin Maiden Husks - Medicine Peddler's Bell Bearing] Stimulating Boluses
+101856 [Twin Maiden Husks - Gravity Stone Peddler's Bell Bearing] Gravity Stone Fan
+101857 [Twin Maiden Husks - Gravity Stone Peddler's Bell Bearing] Gravity Stone Chunk
+101858 [Twin Maiden Husks - Smithing-Stone Miner's Bell Bearing [4]] Ruin Fragment
 101859 [Twin Maiden Husks] Memory Stone
 101860 [Twin Maiden Husks] Stonesword Key
 101861 [Twin Maiden Husks] Rune Arc
