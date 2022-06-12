@@ -1,0 +1,5 @@
+//Format[hex]:Index(size) = Name : BitSize
+004(4) = value
+008(4) = textId
+009(1) = compareType
+00C(3) = padding

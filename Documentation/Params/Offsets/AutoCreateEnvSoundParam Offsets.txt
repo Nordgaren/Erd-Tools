@@ -1,0 +1,9 @@
+//Format[hex]:Index(size) = Name : BitSize
+004(4) = RangeMin
+008(4) = RangeMax
+00C(4) = LifeTimeMin
+010(4) = LifeTimeMax
+014(4) = DeleteDist
+018(4) = NearDist
+01C(4) = LimiteRotateMin
+020(4) = LimiteRotateMax

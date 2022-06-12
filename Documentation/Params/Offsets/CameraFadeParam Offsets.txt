@@ -1,0 +1,7 @@
+//Format[hex]:Index(size) = Name : BitSize
+004(4) = NearMinDist
+008(4) = NearMaxDist
+00C(4) = FarMinDist
+010(4) = FarMaxDist
+014(4) = MiddleAlpha
+020(12) = dummy

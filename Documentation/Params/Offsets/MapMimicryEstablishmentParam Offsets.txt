@@ -1,0 +1,14 @@
+//Format[hex]:Index(size) = Name : BitSize
+004(4) = mimicryEstablishment0
+008(4) = mimicryEstablishment1
+00C(4) = mimicryEstablishment2
+010(4) = mimicryBeginSfxId0
+014(4) = mimicrySfxId0
+018(4) = mimicryEndSfxId0
+01C(4) = mimicryBeginSfxId1
+020(4) = mimicrySfxId1
+024(4) = mimicryEndSfxId1
+028(4) = mimicryBeginSfxId2
+02C(4) = mimicrySfxId2
+030(4) = mimicryEndSfxId2
+040(16) = pad1

@@ -1,0 +1,9 @@
+//Format[hex]:Index(size) = Name : BitSize
+001(1) = enabled
+002(1) = maxFilterLevel
+004(2) = dmy
+008(4) = textureSizeScaler
+00C(4) = textureSizeDivider
+010(4) = textureMinSize
+014(4) = textureMaxSize
+018(4) = blurCountBias

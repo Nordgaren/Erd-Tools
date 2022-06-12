@@ -1,0 +1,15 @@
+//Format[hex]:Index(size) = Name : BitSize
+001(1) = m_textureFilterQuality
+002(1) = m_aaQuality
+003(1) = m_ssaoQuality
+004(1) = m_dofQuality
+005(1) = m_motionBlurQuality
+006(1) = m_shadowQuality
+007(1) = m_lightingQuality
+008(1) = m_effectQuality
+009(1) = m_decalQuality
+00A(1) = m_reflectionQuality
+00B(1) = m_waterQuality
+00C(1) = m_shaderQuality
+00D(1) = m_volumetricEffectQuality
+010(3) = m_dummy

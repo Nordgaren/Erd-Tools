@@ -1,0 +1,7 @@
+//Format[hex]:Index(size) = Name : BitSize
+004(4) = padKeyId
+008(4) = keyboardModifyKey
+00C(4) = keyboardKeyId
+010(4) = mouseModifyKey
+014(4) = mouseKeyId
+020(12) = reserved

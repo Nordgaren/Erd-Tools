@@ -1,0 +1,11 @@
+//Format[hex]:Index(size) = Name : BitSize
+001(1) = lerpMode
+004(3) = pad1
+006(2) = h
+008(2) = pad2
+00C(4) = s1
+010(4) = v1
+014(4) = s2
+018(4) = v2
+01C(4) = s3
+020(4) = v3

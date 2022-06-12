@@ -1,0 +1,17 @@
+//Format[hex]:Index(size) = Name : BitSize
+001(1) = disableParam_NT : 1
+001(1) = disableParamReserve1 : 8
+004(3) = disableParamReserve2
+008(4) = talkChrEntityId
+00C(4) = eliminateTargetEntityId
+010(4) = summonedEventFlagId
+011(1) = isSpecial : 1
+011(1) = pad1 : 8
+014(3) = pad2
+018(4) = buddyId
+01C(4) = dopingSpEffectId
+01E(2) = activateRange
+020(2) = overwriteReturnRange
+024(4) = overwriteActivateRegionEntityId
+028(4) = warnRegionEntityId
+040(24) = pad3

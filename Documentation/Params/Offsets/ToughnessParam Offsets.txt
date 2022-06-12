@@ -1,0 +1,8 @@
+//Format[hex]:Index(size) = Name : BitSize
+004(4) = correctionRate
+006(2) = minToughness
+007(1) = isNonEffectiveCorrectionForMin
+008(1) = pad2
+00C(4) = spEffectId
+010(4) = proCorrectionRate
+020(16) = pad1

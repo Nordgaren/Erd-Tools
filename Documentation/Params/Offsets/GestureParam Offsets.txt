@@ -1,0 +1,9 @@
+//Format[hex]:Index(size) = Name : BitSize
+001(1) = disableParam_NT : 1
+001(1) = disableParamReserve1 : 8
+004(3) = disableParamReserve2
+008(4) = itemId
+00C(4) = msgAnimId
+00D(1) = cannotUseRiding : 1
+00D(1) = pad2 : 8
+010(3) = pad1

@@ -1,0 +1,14 @@
+//Format[hex]:Index(size) = Name : BitSize
+004(4) = cellSizeX
+008(4) = cellSizeY
+00C(4) = cellSizeZ
+010(4) = cellOffsetX
+014(4) = cellOffsetY
+018(4) = cellOffsetZ
+019(1) = enableBloodstain : 1
+019(1) = enableBloodMessage : 2
+019(1) = enableGhost : 3
+019(1) = enableMultiPlay : 4
+019(1) = enableRingSearch : 5
+019(1) = enableBreakInSearch : 6
+01C(3) = dummy

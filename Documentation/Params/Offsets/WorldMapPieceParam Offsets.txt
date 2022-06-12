@@ -1,0 +1,17 @@
+//Format[hex]:Index(size) = Name : BitSize
+001(1) = disableParam_NT : 1
+001(1) = disableParamReserve1 : 8
+004(3) = disableParamReserve2
+008(4) = openEventFlagId
+00C(4) = openTravelAreaLeft
+010(4) = openTravelAreaRight
+014(4) = openTravelAreaTop
+018(4) = openTravelAreaBottom
+01C(4) = acquisitionEventFlagId
+020(4) = acquisitionEventScale
+024(4) = acquisitionEventCenterX
+028(4) = acquisitionEventCenterY
+02C(4) = acquisitionEventResScale
+030(4) = acquisitionEventResOffsetX
+034(4) = acquisitionEventResOffsetY
+040(12) = pad

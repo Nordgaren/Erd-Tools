@@ -1,0 +1,15 @@
+//Format[hex]:Index(size) = Name : BitSize
+001(1) = disableParam_NT : 1
+001(1) = disableParamReserve1 : 8
+004(3) = disableParamReserve2
+005(1) = menuType
+006(1) = triggerType
+007(1) = repeatType
+008(1) = pad1
+00A(2) = imageId
+00C(2) = pad2
+010(4) = unlockEventFlagId
+014(4) = textId
+018(4) = displayMinTime
+01C(4) = displayTime
+020(4) = pad3

@@ -1,0 +1,10 @@
+//Format[hex]:Index(size) = Name : BitSize
+008(8) = reserved0
+00C(4) = soundTargetTryApproachTime
+010(4) = searchTargetTryApproachTime
+014(4) = memoryTargetTryApproachTime
+03C(40) = reserved5
+040(4) = activateChrByTime_PhantomId
+044(4) = findUnfavorableFailedPointDist
+048(4) = findUnfavorableFailedPointHeight
+100(184) = reserved18

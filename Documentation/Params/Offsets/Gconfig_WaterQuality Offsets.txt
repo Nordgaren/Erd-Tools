@@ -1,0 +1,3 @@
+//Format[hex]:Index(size) = Name : BitSize
+001(1) = interactionEnabled
+004(3) = dmy

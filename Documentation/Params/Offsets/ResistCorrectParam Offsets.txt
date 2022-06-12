@@ -1,0 +1,11 @@
+//Format[hex]:Index(size) = Name : BitSize
+004(4) = addPoint1
+008(4) = addPoint2
+00C(4) = addPoint3
+010(4) = addPoint4
+014(4) = addPoint5
+018(4) = addRate1
+01C(4) = addRate2
+020(4) = addRate3
+024(4) = addRate4
+028(4) = addRate5

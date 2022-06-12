@@ -1,0 +1,10 @@
+//Format[hex]:Index(size) = Name : BitSize
+001(1) = disableParam_NT : 1
+001(1) = disableParamReserve1 : 8
+004(3) = disableParamReserve2
+005(1) = srcR
+006(1) = srcG
+007(1) = srcB
+008(1) = pad1
+00C(4) = mapNameId
+010(4) = pad2
