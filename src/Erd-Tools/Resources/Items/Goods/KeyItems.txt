@@ -22,6 +22,7 @@
 194 Rykard's Great Rune
 195 Mohg's Great Rune
 196 Malenia's Great Rune
+2090 Deathroot
 8000 Stonesword Key
 8010 Rusty Key
 8102 Lucent Baldachin's Blessing

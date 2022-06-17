@@ -60,7 +60,6 @@ namespace Erd_Tools
         public PHPointer CSFD4VirtualMemoryFlag { get; set; }
         public PHPointer CSLuaEventManager { get; set; }
         public PHPointer LuaWarp_01AoB { get; set; }
-        public PHPointer LuaWarp_01 { get; set; }
         public static bool Reading { get; set; }
         public string ID => Process?.Id.ToString() ?? "Not Hooked";
         public List<PHPointer>? ParamPointers { get; set; }
@@ -120,17 +119,20 @@ namespace Erd_Tools
 
         private void ErdHook_OnHooked(object? sender, PHEventArgs e)
         {
-            LuaWarp_01 = CreateBasePointer(LuaWarp_01AoB.Resolve() + 2);
-            //IntPtr gameDataMan = GameDataMan.Resolve();
-            //IntPtr paramss = SoloParamRepository.Resolve();
-            //IntPtr itemGive = ItemGive.Resolve();
-            //IntPtr mapItemMan = MapItemMan.Resolve();
-            //IntPtr eventFlagMan = EventFlagMan.Resolve();
-            //IntPtr capParamCall = CapParamCall.Resolve();
-            //IntPtr worldChrMan = WorldChrMan.Resolve();
+            //LuaWarp_01 = CreateBasePointer(LuaWarp_01AoB.Resolve() + 2);
+            IntPtr gameDataMan = GameDataMan.Resolve();
+            IntPtr paramss = SoloParamRepository.Resolve();
+            IntPtr itemGive = ItemGive.Resolve();
+            IntPtr mapItemMan = MapItemMan.Resolve();
+            IntPtr eventFlagMan = EventFlagMan.Resolve();
+            IntPtr capParamCall = CapParamCall.Resolve();
+            IntPtr worldChrMan = WorldChrMan.Resolve();
+            IntPtr playeIns = PlayerIns.Resolve();
+            IntPtr warp = LuaWarp_01AoB.Resolve();
+            ulong paramOffset = (ulong) (paramss.ToInt64() - Process.MainModule.BaseAddress.ToInt64());
 
-            //IntPtr disableOpenMap = DisableOpenMap.Resolve();
-            //IntPtr combatCloseMap = CombatCloseMap.Resolve();
+            IntPtr disableOpenMap = DisableOpenMap.Resolve();
+            IntPtr combatCloseMap = CombatCloseMap.Resolve();
 
             Task t = Task.Run(() => AsyncSetup());
             t.GetAwaiter().GetResult();
@@ -171,9 +173,7 @@ namespace Erd_Tools
             //            graces.Add(hub.Graces[index]);
             //        }
             //    }
-
             //}
-
 
             //List<string> missed = new();
 
@@ -189,7 +189,6 @@ namespace Erd_Tools
             //    grace.EntityID = BitConverter.ToInt32(BonfireWarpParam.Bytes, BonfireWarpParam.OffsetDict[events[grace.Name]] + 0x8);
             //    events.Remove(grace.Name);
             //}
-
 
             //XmlSerializer ser = new(typeof(List<Continent>));
             //XmlWriterSettings settings = new() { Indent = true };
@@ -1075,7 +1074,7 @@ namespace Erd_Tools
             Kernel32.WriteInt32(Handle, warpLocation, bonfireID);
 
             string asmString = Util.GetEmbededResource("Assembly.Warp.asm");
-            string asm = string.Format(asmString, CSLuaEventManager.Resolve(), bonfireID, LuaWarp_01.Resolve());
+            string asm = string.Format(asmString, CSLuaEventManager.Resolve(), bonfireID, LuaWarp_01AoB.Resolve() + 2);
             AsmExecute(asm);
         }
 

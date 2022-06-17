@@ -22,6 +22,59 @@
 60300 108 //Taunter's Tongue
 60310 103 //Finger Severer
 
+# Gestures
+60800 9000 //Bow
+60801 9001 //Polite Bow
+60802 9002 //My Thanks
+60803 9003 //Curtsy
+60804 9004 //Reverential Bow
+60805 9005 //My Lord
+60806 9006 //Warm Welcome
+60807 9007 //Wave
+60808 9008 //Casual Greeting
+60809 9009 //Strength!
+60810 9010 //As You Wish
+60811 9011 //Point Forwards
+60812 9012 //Point Upwards
+60813 9013 //Point Downwards
+60814 9014 //Beckon
+60815 9015 //Wait!
+60816 9016 //Calm Down!
+60817 9017 //Nod In Thought
+60818 9018 //Extreme Repentance
+60819 9019 //Grovel For Mercy
+60820 9020 //Rallying Cry
+60821 9021 //Heartening Cry
+60822 9022 //By My Sword
+60823 9023 //Hoslow's Oath
+60824 9024 //Fire Spur Me
+60825 9025 //The Carian Oath
+60826 9026 //Bravo!
+60827 9027 //Jump for Joy
+60828 9028 //Triumphant Delight
+60829 9029 //Fancy Spin
+60830 9030 //Finger Snap
+60831 9031 //Dejection
+60832 9032 //Patches' Crouch
+60833 9033 //Crossed Legs
+60834 9034 //Rest
+60835 9035 //Sitting Sideways
+60836 9036 //Dozing Cross-Legged
+60837 9037 //Spread Out
+60838 9038 //Fetal Position
+60839 9039 //Balled Up
+60840 9040 //What Do You Want?
+60841 9041 //Prayer
+60842 9042 //Desperate Prayer
+60843 9043 //Rapture
+60844 9044 //%null%
+60845 9045 //Erudition
+60846 9046 //Outer Order
+60847 9047 //Inner Order
+60848 9048 //Golden Order Totality
+60849 9049 //The Ring
+60850 9050 //The Ring
+
 # Maps
 62010 8600 //Map: Limgrave, West
 62011 8601 //Map: Weeping Peninsula

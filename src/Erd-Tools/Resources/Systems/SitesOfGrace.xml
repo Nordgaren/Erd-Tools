@@ -1,2668 +1,3279 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfContinent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Continent>
-    <Name>Misc</Name>
-    <Hubs>
-      <Hub>
-        <Name>Roundtable Hold</Name>
-        <Graces>
-          <Grace>
-            <Name>Table of Lost Grace</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A58</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Crumbling Farum Azula</Name>
-        <Graces>
-          <Grace>
-            <Name>Beside the great Bridge</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A67</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Crumbling Beast Grave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A66</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Crumbling Beast Grave Depths</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A67</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Dragon Temple</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A67</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Dragon Temple Altar</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A66</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Dragon Temple Lift</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A67</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Dragon Temple Rooftop</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A67</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Dragon Temple Transept</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A67</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Dragonlord Placidusax</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A66</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Maliketh, the Black Blade</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A66</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Tempest-Facing Balcony</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A67</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Deeproot Depths</Name>
-        <Graces>
-          <Grace>
-            <Name>Across the Roots</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5E</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Deeproot Depths</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5E</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Great Waterfall Crest</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5E</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Prince of Death's Throne</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5D</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Root-Facing Cliffs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5D</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>The Nameless Eternal City</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5E</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-    </Hubs>
-  </Continent>
-  <Continent>
-    <Name>Limgrave</Name>
-    <Hubs>
-      <Hub>
-        <Name>Limgrave</Name>
-        <Graces>
-          <Grace>
-            <Name>The First Step</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CBE</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Church of Elleh</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CBE</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Gatefront</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CBF</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Waypoint Ruins Cellar</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CC1</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Artist's Shack (Limgrave)</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CBE</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Third Church of Marika</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CBF</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Fort Haight West</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CBF</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Agheel Lake South</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CBF</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Agheel Lake North</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CBF</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Church of Dragon Communion</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CBF</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Seaside Ruins</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CC0</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Mistwood Outskirts</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CC0</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Murkwater Coast</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CC0</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Summonwater Village Outskirts</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CC0</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Stormfoot Catacombs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3B</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Murkwater Catacombs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3B</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Groveside Cave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B47</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Coastal Cave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B49</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Murkwater Cave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B47</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Highroad Cave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B49</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Limgrave Tunnels</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B54</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Stranded Graveyard</Name>
-        <Graces>
-          <Grace>
-            <Name>Cave of Knowledge</Name>
-            <Offsets>
-              <string>28</string>
-              <string>AA5</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Stranded Graveyard</Name>
-            <Offsets>
-              <string>28</string>
-              <string>AA5</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Stormhill</Name>
-        <Graces>
-          <Grace>
-            <Name>Stormhill Shack</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CBE</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Castleward Tunnel</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A41</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Margit, the Fell Omen</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A41</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Warmaster's Shack</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CC0</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Saintsbridge</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CC0</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Deathtouched Catacombs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3C</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Limgrave Tower Bridge</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B6E</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Divine Tower of Limgrave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B6E</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Weeping Peninsula</Name>
-        <Graces>
-          <Grace>
-            <Name>Church of Pilgrimage</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CC4</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Castle Morne Rampart</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CC4</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Tombsward</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CC5</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>South of the Lookout Tower</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CC5</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Ailing Village Outskirts</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CC5</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Beside the Crater-Pocked Glade</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CC5</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Isolated Merchant's Shack (Limgrave)</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CC5</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Fourth Church of Marika</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CC6</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Bridge of Sacrifice</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CC5</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Castle Morne Lift</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CC5</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Behind The Castle</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CC5</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Beside the Rampart Gaol</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CC6</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Morne Moangrave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CC6</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Impaler's Catacombs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3B</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Tombsward Catacombs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3B</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Earthbore Cave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B47</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Tombsward Cave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B47</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Morne Tunnel</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B54</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Stormveil Castle</Name>
-        <Graces>
-          <Grace>
-            <Name>Stormveil Main Gate</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A42</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Gateside Chamber</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A41</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Stormveil Cliffside</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A41</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Rampart Tower</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A41</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Liftside Chamber</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A41</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Secluded Cell</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A41</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Godrick the Grafted</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A41</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-    </Hubs>
-  </Continent>
-  <Continent>
-    <Name>Liurnia of the Lakes</Name>
-    <Hubs>
-      <Hub>
-        <Name>Academy of Raya Lucaria</Name>
-        <Graces>
-          <Grace>
-            <Name>Church of the Cuckoo</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A73</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Debate Parlour</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A73</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Raya Lucaria Grand Library</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A73</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Schoolhouse Classroom</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A73</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Liurnia of the Lakes</Name>
-        <Graces>
-          <Grace>
-            <Name>Lake-Facing Cliffs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCB</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Laskyar Ruins</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCB</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Liurnia Lake Shore</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCB</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Academy Gate Town</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCB</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Artist's Shack (Liurnia of the Lakes)</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCD</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Eastern Liurnia Lake Shore</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCD</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Gate Town Bridge</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCD</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Liurnia Highway North</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCD</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Liurnia Highway South</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD0</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Main Academy Gate</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCB</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Scenic Isle</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCB</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>South Raya Lucaria Gate</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCB</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Ruined Labyrinth</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCE</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Boilprawn Shack</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCD</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Church of Vows</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCE</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Converted Tower</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCF</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Eastern Tableland</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCF</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Fallen Ruins of the Lake</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCF</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Folly on the Lake</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCD</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Jarburg</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD0</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Mausoleum Compound</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCE</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Ranni's Chamber</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD0</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Revenger's Shack</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCD</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Slumbering Wolf's Shack</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCC</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Village of the Albinaurics</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCD</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Crystalline Woods</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD0</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>East Gate Bridge Trestle</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD0</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Foot of the Four Belfries</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCC</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Gate Town North</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCF</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Main Caria Manor Gate</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCC</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Manor Lower Level</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCE</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Manor Upper Level</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCE</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Northern Liurnia Lake Shore</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCC</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Road to the Manor</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCC</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Royal Moongazing Grounds</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCF</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Sorcerer's Isle</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCC</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Temple Quarter</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD0</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>The Four Belfries</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCE</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Academy Crystal Cave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B48</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Behind Caria Manor</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCF</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Black Knife Catacombs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3B</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Cliffbottom Catacombs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3B</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Lakeside Crystal Cave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B48</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Liurnia Tower Bridge</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B6F</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Ranni's Rise</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCE</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Ravine-Veiled Village</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCE</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Raya Lucaria Crystal Tunnel</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B54</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Road's End Catacombs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3B</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Stillwater Cave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B48</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Study Hall Entrance</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B6F</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>The Ravine</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCF</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Divine Tower of Liurnia</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B6F</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Bellum Highway</Name>
-        <Graces>
-          <Grace>
-            <Name>Bellum Church</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCC</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Church of Inhibition</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD0</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>East Raya Lucaria Gate</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCB</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Frenzied Flame Village Outskirts</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCF</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Grand Lift of Dectus</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CCC</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Ruin-Strewn Precipice</Name>
-        <Graces>
-          <Grace>
-            <Name>Magma Wyrm</Name>
-            <Offsets>
-              <string>28</string>
-              <string>BAB</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Ruin-Strewn Precipice</Name>
-            <Offsets>
-              <string>28</string>
-              <string>BAB</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Ruin-Strewn Precipice Overlook</Name>
-            <Offsets>
-              <string>28</string>
-              <string>BAB</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Moonlight Altar</Name>
-        <Graces>
-          <Grace>
-            <Name>Altar South</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD1</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Cathedral of Manus Celes</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD1</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Moonlight Altar</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD1</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-    </Hubs>
-  </Continent>
-  <Continent>
-    <Name>Altus Plateau</Name>
-    <Hubs>
-      <Hub>
-        <Name>Altus Plateau</Name>
-        <Graces>
-          <Grace>
-            <Name>Abandoned Coffin</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD7</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Altus Highway Junction</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD7</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Altus Plateau</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD7</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Bower of Bounty</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD8</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Erdtree-Gazing Hill</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD7</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Forest-Spanning Greatbridge</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD8</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Rampartside Path</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD8</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Road of Iniquity Side Path</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD8</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Shaded Castle Inner Gate</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDA</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Shaded Castle Ramparts</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDA</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Windmill Heights</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD9</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Windmill Village</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD8</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Altus Tunnel</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B54</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Castellan's Hall</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDA</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Old Altus Tunnel</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B54</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Perfumer's Grotto</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B49</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Sage's Cave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B49</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Sainted Hero's Grave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3C</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Unsightly Catacombs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3C</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Mt. Gelmir</Name>
-        <Graces>
-          <Grace>
-            <Name>Bridge of Iniquity</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDD</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Craftsman's Shack</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDE</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>First Mt. Gelmir Campsite</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDD</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Gelmir Hero's Grave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3C</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Ninth Mt. Gelmir Campsite</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDE</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Primeval Sorcerer Azur</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDE</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Road of Iniquity</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDE</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Seethewater Cave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B48</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Seethewater River</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDE</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Seethewater Terminus</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CDE</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Volcano Cave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B48</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Wyndham Catacombs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3B</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Leyndell, Royal Capital</Name>
-        <Graces>
-          <Grace>
-            <Name>Auriza Side Tomb</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3C</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Auzira Hero's Grave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3C</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Capital Rampart</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD9</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Divine Tower of West Altus</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B70</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Divine Tower of West Altus: Gate</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B71</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Hermit Merchant's Shack</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD8</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Minor Eerdtree Church</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD8</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Outer Wall Battleground</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD9</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Outer Wall Phantom Tree</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CD8</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Sealed Tunnel</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B70</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Volcano Manor</Name>
-        <Graces>
-          <Grace>
-            <Name>Abductor Virgin</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A8C</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Audience Pathway</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A8C</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Guest Hall</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A8C</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Prison Town Church</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A8C</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Rykard, Lord of Blasphemy</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A8C</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Subterranean Inquisition Chamber</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A8C</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Temple of Eiglay</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A8C</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Volcano Manor</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A8C</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-    </Hubs>
-  </Continent>
-  <Continent>
-    <Name>Leyndell, Royal Capital</Name>
-    <Hubs>
-      <Hub>
-        <Name>Subterranean Shunning-Grounds</Name>
-        <Graces>
-          <Grace>
-            <Name>Cathedral of the Forsaken</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B79</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Forsaken Depths</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B79</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Frenzied Flame Proscription</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B7A</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Leyndell Catacombs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B79</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Underground Roadside</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B79</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Leyndell, Ashen Capital</Name>
-        <Graces>
-          <Grace>
-            <Name>Divine Bridge</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A50</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>East Capital Rampart</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A50</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Elden Throne</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A50</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Erdtree Sanctuary</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A50</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Leyendell, Capital of Ash</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A50</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Queen's Bedchamber</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A50</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Stone Platform</Name>
-        <Graces>
-          <Grace>
-            <Name>Fractured Marika</Name>
-            <Offsets>
-              <string>28</string>
-              <string>AB1</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-    </Hubs>
-  </Continent>
-  <Continent>
-    <Name>Caelid</Name>
-    <Hubs>
-      <Hub>
-        <Name>Caelid</Name>
-        <Graces>
-          <Grace>
-            <Name>Caelem Ruins</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CE4</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Caelid Highway South</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CE4</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Cathedral of Dragon Communion</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CE4</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Chair-Crypt of Sellia</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CE5</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Church of the Plague</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CE6</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Fort Gael North</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CE4</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Rotview Balcony</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CE4</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Sellia Backstreets</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CE5</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Sellia Under-Stair</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CE6</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Smoldering Church</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CE4</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Smoldering Wall</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CE5</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Southern Aeonia Swamp Bank</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CE5</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Abandoned Cave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B4A</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Caelid Catacombs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3C</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Chamber Outside the Plaza</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CE6</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Deep Siofra Well</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CE5</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Gael Tunnel</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B54</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Gaol Cave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B4A</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Impassable Greatbridge</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CE6</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Minor Eerdtree Catacombs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3C</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Rear Gael Tunnel Entrance</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B5B</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Redmane Castle Plaza</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CE6</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Sellia Crystal Tunnel</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B55</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Starscourge Radahn</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CE6</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>War-Dead Catacombs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3D</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Swamp of Aeonia</Name>
-        <Graces>
-          <Grace>
-            <Name>Aeonia Swamp Shore</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CE4</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Astray from Caelid Highway North</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CE4</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Heart of Aenoia</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CE5</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Inner Aeonia</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CE5</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Greyoll's Dragonbarrow</Name>
-        <Graces>
-          <Grace>
-            <Name>Bestial Sanctum</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CEA</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Divine Tower of Caelid: Basement</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B72</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Divine Tower of Caelid: Center</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B72</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Dragonbarrow Cave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B48</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Dragonbarrow Fork</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CEA</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Dragonbarrow West</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CEA</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Farum Greatbridge</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CEB</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Fort Faroth</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CEA</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Isolated Divine Tower</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B74</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Isolated Merchant's Shack (Greyoll's Dragonbarrow)</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CEA</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Lenne's Rise</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CEA</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Sellia Hideaway</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B48</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-    </Hubs>
-  </Continent>
-  <Continent>
-    <Name>Mountaintops of the Giants</Name>
-    <Hubs>
-      <Hub>
-        <Name>Forbiden Lands</Name>
-        <Graces>
-          <Grace>
-            <Name>Divine Tower of the East Altus</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B73</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Divine Tower of the East Altus: Gate</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B73</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Forbidden Lands</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CF0</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Grand Lift of Rold</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CF0</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Hidden Path to the Haligtree</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3D</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Mountaintops of the Giants</Name>
-        <Graces>
-          <Grace>
-            <Name>Ancient Snow Valley Ruins</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CF0</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Castle Sol Main Gate</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CF3</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Castle Sol Rooftop</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CF3</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Church of the Eclipse</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CF3</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>First Church of Marika</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CF1</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Freezing Lake</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CF1</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Snow Valley Ruins Overlook</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CF3</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Spiritcaller's Cave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B4A</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Whiteridge Road</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CF3</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Zamor Ruins</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CF0</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Flame Peak</Name>
-        <Graces>
-          <Grace>
-            <Name>Church of Repose</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CF1</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Fire Giant</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CF1</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Foot of the Forge</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CF1</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Forge of the Giants</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CF1</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Giant's Gravepost</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CF1</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Giant's Mountaintop Catacombs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3D</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Giant-Conquering Hero's Grave</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3D</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Consecrated Snowfield</Name>
-        <Graces>
-          <Grace>
-            <Name>Apostate Derelict</Name>
-            <Offsets>
-              <string>28</string>
-              <string>D03</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Cave of the Forlorn</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B49</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Consecrated Snowfield</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CF6</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Consecrated Snowfield Catacombs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B3D</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Inner Consecrated Snowfield</Name>
-            <Offsets>
-              <string>28</string>
-              <string>CF6</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Ordina, Liturgical Town</Name>
-            <Offsets>
-              <string>28</string>
-              <string>D03</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Yelough Anix Tunnel</Name>
-            <Offsets>
-              <string>28</string>
-              <string>B55</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-    </Hubs>
-  </Continent>
-  <Continent>
-    <Name>Miquella's Haligtree</Name>
-    <Hubs>
-      <Hub>
-        <Name>Miquella's Haligtree</Name>
-        <Graces>
-          <Grace>
-            <Name>Haligtree Canopy</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A80</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Haligtree Promenade</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A80</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Haligtree Town</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A80</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Haligtree Town Plaza</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A80</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Elphael, Brace of the Haligtree</Name>
-        <Graces>
-          <Grace>
-            <Name>Drainage Channel</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A7F</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Elphael Inner Wall</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A7F</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Haligtree Roots</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A80</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Malenia, Godess of Rot</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A7F</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Prayer Room</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A7F</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-    </Hubs>
-  </Continent>
-  <Continent>
-    <Name>Ainsel River</Name>
-    <Hubs>
-      <Hub>
-        <Name>Ainsel River</Name>
-        <Graces>
-          <Grace>
-            <Name>Ainsel River Downstream</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5B</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Ainsel River Sluice Gate</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5B</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Ainsel River Well Depths</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5B</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Astel, Naturalborn of the Void</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5F</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Dragonkin Soldier of Nokstella</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5B</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Ainsel River Main</Name>
-        <Graces>
-          <Grace>
-            <Name>Ainsel River Main</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5B</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Nokstella, Eternal City</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5B</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Nokstella Waterfall Basin</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5C</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Lake of Rot</Name>
-        <Graces>
-          <Grace>
-            <Name>Grand Cloister</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5C</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Lake of Rot Shoreside</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5C</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-    </Hubs>
-  </Continent>
-  <Continent>
-    <Name>Nokron, Eternal City</Name>
-    <Hubs>
-      <Hub>
-        <Name>Nokron, Eternal City</Name>
-        <Graces>
-          <Grace>
-            <Name>Nokron, Eternal City</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A62</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Ancestral Woods</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5D</string>
-            </Offsets>
-            <BitStart>7</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Aqueduct-Facing Cliffs</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5D</string>
-            </Offsets>
-            <BitStart>6</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Great Waterfall Basin</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5C</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Mimic Tear</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5C</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Night's Sacred Ground</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5D</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Siofra River</Name>
-        <Graces>
-          <Grace>
-            <Name>Below the Well</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5D</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Siofra River Bank</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5C</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Siofra River Well Depths</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A62</string>
-            </Offsets>
-            <BitStart>1</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Worshippers' Woods</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A5C</string>
-            </Offsets>
-            <BitStart>0</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-      <Hub>
-        <Name>Mohgwyn Palace</Name>
-        <Graces>
-          <Grace>
-            <Name>Cocoon of the Empyrean</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A60</string>
-            </Offsets>
-            <BitStart>5</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Dynasty Mausoleum Entrance</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A60</string>
-            </Offsets>
-            <BitStart>3</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Dynasty Mausoleum Midpoint</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A60</string>
-            </Offsets>
-            <BitStart>2</BitStart>
-          </Grace>
-          <Grace>
-            <Name>Palace Approach Ledge-Road</Name>
-            <Offsets>
-              <string>28</string>
-              <string>A60</string>
-            </Offsets>
-            <BitStart>4</BitStart>
-          </Grace>
-        </Graces>
-      </Hub>
-    </Hubs>
-  </Continent>
+<ArrayOfContinent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Continent>
+		<Name>Limgrave</Name>
+		<Hubs>
+			<Hub>
+				<Name>Limgrave</Name>
+				<Graces>
+					<Grace>
+						<Name>The First Step</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1042361951</EntityID>
+						<EventFlagID>76101</EventFlagID>
+						<DataOffset>3262</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Church of Elleh</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1042361950</EntityID>
+						<EventFlagID>76100</EventFlagID>
+						<DataOffset>3262</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Gatefront</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1042371950</EntityID>
+						<EventFlagID>76111</EventFlagID>
+						<DataOffset>3263</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Waypoint Ruins Cellar</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1044361950</EntityID>
+						<EventFlagID>76120</EventFlagID>
+						<DataOffset>3265</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Artist's Shack (Limgrave)</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1044381950</EntityID>
+						<EventFlagID>76103</EventFlagID>
+						<DataOffset>3262</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Third Church of Marika</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1046381950</EntityID>
+						<EventFlagID>76104</EventFlagID>
+						<DataOffset>3263</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Fort Haight West</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1045361950</EntityID>
+						<EventFlagID>76105</EventFlagID>
+						<DataOffset>3263</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Agheel Lake South</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1044351950</EntityID>
+						<EventFlagID>76106</EventFlagID>
+						<DataOffset>3263</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Agheel Lake North</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1043371950</EntityID>
+						<EventFlagID>76108</EventFlagID>
+						<DataOffset>3263</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Church of Dragon Communion</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1041351950</EntityID>
+						<EventFlagID>76110</EventFlagID>
+						<DataOffset>3263</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Seaside Ruins</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1043351950</EntityID>
+						<EventFlagID>76113</EventFlagID>
+						<DataOffset>3264</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Mistwood Outskirts</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1044371950</EntityID>
+						<EventFlagID>76114</EventFlagID>
+						<DataOffset>3264</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Murkwater Coast</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1043381950</EntityID>
+						<EventFlagID>76116</EventFlagID>
+						<DataOffset>3264</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Summonwater Village Outskirts</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1044391950</EntityID>
+						<EventFlagID>76119</EventFlagID>
+						<DataOffset>3264</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Stormfoot Catacombs</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>30021950</EntityID>
+						<EventFlagID>73002</EventFlagID>
+						<DataOffset>2875</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Murkwater Catacombs</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>30041950</EntityID>
+						<EventFlagID>73004</EventFlagID>
+						<DataOffset>2875</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Groveside Cave</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>31031950</EntityID>
+						<EventFlagID>73103</EventFlagID>
+						<DataOffset>2887</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Coastal Cave</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>31151950</EntityID>
+						<EventFlagID>73115</EventFlagID>
+						<DataOffset>2889</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Murkwater Cave</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>31001950</EntityID>
+						<EventFlagID>73100</EventFlagID>
+						<DataOffset>2887</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Highroad Cave</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>31171950</EntityID>
+						<EventFlagID>73117</EventFlagID>
+						<DataOffset>2889</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Limgrave Tunnels</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>32011950</EntityID>
+						<EventFlagID>73201</EventFlagID>
+						<DataOffset>2900</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Stranded Graveyard</Name>
+				<Graces>
+					<Grace>
+						<Name>Cave of Knowledge</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stranded Graveyard</Hub>
+						<EntityID>18001950</EntityID>
+						<EventFlagID>71800</EventFlagID>
+						<DataOffset>2725</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Stranded Graveyard</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stranded Graveyard</Hub>
+						<EntityID>18001951</EntityID>
+						<EventFlagID>71801</EventFlagID>
+						<DataOffset>2725</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Stormhill</Name>
+				<Graces>
+					<Grace>
+						<Name>Stormhill Shack</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormhill</Hub>
+						<EntityID>1041381950</EntityID>
+						<EventFlagID>76102</EventFlagID>
+						<DataOffset>3262</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Castleward Tunnel</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormhill</Hub>
+						<EntityID>10001952</EntityID>
+						<EventFlagID>71002</EventFlagID>
+						<DataOffset>2625</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Margit, the Fell Omen</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormhill</Hub>
+						<EntityID>10001951</EntityID>
+						<EventFlagID>71001</EventFlagID>
+						<DataOffset>2625</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Warmaster's Shack</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormhill</Hub>
+						<EntityID>1042381950</EntityID>
+						<EventFlagID>76118</EventFlagID>
+						<DataOffset>3264</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Saintsbridge</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormhill</Hub>
+						<EntityID>1043391950</EntityID>
+						<EventFlagID>76117</EventFlagID>
+						<DataOffset>3264</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Deathtouched Catacombs</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormhill</Hub>
+						<EntityID>30111950</EntityID>
+						<EventFlagID>73011</EventFlagID>
+						<DataOffset>2876</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Limgrave Tower Bridge</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormhill</Hub>
+						<EntityID>34101950</EntityID>
+						<EventFlagID>73410</EventFlagID>
+						<DataOffset>2926</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Divine Tower of Limgrave</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormhill</Hub>
+						<EntityID>34101952</EntityID>
+						<EventFlagID>73412</EventFlagID>
+						<DataOffset>2926</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Weeping Peninsula</Name>
+				<Graces>
+					<Grace>
+						<Name>Church of Pilgrimage</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1043341950</EntityID>
+						<EventFlagID>76150</EventFlagID>
+						<DataOffset>3268</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Castle Morne Rampart</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1044331950</EntityID>
+						<EventFlagID>76151</EventFlagID>
+						<DataOffset>3268</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Tombsward</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1042331950</EntityID>
+						<EventFlagID>76152</EventFlagID>
+						<DataOffset>3269</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>South of the Lookout Tower</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1044331951</EntityID>
+						<EventFlagID>76153</EventFlagID>
+						<DataOffset>3269</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Ailing Village Outskirts</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1044331952</EntityID>
+						<EventFlagID>76154</EventFlagID>
+						<DataOffset>3269</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Beside the Crater-Pocked Glade</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1045331950</EntityID>
+						<EventFlagID>76155</EventFlagID>
+						<DataOffset>3269</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Isolated Merchant's Shack (Limgrave)</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1041321950</EntityID>
+						<EventFlagID>76156</EventFlagID>
+						<DataOffset>3269</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Fourth Church of Marika</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1041331950</EntityID>
+						<EventFlagID>76162</EventFlagID>
+						<DataOffset>3270</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Bridge of Sacrifice</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1044341950</EntityID>
+						<EventFlagID>76157</EventFlagID>
+						<DataOffset>3269</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Castle Morne Lift</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1043311950</EntityID>
+						<EventFlagID>76158</EventFlagID>
+						<DataOffset>3269</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Behind the Castle</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1043311951</EntityID>
+						<EventFlagID>76159</EventFlagID>
+						<DataOffset>3269</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Beside the Rampart Gaol</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1043311952</EntityID>
+						<EventFlagID>76160</EventFlagID>
+						<DataOffset>3270</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Morne Moangrave</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1043301950</EntityID>
+						<EventFlagID>76161</EventFlagID>
+						<DataOffset>3270</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Impaler's Catacombs</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>30011950</EntityID>
+						<EventFlagID>73001</EventFlagID>
+						<DataOffset>2875</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Tombsward Catacombs</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>30001950</EntityID>
+						<EventFlagID>73000</EventFlagID>
+						<DataOffset>2875</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Earthbore Cave</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>31011950</EntityID>
+						<EventFlagID>73101</EventFlagID>
+						<DataOffset>2887</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Tombsward Cave</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>31021950</EntityID>
+						<EventFlagID>73102</EventFlagID>
+						<DataOffset>2887</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Morne Tunnel</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>32001950</EntityID>
+						<EventFlagID>73200</EventFlagID>
+						<DataOffset>2900</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Stormveil Castle</Name>
+				<Graces>
+					<Grace>
+						<Name>Stormveil Main Gate</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormveil Castle</Hub>
+						<EntityID>10001958</EntityID>
+						<EventFlagID>71008</EventFlagID>
+						<DataOffset>2626</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Gateside Chamber</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormveil Castle</Hub>
+						<EntityID>10001953</EntityID>
+						<EventFlagID>71003</EventFlagID>
+						<DataOffset>2625</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Stormveil Cliffside</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormveil Castle</Hub>
+						<EntityID>10001954</EntityID>
+						<EventFlagID>71004</EventFlagID>
+						<DataOffset>2625</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Rampart Tower</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormveil Castle</Hub>
+						<EntityID>10001955</EntityID>
+						<EventFlagID>71005</EventFlagID>
+						<DataOffset>2625</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Liftside Chamber</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormveil Castle</Hub>
+						<EntityID>10001956</EntityID>
+						<EventFlagID>71006</EventFlagID>
+						<DataOffset>2625</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Secluded Cell</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormveil Castle</Hub>
+						<EntityID>10001957</EntityID>
+						<EventFlagID>71007</EventFlagID>
+						<DataOffset>2625</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Godrick the Grafted</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormveil Castle</Hub>
+						<EntityID>10001950</EntityID>
+						<EventFlagID>71000</EventFlagID>
+						<DataOffset>2625</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+		</Hubs>
+	</Continent>
+	<Continent>
+		<Name>Liurnia of the Lakes</Name>
+		<Hubs>
+			<Hub>
+				<Name>Academy of Raya Lucaria</Name>
+				<Graces>
+					<Grace>
+						<Name>Church of the Cuckoo</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Academy of Raya Lucaria</Hub>
+						<EntityID>14001952</EntityID>
+						<EventFlagID>71402</EventFlagID>
+						<DataOffset>2675</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Debate Parlor</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Academy of Raya Lucaria</Hub>
+						<EntityID>14001951</EntityID>
+						<EventFlagID>71401</EventFlagID>
+						<DataOffset>2675</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Raya Lucaria Grand Library</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Academy of Raya Lucaria</Hub>
+						<EntityID>14001950</EntityID>
+						<EventFlagID>71400</EventFlagID>
+						<DataOffset>2675</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Schoolhouse Classroom</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Academy of Raya Lucaria</Hub>
+						<EntityID>14001953</EntityID>
+						<EventFlagID>71403</EventFlagID>
+						<DataOffset>2675</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Liurnia of the Lakes</Name>
+				<Graces>
+					<Grace>
+						<Name>Lake-Facing Cliffs</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>0</EntityID>
+						<EventFlagID>0</EventFlagID>
+						<DataOffset>3275</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Laskyar Ruins</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1038411950</EntityID>
+						<EventFlagID>76202</EventFlagID>
+						<DataOffset>3275</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Liurnia Lake Shore</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1038401950</EntityID>
+						<EventFlagID>76201</EventFlagID>
+						<DataOffset>3275</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Academy Gate Town</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1037441950</EntityID>
+						<EventFlagID>76204</EventFlagID>
+						<DataOffset>3275</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Artist's Shack (Liurnia of the Lakes)</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1038451950</EntityID>
+						<EventFlagID>76217</EventFlagID>
+						<DataOffset>3277</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Eastern Liurnia Lake Shore</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1038451951</EntityID>
+						<EventFlagID>76223</EventFlagID>
+						<DataOffset>3277</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Gate Town Bridge</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1038431950</EntityID>
+						<EventFlagID>76222</EventFlagID>
+						<DataOffset>3277</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Liurnia Highway North</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1039421950</EntityID>
+						<EventFlagID>76221</EventFlagID>
+						<DataOffset>3277</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Liurnia Highway South</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1039411950</EntityID>
+						<EventFlagID>76244</EventFlagID>
+						<DataOffset>3280</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Main Academy Gate</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1035461950</EntityID>
+						<EventFlagID>76206</EventFlagID>
+						<DataOffset>3275</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Scenic Isle</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1037421950</EntityID>
+						<EventFlagID>76203</EventFlagID>
+						<DataOffset>3275</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>South Raya Lucaria Gate</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1035451950</EntityID>
+						<EventFlagID>76205</EventFlagID>
+						<DataOffset>3275</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Ruined Labyrinth</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1038471950</EntityID>
+						<EventFlagID>76225</EventFlagID>
+						<DataOffset>3278</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Boilprawn Shack</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1036431950</EntityID>
+						<EventFlagID>76216</EventFlagID>
+						<DataOffset>3277</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Church of Vows</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1037461950</EntityID>
+						<EventFlagID>76224</EventFlagID>
+						<DataOffset>3278</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Converted Tower</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1034431950</EntityID>
+						<EventFlagID>76237</EventFlagID>
+						<DataOffset>3279</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Eastern Tableland</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1038461950</EntityID>
+						<EventFlagID>76234</EventFlagID>
+						<DataOffset>3279</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Fallen Ruins of the Lake</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1036431951</EntityID>
+						<EventFlagID>76236</EventFlagID>
+						<DataOffset>3279</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Folly on the Lake</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1035431950</EntityID>
+						<EventFlagID>76219</EventFlagID>
+						<DataOffset>3277</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Jarburg</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1039441950</EntityID>
+						<EventFlagID>76245</EventFlagID>
+						<DataOffset>3280</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Mausoleum Compound</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1037481950</EntityID>
+						<EventFlagID>76226</EventFlagID>
+						<DataOffset>3278</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Ranni's Chamber</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1034501951</EntityID>
+						<EventFlagID>76247</EventFlagID>
+						<DataOffset>3280</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Revenger's Shack</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1033441950</EntityID>
+						<EventFlagID>76218</EventFlagID>
+						<DataOffset>3277</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Slumbering Wolf's Shack</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1036411950</EntityID>
+						<EventFlagID>76215</EventFlagID>
+						<DataOffset>3276</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Village of the Albinaurics</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1034421950</EntityID>
+						<EventFlagID>76220</EventFlagID>
+						<DataOffset>3277</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Crystalline Woods</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1034461950</EntityID>
+						<EventFlagID>76243</EventFlagID>
+						<DataOffset>3280</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>East Gate Bridge Trestle</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1035471950</EntityID>
+						<EventFlagID>76242</EventFlagID>
+						<DataOffset>3280</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Foot of the Four Belfries</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1033461950</EntityID>
+						<EventFlagID>76210</EventFlagID>
+						<DataOffset>3276</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Gate Town North</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1036451950</EntityID>
+						<EventFlagID>76233</EventFlagID>
+						<DataOffset>3279</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Main Caria Manor Gate</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1035501953</EntityID>
+						<EventFlagID>76214</EventFlagID>
+						<DataOffset>3276</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Manor Lower Level</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1035501951</EntityID>
+						<EventFlagID>76231</EventFlagID>
+						<DataOffset>3278</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Manor Upper Level</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1035501950</EntityID>
+						<EventFlagID>76230</EventFlagID>
+						<DataOffset>3278</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Northern Liurnia Lake Shore</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1034481950</EntityID>
+						<EventFlagID>76212</EventFlagID>
+						<DataOffset>3276</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Road to the Manor</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1034491950</EntityID>
+						<EventFlagID>76213</EventFlagID>
+						<DataOffset>3276</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Royal Moongazing Grounds</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1035501952</EntityID>
+						<EventFlagID>76232</EventFlagID>
+						<DataOffset>3279</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Sorcerer's Isle</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1034471951</EntityID>
+						<EventFlagID>76211</EventFlagID>
+						<DataOffset>3276</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Temple Quarter</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1034441950</EntityID>
+						<EventFlagID>76241</EventFlagID>
+						<DataOffset>3280</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>The Four Belfries</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1033471950</EntityID>
+						<EventFlagID>76227</EventFlagID>
+						<DataOffset>3278</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Academy Crystal Cave</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>31061950</EntityID>
+						<EventFlagID>73106</EventFlagID>
+						<DataOffset>2888</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Behind Caria Manor</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1036501950</EntityID>
+						<EventFlagID>76238</EventFlagID>
+						<DataOffset>3279</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Black Knife Catacombs</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>30051950</EntityID>
+						<EventFlagID>73005</EventFlagID>
+						<DataOffset>2875</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Cliffbottom Catacombs</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>30061950</EntityID>
+						<EventFlagID>73006</EventFlagID>
+						<DataOffset>2875</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Lakeside Crystal Cave</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>31051950</EntityID>
+						<EventFlagID>73105</EventFlagID>
+						<DataOffset>2888</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Liurnia Tower Bridge</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>34111951</EntityID>
+						<EventFlagID>73421</EventFlagID>
+						<DataOffset>2927</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Ranni's Rise</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1034501950</EntityID>
+						<EventFlagID>76228</EventFlagID>
+						<DataOffset>3278</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Ravine-Veiled Village</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1038501951</EntityID>
+						<EventFlagID>76229</EventFlagID>
+						<DataOffset>3278</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Raya Lucaria Crystal Tunnel</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>32021950</EntityID>
+						<EventFlagID>73202</EventFlagID>
+						<DataOffset>2900</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Road's End Catacombs</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>30031950</EntityID>
+						<EventFlagID>73003</EventFlagID>
+						<DataOffset>2875</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Stillwater Cave</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>31041950</EntityID>
+						<EventFlagID>73104</EventFlagID>
+						<DataOffset>2888</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Study Hall Entrance</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>34111950</EntityID>
+						<EventFlagID>73420</EventFlagID>
+						<DataOffset>2927</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>The Ravine</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>1036491951</EntityID>
+						<EventFlagID>76235</EventFlagID>
+						<DataOffset>3279</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Divine Tower of Liurnia</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Liurnia of the Lakes</Hub>
+						<EntityID>34111952</EntityID>
+						<EventFlagID>73422</EventFlagID>
+						<DataOffset>2927</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Bellum Highway</Name>
+				<Graces>
+					<Grace>
+						<Name>Bellum Church</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Bellum Highway</Hub>
+						<EntityID>1036491950</EntityID>
+						<EventFlagID>76208</EventFlagID>
+						<DataOffset>3276</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Church of Inhibition</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Bellum Highway</Hub>
+						<EntityID>1037491950</EntityID>
+						<EventFlagID>76240</EventFlagID>
+						<DataOffset>3280</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>East Raya Lucaria Gate</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Bellum Highway</Hub>
+						<EntityID>1036481950</EntityID>
+						<EventFlagID>76207</EventFlagID>
+						<DataOffset>3275</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Frenzied Flame Village Outskirts</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Bellum Highway</Hub>
+						<EntityID>1038481950</EntityID>
+						<EventFlagID>76239</EventFlagID>
+						<DataOffset>3279</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Grand Lift of Dectus</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Bellum Highway</Hub>
+						<EntityID>1038501950</EntityID>
+						<EventFlagID>76209</EventFlagID>
+						<DataOffset>3276</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Ruin-Strewn Precipice</Name>
+				<Graces>
+					<Grace>
+						<Name>Magma Wyrm</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Ruin-Strewn Precipice</Hub>
+						<EntityID>39201950</EntityID>
+						<EventFlagID>73900</EventFlagID>
+						<DataOffset>2987</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Ruin-Strewn Precipice</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Ruin-Strewn Precipice</Hub>
+						<EntityID>39201951</EntityID>
+						<EventFlagID>73901</EventFlagID>
+						<DataOffset>2987</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Ruin-Strewn Precipice Overlook</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Ruin-Strewn Precipice</Hub>
+						<EntityID>39201952</EntityID>
+						<EventFlagID>73902</EventFlagID>
+						<DataOffset>2987</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Moonlight Altar</Name>
+				<Graces>
+					<Grace>
+						<Name>Altar South</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Moonlight Altar</Hub>
+						<EntityID>1033401950</EntityID>
+						<EventFlagID>76252</EventFlagID>
+						<DataOffset>3281</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Cathedral of Manus Celes</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Moonlight Altar</Hub>
+						<EntityID>1035421950</EntityID>
+						<EventFlagID>76251</EventFlagID>
+						<DataOffset>3281</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Moonlight Altar</Name>
+						<Continent>Liurnia of the Lakes</Continent>
+						<Hub>Moonlight Altar</Hub>
+						<EntityID>1034411950</EntityID>
+						<EventFlagID>76250</EventFlagID>
+						<DataOffset>3281</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+		</Hubs>
+	</Continent>
+	<Continent>
+		<Name>Caelid</Name>
+		<Hubs>
+			<Hub>
+				<Name>Caelid</Name>
+				<Graces>
+					<Grace>
+						<Name>Caelem Ruins</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>1047401950</EntityID>
+						<EventFlagID>76403</EventFlagID>
+						<DataOffset>3300</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Caelid Highway South</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>1048371950</EntityID>
+						<EventFlagID>76405</EventFlagID>
+						<DataOffset>3300</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Cathedral of Dragon Communion</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>1048361950</EntityID>
+						<EventFlagID>76404</EventFlagID>
+						<DataOffset>3300</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Chair-Crypt of Sellia</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>1049391951</EntityID>
+						<EventFlagID>76415</EventFlagID>
+						<DataOffset>3301</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Church of the Plague</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>1050381950</EntityID>
+						<EventFlagID>76418</EventFlagID>
+						<DataOffset>3302</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Fort Gael North</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>1047391950</EntityID>
+						<EventFlagID>76402</EventFlagID>
+						<DataOffset>3300</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Rotview Balcony</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>1046401951</EntityID>
+						<EventFlagID>76401</EventFlagID>
+						<DataOffset>3300</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Sellia Backstreets</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>1049391950</EntityID>
+						<EventFlagID>76414</EventFlagID>
+						<DataOffset>3301</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Sellia Under-Stair</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>1049391952</EntityID>
+						<EventFlagID>76416</EventFlagID>
+						<DataOffset>3302</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Smoldering Church</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>1046401950</EntityID>
+						<EventFlagID>76400</EventFlagID>
+						<DataOffset>3300</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Smoldering Wall</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>1048391950</EntityID>
+						<EventFlagID>76409</EventFlagID>
+						<DataOffset>3301</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Southern Aeonia Swamp Bank</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>1049371950</EntityID>
+						<EventFlagID>76411</EventFlagID>
+						<DataOffset>3301</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Abandoned Cave</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>31201950</EntityID>
+						<EventFlagID>73120</EventFlagID>
+						<DataOffset>2890</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Caelid Catacombs</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>30151950</EntityID>
+						<EventFlagID>73015</EventFlagID>
+						<DataOffset>2876</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Chamber Outside the Plaza</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>1051361951</EntityID>
+						<EventFlagID>76420</EventFlagID>
+						<DataOffset>3302</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Deep Siofra Well</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>1048401950</EntityID>
+						<EventFlagID>76410</EventFlagID>
+						<DataOffset>3301</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Gael Tunnel</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>32071950</EntityID>
+						<EventFlagID>73207</EventFlagID>
+						<DataOffset>2900</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Gaol Cave</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>31211950</EntityID>
+						<EventFlagID>73121</EventFlagID>
+						<DataOffset>2890</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Impassable Greatbridge</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>1050361950</EntityID>
+						<EventFlagID>76417</EventFlagID>
+						<DataOffset>3302</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Minor Erdtree Catacombs</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>30141950</EntityID>
+						<EventFlagID>73014</EventFlagID>
+						<DataOffset>2876</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Rear Gael Tunnel Entrance</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>32071951</EntityID>
+						<EventFlagID>73207</EventFlagID>
+						<DataOffset>2907</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Redmane Castle Plaza</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>1051361950</EntityID>
+						<EventFlagID>76419</EventFlagID>
+						<DataOffset>3302</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Sellia Crystal Tunnel</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>32081950</EntityID>
+						<EventFlagID>73208</EventFlagID>
+						<DataOffset>2901</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Starscourge Radahn</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>1052381950</EntityID>
+						<EventFlagID>76422</EventFlagID>
+						<DataOffset>3302</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>War-Dead Catacombs</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Caelid</Hub>
+						<EntityID>30161950</EntityID>
+						<EventFlagID>73016</EventFlagID>
+						<DataOffset>2877</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Swamp of Aeonia</Name>
+				<Graces>
+					<Grace>
+						<Name>Aeonia Swamp Shore</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Swamp of Aeonia</Hub>
+						<EntityID>1048381950</EntityID>
+						<EventFlagID>76406</EventFlagID>
+						<DataOffset>3300</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Astray from Caelid Highway North</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Swamp of Aeonia</Hub>
+						<EntityID>1048381951</EntityID>
+						<EventFlagID>76407</EventFlagID>
+						<DataOffset>3300</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Heart of Aeonia</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Swamp of Aeonia</Hub>
+						<EntityID>1049381950</EntityID>
+						<EventFlagID>76412</EventFlagID>
+						<DataOffset>3301</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Inner Aeonia</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Swamp of Aeonia</Hub>
+						<EntityID>1049381951</EntityID>
+						<EventFlagID>76413</EventFlagID>
+						<DataOffset>3301</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Greyoll's Dragonbarrow</Name>
+				<Graces>
+					<Grace>
+						<Name>Bestial Sanctum</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Greyoll's Dragonbarrow</Hub>
+						<EntityID>1051431950</EntityID>
+						<EventFlagID>76454</EventFlagID>
+						<DataOffset>3306</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Divine Tower of Caelid: Basement</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Greyoll's Dragonbarrow</Hub>
+						<EntityID>34131951</EntityID>
+						<EventFlagID>73440</EventFlagID>
+						<DataOffset>2930</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Divine Tower of Caelid: Center</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Greyoll's Dragonbarrow</Hub>
+						<EntityID>34131952</EntityID>
+						<EventFlagID>73441</EventFlagID>
+						<DataOffset>2930</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Dragonbarrow Cave</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Greyoll's Dragonbarrow</Hub>
+						<EntityID>31101950</EntityID>
+						<EventFlagID>73110</EventFlagID>
+						<DataOffset>2888</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Dragonbarrow Fork</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Greyoll's Dragonbarrow</Hub>
+						<EntityID>1050401950</EntityID>
+						<EventFlagID>76452</EventFlagID>
+						<DataOffset>3306</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Dragonbarrow West</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Greyoll's Dragonbarrow</Hub>
+						<EntityID>1048401951</EntityID>
+						<EventFlagID>76450</EventFlagID>
+						<DataOffset>3306</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Farum Greatbridge</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Greyoll's Dragonbarrow</Hub>
+						<EntityID>1052421950</EntityID>
+						<EventFlagID>76456</EventFlagID>
+						<DataOffset>3307</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Fort Faroth</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Greyoll's Dragonbarrow</Hub>
+						<EntityID>1051391950</EntityID>
+						<EventFlagID>76453</EventFlagID>
+						<DataOffset>3306</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Isolated Divine Tower</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Greyoll's Dragonbarrow</Hub>
+						<EntityID>34151950</EntityID>
+						<EventFlagID>73460</EventFlagID>
+						<DataOffset>2932</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Isolated Merchant's Shack (Greyoll's Dragonbarrow)</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Greyoll's Dragonbarrow</Hub>
+						<EntityID>1048411950</EntityID>
+						<EventFlagID>76451</EventFlagID>
+						<DataOffset>3306</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Lenne's Rise</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Greyoll's Dragonbarrow</Hub>
+						<EntityID>1052411950</EntityID>
+						<EventFlagID>76455</EventFlagID>
+						<DataOffset>3306</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Sellia Hideaway</Name>
+						<Continent>Caelid</Continent>
+						<Hub>Greyoll's Dragonbarrow</Hub>
+						<EntityID>31111950</EntityID>
+						<EventFlagID>73111</EventFlagID>
+						<DataOffset>2888</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+		</Hubs>
+	</Continent>
+	<Continent>
+		<Name>Altus Plateau</Name>
+		<Hubs>
+			<Hub>
+				<Name>Altus Plateau</Name>
+				<Graces>
+					<Grace>
+						<Name>Abandoned Coffin</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Altus Plateau</Hub>
+						<EntityID>1037511950</EntityID>
+						<EventFlagID>76300</EventFlagID>
+						<DataOffset>3287</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Altus Highway Junction</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Altus Plateau</Hub>
+						<EntityID>1039511950</EntityID>
+						<EventFlagID>76303</EventFlagID>
+						<DataOffset>3287</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Altus Plateau</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Altus Plateau</Hub>
+						<EntityID>1038501952</EntityID>
+						<EventFlagID>76301</EventFlagID>
+						<DataOffset>3287</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Bower of Bounty</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Altus Plateau</Hub>
+						<EntityID>1040531950</EntityID>
+						<EventFlagID>76306</EventFlagID>
+						<DataOffset>3288</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Erdtree-Gazing Hill</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Altus Plateau</Hub>
+						<EntityID>1038511950</EntityID>
+						<EventFlagID>76302</EventFlagID>
+						<DataOffset>3287</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Forest-Spanning Greatbridge</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Altus Plateau</Hub>
+						<EntityID>1040521950</EntityID>
+						<EventFlagID>76304</EventFlagID>
+						<DataOffset>3288</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Rampartside Path</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Altus Plateau</Hub>
+						<EntityID>1041521951</EntityID>
+						<EventFlagID>76305</EventFlagID>
+						<DataOffset>3288</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Road of Iniquity Side Path</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Altus Plateau</Hub>
+						<EntityID>1040541950</EntityID>
+						<EventFlagID>76307</EventFlagID>
+						<DataOffset>3288</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Shaded Castle Inner Gate</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Altus Plateau</Hub>
+						<EntityID>1039541951</EntityID>
+						<EventFlagID>76321</EventFlagID>
+						<DataOffset>3290</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Shaded Castle Ramparts</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Altus Plateau</Hub>
+						<EntityID>1039541950</EntityID>
+						<EventFlagID>76320</EventFlagID>
+						<DataOffset>3290</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Windmill Heights</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Altus Plateau</Hub>
+						<EntityID>1042551950</EntityID>
+						<EventFlagID>76313</EventFlagID>
+						<DataOffset>3289</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Windmill Village</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Altus Plateau</Hub>
+						<EntityID>1041541950</EntityID>
+						<EventFlagID>76308</EventFlagID>
+						<DataOffset>3288</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Altus Tunnel</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Altus Plateau</Hub>
+						<EntityID>32051950</EntityID>
+						<EventFlagID>73205</EventFlagID>
+						<DataOffset>2900</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Castellan's Hall</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Altus Plateau</Hub>
+						<EntityID>1039541952</EntityID>
+						<EventFlagID>76322</EventFlagID>
+						<DataOffset>3290</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Old Altus Tunnel</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Altus Plateau</Hub>
+						<EntityID>32041950</EntityID>
+						<EventFlagID>73204</EventFlagID>
+						<DataOffset>2900</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Perfumer's Grotto</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Altus Plateau</Hub>
+						<EntityID>31181950</EntityID>
+						<EventFlagID>73118</EventFlagID>
+						<DataOffset>2889</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Sage's Cave</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Altus Plateau</Hub>
+						<EntityID>31191950</EntityID>
+						<EventFlagID>73119</EventFlagID>
+						<DataOffset>2889</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Sainted Hero's Grave</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Altus Plateau</Hub>
+						<EntityID>30081950</EntityID>
+						<EventFlagID>73008</EventFlagID>
+						<DataOffset>2876</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Unsightly Catacombs</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Altus Plateau</Hub>
+						<EntityID>30121950</EntityID>
+						<EventFlagID>73012</EventFlagID>
+						<DataOffset>2876</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Mt. Gelmir</Name>
+				<Graces>
+					<Grace>
+						<Name>Bridge of Iniquity</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Mt. Gelmir</Hub>
+						<EntityID>1039531950</EntityID>
+						<EventFlagID>76350</EventFlagID>
+						<DataOffset>3293</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Craftsman's Shack</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Mt. Gelmir</Hub>
+						<EntityID>1036521950</EntityID>
+						<EventFlagID>76356</EventFlagID>
+						<DataOffset>3294</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>First Mt. Gelmir Campsite</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Mt. Gelmir</Hub>
+						<EntityID>1038541950</EntityID>
+						<EventFlagID>76351</EventFlagID>
+						<DataOffset>3293</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Gelmir Hero's Grave</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Mt. Gelmir</Hub>
+						<EntityID>30091950</EntityID>
+						<EventFlagID>73009</EventFlagID>
+						<DataOffset>2876</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Ninth Mt. Gelmir Campsite</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Mt. Gelmir</Hub>
+						<EntityID>1036541951</EntityID>
+						<EventFlagID>76352</EventFlagID>
+						<DataOffset>3294</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Primeval Sorcerer Azur</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Mt. Gelmir</Hub>
+						<EntityID>1037531950</EntityID>
+						<EventFlagID>76357</EventFlagID>
+						<DataOffset>3294</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Road of Iniquity</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Mt. Gelmir</Hub>
+						<EntityID>1036541952</EntityID>
+						<EventFlagID>76353</EventFlagID>
+						<DataOffset>3294</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Seethewater Cave</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Mt. Gelmir</Hub>
+						<EntityID>31071950</EntityID>
+						<EventFlagID>73107</EventFlagID>
+						<DataOffset>2888</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Seethewater River</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Mt. Gelmir</Hub>
+						<EntityID>1037521951</EntityID>
+						<EventFlagID>76354</EventFlagID>
+						<DataOffset>3294</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Seethewater Terminus</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Mt. Gelmir</Hub>
+						<EntityID>1035531950</EntityID>
+						<EventFlagID>76355</EventFlagID>
+						<DataOffset>3294</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Volcano Cave</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Mt. Gelmir</Hub>
+						<EntityID>31091950</EntityID>
+						<EventFlagID>73109</EventFlagID>
+						<DataOffset>2888</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Wyndham Catacombs</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Mt. Gelmir</Hub>
+						<EntityID>30071950</EntityID>
+						<EventFlagID>73007</EventFlagID>
+						<DataOffset>2875</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Leyndell, Royal Capital</Name>
+				<Graces>
+					<Grace>
+						<Name>Auriza Side Tomb</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Leyndell, Royal Capital</Hub>
+						<EntityID>30131950</EntityID>
+						<EventFlagID>73013</EventFlagID>
+						<DataOffset>2876</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Auzira Hero's Grave</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Leyndell, Royal Capital</Hub>
+						<EntityID>30101950</EntityID>
+						<EventFlagID>73010</EventFlagID>
+						<DataOffset>2876</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Capital Rampart</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Leyndell, Royal Capital</Hub>
+						<EntityID>1045521950</EntityID>
+						<EventFlagID>76314</EventFlagID>
+						<DataOffset>3289</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Divine Tower of West Altus</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Leyndell, Royal Capital</Hub>
+						<EntityID>34121950</EntityID>
+						<EventFlagID>73430</EventFlagID>
+						<DataOffset>2928</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Divine Tower of West Altus: Gate</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Leyndell, Royal Capital</Hub>
+						<EntityID>34121952</EntityID>
+						<EventFlagID>73432</EventFlagID>
+						<DataOffset>2929</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Hermit Merchant's Shack</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Leyndell, Royal Capital</Hub>
+						<EntityID>1043531950</EntityID>
+						<EventFlagID>76311</EventFlagID>
+						<DataOffset>3288</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Minor Erdtree Church</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Leyndell, Royal Capital</Hub>
+						<EntityID>1043501950</EntityID>
+						<EventFlagID>76310</EventFlagID>
+						<DataOffset>3288</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Outer Wall Battleground</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Leyndell, Royal Capital</Hub>
+						<EntityID>1043531951</EntityID>
+						<EventFlagID>76312</EventFlagID>
+						<DataOffset>3289</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Outer Wall Phantom Tree</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Leyndell, Royal Capital</Hub>
+						<EntityID>1042511950</EntityID>
+						<EventFlagID>76309</EventFlagID>
+						<DataOffset>3288</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Sealed Tunnel</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Leyndell, Royal Capital</Hub>
+						<EntityID>34121951</EntityID>
+						<EventFlagID>73431</EventFlagID>
+						<DataOffset>2928</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Volcano Manor</Name>
+				<Graces>
+					<Grace>
+						<Name>Abductor Virgin</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Volcano Manor</Hub>
+						<EntityID>16001962</EntityID>
+						<EventFlagID>71606</EventFlagID>
+						<DataOffset>2700</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Audience Pathway</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Volcano Manor</Hub>
+						<EntityID>16001960</EntityID>
+						<EventFlagID>71605</EventFlagID>
+						<DataOffset>2700</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Guest Hall</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Volcano Manor</Hub>
+						<EntityID>16001954</EntityID>
+						<EventFlagID>71604</EventFlagID>
+						<DataOffset>2700</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Prison Town Church</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Volcano Manor</Hub>
+						<EntityID>16001953</EntityID>
+						<EventFlagID>71603</EventFlagID>
+						<DataOffset>2700</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Rykard, Lord of Blasphemy</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Volcano Manor</Hub>
+						<EntityID>16001950</EntityID>
+						<EventFlagID>71600</EventFlagID>
+						<DataOffset>2700</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Subterranean Inquisition Chamber</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Volcano Manor</Hub>
+						<EntityID>16001964</EntityID>
+						<EventFlagID>71607</EventFlagID>
+						<DataOffset>2700</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Temple of Eiglay</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Volcano Manor</Hub>
+						<EntityID>16001951</EntityID>
+						<EventFlagID>71601</EventFlagID>
+						<DataOffset>2700</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Volcano Manor</Name>
+						<Continent>Altus Plateau</Continent>
+						<Hub>Volcano Manor</Hub>
+						<EntityID>16001952</EntityID>
+						<EventFlagID>71602</EventFlagID>
+						<DataOffset>2700</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+		</Hubs>
+	</Continent>
+	<Continent>
+		<Name>Leyndell, Royal Capital</Name>
+		<Hubs>
+			<Hub>
+				<Name>Subterranean Shunning-Grounds</Name>
+				<Graces>
+					<Grace>
+						<Name>Cathedral of the Forsaken</Name>
+						<Continent>Leyndell, Royal Capital</Continent>
+						<Hub>Subterranean Shunning-Grounds</Hub>
+						<EntityID>35001950</EntityID>
+						<EventFlagID>73500</EventFlagID>
+						<DataOffset>2937</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Forsaken Depths</Name>
+						<Continent>Leyndell, Royal Capital</Continent>
+						<Hub>Subterranean Shunning-Grounds</Hub>
+						<EntityID>35001952</EntityID>
+						<EventFlagID>73502</EventFlagID>
+						<DataOffset>2937</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Frenzied Flame Proscription</Name>
+						<Continent>Leyndell, Royal Capital</Continent>
+						<Hub>Subterranean Shunning-Grounds</Hub>
+						<EntityID>35001954</EntityID>
+						<EventFlagID>73504</EventFlagID>
+						<DataOffset>2938</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Leyndell Catacombs</Name>
+						<Continent>Leyndell, Royal Capital</Continent>
+						<Hub>Subterranean Shunning-Grounds</Hub>
+						<EntityID>35001953</EntityID>
+						<EventFlagID>73503</EventFlagID>
+						<DataOffset>2937</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Underground Roadside</Name>
+						<Continent>Leyndell, Royal Capital</Continent>
+						<Hub>Subterranean Shunning-Grounds</Hub>
+						<EntityID>35001951</EntityID>
+						<EventFlagID>73501</EventFlagID>
+						<DataOffset>2937</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Leyndell, Ashen Capital</Name>
+				<Graces>
+					<Grace>
+						<Name>Divine Bridge (Ashen)</Name>
+						<Continent>Leyndell, Royal Capital</Continent>
+						<Hub>Leyndell, Ashen Capital</Hub>
+						<EntityID>11051955</EntityID>
+						<EventFlagID>71125</EventFlagID>
+						<DataOffset>2640</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>East Capital Rampart (Ashen)</Name>
+						<Continent>Leyndell, Royal Capital</Continent>
+						<Hub>Leyndell, Ashen Capital</Hub>
+						<EntityID>11051952</EntityID>
+						<EventFlagID>71122</EventFlagID>
+						<DataOffset>2640</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Elden Throne (Ashen)</Name>
+						<Continent>Leyndell, Royal Capital</Continent>
+						<Hub>Leyndell, Ashen Capital</Hub>
+						<EntityID>11051950</EntityID>
+						<EventFlagID>71120</EventFlagID>
+						<DataOffset>2640</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Erdtree Sanctuary (Ashen)</Name>
+						<Continent>Leyndell, Royal Capital</Continent>
+						<Hub>Leyndell, Ashen Capital</Hub>
+						<EntityID>11051951</EntityID>
+						<EventFlagID>71121</EventFlagID>
+						<DataOffset>2640</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Leyndell, Capital of Ash</Name>
+						<Continent>Leyndell, Royal Capital</Continent>
+						<Hub>Leyndell, Ashen Capital</Hub>
+						<EntityID>11051953</EntityID>
+						<EventFlagID>71123</EventFlagID>
+						<DataOffset>2640</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Queen's Bedchamber (Ashen)</Name>
+						<Continent>Leyndell, Royal Capital</Continent>
+						<Hub>Leyndell, Ashen Capital</Hub>
+						<EntityID>11051954</EntityID>
+						<EventFlagID>71124</EventFlagID>
+						<DataOffset>2640</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Stone Platform</Name>
+				<Graces>
+					<Grace>
+						<Name>Fractured Marika</Name>
+						<Continent>Leyndell, Royal Capital</Continent>
+						<Hub>Stone Platform</Hub>
+						<EntityID>19001950</EntityID>
+						<EventFlagID>71900</EventFlagID>
+						<DataOffset>2737</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+		</Hubs>
+	</Continent>
+	<Continent>
+		<Name>Mountaintops of the Giants</Name>
+		<Hubs>
+			<Hub>
+				<Name>Forbiden Lands</Name>
+				<Graces>
+					<Grace>
+						<Name>Divine Tower of East Altus</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Forbiden Lands</Hub>
+						<EntityID>34141951</EntityID>
+						<EventFlagID>73451</EventFlagID>
+						<DataOffset>2931</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Divine Tower of East Altus: Gate</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Forbiden Lands</Hub>
+						<EntityID>34141950</EntityID>
+						<EventFlagID>73450</EventFlagID>
+						<DataOffset>2931</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Forbidden Lands</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Forbiden Lands</Hub>
+						<EntityID>1047511950</EntityID>
+						<EventFlagID>76500</EventFlagID>
+						<DataOffset>3312</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Grand Lift of Rold</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Forbiden Lands</Hub>
+						<EntityID>1049531951</EntityID>
+						<EventFlagID>76502</EventFlagID>
+						<DataOffset>3312</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Hidden Path to the Haligtree</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Forbiden Lands</Hub>
+						<EntityID>30201950</EntityID>
+						<EventFlagID>73020</EventFlagID>
+						<DataOffset>2877</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Mountaintops of the Giants</Name>
+				<Graces>
+					<Grace>
+						<Name>Ancient Snow Valley Ruins</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Mountaintops of the Giants</Hub>
+						<EntityID>1051561950</EntityID>
+						<EventFlagID>76503</EventFlagID>
+						<DataOffset>3312</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Castle Sol Main Gate</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Mountaintops of the Giants</Hub>
+						<EntityID>1051571951</EntityID>
+						<EventFlagID>76522</EventFlagID>
+						<DataOffset>3315</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Castle Sol Rooftop</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Mountaintops of the Giants</Hub>
+						<EntityID>1051571953</EntityID>
+						<EventFlagID>76524</EventFlagID>
+						<DataOffset>3315</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Church of the Eclipse</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Mountaintops of the Giants</Hub>
+						<EntityID>1051571952</EntityID>
+						<EventFlagID>76523</EventFlagID>
+						<DataOffset>3315</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>First Church of Marika</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Mountaintops of the Giants</Hub>
+						<EntityID>1054551950</EntityID>
+						<EventFlagID>76505</EventFlagID>
+						<DataOffset>3313</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Freezing Lake</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Mountaintops of the Giants</Hub>
+						<EntityID>1052571950</EntityID>
+						<EventFlagID>76504</EventFlagID>
+						<DataOffset>3313</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Snow Valley Ruins Overlook</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Mountaintops of the Giants</Hub>
+						<EntityID>1051571950</EntityID>
+						<EventFlagID>76521</EventFlagID>
+						<DataOffset>3315</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Spiritcaller's Cave</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Mountaintops of the Giants</Hub>
+						<EntityID>31221950</EntityID>
+						<EventFlagID>73122</EventFlagID>
+						<DataOffset>2890</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Whiteridge Road</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Mountaintops of the Giants</Hub>
+						<EntityID>1052561950</EntityID>
+						<EventFlagID>76520</EventFlagID>
+						<DataOffset>3315</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Zamor Ruins</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Mountaintops of the Giants</Hub>
+						<EntityID>1049531950</EntityID>
+						<EventFlagID>76501</EventFlagID>
+						<DataOffset>3312</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Flame Peak</Name>
+				<Graces>
+					<Grace>
+						<Name>Church of Repose</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Flame Peak</Hub>
+						<EntityID>1051531950</EntityID>
+						<EventFlagID>76507</EventFlagID>
+						<DataOffset>3313</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Fire Giant</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Flame Peak</Hub>
+						<EntityID>1053521950</EntityID>
+						<EventFlagID>76509</EventFlagID>
+						<DataOffset>3313</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Foot of the Forge</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Flame Peak</Hub>
+						<EntityID>1052531950</EntityID>
+						<EventFlagID>76508</EventFlagID>
+						<DataOffset>3313</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Forge of the Giants</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Flame Peak</Hub>
+						<EntityID>1054531950</EntityID>
+						<EventFlagID>76510</EventFlagID>
+						<DataOffset>3313</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Giant's Gravepost</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Flame Peak</Hub>
+						<EntityID>1052541950</EntityID>
+						<EventFlagID>76506</EventFlagID>
+						<DataOffset>3313</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Giant's Mountaintop Catacombs</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Flame Peak</Hub>
+						<EntityID>30181950</EntityID>
+						<EventFlagID>73018</EventFlagID>
+						<DataOffset>2877</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Giant-Conquering Hero's Grave</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Flame Peak</Hub>
+						<EntityID>30171950</EntityID>
+						<EventFlagID>73017</EventFlagID>
+						<DataOffset>2877</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Consecrated Snowfield</Name>
+				<Graces>
+					<Grace>
+						<Name>Apostate Derelict</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Consecrated Snowfield</Hub>
+						<EntityID>1047581950</EntityID>
+						<EventFlagID>76653</EventFlagID>
+						<DataOffset>3331</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Cave of the Forlorn</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Consecrated Snowfield</Hub>
+						<EntityID>31121950</EntityID>
+						<EventFlagID>73112</EventFlagID>
+						<DataOffset>2889</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Consecrated Snowfield</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Consecrated Snowfield</Hub>
+						<EntityID>1049541950</EntityID>
+						<EventFlagID>76550</EventFlagID>
+						<DataOffset>3318</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Consecrated Snowfield Catacombs</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Consecrated Snowfield</Hub>
+						<EntityID>30191950</EntityID>
+						<EventFlagID>73019</EventFlagID>
+						<DataOffset>2877</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Inner Consecrated Snowfield</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Consecrated Snowfield</Hub>
+						<EntityID>1049551950</EntityID>
+						<EventFlagID>76551</EventFlagID>
+						<DataOffset>3318</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Ordina, Liturgical Town</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Consecrated Snowfield</Hub>
+						<EntityID>1048571950</EntityID>
+						<EventFlagID>76652</EventFlagID>
+						<DataOffset>3331</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Yelough Anix Tunnel</Name>
+						<Continent>Mountaintops of the Giants</Continent>
+						<Hub>Consecrated Snowfield</Hub>
+						<EntityID>32111950</EntityID>
+						<EventFlagID>73211</EventFlagID>
+						<DataOffset>2901</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+		</Hubs>
+	</Continent>
+	<Continent>
+		<Name>Miquella's Haligtree</Name>
+		<Hubs>
+			<Hub>
+				<Name>Miquella's Haligtree</Name>
+				<Graces>
+					<Grace>
+						<Name>Haligtree Canopy</Name>
+						<Continent>Miquella's Haligtree</Continent>
+						<Hub>Miquella's Haligtree</Hub>
+						<EntityID>15001956</EntityID>
+						<EventFlagID>71506</EventFlagID>
+						<DataOffset>2688</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Haligtree Promenade</Name>
+						<Continent>Miquella's Haligtree</Continent>
+						<Hub>Miquella's Haligtree</Hub>
+						<EntityID>15001955</EntityID>
+						<EventFlagID>71505</EventFlagID>
+						<DataOffset>2688</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Haligtree Town</Name>
+						<Continent>Miquella's Haligtree</Continent>
+						<Hub>Miquella's Haligtree</Hub>
+						<EntityID>15001957</EntityID>
+						<EventFlagID>71507</EventFlagID>
+						<DataOffset>2688</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Haligtree Town Plaza</Name>
+						<Continent>Miquella's Haligtree</Continent>
+						<Hub>Miquella's Haligtree</Hub>
+						<EntityID>15001958</EntityID>
+						<EventFlagID>71508</EventFlagID>
+						<DataOffset>2688</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Elphael, Brace of the Haligtree</Name>
+				<Graces>
+					<Grace>
+						<Name>Drainage Channel</Name>
+						<Continent>Miquella's Haligtree</Continent>
+						<Hub>Elphael, Brace of the Haligtree</Hub>
+						<EntityID>15001953</EntityID>
+						<EventFlagID>71503</EventFlagID>
+						<DataOffset>2687</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Elphael Inner Wall</Name>
+						<Continent>Miquella's Haligtree</Continent>
+						<Hub>Elphael, Brace of the Haligtree</Hub>
+						<EntityID>15001952</EntityID>
+						<EventFlagID>71502</EventFlagID>
+						<DataOffset>2687</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Haligtree Roots</Name>
+						<Continent>Miquella's Haligtree</Continent>
+						<Hub>Elphael, Brace of the Haligtree</Hub>
+						<EntityID>15001954</EntityID>
+						<EventFlagID>71504</EventFlagID>
+						<DataOffset>2688</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Malenia, Goddess of Rot</Name>
+						<Continent>Miquella's Haligtree</Continent>
+						<Hub>Elphael, Brace of the Haligtree</Hub>
+						<EntityID>15001950</EntityID>
+						<EventFlagID>71500</EventFlagID>
+						<DataOffset>2687</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Prayer Room</Name>
+						<Continent>Miquella's Haligtree</Continent>
+						<Hub>Elphael, Brace of the Haligtree</Hub>
+						<EntityID>15001951</EntityID>
+						<EventFlagID>71501</EventFlagID>
+						<DataOffset>2687</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+		</Hubs>
+	</Continent>
+	<Continent>
+		<Name>Ainsel River</Name>
+		<Hubs>
+			<Hub>
+				<Name>Ainsel River</Name>
+				<Graces>
+					<Grace>
+						<Name>Ainsel River Downstream</Name>
+						<Continent>Ainsel River</Continent>
+						<Hub>Ainsel River</Hub>
+						<EntityID>12011953</EntityID>
+						<EventFlagID>71213</EventFlagID>
+						<DataOffset>2651</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Ainsel River Sluice Gate</Name>
+						<Continent>Ainsel River</Continent>
+						<Hub>Ainsel River</Hub>
+						<EntityID>12011952</EntityID>
+						<EventFlagID>71212</EventFlagID>
+						<DataOffset>2651</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Ainsel River Well Depths</Name>
+						<Continent>Ainsel River</Continent>
+						<Hub>Ainsel River</Hub>
+						<EntityID>12011951</EntityID>
+						<EventFlagID>71211</EventFlagID>
+						<DataOffset>2651</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Astel, Naturalborn of the Void</Name>
+						<Continent>Ainsel River</Continent>
+						<Hub>Ainsel River</Hub>
+						<EntityID>12041950</EntityID>
+						<EventFlagID>71240</EventFlagID>
+						<DataOffset>2655</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Dragonkin Soldier of Nokstella</Name>
+						<Continent>Ainsel River</Continent>
+						<Hub>Ainsel River</Hub>
+						<EntityID>12011950</EntityID>
+						<EventFlagID>71210</EventFlagID>
+						<DataOffset>2651</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Ainsel River Main</Name>
+				<Graces>
+					<Grace>
+						<Name>Ainsel River Main</Name>
+						<Continent>Ainsel River</Continent>
+						<Hub>Ainsel River Main</Hub>
+						<EntityID>12011954</EntityID>
+						<EventFlagID>71214</EventFlagID>
+						<DataOffset>2651</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Nokstella, Eternal City</Name>
+						<Continent>Ainsel River</Continent>
+						<Hub>Ainsel River Main</Hub>
+						<EntityID>12011955</EntityID>
+						<EventFlagID>71215</EventFlagID>
+						<DataOffset>2651</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Nokstella Waterfall Basin</Name>
+						<Continent>Ainsel River</Continent>
+						<Hub>Ainsel River Main</Hub>
+						<EntityID>12011959</EntityID>
+						<EventFlagID>71219</EventFlagID>
+						<DataOffset>2652</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Lake of Rot</Name>
+				<Graces>
+					<Grace>
+						<Name>Grand Cloister</Name>
+						<Continent>Ainsel River</Continent>
+						<Hub>Lake of Rot</Hub>
+						<EntityID>12011958</EntityID>
+						<EventFlagID>71218</EventFlagID>
+						<DataOffset>2652</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Lake of Rot Shoreside</Name>
+						<Continent>Ainsel River</Continent>
+						<Hub>Lake of Rot</Hub>
+						<EntityID>12011956</EntityID>
+						<EventFlagID>71216</EventFlagID>
+						<DataOffset>2652</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+		</Hubs>
+	</Continent>
+	<Continent>
+		<Name>Nokron, Eternal City</Name>
+		<Hubs>
+			<Hub>
+				<Name>Nokron, Eternal City</Name>
+				<Graces>
+					<Grace>
+						<Name>Nokron, Eternal City</Name>
+						<Continent>Nokron, Eternal City</Continent>
+						<Hub>Nokron, Eternal City</Hub>
+						<EntityID>12071951</EntityID>
+						<EventFlagID>71271</EventFlagID>
+						<DataOffset>2658</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Ancestral Woods</Name>
+						<Continent>Nokron, Eternal City</Continent>
+						<Hub>Nokron, Eternal City</Hub>
+						<EntityID>12021956</EntityID>
+						<EventFlagID>71224</EventFlagID>
+						<DataOffset>2653</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Aqueduct-Facing Cliffs</Name>
+						<Continent>Nokron, Eternal City</Continent>
+						<Hub>Nokron, Eternal City</Hub>
+						<EntityID>12021957</EntityID>
+						<EventFlagID>71225</EventFlagID>
+						<DataOffset>2653</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Great Waterfall Basin</Name>
+						<Continent>Nokron, Eternal City</Continent>
+						<Hub>Nokron, Eternal City</Hub>
+						<EntityID>12021950</EntityID>
+						<EventFlagID>71220</EventFlagID>
+						<DataOffset>2652</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Mimic Tear</Name>
+						<Continent>Nokron, Eternal City</Continent>
+						<Hub>Nokron, Eternal City</Hub>
+						<EntityID>12021951</EntityID>
+						<EventFlagID>71221</EventFlagID>
+						<DataOffset>2652</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Night's Sacred Ground</Name>
+						<Continent>Nokron, Eternal City</Continent>
+						<Hub>Nokron, Eternal City</Hub>
+						<EntityID>12021958</EntityID>
+						<EventFlagID>71226</EventFlagID>
+						<DataOffset>2653</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Siofra River</Name>
+				<Graces>
+					<Grace>
+						<Name>Below the Well</Name>
+						<Continent>Nokron, Eternal City</Continent>
+						<Hub>Siofra River</Hub>
+						<EntityID>12021959</EntityID>
+						<EventFlagID>71227</EventFlagID>
+						<DataOffset>2653</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Siofra River Bank</Name>
+						<Continent>Nokron, Eternal City</Continent>
+						<Hub>Siofra River</Hub>
+						<EntityID>12021953</EntityID>
+						<EventFlagID>71222</EventFlagID>
+						<DataOffset>2652</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Siofra River Well Depths</Name>
+						<Continent>Nokron, Eternal City</Continent>
+						<Hub>Siofra River</Hub>
+						<EntityID>12071950</EntityID>
+						<EventFlagID>71270</EventFlagID>
+						<DataOffset>2658</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Worshippers' Woods</Name>
+						<Continent>Nokron, Eternal City</Continent>
+						<Hub>Siofra River</Hub>
+						<EntityID>12021954</EntityID>
+						<EventFlagID>71223</EventFlagID>
+						<DataOffset>2652</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Mohgwyn Palace</Name>
+				<Graces>
+					<Grace>
+						<Name>Cocoon of the Empyrean</Name>
+						<Continent>Nokron, Eternal City</Continent>
+						<Hub>Mohgwyn Palace</Hub>
+						<EntityID>12051950</EntityID>
+						<EventFlagID>71250</EventFlagID>
+						<DataOffset>2656</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Dynasty Mausoleum Entrance</Name>
+						<Continent>Nokron, Eternal City</Continent>
+						<Hub>Mohgwyn Palace</Hub>
+						<EntityID>12051952</EntityID>
+						<EventFlagID>71252</EventFlagID>
+						<DataOffset>2656</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Dynasty Mausoleum Midpoint</Name>
+						<Continent>Nokron, Eternal City</Continent>
+						<Hub>Mohgwyn Palace</Hub>
+						<EntityID>12051953</EntityID>
+						<EventFlagID>71253</EventFlagID>
+						<DataOffset>2656</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Palace Approach Ledge-Road</Name>
+						<Continent>Nokron, Eternal City</Continent>
+						<Hub>Mohgwyn Palace</Hub>
+						<EntityID>12051951</EntityID>
+						<EventFlagID>71251</EventFlagID>
+						<DataOffset>2656</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+		</Hubs>
+	</Continent>
+	<Continent>
+		<Name>Misc</Name>
+		<Hubs>
+			<Hub>
+				<Name>Roundtable Hold</Name>
+				<Graces>
+					<Grace>
+						<Name>Table of Lost Grace</Name>
+						<Continent>Misc</Continent>
+						<Hub>Roundtable Hold</Hub>
+						<EntityID>11101950</EntityID>
+						<EventFlagID>71190</EventFlagID>
+						<DataOffset>2648</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Crumbling Farum Azula</Name>
+				<Graces>
+					<Grace>
+						<Name>Beside the Great Bridge</Name>
+						<Continent>Misc</Continent>
+						<Hub>Crumbling Farum Azula</Hub>
+						<EntityID>13001960</EntityID>
+						<EventFlagID>71310</EventFlagID>
+						<DataOffset>2663</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Crumbling Beast Grave</Name>
+						<Continent>Misc</Continent>
+						<Hub>Crumbling Farum Azula</Hub>
+						<EntityID>13001953</EntityID>
+						<EventFlagID>71303</EventFlagID>
+						<DataOffset>2662</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Crumbling Beast Grave Depths</Name>
+						<Continent>Misc</Continent>
+						<Hub>Crumbling Farum Azula</Hub>
+						<EntityID>13001954</EntityID>
+						<EventFlagID>71304</EventFlagID>
+						<DataOffset>2663</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Dragon Temple</Name>
+						<Continent>Misc</Continent>
+						<Hub>Crumbling Farum Azula</Hub>
+						<EntityID>13001956</EntityID>
+						<EventFlagID>71306</EventFlagID>
+						<DataOffset>2663</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Dragon Temple Altar</Name>
+						<Continent>Misc</Continent>
+						<Hub>Crumbling Farum Azula</Hub>
+						<EntityID>13001952</EntityID>
+						<EventFlagID>71302</EventFlagID>
+						<DataOffset>2662</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Dragon Temple Lift</Name>
+						<Continent>Misc</Continent>
+						<Hub>Crumbling Farum Azula</Hub>
+						<EntityID>13001958</EntityID>
+						<EventFlagID>71308</EventFlagID>
+						<DataOffset>2663</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Dragon Temple Rooftop</Name>
+						<Continent>Misc</Continent>
+						<Hub>Crumbling Farum Azula</Hub>
+						<EntityID>13001959</EntityID>
+						<EventFlagID>71309</EventFlagID>
+						<DataOffset>2663</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Dragon Temple Transept</Name>
+						<Continent>Misc</Continent>
+						<Hub>Crumbling Farum Azula</Hub>
+						<EntityID>13001957</EntityID>
+						<EventFlagID>71307</EventFlagID>
+						<DataOffset>2663</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Dragonlord Placidusax</Name>
+						<Continent>Misc</Continent>
+						<Hub>Crumbling Farum Azula</Hub>
+						<EntityID>13001951</EntityID>
+						<EventFlagID>71301</EventFlagID>
+						<DataOffset>2662</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Maliketh, the Black Blade</Name>
+						<Continent>Misc</Continent>
+						<Hub>Crumbling Farum Azula</Hub>
+						<EntityID>13001950</EntityID>
+						<EventFlagID>71300</EventFlagID>
+						<DataOffset>2662</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Tempest-Facing Balcony</Name>
+						<Continent>Misc</Continent>
+						<Hub>Crumbling Farum Azula</Hub>
+						<EntityID>13001955</EntityID>
+						<EventFlagID>71305</EventFlagID>
+						<DataOffset>2663</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Deeproot Depths</Name>
+				<Graces>
+					<Grace>
+						<Name>Across the Roots</Name>
+						<Continent>Misc</Continent>
+						<Hub>Deeproot Depths</Hub>
+						<EntityID>12031955</EntityID>
+						<EventFlagID>71235</EventFlagID>
+						<DataOffset>2654</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Deeproot Depths</Name>
+						<Continent>Misc</Continent>
+						<Hub>Deeproot Depths</Hub>
+						<EntityID>12031953</EntityID>
+						<EventFlagID>71233</EventFlagID>
+						<DataOffset>2654</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Great Waterfall Crest</Name>
+						<Continent>Misc</Continent>
+						<Hub>Deeproot Depths</Hub>
+						<EntityID>12031952</EntityID>
+						<EventFlagID>71232</EventFlagID>
+						<DataOffset>2654</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Prince of Death's Throne</Name>
+						<Continent>Misc</Continent>
+						<Hub>Deeproot Depths</Hub>
+						<EntityID>12031950</EntityID>
+						<EventFlagID>71230</EventFlagID>
+						<DataOffset>2653</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Root-Facing Cliffs</Name>
+						<Continent>Misc</Continent>
+						<Hub>Deeproot Depths</Hub>
+						<EntityID>12031951</EntityID>
+						<EventFlagID>71231</EventFlagID>
+						<DataOffset>2653</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>The Nameless Eternal City</Name>
+						<Continent>Misc</Continent>
+						<Hub>Deeproot Depths</Hub>
+						<EntityID>12031954</EntityID>
+						<EventFlagID>71234</EventFlagID>
+						<DataOffset>2654</DataOffset>
+						<PtrOffset>40</PtrOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+		</Hubs>
+	</Continent>
+
 </ArrayOfContinent>
