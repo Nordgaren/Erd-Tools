@@ -645,8 +645,8 @@
 						<Name>Lake-Facing Cliffs</Name>
 						<Continent>Liurnia of the Lakes</Continent>
 						<Hub>Liurnia of the Lakes</Hub>
-						<EntityID>0</EntityID>
-						<EventFlagID>0</EventFlagID>
+						<EntityID>1039401950</EntityID>
+						<EventFlagID>76200</EventFlagID>
 						<DataOffset>3275</DataOffset>
 						<PtrOffset>40</PtrOffset>
 						<BitStart>7</BitStart>

@@ -15,14 +15,14 @@ namespace Erd_Tools.Models
         public List<Item> Items;
         public Category Category;
         public bool ShowID;
-        public static List<ItemCategory> All = new List<ItemCategory>();
+        public static List<ItemCategory> All = new();
 
-        private static Regex CategoryEntryRx = new Regex(@"^(?<category>\S+) (?<show>\S+) (?<path>\S+) (?<name>.+)$", RegexOptions.CultureInvariant);
+        private static Regex CategoryEntryRx = new(@"^(?<category>\S+) (?<show>\S+) (?<path>\S+) (?<name>.+)$", RegexOptions.CultureInvariant);
 
         private ItemCategory(string name, Category category, string[] itemList, bool showIDs)
         {
             Name = name;
-            Items = new List<Item>();
+            Items = new();
             Category = category;
             foreach (string line in itemList)
             {
@@ -41,20 +41,20 @@ namespace Erd_Tools.Models
                 case Category.Protector:
                 case Category.Accessory:
                 case Category.Goods:
-                    Items.Add(new Item(line, category, showIDs));
+                    Items.Add(new(line, category, showIDs));
                     break;
                 case Category.Gem:
                     Items.Add(new Gem(line, category, showIDs));
                     break;
                 default:
-                    throw new Exception("Incorrect Category");
+                    throw new("Incorrect Category");
             }
         }
 
         public static void GetItemCategories()
         {
             string[] result = Util.GetListResource("Resources/ItemCategories.txt");
-            All = new List<ItemCategory>();
+            All = new();
 
             foreach (string line in result)
             {
@@ -67,7 +67,7 @@ namespace Erd_Tools.Models
                 string cat = itemEntry.Groups["category"].Value;
                 Category category = (Category)Convert.ToUInt32(cat, 16);
                 string path = itemEntry.Groups["path"].Value;
-                All.Add(new ItemCategory(name, category, Util.GetListResource($"Resources/{path}"), show));
+                All.Add(new(name, category, Util.GetListResource($"Resources/{path}"), show));
             };
         }
 

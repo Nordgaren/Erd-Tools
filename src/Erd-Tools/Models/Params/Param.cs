@@ -40,8 +40,8 @@ namespace Erd_Tools.Models
         }
         private void BuildOffsetDictionary()
         {
-            Rows = new List<Row>();
-            OffsetDict = new Dictionary<int, int>();
+            Rows = new();
+            OffsetDict = new();
             Length = Pointer.ReadInt32((int)Offsets.Param.NameOffset);
             
             string paramType = Pointer.ReadString(Length, Encoding.UTF8, (uint)Type.Length);
@@ -67,14 +67,14 @@ namespace Erd_Tools.Models
                 if (!OffsetDict.ContainsKey(itemID))
                     OffsetDict.Add(itemID, itemParamOffset);
 
-                Rows.Add(new Row(this ,name, itemID, itemParamOffset));
+                Rows.Add(new(this ,name, itemID, itemParamOffset));
 
                 Param += nextParam;
             }
         }
         private void BuildNameDictionary()
         {
-            NameDictionary = new Dictionary<int, string>();
+            NameDictionary = new();
             string[] result = Util.GetListResource(@$"Resources/Params/Names/{Name}.txt");
             if (result.Length == 0)
                 return;
@@ -130,7 +130,7 @@ namespace Erd_Tools.Models
 
         private void BuildCells()
         {
-            Fields = new List<Field>();
+            Fields = new();
             int totalSize = 0;
             for (int i = 0; i < ParamDef.Fields.Count; i++)
             {
@@ -186,7 +186,7 @@ namespace Erd_Tools.Models
                         Fields.Add(new FixedStr(field, totalSize - size, Encoding.Unicode));
                         break;
                     default:
-                        throw new Exception($"Unknown type: {field.DisplayType}");
+                        throw new($"Unknown type: {field.DisplayType}");
                 }
             }
         }

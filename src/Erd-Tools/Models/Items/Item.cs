@@ -13,7 +13,7 @@ namespace Erd_Tools.Models
             Goods = 0x40000000,
             Gem = 0x80000000
         }
-        private static Regex ItemEntryRx = new Regex(@"^\s*(?<id>\S+)\s+(?<name>.*)$", RegexOptions.CultureInvariant);
+        private static Regex ItemEntryRx = new(@"^\s*(?<id>\S+)\s+(?<name>.*)$", RegexOptions.CultureInvariant);
 
         public string Name;
         public int ID;
@@ -51,7 +51,7 @@ namespace Erd_Tools.Models
 
             if (!param.OffsetDict.ContainsKey(ID))
                 return;
-                //throw new Exception($"{Name} does not have a param entry in this version of Elden Ring!");
+            //throw new Exception($"{Name} does not have a param entry in this version of Elden Ring!");
 
             byte bitfield;
             switch (ItemCategory)
@@ -79,7 +79,7 @@ namespace Erd_Tools.Models
                 case Category.Weapons:
                     break;
                 default:
-                    throw new Exception("Item Does not have a proper category.");
+                    throw new("Item Does not have a proper category.");
             }
         }
 

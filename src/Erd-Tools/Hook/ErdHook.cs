@@ -30,13 +30,13 @@ namespace Erd_Tools
         public event PropertyChangedEventHandler? PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string? name = null)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+            PropertyChanged?.Invoke(this, new(name));
         }
 
         public event EventHandler<PHEventArgs>? OnSetup;
         private void RaiseOnSetup()
         {
-            OnSetup?.Invoke(this, new PHEventArgs(this));
+            OnSetup?.Invoke(this, new(this));
         }
 
         private PHPointer GameDataMan { get; set; }
@@ -238,7 +238,7 @@ namespace Erd_Tools
             //DebugPrintArray(bytes.Buffer);
             KeystoneError error = Engine.GetLastKeystoneError();
             if (error != KeystoneError.KS_ERR_OK)
-                throw new Exception("Something went wrong during assembly. Code could not be assembled.");
+                throw new("Something went wrong during assembly. Code could not be assembled.");
 
             IntPtr insertPtr = GetPrefferedIntPtr(bytes.Buffer.Length, flProtect: Kernel32.PAGE_EXECUTE_READWRITE);
 
@@ -300,8 +300,8 @@ namespace Erd_Tools
 
                 string defPath = $"{paramPath}/Defs/{defName}.xml";
                 if (!File.Exists(defPath))
-                    throw new Exception($"The PARAMDEF {defName} does not exist for {entry}. If the PARAMDEF is named differently than the param name, add another \":\" and append the PARAMDEF name" +
-                        $"Example: 3130:WwiseValueToStrParam_BgmBossChrIdConv:WwiseValueToStrConvertParamFormat");
+                    throw new($"The PARAMDEF {defName} does not exist for {entry}. If the PARAMDEF is named differently than the param name, add another \":\" and append the PARAMDEF name" +
+                              $"Example: 3130:WwiseValueToStrParam_BgmBossChrIdConv:WwiseValueToStrConvertParamFormat");
 
                 int offset = int.Parse(info[0], System.Globalization.NumberStyles.HexNumber);
 
@@ -438,7 +438,7 @@ namespace Erd_Tools
         //HeldNormalItems = 0x450,
         //HeldSpecialItems = 0x460
 
-        private static Regex ItemEventEntryRx = new Regex(@"^(?<event>\S+) (?<item>\S+)$", RegexOptions.CultureInvariant);
+        private static Regex ItemEventEntryRx = new(@"^(?<event>\S+) (?<item>\S+)$", RegexOptions.CultureInvariant);
 
         private static Dictionary<int, int> ItemEventDictionary;
 
@@ -620,7 +620,7 @@ namespace Erd_Tools
                 if (BitConverter.ToInt32(entry, (int)Offsets.InventoryEntry.ItemID) == -1)
                     continue;
 
-                inventory.Add(new InventoryEntry(CreateBasePointer(PlayerInventory.Resolve() + i * Offsets.PlayInventoryEntrySize) ,entry, this));
+                inventory.Add(new(CreateBasePointer(PlayerInventory.Resolve() + i * Offsets.PlayInventoryEntrySize) ,entry, this));
             }
 
             return inventory;
@@ -628,7 +628,7 @@ namespace Erd_Tools
 
         public void ResetInventory()
         {
-            Inventory = new List<InventoryEntry>();
+            Inventory = new();
         }
         #endregion
 
@@ -697,7 +697,7 @@ namespace Erd_Tools
                     int enemyArea = enemyIns.ReadInt32((int)Offsets.EnemyIns.EnemyArea);
 
                     if (targetHandle == enemyHandle && targetArea == enemyArea)
-                        return new Enemy(enemyIns, this);
+                        return new(enemyIns, this);
 
                 }
 
@@ -727,7 +727,7 @@ namespace Erd_Tools
                 int enemyHandle = chrSet1.ReadInt32(0x78 + (i * 0x10));
                 int enemyArea = chrSet1.ReadInt32(0x78 + 4 + (i * 0x10));
                 if (targetHandle == enemyHandle && targetArea == enemyArea)
-                    return new Enemy(CreateChildPointer(chrSet1, 0x78 + 8 + (i * 0x10)), this);
+                    return new(CreateChildPointer(chrSet1, 0x78 + 8 + (i * 0x10)), this);
             }
 
             return null;

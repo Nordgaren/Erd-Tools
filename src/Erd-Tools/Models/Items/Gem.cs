@@ -8,17 +8,17 @@ namespace Erd_Tools.Models
 {
     public class Gem : Item
     {
-        public static List<Gem> All = new List<Gem>();
+        public static List<Gem> All = new();
 
         public long CanMountBitfield;
         public int SwordArtID;
         public short WeaponAttr;
         public List<Infusion> Infusions;
-        public List<WeaponType> WeaponTypes = new List<WeaponType>();
+        public List<WeaponType> WeaponTypes = new();
 
         private void GetInfusions()
         {
-            Infusions = new List<Infusion>();
+            Infusions = new();
 
             if (WeaponAttr == 0)
                 return;
@@ -32,7 +32,7 @@ namespace Erd_Tools.Models
 
         private void GetWeapons()
         {
-            WeaponTypes = new List<WeaponType>();
+            WeaponTypes = new();
 
             if (CanMountBitfield == 0)
                 return;
@@ -51,7 +51,7 @@ namespace Erd_Tools.Models
             if (ID == -1)
             {
                 WeaponTypes = Enum.GetValues(typeof(WeaponType)).Cast<WeaponType>().ToList();
-                Infusions = new List<Infusion>() { Infusion.Standard };
+                Infusions = new() { Infusion.Standard };
                 return;
             }
 
