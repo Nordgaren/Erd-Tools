@@ -26,7 +26,7 @@ If you have used this tool in a mod and want it listed here, let me know.
 **[inuNorii](https://github.com/inunorii)** Creator of The Grand Archives table, which I also used for this, and one of the admins at TGA Discord.  
 **[FrankvdStam](https://github.com/FrankvdStam)** Helped with the build action and general troubleshooting.  
 **[King Borehaha](https://github.com/kingborehaha/DS-Gadget-Local-Loader)** Who's local loading system has worked really well for a lot of things, including this project  
-**jamesq7** For helping figure out the cheat for enabling the map during combat and his rewrite of Wulfs Target script
+**[jamesq7](https://github.com/kh0nsu)** For helping figure out the cheat for enabling the map during combat and his rewrite of Wulfs Target script
 **wulf2k** original author of Target script and various other contributions 
 
 
