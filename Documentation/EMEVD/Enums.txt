@@ -1,0 +1,354 @@
+ON/OFF:
+  0:OFF
+  1:ON
+ON/OFF/CHANGE:
+  0:OFF
+  1:ON
+  2:CHANGE
+Target Event Flag Type:
+  0:Event Flag
+  1:Event ID
+  2:Event ID + Slot Number
+Comparison Type:
+  0:Equal
+  1:NotEqual
+  2:Greater
+  3:Less
+  4:GreaterOrEqual
+  5:LessOrEqual
+Logical Operation Type:
+  0:All ON
+  1:All OFF
+  2:Not All OFF
+  3:Not All ON
+Calculation Type:
+  0:Add
+  1:Sub
+  2:Mult
+  3:Div
+  4:Mod
+  5:Assign
+Condition Group:
+  -15:OR_15
+  -14:OR_14
+  -13:OR_13
+  -12:OR_12
+  -11:OR_11
+  -10:OR_10
+  -9:OR_09
+  -8:OR_08
+  -7:OR_07
+  -6:OR_06
+  -5:OR_05
+  -4:OR_04
+  -3:OR_03
+  -2:OR_02
+  -1:OR_01
+  0:MAIN
+  1:AND_01
+  2:AND_02
+  3:AND_03
+  4:AND_04
+  5:AND_05
+  6:AND_06
+  7:AND_07
+  8:AND_08
+  9:AND_09
+  10:AND_10
+  11:AND_11
+  12:AND_12
+  13:AND_13
+  14:AND_14
+  15:AND_15
+Cutscene Play Mode:
+  0:Skippable
+  2:Unskippable
+  16:Skippable With Fade-Out Skip
+  18:Unskippable With Fade-Out Skip
+  32:Skippable With White Fade-Out
+  48:Skippable With White Fade-Out Skip
+  64:Skippable With White Fade-Out 2
+BOOL:
+  0:FALSE
+  1:TRUE
+Destruction State:
+  0:Undestroyed
+  1:Destroyed
+Inside/Outside State:
+  0:Outside
+  1:Inside
+Condition State:
+  0:FAIL
+  1:PASS
+Death State:
+  0:Alive
+  1:Dead
+Ownership State:
+  0:Doesn't Own
+  1:Owns
+Event End Type:
+  0:End
+  1:Restart
+Team Type:
+  -1:Default
+  0:Disabled
+  1:Human
+  2:White Phantom
+  3:Black Phantom
+  4:Gray Phantom
+  5:Wandering Phantom
+  6:Enemy
+  7:Strong Enemy
+  8:Ally
+  9:Hostile Ally
+  10:Decoy Enemy
+  11:Decoy-like
+  12:Battle Ally
+  13:Invader
+  15:Charmed
+  19:Host
+  20:Co-op
+  21:Hostile
+  22:Wandering Phantom 2
+  23:Enemy 1
+  24:Enemy 2
+  25:Strong Enemy 2
+  26:Friendly NPC
+  27:Hostile NPC
+  28:Co-op NPC
+  29:Indiscriminate
+  30:Object
+  31:White Berserker
+  32:Red Berserker
+  33:Arch Enemy Team
+Target Entity Type:
+  0:Asset
+  1:Area
+  2:Character
+Disabled/Enabled:
+  0:Disabled
+  1:Enabled
+Bitop Type:
+  0:Add
+  1:Delete
+  2:Invert
+Navimesh Type:
+  1:Solid
+  2:Exit
+  4:Obstacle
+  8:Wall
+  64:Landing Point
+  128:Event
+  256:Cliff
+  512:Open Space
+  1024:Ladder
+  2048:Hole
+  4096:Door
+  8192:Closed Door
+  32:Wall-touching Floor
+Prompt Type:
+  0:YES/NO
+  1:OK/CANCEL
+Number of Options:
+  1:One Button
+  2:Two Buttons
+  6:No Buttons
+Sound Type:
+  0:Environmental Sound
+  1:Character Motion
+  2:Menu SE
+  3:Asset
+  4:Cutscene SE
+  5:SFX
+  6:BGM
+  7:Voice
+  8:Depends On Floor Material
+  9:Depends On Armor Material
+  10:Ghost
+  14:Geometry Set
+Damage Target Type:
+  1:Character
+  2:Map
+  3:Character & Map
+Item Type:
+  0:Weapon
+  1:Armor
+  2:Ring
+  3:Goods
+Target Type:
+  0:Alive
+  1:White Phantom
+  2:Black Phantom
+  8:Gray Phantom
+  15:Invader
+  16:Invader 2
+  17:Blue Phantom
+  18:Invader 3
+Text Banner Type:
+  2:You Died
+  5:Host Vanquished
+  7:Bloody Finger Vanquished
+  13:Lost Grace Discovered
+  14:Unknown 14
+  15:Legend Felled
+  16:Demigod Felled
+  17:Great Enemy Felled
+  18:Enemy Felled
+  20:Duty Fulfilled
+  22:Map Found
+  26:Great Rune Restored
+  27:God Slain
+  28:Duelist Vanquished
+  29:Recusant Vanquished
+  30:Invader Vanquished
+Multiplayer State:
+  0:Host
+  1:Client
+  2:Multiplayer
+  3:Multiplayer Pending
+  4:Singleplayer
+  5:Invasion
+  6:Invasion Pending
+NPC Part Type:
+  1:Part 1
+  2:Part 2
+  3:Part 3
+  4:Part 4
+  5:Part 5
+  6:Part 6
+  7:Part 7
+  8:Part 8
+  9:Part 9
+  10:Part 10
+  11:Part 11
+  12:Part 12
+  13:Part 13
+  14:Part 14
+  15:Part 15
+  16:Part 16
+  17:Part 17
+  18:Part 18
+  19:Part 19
+  20:Part 20
+  21:Part 21
+  22:Part 22
+  23:Part 23
+  24:Part 24
+  25:Part 25
+  26:Part 26
+  27:Part 27
+  28:Part 28
+  29:Part 29
+  30:Part 30
+  31:Weak Point
+Authority Level:
+  0:Normal
+  8192:Forced
+AI State Type:
+  0:Normal
+  1:Recognition
+  2:Alert
+  3:Combat
+  4:Passive Alert
+  5:Active Alert
+  6:Wait Before Forget
+Summon Sign Type:
+  0:White Sign
+  1:Black Sign
+  2:Red Sign
+  20:NPC White Sign
+Class Type:
+  0:Vagabond
+  1:Warrior
+  2:Hero
+  3:Bandit
+  4:Astrologer
+  5:Prophet
+  6:Confessor
+  7:Samurai
+  8:Prisoner
+  9:Wretch
+Character Update Frequency:
+  -1:No Update
+  0:Always Update
+  2:Every 2 Frames
+  5:Every 5 Frames
+  102:At Least Every 2 Frames
+  105:At Least Every 5 Frames
+Interpolation:
+  0:Interpolated
+  1:Uninterpolated
+Display State:
+  0:Hide
+  1:Display
+Add/Delete:
+  0:Delete
+  1:Add
+Damage Type:
+  0:Unspecified
+  1:Fire
+  2:Magic
+Label:
+  0:Label 0
+  1:Label 1
+  2:Label 2
+  3:Label 3
+  4:Label 4
+  5:Label 5
+  6:Label 6
+  7:Label 7
+  8:Label 8
+  9:Label 9
+  10:Label 10
+  11:Label 11
+  12:Label 12
+  13:Label 13
+  14:Label 14
+  15:Label 15
+  16:Label 16
+  17:Label 17
+  18:Label 18
+  19:Label 19
+  20:Label 20
+Armor Type:
+  0:Head
+  1:Body
+  2:Arms
+  3:Legs
+Gender:
+  0:Male
+  1:Female
+World Type:
+  0:Own World
+  1:Other World
+Boss BGM State:
+  -2:Stop 1
+  -1:Stop 2
+  0:Start
+  1:Heat Up
+Weather:
+  -1:None
+  0:Default
+  1:Rain
+  2:Snow
+  3:Windy Rain
+  4:Fog
+  5:Cloudless
+  6:Flat Clouds
+  7:Puffy Clouds
+  8:Rainy Clouds
+  9:Windy Fog
+  10:Heavy Snow
+  11:Heavy Fog
+  12:Windy Puffy Clouds
+  13:Default 2
+  14:Default 3
+  15:Rainy Heavy Fog
+  16:Snowy Heavy Fog
+  17:Scattered Rain
+  18:Unknown 18
+  19:Unknown 19
+  20:Unknown 20
+  21:Unknown 21
+  22:Unknown 22
+  23:Unknown 23

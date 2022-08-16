@@ -145,7 +145,8 @@
         }
 
         public const string EventFlagManAoB = "48 8B 3D ? ? ? ? 48 85 FF ? ? 32 C0 E9";
-        public const string EventCallAoB = "? ? ? ? ? 48 89 74 24 18 57 48 83 EC 30 48 8B DA 41 0F B6 F8 8B 12 48 8B F1 85 D2 0F 84 ? ? ? ? 45 84 C0";
+        public const string IsEventCallAoB = "48 83 EC 28 8B 12 85 D2";
+        public const string SetEventCallAoB = "? ? ? ? ? 48 89 74 24 18 57 48 83 EC 30 48 8B DA 41 0F B6 F8 8B 12 48 8B F1 85 D2 0F 84 ? ? ? ? 45 84 C0";
 
         public const string WorldChrManAoB = "48 8B 05 ? ? ? ? 48 85 C0 74 0F 48 39 88 ? ? ? ? 75 06 89 B1 5C 03 00 00 0F 28 05 ? ? ? ? 4C 8D 45 E7";
 
@@ -222,7 +223,11 @@
             /// <summary>
             /// IntPtr PhysicsData
             /// </summary>
-            PhysicsData = 0x68  
+            PhysicsData = 0x68,
+            /// <summary>
+            /// IntPtr ChrActionRequestModule
+            /// </summary>
+            ActionRequest = 0x80,
         }
 
         public enum EnemyData
@@ -403,6 +408,14 @@
             /// float ResetTimer
             /// </summary>
             ResetTime = 0x1C   
+        }
+
+        public enum ActionRequest
+        {
+            /// <summary>
+            /// int CurrentAnimation
+            /// </summary>
+            CurrentAnimation = 0x90
         }
 
         public const int PlayerInsOffset = 0x18468;
