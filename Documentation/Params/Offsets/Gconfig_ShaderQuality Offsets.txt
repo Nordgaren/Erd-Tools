@@ -1,5 +1,5 @@
-//Format[hex]:Index(size) = Name : BitSize
-001(1) = sssEnabled
-002(1) = tessellationEnabled
-003(1) = highPrecisionNormalEnabled
-004(1) = dmy
+//Format: hex(size) = Name : BitSize
+000(1) = sssEnabled
+001(1) = tessellationEnabled
+002(1) = highPrecisionNormalEnabled
+003(1) = dmy

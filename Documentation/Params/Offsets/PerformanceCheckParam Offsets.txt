@@ -1,8 +1,8 @@
-//Format[hex]:Index(size) = Name : BitSize
-001(1) = workTag
-002(1) = categoryTag
-003(1) = compareType
-004(1) = dummy1
-008(4) = compareValue
-010(8) = dummy2
-030(32) = userTag
+//Format: hex(size) = Name : BitSize
+000(1) = workTag
+001(1) = categoryTag
+002(1) = compareType
+003(1) = dummy1
+004(4) = compareValue
+008(8) = dummy2
+010(32) = userTag

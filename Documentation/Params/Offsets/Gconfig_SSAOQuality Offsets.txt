@@ -1,6 +1,6 @@
-//Format[hex]:Index(size) = Name : BitSize
-001(1) = enabled
-002(1) = cs_reprojEnabledType
-003(1) = cs_upScaleEnabledType
-004(1) = cs_useNormalEnabledType
-005(1) = dmy
+//Format: hex(size) = Name : BitSize
+000(1) = enabled
+001(1) = cs_reprojEnabledType
+002(1) = cs_upScaleEnabledType
+003(1) = cs_useNormalEnabledType
+004(1) = dmy

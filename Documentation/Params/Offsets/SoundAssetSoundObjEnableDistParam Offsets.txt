@@ -1,2 +1,2 @@
-//Format[hex]:Index(size) = Name : BitSize
-004(4) = SoundObjEnableDist
+//Format: hex(size) = Name : BitSize
+000(4) = SoundObjEnableDist

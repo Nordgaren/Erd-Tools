@@ -1,7 +1,7 @@
-//Format[hex]:Index(size) = Name : BitSize
-004(4) = titleMsgId
-008(4) = contentMsgId
-00C(4) = value
-010(4) = sortId
-014(4) = eventId
-020(12) = Pad
+//Format: hex(size) = Name : BitSize
+000(4) = titleMsgId
+004(4) = contentMsgId
+008(4) = value
+00C(4) = sortId
+010(4) = eventId
+014(12) = Pad

@@ -1,5 +1,5 @@
-//Format[hex]:Index(size) = Name : BitSize
-004(4) = hitBulletDecalOffset_HitIns
-00C(8) = reserved02
-010(4) = charaWetDecalFadeRange
-100(240) = reserved04
+//Format: hex(size) = Name : BitSize
+000(4) = hitBulletDecalOffset_HitIns
+004(8) = reserved02
+00C(4) = charaWetDecalFadeRange
+010(240) = reserved04

@@ -1,5 +1,5 @@
-//Format[hex]:Index(size) = Name : BitSize
-004(4) = spEffectId1
-008(4) = spEffectId2
-00C(4) = spEffectId3
-010(4) = spEffectId4
+//Format: hex(size) = Name : BitSize
+000(4) = spEffectId1
+004(4) = spEffectId2
+008(4) = spEffectId3
+00C(4) = spEffectId4

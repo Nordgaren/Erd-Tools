@@ -1,6 +1,6 @@
-//Format[hex]:Index(size) = Name : BitSize
-004(4) = localLightDistFactor
-005(1) = localLightShadowEnabled
-006(1) = forwardPassLightingEnabled
-007(1) = localLightShadowSpecLevelMax
-008(1) = dmy
+//Format: hex(size) = Name : BitSize
+000(4) = localLightDistFactor
+004(1) = localLightShadowEnabled
+005(1) = forwardPassLightingEnabled
+006(1) = localLightShadowSpecLevelMax
+007(1) = dmy

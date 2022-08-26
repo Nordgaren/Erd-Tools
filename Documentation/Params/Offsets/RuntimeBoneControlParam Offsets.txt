@@ -1,7 +1,7 @@
-//Format[hex]:Index(size) = Name : BitSize
-004(4) = chrId
-005(1) = ctrlType
-010(11) = pad
-030(32) = applyBone
-050(32) = targetBone1
-070(32) = targetBone2
+//Format: hex(size) = Name : BitSize
+000(4) = chrId
+004(1) = ctrlType
+005(11) = pad
+010(32) = applyBone
+030(32) = targetBone1
+050(32) = targetBone2

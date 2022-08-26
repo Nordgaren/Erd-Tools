@@ -1,5 +1,5 @@
-//Format[hex]:Index(size) = Name : BitSize
-001(1) = limitNum_byGroup
-002(1) = isLimitEachOwner : 1
-002(1) = pad2 : 8
-020(30) = pad
+//Format: hex(size) = Name : BitSize
+000(1) = limitNum_byGroup
+001(1) = isLimitEachOwner : 1
+001(1) = pad2 : 8
+002(30) = pad

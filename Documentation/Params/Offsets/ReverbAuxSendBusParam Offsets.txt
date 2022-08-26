@@ -1,2 +1,2 @@
-//Format[hex]:Index(size) = Name : BitSize
-020(32) = ReverbAuxSendBusName
+//Format: hex(size) = Name : BitSize
+000(32) = ReverbAuxSendBusName

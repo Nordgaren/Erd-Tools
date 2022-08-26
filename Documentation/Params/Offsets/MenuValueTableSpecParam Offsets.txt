@@ -1,5 +1,5 @@
-//Format[hex]:Index(size) = Name : BitSize
-004(4) = value
-008(4) = textId
-009(1) = compareType
-00C(3) = padding
+//Format: hex(size) = Name : BitSize
+000(4) = value
+004(4) = textId
+008(1) = compareType
+009(3) = padding

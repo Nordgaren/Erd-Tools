@@ -1,6 +1,6 @@
-//Format[hex]:Index(size) = Name : BitSize
-001(1) = usageType
-002(1) = playlogCategory
-004(2) = padding1
-008(4) = flagNum
-020(24) = padding2
+//Format: hex(size) = Name : BitSize
+000(1) = usageType
+001(1) = playlogCategory
+002(2) = padding1
+004(4) = flagNum
+008(24) = padding2
