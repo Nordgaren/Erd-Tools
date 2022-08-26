@@ -52,6 +52,7 @@ namespace Erd_Tools
         public PHPointer MapItemMan { get; set; }
         public PHPointer EventFlagMan { get; set; }
         public PHPointer SetEventFlagFunction { get; set; }
+        public PHPointer IsEventFlagFunction { get; set; }
         public PHPointer WorldChrMan { get; set; }
         public PHPointer PlayerIns { get; set; }
         public PHPointer DisableOpenMap { get; set; }
@@ -60,6 +61,7 @@ namespace Erd_Tools
         public PHPointer CSFD4VirtualMemoryFlag { get; set; }
         public PHPointer CSLuaEventManager { get; set; }
         public PHPointer LuaWarp_01AoB { get; set; }
+        public PHPointer Crash { get; set; }
         public static bool Reading { get; set; }
         public string ID => Process?.Id.ToString() ?? "Not Hooked";
         public List<PHPointer>? ParamPointers { get; set; }
@@ -70,8 +72,8 @@ namespace Erd_Tools
         public bool Focused => Hooked && User32.GetForegroundProcessID() == Process.Id;
 
         public ErdHook(int refreshInterval, int minLifetime, Func<Process, bool> processSelector)
-            : base(refreshInterval, minLifetime, processSelector)
-        {
+            : base(refreshInterval, minLifetime, processSelector) {
+            Process p = new Process();
             OnHooked += ErdHook_OnHooked;
             OnUnhooked += ErdHook_OnUnhooked;
 
@@ -88,7 +90,8 @@ namespace Erd_Tools
             ItemGive = RegisterAbsoluteAOB(Offsets.ItemGiveAoB);
             MapItemMan = RegisterRelativeAOB(Offsets.MapItemManAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize);
             EventFlagMan = RegisterRelativeAOB(Offsets.EventFlagManAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
-            SetEventFlagFunction = RegisterAbsoluteAOB(Offsets.EventCallAoB);
+            SetEventFlagFunction = RegisterAbsoluteAOB(Offsets.SetEventCallAoB);
+            IsEventFlagFunction = RegisterAbsoluteAOB(Offsets.IsEventCallAoB);
 
             CapParamCall = RegisterAbsoluteAOB(Offsets.CapParamCallAoB);
 
@@ -102,7 +105,6 @@ namespace Erd_Tools
             CSFD4VirtualMemoryFlag = RegisterRelativeAOB(Offsets.CSFD4VirtualMemoryFlagAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
             CSLuaEventManager = RegisterRelativeAOB(Offsets.CSLuaEventManagerAoB, Offsets.RelativePtrAddressOffset, Offsets.LargeRelativePtrInstructionSize);
             LuaWarp_01AoB = RegisterAbsoluteAOB(Offsets.LuaWarp_01AoB);
-
 
             ItemEventDictionary = BuildItemEventDictionary();
             ItemCategory.GetItemCategories();
@@ -119,6 +121,7 @@ namespace Erd_Tools
 
         private void ErdHook_OnHooked(object? sender, PHEventArgs e)
         {
+#if DEBUG
             //LuaWarp_01 = CreateBasePointer(LuaWarp_01AoB.Resolve() + 2);
             IntPtr gameDataMan = GameDataMan.Resolve();
             IntPtr paramss = SoloParamRepository.Resolve();
@@ -129,12 +132,13 @@ namespace Erd_Tools
             IntPtr worldChrMan = WorldChrMan.Resolve();
             IntPtr playeIns = PlayerIns.Resolve();
             IntPtr warp = LuaWarp_01AoB.Resolve();
-            ulong paramOffset = (ulong) (paramss.ToInt64() - Process.MainModule.BaseAddress.ToInt64());
+            ulong paramOffset = (ulong)(paramss.ToInt64() - Process.MainModule.BaseAddress.ToInt64()); //Make sure Solo Param Repository is no being dereferenced.
 
             IntPtr disableOpenMap = DisableOpenMap.Resolve();
             IntPtr combatCloseMap = CombatCloseMap.Resolve();
+#endif
 
-            Task t = Task.Run(() => AsyncSetup());
+            Task t = Task.Run(AsyncSetup);
             t.GetAwaiter().GetResult();
             //GetInventoryList();
 
@@ -204,10 +208,33 @@ namespace Erd_Tools
 
         private async Task AsyncSetup()
         {
+            CheckParamsLoaded();
             Params = GetParams();
             await ReadParams();
             Setup = true;
             RaiseOnSetup();
+        }
+
+        public TimeSpan LoadTimeout = new(0, 1, 30);
+
+        private void CheckParamsLoaded()
+        {
+            DateTime start = DateTime.Now;
+            PHPointer pointer = GetParamPointer(0xAA8);
+            string paramTypeName = "ACTIONBUTTON_PARAM";
+
+            while (true)
+            {
+                int length = pointer.ReadInt32((int)Offsets.Param.NameOffset);
+                string paramType = pointer.ReadString(length, Encoding.UTF8, (uint)paramTypeName.Length);
+
+                if (paramType == paramTypeName)
+                    break;
+
+                if (DateTime.Now - start > LoadTimeout)
+                    throw new Exception("Timed out waiting for params to load.\n " +
+                                        "Either param pointer is broken or you need to add more time to the timeout in the settings tab after launching debug tool after the game has fully loaded.");
+            }
         }
 
         private void LogABunchOfStuff()
@@ -410,10 +437,26 @@ namespace Erd_Tools
             Kernel32.WriteInt32(Handle, idPointer, flag);
 
             string asmString = Util.GetEmbededResource("Assembly.SetEventFlag.asm");
-            var lol = SetEventFlagFunction.Resolve();
             string asm = string.Format(asmString, EventFlagMan.Resolve(), (state ? 1 : 0), idPointer.ToString("X2"), SetEventFlagFunction.Resolve());
             AsmExecute(asm);
             Free(idPointer);
+        }
+
+        public bool IsEventFlag(int flag)
+        {
+            IntPtr returnPtr = GetPrefferedIntPtr(sizeof(bool));
+            IntPtr idPointer = GetPrefferedIntPtr(sizeof(int));
+            Kernel32.WriteInt32(Handle, idPointer, flag);
+
+            string asmString = Util.GetEmbededResource("Assembly.IsEventFlag.asm");
+            string asm = string.Format(asmString, EventFlagMan.Resolve(), idPointer.ToString("X2"), IsEventFlagFunction.Resolve(), returnPtr.ToString("X2"));
+
+            AsmExecute(asm);
+            bool state = Kernel32.ReadBoolean(Handle, returnPtr);
+            Free(returnPtr);
+            Free(idPointer);
+
+            return state;
         }
 
         #region Inventory
@@ -568,7 +611,7 @@ namespace Erd_Tools
                     Array.Copy(bytes, 0x0, itemInfoBytes, (int)Offsets.ItemGiveStruct.Gem + position, bytes.Length);
 
                     if (item.EventID != -1)
-                            eventIDs.Add(item.EventID);
+                        eventIDs.Add(item.EventID);
 
                     position += (int)Offsets.ItemGiveStruct.ItemStructEntrySize;
                     count++;
@@ -620,7 +663,7 @@ namespace Erd_Tools
                 if (BitConverter.ToInt32(entry, (int)Offsets.InventoryEntry.ItemID) == -1)
                     continue;
 
-                inventory.Add(new(CreateBasePointer(PlayerInventory.Resolve() + i * Offsets.PlayInventoryEntrySize) ,entry, this));
+                inventory.Add(new(CreateBasePointer(PlayerInventory.Resolve() + i * Offsets.PlayInventoryEntrySize), entry, this));
             }
 
             return inventory;
@@ -636,7 +679,7 @@ namespace Erd_Tools
 
         public string Name
         {
-            get => ClassWhereTheNameIsStored.ReadString((int) Offsets.ClassWhereTheNameIsStored.Name, Encoding.Unicode,
+            get => ClassWhereTheNameIsStored.ReadString((int)Offsets.ClassWhereTheNameIsStored.Name, Encoding.Unicode,
                 32);
             set
             {

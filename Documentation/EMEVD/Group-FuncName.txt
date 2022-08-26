@@ -1,0 +1,368 @@
+Condition - System:0
+  IF Condition Group:0
+  IF Parameter Comparison:1
+  IF Unsigned Parameter Comparison:2
+Condition - Timer:1
+  IF Elapsed Seconds:0
+  IF Elapsed Frames:1
+  IF Random Elapsed Seconds:2
+  IF Random Elapsed Frames:3
+  IF Time of Day:4
+  IF Time Of Day In Range:5
+Condition - Event:3
+  IF Event Flag:0
+  IF Batch Event Flags:1
+  IF In/Outside Area:2
+  IF Entity In/Outside Radius Of Entity:3
+  IF Player Has/Doesn't Have Item:4
+  IF Multiplayer State:6
+  IF All Players In/Outside Area:7
+  IF Player In/Out Map:8
+  IF Multiplayer Event:9
+  IF Count Event Flags:10
+  IF Event Value:12
+  IF Dropped Items In Area:14
+  IF Dropped Item:15
+  IF Player Has/Doesn't Have Item Including BBox:16
+  IF Game Cycle:17
+  IF Compare Event Values:20
+  IF Online Mode:22
+  IF Damage Type:23
+  IF Action Button in Area:24
+  IF Player Is In World Type:26
+  IF Map Loaded:30
+  IF Weather Active:31
+  IF Map Has Permission To Update:32
+  IF Field Battle BGM Active:33
+  IF Player Has Armor Equipped:34
+  IF Ceremony Active:35
+  IF Weather Lot Active:37
+  IF Player Gender:38
+Condition - Character:4
+  IF Character Dead/Alive:0
+  IF Character HP Ratio:2
+  IF Character Type:3
+  IF Character Targeted By:4
+  IF Character Has SpEffect:5
+  IF NPC Part HP:6
+  IF Character Backread Status:7
+  IF Character Has Event Message:8
+  IF Character AI State:9
+  IF Player's Class:11
+  IF Player's Covenant:12
+  IF Player's Soul Level:13
+  IF Character HP Value:14
+  IF Character Ratio Dead/Alive:15
+  IF Character Ratio Has SpEffect:19
+  IF Player Targeted:28
+  IF NPC Part Attribute Damage:30
+  IF Character Invade Type:31
+  IF Character Riding Mount:32
+  IF Character Has State Info:34
+  IF Special Standby Ended Flag:35
+Condition - Asset:5
+  IF Asset Destroyed:0
+  IF Asset Hit By:1
+  IF ObjAct Event Flag:2
+  IF Asset HP:3
+  IF Asset Ratio Destroyed:6
+  IF Asset Burn State:9
+  IF Asset Backread:10
+  IF Asset Ratio Backread:11
+Condition - Hit:11
+  IF Player Moving On Hit:0
+  IF Player Attacking On Hit:1
+  IF Player Standing On Hit:2
+Condition - Map:12
+Condition - Advanced:13
+Control Flow - System:1000
+  WAIT For Condition Group State:0
+  SKIP IF Condition Group State (Uncompiled):1
+  END IF Condition Group State (Uncompiled):2
+  SKIP Unconditionally:3
+  END Unconditionally:4
+  SKIP IF Comparison:5
+  END IF Comparison:6
+  SKIP IF Condition Group State (Compiled):7
+  END IF Condition Group State (Compiled):8
+  SKIP IF Unsigned Comparison:10
+  END IF Unsigned Comparison:11
+  GOTO IF Condition Group State (Uncompiled):101
+  GOTO Unconditionally:103
+  GOTO IF Comparison:105
+  GOTO IF Condition Group State (Compiled):107
+  GOTO IF Unsigned Comparison:108
+Control Flow - Timer:1001
+  WAIT Fixed Time (Seconds):0
+  WAIT Fixed Time (Frames):1
+  WAIT Random Time (Seconds):2
+  WAIT Random Time (Frames):3
+  WAIT Until Random Time Of Day:5
+  WAIT Fixed Time (Real Frames):6
+Control Flow - Event:1003
+  WAIT For Event Flag:0
+  SKIP IF Event Flag:1
+  END IF Event Flag:2
+  SKIP IF Batch Event Flags:3
+  END IF Batch Event Flags:4
+  SKIP IF Multiplayer State:5
+  END IF Multiplayer State:6
+  SKIP IF Player In/Out Map:7
+  END IF Player In/Out Map:8
+  SKIP IF Number of Co-op Clients:9
+  END IF Number of Co-op Clients:10
+  SKIP IF Player Is In World Type:12
+  GOTO IF Player Is In World Type:13
+  END IF Player Is In World Type:14
+  GOTO IF Event Flag:101
+  GOTO IF Batch Event Flags:103
+  GOTO IF Multiplayer State:105
+  GOTO IF Player In/Out Map:107
+  GOTO IF Number of Co-op Clients:109
+  GOTO IF In/Outside Area:200
+  END IF In/Outside Area:201
+  SKIP IF In/Outside Area:202
+  SKIP IF Map Has Permission To Update:203
+  GOTO IF Map Has Permission To Update:204
+  END IF Map Has Permission To Update:205
+  SKIP IF Ceremony Active:206
+  GOTO IF Ceremony Active:207
+  END IF Ceremony Active:208
+Control Flow - Character:1004
+  SKIP IF Character Has SpEffect:0
+  GOTO IF Character Has SpEffect:1
+  END IF Character Has SpEffect:2
+  SKIP IF Special Standby Ended Flag:3
+  GOTO IF Special Standby Ended Flag:4
+  END IF Special Standby Ended Flag:5
+Control Flow - Asset:1005
+  WAIT For Asset Destroyed:0
+  SKIP IF Asset Destroyed:1
+  END IF Asset Destroyed:2
+  GOTO IF Asset Destroyed:101
+Control Flow - Label:1014
+  Label 0:0
+  Label 1:1
+  Label 2:2
+  Label 3:3
+  Label 4:4
+  Label 5:5
+  Label 6:6
+  label 7:7
+  Label 8:8
+  Label 9:9
+  Label 10:10
+  Label 11:11
+  Label 12:12
+  Label 13:13
+  Label 14:14
+  Label 15:15
+  Label 16:16
+  Label 17:17
+  Label 18:18
+  Label 19:19
+  Label 20:20
+System:2000
+  Initialize Event:0
+  Set Network Sync State:2
+  Clear Compiled Condition Group State:3
+  Save Request:5
+  Initialize Common Event:6
+  Start PS5 Activity:7
+  End PS5 Activity:8
+Timer:2001
+  Set Current Time:4
+  Freeze Time:5
+Cutscene:2002
+  Play Cutscene To All:1
+  Play Cutscene to Player:3
+  Play Cutscene to Player + UNKNOWN 2002[04]:4
+  Play Cutscene to Player + UNKNOWN 2002[09]:9
+  Play Cutscene to Player with Weather and Time:10
+  Play Cutscene to Player and Warp:11
+  Play Cutscene to Player and Warp with Weather and Time:12
+  Play Cutscene to Player and Warp with Stable Position Update:13
+Event:2003
+  Set Generator State:3
+  Award Item Lot:4
+  Shoot Bullet:5
+  Change Map Hit Enable State:6
+  Set Map Visibility:7
+  Set Event State:8
+  Invert Event Flag:9
+  Display Boss Health Bar:11
+  Handle Boss Defeat and Display Banner:12
+  Modify Navimesh Connection Bitflag:13
+  Warp Player:14
+  Handle Miniboss Defeat:15
+  Trigger Multiplayer Event:16
+  Randomly Set Event Flag In Range:17
+  Force Animation Playback:18
+  Increment Game Cycle:21
+  Batch Set Event Flags:22
+  Set Player Respawn Point:23
+  Remove Item From Player:24
+  Place NPC Summon Sign:25
+  Set Visibility of Message:26
+  Award Achievement:28
+  Increment Event Value:31
+  Clear Event Value:32
+  Set Snuggly Next Trade:33
+  Spawn Snuggly Item:34
+  Move Bloodstain and Dropped Items:35
+  Award Items (Including Clients):36
+  Event Value Operation:41
+  Store Item Amount Held in Event Value:42
+  Directly Give Player Item:43
+  Toggle Direction Display:44
+  Trigger AISound:52
+  Invoke Enemy Generator:54
+  Batch Set Network-Connected Event Flags:63
+  Set Omission Mode Counts:64
+  Reset Omission Mode Counts to Default:65
+  Set Event Flag:66
+  Change Weather:68
+  Set Network-Connected Event Flag:69
+  Trigger Area Reload:70
+  Award Gesture:71
+  Reduce Bloodstain Souls:72
+  Increase Enemy Soul Drop Amount:73
+  Issue End of Pseudo Multiplayer Notification:74
+  Use Far-view Camera:75
+  Set Player Position Display:76
+  Set Psuedo Multiplayer Return Position:77
+  Open World Map Point:78
+  Send NPC Summon Home:79
+  Show Text on Loading Screen:80
+  Remove Gesture:81
+  Delete NPC Summon Sign:82
+Character:2004
+  Set Character AI State:1
+  Set Character Team Type:2
+  Force Character Death:4
+  Change Character Enable State:5
+  EzState Instruction Request:6
+  Create Bullet Owner:7
+  Set SpEffect:8
+  Set Character Gravity:10
+  Set Character Event Target:11
+  Set Character Immortality:12
+  Set Character Home:13
+  Rotate Character:14
+  Set Character Invincibility:15
+  Clear Character's AI Target:16
+  Request Character AI Command:17
+  Set Event Point:18
+  Set Character AI ID:19
+  Request Character AI Re-plan:20
+  Clear SpEffect:21
+  Create NPC Part:22
+  Set NPC Part HP:23
+  Set NPC Part SE and SFX:24
+  Set NPC Part Bullet Damage Multiplier:25
+  Change Character DispMask:26
+  Change Character Hitmask:27
+  Set Network Update Authority:28
+  Set Character Backread State:29
+  Set Character HP Bar Display:30
+  Set Character MapHit:31
+  Create Referred Damage Pair:33
+  Set Network Update Rate:34
+  Set Character Default Backread State:35
+  Force Character Treasure:37
+  Betray Character's Current Covenant:38
+  Change Character Collision State:39
+  Warp Character and Set Floor:40
+  Issue Short Warp Request:41
+  Warp Character and Copy Floor:42
+  Request Character Animation Reset:43
+  Bonfire-like Recovery:47
+  Change Character's Cloth:48
+  Change Character Patrol Behavior:49
+  Set Lock On Point:50
+  Change Character:52
+  Set Character Talk Range:55
+  Connect Character To Caravan:60
+  UNKNOWN 2004[61]:61
+  Set Character Enable Distance:63
+  Copy Player Character Data:67
+  Attach Asset to Character:68
+  Set Character Disable on Hit Unload:69
+  Set Distance-based Network Update Authority:70
+  UNKNOWN 2004[71]:71
+  Set Character Fade On Enable:73
+  Warp Character and Copy Floor with Fade-Out:74
+  Set Character Face Param Override:75
+  UNKNOWN 2004[76]:76
+  Fade to Black:77
+  Copy Character Data From Online Players:78
+  Request Character Data From Online Players:79
+  Send Character Data To Online Players:80
+  Reset Character Position:81
+  Set Special Standby Ended Flag:83
+  Set Character Enable Distance and Unknown 2004[84]:84
+Asset:2005
+  Request Asset Destruction:1
+  Request Asset Restoration:2
+  Change Asset Enable State:3
+  Set Asset Treasure State:4
+  Initialize ObjAct:5
+  Set ObjAct State:6
+  Reproduce Asset Animation:7
+  Reproduce Asset Destruction:8
+  Create Damaging Asset:9
+  Warp Asset To Character:11
+  Delete Asset Event:12
+  Set Asset Invulnerability:13
+  Set ObjAct State (Assign IDx):14
+  Reroll Asset Treasure:15
+  Attach Caravan To Controller:17
+  Attach Asset to Asset:18
+  Create Big Damaging Asset:20
+SFX:2006
+  Delete Map SFX:1
+  Spawn Map SFX:2
+  Spawn Oneshot SFX:3
+  Create Asset-following SFX:4
+  Delete Asset-following SFX:5
+  Set Wind SFX:6
+Message:2007
+  Display Generic Dialog:1
+  Display Banner:2
+  Display Status Message:3
+  Display Blinking Message:4
+  Display Full Screen Message:9
+  Display Generic Dialog and Set Event Flags:10
+  Display Blinking Message with Priority:12
+  Display Subarea Welcome Message:13
+  Display Area Welcome Message:14
+  Show Tutorial Popup:15
+  Display Network Message:16
+Camera:2008
+  Change Camera:1
+  Set Camera Vibration:2
+  Set LockCam Slot Number:3
+  Set Camera Angle:4
+Script:2009
+  Register Ladder:0
+  Register Bonfire:3
+  Activate Multiplayer-dependant Buffs:4
+  Issue Boss Room Entry Notification:6
+  Send Invading Phantoms Home:8
+  Send All Phantoms Home:11
+Sound:2010
+  Play SE:2
+  Suppress SE:7
+  UNKNOWN 2010[08]:8
+  Set Boss BGM:10
+  Suppress Sound for Fog Gate:11
+  Set Field Battle BGM Heat Up:12
+Hit:2011
+  Activate Hit:1
+  Activate Hit Backread Mask:2
+  Activate HitRes:3
+Map:2012
+  Activate Map Part:1
+  Set Area Welcome Message State:8
+  Activate Gparam Override:11
+  Deactivate Gparam Override:12

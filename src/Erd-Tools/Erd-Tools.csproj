@@ -17,6 +17,7 @@
     <Optimize>True</Optimize>
   </PropertyGroup>
 	  <ItemGroup>
+	    <None Remove="Assembly\IsEventFlag.asm" />
 	    <None Remove="Assembly\Warp.asm" />
 	  </ItemGroup>
 
@@ -1826,6 +1827,7 @@
     <EmbeddedResource Include="Assembly\DisableMapClose.asm" />
     <EmbeddedResource Include="Assembly\ItemGib.asm" />
     <EmbeddedResource Include="Assembly\SaveParams.asm" />
+    <EmbeddedResource Include="Assembly\IsEventFlag.asm" />
     <EmbeddedResource Include="Assembly\SetEventFlag.asm" />
     <EmbeddedResource Include="Assembly\Warp.asm" />
   </ItemGroup>
