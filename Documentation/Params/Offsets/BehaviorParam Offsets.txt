@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(4) = variationId
 004(4) = behaviorJudgeId
 008(1) = ezStateBehaviorType_old

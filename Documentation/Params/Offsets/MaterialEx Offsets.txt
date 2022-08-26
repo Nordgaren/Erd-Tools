@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(64) = paramName
 040(4) = materialId
 044(4) = materialParamValue0

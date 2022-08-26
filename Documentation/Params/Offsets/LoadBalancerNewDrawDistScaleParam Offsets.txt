@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(1) = DrawDist_LvBegin
 001(1) = DrawDist_LvEnd
 002(2) = reserve0

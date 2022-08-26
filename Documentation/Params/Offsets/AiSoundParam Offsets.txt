@@ -1,12 +1,12 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(4) = radius
 004(4) = lifeFrame
 008(1) = bSpEffectEnable
 009(1) = type
-00A(1) = opposeTarget : 1
-00A(1) = friendlyTarget : 2
-00A(1) = selfTarget : 3
-00A(1) = disableOnTargetPCompany : 4
+00A(1) = opposeTarget : 0(1)
+00A(1) = friendlyTarget : 1(1)
+00A(1) = selfTarget : 2(1)
+00A(1) = disableOnTargetPCompany : 3(1)
 00B(1) = rank
 00C(4) = forgetTime
 010(4) = priority

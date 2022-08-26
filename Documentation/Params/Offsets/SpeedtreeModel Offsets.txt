@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(4) = MinFadeLeaf
 004(4) = MinFadeFrond
 008(4) = MinFadeBranch

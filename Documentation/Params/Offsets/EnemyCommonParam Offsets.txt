@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(8) = reserved0
 008(4) = soundTargetTryApproachTime
 00C(4) = searchTargetTryApproachTime

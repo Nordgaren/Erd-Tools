@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(4) = AtkChrId
 004(4) = DefChrId
 008(4) = Dist
@@ -21,13 +21,13 @@
 038(1) = throwType
 039(1) = selfEscCycleCnt
 03A(1) = dmyHasChrDirType
-03B(1) = isTurnAtker : 1
-03B(1) = isSkipWepCate : 2
-03B(1) = isSkipSphereCast : 3
-03B(1) = isEnableCorrectPos_forThrowAdjust : 4
-03B(1) = isEnableThrowFollowingFallAssist : 5
-03B(1) = isEnableThrowFollowingFeedback : 6
-03B(1) = pad0 : 8
+03B(1) = isTurnAtker : 0(1)
+03B(1) = isSkipWepCate : 1(1)
+03B(1) = isSkipSphereCast : 2(1)
+03B(1) = isEnableCorrectPos_forThrowAdjust : 3(1)
+03B(1) = isEnableThrowFollowingFallAssist : 4(1)
+03B(1) = isEnableThrowFollowingFeedback : 5(1)
+03B(1) = pad0 : 6(2)
 03C(2) = atkSorbDmyId
 03E(2) = defSorbDmyId
 040(4) = Dist_start

@@ -1,6 +1,6 @@
-//Format: hex(size) = Name : BitSize
-000(1) = disableParam_NT : 1
-000(1) = disableParamReserve1 : 8
+//Format: hex(size) = Name : BitPosition(bitsize)
+000(1) = disableParam_NT : 0(1)
+000(1) = disableParamReserve1 : 1(7)
 001(3) = disableParamReserve2
 004(1) = srcAreaNo
 005(1) = srcGridXNo
@@ -16,6 +16,6 @@
 018(4) = dstPosX
 01C(4) = dstPosY
 020(4) = dstPosZ
-024(1) = isBasePoint : 1
-024(1) = pad3 : 8
+024(1) = isBasePoint : 0(1)
+024(1) = pad3 : 1(7)
 025(11) = pad4

@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
-000(1) = isUseOption : 1
-000(1) = pad2 : 4
+//Format: hex(size) = Name : BitPosition(bitsize)
+000(1) = isUseOption : 0(1)
+000(1) = pad2 : 1(3)
 001(15) = pad1

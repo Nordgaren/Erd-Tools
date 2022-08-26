@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(2) = RadarRange
 002(1) = RadarAngleX
 003(1) = RadarAngleY

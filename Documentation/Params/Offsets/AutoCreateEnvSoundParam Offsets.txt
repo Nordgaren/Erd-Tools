@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(4) = RangeMin
 004(4) = RangeMax
 008(4) = LifeTimeMin

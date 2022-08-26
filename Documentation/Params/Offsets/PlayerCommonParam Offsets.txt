@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(4) = playerFootEffect_bySFX
 004(4) = snipeModeDrawAlpha_FadeTime
 008(4) = toughnessRecoverCorrection

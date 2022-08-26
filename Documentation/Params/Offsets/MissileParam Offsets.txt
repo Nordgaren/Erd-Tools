@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(4) = FFXID
 004(2) = LifeTime
 006(2) = HitSphereRadius

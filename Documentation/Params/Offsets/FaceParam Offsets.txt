@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(1) = face_partsId
 001(1) = skin_color_R
 002(1) = skin_color_G
@@ -106,13 +106,13 @@
 068(1) = chrBodyScaleLArm
 069(1) = chrBodyScaleLLeg
 06A(1) = burn_scar
-06B(1) = override_eye_partsId : 1
-06B(1) = override_eye_irisColor : 2
-06B(1) = override_eye_cataract : 3
-06B(1) = override_eye_cataractColor : 4
-06B(1) = override_eye_scleraColor : 5
-06B(1) = override_burn_scar : 6
-06B(1) = pad2 : 8
+06B(1) = override_eye_partsId : 0(1)
+06B(1) = override_eye_irisColor : 1(1)
+06B(1) = override_eye_cataract : 2(1)
+06B(1) = override_eye_cataractColor : 3(1)
+06B(1) = override_eye_scleraColor : 4(1)
+06B(1) = override_burn_scar : 5(1)
+06B(1) = pad2 : 6(2)
 06C(5) = pad
 071(1) = age
 072(1) = gender

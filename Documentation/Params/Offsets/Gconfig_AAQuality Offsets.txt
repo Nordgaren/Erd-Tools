@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(1) = enabled
 001(1) = forceFXAA2
 002(2) = dmy

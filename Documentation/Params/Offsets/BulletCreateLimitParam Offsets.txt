@@ -1,5 +1,5 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(1) = limitNum_byGroup
-001(1) = isLimitEachOwner : 1
-001(1) = pad2 : 8
+001(1) = isLimitEachOwner : 0(1)
+001(1) = pad2 : 1(7)
 002(30) = pad

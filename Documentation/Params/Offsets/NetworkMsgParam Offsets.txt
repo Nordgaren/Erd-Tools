@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(2) = priority
 002(1) = forcePlay
 003(1) = pad1

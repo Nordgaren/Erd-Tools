@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(4) = SoundNo
 004(4) = ExpandRange
 008(4) = FollowSpeed

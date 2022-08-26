@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(4) = baseToughnessRecoverTime
 004(4) = chrEventTrun_byLeft90
 008(4) = chrEventTrun_byRight90

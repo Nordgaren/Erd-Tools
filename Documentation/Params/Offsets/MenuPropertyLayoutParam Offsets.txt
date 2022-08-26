@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(16) = LayoutPath
 010(4) = PropertyID
 014(4) = CaptionTextID

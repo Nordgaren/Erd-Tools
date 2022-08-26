@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(4) = SfxId
 004(4) = WindSfxId
 008(4) = GroundHitSfxId

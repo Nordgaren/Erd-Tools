@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(4) = face_partsId
 004(4) = skin_color_R
 008(4) = skin_color_G

@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(4) = TargetMapId
 004(4) = TargetEventId
 008(4) = SrcAssetId

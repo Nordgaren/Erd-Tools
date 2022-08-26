@@ -1,6 +1,6 @@
-//Format: hex(size) = Name : BitSize
-000(1) = disableParam_NT : 1
-000(1) = disableParamReserve1 : 8
+//Format: hex(size) = Name : BitPosition(bitsize)
+000(1) = disableParam_NT : 0(1)
+000(1) = disableParamReserve1 : 1(7)
 001(3) = disableParamReserve2
 004(4) = eventflagId
 008(4) = bonfireEntityId
@@ -12,9 +12,9 @@
 014(4) = bonfireSubCategoryId
 018(4) = clearedEventFlagId
 01C(2) = iconId
-01E(1) = dispMask00 : 1
-01E(1) = dispMask01 : 2
-01E(1) = pad1 : 8
+01E(1) = dispMask00 : 0(1)
+01E(1) = dispMask01 : 1(1)
+01E(1) = pad1 : 2(6)
 01F(1) = pad2
 020(1) = areaNo
 021(1) = gridXNo

@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(4) = baseRec_mp
 004(4) = baseRec_sp
 008(4) = red_Falldam
@@ -82,9 +82,9 @@
 0E2(1) = npcPlayerType
 0E3(1) = npcPlayerDrawType
 0E4(1) = npcPlayerSex
-0E5(1) = vowType : 4
-0E5(1) = isSyncTarget : 5
-0E5(1) = pad : 8
+0E5(1) = vowType : 0(4)
+0E5(1) = isSyncTarget : 4(1)
+0E5(1) = pad : 5(3)
 0E6(2) = pad6
 0E8(1) = wepParamType_Right1
 0E9(1) = wepParamType_Right2

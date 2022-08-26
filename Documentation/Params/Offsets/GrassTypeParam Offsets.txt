@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(2) = lodRange
 002(1) = lod0ClusterType
 003(1) = lod1ClusterType

@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(4) = localLightDistFactor
 004(1) = localLightShadowEnabled
 005(1) = forwardPassLightingEnabled

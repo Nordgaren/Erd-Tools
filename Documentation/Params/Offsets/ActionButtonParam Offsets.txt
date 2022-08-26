@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(1) = regionType
 001(1) = category
 002(2) = padding1
@@ -16,12 +16,12 @@
 02C(4) = spotDummyPoly
 030(1) = textBoxType
 031(2) = padding3
-033(1) = padding5 : 1
-033(1) = isInvalidForRide : 2
-033(1) = isGrayoutForRide : 3
-033(1) = isInvalidForCrouching : 4
-033(1) = isGrayoutForCrouching : 5
-033(1) = padding4 : 8
+033(1) = padding5 : 0(1)
+033(1) = isInvalidForRide : 1(1)
+033(1) = isGrayoutForRide : 2(1)
+033(1) = isInvalidForCrouching : 3(1)
+033(1) = isGrayoutForCrouching : 4(1)
+033(1) = padding4 : 5(3)
 034(4) = textId
 038(4) = invalidFlag
 03C(4) = grayoutFlag

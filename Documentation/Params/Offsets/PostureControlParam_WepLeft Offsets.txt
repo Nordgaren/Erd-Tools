@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(2) = a000_leftArmFB
 002(2) = a000_leftWristFB
 004(2) = a000_leftWristIO

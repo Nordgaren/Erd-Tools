@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(4) = reverbType
 004(4) = AreaNo
 008(1) = IndoorOutdoor

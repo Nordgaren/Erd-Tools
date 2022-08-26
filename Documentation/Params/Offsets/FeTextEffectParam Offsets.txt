@@ -1,8 +1,8 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(2) = resId
 002(2) = pad1
 004(4) = textId
 008(4) = seId
-00C(1) = canMixMapName : 1
-00C(1) = pad3 : 8
+00C(1) = canMixMapName : 0(1)
+00C(1) = pad3 : 1(7)
 00D(19) = pad2

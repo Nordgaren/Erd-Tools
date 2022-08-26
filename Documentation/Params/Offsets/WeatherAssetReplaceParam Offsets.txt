@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(4) = mapId
 004(2) = TransitionSrcWeather
 006(2) = padding0

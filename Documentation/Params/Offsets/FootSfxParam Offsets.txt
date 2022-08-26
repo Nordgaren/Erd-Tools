@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(4) = sfxId_00
 004(4) = sfxId_01
 008(4) = sfxId_02

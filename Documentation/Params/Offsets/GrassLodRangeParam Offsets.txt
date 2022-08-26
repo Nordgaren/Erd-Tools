@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(4) = LOD0_range
 004(4) = LOD0_play
 008(4) = LOD1_range

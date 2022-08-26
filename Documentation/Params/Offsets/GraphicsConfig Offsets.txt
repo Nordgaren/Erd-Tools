@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(1) = m_textureFilterQuality
 001(1) = m_aaQuality
 002(1) = m_ssaoQuality

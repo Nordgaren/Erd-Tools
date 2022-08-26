@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(1) = baseColorR
 001(1) = baseColorG
 002(1) = baseColorB

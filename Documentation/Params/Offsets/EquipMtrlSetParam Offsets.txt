@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(4) = materialId01
 004(4) = materialId02
 008(4) = materialId03
@@ -20,10 +20,10 @@
 02C(1) = materialCate05
 02D(1) = materialCate06
 02E(2) = pad_cate
-030(1) = isDisableDispNum01 : 1
-030(1) = isDisableDispNum02 : 2
-030(1) = isDisableDispNum03 : 3
-030(1) = isDisableDispNum04 : 4
-030(1) = isDisableDispNum05 : 5
-030(1) = isDisableDispNum06 : 6
+030(1) = isDisableDispNum01 : 0(1)
+030(1) = isDisableDispNum02 : 1(1)
+030(1) = isDisableDispNum03 : 2(1)
+030(1) = isDisableDispNum04 : 3(1)
+030(1) = isDisableDispNum05 : 4(1)
+030(1) = isDisableDispNum06 : 5(1)
 031(3) = pad

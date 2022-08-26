@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(4) = damage_Min_ContTime
 004(4) = damage_S_ContTime
 008(4) = damage_M_ContTime

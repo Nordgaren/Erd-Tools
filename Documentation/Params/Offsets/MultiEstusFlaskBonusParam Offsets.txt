@@ -1,4 +1,4 @@
-//Format: hex(size) = Name : BitSize
+//Format: hex(size) = Name : BitPosition(bitsize)
 000(1) = host
 001(1) = WhiteGhost_None
 002(1) = WhiteGhost_Umbasa

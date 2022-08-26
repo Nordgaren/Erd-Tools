@@ -1,6 +1,6 @@
-//Format: hex(size) = Name : BitSize
-000(1) = disableParam_NT : 1
-000(1) = disableParamReserve1 : 8
+//Format: hex(size) = Name : BitPosition(bitsize)
+000(1) = disableParam_NT : 0(1)
+000(1) = disableParamReserve1 : 1(7)
 001(3) = disableParamReserve2
 004(4) = mapRegionId
 008(24) = Reserve
