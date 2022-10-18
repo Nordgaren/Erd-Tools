@@ -1,0 +1,17 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,1221,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,1222,dummy8,,%d,dummy8,None
+Open event flag ID,Event flag ID of open condition,0,-294967297,100,u32,1,%u,u32,Wrap
+Opened traversal area: Xmin,Coordinates of the traversal area that expands when opened (Xmin),0,20000,200,f32,1,%.1f,f32,Wrap
+Opened traversal area: Xmax,Coordinates of the traversal area that expands when opened (Xmax),0,20000,210,f32,1,%.1f,f32,Wrap
+Opened traversal area: Ymin,Coordinates of the traversal area that expands when opened (Ymin),0,20000,220,f32,1,%.1f,f32,Wrap
+Opened traversal area: Ymax,Coordinates of the traversal area that expands when opened (Ymax),0,20000,230,f32,1,%.1f,f32,Wrap
+Acquisition production event flag ID,Event flag ID of the acquisition production start condition. Assuming that only one of the map fragments is On,0,-294967297,1000,u32,1,%u,u32,Wrap
+Acquisition effect: Display magnification,Display magnification at the time of acquisition production,0.0001,2,1100,f32,0.0001,%.4f,f32,Wrap
+Obtained production: Center coordinates X,Center coordinates (X) at the time of acquisition production,0,20000,1110,f32,1,%.1f,f32,Wrap
+Obtained production: Center coordinates Y,For the central seat at the time of acquisition production (Y),0,20000,1120,f32,1,%.1f,f32,Wrap
+Acquisition effect: Resource multiplier,Display magnification of blindfold resources for acquisition production,0.0001,2,1200,f32,0.0001,%.4f,f32,Wrap
+Acquisition effect: Resource offset X,Display position offset (X) of blindfold resource for acquisition production,0,20000,1210,f32,1,%.1f,f32,Wrap
+Acquisition effect: Resource offset Y,Offset of display position of blindfold resource for acquisition production (Y),0,20000,1220,f32,1,%.1f,f32,Wrap
+pad,,,,1223,dummy8,,,dummy8,None

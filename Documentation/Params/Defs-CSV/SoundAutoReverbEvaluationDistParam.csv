@@ -1,0 +1,9 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Distance to No Hit [m],Collision points above this distance [m] are judged as No Hit (less than 0: invalid),-1,1024,0,f32,0.1,%f,f32,None
+Do you include NoHit collision points?,Do you include NoHit collision points?,0,1,1,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Do you include outdoor collision points?,Do you include outdoor collision points?,0,1,2,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Do you include floor collision points?,Do you include floor collision points?,0,1,3,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Evaluation distance calculation type,Evaluation distance calculation type (0: normal, average from 1: Max),0,1,100,u8,1,%d,u8,None
+Effective collision point life [seconds],Collision points longer than this life [second] are treated as invalid. Set to be less than or equal to the life of the common setting,-1,128,4,f32,0.1,%f,f32,None
+Max Number of collision point records,Max Number of collision point records,10,50,101,u32,1,%d,u32,None
+Max distance decimation,Max distance decimation number (0: not decimation) (must be set to the value of "Max collision point record number-1". Incorrect value will be corrected),0,50,102,u32,1,%d,u32,None

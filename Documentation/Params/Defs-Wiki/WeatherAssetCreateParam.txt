@@ -1,0 +1,25 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| AssetId || Asset Id || Specify the asset ID to generate. AEG999_999-> 999999 || - ||
+|| SlotNo || Slot number || This is the number for generation control. Only one asset can be generated in the same slot. You can control whether you want to generate duplicates or not. || - ||
+|| CreateConditionType || Occurrence condition || The type of condition of occurrence || WEATHER_ASSET_CREATE_CONDITION_TYPE ||
+|| padding0 || padding0 ||  || - ||
+|| TransitionSrcWeather || Transition source weather || Specify the transition source weather. It is referenced only when the occurrence condition is "transition". || WEATHER_TYPE ||
+|| TransitionDstWeather || Transition destination weather || Specify the transition destination weather. It is referenced only when the occurrence condition is "transition". || WEATHER_TYPE ||
+|| ElapsedTimeCheckweather || Elapsed time check weather || Specify the weather to check the elapsed time. || WEATHER_TYPE ||
+|| padding1 || padding1 ||  || - ||
+|| ElapsedTime || Elapsed time [Second] || Specify the elapsed time. It is referenced only when the occurrence condition is "time elapsed". Real time Specify in seconds. || - ||
+|| CreateDelayTime || Generation delay time [Second] || Specifies the time to delay after the generation is determined. The created slot will be in use while it is delayed. Created immediately with 0 or less. || - ||
+|| CreateProbability || Probability of occurrence [%] || Specifies the probability of occurrence when conditions for weather transitions or elapsed time are met. || - ||
+|| LifeTime || Lifespan [Second] || Specifies the life of the generated asset. Real time Specify in seconds. || - ||
+|| FadeTime || Fade time [Second] || Time [seconds] used for fade-in and fade-out. No fade below 0. || - ||
+|| EnableCreateTimeMin || Generateable start time [Hour] || Specifies a start time that can be generated [0.0 --24.0]. If you put -1 in either the start or the end, it will be treated as unlimited (can be generated in all time). || - ||
+|| EnableCreateTimeMax || Generateable end time [Hour] || Specifies the end time that can be generated [0.0 --24.0]. If you put -1 in either the start or the end, it will be treated as unlimited (can be generated in all time). || - ||
+|| CreatePoint0 || Generation point 0 || Specify the generation point number. Specify the last 3 digits of the "Weather Asset Generation Point" in MapStudio. -1 will be invalid || - ||
+|| CreatePoint1 || Generation point 1 || Specify the generation point number. Specify the last 3 digits of the "Weather Asset Generation Point" in MapStudio. -1 will be invalid || - ||
+|| CreatePoint2 || Generation point 2 || Specify the generation point number. Specify the last 3 digits of the "Weather Asset Generation Point" in MapStudio. -1 will be invalid || - ||
+|| CreatePoint3 || Generation point 3 || Specify the generation point number. Specify the last 3 digits of the "Weather Asset Generation Point" in MapStudio. -1 will be invalid || - ||
+|| CreateAssetLimitId0 || Generation limit ID 0 || ID for production restriction. -1: Unlimited. Generation is allowed only if it matches the generation limit ID in "Map default parameter .xlsm" (SEQ08921). || - ||
+|| CreateAssetLimitId1 || Generation limit ID1 || ID for production restriction. -1: Unlimited. Generation is allowed only if it matches the generation limit ID in "Map default parameter .xlsm" (SEQ08921). || - ||
+|| CreateAssetLimitId2 || Generation limit ID2 || ID for production restriction. -1: Unlimited. Generation is allowed only if it matches the generation limit ID in "Map default parameter .xlsm" (SEQ08921). || - ||
+|| CreateAssetLimitId3 || Generation limit ID3 || ID for production restriction. -1: Unlimited. Generation is allowed only if it matches the generation limit ID in "Map default parameter .xlsm" (SEQ08921). || - ||
+|| Reserved2 || Reserved2 ||  || - ||

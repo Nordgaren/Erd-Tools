@@ -1,0 +1,122 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Pad 0,Lower suppression pad 0,0,1,0,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+For GUI framework,Pad for lower suppression GUI framework,0,1,1,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 2,Lower suppression pad 2,0,1,2,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Debug menu mode switching,Lower suppression debug menu mode switching pad,0,1,3,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 4,Lower suppression pad 4,0,1,4,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad debug menu,Lower suppression pad Debug menu pad,0,1,5,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 6,Lower suppression pad 6,0,1,6,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 7,Lower suppression pad 7,0,1,7,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 8,Lower suppression pad 8,0,1,8,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 9,Lower suppression pad 9,0,1,9,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 10,Lower suppression pad 10,0,1,10,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 11,Lower suppression pad 11,0,1,11,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 12,Lower suppression pad 12,0,1,12,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 13,Lower suppression pad 13,0,1,13,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 14,Lower suppression pad 14,0,1,14,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 15,Lower suppression pad 15,0,1,15,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 16,Lower suppression pad 16,0,1,16,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 17,Lower suppression pad 17,0,1,17,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 18,Lower suppression pad 18,0,1,18,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 19,Lower suppression pad 19,0,1,19,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 20,Lower suppression pad 20,0,1,20,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 21,Lower suppression pad 21,0,1,21,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 22,Lower suppression pad 22,0,1,22,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 23,Lower suppression pad 23,0,1,23,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 24,Lower suppression pad 24,0,1,24,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 25,Lower suppression pad 25,0,1,25,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 26,Lower suppression pad 26,0,1,26,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 27,Lower suppression pad 27,0,1,27,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 28,Lower suppression pad 28,0,1,28,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 29,Lower suppression pad 29,0,1,29,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 30,Lower suppression pad 30,0,1,30,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+Pad 31,Lower suppression pad 31,0,1,31,u8,1,%d,DefaultKeyAssignPrioritySuppression,Wrap
+dummy,,0,0,1000,dummy8,0,,dummy8,None
+Pad physical key,Pad physical key,-1,1E+08,100,s32,1,%d,DefaultKeyAssignPadKey,Wrap
+How to be pushed,How to be pushed,0,255,110,u8,1,%d,DefaultKeyAssignTraits,Wrap
+Analog-to-digital conversion method,Analog-to-digital conversion method,0,255,155,u8,1,%d,DefaultKeyAssignA2DOperator,Wrap
+Applicable target,Reflection target,0,255,170,u8,1,%d,DefaultKeyAssignApplyTarget,Wrap
+Digital / analog,Digital or analog,0,1,105,u8,1,%d,DefaultKeyAssignDigitalAnalog,Wrap
+Win64,Will it be used in Win64?,0,1,106,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+PS4,Will it be used on PS4,0,1,107,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Xbox One,Will it be used on Xbox One,0,1,108,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+time,time,0,10,140,f32,0.01,%f,f32,Wrap
+Interval time for repeat,Interval time for repeat,0,10,150,f32,0.01,%f,f32,Wrap
+Analog-to-digital conversion threshold,Analog-to-digital conversion threshold,0,1000,160,f32,0.01,%f,f32,Wrap
+Pad physical key,Pad physical key,-1,1E+08,200,s32,1,%d,DefaultKeyAssignPadKey,Wrap
+How to be pushed,How to be pushed,0,255,210,u8,1,%d,DefaultKeyAssignTraits,Wrap
+Analog-to-digital conversion method,Analog-to-digital conversion method,0,255,255,u8,1,%d,DefaultKeyAssignA2DOperator,Wrap
+Applicable target,Reflection target,0,255,270,u8,1,%d,DefaultKeyAssignApplyTarget,Wrap
+Digital / analog,Digital or analog,0,1,205,u8,1,%d,DefaultKeyAssignDigitalAnalog,Wrap
+Win64,Will it be used in Win64?,0,1,206,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+PS4,Will it be used on PS4,0,1,207,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Xbox One,Will it be used on Xbox One,0,1,208,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+time,time,0,10,240,f32,0.01,%f,f32,Wrap
+Interval time for repeat,Interval time for repeat,0,10,250,f32,0.01,%f,f32,Wrap
+Analog-to-digital conversion threshold,Analog-to-digital conversion threshold,0,1000,260,f32,0.01,%f,f32,Wrap
+Pad physical key,Pad physical key,-1,1E+08,300,s32,1,%d,DefaultKeyAssignPadKey,Wrap
+How to be pushed,How to be pushed,0,255,310,u8,1,%d,DefaultKeyAssignTraits,Wrap
+Analog-to-digital conversion method,Analog-to-digital conversion method,0,255,355,u8,1,%d,DefaultKeyAssignA2DOperator,Wrap
+Applicable target,Reflection target,0,255,370,u8,1,%d,DefaultKeyAssignApplyTarget,Wrap
+Digital / analog,Digital or analog,0,1,305,u8,1,%d,DefaultKeyAssignDigitalAnalog,Wrap
+Win64,Will it be used in Win64?,0,1,306,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+PS4,Will it be used on PS4,0,1,307,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Xbox One,Will it be used on Xbox One,0,1,308,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+time,time,0,10,340,f32,0.01,%f,f32,Wrap
+Interval time for repeat,Interval time for repeat,0,10,350,f32,0.01,%f,f32,Wrap
+Analog-to-digital conversion threshold,Analog-to-digital conversion threshold,0,1000,360,f32,0.01,%f,f32,Wrap
+Pad physical key,Pad physical key,-1,1E+08,400,s32,1,%d,DefaultKeyAssignPadKey,Wrap
+How to be pushed,How to be pushed,0,255,410,u8,1,%d,DefaultKeyAssignTraits,Wrap
+Analog-to-digital conversion method,Analog-to-digital conversion method,0,255,455,u8,1,%d,DefaultKeyAssignA2DOperator,Wrap
+Applicable target,Reflection target,0,255,470,u8,1,%d,DefaultKeyAssignApplyTarget,Wrap
+Digital / analog,Digital or analog,0,1,405,u8,1,%d,DefaultKeyAssignDigitalAnalog,Wrap
+Win64,Will it be used in Win64?,0,1,406,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+PS4,Will it be used on PS4,0,1,407,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Xbox One,Will it be used on Xbox One,0,1,408,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+time,time,0,10,440,f32,0.01,%f,f32,Wrap
+Interval time for repeat,Interval time for repeat,0,10,450,f32,0.01,%f,f32,Wrap
+Analog-to-digital conversion threshold,Analog-to-digital conversion threshold,0,1000,460,f32,0.01,%f,f32,Wrap
+PC physical key,PC physical key,-1,1E+08,500,s32,1,%d,DefaultKeyAssignPcKey,Wrap
+How to be pushed,How to be pushed,0,255,510,u8,1,%d,DefaultKeyAssignTraits,Wrap
+Analog-to-digital conversion method,Analog-to-digital conversion method,0,255,555,u8,1,%d,DefaultKeyAssignA2DOperator,Wrap
+Applicable target,Reflection target,0,255,570,u8,1,%d,DefaultKeyAssignApplyTarget,Wrap
+Digital / analog,Digital or analog,0,1,505,u8,1,%d,DefaultKeyAssignDigitalAnalog,Wrap
+Win64,Will it be used in Win64?,0,1,506,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+PS4,Will it be used on PS4,0,1,507,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Xbox One,Will it be used on Xbox One,0,1,508,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+time,time,0,10,540,f32,0.01,%f,f32,Wrap
+Interval time for repeat,Interval time for repeat,0,10,550,f32,0.01,%f,f32,Wrap
+Analog-to-digital conversion threshold,Analog-to-digital conversion threshold,0,1000,560,f32,0.01,%f,f32,Wrap
+PC physical key,PC physical key,-1,1E+08,600,s32,1,%d,DefaultKeyAssignPcKey,Wrap
+How to be pushed,How to be pushed,0,255,610,u8,1,%d,DefaultKeyAssignTraits,Wrap
+Analog-to-digital conversion method,Analog-to-digital conversion method,0,255,655,u8,1,%d,DefaultKeyAssignA2DOperator,Wrap
+Applicable target,Reflection target,0,255,670,u8,1,%d,DefaultKeyAssignApplyTarget,Wrap
+Digital / analog,Digital or analog,0,1,605,u8,1,%d,DefaultKeyAssignDigitalAnalog,Wrap
+Win64,Will it be used in Win64?,0,1,606,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+PS4,Will it be used on PS4,0,1,607,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Xbox One,Will it be used on Xbox One,0,1,608,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+time,time,0,10,640,f32,0.01,%f,f32,Wrap
+Interval time for repeat,Interval time for repeat,0,10,650,f32,0.01,%f,f32,Wrap
+Analog-to-digital conversion threshold,Analog-to-digital conversion threshold,0,1000,660,f32,0.01,%f,f32,Wrap
+PC physical key,PC physical key,-1,1E+08,700,s32,1,%d,DefaultKeyAssignPcKey,Wrap
+How to be pushed,How to be pushed,0,255,710,u8,1,%d,DefaultKeyAssignTraits,Wrap
+Analog-to-digital conversion method,Analog-to-digital conversion method,0,255,755,u8,1,%d,DefaultKeyAssignA2DOperator,Wrap
+Applicable target,Reflection target,0,255,770,u8,1,%d,DefaultKeyAssignApplyTarget,Wrap
+Digital / analog,Digital or analog,0,1,705,u8,1,%d,DefaultKeyAssignDigitalAnalog,Wrap
+Win64,Will it be used in Win64?,0,1,706,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+PS4,Will it be used on PS4,0,1,707,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Xbox One,Will it be used on Xbox One,0,1,708,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+time,time,0,10,740,f32,0.01,%f,f32,Wrap
+Interval time for repeat,Interval time for repeat,0,10,750,f32,0.01,%f,f32,Wrap
+Analog-to-digital conversion threshold,Analog-to-digital conversion threshold,0,1000,760,f32,0.01,%f,f32,Wrap
+PC physical key,PC physical key,-1,1E+08,800,s32,1,%d,DefaultKeyAssignPcKey,Wrap
+How to be pushed,How to be pushed,0,255,810,u8,1,%d,DefaultKeyAssignTraits,Wrap
+Analog-to-digital conversion method,Analog-to-digital conversion method,0,255,855,u8,1,%d,DefaultKeyAssignA2DOperator,Wrap
+Applicable target,Reflection target,0,255,870,u8,1,%d,DefaultKeyAssignApplyTarget,Wrap
+Digital / analog,Digital or analog,0,1,805,u8,1,%d,DefaultKeyAssignDigitalAnalog,Wrap
+Win64,Will it be used in Win64?,0,1,806,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+PS4,Will it be used on PS4,0,1,807,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Xbox One,Will it be used on Xbox One,0,1,808,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+time,time,0,10,840,f32,0.01,%f,f32,Wrap
+Interval time for repeat,Interval time for repeat,0,10,850,f32,0.01,%f,f32,Wrap
+Analog-to-digital conversion threshold,Analog-to-digital conversion threshold,0,1000,860,f32,0.01,%f,f32,Wrap

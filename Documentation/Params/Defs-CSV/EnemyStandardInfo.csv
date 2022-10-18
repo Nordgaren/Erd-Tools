@@ -1,0 +1,23 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Behavior id,Enemy behavior ID,0,0,1,s32,1,%d,ENEMY_BEHAVIOR_ID,Wrap
+Hit points,Hit points,0,100,2,u16,1,%d,u16,Wrap
+Offensive power,Attack power (for proto only),0,100,3,u16,1,%d,u16,None
+Character type,Character type,0,7,4,s32,1,%d,ChrType,None
+Height per [m],Height per (Please specify a size larger than the diameter),0,100,5,f32,0.1,%f,f32,None
+Radius around [m],Radius around,0,50,6,f32,0.1,%f,f32,None
+Weight [kg],The weight of the character,0,1000000,7,f32,1,%f,f32,None
+Dynamic friction force,Dynamic friction force,0,10,8,f32,0.01,%f,f32,None
+Static friction,Static friction force,0,10,9,f32,0.01,%f,f32,None
+Upper body initial state,Upper body initial state (PG input),0,100000,10,s32,1,%d,s32,None
+Initial state of action,Action initial state (PG input),0,100000,11,s32,1,%d,s32,None
+Angle that can be turned per unit time [deg / s],Y-axis turning angle per unit time [deg / s],0,10000,12,f32,1,%d,f32,Wrap
+reserve,,,,23,dummy8,,,dummy8,None
+unused,unused,0,180,13,u8,1,%d,u8,Wrap
+Can you move left and right?,Can you move left and right?,0,1,14,u8,1,%d,u8,Wrap
+Whether to use a ragdoll per character,Whether to use a ragdoll per character,0,1,15,u8,1,%d,u8,Wrap
+reserve,,,,24,dummy8,,,dummy8,None
+Amount of stamina,Total amount of stamina,0,999,16,u16,1,%d,u16,Wrap
+Stamina recovery,Stamina recovery amount per second,0,999,17,u16,1,%d,u16,Wrap
+Stamina basic consumption,Basic value of stamina consumption used when attacking and guarding,0,999,18,u16,1,%d,u16,Wrap
+Physical defense,Damage reduction base value for physical attacks,0,999,19,u16,1,%d,u16,Wrap
+Reservation 1,,,,25,dummy8,,,dummy8,None

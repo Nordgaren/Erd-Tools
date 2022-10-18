@@ -1,0 +1,33 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| bonusSoul_single || Single time clear bonus soul amount || Amount of soul that can be obtained when defeating an area boss (in single play) || - ||
+|| bonusSoul_multi || Clear bonus soul amount during multiplayer || Amount of soul that can be obtained when defeating an area boss (during multiplayer) || - ||
+|| humanityPointCountFlagIdTop || Human nature drop point count head flag ID || First flag ID for managing humanity drop points (using 20 Bit) || - ||
+|| humanityDropPoint1 || Human nature drop required point 1 || Threshold for acquiring humanity 1 || - ||
+|| humanityDropPoint2 || Human nature drop required point 2 || Threshold 2 for acquiring humanity || - ||
+|| humanityDropPoint3 || Human nature drop required point 3 || Threshold 3 for acquiring humanity || - ||
+|| humanityDropPoint4 || Human nature drop required point 4 || Threshold 4 for acquiring humanity || - ||
+|| humanityDropPoint5 || Human nature drop required point 5 || Threshold 5 for acquiring humanity || - ||
+|| humanityDropPoint6 || Human nature drop required point 6 || Threshold 6 for acquiring humanity || - ||
+|| humanityDropPoint7 || Human nature drop required point 7 || Threshold for acquiring humanity 7 || - ||
+|| humanityDropPoint8 || Human nature drop required point 8 || Threshold for acquiring humanity 8 || - ||
+|| humanityDropPoint9 || Human nature drop required point 9 || Threshold for acquiring humanity 9 || - ||
+|| humanityDropPoint10 || Humanity drop required points 10 || Threshold 10 for acquiring humanity || - ||
+|| soloBreakInPoint_Min || Solo intrusion point addition lower limit || The minimum value of solo intrusion points to be added when defeating an area boss. || - ||
+|| soloBreakInPoint_Max || Solo intrusion point addition value upper limit || The maximum value of solo intrusion points to be added when defeating an area boss. || - ||
+|| defeatBossFlagId_forSignAimList || Boss defeated flag ID (for displaying purpose when hosting) || If this flag is ON, it will not be displayed in the list of purpose settings at the time of hosting. If it is 0, it is always displayed. || - ||
+|| displayAimFlagId || Purpose display flag ID ||  || - ||
+|| foundBossFlagId || Boss discovery flag ID ||  || - ||
+|| foundBossTextId || Text ID at the time of discovery ||  || - ||
+|| notFindBossTextId || Undiscovered text ID ||  || - ||
+|| bossChallengeFlagId || Boss challengeable flag ID || Boss challengeable flag ID. When selecting the target boss in the intrusion position search when "Is the intrusion point automatically generated?" In the multiplayer area para is ○, the boss with this flag ON is targeted. If it is 0, it is always the target. || - ||
+|| defeatBossFlagId || Boss defeat flag ID || Boss defeat flag ID. When selecting the target boss in the intrusion position search when "Is the intrusion point automatically generated?" In the multiplayer area para is ○, the boss with this flag OFF is targeted. || - ||
+|| bossPosX || Boss position_X coordinates || Boss position_X coordinates (relative coordinates from the specified map). It is used to check the distance between the host and the boss in the intrusion position search when "Is the intrusion point automatically generated?" In the multiplayer area para. || - ||
+|| bossPosY || Boss position_Y coordinates || Boss position_Y coordinates (relative coordinates from the specified map). It is used to check the distance between the host and the boss in the intrusion position search when "Is the intrusion point automatically generated?" In the multiplayer area para. || - ||
+|| bossPosZ || Boss position_Z coordinates || Boss position_Z coordinates (relative coordinates from the specified map). It is used to check the distance between the host and the boss in the intrusion position search when "Is the intrusion point automatically generated?" In the multiplayer area para. || - ||
+|| bossMapAreaNo || Boss position_Area number (mXX_00_00_00) || Boss position_area number (mXX_00_00_00). It is used to check the distance between the host and the boss in the intrusion position search when "Is the intrusion point automatically generated?" In the multiplayer area para. || - ||
+|| bossMapBlockNo || Boss position_grid X number (m00_XX_00_00) || Boss position_grid X number (m00_XX_00_00). It is used to check the distance between the host and the boss in the intrusion position search when "Is the intrusion point automatically generated?" In the multiplayer area para. || - ||
+|| bossMapMapNo || Boss position_grid Z number (m00_00_XX_00) || Boss position_grid Z number (m00_00_XX_00). It is used to check the distance between the host and the boss in the intrusion position search when "Is the intrusion point automatically generated?" In the multiplayer area para. || - ||
+|| reserve || Reserved area || Reserved area || - ||

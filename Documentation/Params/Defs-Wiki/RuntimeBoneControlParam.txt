@@ -1,0 +1,7 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| chrId || Character ID || Character ID || - ||
+|| ctrlType || Control type || Control type || RUNTIME_BONE_CONTROL_TYPE ||
+|| pad || pad ||  || - ||
+|| applyBone || Applicable joint || Applicable joint || - ||
+|| targetBone1 || Target joint 1 || Target joint 1 || - ||
+|| targetBone2 || Target joint 2 || Target joint 2 || - ||

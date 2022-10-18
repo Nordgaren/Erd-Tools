@@ -1,0 +1,20 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| physicsDefRate || Physical defense || Physical defense correction value || - ||
+|| magicDefRate || Magic defense || Magic defense correction value || - ||
+|| fireDefRate || Fire defense || Fire defense correction value || - ||
+|| thunderDefRate || Electric shock defense || Electric shock defense correction value || - ||
+|| slashDefRate || Slash defense || Slash defense correction value || - ||
+|| blowDefRate || Strike defense || Impact defense correction value || - ||
+|| thrustDefRate || Puncture defense || Correction value of piercing defense power || - ||
+|| resistPoisonRate || Poison resistance || Poison resistance correction value || - ||
+|| resistDiseaseRate || Epidemic resistance || Epidemic resistance correction value || - ||
+|| resistBloodRate || Bleeding resistance || Bleeding resistance correction value || - ||
+|| resistCurseRate || Curse resistance || Curse resistance correction value || - ||
+|| residentSpEffectId1 || Resident special effect ID1 || Addition correction value for resident special effect ID1 || - ||
+|| residentSpEffectId2 || Resident special effect ID2 || Addition correction value for resident special effect ID2 || - ||
+|| residentSpEffectId3 || Resident special effect ID3 || Addition correction value for resident special effect ID3 || - ||
+|| materialSetId || Material ID addition value || Addition correction value of material parameter ID || - ||
+|| darkDefRate || Dark defense || Dark defense correction value || - ||
+|| resistFreezeRate || Cold resistance || Cold resistance correction value || - ||
+|| resistSleepRate || Sleep tolerance || Correction value for sleep tolerance || - ||
+|| resistMadnessRate || Madness resistance || Madness resistance correction value || - ||

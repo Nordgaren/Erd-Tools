@@ -1,0 +1,14 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Base color value R,Base color color R.,0,255,0,u8,1,%u,u8,None
+Base color value G,Base color color G.,0,255,1,u8,1,%u,u8,None
+Base color value B,Base color color B.,0,255,2,u8,1,%u,u8,None
+Spare 1,,,,1000,dummy8,,,dummy8,None
+Base color%,Base color override rate.,0,1,3,f32,0.01,%f,f32,None
+Metallic value,It's metallic.,0,255,4,u8,1,%u,u8,None
+Spare 2,,,,1001,dummy8,,%u,dummy8,None
+Spare 3,,,,1002,dummy8,,%u,dummy8,None
+Spare 4,,,,1003,dummy8,,,dummy8,None
+Metallic%,Metallic override rate.,0,1,7,f32,0.01,%f,f32,None
+Shininess%,Shininess override rate.,0,1,9,f32,0.01,%f,f32,None
+Shininess value,Shininess.,0,255,8,u8,1,%u,u8,None
+Spare 5,,,,1004,dummy8,,,dummy8,None

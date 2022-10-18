@@ -1,0 +1,120 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| atkId_Bullet || Attack ID || Register each attack parameter ID. → Attack type / Attack material / Physical attack power / Magic attack power / Stamina attack power / Knockback distance. || - ||
+|| sfxId_Bullet || SFX ID [bullet] || Enter the SFX ID for [Bullet]. -1 does not occur. || - ||
+|| sfxId_Hit || SFXID [landing] || [Impact] Enter the SFX ID. -1 does not occur. || - ||
+|| sfxId_Flick || SFXID [at the time of repelling] || [At the time of repelling] Enter the SFX ID. -1 does not occur. || - ||
+|| life || Lifespan [s] || Time for missiles to continue to exist (-1 is infinite). || - ||
+|| dist || Range [m] || Distance at which attenuation begins (not actual flight distance). || - ||
+|| shootInterval || Fire interval [s] || Specify how many seconds the missile will be fired. || - ||
+|| gravityInRange || Gravity within range [m / s ^ 2] || Downward gravity within range. || - ||
+|| gravityOutRange || Gravity outside range [m / s ^ 2] || Gravity applied downward when damping begins (expresses the feeling of falling down. || - ||
+|| hormingStopRange || Guidance stop distance [m] || The distance to the target to stop the guidance. A parameter that prevents you from hitting too much with a guided bullet. || - ||
+|| initVellocity || Initial velocity [m / s] || Initial speed of SFX. || - ||
+|| accelInRange || Acceleration within range [m / s ^ 2] || Acceleration within SFX range. || - ||
+|| accelOutRange || Acceleration outside range [m / s ^ 2] || Acceleration when SFX goes out of range. || - ||
+|| maxVellocity || Maximum speed [m / s] || maximum speed. || - ||
+|| minVellocity || Minimum speed [m / s] || Minimum guaranteed speed. || - ||
+|| accelTime || Acceleration start time [s] || Until this time, do not accelerate (make sure you can shoot magic like rockets). || - ||
+|| homingBeginDist || Guidance start distance [m] || How many meters should the guidance start? || - ||
+|| hitRadius || Initial radius [m] || Set the radius of the hit ball. || - ||
+|| hitRadiusMax || Maximum radius [m] || Maximum radius of the hit sphere (If -1, make it the same as the initial radius / default) || - ||
+|| spreadTime || Range diffusion time [s] || The time when the radius of the range expands to a small extent. || - ||
+|| expDelay || Activation delay [s] || Time from landing to explosion (if 0, it explodes immediately). || - ||
+|| hormingOffsetRange || Induction shift amount [m] || It is accurate if it is 0. At the time of shooting, each component of XYZ should be aimed by shifting this amount. || - ||
+|| dmgHitRecordLifeTime || Time to live in damage hit history [s] || Damage hit history survival time [sec] (<= 0.0f: indefinite) || - ||
+|| externalForce || External force [m / s ^ 2] || External force applied in the direction of shooting. (Y-axis is removed) || - ||
+|| spEffectIDForShooter || Special effects on the person who shot || Special effects on the person who shot || - ||
+|| autoSearchNPCThinkID || Funnel NPC Thinking ID || Parameters used by the funnel to search for the target || - ||
+|| HitBulletID || Generated bullet ID || Specify the ID when generating a new bullet parameter from the bullet parameter || - ||
+|| spEffectId0 || Special effect ID0 || Register each special effect parameter ID. → General special effects. || - ||
+|| spEffectId1 || Special effect ID1 || Register each special effect parameter ID. → General special effects. || - ||
+|| spEffectId2 || Special effect ID2 || Register each special effect parameter ID. → General special effects. || - ||
+|| spEffectId3 || Special effect ID3 || Register each special effect parameter ID. → General special effects. || - ||
+|| spEffectId4 || Special effect ID4 || Register each special effect parameter ID. → General special effects. || - ||
+|| numShoot || Number of shots || The number of missiles fired at one time. || - ||
+|| homingAngle || Induction performance [deg / s] || How many corrections per second? .. || - ||
+|| shootAngle || Launch angle [deg] || Specify how many times the missile is fired forward. || - ||
+|| shootAngleInterval || Launch angle interval [deg] || When firing multiple missiles, specify how often to fire them. (Y-axis) || - ||
+|| shootAngleXInterval || Launch elevation interval [deg] || When firing multiple missiles, specify how often to fire them. (X-axis) || - ||
+|| damageDamp || Physical attack power attenuation rate [% / s] || Correction value that decreases in 1 second after the attenuation distance. || - ||
+|| spelDamageDamp || Magic attack power attenuation rate [% / s] || Correction value that decreases in 1 second after the attenuation distance. || - ||
+|| fireDamageDamp || Flame attack power attenuation rate [% / s] || Correction value that decreases in 1 second after the attenuation distance. || - ||
+|| thunderDamageDamp || Electric shock attack power attenuation rate [% / s] || Correction value that decreases in 1 second after the attenuation distance. || - ||
+|| staminaDamp || Stamina damage attenuation rate [% / s] || Correction value that decreases in 1 second after the attenuation distance. || - ||
+|| knockbackDamp || Knockback attenuation factor [% / s] || Correction value that decreases in 1 second after the attenuation distance. || - ||
+|| shootAngleXZ || Launch elevation angle [deg] || Additional elevation angle from the horizontal. || - ||
+|| lockShootLimitAng || Lock direction limit angle || Limit angle when facing the lock direction || - ||
+|| pad2 || pad ||  || - ||
+|| prevVelocityDirRate || Previous movement direction addition rate [%] || Ratio to add the previous movement direction to the current direction when the sliding bullet hits the wall || - ||
+|| atkAttribute || Physical attributes || Set the physical attributes to set for the bullet || ATKPARAM_ATKATTR_TYPE ||
+|| spAttribute || Special attributes || Set special attributes to set for bullets || ATKPARAM_SPATTR_TYPE ||
+|| Material_AttackType || Attack attribute [SFX / SE] || Specify what the attack attribute is || BEHAVIOR_ATK_TYPE ||
+|| Material_AttackMaterial || Attack material [SFX / SE] || Used for SFX / SE during attack || WEP_MATERIAL_ATK ||
+|| isPenetrateChr || Penetrate the character? || If it is ON, it will penetrate without landing when it hits the character. || ON_OFF ||
+|| isPenetrateObj || Penetrate the object? || If it is ON, it will penetrate without landing when hitting a dynamic / partial destruction asset. || ON_OFF ||
+|| pad || pad ||  || - ||
+|| launchConditionType || Occurrence condition || Specify the condition to judge whether to generate a bullet when it lands or the life is extinguished || BULLET_LAUNCH_CONDITION_TYPE ||
+|| FollowType || Follow-up type || Follow-up type. "Do not follow" is the default. || BULLET_FOLLOW_TYPE ||
+|| EmittePosType || Source type || Source type. Usually from Damipoli. (Introduced to judge meteo) || BULLET_EMITTE_POS_TYPE ||
+|| isAttackSFX || Will it stay stuck? || Set whether bullets such as arrows will remain stuck in the character || ON_OFF ||
+|| isEndlessHit || Do you keep hitting? || Do you keep hitting? || ON_OFF ||
+|| isPenetrateMap || Penetrate the map? || If it is ON, it will penetrate without landing when hitting a hit / static asset. || ON_OFF ||
+|| isHitBothTeam || Are you an enemy or an ally? || Are you an enemy or an ally? (Not a wandering ghost) || ON_OFF ||
+|| isUseSharedHitList || Do you want to share the hit list? || Specify whether to share the hit list || ON_OFF ||
+|| isUseMultiDmyPolyIfPlace || Do you use multiple Damipoli? || Do you use the same Damipoly ID more than once when placing bullets? || ON_OFF ||
+|| isHitOtherBulletForceEraseA || Does it hit other bullets forced erasure A? || Does it hit other bullets forced erasure A? || - ||
+|| isHitOtherBulletForceEraseB || Does it hit the other bullet forced erasure B? || Does it hit the other bullet forced erasure B? || - ||
+|| isHitForceMagic || Do you hit the force magic? || Do you hit the force magic? || - ||
+|| isIgnoreSfxIfHitWater || Whether to ignore the effect at the time of water collision || Should I ignore the effect if it hits the surface of the water? || - ||
+|| isIgnoreMoveStateIfHitWater || Whether to ignore the state transition at the time of water collision || Whether to ignore the state transition even if it hits water || - ||
+|| isHitDarkForceMagic || Do you hit the dark force magic? || Do you hit the dark force magic? || - ||
+|| dmgCalcSide || Damage calculation side || Damage calculation side. During multiplayer, the damage calculation is for switching between the giving side and the receiving side. || DMG_CALC_SIDE_TYPE ||
+|| isEnableAutoHoming || Bullet automatic capture permission || Whether to automatically follow when not locked on || ON_OFF ||
+|| isSyncBulletCulcDumypolyPos || For synchronous bullets, do you recalculate at the Damipoli position? || In the case of a synchronously generated bullet, the emitter attitude at the time of synchronization is used without recalculating the attitude due to the Damipoli position when the bullet is generated. || ON_OFF ||
+|| isOwnerOverrideInitAngle || Do you want to overwrite the owner with the reference direction of the bullet? || Only valid for sub-bullets. If it is ON, the reference direction is the owner. || ON_OFF ||
+|| isInheritSfxToChild || Will SFX be taken over by the child bullets? || Take over the SFX of the parent bullet. Ignore the SFX ID set for the sub bullet || ON_OFF ||
+|| darkDamageDamp || Dark attack power attenuation rate [% / s] || Correction value that decreases in 1 second after the attenuation distance. || - ||
+|| bulletSfxDeleteType_byHit || Bullet SFX extinction type at the time of landing || Bullet SFX extinction type when landing or playing || BULLET_SFX_DELETE_TYPE ||
+|| bulletSfxDeleteType_byLifeDead || Bullet SFX extinction type at the end of life || Bullet SFX extinction type at the end of life || BULLET_SFX_DELETE_TYPE ||
+|| targetYOffsetRange || Target vertical offset [m] || Vertical offset of landing position. Shift the target position up and down at the time of launch and during homing. (-N ~ n) || - ||
+|| shootAngleYMaxRandom || Launch angle random number [deg] || Upper limit of random number of firing angle (0 to 360) || - ||
+|| shootAngleXMaxRandom || Elevation angle random number [deg] || Upper limit of firing elevation random number (0 to 360) || - ||
+|| intervalCreateBulletId || Interval specified bullet ID || Bullet ID used when making bullets at regular intervals || - ||
+|| intervalCreateTimeMin || Occurrence interval: Minimum time [s] || Minimum interval for making bullets at regular intervals (0 to n) || - ||
+|| intervalCreateTimeMax || Occurrence interval: Maximum time [s] || Maximum interval for making bullets at regular intervals (function is disabled if 0 to n 0) || - ||
+|| predictionShootObserveTime || Predicted shooting velocity observation time [s] || Average speed observation time of predicted shooting function (function is invalid if 0 to 40) || - ||
+|| intervalCreateWaitTime || Waiting time for start of specified interval [s] || Waiting time to start making bullets at regular intervals || - ||
+|| sfxPostureType || The type of SFX attitude generated from the bullet || Set the initial attitude of an SFX or sub-bullet created from a bullet || BULLET_SFX_CREATE_POSTURE_TYPE ||
+|| createLimitGroupId || Creation restriction group Id || If it is 0, it is unused. If the upper limit is reached when creating a bullet set in the same group Id, that bullet will not be created. (Bullets created synchronously on the network will be released regardless) || - ||
+|| pad5 || pad ||  || - ||
+|| isInheritSpeedToChild || Will the speed be taken over by the submunition? || Take over the speed of the timing to replace the submunition. Ignore the speed set for the submunition || ON_OFF ||
+|| isDisableHitSfx_byChrAndObj || Do not play landing SFX when character / OBJ hits || When ON, the bullet parameter "landing SFX" does not play even if it hits a character / object. || ON_OFF ||
+|| isCheckWall_byCenterRay || Launch position Makes a wall digging judgment by skipping a ray that connects the center of the character in parallel. || There was a problem with the digging judgment when firing a bullet, so it is for error handling. SEQ23101 [Own character] If you use a soul short arrow or a strong soul short arrow in close contact with a character with a high lock-on position, the direction of the bullet will be reversed. || ON_OFF ||
+|| isHitFlare || Do you hit flare magic? || Do you hit flare magic? || - ||
+|| isUseBulletWallFilter || Do you use primitive magic Atari? || Do you use primitive magic Atari? It will change to a filter that corresponds to the Atari dedicated to primitive magic. || ON_OFF ||
+|| pad1 || pad ||  || - ||
+|| isNonDependenceMagicForFunnleNum || The number of funnels on the PC does not fluctuate due to reason || The number of funnels on the PC does not fluctuate by force. Become the number of shots || ON_OFF ||
+|| isAiInterruptShootNoDamageBullet || Does it react to AI bullets (even with 0 attack power)? || Does it react to AI bullets (even with 0 attack power)? || ON_OFF ||
+|| randomCreateRadius || Occurrence range (radius) at random occurrence [m] || The range of bullets used when the source type is set to occur at random locations. || - ||
+|| followOffset_BaseHeight || Funnel tracking position_base point height [m] || Funnel tracking position_base point height [m] || - ||
+|| assetNo_Hit || Asset number generated at the time of landing || The number of the asset to be generated at the time of landing. -1: Do not generate. The asset number is the last 6 digits of the asset. Example: AEG999_999 = 999999 || - ||
+|| lifeRandomRange || Lifetime random number [s] || Add a random number of seconds with a set time fluctuation range to the "lifetime [s]". || - ||
+|| homingAngleX || Induction performance (X-axis individual) [deg / s] || Only the X-axis component of the inductive performance is changed. Do not change with -1 || - ||
+|| ballisticCalcType || Ballistic calculation type || Ballistic calculation type || BULLET_BALLISTIC_CALC_TYPE ||
+|| attachEffectType || Attach effect type || Effect type to attach || BULLET_ATTACH_EFFECT_TYPE ||
+|| seId_Bullet1 || SEID1 [bullet] || Insert SE ID1 for [Bullet]. -1: Not generated 9 digits. Sound type is fixed to s: SFX. || - ||
+|| seId_Bullet2 || SEID2 [bullet] || Insert SE ID 2 for [Bullet]. -1: Not generated 9 digits. Sound type is fixed to s: SFX. || - ||
+|| seId_Hit || SEID [landing] || Insert SE ID 1 for [landing]. -1 does not occur. 9 digits. Sound type is fixed to s: SFX. || - ||
+|| seId_Flick || SEID [at the time of repelling] || [At the time of repelling] Enter SE ID1 for. -1 does not occur. 9 digits. Sound type is fixed to s: SFX. || - ||
+|| howitzerShootAngleXMin || [Curly shooting] Launch elevation limit_lower limit [deg] || [Curly fire] The lower limit [deg] with the firing elevation angle as a reference (0 deg) before applying the curve fire calculation. || - ||
+|| howitzerShootAngleXMax || [Song firing] Launch elevation limit_upper limit [deg] || [Sky firing] The upper limit [deg] based on the firing elevation angle (0deg) before applying the bending firing calculation. || - ||
+|| howitzerInitMinVelocity || [Song shooting] Minimum speed limit [m / s] || [Song firing] The minimum speed limit for song firing calculation [m / s]. || - ||
+|| howitzerInitMaxVelocity || [Song shooting] Maximum speed limit [m / s] || [Song firing] Maximum speed limit for song firing calculation [m / s]. || - ||
+|| sfxId_ForceErase || SFXID [At the time of forced erasure] || SFX ID at the time of forced erasure. -1 does not occur. || - ||
+|| bulletSfxDeleteType_byForceErase || Bullet SFX extinction type at the time of forced erasure || Bullet SFX extinction type at the time of forced erasure || BULLET_SFX_DELETE_TYPE ||
+|| pad3 || Padding 3 || pad3 || - ||
+|| followDmypoly_forSfxPose || SFX direction specification when following Damipoli || SFX direction specification when following Damipoli || - ||
+|| followOffset_Radius || Funnel tracking position_radius [m] || Funnel tracking position_radius [m] || - ||
+|| spBulletDistUpRate || Special effect flight distance correction magnification || Special effect flight distance correction magnification || - ||
+|| nolockTargetDist || Target range [m] when unlocked || Target range when unlocked (-1: Refer to "range", 0: No target) || - ||
+|| pad4 || pad ||  || - ||

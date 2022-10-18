@@ -1,0 +1,3 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| seMaterialId || SE material ID || Conversion from SFX material ID (3 digits) to SE material ID (2 digits) || MATERIAL_SE_TYPE ||
+|| pad || Padding || Padding || - ||

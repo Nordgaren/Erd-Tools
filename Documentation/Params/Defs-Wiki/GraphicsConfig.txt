@@ -1,0 +1,15 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| m_textureFilterQuality || Texture filter quality || Texture filter quality (default Midele) || GX_QUALITY_LEVEL_ENUM ||
+|| m_aaQuality || AA quality || AA quality (default High) || GX_QUALITY_LEVEL_ENUM ||
+|| m_ssaoQuality || SSAO quality || SSAO quality (default High) || GX_QUALITY_LEVEL_ENUM ||
+|| m_dofQuality || Depth of field quality || Depth of field quality (default High) || GX_QUALITY_LEVEL_ENUM ||
+|| m_motionBlurQuality || Motion blur quality || Motion blur quality (default High) || GX_QUALITY_LEVEL_ENUM ||
+|| m_shadowQuality || Shadow quality || Shadow quality (default High) || GX_QUALITY_LEVEL_ENUM ||
+|| m_lightingQuality || Lighting quality || Lighting quality (default High) || GX_QUALITY_LEVEL_ENUM ||
+|| m_effectQuality || Effect quality || Effect quality (default High) || GX_QUALITY_LEVEL_ENUM ||
+|| m_decalQuality || Decal quality || Decal quality (default High) || GX_QUALITY_LEVEL_ENUM ||
+|| m_reflectionQuality || Reflection quality || Reflection quality (default High) || GX_QUALITY_LEVEL_ENUM ||
+|| m_waterQuality || Water quality || Water quality (default High) || GX_QUALITY_LEVEL_ENUM ||
+|| m_shaderQuality || Shader quality || Shader quality (default High) || GX_QUALITY_LEVEL_ENUM ||
+|| m_volumetricEffectQuality || Volumetric effect quality || Volumetric effect quality (default High) || GX_QUALITY_LEVEL_ENUM ||
+|| m_dummy || dmy ||  || - ||

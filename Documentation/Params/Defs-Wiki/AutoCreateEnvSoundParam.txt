@@ -1,0 +1,9 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| RangeMin || Appearance distance Min [m] || Appearance distance Min [m] || - ||
+|| RangeMax || Appearance distance Max [m] || Appearance distance Max [ || - ||
+|| LifeTimeMin || Lifespan Min [seconds] || Lifespan Min [seconds] || - ||
+|| LifeTimeMax || Lifespan Max [seconds] || Lifespan Max [seconds] || - ||
+|| DeleteDist || Delete distance [m] || Delete distance [m] || - ||
+|| NearDist || Neighborhood judgment distance [m] || Neighborhood judgment distance [m] || - ||
+|| LimiteRotateMin || Generation angle limit Min [degree] || Angle limit Min [degree] (Specify the Y-axis angle +-in front of the camera. 180 is omnidirectional) || - ||
+|| LimiteRotateMax || Generation angle limit Max [degrees] || Angle limit Max [degree] (Specify the Y-axis angle +-in front of the camera. 180 is omnidirectional) || - ||

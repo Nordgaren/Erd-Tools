@@ -1,0 +1,29 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| a000_rightElbowIO || Right elbow _ inside and outside || Right elbow _ inside and outside || - ||
+|| a000_leftElbowIO || Left elbow_inside and outside || Left elbow_inside and outside || - ||
+|| a000_bothLegsIO || Both feet _ inside and outside || Both feet _ inside and outside || - ||
+|| a002_rightElbowIO || Right elbow _ inside and outside || Right elbow _ inside and outside || - ||
+|| a002_leftElbowIO || Left elbow_inside and outside || Left elbow_inside and outside || - ||
+|| a002_bothLegsIO || Both feet _ inside and outside || Both feet _ inside and outside || - ||
+|| a003_rightElbowIO || Right elbow _ inside and outside || Right elbow _ inside and outside || - ||
+|| a003_leftElbowIO || Left elbow_inside and outside || Left elbow_inside and outside || - ||
+|| a003_bothLegsIO || Both feet _ inside and outside || Both feet _ inside and outside || - ||
+|| a010_rightElbowIO || Right elbow _ inside and outside || Right elbow _ inside and outside || - ||
+|| a010_leftElbowIO || Left elbow_inside and outside || Left elbow_inside and outside || - ||
+|| a010_bothLegsIO || Both feet _ inside and outside || Both feet _ inside and outside || - ||
+|| a012_rightElbowIO || Right elbow _ inside and outside || Right elbow _ inside and outside || - ||
+|| a012_leftElbowIO || Left elbow_inside and outside || Left elbow_inside and outside || - ||
+|| a012_bothLegsIO || Both feet _ inside and outside || Both feet _ inside and outside || - ||
+|| a013_rightElbowIO || Right elbow _ inside and outside || Right elbow _ inside and outside || - ||
+|| a013_leftElbowIO || Left elbow_inside and outside || Left elbow_inside and outside || - ||
+|| a013_bothLegsIO || Both feet _ inside and outside || Both feet _ inside and outside || - ||
+|| a014_rightElbowIO || Right elbow _ inside and outside || Right elbow _ inside and outside || - ||
+|| a014_leftElbowIO || Left elbow_inside and outside || Left elbow_inside and outside || - ||
+|| a014_bothLegsIO || Both feet _ inside and outside || Both feet _ inside and outside || - ||
+|| a015_rightElbowIO || Right elbow _ inside and outside || Right elbow _ inside and outside || - ||
+|| a015_leftElbowIO || Left elbow_inside and outside || Left elbow_inside and outside || - ||
+|| a015_bothLegsIO || Both feet _ inside and outside || Both feet _ inside and outside || - ||
+|| a016_rightElbowIO || Right elbow _ inside and outside || Right elbow _ inside and outside || - ||
+|| a016_leftElbowIO || Left elbow_inside and outside || Left elbow_inside and outside || - ||
+|| a016_bothLegsIO || Both feet _ inside and outside || Both feet _ inside and outside || - ||
+|| pad || pad ||  || - ||

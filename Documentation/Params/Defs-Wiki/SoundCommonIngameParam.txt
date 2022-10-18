@@ -1,0 +1,3 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| ParamKeyStr || Parameter Key string || Key string of the parameter || - ||
+|| ParamValueStr || Parameter Value string || Value string of the parameter || - ||

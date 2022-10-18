@@ -1,0 +1,5 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| value || Value to compare || Value to compare || - ||
+|| textId || Converted text ID || Converted text ID || - ||
+|| compareType || Comparison type || Comparison type || MENU_VALUE_TABLE_CMP_TYPE ||
+|| padding || Padding || Padding || - ||

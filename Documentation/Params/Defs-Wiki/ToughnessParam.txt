@@ -1,0 +1,8 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| correctionRate || Weapon toughness correction factor || It is a correction magnification applied to the "toughness correction magnification" of the weapon when calculating the toughness. || - ||
+|| minToughness || Minimum toughness || The lower limit of current toughness applied at the beginning of the toughness period. If the toughness falls below this value at the start of toughness, it will recover to this value. || - ||
+|| isNonEffectiveCorrectionForMin || Minimum toughness value is not affected by toughness multiplier || The toughness correction factor will no longer be applied to the minimum toughness. || - ||
+|| pad2 || pad || pad || - ||
+|| spEffectId || Special effect ID || Replacement special effect Id that takes place during the toughness period. If -1, the normal replacement rule applies. Only used by player characters || - ||
+|| proCorrectionRate || Armor toughness correction factor || This is the correction factor applied to the "toughness correction factor" of the armor when determining the toughness. || - ||
+|| pad1 || pad || pad || - ||

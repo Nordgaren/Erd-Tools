@@ -1,0 +1,208 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+0 radius per,Sphere, capsule radius,0,100,4000,f32,0.01,%f,f32,Wrap
+1 radius per,Sphere, capsule radius,0,100,4500,f32,0.01,%f,f32,Wrap
+2 radii per,Sphere, capsule radius,0,100,5000,f32,0.01,%f,f32,Wrap
+3 radii per,Sphere, capsule radius,0,100,5500,f32,0.01,%f,f32,Wrap
+Knockback distance [m],Knockback distance [m],-99,99,5790,f32,0.01,%f,f32,Wrap
+Hit stop time [s],Hit stop stop time [s],0,10,6110,f32,0.01,%f,f32,Wrap
+Special effects 0,Enter the ID created with the special effects parameter,-1,999999999,6300,s32,1,%d,s32,Wrap
+Special effect 1,Enter the ID created with the special effects parameter,-1,999999999,6400,s32,1,%d,s32,Wrap
+Special effect 2,Enter the ID created with the special effects parameter,-1,999999999,6500,s32,1,%d,s32,Wrap
+Special effect 3,Enter the ID created with the special effects parameter,-1,999999999,6600,s32,1,%d,s32,Wrap
+Special effect 4,Enter the ID created with the special effects parameter,-1,999999999,6700,s32,1,%d,s32,Wrap
+Per 0 Damipoli 1,Damipoli in sphere, capsule position,-1,31999,3800,s16,1,%d,s16,Wrap
+1 per Damipoli 1,Damipoli in sphere, capsule position,-1,31999,4300,s16,1,%d,s16,Wrap
+2 per Damipoli 1,Damipoli in sphere, capsule position,-1,31999,4800,s16,1,%d,s16,Wrap
+3 per Damipoli 1,Damipoli in sphere, capsule position,-1,31999,5300,s16,1,%d,s16,Wrap
+Per 0 Damipoli 2,The position of another point on the capsule Damipoli. -1 makes it a sphere,-1,31999,3900,s16,1,%d,s16,Wrap
+1 per Damipoli 2,The position of another point on the capsule Damipoli. -1 makes it a sphere,-1,31999,4400,s16,1,%d,s16,Wrap
+2 per Damipoli 2,The position of another point on the capsule Damipoli. -1 makes it a sphere,-1,31999,4900,s16,1,%d,s16,Wrap
+3 per Damipoli 2,The position of another point on the capsule Damipoli. -1 makes it a sphere,-1,31999,5400,s16,1,%d,s16,Wrap
+Blow-off correction value,Correction value when blowing off,0,60000,500,u16,1,%d,u16,Wrap
+Physical attack power correction value,PC only. Multiplier by multiplying the basic physical attack power,0,60000,2300,u16,1,%d,u16,Wrap
+Magic attack power correction value,PC only. Multiply the magic attack power (in the case of a bow, correct the missile),0,60000,2400,u16,1,%d,u16,Wrap
+Fire attack power correction value,PC only. Multiply the fire attack power (in the case of a bow, correct the missile),0,60000,2500,u16,1,%d,u16,Wrap
+Electric shock attack power correction value,PC only. Multiplier for electric shock attack power (in the case of a bow, correct the missile),0,60000,2510,u16,1,%d,u16,Wrap
+Stamina attack power correction value,PC only. Multiplier for stamina attack power,0,60000,2600,u16,1,%d,u16,Wrap
+Repellent attack power correction value,PC only. 1 only,0,60000,2900,u16,1,%d,u16,Wrap
+Repellent defense correction value,PC only. Multiplying the base value by the repelling of the attack,0,60000,3000,u16,1,%d,u16,Wrap
+Throw-through attack power correction value,Weapon correction value for throw-through attacks,0,60000,3630,u16,1,%d,u16,Wrap
+Subcategory 1,Subcategory 1,0,255,3605,u8,1,%d,ATK_SUB_CATEGORY,Wrap
+Subcategory 2,Subcategory 2,0,255,3606,u8,1,%d,ATK_SUB_CATEGORY,Wrap
+Physical attack power,NPCs only. Basic damage of physical attack,0,9999,600,u16,1,%d,u16,Wrap
+Magic attack power,NPCs only. Additional damage from magic attacks,0,9999,700,u16,1,%d,u16,Wrap
+Fire attack power,NPCs only. Additional damage from fire attacks,0,9999,800,u16,1,%d,u16,Wrap
+Electric shock attack power,NPCs only. Additional damage from electric shock attacks,0,9999,810,u16,1,%d,u16,Wrap
+Stamina attack power,NPCs only. Amount of damage to enemy (player) stamina,0,999,900,u16,1,%d,u16,Wrap
+Repellent attack power,NPCs only. Flick value,0,999,1200,u16,1,%d,u16,Wrap
+Repellent defense,NPCs only. Value used to determine if an attack is repelled,0,999,1300,u16,1,%d,u16,Wrap
+pad,,,,12001,dummy8,,,dummy8,None
+Can damage bushes,Do you want to calculate damage for assets that are "Break due to bush damage"? To set. 〇: Calculate, ×: Do not calculate (that is, you cannot inflict damage) [GR] SEQ20617,0,1,2201,u8,1,%d,ATK_PARAM_BOOL,Wrap
+Throw-through attack power,Throw-through attack power,0,999,3640,u16,1,%d,u16,Wrap
+Object attack power,Attack power against OBJ,0,999,2200,u16,1,%d,u16,Wrap
+Stamina cut rate correction when guarding,Correct the [stamina cut rate when guarding] set in the weapon parameter and NPC parameter.,-100,9999,3200,s16,1,%d,s16,Wrap
+Guard magnification,NPC, the guard performance set in the weapon parameter is uniformly corrected. 0, 1x / 100, 2x / -100, guard multiplier = (guard multiplier / 100) to increase / decrease the parameter to 0. + 1),-100,999,3500,s16,1,%d,s16,Wrap
+Throw type ID,ID associated with the throw parameter,0,9999,3620,u16,1,%d,u16,Wrap
+0 parts per,Hit part,0,255,4100,u8,1,%d,ATK_PARAM_HIT_TYPE,Wrap
+1 part per part,Hit part,0,255,4600,u8,1,%d,ATK_PARAM_HIT_TYPE,Wrap
+2 parts per,Hit part,0,255,5100,u8,1,%d,ATK_PARAM_HIT_TYPE,Wrap
+3 parts per,Hit part,0,255,5600,u8,1,%d,ATK_PARAM_HIT_TYPE,Wrap
+0 Priority per,priority. If there are two or more hits at the same time, the one with the higher priority will be adopted.,0,255,4200,u8,1,%d,u8,Wrap, Lock
+1 priority per,priority. If there are two or more hits at the same time, the one with the higher priority will be adopted.,0,255,4700,u8,1,%d,u8,Wrap, Lock
+2 priorities per,priority. If there are two or more hits at the same time, the one with the higher priority will be adopted.,0,255,5200,u8,1,%d,u8,Wrap, Lock
+3 priorities per,priority. If there are two or more hits at the same time, the one with the higher priority will be adopted.,0,255,5700,u8,1,%d,u8,Wrap, Lock
+Damage level,Which damage motion should be played against the enemy when attacking? To decide.,0,100,100,u8,1,%d,u8,Wrap
+See per map,Which map do you see around the attack? The set,0,255,300,u8,1,%d,ATK_PARAM_MAP_HIT,Wrap
+Guard cut rate invalidation factor,Guard cut rate invalidation ratio (-100 to 100) → Normal at 0 / Completely invalidated at -100 / Doubles the defense effect of the opponent at 100 → -50, 100% cut shield becomes 50% cut Become ,-100,100,1400,s8,1,%d,s8,Wrap
+Physical attributes,Physical attributes to set for attacks,0,255,1510,u8,1,%d,ATKPARAM_ATKATTR_TYPE,Wrap
+Special attributes,Special attributes to set for attacks,0,255,1520,u8,1,%d,ATKPARAM_SPATTR_TYPE,Wrap
+Attack attribute [SFX / SE],Specify SFX / SE at the time of attack (1 set by attribute, material, size),0,255,1600,u8,1,%d,BEHAVIOR_ATK_TYPE,Wrap
+Attack material [SFX / SE],Specify SFX / SE at the time of attack (1 set by attribute, material, size),0,255,1700,u8,1,%d,WEP_MATERIAL_ATK,Wrap
+Guard judgment position,Guard judgment position,0,1,3350,u8,1,%d,ATKPARAM_GUARD_RANGE_TYPE,Wrap
+Defensive material 1 [SE],Used for SE when guarding 1,0,9999,2000,u16,1,%d,WEP_MATERIAL_DEF,Wrap
+Source per,Where do you get the Damipoli ID per attack? To specify,0,255,3700,u8,1,%d,ATK_PARAM_HIT_SOURCE,Wrap
+Throw,Flag used for throwing information,0,255,3610,u8,1,%d,ATK_PATAM_THROWFLAG_TYPE,Wrap
+Unguardable flag,If 1, ignore the guard on the guard side and enter the damage level,0,1,3300,u8,1,%d,ATK_PARAM_BOOL,Wrap
+Stamina does not decrease,"Destruction judgment" is performed by stamina attack power, but stamina is not actually reduced.,0,1,3400,u8,1,%d,ATK_PARAM_BOOL,Wrap
+Special effects disabled on hit,Disables special effects when an attack hits. SCE bug countermeasures,0,1,3600,u8,1,%d,ATK_PARAM_BOOL,Wrap
+Do not notify AI of missed swing,Do not notify AI of missed swing,0,1,6200,u8,1,%d,ATK_PARAM_BOOL,Wrap
+Do you issue SFX many times during HIT?,Enemy only: Does SFX occur continuously when hitting a wall?,0,1,2010,u8,1,%d,ATK_PARAM_BOOL,Wrap
+Is it an arrow attack?,Used for site damage judgment.,0,1,310,u8,1,%d,ATK_PARAM_BOOL,Wrap
+Is it a ghost attack?,Used for determining spirit damage.,0,1,320,u8,1,%d,ATK_PARAM_BOOL,Wrap
+Do you penetrate invincible,Ignore invincible effects such as steps, TAE's complete invincibility cannot be ignored.,0,1,330,u8,1,%d,ATK_PARAM_BOOL,Wrap
+Attack strength [SFX],Attack strength [SFX],0,127,1710,s8,1,%d,ATKPARAM_SFX_ATK_POW,Wrap
+Attack direction [SFX],Attack direction [SFX],0,127,1720,s8,1,%d,ATKPARAM_SFX_ATK_DIR,Wrap
+Target: ● Hostile,Target: ● Hostile,0,1,200,u8,1,%d,ATK_PARAM_BOOL,Wrap
+Target: ○ Allies,Target: ○ Allies,0,1,210,u8,1,%d,ATK_PARAM_BOOL,Wrap
+Target: myself,Target: myself,0,1,220,u8,1,%d,ATK_PARAM_BOOL,Wrap
+Do you want to check the door penetration?,Whether to check the door penetration. In the case of ○, it is judged whether or not the target through the door can be attacked.,0,1,400,u8,1,%d,ATK_PARAM_BOOL,Wrap
+Is it a riding special attack?,If you hit the target of the riding special attack while riding, the SA damage will be multiplied by the multiplier.,0,1,325,u8,1,%d,ATK_PARAM_BOOL,Wrap
+Do you refer to the additional attack power even in weapon attacks?,Do you refer to the additional attack power even in weapon attacks?,0,1,11000,u8,1,%d,ATK_PARAM_BOOL,Wrap
+Is it excluded from threat level notification?,Is it excluded from threat level notification?,0,1,12000,u8,1,%d,ATK_PARAM_BOOL,Wrap
+pad1,,,,12002,dummy8,,,dummy8,None
+Behavior identification value 1,Behavior identification value: Extra large damage transition,0,255,9000,u8,1,%d,ATKPARAM_BEHAVIOR_ID,Wrap
+Attack strength [SE],Attack strength [SE],0,127,1711,s8,1,%d,ATKPARAM_SE_ATK_POW,Wrap
+SA attack power,NPCs only. Value used for SA break calculation formula,0,999,1310,f32,0.1,%f,f32,Wrap
+Decal ID 1 (directly specified),Decal ID 1 (directly specified),-1,999999,2100,s32,1,%d,s32,Wrap
+Decal ID 2 (directly specified),Decal ID 2 (directly specified),-1,999999,2110,s32,1,%d,s32,Wrap
+AI sound ID when it occurs,ID of AI sound generated when an attack occurs,0,99999999,7000,s32,1,%d,s32,Wrap
+AI sound ID on hit,ID of AI sound generated at the time of hit,0,99999999,7000,s32,1,%d,s32,Wrap
+Vibration effect on hit (-1 invalid),Vibration ID at the time of hit (-1 invalid). It is a vibration ID when none of the following three applies,-1,99999999,6120,s32,1,%d,s32,Wrap
+Vibration ID when the tip hits,Vibration ID at the time of hit when hitting the tip (-1 invalid),-1,99999999,6130,s32,1,%d,s32,Wrap
+Vibration ID when hit in the middle,Vibration ID at the time of hit when hit in the middle (-1 invalid),-1,99999999,6140,s32,1,%d,s32,Wrap
+Vibration ID at the time of root hit,Vibration ID at the time of hit when hitting the root (-1 invalid),-1,99999999,6150,s32,1,%d,s32,Wrap
+Sword Flash SfxID_0,Sword flash SfxID_0 (-1 invalid),-1,99999999,8000,s32,1,%d,s32,None
+Root Sword Flash Damipoli ID_0,Sword flash root Damipoli ID_0 (-1 invalid),-1,99999999,8001,s32,1,%d,s32,None
+Sword tip sword flash Damipoli ID_0,Sword Flash Sword Tip Damipoli ID_0,-1,99999999,8002,s32,1,%d,s32,None
+Sword Flash SfxID_1,Sword flash SfxID_1 (-1 invalid),-1,99999999,8003,s32,1,%d,s32,None
+Root Sword Flash Damipoli ID_1,Sword Flash Root Damipoli ID_1 (-1 invalid),-1,99999999,8004,s32,1,%d,s32,None
+Sword tip sword flash Damipoli ID_1,Sword Flash Sword Tip Damipoli ID_1,-1,99999999,8005,s32,1,%d,s32,None
+Sword Flash SfxID_2,Sword flash SfxID_2 (-1 invalid),-1,99999999,8006,s32,1,%d,s32,None
+Root Sword Flash Damipoli ID_2,Sword Flash Root Damipoli ID_2 (-1 invalid),-1,99999999,8007,s32,1,%d,s32,None
+Sword tip sword flash Damipoli ID_2,Sword Flash Sword Tip Damipoli ID_2,-1,99999999,8008,s32,1,%d,s32,None
+Sword Flash SfxID_3,Sword Flash SfxID_3 (-1 invalid),-1,99999999,8009,s32,1,%d,s32,None
+Root Sword Flash Damipoli ID_3,Sword flash root Damipoli ID_3 (-1 invalid),-1,99999999,8010,s32,1,%d,s32,None
+Sword tip sword flash Damipoli ID_3,Sword Flash Sword Tip Damipoli ID_3,-1,99999999,8011,s32,1,%d,s32,None
+Sword Flash SfxID_4,Sword Flash SfxID_4 (-1 invalid),-1,99999999,8012,s32,1,%d,s32,None
+Root Sword Flash Damipoli ID_4,Sword flash root Damipoli ID_4 (-1 invalid),-1,99999999,8013,s32,1,%d,s32,None
+Sword tip sword flash Damipoli ID_4,Sword Flash Sword Tip Damipoli ID_4,-1,99999999,8014,s32,1,%d,s32,None
+Sword Flash SfxID_5,Sword Flash SfxID_5 (-1 invalid),-1,99999999,8015,s32,1,%d,s32,None
+Root Sword Flash Damipoli ID_5,Sword Flash Root Damipoli ID_5 (-1 invalid),-1,99999999,8016,s32,1,%d,s32,None
+Sword tip sword flash Damipoli ID_5,Sword Flash Sword Tip Damipoli ID_5,-1,99999999,8017,s32,1,%d,s32,None
+Sword Flash SfxID_6,Sword Flash SfxID_6 (-1 invalid),-1,99999999,8018,s32,1,%d,s32,None
+Root Sword Flash Damipoli ID_6,Sword Flash Root Damipoli ID_6 (-1 invalid),-1,99999999,8019,s32,1,%d,s32,None
+Sword tip sword flash Damipoli ID_6,Sword Flash Sword Tip Damipoli ID_6,-1,99999999,8020,s32,1,%d,s32,None
+Sword Flash SfxID_7,Sword Flash SfxID_7 (-1 invalid),-1,99999999,8021,s32,1,%d,s32,None
+Root Sword Flash Damipoli ID_7,Sword Flash Root Damipoli ID_7 (-1 invalid),-1,99999999,8022,s32,1,%d,s32,None
+Sword tip sword flash Damipoli ID_7,Sword Flash Sword Tip Damipoli ID_7,-1,99999999,8023,s32,1,%d,s32,None
+4 radii per,Sphere, capsule radius,0,100,5703,f32,0.01,%f,f32,Wrap
+5 radii per,Sphere, capsule radius,0,100,5708,f32,0.01,%f,f32,Wrap
+6 radii per,Sphere, capsule radius,0,100,5713,f32,0.01,%f,f32,Wrap
+7 radii per,Sphere, capsule radius,0,100,5718,f32,0.01,%f,f32,Wrap
+8 radii per,Sphere, capsule radius,0,100,5723,f32,0.01,%f,f32,Wrap
+9 radii per,Sphere, capsule radius,0,100,5728,f32,0.01,%f,f32,Wrap
+10 radii per,Sphere, capsule radius,0,100,5733,f32,0.01,%f,f32,Wrap
+11 radii per,Sphere, capsule radius,0,100,5738,f32,0.01,%f,f32,Wrap
+12 radii per,Sphere, capsule radius,0,100,5743,f32,0.01,%f,f32,Wrap
+13 radii per,Sphere, capsule radius,0,100,5748,f32,0.01,%f,f32,Wrap
+14 radii per,Sphere, capsule radius,0,100,5753,f32,0.01,%f,f32,Wrap
+15 radii per,Sphere, capsule radius,0,100,5758,f32,0.01,%f,f32,Wrap
+4 per Damipoli 1,Damipoli in sphere, capsule position,-1,31999,5701,s16,1,%d,s16,Wrap
+5 per Damipoli 1,Damipoli in sphere, capsule position,-1,31999,5706,s16,1,%d,s16,Wrap
+6 per Damipoli 1,Damipoli in sphere, capsule position,-1,31999,5711,s16,1,%d,s16,Wrap
+7 per Damipoli 1,Damipoli in sphere, capsule position,-1,31999,5716,s16,1,%d,s16,Wrap
+8 Damipoli per 1,Damipoli in sphere, capsule position,-1,31999,5721,s16,1,%d,s16,Wrap
+9 per Damipoli 1,Damipoli in sphere, capsule position,-1,31999,5726,s16,1,%d,s16,Wrap
+10 per Damipoli 1,Damipoli in sphere, capsule position,-1,31999,5731,s16,1,%d,s16,Wrap
+Per 11 Damipoli 1,Damipoli in sphere, capsule position,-1,31999,5736,s16,1,%d,s16,Wrap
+12 per Damipoli 1,Damipoli in sphere, capsule position,-1,31999,5741,s16,1,%d,s16,Wrap
+13 Damipoli per 1,Damipoli in sphere, capsule position,-1,31999,5746,s16,1,%d,s16,Wrap
+Per 14 Damipoli 1,Damipoli in sphere, capsule position,-1,31999,5751,s16,1,%d,s16,Wrap
+15 per Damipoli 1,Damipoli in sphere, capsule position,-1,31999,5756,s16,1,%d,s16,Wrap
+4 per Damipoli 2,The position of another point on the capsule Damipoli. -1 makes it a sphere,-1,31999,5702,s16,1,%d,s16,Wrap
+5 Damipoli 2 per,The position of another point on the capsule Damipoli. -1 makes it a sphere,-1,31999,5707,s16,1,%d,s16,Wrap
+6 Damipoli 2 per,The position of another point on the capsule Damipoli. -1 makes it a sphere,-1,31999,5712,s16,1,%d,s16,Wrap
+7 Damipoli 2 per,The position of another point on the capsule Damipoli. -1 makes it a sphere,-1,31999,5717,s16,1,%d,s16,Wrap
+8 per Damipoli 2,The position of another point on the capsule Damipoli. -1 makes it a sphere,-1,31999,5722,s16,1,%d,s16,Wrap
+9 Damipoli per 2,The position of another point on the capsule Damipoli. -1 makes it a sphere,-1,31999,5727,s16,1,%d,s16,Wrap
+10 per Damipoli 2,The position of another point on the capsule Damipoli. -1 makes it a sphere,-1,31999,5732,s16,1,%d,s16,Wrap
+Per 11 Damipoli 2,The position of another point on the capsule Damipoli. -1 makes it a sphere,-1,31999,5737,s16,1,%d,s16,Wrap
+12 per Damipoli 2,The position of another point on the capsule Damipoli. -1 makes it a sphere,-1,31999,5742,s16,1,%d,s16,Wrap
+Per 13 Damipoli 2,The position of another point on the capsule Damipoli. -1 makes it a sphere,-1,31999,5747,s16,1,%d,s16,Wrap
+Per 14 Damipoli 2,The position of another point on the capsule Damipoli. -1 makes it a sphere,-1,31999,5752,s16,1,%d,s16,Wrap
+15 per Damipoli 2,The position of another point on the capsule Damipoli. -1 makes it a sphere,-1,31999,5757,s16,1,%d,s16,Wrap
+4 parts per,Hit part,0,255,5704,u8,1,%d,ATK_PARAM_HIT_TYPE,Wrap
+5 parts per,Hit part,0,255,5709,u8,1,%d,ATK_PARAM_HIT_TYPE,Wrap
+6 parts per,Hit part,0,255,5714,u8,1,%d,ATK_PARAM_HIT_TYPE,Wrap
+7 parts per,Hit part,0,255,5719,u8,1,%d,ATK_PARAM_HIT_TYPE,Wrap
+8 parts per,Hit part,0,255,5724,u8,1,%d,ATK_PARAM_HIT_TYPE,Wrap
+9 parts per,Hit part,0,255,5729,u8,1,%d,ATK_PARAM_HIT_TYPE,Wrap
+10 parts per,Hit part,0,255,5734,u8,1,%d,ATK_PARAM_HIT_TYPE,Wrap
+11 parts per,Hit part,0,255,5739,u8,1,%d,ATK_PARAM_HIT_TYPE,Wrap
+12 parts per,Hit part,0,255,5744,u8,1,%d,ATK_PARAM_HIT_TYPE,Wrap
+13 parts per,Hit part,0,255,5749,u8,1,%d,ATK_PARAM_HIT_TYPE,Wrap
+14 parts per,Hit part,0,255,5754,u8,1,%d,ATK_PARAM_HIT_TYPE,Wrap
+15 parts per,Hit part,0,255,5759,u8,1,%d,ATK_PARAM_HIT_TYPE,Wrap
+4 priorities per,priority. If there are two or more hits at the same time, the one with the higher priority will be adopted.,0,255,5705,u8,1,%d,u8,Wrap, Lock
+5 priorities per,priority. If there are two or more hits at the same time, the one with the higher priority will be adopted.,0,255,5710,u8,1,%d,u8,Wrap, Lock
+6 priorities per,priority. If there are two or more hits at the same time, the one with the higher priority will be adopted.,0,255,5715,u8,1,%d,u8,Wrap, Lock
+7 priorities per,priority. If there are two or more hits at the same time, the one with the higher priority will be adopted.,0,255,5720,u8,1,%d,u8,Wrap, Lock
+8 priorities per,priority. If there are two or more hits at the same time, the one with the higher priority will be adopted.,0,255,5725,u8,1,%d,u8,Wrap, Lock
+9 priorities per,priority. If there are two or more hits at the same time, the one with the higher priority will be adopted.,0,255,5730,u8,1,%d,u8,Wrap, Lock
+10 priorities per,priority. If there are two or more hits at the same time, the one with the higher priority will be adopted.,0,255,5735,u8,1,%d,u8,Wrap, Lock
+11 priorities per,priority. If there are two or more hits at the same time, the one with the higher priority will be adopted.,0,255,5740,u8,1,%d,u8,Wrap, Lock
+12 priorities per,priority. If there are two or more hits at the same time, the one with the higher priority will be adopted.,0,255,5745,u8,1,%d,u8,Wrap, Lock
+13 priorities per,priority. If there are two or more hits at the same time, the one with the higher priority will be adopted.,0,255,5750,u8,1,%d,u8,Wrap, Lock
+14 priorities per,priority. If there are two or more hits at the same time, the one with the higher priority will be adopted.,0,255,5755,u8,1,%d,u8,Wrap, Lock
+15 priorities per,priority. If there are two or more hits at the same time, the one with the higher priority will be adopted.,0,255,5760,u8,1,%d,u8,Wrap, Lock
+Defensive material 1 [SFX],Used for SFX when guarding. 1,0,9999,1800,u16,1,%d,WEP_MATERIAL_DEF_SFX,Wrap
+Defensive material 2 [SE],Used for SE when guarding 2,0,9999,2001,u16,1,%d,WEP_MATERIAL_DEF,Wrap
+Defensive material 2 [SFX],Used for SFX when guarding. 2,0,9999,1801,u16,1,%d,WEP_MATERIAL_DEF_SFX,Wrap
+Dark attack power correction value,PC only. Multiply the dark attack power (in the case of a bow, correct the missile),0,60000,2520,u16,1,%d,u16,Wrap
+Dark attack power,NPCs only. Additional damage from dark attacks,0,9999,820,u16,1,%d,u16,Wrap
+pad,pad,,,12003,dummy8,,%d,dummy8,Wrap
+Attack contact parry judgment invalid,This is a flag to disable the new parry control. A process that determines that the damage on the attacking side has been parried when it comes into contact with a character in the parry state on the defending side.,0,1,1450,u8,1,%d,ATK_PARAM_BOOL,Wrap
+Is the attack power bonus invalid when holding both hands?,Avoid using the 1.5x growth status adaptation with both hands,0,1,450,u8,1,%d,ATK_PARAM_BOOL,Wrap
+Will it be disabled with limited invincibility (only in the air)?,If "Do you want to penetrate invincibility" is ◯, this setting will be ignored.,0,1,350,u8,1,%d,ATK_PARAM_BOOL,Wrap
+pad1,,,,12004,dummy8,,,dummy8,None
+Damage level vs. player,Damage level to the player. If it is "0 (default)", it is not used. The meaning of the range other than "0 (default)" is the same as "Damage level".,0,12,110,s8,1,%d,ATKPARAM_REP_DMGTYPE,Wrap
+Abnormal state attack power magnification correction,Magnification correction is performed for the abnormal state attack power of special effects.,0,60000,3120,u16,1,%d,u16,Wrap
+Special effects attack power multiplier correction (attack power points),Magnification correction is performed for the special effect ~ ~ attack power [point].,0,60000,3122,u16,1,%d,u16,Wrap
+Special effect attack power multiplier correction (attack power multiplier),Magnification is corrected for the special effect's attack power multiplier.,0,60000,3123,u16,1,%d,u16,Wrap
+Special effect attack power multiplier correction (final attack power multiplier),Attack side of special effect: ~ ~ Performs magnification correction for damage multiplier.,0,60000,3124,u16,1,%d,u16,Wrap
+Behavior identification value 2,Behavior identification value: Plays damage motion only at specific times,0,255,9010,u8,1,%d,ATKPARAM_BEHAVIOR_ID,Wrap
+Throw damage attribute,Attribute of throw damage of attack judgment. Corresponding special effects will be applied. It works only when the attack ATK_PATAM_THROWFLAG_TYPE is "2: Throw".,0,1,3625,u8,1,%d,ATKPARAM_THROWATTR_TYPE,Wrap
+Special effect status abnormality correction (attack power point),Magnification correction is performed for the special effect "Whether to apply the abnormal state attack power magnification correction".,0,60000,3121,u16,1,%d,u16,Wrap
+Attack attribute correction ID overwrite,For overwriting the ID of the parameter that corrects the attack attribute,-1,999999999,10000,s32,1,%d,s32,Wrap
+Decal identifier 1,Decal identifier 1 (3 digits),-1,999,2120,s16,1,%d,s16,Wrap
+Decal identifier 2,Decal identifier 2 (3 digits),-1,999,2130,s16,1,%d,s16,Wrap
+Weapon regain amount correction value,Weapon regain amount correction value,0,60000,3150,u16,1,%d,u16,Wrap
+Amount of attack regain,Amount of attack regain,0,60000,3151,u16,1,%d,u16,Wrap
+Regainable time correction factor,Regainable time correction factor,0,10,3160,f32,0.01,%f,f32,Wrap
+Regainable rate correction factor,Regainable rate correction factor,0,1,3170,f32,0.01,%f,f32,Wrap
+Same attack judgment ID,Same attack judgment ID,-1,15,3180,s8,1,%d,s8,Wrap
+Special attribute variation value,Value for giving variation to SFX and SE generated by special attribute in combination with "special attribute" (SEQ16473),0,99,1521,u8,1,%d,u8,Wrap
+Front angle offset of parry establishment condition,Front angle offset of [collapsed side] of parry establishment condition,-180,180,1480,s16,1,%d,s16,Wrap
+SA attack power correction value,PC only. Correction value to be applied to the [basic value] set for the weapon,0,60000,3110,f32,0.1,%f,f32,Wrap
+Defensive material variation value,A value to have variations of damage SFX and SE in combination with "defense material 1 or 2" used when guarding. (SEQ16473),0,99,1802,u8,1,%d,u8,Wrap
+pad,,,,12005,dummy8,,,dummy8,None

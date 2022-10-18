@@ -1,0 +1,9 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| paramName || Material parameter name || Set the parameter name of the material. Up to 31 characters || - ||
+|| materialId || Target material ID || NPC Para: Resident Material Expansion Para ID setting -1 for all materials || - ||
+|| materialParamValue0 || Overwrite value 1 (R) || NPC Para: Resident Material Extended Para ID Settings || - ||
+|| materialParamValue1 || Overwrite value 2 (G) || NPC Para: Resident Material Expansion Para ID Settings || - ||
+|| materialParamValue2 || Overwrite value 3 (B) || NPC Para: Resident Material Expansion Para ID Settings || - ||
+|| materialParamValue3 || Overwrite value 4 (A) || NPC Para: Resident Material Extended Para ID Settings || - ||
+|| materialParamValue4 || Overwrite value 5 (I) || NPC Para: Resident Material Expansion Para ID Settings || - ||
+|| pad || Padding || Padding || - ||

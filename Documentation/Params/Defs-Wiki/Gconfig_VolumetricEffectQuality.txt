@@ -1,0 +1,18 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| fogEnabled || Fog enabled || Fog enabled || ON_OFF ||
+|| fogShadowEnabled || Fog shadow permission || Fog shadow permission || ON_OFF ||
+|| dmy || dmy || dmy || - ||
+|| fogShadowSampleCountBias || Shadow sample count offset. || Shadow sample count offset. || - ||
+|| fogLocalLightDistScale || Local light calculation distance scale (0 does not calculate local light) || Local light calculation distance scale (0 does not calculate local light) || - ||
+|| fogVolueSizeScaler || Fog volume size scaler || Fog volume size scaler || - ||
+|| fogVolueSizeDivider || Fog volume size division || Fog volume size division || - ||
+|| fogVolumeDepthScaler || Fog Volume Depth Slice Scaler || Fog Volume Depth Slice Scaler || - ||
+|| fogVolumeDepthDivider || Fog volume depth slice division || Fog volume depth slice division || - ||
+|| fogVolumeEnabled || Arranged fog volume enabled || Arranged fog volume enabled || ON_OFF ||
+|| fogVolumeUpScaleType || Upscale type || Method type at the time of upscale || GRAPHICS_CONFIG_CS_GCONFIG_FOG_VOLUME_UPSCALE_TYPE ||
+|| fogVolumeEdgeCorrectionLevel || Edge correction level performed only when bilateral || Edge correction level performed only at bilateral (0: invalid, edge redraw permission at 1: 1 / 2x1 / 2 resolution, edge redraw permission with parameter reduction at 2: 1 / 2x1 / 2 + 1x1 resolution, 3 : 1 / 2x1 / 2 + 1x1 resolution edge redraw permission) || GRAPHICS_CONFIG_CS_GCONFIG_FOG_VOLUME_EDGE_CORRECTION_LEVEL ||
+|| fogVolumeRayMarcingSampleCountOffset || Offset of sampling number during ray marching || Offset of sampling number during ray marching || - ||
+|| fogVolumeShadowEnabled || Shadow permission || Shadow permission (refers to shadow processing due to density changes in the area, where shadows are cast on the area) || ON_OFF ||
+|| fogVolumeForceShadowing || Forcibly casts a shadow on the area regardless of the setting when shadow is allowed || Forcibly casts a shadow on the area regardless of the setting when shadow is permitted (shadow processing is not affected) || ON_OFF ||
+|| fogVolumeResolution || Fog volume upscale processing resolution ||  || GRAPHICS_CONFIG_CS_GCONFIG_FOG_VOLUME_RESOLUTION ||
+|| pad2 || pad ||  || - ||

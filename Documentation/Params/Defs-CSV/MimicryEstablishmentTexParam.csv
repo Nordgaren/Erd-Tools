@@ -1,0 +1,10 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,201,dummy8,,,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,202,dummy8,,,dummy8,None
+R,Color information (R) of the map image before conversion. Pixels with matching RGB values are associated with this parameter,0,255,110,u8,1,%u,u8,None
+G,Color information (G) of the map image before conversion. Pixels with matching RGB values are associated with this parameter,0,255,120,u8,1,%u,u8,None
+B,Color information (B) of the map image before conversion. Pixels with matching RGB values are associated with this parameter,0,255,130,u8,1,%u,u8,None
+pad,pad. For the time being, leave it open for "image color information (A)",,,203,dummy8,,,dummy8,None
+Mimicry probability parameter ID by map,Mimicry probability parameter ID by map (-1: No setting (default value)). The area is combined with Map Studio,-1,999999999,200,s32,1,%d,s32,None
+Pad 2,,,,204,dummy8,,,dummy8,None

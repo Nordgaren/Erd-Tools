@@ -1,0 +1,285 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| baseToughnessRecoverTime || Basic toughness durability recovery time || This is the basic value of toughness recovery time. (Seconds) || - ||
+|| chrEventTrun_byLeft90 || Character event turning animation (90 ° left) || This is a 90 ° left turn animation for the "Character Turn" event. || - ||
+|| chrEventTrun_byRight90 || Character event turning animation (right 90 °) || This is a 90 ° right turn animation for the "Character Turn" event. || - ||
+|| chrEventTrun_byLeft180 || Character event turning animation (180 ° left) || This is a 180 ° left turn animation for the "Character Turn" event. || - ||
+|| chrEventTrun_byRight180 || Character event turning animation (right 180 °) || This is a 180 ° right turn animation for the "Character Turn" event. || - ||
+|| chrEventTrun_90TurnStartAngle || Character event turning 90 ° Animation start angle || The starting angle of the angle to which the 90 ° swivel animation for the "Character Swirl" event is applied. If the event starts at an angle smaller than this angle, a system turn will occur. || - ||
+|| chrEventTrun_180TurnStartAngle || Character event turning 180 ° Animation start angle || The starting angle of the angle to which the 180 ° swivel animation for the "Character Swirl" event is applied. || - ||
+|| stealthAtkDamageRate || Stealth attack damage multiplier || Stealth attack damage multiplier || - ||
+|| flickDamageCutRateSuccessGurad || Damage cut rate when the guard is successful when repelled || Damage cut rate when the guard is successful when repelled. Multiply the final damage || - ||
+|| npcTalkAnimBeginDiffAngle || Difference angle to start playing NPC conversation animation || This is the difference angle at which the animation playback of the motion during the conversation of the NPC conversation starts. || - ||
+|| npcTalkAnimEndDiffAngle || Difference angle to stop animation playback of NPC conversation || This is the difference angle at which the animation playback of the motion during the conversation of the NPC conversation is stopped. || - ||
+|| sleepCollectorItemActionButtonParamId || Nemuri Item Acquisition Range_Action Button Para ID || Nemuri Item Acquisition Range_Action Button Para ID. TAE flag Used as the default value when not overwriting with "Event> Nemuri item registration". || - ||
+|| allowUseBuddyItem_sfxInterval || Buddy item permission_SFX occurrence interval [s] || Buddy item permission_SFX occurrence interval [s] || - ||
+|| allowUseBuddyItem_sfxDmyPolyId || Buddy Item Permission_SFX Occurrence PC Damipoli ID || Buddy Item Permission_SFX Occurrence PC Damipoli ID || - ||
+|| allowUseBuddyItem_sfxDmyPolyId_horse || Buddy item permission_SFX generated horse Damipoli ID_when riding || Buddy item permission_SFX generated horse Damipoli ID_when riding || - ||
+|| allowUseBuddyItem_sfxId || Buddy Item Permission_Occurrence SFXID || Buddy Item Permission_Occurrence SFXID || - ||
+|| onBuddySummon_inActivateRange_sfxInterval || Buddy Summoning_Initial Range_SFX Occurrence Interval [s] || Buddy Summoning_Initial Range_SFX Occurrence Interval [s] || - ||
+|| onBuddySummon_inActivateRange_sfxDmyPolyId || Buddy Summoning_Initial Range_SFX Occurrence PC Damipoli ID || Buddy Summoning_Initial Range_SFX Occurrence PC Damipoli ID || - ||
+|| onBuddySummon_inActivateRange_sfxDmyPolyId_horse || Buddy Summoning_Initial Range_SFX Generated Horse Damipoli ID_When Riding || Buddy Summoning_Initial Range_SFX Generated Horse Damipoli ID_When Riding || - ||
+|| onBuddySummon_inActivateRange_sfxId || Buddy Summoning_Initial Range_Occurrence SFXID || Buddy Summoning_Initial Range_Occurrence SFXID || - ||
+|| onBuddySummon_inActivateRange_spEffectId_pc || Buddy Summoning_Initial range Special effect ID_For PC || Buddy Summoning_Initial range Special effect ID_For PC || - ||
+|| onBuddySummon_inWarnRange_spEffectId_pc || Buddy Summoning_Warning Range Special Effect ID_For PC || Buddy Summoning_Warning Range Special Effect ID_For PC || - ||
+|| onBuddySummon_atBuddyUnsummon_spEffectId_pc || Buddy Summoning_Buddy Return Special Effect ID_For PC || Buddy Summoning_Buddy Return Special Effect ID_For PC || - ||
+|| onBuddySummon_inWarnRange_spEffectId_buddy || Buddy Summoning_Warning Range Special Effect ID_For Buddy || Buddy Summoning_Warning Range Special Effect ID_For Buddy || - ||
+|| morningIngameHour || Morning in-game time (hours) || Morning in-game time (hours). Used in conversation. || - ||
+|| morningIngameMinute || Morning in-game time (minutes) || Morning in-game time (minutes). Used in conversation. || - ||
+|| morningIngameSecond || Morning in-game time (seconds) || Morning in-game time (seconds). Used in conversation. || - ||
+|| noonIngameHour || Daytime in-game time (hours) || Daytime in-game time (hours). Used in conversation. || - ||
+|| noonIngameMinute || Daytime in-game time (minutes) || Daytime in-game time (minutes). Used in conversation. || - ||
+|| noonIngameSecond || Daytime in-game time (seconds) || Daytime in-game time (seconds). Used in conversation. || - ||
+|| nightIngameHour || Night in-game time (hours) || Night in-game time (hours). Used in conversation. || - ||
+|| nightIngameMinute || Night in-game time (minutes) || Night in-game time (minutes). Used in conversation. || - ||
+|| nightIngameSecond || Night in-game time (seconds) || Night in-game time (seconds). Used in conversation. || - ||
+|| aiSightRateStart_Morning_Hour || AI visibility magnification_morning_start time (hour) || AI visibility magnification_morning_start time (hour) || - ||
+|| aiSightRateStart_Morning_Minute || AI visibility magnification_morning_start time (minutes) || AI visibility magnification_morning_start time (minutes) || - ||
+|| aiSightRateStart_Noon_Hour || AI visibility magnification_day_start time (hour) || AI visibility magnification_day_start time (hour) || - ||
+|| aiSightRateStart_Noon_Minute || AI visibility magnification_day_start time (minutes) || AI visibility magnification_day_start time (minutes) || - ||
+|| aiSightRateStart_Evening_Hour || AI visibility magnification_evening_start time (hour) || AI visibility magnification_evening_start time (hour) || - ||
+|| aiSightRateStart_Evening_Minute || AI visibility magnification_evening_start time (minutes) || AI visibility magnification_evening_start time (minutes) || - ||
+|| aiSightRateStart_Night_Hour || AI visibility magnification_night_start time (hour) || AI visibility magnification_night_start time (hour) || - ||
+|| aiSightRateStart_Night_Minute || AI visibility magnification_night_start time (minutes) || AI visibility magnification_night_start time (minutes) || - ||
+|| aiSightRateStart_Midnight_Hour || AI visibility magnification_midnight_start time (hour) || AI visibility magnification_midnight_start time (hour) || - ||
+|| aiSightRateStart_Midnight_Minute || AI visibility magnification_midnight_start time (minutes) || AI visibility magnification_midnight_start time (minutes) || - ||
+|| saLargeDamageHitSfx_Threshold || SA large damage hit production SFX_ Occurrence condition SA damage threshold ratio [%] || SA large damage hit production SFX_ Occurrence condition SA damage threshold ratio [%] || - ||
+|| saLargeDamageHitSfx_SfxId || SA heavy damage hit production SFX_SFXID || SA heavy damage hit production SFX_SFXID || - ||
+|| signCreatableDistFromSafePos || Distance to create a sign away from a safe position [m] || Distance at which you can create a sign away from the last safe position on your PC [m] || - ||
+|| guestResummonDist || Distance between host and guest where resummoning occurs [m] || Distance between host and guest where resummoning occurs [m] || - ||
+|| guestLeavingMessageDistMax || Distance to notify the guest that they are about to leave the host [m] || Distance [m] to notify the guest that they are about to leave the host. Notify me when I'm farther than this distance. || - ||
+|| guestLeavingMessageDistMin || Distance that allows guests to be re-notified that they are about to leave the host [m] || Distance [m] that allows the guest to be re-notified that they are about to leave the host. Do not re-notify until closer than this distance. || - ||
+|| guestLeaveSessionDist || Maximum distance the guest can be away from the host [m] || Maximum distance [m] that a guest can leave the host. If a certain period of time elapses while the distance is longer than this distance, the session will be withdrawn. || - ||
+|| retryPointAreaRadius || Retry area radius_default value (m) || Retry area radius_default value (m). It is used as the default value when the radius and area are not set in the event type "Retry Point" of MapStudio. || - ||
+|| sleepCollectorSpEffectId || Special effect ID that activates when Nemuri items can be acquired || A special effect ID that activates when a Nemuri item can be acquired. TAE flag Used as the default value when not overwriting with "Event> Nemuri item registration". || - ||
+|| recoverBelowMaxHpCompletionNoticeSpEffectId || "Recover below HP maximum" Special effect completion notification Special effect ID || ID of the special effect that notifies that "Recovery below HP maximum" is completed. Mainly used for multi synchronization. || - ||
+|| estusFlaskRecovery_AbsorptionProductionSfxId_byHp || HP Est absorption production SFXID || Absorption effect SFXID when recovering the number of times the HP Est bottle has been used when defeating an intruder || - ||
+|| estusFlaskRecovery_AbsorptionProductionSfxId_byMp || MP Est Absorption Production SFXID || Absorption effect SFXID when recovering the number of times the MP Est bottle has been used when defeating an intruder || - ||
+|| respawnSpecialEffectActiveCheckerSpEffectId || Special effect ID for determining the activation of the resurrection special effect || ID of the special effect that notifies that the resurrection special effect has been activated. Mainly used for multi synchronization. || - ||
+|| onBuddySummon_inActivateRange_spEffectId_buddy || Buddy Summoning_Initial Range Special Effect ID_For Buddy || Buddy Summoning_Initial Range Special Effect ID_For Buddy || - ||
+|| estusFlaskRecovery_AddEstusTime || Time from the start of est absorption SFX playback to the start of est addition processing || Time from the start of est absorption SFX playback to the start of est addition processing || - ||
+|| defeatMultiModeEnemyOfSoulCorrectRate_byHost || Soul correction value acquired when defeating enemies at multi time_host || Correction value of the amount of soul acquired by the host when defeating a normal enemy in multiplayer || - ||
+|| defeatMultiModeEnemyOfSoulCorrectRate_byTeamGhost || Soul correction value acquired when defeating enemies at multi time_cooperative spirit || Correction value of the amount of soul acquired by cooperating spirits when defeating a normal enemy in multiplayer || - ||
+|| defeatMultiModeBossOfSoulCorrectRate_byHost || Soul correction value acquired when defeating the boss at the time of multi _ host || Correction value of the amount of soul acquired by the host when defeating the boss in multiplayer || - ||
+|| defeatMultiModeBossOfSoulCorrectRate_byTeamGhost || Soul correction value acquired when defeating the boss at the time of multi _ cooperation spirit || Correction value of the amount of soul acquired when the boss is defeated in multiplayer || - ||
+|| enemyHpGaugeScreenOffset_byUp || Offset to prevent the HP gauge of the enemy character from being cut off on the screen || Offset value [pixel] (FullHD standard) that fits in the screen when the enemy's HP gauge is cut off on the screen || - ||
+|| playRegionCollectDist || Play area collection radius || Collection radius of the play area around the PC || - ||
+|| enemyDetectionSpEffect_ShootBulletDummypolyId || Bullet firing position during "enemy detection" Damipoli ID || Detect bullet firing position Damipoli ID || - ||
+|| bigRuneGreaterDemonBreakInGoodsNum || Large Rune: Number of tools granted when the Greater Demon invades || Large Rune: Number of tools granted when the Greater Demon invades || - ||
+|| bigRuneGreaterDemonBreakInGoodsId || Large Rune: Greater Demon Invasion Tool Item ID || Large Rune: Greater Demon Invasion Tool Item ID || - ||
+|| rideJumpRegionDefaultSfxId || Large jump area SFXID || SFX ID in the riding large jump area || - ||
+|| saAttackRate_forVsRideAtk || Common_Riding special attack magnification || Magnification to be corrected at the time of riding special attack || - ||
+|| enemySpEffectIdAfterSleepCollectorItemLot || Special effects on the enemy side when drawing Nemuri items || Special effects on the enemy side when drawing Nemuri items || - ||
+|| afterEndingMapUid || Map UID on hold || Map UID on hold for lap, enter in 8 digits (example ... m60_42_36_00-> 60423600) || - ||
+|| afterEndingReturnPointEntityId || Return point when lap is on hold || Entity ID of return point on hold || - ||
+|| enemyDetectionSpEffect_BulletId_byCoopRing_RedHunter || Bullet ID_cooperation ring_red hunting fired during "enemy detection" || Bullet ID to fly depending on enemy power / type (also used for multi-automatic firing) || - ||
+|| enemyDetectionSpEffect_BulletId_byInvadeOrb_None || No bullet ID_invasion orb_ fired during "enemy detection" || Bullet ID to fly depending on enemy power / type (also used for multi-automatic firing) || - ||
+|| tutorialFlagOnAccessDistView || For tutorial judgment: Event flag to turn on when accessing the distant view || For tutorial judgment: Event flag to turn on when accessing the distant view || - ||
+|| tutorialFlagOnAccessRetryPoint || For tutorial judgment: Event flag to turn on when accessing the retry point || For tutorial judgment: Event flag to turn on when accessing the retry point || - ||
+|| tutorialFlagOnGetGroupReward || For tutorial judgment: Event flag to turn on when group reward is entered after defeating a group || For tutorial judgment: Event flag to turn on when group reward is entered after defeating a group || - ||
+|| tutorialFlagOnEnterRideJumpRegion || For tutorial judgment: Event flag to turn on when entering the riding big jump point || For tutorial judgment: Event flag to turn on when entering the riding big jump point || - ||
+|| tutorialCheckRideJumpRegionExpandRange || For tutorial judgment: Expand the riding large jump point by ○ [m] to judge inside and outside || For tutorial judgment: The riding large jump point is expanded by ○ [m] to judge inside and outside. ○ Set the value of [m] here. || - ||
+|| retryPointActivatedPcAnimId || PC animation ID when retry point is activated || PC animation ID when retry point is started. If it is -1, it will not be played. || - ||
+|| retryPointActivatedDialogDelayTime || Delay time of dialog display when retry point is started [seconds] || Delay time of dialog display when retry point is started [seconds] || - ||
+|| retryPointActivatedDialogTextId || Text ID of the dialog when starting the retry point || The text ID of the dialog when the retry point is started. Set the text in EventText_ForMap.xlsm. If it is -1, the dialog is not displayed. || - ||
+|| signPuddleOpenPcAnimId || PC animation ID at the time of sign accumulation startup || PC animation ID at the time of sign accumulation startup. If it is -1, it will not be played. || - ||
+|| signPuddleOpenDialogDelayTime || Delay time of dialog display at startup of sign accumulation [seconds] || Delay time of dialog display at startup of sign accumulation [seconds] || - ||
+|| activityOfDeadSpEffect_BulletId || Bullet ID when the "Activity of the Dead" special effect is activated || Bullet ID fired when the "Activity of the Dead" special effect is activated || - ||
+|| activityOfDeadSpEffect_ShootBulletDummypolyId || Bullet generation position when the "Activity of the Dead" special effect is activated Damipoli ID || Damipoli ID at the position where the bullet is generated when the "Activity of the Dead" special effect is activated || - ||
+|| activityOfDeadSpEffect_DeadFadeOutTime || Fade out time of the corpse when the "Activity of the Dead" special effect is activated || Fade time when the corpse fades out when the "Activity of the Dead" special effect is activated || - ||
+|| ignorNetStateSyncTime_ForThrow || Time to ignore transitions due to network information at the start of throwing || Time to ignore transitions due to network information at the start of throwing || - ||
+|| netPenaltyPointLanDisconnect || Multi-pre-penalty: LAN disconnection || Multi-pre-penalty: LAN disconnection || - ||
+|| netPenaltyPointProfileSignout || Multi-pre-penalty: Profile sign-out || Multi-pre-penalty: Profile sign-out || - ||
+|| netPenaltyPointReboot || Multi-pre-penalty: Power off || Multi-pre-penalty: Power off || - ||
+|| netPnaltyPointSuspend || Multi-pre-penalty: Suspend / Pause || Multi-pre-penalty: Suspend / Pause || - ||
+|| netPenaltyForgiveItemLimitTime || Multi-pre-penalty: Waiting time to start the generation (sale) of the bone of reason || Multi-pre-penalty: Waiting time (seconds) to start the generation (sale) of the bone of reason || - ||
+|| netPenaltyPointThreshold || Multi-pre-penalty: Penalty judgment points || Multi-pre-penalty: Penalty judgment points || - ||
+|| uncontrolledMoveThresholdTime || No operation judgment time || It is for leaving people who have not operated for a certain period of time in multiplayer. The unit is seconds. || - ||
+|| enemyDetectionSpEffect_BulletId_byNpcEnemy || Bullet ID_hostile NPC / enemy character fired during "enemy detection" || Bullet ID to shoot to hostile NPCs / enemy characters when hostility detection fails || - ||
+|| activityOfDeadTargetSearchSpEffect_OnHitSpEffect || Special effect ID to be applied to the target of "Activity target search of the dead" || Special effects applied to the searched target || - ||
+|| activityOfDeadTargetSearchSpEffect_MaxLength || "Search for active targets of the dead" distance || Maximum searchable distance || - ||
+|| sightRangeLowerPromiseRate || Field of view_Minimum guaranteed distance [magnification conversion] || Field of view_Minimum guaranteed distance [magnification conversion] || - ||
+|| saLargeDamageHitSfx_MinDamage || SA large damage hit production SFX_ Occurrence condition SA damage minimum required [pt] || SA large damage hit production SFX_ Occurrence condition SA damage minimum required [pt] || - ||
+|| saLargeDamageHitSfx_ForceDamage || SA large damage hit production SFX_ Occurrence condition SA damage forced occurrence minimum value [pt] || SA large damage hit production SFX_ Occurrence condition SA damage forced occurrence minimum value [pt] || - ||
+|| soloBreakInMaxPoint || Maximum solo intrusion point || Maximum solo intrusion point. When this value is exceeded, it will be invaded solo. || - ||
+|| npcTalkTimeOutThreshold || NPC conversation voice playback timeout time || Voice playback timeout for NPC conversations. If voice playback does not end after this time, proceed to the next message. || - ||
+|| sendPlayLogIntervalTime || Playlog transmission interval || Interval to send item usage log etc. to the server || - ||
+|| item370_MaxSfxNum || Maximum number of seven-colored stones installed || Maximum number of seven-colored stones installed || - ||
+|| chrActivateDist_forLeavePC || Distance allowed to activate during character deactivation [m] || Distance allowed to activate during character deactivation (valid only for open placement characters) || - ||
+|| summonDataCoopMatchingLevelUpperAbs || Multi-weakening level correction factor 1 || Weakened stats when multiplayer. Host level addition correction || - ||
+|| summonDataCoopMatchingLevelUpperRel || Multi-weakening level correction factor 2 || Weakened stats when multiplayer. Host level magnification correction || - ||
+|| summonDataCoopMatchingWepLevelMul || Multi-weapon maximum weapon correction factor || Weakened stats when multiplayer. Maximum weapon enhancement level correction || - ||
+|| pickUpBerserkerSignSpEffectBulletId || Bullet ID for the effect when picking up the Berserker sign || Bullet ID when generating a bullet for special effects at the sign position || - ||
+|| succeedBerserkerSelfKillingEffectId || Berserker succeeds in killing PC by himself Special effect ID for directing || Special effect to play a special effect when Berserker succeeds in killing the PC by himself || - ||
+|| machingLevelWhiteSignUpperRel || Level sync application coefficient of determination 1 white || Soul level coefficient of whether to apply level sync || - ||
+|| machingLevelWhiteSignUpperAbs || Level sync application coefficient of determination 2 white || Soul level coefficient of whether to apply level sync || - ||
+|| machingLevelRedSignUpperRel || Level sync application coefficient of determination 1 red || Soul level coefficient of whether to apply level sync || - ||
+|| machingLevelRedSignUpperAbs || Level sync application coefficient of determination 2 red || Soul level coefficient of whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_0 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 0 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_1 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 1 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_2 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 2 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_3 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 3 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_4 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 4 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_5 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 5 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_6 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 6 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_7 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 7 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_8 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 8 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_9 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 9 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_10 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 10 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_0 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 0 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_1 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 1 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_2 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 2 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_3 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 3 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_4 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 4 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_5 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 5 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_6 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 6 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_7 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 7 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_8 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 8 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_9 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 9 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_10 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 10 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| autoInvadePoint_generateDist || Automatic placement interval of intrusion points || Automatic placement interval of intrusion points || - ||
+|| autoInvadePoint_cancelDist || Intrusion point automatic placement cancellation range || Intrusion point automatic placement cancellation range || - ||
+|| sendGlobalEventLogIntervalTime || Global event log transmission interval || Interval to send global event log to server || - ||
+|| addSoloBreakInPoint_White || Solo intrusion point addition value_white sign || Solo intrusion point addition value_white sign || - ||
+|| addSoloBreakInPoint_Black || Solo intrusion point addition value_red sign || Solo intrusion point addition value_red sign || - ||
+|| addSoloBreakInPoint_ForceJoin || Solo intrusion point addition value_intrusion || Solo intrusion point addition value_intrusion || - ||
+|| addSoloBreakInPoint_VisitorGuardian || Solo intrusion point addition value_Map guardian visit || Solo intrusion point addition value_Map guardian visit || - ||
+|| addSoloBreakInPoint_VisitorRedHunter || Solo intrusion point addition value_Red Scare visit || Solo intrusion point addition value_Red Scare visit || - ||
+|| invincibleTimer_forNetPC_initSync || Invincible timer for initial sync PC || Invincible timer for initial sync PC || - ||
+|| invincibleTimer_forNetPC || Invincible timer for non-initial sync PCs || Invincible timer for non-initial sync PCs || - ||
+|| redHunter_HostBossAreaGetSoulRate || [Red Scare] Soul rate received when the host passes through the white door || Soul that you can get red hunting when the host passes through the white door = Soul required for red hunting to change from the previous Lv to the current Lv * This magnification || - ||
+|| ghostFootprintDecalParamId || Decal parameter ID of the trace of wandering illusion || Decal parameter ID of the trace that the wandering illusion puts out while moving || - ||
+|| leaveAroundHostWarningTime || Counting time for warning message display outside the multiplayer limit [seconds] || If this count time elapses while you are out of the multiplayer limit distance, the multiplayer will be disbanded. || - ||
+|| hostModeCostItemId || Hosting cost Item ID || ID of the cost item consumed when hosting is turned on || - ||
+|| aIJump_DecelerateParam || AI jump deceleration parameter || Deceleration parameters for AI jump (0.0: constant velocity motion, 1.0: maximum deceleration, speed 0 at target point) || - ||
+|| buddyDisappearDelaySec || Buddy Instance Deletion Guarantee Time || The time from the death flag to the actual disappearance of the instance || - ||
+|| aIJump_AnimYMoveCorrectRate_onJumpOff || AI jump jumping Y movement amount correction factor || AI jump jumping Y movement amount correction factor || - ||
+|| stealthSystemSightRate_NotInStealthRigid_NotSightHide_StealthMode || Stealth visibility magnification_Crouching without stealth effect || Stealth visibility magnification_Crouching without stealth effect || - ||
+|| stealthSystemSightRate_NotInStealthRigid_SightHide_NotStealthMode || Stealth visibility magnification_Standing in stealth ray shielded area || Stealth visibility magnification_Standing in stealth ray shielded area || - ||
+|| stealthSystemSightRate_NotInStealthRigid_SightHide_StealthMode || Stealth visibility magnification_Crouching in stealth ray shielded area || Stealth visibility magnification_Crouching in stealth ray shielded area || - ||
+|| stealthSystemSightRate_InStealthRigid_NotSightHide_NotStealthMode || Stealth visibility magnification_Standing within a stealth hit || Stealth visibility magnification_Standing within a stealth hit || - ||
+|| stealthSystemSightRate_InStealthRigid_NotSightHide_StealthMode || Stealth visibility magnification_Crouching within a stealth hit || Stealth visibility magnification_Crouching within a stealth hit || - ||
+|| stealthSystemSightRate_InStealthRigid_SightHide_NotStealthMode || Stealth visibility magnification_Stealth ray shielded area + standing in stealth hit || Stealth visibility magnification_Stealth ray shielded area + standing in stealth hit || - ||
+|| stealthSystemSightRate_InStealthRigid_SightHide_StealthMode || Stealth visibility magnification_Stealth ray shielded area + crouching in stealth hit || Stealth visibility magnification_Stealth ray shielded area + crouching in stealth hit || - ||
+|| msbEventGeomTreasureInfo_actionButtonParamId_corpse || Treasure corpse default action button parameter ID || Default action button parameter ID when "Treasure corpse" is selected in the treasure box type of treasure box information for OBJ of MapStudio event || - ||
+|| msbEventGeomTreasureInfo_itemGetAnimId_corpse || Anime ID when acquiring the default item of the treasure corpse || When "Treasure corpse" is selected in the treasure box type of the treasure box information for OBJ of the MapStudio event, the default item is acquired. Animation ID || - ||
+|| msbEventGeomTreasureInfo_actionButtonParamId_box || Treasure chest default action button parameter ID || Default action button parameter ID when "Treasure chest" is selected in the treasure chest type of treasure chest information for OBJ of MapStudio event || - ||
+|| msbEventGeomTreasureInfo_itemGetAnimId_box || Anime ID when acquiring the default item of the treasure box || When "Treasure chest" is selected in the treasure chest type of the treasure chest information for OBJ of the MapStudio event, the default item acquisition animation ID || - ||
+|| msbEventGeomTreasureInfo_actionButtonParamId_shine || Item light default action button parameter ID || Default action button parameter ID when "Item light" is selected in the treasure chest type of treasure chest information for OBJ of MapStudio event || - ||
+|| msbEventGeomTreasureInfo_itemGetAnimId_shine || Item Hikari's default item acquisition animation ID || When "Item Hikari" is selected as the treasure chest type of the treasure chest information for OBJ of the MapStudio event, the default item acquisition animation ID || - ||
+|| signPuddleAssetId || Sign pool: Asset ID || Assets used for sign collection || - ||
+|| signPuddleAppearDmypolyId0 || Sign accumulation: Sign appearance Damipoli 0 || Damipoli used to determine the display position of the sign in the sign pool || - ||
+|| signPuddleAppearDmypolyId1 || Sign accumulation: Sign appearance Damipoli 1 || Damipoli used to determine the display position of the sign in the sign pool || - ||
+|| signPuddleAppearDmypolyId2 || Sign accumulation: Sign appearance Damipoli 2 || Damipoli used to determine the display position of the sign in the sign pool || - ||
+|| signPuddleAppearDmypolyId3 || Sign accumulation: Sign appearance Damipoli 3 || Damipoli used to determine the display position of the sign in the sign pool || - ||
+|| fallDamageRate_forRidePC || Rider's fall damage multiplier correction_for PC || Rider's fall damage multiplier correction_for PC || - ||
+|| fallDamageRate_forRideNPC || Rider's Fall Damage Multiplier Correction_for NPCs || Rider's Fall Damage Multiplier Correction_for NPCs || - ||
+|| OldMonkOfYellow_CreateSignSpEffectId || Special effect ID when creating the old man sign of yellow robe || Special effect ID when creating the old man sign of yellow robe || - ||
+|| StragglerActivateDist || Defeated soldier activation distance || Defeated soldier activation distance || - ||
+|| SpEffectId_EnableUseItem_StragglerActivate || Permission to use defeated soldier items_Special effects for PC || Permission to use defeated soldier items_Special effects for PC || - ||
+|| SpEffectId_StragglerWakeUp || Activate defeated soldiers_Special effects for defeated soldier characters || Activate defeated soldiers_Special effects for defeated soldier characters || - ||
+|| SpEffectId_StragglerTarget || Defeated soldiers_Special effects for subjugation targets || Defeated soldiers_Special effects for subjugation targets || - ||
+|| SpEffectId_StragglerOppose || Defeated soldiers_Special effects after hostility || Defeated soldiers_Special effects after hostility || - ||
+|| buddyWarp_TriggerTimeRayBlocked || Time for a buddy to warp a player with a ray block [s] || Time for a buddy to warp a player with a ray block [s] || - ||
+|| buddyWarp_TriggerDistToPlayer || Distance at which the buddy warps the player at a straight line distance [m] || Distance at which the buddy warps the player at a straight line distance [m] || - ||
+|| buddyWarp_ThresholdTimePathStacked || Time to judge that the buddy is stuck in the pass movement [s] || Judgment time when the buddy is stuck in the pass movement [s] || - ||
+|| buddyWarp_ThresholdRangePathStacked || Distance [m] that the buddy considers to be clogged with a pass move || Distance [m] that the buddy considers to be clogged with a pass move || - ||
+|| aiSightRate_morning || [Morning] AI visibility magnification || [Morning] AI visibility magnification || - ||
+|| aiSightRate_noonA || [Day] AI visibility magnification || [Day] AI visibility magnification || - ||
+|| buddyPassThroughTriggerTime || Time when the buddy and the player collide and start slipping through [s] || Time when the buddy and the player collide and start slipping through [s] || - ||
+|| aiSightRate_evening || [Evening] AI visibility magnification || [Evening] AI visibility magnification || - ||
+|| aiSightRate_night || [Night] AI visibility magnification || [Night] AI visibility magnification || - ||
+|| aiSightRate_midnightA || [Midnight] AI visibility magnification || [Midnight] AI visibility magnification || - ||
+|| reserve4_2 || Reserve || (dummy8) || - ||
+|| aiSightRate_sunloss_light || AI visibility magnification_place where the sun cannot be seen (bright) || AI visibility magnification_place where the sun cannot be seen (bright) || - ||
+|| aiSightRate_sunloss_dark || AI visibility magnification_place where the sun cannot be seen (darkness) || AI visibility magnification_place where the sun cannot be seen (darkness) || - ||
+|| aiSightRate_sunloss_veryDark || AI visibility magnification_place where the sun cannot be seen (total darkness) || AI visibility magnification_place where the sun cannot be seen (total darkness) || - ||
+|| stealthSystemSightAngleReduceRate_NotInStealthRigid_NotSightHide_StealthMode || Stealth view angle attenuation factor_ crouching without stealth effect || Stealth view angle attenuation factor_ crouching without stealth effect || - ||
+|| stealthSystemSightAngleReduceRate_NotInStealthRigid_SightHide_NotStealthMode || Stealth view angle attenuation rate_Standing in stealth ray shielded area || Stealth view angle attenuation rate_Standing in stealth ray shielded area || - ||
+|| stealthSystemSightAngleReduceRate_NotInStealthRigid_SightHide_StealthMode || Stealth visibility angle attenuation _ crouching in stealth ray shielded area || Stealth visibility angle attenuation _ crouching in stealth ray shielded area || - ||
+|| stealthSystemSightAngleReduceRate_InStealthRigid_NotSightHide_NotStealthMode || Stealth view angle attenuation rate_Standing within stealth hit || Stealth view angle attenuation rate_Standing within stealth hit || - ||
+|| stealthSystemSightAngleReduceRate_InStealthRigid_NotSightHide_StealthMode || Stealth field of view angle attenuation rate_ crouching within stealth hit || Stealth view angle attenuation rate_ crouching within stealth hit || - ||
+|| stealthSystemSightAngleReduceRate_InStealthRigid_SightHide_NotStealthMode || Stealth view angle attenuation rate_Stealth ray shielded area + standing in stealth hit || Stealth view angle attenuation rate_Stealth ray shielded area + standing in stealth hit || - ||
+|| stealthSystemSightAngleReduceRate_InStealthRigid_SightHide_StealthMode || Stealth view angle attenuation rate_Stealth ray shielded area + crouching in stealth hit || Stealth view angle attenuation rate_Stealth ray shielded area + crouching in stealth hit || - ||
+|| weatherLotConditionStart_Morning_Hour || Weather lottery conditions_morning_start time_hour || Weather lottery conditions_morning_start time_hour (SEQ09371) || - ||
+|| weatherLotConditionStart_Morning_Minute || Weather lottery conditions_morning_start time_minutes || Weather lottery conditions_morning_start time_minutes (SEQ09371) || - ||
+|| weatherLotConditionStart_Day_Hour || Weather lottery conditions_day_start time_hour || Weather lottery conditions_day_start time_hour (SEQ09371) || - ||
+|| weatherLotConditionStart_Day_Minute || Weather lottery conditions_day_start time_minutes || Weather lottery conditions_day_start time_minutes (SEQ09371) || - ||
+|| weatherLotConditionStart_Evening_Hour || Weather lottery conditions_evening_start time_hour || Weather lottery conditions_evening_start time_hour (SEQ09371) || - ||
+|| weatherLotConditionStart_Evening_Minute || Weather lottery conditions_evening_start time_minutes || Weather lottery conditions_evening_start time_minutes (SEQ09371) || - ||
+|| weatherLotConditionStart_Night_Hour || Weather lottery conditions_night_start time_hour || Weather lottery conditions_night_start time_hour (SEQ09371) || - ||
+|| weatherLotConditionStart_Night_Minute || Weather lottery conditions_night_start time_minutes || Weather lottery conditions_night_start time_minutes (SEQ09371) || - ||
+|| weatherLotConditionStart_DayBreak_Hour || Weather lottery conditions_dawn_start time_hour || Weather lottery conditions_dawn_start time_hour (SEQ09371) || - ||
+|| weatherLotConditionStart_DayBreak_Minute || Weather lottery conditions_dawn_start time_minutes || Weather lottery conditions_dawn_start time_minutes (SEQ09371) || - ||
+|| weatherLotCondition_reserved || Weather lottery conditions_reservation || (dummy8) || - ||
+|| pclightScaleChangeStart_Hour || Player Light intensity scale change time zone_start time_hour || Player Light Intensity Scale Change Time Zone_Start Time_Hour (SEQ16562) || - ||
+|| pclightScaleChangeStart_Minute || Player Light intensity scale change time zone_start time_minute || Player Light Intensity Scale Change Time Zone_Start Time_Minute (SEQ16562) || - ||
+|| pclightScaleChangeEnd_Hour || Player Light intensity scale change time zone_end time_hour || Player Light intensity scale change time zone_end time_hour (SEQ16562) || - ||
+|| pclightScaleChangeEnd_Minute || Player Light intensity scale change time zone_end time_minute || Player Light Intensity Scale Change Time Zone_End Time_Minute (SEQ16562) || - ||
+|| pclightScaleByTimezone || Time zone Player light intensity scale change value || Time zone Player light intensity scale change value (SEQ16562) || - ||
+|| bigRuneGreaterDemon_SummonBuddySpecialEffectId_Buddy || Large Rune: Greater Demon Buddy Summon Buddy Special Effect ID || Large Rune: Greater Demon Buddy Summon Buddy Special Effect ID || - ||
+|| bigRuneGreaterDemon_SummonBuddySpecialEffectId_Pc || Large Rune: Special effect ID given to PC when summoning Greater Demon Buddy || Large Rune: Special effect ID given to PC when summoning Greater Demon Buddy || - ||
+|| homeBonfireParamId || Base Bonfire Warp ID || Base bonfire bonfire warp parameter ID || - ||
+|| machingWeaponLevelUpperWhiteSign_11 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 11 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_12 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 12 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_13 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 13 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_14 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 14 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_15 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 15 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_16 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 16 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_17 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 17 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_18 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 18 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_19 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 19 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_20 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 20 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_21 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 21 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_22 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 22 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_23 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 23 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_24 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 24 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperWhiteSign_25 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 25 White || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_11 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 11 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_12 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 12 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_13 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 13 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_14 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 14 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_15 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 15 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_16 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 16 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_17 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 17 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_18 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 18 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_19 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 19 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_20 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 20 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_21 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 21 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_22 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 22 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_23 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 23 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_24 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 24 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| machingWeaponLevelUpperRedSign_25 || Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 25 Red || Maximum weapon enhancement level factor for whether to apply level sync || - ||
+|| menuTimezoneStart_Morning_Hour || Menu time zone display_morning_start time_hour || Menu time zone display_morning_start time_hour (SEQ22108) || - ||
+|| menuTimezoneStart_Morning_Minute || Menu time zone display_morning_start time_minute || Menu time zone display_morning_start time_minute (SEQ22108) || - ||
+|| menuTimezoneStart_Day1_Hour || Menu time zone display_day 1_start time_hour || Menu time zone display_day 1_start time_hour (SEQ22108) || - ||
+|| menuTimezoneStart_Day1_Minute || Time zone display for menu_Lunch 1_Start time_Minute || Menu time zone display_day 1_start time_minute (SEQ22108) || - ||
+|| menuTimezoneStart_Day2_Hour || Menu time zone display_day 2_start time_hour || Menu time zone display_day 2_start time_hour (SEQ22108) || - ||
+|| menuTimezoneStart_Day2_Minute || Time zone display for menu_Lunch 2_Start time_Minute || Time zone display for menu_Lunch 2_Start time_Minute (SEQ22108) || - ||
+|| menuTimezoneStart_Evening_Hour || Menu time zone display_evening_start time_hour || Menu time zone display_evening_start time_hour (SEQ22108) || - ||
+|| menuTimezoneStart_Evening_Minute || Menu time zone display_evening_start time_minute || Menu time zone display_evening_start time_minute (SEQ22108) || - ||
+|| menuTimezoneStart_Night_Hour || Menu time zone display_night_start time_hour || Menu time zone display_night_start time_hour (SEQ22108) || - ||
+|| menuTimezoneStart_Night_Minute || Menu time zone display_night_start time_minute || Menu time zone display_night_start time_minute (SEQ22108) || - ||
+|| menuTimezoneStart_Midnight_Hour || Menu time zone display_midnight_start time_hour || Menu time zone display_midnight_start time_hour (SEQ22108) || - ||
+|| menuTimezoneStart_Midnight_Minute || Menu time zone display_midnight_start time_minute || Menu time zone display_midnight_start time_minute (SEQ22108) || - ||
+|| remotePlayerThreatLvNotify_ThreatLv || Network PC threat level notification_threat level || Network PC Threat Level Notification_Threat Level (SEQ21950) || - ||
+|| remotePlayerThreatLvNotify_NotifyDist || Network PC threat level notification_notification distance [m] || Network PC Threat Level Notification_Notification Distance [m] (SEQ21950) || - ||
+|| remotePlayerThreatLvNotify_EndNotifyDist || Network PC threat level notification_notification end distance [m] || Network PC threat level notification_notification end distance [m] (SEQ21950) || - ||
+|| worldMapPointDiscoveryExpandRange || Default extended distance of map point discovery area [m] || The default extended distance for the map point discovery area. When the "discovery area overwrite area" of the map point is invalid (-1), the discovery area is generated by expanding from its own area. Its extended distance || - ||
+|| worldMapPointReentryExpandRange || Map point participation area default extended distance [m] || The default extended distance for the map point's entry area. When the "participation area overwrite area" of the map point is invalid (-1), the participation area is generated by expanding from its own area. Its extended distance || - ||
+|| remotePlayerThreatLvNotify_NotifyTime || Network PC threat level notification_Notification time [seconds] || Network PC Threat Level Notification_Notification Time [seconds] (SEQ21950) || - ||
+|| breakIn_A_rebreakInGoodsNum || Number of "re-invasion items" to be given at the time of intrusion: Intrusion item_Greater system (ID102) || Number of "re-invasion items" to be given at the time of intrusion: Intrusion item_Greater system (ID102) || - ||
+|| breakIn_A_rebreakInGoodsId || Tool item ID of "re-invasion item" given at the time of intrusion: Invasion item_Greater system (ID102) || Tool item ID of "re-invasion item" given at the time of intrusion: Invasion item_Greater system (ID102) || - ||
+|| rideJumpoff_SfxId || Big jump to get off _ sky SFXID || Big jump to get off _ sky SFXID || - ||
+|| rideJumpoff_SfxHeightOffset || Big jump to get off_SFX base point offset in the sky || Big jump to get off_SFX base point offset in the sky || - ||
+|| rideJumpoff_SpEffectId || In the big jump area to get off _ Special effect ID for PC horse || In the big jump area to get off _ Special effect ID for PC horse || - ||
+|| rideJumpoff_SpEffectIdPc || Special effect ID applied to _PC in the large jump area to get off || Special effect ID for _PC in the big jump area to get off || - ||
+|| unlockExchangeMenuEventFlagId || Main menu_Item creation_Open event flag || Main menu → Event flag to unlock the item creation menu || - ||
+|| unlockMessageMenuEventFlagId || Main menu_message_open event flag || Main menu → Event flag to unlock the message menu || - ||
+|| breakInOnce_A_rebreakInGoodsNum || Number of "re-invasion items" to be given at the time of intrusion: Intrusion item_Greater disposable (ID111) || Number of "re-invasion items" to be given at the time of intrusion: Intrusion item_Greater disposable (ID111) || - ||
+|| breakIn_B_rebreakInGoodsNum || Number of "re-invasion items" to be given at the time of invasion: Invasion item_Volcano building system (ID112) || Number of "re-invasion items" to be given at the time of invasion: Invasion item_Volcano building system (ID112) || - ||
+|| breakInOnce_A_rebreakInGoodsId || Tool item ID of "re-invasion item" given at the time of intrusion: Invasion item_Greater disposable (ID111) || Tool item ID of "re-invasion item" given at the time of intrusion: Invasion item_Greater disposable (ID111) || - ||
+|| breakIn_B_rebreakInGoodsId || Tool item ID of "re-invasion item" given at the time of invasion: Invasion item_Volcano building system (ID112) || Tool item ID of "re-invasion item" given at the time of invasion: Invasion item_Volcano building system (ID112) || - ||
+|| actionButtonInputCancelTime || Time to disable action button operation by holding down the action button || Time to disable action button operation by holding down the action button || - ||
+|| blockClearBonusDelayTime || Clear bonus acquisition delay time after boss defeat processing || Clear bonus acquisition delay time after boss defeat processing || - ||
+|| bonfireCheckEnemyRange || [Unused] (Refer to SEQ25048) Distance from the PC to determine the bonfire invalidation by the enemy [m] || [Unused] (Refer to SEQ25048) Distance from PC to bonfire that determines invalidation of bonfire by enemy [m] (0 or less: PC distance is not checked. Checked at all distances) || - ||
+|| reserved_124 || reserve || (dummy8) || - ||

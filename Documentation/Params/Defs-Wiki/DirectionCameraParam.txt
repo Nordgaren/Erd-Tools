@@ -1,0 +1,4 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| isUseOption || Affected by options || Is it affected by the production camera ON / OFF option? || BOOL_YESNO_TYPE ||
+|| pad2 || pad || pad || - ||
+|| pad1 || pad || pad || - ||

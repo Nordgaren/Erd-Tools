@@ -1,0 +1,4 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| enabled || AA valid || AA valid || ON_OFF ||
+|| forceFXAA2 || Force FXAA2 || Force FXAA2 || ON_OFF ||
+|| dmy || dmy ||  || - ||

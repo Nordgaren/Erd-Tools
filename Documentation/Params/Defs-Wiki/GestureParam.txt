@@ -1,0 +1,9 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| itemId || Reference item ID || Reference item ID. Used to bring in the gesture text ID, icon ID, and sort ID for each menu. Register the tool ID of the equipment parameter || - ||
+|| msgAnimId || Anime ID for message attachment || Anime ID for attaching messages. Specify the animation ID when attaching a message || - ||
+|| cannotUseRiding || Is it prohibited to use while riding? || Is it prohibited to use while riding (default: ×)? If ○, it cannot be used while riding || BOOL_CIRCLECROSS_TYPE ||
+|| pad2 || Reserved area ||  || - ||
+|| pad1 || Reserved area ||  || - ||

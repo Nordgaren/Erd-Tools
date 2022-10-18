@@ -1,0 +1,271 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| behaviorVariationId || Behavior variation ID || Used when determining the action parameter ID to be referenced during an attack || - ||
+|| sortId || Sort ID || Sort ID (-1: Do not collect) (7 digits is the limit in s32 to add the enhancement level in the program) || - ||
+|| wanderingEquipId || Wandering equipment ID || Replacement equipment ID for wandering ghosts. || - ||
+|| weight || Weight [kg] || Weight [kg]. || - ||
+|| weaponWeightRate || Equipment weight ratio || Equipment weight ratio || - ||
+|| fixPrice || Repair price || Basic repair price || - ||
+|| reinforcePrice || Enhanced price || Enhanced price || - ||
+|| sellValue || Sale price || Selling price || - ||
+|| correctStrength || Strength correction || Charapara correction value. || - ||
+|| correctAgility || Agility correction || Charapara correction value. || - ||
+|| correctMagic || Magic correction || Charapara correction value. || - ||
+|| correctFaith || Faith correction || Charapara correction value. || - ||
+|| physGuardCutRate || Physical attack cut rate when guarding || Set the damage cut rate when guarding for each attack || - ||
+|| magGuardCutRate || Magic attack cut rate when guarding || If it is not a guard attack, enter 0 || - ||
+|| fireGuardCutRate || Flame attack power cut rate when guarding || How much to cut the fire attack? || - ||
+|| thunGuardCutRate || Electric shock attack power cut rate when guarding || How much to cut the electric shock attack? || - ||
+|| spEffectBehaviorId0 || Special effect ID 0 on attack hit || Register when adding special effects to weapons || - ||
+|| spEffectBehaviorId1 || Special effect ID1 on attack hit || Register when adding special effects to weapons || - ||
+|| spEffectBehaviorId2 || Special effect ID2 on attack hit || Register when adding special effects to weapons || - ||
+|| residentSpEffectId || Resident special effect ID || Resident special effect ID0 || - ||
+|| residentSpEffectId1 || Resident special effect ID1 || Resident special effect ID1 || - ||
+|| residentSpEffectId2 || Resident special effect ID2 || Resident special effect ID2 || - ||
+|| materialSetId || Material ID || Material parameter ID required for weapon enhancement || - ||
+|| originEquipWep || Derivation source || This weapon's enhancement source weapon ID || - ||
+|| originEquipWep1 || Derivative source enhancement +1 || This weapon's enhancement source weapon ID1 || - ||
+|| originEquipWep2 || Derivative source enhancement +2 || This weapon's enhancement source weapon ID2 || - ||
+|| originEquipWep3 || Derivative source enhancement +3 || This weapon's enhancement source weapon ID3 || - ||
+|| originEquipWep4 || Derivative source enhancement +4 || This weapon's enhancement source weapon ID 4 || - ||
+|| originEquipWep5 || Derivative source enhancement +5 || This weapon's enhancement source weapon ID 5 || - ||
+|| originEquipWep6 || Derivative source enhancement +6 || This weapon's enhancement source weapon ID 6 || - ||
+|| originEquipWep7 || Derivative source enhancement +7 || This weapon's enhancement source weapon ID 7 || - ||
+|| originEquipWep8 || Derivative source enhancement +8 || This weapon's enhancement source weapon ID8 || - ||
+|| originEquipWep9 || Derivative source enhancement +9 || This weapon's enhancement source weapon ID 9 || - ||
+|| originEquipWep10 || Derivative source enhancement +10 || This weapon's enhancement source weapon ID 10 || - ||
+|| originEquipWep11 || Derivative source enhancement +11 || This weapon's enhancement source weapon ID 11 || - ||
+|| originEquipWep12 || Derivative source enhancement +12 || This weapon's enhancement source weapon ID 12 || - ||
+|| originEquipWep13 || Derivative source enhancement +13 || This weapon's enhancement source weapon ID 13 || - ||
+|| originEquipWep14 || Derivative source enhancement +14 || This weapon's enhancement source weapon ID14 || - ||
+|| originEquipWep15 || Derivative source enhancement +15 || This weapon's enhancement source weapon ID 15 || - ||
+|| weakA_DamageRate || Special attack A damage multiplier || Damage multiplier for special attack A || - ||
+|| weakB_DamageRate || Special attack B damage multiplier || Damage multiplier for special attack B || - ||
+|| weakC_DamageRate || Special attack C damage multiplier || Damage multiplier for special attack C || - ||
+|| weakD_DamageRate || Special attack D damage multiplier || Damage multiplier for special attack D || - ||
+|| sleepGuardResist_MaxCorrect || Sleep tolerance cut rate_maximum correction value || Maximum value of cut rate correction value for attack power against sleep (set as special effect parameter) || - ||
+|| madnessGuardResist_MaxCorrect || Madness resistance cut rate_maximum correction value || Maximum value of cut rate correction value for attack power against madness (set as special effect parameter) || - ||
+|| saWeaponDamage || SA weapon attack power || Super Armor Basic Attack Power || - ||
+|| equipModelId || Equipment model number || Equipment model number. || - ||
+|| iconId || Icon ID || Menu icon ID. || - ||
+|| durability || Durability || Initial durability. || - ||
+|| durabilityMax || Maximum durability || New durability. || - ||
+|| attackThrowEscape || Throw-through attack power basic value || Basic value of throw-through attack power || - ||
+|| parryDamageLife || Parry occurrence time [frame] || Limit the life of parry damage. It does not last longer than it is set in TimeAct. || - ||
+|| attackBasePhysics || Physical attack power basic value || Basic value of physical attribute attack that damages the enemy's HP || - ||
+|| attackBaseMagic || Magic attack power basic value || Basic value of magic attribute attack that damages the enemy's HP || - ||
+|| attackBaseFire || Fire attack power basic value || Basic value of fire attribute attack that damages the enemy's HP || - ||
+|| attackBaseThunder || Electric shock attack power basic value || Basic value of electric shock attribute attack that damages the enemy's HP || - ||
+|| attackBaseStamina || Stamina attack power || Stamina attack power against the enemy || - ||
+|| guardAngle || Guard range [deg] || Defense occurrence range angle when guarding weapons || - ||
+|| saDurability || SA durability value || Additional SA durability used during attack motion || - ||
+|| staminaGuardDef || Stamina defense when guarding || Defense against enemy stamina attacks when guarding successfully || - ||
+|| reinforceTypeId || Enhanced type ID || Enhanced type ID || - ||
+|| trophySGradeId || Trophy S grade ID || Is it related to the trophy system? || - ||
+|| trophySeqId || Trophy SEQ number || Trophy SEQ number (13-29) || - ||
+|| throwAtkRate || Throw attack power multiplier || Throw attack power multiplier || - ||
+|| bowDistRate || Bow distance correction [%] || Up% to extend the flight distance || - ||
+|| equipModelCategory || Equipment model type || Equipment model type. || EQUIP_MODEL_CATEGORY ||
+|| equipModelGender || Equipment model gender || Gender of equipment model. || EQUIP_MODEL_GENDER ||
+|| weaponCategory || Weapon category || Weapon category. || WEAPON_CATEGORY ||
+|| wepmotionCategory || Weapon motion category || Weapon motion category. || WEPMOTION_CATEGORY ||
+|| guardmotionCategory || Guard motion category || Guard motion category || GUARDMOTION_CATEGORY ||
+|| atkMaterial || Attack material || Attack material used from attack para || WEP_MATERIAL_ATK ||
+|| defSeMaterial1 || Defense SE Material 1 || Defense SE material used from attack para 1 || WEP_MATERIAL_DEF ||
+|| correctType_Physics || Correction type (physical attack power) || Correcting physical attack power by primary parameters Determines the type of graph || WEP_CORRECT_TYPE ||
+|| spAttribute || Special attributes || Weapon special attribute value || ATKPARAM_SPATTR_TYPE ||
+|| spAtkcategory || Special attack category || Special attack category (possible from 50 to 999) || - ||
+|| wepmotionOneHandId || Weapon motion one-handed ID || Basic motion ID when equipped with one hand. || - ||
+|| wepmotionBothHandId || Weapon motion two-handed ID || Basic motion ID when equipped with both hands. || - ||
+|| properStrength || Equipment proper strength || Equipment appropriate value. || - ||
+|| properAgility || Equipment proper agility || Equipment appropriate value. || - ||
+|| properMagic || Equipment proper magic power || Equipment appropriate value. || - ||
+|| properFaith || Equipment proper faith || Equipment appropriate value. || - ||
+|| overStrength || Strength over start value || Strength over start value || - ||
+|| attackBaseParry || Parry attack base value || Basic value to defeat the enemy's parry || - ||
+|| defenseBaseParry || Parry defense value || Used to judge whether to be a parry or a guard at the time of parry judgment || - ||
+|| guardBaseRepel || Flick defense basic value || Used to determine if it will pop when guarding an enemy attack || - ||
+|| attackBaseRepel || Flick attack power basic value || Guard Used to determine whether or not to be repelled when attacking an enemy || - ||
+|| guardCutCancelRate || Guard cut invalidation magnification || Magnification that invalidates the opponent's guard cut. -100 is completely invalid. Double the defense effect of the opponent at 100. || - ||
+|| guardLevel || Guard level || When guarding, which guard motion will the enemy attack? Decide || - ||
+|| slashGuardCutRate || Slash attack cut rate || Looking at the attack type, what percentage of the damage of the slashing attribute is cut? Specify || - ||
+|| blowGuardCutRate || Batter attack cut rate || Looking at the attack type, what percentage of the damage of the hit attribute is cut? Specify || - ||
+|| thrustGuardCutRate || Puncture attack cut rate || Looking at the attack type, what percentage of the damage of the piercing attribute is cut? Specify || - ||
+|| poisonGuardResist || Poison resistance cut rate || How much to cut the attack power to poison (set to the special effect parameter) || - ||
+|| diseaseGuardResist || Epidemic attack cut rate || How much to cut the attack power (set as a special effect parameter) to make it a plague || - ||
+|| bloodGuardResist || Bleeding attack cut rate || How much to cut the attack power (set as a special effect parameter) to make bleeding || - ||
+|| curseGuardResist || Curse attack cut rate || How much to cut the attack power (set as a special effect parameter) to curse || - ||
+|| atkAttribute || Physical attribute 1 || Physical attribute 1 || ATKPARAM_ATKATTR_TYPE ||
+|| rightHandEquipable || Right hand equipment || Is it possible to equip it with the right hand? || EQUIP_BOOL ||
+|| leftHandEquipable || Left hand equipment || Is it possible to equip it with the left hand? || EQUIP_BOOL ||
+|| bothHandEquipable || Two-handed equipment || Is it possible to equip with both hands? || EQUIP_BOOL ||
+|| arrowSlotEquipable || Bow and arrow bullet equipment || Is it possible to equip a bow bullet? || EQUIP_BOOL ||
+|| boltSlotEquipable || Crossbow bullet equipment || Is it possible to equip a crossbow bullet? || EQUIP_BOOL ||
+|| enableGuard || Can be guarded || Guard with L1 when equipped with left hand || EQUIP_BOOL ||
+|| enableParry || Parry possible || Parry with L2 when equipped with left hand || EQUIP_BOOL ||
+|| enableMagic || Magical possible || Activates magic when attacking || EQUIP_BOOL ||
+|| enableSorcery || Can be spelled || Cast magic when attacking || EQUIP_BOOL ||
+|| enableMiracle || Miracle possible || Miracle activated when attacking || EQUIP_BOOL ||
+|| enableVowMagic || Pledge magic possible || Activates pledge magic when attacking || EQUIP_BOOL ||
+|| isNormalAttackType || Normal || Attack type for menu display. Is it normal? || EQUIP_BOOL ||
+|| isBlowAttackType || Batter || Attack type for menu display. Is it a blow? || EQUIP_BOOL ||
+|| isSlashAttackType || Slashing || Attack type for menu display. Is it a slash? || EQUIP_BOOL ||
+|| isThrustAttackType || Piercing || Attack type for menu display. Is it a piercing? || EQUIP_BOOL ||
+|| isEnhance || Is it possible to enchant? || Can it be strengthened with pine fat? || EQUIP_BOOL ||
+|| isHeroPointCorrect || Is there a humanity correction? || Is there an attack power correction by human nature? || EQUIP_BOOL ||
+|| isCustom || Can it be strengthened? || Listed in the enhancement target list at the enhancement shop (may be deleted due to specification changes?) || EQUIP_BOOL ||
+|| disableBaseChangeReset || Is job change reset prohibited? || Is job change reset prohibited? || EQUIP_BOOL ||
+|| disableRepair || Is repair prohibited? || Is repair prohibited? || EQUIP_BOOL ||
+|| isDarkHand || Is it a dark hand? || Is it a dark hand? || EQUIP_BOOL ||
+|| simpleModelForDlc || Is there a simple model for DLC? || Is there a simple model for DLC? || EQUIP_BOOL ||
+|| lanternWep || Lantern weapon || Is it a lantern weapon? || EQUIP_BOOL ||
+|| isVersusGhostWep || Anti-spirit weapon || NPC Para's "spirit body" will now hit the opponent of ○. Also, the attack para "Is it a ghost attack?" Will be able to guard the attack of ○. || EQUIP_BOOL ||
+|| baseChangeCategory || Weapon career change category || Weapon career change category. Used to display the attribute icon. || WEP_BASE_CHANGE_CATEGORY ||
+|| isDragonSlayer || Is it a dragon hunt? || Is it a dragon hunting weapon? || EQUIP_BOOL ||
+|| isDeposit || Can i deposit || Can you leave it in the warehouse? || EQUIP_BOOL ||
+|| disableMultiDropShare || Is multi-drop sharing prohibited? || Is multi-drop sharing prohibited? || EQUIP_BOOL ||
+|| isDiscard || Can you throw it away || Can you throw away the item? TRUE = thrown away || EQUIP_BOOL ||
+|| isDrop || Can you put it on the spot || Can I put the item on the spot? TRUE = can be placed || EQUIP_BOOL ||
+|| showLogCondType || Acquisition log display condition || Whether to display in the item acquisition log when acquiring the item (not entered: ○) || EQUIP_BOOL ||
+|| enableThrow || Can be thrown || Whether it is a throwable weapon || EQUIP_BOOL ||
+|| showDialogCondType || Acquisition dialog display condition || Whether to display it in the item acquisition dialog when acquiring an item (not entered: new only) || GET_DIALOG_CONDITION_TYPE ||
+|| disableGemAttr || Is it prohibited to change the magic stone attribute? || Is it prohibited to change the magic stone attribute? || EQUIP_BOOL ||
+|| defSfxMaterial1 || Defensive SFX Material 1 || Defensive SFX material used from attack para 1 || WEP_MATERIAL_DEF_SFX ||
+|| wepCollidableType0 || Weapon collaborative setting || Weapon collaborative setting || WEP_COLLIDABLE_TYPE ||
+|| wepCollidableType1 || Weapon 1 collaborative setting || Weapon 1 collaborative setting || WEP_COLLIDABLE_TYPE ||
+|| postureControlId_Right || Attitude control ID (right hand) || Attitude control ID (right hand) || - ||
+|| postureControlId_Left || Attitude control ID (left hand) || Attitude control ID (left hand) || - ||
+|| traceSfxId0 || Sword Flash SfxID_0 || Sword flash SfxID_0 (-1 invalid) || - ||
+|| traceDmyIdHead0 || Root Sword Flash Damipoli ID_0 || Sword flash root Damipoli ID_0 (-1 invalid) || - ||
+|| traceDmyIdTail0 || Sword tip sword flash Damipoli ID_0 || Sword Flash Sword Tip Damipoli ID_0 || - ||
+|| traceSfxId1 || Sword Flash SfxID_1 || Sword flash SfxID_1 (-1 invalid) || - ||
+|| traceDmyIdHead1 || Root Sword Flash Damipoli ID_1 || Sword Flash Root Damipoli ID_1 (-1 invalid) || - ||
+|| traceDmyIdTail1 || Sword tip sword flash Damipoli ID_1 || Sword Flash Sword Tip Damipoli ID_1 || - ||
+|| traceSfxId2 || Sword Flash SfxID_2 || Sword flash SfxID_2 (-1 invalid) || - ||
+|| traceDmyIdHead2 || Root Sword Flash Damipoli ID_2 || Sword Flash Root Damipoli ID_2 (-1 invalid) || - ||
+|| traceDmyIdTail2 || Sword tip sword flash Damipoli ID_2 || Sword Flash Sword Tip Damipoli ID_2 || - ||
+|| traceSfxId3 || Sword Flash SfxID_3 || Sword Flash SfxID_3 (-1 invalid) || - ||
+|| traceDmyIdHead3 || Root Sword Flash Damipoli ID_3 || Sword flash root Damipoli ID_3 (-1 invalid) || - ||
+|| traceDmyIdTail3 || Sword tip sword flash Damipoli ID_3 || Sword Flash Sword Tip Damipoli ID_3 || - ||
+|| traceSfxId4 || Sword Flash SfxID_4 || Sword Flash SfxID_4 (-1 invalid) || - ||
+|| traceDmyIdHead4 || Root Sword Flash Damipoli ID_4 || Sword flash root Damipoli ID_4 (-1 invalid) || - ||
+|| traceDmyIdTail4 || Sword tip sword flash Damipoli ID_4 || Sword Flash Sword Tip Damipoli ID_4 || - ||
+|| traceSfxId5 || Sword Flash SfxID_5 || Sword Flash SfxID_5 (-1 invalid) || - ||
+|| traceDmyIdHead5 || Root Sword Flash Damipoli ID_5 || Sword Flash Root Damipoli ID_5 (-1 invalid) || - ||
+|| traceDmyIdTail5 || Sword tip sword flash Damipoli ID_5 || Sword Flash Sword Tip Damipoli ID_5 || - ||
+|| traceSfxId6 || Sword Flash SfxID_6 || Sword Flash SfxID_6 (-1 invalid) || - ||
+|| traceDmyIdHead6 || Root Sword Flash Damipoli ID_6 || Sword Flash Root Damipoli ID_6 (-1 invalid) || - ||
+|| traceDmyIdTail6 || Sword tip sword flash Damipoli ID_6 || Sword Flash Sword Tip Damipoli ID_6 || - ||
+|| traceSfxId7 || Sword Flash SfxID_7 || Sword Flash SfxID_7 (-1 invalid) || - ||
+|| traceDmyIdHead7 || Root Sword Flash Damipoli ID_7 || Sword Flash Root Damipoli ID_7 (-1 invalid) || - ||
+|| traceDmyIdTail7 || Sword tip sword flash Damipoli ID_7 || Sword Flash Sword Tip Damipoli ID_7 || - ||
+|| defSfxMaterial2 || Defensive SFX Material 2 || Defensive SFX material used from attack para 2 || WEP_MATERIAL_DEF_SFX ||
+|| defSeMaterial2 || Defense SE Material 2 || Defense SE material used from attack para 2 || WEP_MATERIAL_DEF ||
+|| absorpParamId || Suction position Id || Weapon adsorption position parameter Id. This value determines the position where the weapon is attracted (-1: Refer to the value written directly in the old source code). || - ||
+|| toughnessCorrectRate || Toughness correction factor || It is a magnification that corrects the basic value of toughness. || - ||
+|| isValidTough_ProtSADmg || Is the armor SA damage multiplier valid even at the initial value? || Whether the toughness calculation is performed even if the armor SA is the initial value. Check the toughness specification .xlsx for details || EQUIP_BOOL ||
+|| isDualBlade || Is it a twin sword? || Is this weapon a twin sword? || EQUIP_BOOL ||
+|| isAutoEquip || Is it possible to load automatically? || Only valid for arrows and bolts. Whether to automatically equip this weapon if the target equipment slot is empty when picking up this weapon || EQUIP_BOOL ||
+|| isEnableEmergencyStep || Is emergency avoidance possible? || Is it an emergency avoidable weapon? Pass it to the behavior script. || EQUIP_BOOL ||
+|| invisibleOnRemo || Is it hidden during cutscenes? || Is it hidden during cutscenes? || EQUIP_BOOL ||
+|| pad2 || pad ||  || - ||
+|| correctType_Magic || Correction type (magic attack power) || Determining the type of magic attack power correction graph with primary parameters || WEP_CORRECT_TYPE ||
+|| correctType_Fire || Correction type (flame attack power) || Determine the type of flame attack power correction graph with primary parameters || WEP_CORRECT_TYPE ||
+|| correctType_Thunder || Correction type (lightning attack power) || Determine the type of lightning attack power correction graph with primary parameters || WEP_CORRECT_TYPE ||
+|| weakE_DamageRate || Special attack E damage multiplier || Damage multiplier for special attack E || - ||
+|| weakF_DamageRate || Special attack F damage multiplier || Damage multiplier for special attack F || - ||
+|| darkGuardCutRate || Dark attack power cut rate when guarding || How much to cut the dark attack? || - ||
+|| attackBaseDark || Dark attack power basic value || Basic value of darkness attack that damages the enemy's HP || - ||
+|| correctType_Dark || Correction type (dark attack power) || Determine the type of darkness attack power correction graph with primary parameters || WEP_CORRECT_TYPE ||
+|| correctType_Poison || Correction type (poison attack power) || Determining the type of poison attack power correction graph with primary parameters || WEP_CORRECT_TYPE ||
+|| sortGroupId || Sort item type ID || Sort item type ID. In the sort "Item type order", the same ID is displayed together as the same group. || - ||
+|| atkAttribute2 || Physical attribute 2 || Physical attribute 2 || ATKPARAM_ATKATTR_TYPE ||
+|| sleepGuardResist || Sleep attack cut rate || How much to cut the attack power (set as a special effect parameter) to sleep || - ||
+|| madnessGuardResist || Mad attack cut rate || How much to cut the attack power (set to the special effect parameter) that makes you go mad || - ||
+|| correctType_Blood || Correction type (bleeding attack power) || Determine the type of bleeding attack power correction graph with primary parameters || WEP_CORRECT_TYPE ||
+|| properLuck || Equipment proper luck || Equipment appropriate value. || - ||
+|| freezeGuardResist || Cold attack cut rate || How much to cut the attack power (set to the special effect parameter) to cool down || - ||
+|| autoReplenishType || Automatic replenishment type || Controls whether or not to automatically replenish and default settings || AUTO_REPLENISH_TYPE ||
+|| swordArtsParamId || Arts parameter ID || Arts parameter ID || - ||
+|| correctLuck || Luck correction || Charapara correction value. || - ||
+|| arrowBoltEquipId || Equipment ID for quiver (magazine) display model || Equipment number of the quiver (magazine) display model. In the case of a bow, it is displayed as a quiver, and in the case of a crossbow, it is displayed as a magazine. || - ||
+|| DerivationLevelType || Level setting at the time of reduction || Type of how to set the enhancement level when returning or deriving a weapon || WEAPON_DERIVATION_LEVEL_TYPE ||
+|| enchantSfxSize || Enchantment Sfx size || Value offset to enchantment SfxId || WEP_ENCHANT_SFX_SIZE ||
+|| wepType || Weapon type || Weapon type. Used for linking text and magic stones (* It is now used for other than text) || WEP_TYPE ||
+|| physGuardCutRate_MaxCorrect || Physical attack cut rate when guarding_maximum correction value || Maximum damage physical cut rate correction value when guarding || - ||
+|| magGuardCutRate_MaxCorrect || Magic attack cut rate when guarding_maximum correction value || Maximum value of correction value of damage magic cut rate when guarding || - ||
+|| fireGuardCutRate_MaxCorrect || Flame attack power cut rate when guarding_maximum correction value || Maximum value of correction value of damage flame cut rate when guarding || - ||
+|| thunGuardCutRate_MaxCorrect || Electric shock attack power cut rate when guarding_maximum correction value || Maximum value of correction value of damage electric shock cut rate when guarding || - ||
+|| darkGuardCutRate_MaxCorrect || Darkness attack power cut rate when guarding_maximum correction value || Maximum value of correction value of damage darkness cut rate when guarding || - ||
+|| poisonGuardResist_MaxCorrect || Poison resistance cut rate_maximum correction value || Maximum value of cut rate correction value for attack power against poison (set as special effect parameter) || - ||
+|| diseaseGuardResist_MaxCorrect || Epidemic resistance cut rate_maximum correction value || Maximum value of cut rate correction value for attack power against plague (set as special effect parameter) || - ||
+|| bloodGuardResist_MaxCorrect || Bleeding resistance cut rate_maximum correction value || Maximum value of cut rate correction value for attack power against bleeding (set as special effect parameter) || - ||
+|| curseGuardResist_MaxCorrect || Curse resistance cut rate_maximum correction value || Maximum value of cut rate correction value for attack power against curse (set as special effect parameter) || - ||
+|| freezeGuardResist_MaxCorrect || Cold resistance cut rate_maximum correction value || Maximum value of cut rate correction value for attack power against cold air (set as special effect parameter) || - ||
+|| staminaGuardDef_MaxCorrect || Stamina defense when guarding_maximum correction value || When the guard is successful, the maximum value of the defense power correction value against the enemy's stamina attack || - ||
+|| residentSfxId_1 || Resident SfxId1 || Resident SfxId1 || - ||
+|| residentSfxId_2 || Resident SfxId2 || Resident SfxId2 || - ||
+|| residentSfxId_3 || Resident SfxId3 || Resident SfxId3 || - ||
+|| residentSfxId_4 || Resident SfxId4 || Resident SfxId4 || - ||
+|| residentSfx_DmyId_1 || Resident Sfx Damipoli Id1 || Resident Sfx Damipoli Id1 || - ||
+|| residentSfx_DmyId_2 || Resident Sfx Damipoli Id2 || Resident Sfx Damipoli Id2 || - ||
+|| residentSfx_DmyId_3 || Resident Sfx Damipoli Id3 || Resident Sfx Damipoli Id3 || - ||
+|| residentSfx_DmyId_4 || Resident Sfx Damipoli Id4 || Resident Sfx Damipoli Id4 || - ||
+|| staminaConsumptionRate || Stamina consumption ratio || Stamina consumption ratio || - ||
+|| vsPlayerDmgCorrectRate_Physics || Physical damage correction factor against player || Only attacks on the player will correct the damage done. || - ||
+|| vsPlayerDmgCorrectRate_Magic || Anti-player magic damage correction factor || Only attacks on the player will correct the damage done. || - ||
+|| vsPlayerDmgCorrectRate_Fire || Anti-player flame damage correction factor || Only attacks on the player will correct the damage done. || - ||
+|| vsPlayerDmgCorrectRate_Thunder || Anti-player lightning damage correction factor || Only attacks on the player will correct the damage done. || - ||
+|| vsPlayerDmgCorrectRate_Dark || Against player darkness damage correction factor || Only attacks on the player will correct the damage done. || - ||
+|| vsPlayerDmgCorrectRate_Poison || Anti-player poison damage correction factor || Only attacks on the player will correct the damage done. || - ||
+|| vsPlayerDmgCorrectRate_Blood || Anti-player bleeding damage correction factor || Only attacks on the player will correct the damage done. || - ||
+|| vsPlayerDmgCorrectRate_Freeze || Anti-player cold damage correction factor || Only attacks on the player will correct the damage done. || - ||
+|| attainmentWepStatusStr || Weapon ability release status value: Strength || To change the R2 attack into a special action when the status is X or higher when using a specific weapon. || - ||
+|| attainmentWepStatusDex || Weapon ability release status value: Skill || To change the R2 attack into a special action when the status is X or higher when using a specific weapon. || - ||
+|| attainmentWepStatusMag || Weapon ability release status value: reason || To change the R2 attack into a special action when the status is X or higher when using a specific weapon. || - ||
+|| attainmentWepStatusFai || Weapon ability release status value: Faith || This is to change the R2 attack into a special action when the status is X or higher when using a specific weapon. || - ||
+|| attainmentWepStatusLuc || Weapon ability release status value: Luck || This is to change the R2 attack into a special action when the status is X or higher when using a specific weapon. || - ||
+|| attackElementCorrectId || Attack attribute correction ID || ID of the parameter that corrects the attack attribute || - ||
+|| saleValue || Selling price || Selling price || - ||
+|| reinforceShopCategory || Enhanced shop category || Enhanced shop category || REINFORCE_SHOP_CATEGORY ||
+|| maxArrowQuantity || Maximum number of arrows || Maximum number of arrows || - ||
+|| residentSfx_1_IsVisibleForHang || Resident SFX1 Whether to display at the time of sword delivery || If "Do you want to display when resident SFX1 is delivered?" Is true, hide the SFX set to "resident SFX ID1" when the weapon is delivered. || EQUIP_BOOL ||
+|| residentSfx_2_IsVisibleForHang || Whether to display when resident SFX2 sword is delivered || If "Do you want to display when resident SFX2 is delivered?" Is true, hide the SFX set to "resident SFX ID2" when the weapon is delivered. || EQUIP_BOOL ||
+|| residentSfx_3_IsVisibleForHang || Whether to display when resident SFX3 sword is delivered || If "Do you want to display when resident SFX3 is delivered?" Is true, hide the SFX set to "resident SFX ID3" when the weapon is delivered. || EQUIP_BOOL ||
+|| residentSfx_4_IsVisibleForHang || Whether to display when resident SFX4 sword is delivered || If "Do you want to display when resident SFX4 is delivered?" Is true, hide the SFX set to "resident SFX ID 4" when the weapon is delivered. || EQUIP_BOOL ||
+|| isSoulParamIdChange_model0 || Model_0 Is it possible to replace the Soul Param ID? || Whether the vfx parameter "Soul Param ID for Weapon Enchantment" and "Invisible Weapon for Weapon Enchantment" settings are applied || EQUIP_BOOL ||
+|| isSoulParamIdChange_model1 || Is it possible to replace the model _1 Soul Param ID? || Whether the vfx parameter "Soul Param ID for Weapon Enchantment" and "Invisible Weapon for Weapon Enchantment" settings are applied || EQUIP_BOOL ||
+|| isSoulParamIdChange_model2 || Model_2 Soul Param ID can be replaced? || Whether the vfx parameter "Soul Param ID for Weapon Enchantment" and "Invisible Weapon for Weapon Enchantment" settings are applied || EQUIP_BOOL ||
+|| isSoulParamIdChange_model3 || Model_3 Is it possible to replace the Soul Param ID? || Whether the vfx parameter "Soul Param ID for Weapon Enchantment" and "Invisible Weapon for Weapon Enchantment" settings are applied || EQUIP_BOOL ||
+|| wepSeIdOffset || Weapon SEID offset value || SEID offset value || - ||
+|| baseChangePrice || Evolution price || Evolution price || - ||
+|| levelSyncCorrectId || Level sync correction ID || Level sync correction ID || - ||
+|| correctType_Sleep || Correction type (sleep attack power) || Determine the type of sleep attack correction graph with primary parameters || WEP_CORRECT_TYPE ||
+|| correctType_Madness || Correction type (mad attack power) || Determining the type of mad attack power correction graph with primary parameters || WEP_CORRECT_TYPE ||
+|| rarity || Rarity || Rarity used in item acquisition logs || - ||
+|| gemMountType || Is it possible to attach magic stones? || Is it possible to attach magic stones? || GEM_MOUNT_TYPE ||
+|| wepRegainHp || Weapon regain amount || Weapon regain amount || - ||
+|| spEffectMsgId0 || Effect text ID 00 || Effect text ID 00 (Weapon_Effect). Weapon-specific effect text to display in status || - ||
+|| spEffectMsgId1 || Effect text ID 01 || Effect text ID 01 (Weapon_Effect). Weapon-specific effect text to display in status || - ||
+|| spEffectMsgId2 || Effect text ID 02 || Effect text ID 02 (Weapon_Effect). Weapon-specific effect text to display in status || - ||
+|| originEquipWep16 || Derivative source enhancement +16 || This weapon's enhancement source weapon ID 16 || - ||
+|| originEquipWep17 || Derivative source enhancement +17 || This weapon's enhancement source weapon ID 17 || - ||
+|| originEquipWep18 || Derivative source enhancement +18 || This weapon's enhancement source weapon ID18 || - ||
+|| originEquipWep19 || Derivative source enhancement +19 || This weapon's enhancement source weapon ID 19 || - ||
+|| originEquipWep20 || Derivative source enhancement +20 || This weapon's enhancement source weapon ID 20 || - ||
+|| originEquipWep21 || Derivative source enhancement +21 || This weapon's enhancement source weapon ID21 || - ||
+|| originEquipWep22 || Derivative source enhancement +22 || This weapon's enhancement source weapon ID 22 || - ||
+|| originEquipWep23 || Derivative source enhancement +23 || This weapon's enhancement source weapon ID 23 || - ||
+|| originEquipWep24 || Derivative source enhancement +24 || This weapon's enhancement source weapon ID 24 || - ||
+|| originEquipWep25 || Derivative source enhancement +25 || This weapon's enhancement source weapon ID 25 || - ||
+|| vsPlayerDmgCorrectRate_Sleep || Anti-player sleep damage correction factor || Only attacks on the player will correct the damage done. || - ||
+|| vsPlayerDmgCorrectRate_Madness || Anti-player mad damage correction factor || Only attacks on the player will correct the damage done. || - ||
+|| saGuardCutRate || SA attack cut rate when guarding || SA damage cut rate when guard is successful || - ||
+|| defMaterialVariationValue || Defensive material variation value || It is a value used to divide the damage SFX and SE into variations in combination with the defense material used when guarding. SEQ16473 || - ||
+|| spAttributeVariationValue || Special attribute variation value || It is a value used to give variation to abnormal state SFX, SE, etc. in combination with the special attribute of the weapon. SEQ16473 || - ||
+|| stealthAtkRate || Stealth attack power multiplier || Stealth attack power multiplier || - ||
+|| vsPlayerDmgCorrectRate_Disease || Anti-player plague damage correction factor || Only attacks on the player will correct the damage done. || - ||
+|| vsPlayerDmgCorrectRate_Curse || Anti-player curse damage correction factor || Only attacks on the player will correct the damage done. || - ||
+|| pad || pad || pad || - ||

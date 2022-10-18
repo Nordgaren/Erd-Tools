@@ -1,0 +1,6 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Use,Use of the flag.,0,2,1000,u8,1,%d,EVENT_FLAG_USAGE_TYPE,Wrap
+Playlog category,Valid only when the usage is "ON / OFF". If this is set, the play log will be collected when the flag is turned ON.,0,255,3000,u8,1,%d,EVENT_FLAG_USAGE_PLAYLOG_CATEGORY,Wrap
+Padding,Padding,,,999999,dummy8,,%f,dummy8,None
+Number of secured flags,Set to 1 for "ON / OFF". In the case of "frame allocation" and "integer", "parameter number-parameter number + number of secured flags-1" is secured.,1,999999999,2000,s32,1,%d,s32,Wrap
+Padding,Padding,,,999999,dummy8,,,dummy8,None

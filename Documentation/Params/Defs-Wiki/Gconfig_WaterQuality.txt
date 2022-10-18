@@ -1,0 +1,3 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| interactionEnabled || Interaction enabled || Interaction enabled || ON_OFF ||
+|| dmy || dmy ||  || - ||

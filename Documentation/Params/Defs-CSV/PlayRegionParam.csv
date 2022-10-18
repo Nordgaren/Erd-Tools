@@ -1,0 +1,86 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,1000000,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,1000001,dummy8,,%d,dummy8,None
+Simple match area ID,Simple match area ID,0,99999999,1000,s32,1,%d,s32,Wrap
+Multiplayer start limit event flag ID,Multiplayer start limit event flag ID,0,-294967297,1040,u32,1,%u,u32,Wrap
+Other distances that cannot be invaded by spirits,Other distances that cannot be invaded by spirits. The intrusion position is searched for the intrusion points within the "other ghost invasion impossible distance" to the "other ghost invasion range upper limit" from the host position.,0,1000,2000,f32,0.1,%f,f32,Wrap
+PC position save limit event flag ID,PC position save restriction event flag ID (flag ON: PC position save valid flag OFF: PC position save invalid 0: PC position save always valid),0,-294967297,1200,u32,1,%u,u32,Wrap
+Boss area ID,Areas with the same ID are treated as the same boss area.,0,-294967297,1030,u32,1,%u,u32,Wrap
+NPC White Spirit Summon Ritual Summon NPC Entity ID Free Frame ID,NPC White Spirit Summon Ritual Summon The beginning of the free frame ID used as the NPC's entity ID,-1,999,3000,s16,1,%d,s16,Wrap
+Is it a map guardian area?,Whether to increase or decrease the frame of the map protection area,0,1,1130,u8,1,%d,ON_OFF,Wrap
+Is it the old man sign area of yellow robe?,Is it the old man sign area of yellow robe?,0,1,1140,u8,1,%d,ON_OFF,Wrap
+Flag state to limit,Flag state that limits "multiplayer start restriction event flag ID",0,1,1041,u8,1,%d,ON_OFF,Wrap
+Flag state to limit,Flag state that limits "intrusion restriction event flag ID1",0,1,1051,u8,1,%d,ON_OFF,Wrap
+Flag state to limit,Flag state that limits "white sign restriction event flag ID1",0,1,1061,u8,1,%d,ON_OFF,Wrap
+Flag state to limit,Flag state that limits "red sign limit event flag ID1",0,1,1071,u8,1,%d,ON_OFF,Wrap
+Flag state to limit,Flag state that limits "intrusion restriction event flag ID2",0,1,1053,u8,1,%d,ON_OFF,Wrap
+Flag state to limit,Flag state that limits "intrusion restriction event flag ID3",0,1,1055,u8,1,%d,ON_OFF,Wrap
+Flag state to limit,Flag state that limits "white sign restriction event flag ID2",0,1,1063,u8,1,%d,ON_OFF,Wrap
+Warp item permit bonfire ID1,Bonfire entity ID1 used to determine whether to allow the use of warp items,0,-294967297,4000,u32,1,%u,u32,Wrap
+Warp item permit bonfire ID2,Bonfire entity ID 2 used to determine permission to use warp items,0,-294967297,4010,u32,1,%u,u32,Wrap
+Warp item permit bonfire ID3,Bonfire entity ID 3 used to determine permission to use warp items,0,-294967297,4020,u32,1,%u,u32,Wrap
+Warp item permit bonfire ID4,Bonfire entity ID 4 used to determine permission to use warp items,0,-294967297,4030,u32,1,%u,u32,Wrap
+Warp item permit bonfire ID5,Bonfire entity ID 5 used to determine permission to use warp items,0,-294967297,4040,u32,1,%u,u32,Wrap
+Warp item prohibited event flag ID1,Event flag ID 1 to determine the prohibition of warp items. Warp item permission Higher priority than judgment by bonfire ID,0,-294967297,4100,u32,1,%u,u32,Wrap
+Warp item prohibited event flag ID2,Event flag ID 2 to determine the prohibition of warp items. Warp item permission Higher priority than judgment by bonfire ID,0,-294967297,4110,u32,1,%u,u32,Wrap
+Warp item prohibited event flag ID3,Event flag ID 3 to determine the prohibition of warp items. Warp item permission Higher priority than judgment by bonfire ID,0,-294967297,4120,u32,1,%u,u32,Wrap
+Warp item prohibited event flag ID4,Event flag ID 4 to determine the prohibition of warp items. Warp item permission Higher priority than judgment by bonfire ID,0,-294967297,4130,u32,1,%u,u32,Wrap
+Warp Item Ban Event Flag ID 5,Event flag ID 5 to determine the prohibition of warp items. Warp item permission Higher priority than judgment by bonfire ID,0,-294967297,4140,u32,1,%u,u32,Wrap
+Effective bloodstain / death illusion,Effective bloodstain / death illusion,0,1,5000,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Blood character valid,Blood character valid,0,1,5010,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Phantom effective,Phantom effective,0,1,5020,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Map display_display setting M00,Whether to display on map M00,0,1,5900,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+For map display_Display setting M01,Whether to display on map M01,0,1,5910,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Flag state to limit,Flag state that limits "white sign restriction event flag ID3",0,1,1065,u8,1,%d,ON_OFF,Wrap
+Flag state to limit,Flag state that limits "red sign limit event flag ID2",0,1,1073,u8,1,%d,ON_OFF,Wrap
+Flag state to limit,Flag state that limits "red sign limit event flag ID3",0,1,1075,u8,1,%d,ON_OFF,Wrap
+Is it automatic generation of intrusion points?,Is it an intrusion point automatic generation? If it is set to ○, the intrusion position is searched by the automatically generated logic for the intrusion point.,0,1,2100,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+pad1,,,,1000002,dummy8,,,dummy8,None
+pad2,,,,1000003,dummy8,,,dummy8,None
+Yellow robe's old man host restriction event flag,Yellow Coat Host Restriction Event Flag: When this flag is turned on, multiplayer as a host of Yellow Coat is prohibited. It is assumed that the block clear flag will be inserted. 0: No limit,0,-294967297,1120,u32,1,%u,u32,Wrap
+Other ghost invasion range upper limit,Other ghost invasion range upper limit. The intrusion position is searched for the intrusion points within the "other ghost invasion impossible distance" to the "other ghost invasion range upper limit" from the host position.,0,1000,2010,f32,0.1,%f,f32,Wrap
+Sign pool release event flag ID,Sign accumulation release event flag ID,0,-294967297,1010,u32,1,%u,u32,Wrap
+Map display_area number (mXX_00_00_00),Area number (mXX_00_00_00). Data for specifying the display position in the map menu,0,99,6000,u8,1,%u,u8,Wrap
+Map display_grid X number (m00_XX_00_00),Grid X number (m00_XX_00_00). Data for specifying the display position in the map menu,0,99,6010,u8,1,%u,u8,Wrap
+Map display_grid Z number (m00_00_XX_00),Grid Z number (m00_00_XX_00). Data for specifying the display position in the map menu,0,99,6020,u8,1,%u,u8,Wrap
+pad4,,,,1000004,dummy8,,,dummy8,None
+_X coordinates for map display,X coordinates (relative coordinates from the specified map). Data for specifying the display position in the map menu,-20000,20000,6100,f32,0.01,%f,f32,Wrap
+_Y coordinates for map display,Y coordinates (relative coordinates from the specified map). Data for specifying the display position in the map menu. Not actually used, but keep XYZ aligned,-20000,20000,6110,f32,0.01,%f,f32,Wrap
+_Z coordinates for map display,Z coordinates (relative coordinates from the specified map). Data for specifying the display position in the map menu,-20000,20000,6120,f32,0.01,%f,f32,Wrap
+Intrusion restriction event flag ID1,Intrusion restriction event flag ID1,0,-294967297,1050,u32,1,%u,u32,Wrap
+White sign limit event flag ID1,White sign limit event flag ID1,0,-294967297,1060,u32,1,%u,u32,Wrap
+Sign accumulation registration restriction Event flag ID,Sign accumulation registration restriction Event flag ID (Flag ON: Sign accumulation registration is permitted Flag OFF: Sign accumulation registration is prohibited 0: Sign accumulation registration is always permitted),0,-294967297,1020,u32,1,%u,u32,Wrap
+Multipurpose ID 01,Multi-purpose ID to be displayed in the list when setting the purpose,0,-294967297,999999,u32,1,%u,u32,Wrap
+Multipurpose ID 02,Multi-purpose ID to be displayed in the list when setting the purpose,0,-294967297,999999,u32,1,%u,u32,Wrap
+Multipurpose ID 03,Multi-purpose ID to be displayed in the list when setting the purpose,0,-294967297,999999,u32,1,%u,u32,Wrap
+Multipurpose ID 04,Multi-purpose ID to be displayed in the list when setting the purpose,0,-294967297,999999,u32,1,%u,u32,Wrap
+Multipurpose ID 05,Multi-purpose ID to be displayed in the list when setting the purpose,0,-294967297,999999,u32,1,%u,u32,Wrap
+Multipurpose ID 06,Multi-purpose ID to be displayed in the list when setting the purpose,0,-294967297,999999,u32,1,%u,u32,Wrap
+Multipurpose ID 07,Multi-purpose ID to be displayed in the list when setting the purpose,0,-294967297,999999,u32,1,%u,u32,Wrap
+Multipurpose ID08,Multi-purpose ID to be displayed in the list when setting the purpose,0,-294967297,999999,u32,1,%u,u32,Wrap
+Red sign limit event flag ID1,Red sign limit event flag ID1,0,-294967297,1070,u32,1,%u,u32,Wrap
+Intrusion restriction event flag ID2,Intrusion restriction event flag ID2,0,-294967297,1052,u32,1,%u,u32,Wrap
+Intrusion restriction event flag ID3,Intrusion restriction event flag ID3,0,-294967297,1054,u32,1,%u,u32,Wrap
+White sign limit event flag ID2,White sign limit event flag ID2,0,-294967297,1062,u32,1,%u,u32,Wrap
+White sign limit event flag ID3,White sign limit event flag ID3,0,-294967297,1064,u32,1,%u,u32,Wrap
+Red sign limit event flag ID2,Red sign limit event flag ID2,0,-294967297,1072,u32,1,%u,u32,Wrap
+Red sign limit event flag ID3,Red sign limit event flag ID3,0,-294967297,1074,u32,1,%u,u32,Wrap
+Area boss ID01,Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○.,0,-294967297,2110,u32,1,%u,u32,Wrap
+Area boss ID02,Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○.,0,-294967297,2111,u32,1,%u,u32,Wrap
+Area boss ID03,Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○.,0,-294967297,2112,u32,1,%u,u32,Wrap
+Area boss ID04,Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○.,0,-294967297,2113,u32,1,%u,u32,Wrap
+Area Boss ID 05,Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○.,0,-294967297,2114,u32,1,%u,u32,Wrap
+Area Boss ID 06,Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○.,0,-294967297,2115,u32,1,%u,u32,Wrap
+Area Boss ID 07,Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○.,0,-294967297,2116,u32,1,%u,u32,Wrap
+Area boss ID08,Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○.,0,-294967297,2117,u32,1,%u,u32,Wrap
+Area Boss ID 09,Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○.,0,-294967297,2118,u32,1,%u,u32,Wrap
+Area boss ID 10,Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○.,0,-294967297,2119,u32,1,%u,u32,Wrap
+In-area boss ID 11,Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○.,0,-294967297,2120,u32,1,%u,u32,Wrap
+In-area boss ID 12,Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○.,0,-294967297,2121,u32,1,%u,u32,Wrap
+Area boss ID 13,Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○.,0,-294967297,2122,u32,1,%u,u32,Wrap
+Area boss ID14,Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○.,0,-294967297,2123,u32,1,%u,u32,Wrap
+Area boss ID15,Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○.,0,-294967297,2124,u32,1,%u,u32,Wrap
+Area boss ID 16,Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○.,0,-294967297,2125,u32,1,%u,u32,Wrap
+Map display_event flag ID,Map display_event flag ID (0: always displayed). Only when this event flag is set, it will be displayed in a lively manner in the map menu.,0,-294967297,5800,u32,1,%u,u32,Wrap
+pad5,,,,1000005,dummy8,,%u,dummy8,Wrap

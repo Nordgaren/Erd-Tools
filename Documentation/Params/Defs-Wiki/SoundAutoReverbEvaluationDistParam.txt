@@ -1,0 +1,9 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| NoHitDist || Distance to No Hit [m] || Collision points above this distance [m] are judged as No Hit (less than 0: invalid) || - ||
+|| isCollectNoHitPoint || Do you include NoHit collision points? || Do you include NoHit collision points? || BOOL_CIRCLECROSS_TYPE ||
+|| isCollectOutdoorPoint || Do you include outdoor collision points? || Do you include outdoor collision points? || BOOL_CIRCLECROSS_TYPE ||
+|| isCollectFloorPoint || Do you include floor collision points? || Do you include floor collision points? || BOOL_CIRCLECROSS_TYPE ||
+|| distValCalcType || Evaluation distance calculation type || Evaluation distance calculation type (0: normal, average from 1: Max) || - ||
+|| enableLifeTime || Effective collision point life [seconds] || Collision points longer than this life [second] are treated as invalid. Set to be less than or equal to the life of the common setting || - ||
+|| maxDistRecordNum || Max Number of collision point records || Max Number of collision point records || - ||
+|| ignoreDistNumForMax || Max distance decimation || Max distance decimation number (0: not decimation) (must be set to the value of "Max collision point record number-1". Incorrect value will be corrected) || - ||

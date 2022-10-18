@@ -1,0 +1,48 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| attackTableId || Reference ID || ID specified by NPC thinking parameters || - ||
+|| attackId || Attack ID || Attack number || - ||
+|| successDistance || Success judgment distance || For arguments of Common_Attack type subgoals || - ||
+|| turnTimeBeforeAttack || Turn time before attack || For arguments of Common_Attack type subgoals || - ||
+|| frontAngleRange || Front judgment angle || For arguments of Common_Attack type subgoals || - ||
+|| upAngleThreshold || Upward execution threshold || For arguments of Common_Attack type subgoals || - ||
+|| downAngleThershold || Downward execution threshold || For arguments of Common_Attack type subgoals || - ||
+|| isFirstAttack || Is it a starting technique? || Attacks from the second stage of the combo are × || AI_ATTACK_BOOL ||
+|| doesSelectOnOutRange || Whether to select outside the proper distance || Whether to select when the distance is out of the proper distance || AI_ATTACK_BOOL ||
+|| minOptimalDistance || Minimum proper distance || Minimum value of proper attack distance || - ||
+|| maxOptimalDistance || Maximum proper distance || Maximum attack suitability distance || - ||
+|| baseDirectionForOptimalAngle1 || Appropriate angle reference direction 1 || Direction that serves as a reference for the proper angle of attack (XZ plane) || - ||
+|| optimalAttackAngleRange1 || Appropriate angle reference range 1 || Range of aptitude angles for attacks || - ||
+|| baseDirectionForOptimalAngle2 || Appropriate angle reference direction 2 || Direction that serves as a reference for attack aptitude accuracy (XZ plane) || - ||
+|| optimalAttackAngleRange2 || Appropriate angle reference range 2 || Range of aptitude angles for attacks || - ||
+|| intervalForExec || Executable interval || Time required to attack once and then use it again || - ||
+|| selectionTendency || Selection rate || Specify the ease of selection by magnification || - ||
+|| shortRangeTendency || Short range selection rate || Selection rate at close range || - ||
+|| middleRangeTendency || Medium range selection rate || Selection rate at medium range || - ||
+|| farRangeTendency || Distance selection rate || Selection rate at long distances || - ||
+|| outRangeTendency || Out of range rate || Selection rate out of range || - ||
+|| deriveAttackId1 || Derived attack 1 || Derivable attack number || - ||
+|| deriveAttackId2 || Derived attack 2 || Derivable attack number || - ||
+|| deriveAttackId3 || Derived attack 3 || Derivable attack number || - ||
+|| deriveAttackId4 || Derived attack 4 || Derivable attack number || - ||
+|| deriveAttackId5 || Derived attack 5 || Derivable attack number || - ||
+|| deriveAttackId6 || Derived attack 6 || Derivable attack number || - ||
+|| deriveAttackId7 || Derived attack 7 || Derivable attack number || - ||
+|| deriveAttackId8 || Derived attack 8 || Derivable attack number || - ||
+|| deriveAttackId9 || Derived attack 9 || Derivable attack number || - ||
+|| deriveAttackId10 || Derived attack 10 || Derivable attack number || - ||
+|| deriveAttackId11 || Derived attack 11 || Derivable attack number || - ||
+|| deriveAttackId12 || Derived attack 12 || Derivable attack number || - ||
+|| deriveAttackId13 || Derived attack 13 || Derivable attack number || - ||
+|| deriveAttackId14 || Derived attack 14 || Derivable attack number || - ||
+|| deriveAttackId15 || Derived attack 15 || Derivable attack number || - ||
+|| deriveAttackId16 || Derived attack 16 || Derivable attack number || - ||
+|| goalLifeMin || Minimum life of the goal || Minimum life of the goal || - ||
+|| goalLifeMax || Maximum life span of the goal || Maximum life span of the goal || - ||
+|| doesSelectOnInnerRange || Whether to select within the appropriate distance || Whether to select when within the appropriate distance || AI_ATTACK_BOOL ||
+|| enableAttackOnBattleStart || Whether to use it as the first hit || Whether to use it as the first hit || AI_ATTACK_BOOL ||
+|| doesSelectOnTargetDown || Whether to select when the target is down || Whether to select when the target is down || AI_ATTACK_BOOL ||
+|| pad1 || pad ||  || - ||
+|| minArriveDistance || Minimum reach judgment distance || Minimum reach judgment distance || - ||
+|| maxArriveDistance || Maximum reach judgment distance || Maximum reach judgment distance || - ||
+|| comboExecDistance || Continuous attack execution distance || Distance used to determine the execution of attacks from the second stage onward || - ||
+|| comboExecRange || Continuous attack execution angle || Distance used to determine the execution of attacks from the second stage onward || - ||

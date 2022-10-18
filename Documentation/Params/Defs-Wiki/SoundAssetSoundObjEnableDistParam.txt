@@ -1,0 +1,2 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| SoundObjEnableDist || Asset sound sound source effective distance setting [m] || Asset sound sound source effective distance [m] (less than 0: invalid) || - ||

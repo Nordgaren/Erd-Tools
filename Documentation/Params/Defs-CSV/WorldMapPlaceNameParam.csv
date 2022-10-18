@@ -1,0 +1,14 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,1601,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,1602,dummy8,,%d,dummy8,None
+Map fragment parameter ID,Map fragment parameter ID. Display text if you have this map fragment,-1,99999999,100,s32,1,%d,s32,Wrap
+Text ID,The text ID to display. PlaceName.xlsm,-1,99999999,500,s32,1,%d,s32,Wrap
+Padding,,,,1603,dummy8,,,dummy8,None
+Area number,AA part of mAA_BB_CC_DD,0,99,1100,u8,1,%u,u8,Wrap
+Grid X number,BB part of mAA_BB_CC_DD,0,99,1200,u8,1,%u,u8,Wrap
+Grid Z number,CC part of mAA_BB_CC_DD,0,99,1300,u8,1,%u,u8,Wrap
+Padding,Padding,,,1604,dummy8,,,dummy8,None
+X coordinate,X coordinate,-20000,20000,1400,f32,0.01,%f,f32,Wrap
+Y coordinate,Y coordinate (not used),-20000,20000,1500,f32,0.01,%f,f32,Wrap
+Z coordinate,Z coordinate,-20000,20000,1600,f32,0.01,%f,f32,Wrap

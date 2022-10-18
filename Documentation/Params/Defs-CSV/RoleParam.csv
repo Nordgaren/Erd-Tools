@@ -1,0 +1,33 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Team type,Team type,-1,255,2000,u8,1,%d,TEAM_TYPE,Wrap
+pad10,,,,6001,dummy8,,,dummy8,None
+Phantom parameter ID (pledge rank 0),Phantom parameter ID when pledge rank is 0,-1,999999999,3000,s32,1,%d,s32,Wrap
+Resident special effect 0,Resident special effect 0,-1,999999999,4000,s32,1,%d,s32,Wrap
+Resident special effect 1,Resident special effect 1,-1,999999999,4010,s32,1,%d,s32,Wrap
+Resident special effect 2,Resident special effect 2,-1,999999999,4020,s32,1,%d,s32,Wrap
+Resident special effect 3,Resident special effect 3,-1,999999999,4030,s32,1,%d,s32,Wrap
+Resident special effect 4,Resident special effect 4,-1,999999999,4040,s32,1,%d,s32,Wrap
+Resident special effect 5,Resident special effect 5,-1,999999999,4050,s32,1,%d,s32,Wrap
+Resident special effect 6,Resident special effect 6,-1,999999999,4060,s32,1,%d,s32,Wrap
+Resident special effect 7,Resident special effect 7,-1,999999999,4070,s32,1,%d,s32,Wrap
+Resident special effect 8,Resident special effect 8,-1,999999999,4080,s32,1,%d,s32,Wrap
+Resident special effect 9,Resident special effect 9,-1,999999999,4090,s32,1,%d,s32,Wrap
+SOS sign SFX ID,SOS sign SFX ID issued by another person,0,999999999,4500,s32,1,%d,s32,Wrap
+SOS sign SFX ID issued by me,SOS sign SFX ID issued by me,0,999999999,4510,s32,1,%d,s32,Wrap
+Anime ID (player) when summoned,Anime ID to play when the player is summoned and the game starts,0,999999999,4550,s32,1,%d,s32,Wrap
+Reward item lottery ID_for map,Acquisition reward item lottery parameter ID_for map (not -1),-1,999999999,4600,s32,1,%d,s32,Wrap
+Voice chat group,Voice chat group,0,255,5000,u8,1,%d,VOICE_CHAT_GROUP_Type,Wrap
+Role name text color,The color of the role name text displayed on the FE of the network PC,0,255,5400,u8,1,%d,ROLE_NAME_COLOR_TYPE,Wrap
+pad1,,,,6002,dummy8,,,dummy8,None
+Role name text ID,Text ID of the role name to be displayed on the FE of the network PC,0,999999999,5500,s32,1,%d,s32,Wrap
+Threat level,Threat level,0,31,5600,u32,1,%d,u32,Wrap
+Phantom parameter ID (pledge rank 1),Phantom parameter ID when pledge rank is 1,-1,999999999,3010,s32,1,%d,s32,Wrap
+Phantom Parameter ID (Pledge Rank 2),Phantom parameter ID when pledge rank is 2,-1,999999999,3020,s32,1,%d,s32,Wrap
+Phantom Parameter ID (Pledge Rank 3),Phantom parameter ID when pledge rank is 3,-1,999999999,3030,s32,1,%d,s32,Wrap
+Special effect ID for SFX (pledge rank 0),Special effect ID for SFX when pledge rank 0,-1,999999999,4400,s32,1,%d,s32,Wrap
+Special effect ID for SFX (pledge rank 1),Special effect ID for SFX when pledge rank 1,-1,999999999,4410,s32,1,%d,s32,Wrap
+Special effect ID for SFX (pledge rank 2),Special effect ID for SFX when pledge rank 2,-1,999999999,4420,s32,1,%d,s32,Wrap
+Special effect ID for SFX (pledge rank 3),Special effect ID for SFX when pledge rank 3,-1,999999999,4430,s32,1,%d,s32,Wrap
+Phantom ID for sign illusion,Multiplayer pledge ghost body sign phantom ID designation for illusion,-1,999999999,6000,s32,1,%d,s32,Wrap
+Anime ID when summoned (other than player),Anime ID to play when a player other than the player is summoned and the game starts,0,999999999,4551,s32,1,%d,s32,Wrap
+pad2,,,,6003,dummy8,,,dummy8,None

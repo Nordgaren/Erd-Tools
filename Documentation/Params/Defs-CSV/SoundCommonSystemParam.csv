@@ -1,0 +1,3 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Parameter Key string,Key string of the parameter,0,0,1,fixstr,0,,fixstr,None
+Parameter Value string,Value string of the parameter,0,0,2,fixstr,0,,fixstr,None

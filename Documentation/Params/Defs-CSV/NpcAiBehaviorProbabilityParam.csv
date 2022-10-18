@@ -1,0 +1,201 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Right hand proximity_R1 combo,Right-handed proximity behavior,-9999,9999,0,s16,1,%d,s16,None
+Right hand proximity_R2 combo,Right-handed proximity behavior,-9999,9999,100,s16,1,%d,s16,None
+Right-handed melee_dash attack,Right-handed proximity behavior,-9999,9999,200,s16,1,%d,s16,None
+Right-handed melee_front rolling attack,Right-handed proximity behavior,-9999,9999,300,s16,1,%d,s16,None
+Right hand proximity_left and right rolling attack,Right-handed proximity behavior,-9999,9999,400,s16,1,%d,s16,None
+Right-handed melee_rear rolling attack,Right-handed proximity behavior,-9999,9999,500,s16,1,%d,s16,None
+Right-handed melee_backstep attack,Right-handed proximity behavior,-9999,9999,600,s16,1,%d,s16,None
+Right-handed melee_jump attack,Right-handed proximity behavior,-9999,9999,700,s16,1,%d,s16,None
+Right-handed melee_dash jump attack,Right-handed proximity behavior,-9999,9999,800,s16,1,%d,s16,None
+unused,,-9999,9999,900,s16,1,%d,s16,None
+Right hand long range _R1 shooting,Right-handed long-range weapon action,-9999,9999,1000,s16,1,%d,s16,None
+Right hand long range _R2 shooting,Right-handed long-range weapon action,-9999,9999,1100,s16,1,%d,s16,None
+unused,,-9999,9999,1200,s16,1,%d,s16,None
+Right hand magic _ long distance magic _ move forward,Right hand magic action,-9999,9999,2200,s16,1,%d,s16,None
+Right-handed magic_long-distance magic_moving backwards,Right hand magic action,-9999,9999,2220,s16,1,%d,s16,None
+Move left / right [Close Draw Bow],Interrupt approached while holding a bow,-9999,9999,24000,s16,1,%d,s16,None
+Left and right rolling [Close Draw Bow],Interrupt approached while holding a bow,-9999,9999,24100,s16,1,%d,s16,None
+Do not interrupt [Close Draw Bow],Interrupt approached while holding a bow,-9999,9999,24200,s16,1,%d,s16,None
+unused,,-9999,9999,24300,s16,1,%d,s16,None
+unused,,-9999,9999,24400,s16,1,%d,s16,None
+Right hand magic_Melee magic_Left and right,Right hand magic action,-9999,9999,2010,s16,1,%d,s16,None
+Right hand magic_medium range magic_left and right,Right hand magic action,-9999,9999,2110,s16,1,%d,s16,None
+Right hand magic _ long distance magic _ left and right,Right hand magic action,-9999,9999,2210,s16,1,%d,s16,None
+Right hand magic _HP recovery magic,Right hand magic action,-9999,9999,2300,s16,1,%d,s16,None
+Right hand magic_buff magic,Right hand magic action,-9999,9999,2400,s16,1,%d,s16,None
+Right hand magic_Melee magic_Move forward,Right hand magic action,-9999,9999,2000,s16,1,%d,s16,None
+Right hand magic_Melee magic_Move backwards,Right hand magic action,-9999,9999,2020,s16,1,%d,s16,None
+Right-handed magic_Medium-range magic_Move forward,Right hand magic action,-9999,9999,2100,s16,1,%d,s16,None
+Right-handed magic_Medium-range magic_Move backwards,Right hand magic action,-9999,9999,2120,s16,1,%d,s16,None
+unused,,-9999,9999,2900,s16,1,%d,s16,None
+Right hand shield_R1 attack,Right hand shield action,-9999,9999,3000,s16,1,%d,s16,None
+Right hand shield_R2 attack,Right hand shield action,-9999,9999,3100,s16,1,%d,s16,None
+unused,,-9999,9999,3200,s16,1,%d,s16,None
+unused,,-9999,9999,3300,s16,1,%d,s16,None
+unused,,-9999,9999,3400,s16,1,%d,s16,None
+Backstep [SuccessGuard],Guard success interrupt,-9999,9999,25000,s16,1,%d,s16,None
+Do not interrupt [SuccessGuard],Guard success interrupt,-9999,9999,25200,s16,1,%d,s16,None
+Guard Counter Attack [SuccessGuard],Guard success interrupt,-9999,9999,25100,s16,1,%d,s16,None
+unused,,-9999,9999,25300,s16,1,%d,s16,None
+unused,,-9999,9999,25400,s16,1,%d,s16,None
+Left hand proximity_R1 combo (both hands only),Left hand proximity behavior,-9999,9999,4000,s16,1,%d,s16,None
+Left hand proximity_R2 combo (both hands only),Left hand proximity behavior,-9999,9999,4100,s16,1,%d,s16,None
+Left-handed proximity_L1 combo (one-handed only),Left hand proximity behavior,-9999,9999,4200,s16,1,%d,s16,None
+Left-handed melee_dash attack (both hands only),Left hand proximity behavior,-9999,9999,4300,s16,1,%d,s16,None
+Left hand proximity_front rolling attack (both hands only),Left hand proximity behavior,-9999,9999,4400,s16,1,%d,s16,None
+Left hand proximity_left and right rolling attack (only with both hands),Left hand proximity behavior,-9999,9999,4500,s16,1,%d,s16,None
+Left hand proximity_rear rolling attack (only with both hands),Left hand proximity behavior,-9999,9999,4600,s16,1,%d,s16,None
+Left-handed melee_backstep attack (only with both hands),Left hand proximity behavior,-9999,9999,4700,s16,1,%d,s16,None
+Left-handed melee_jump attack (only with both hands),Left hand proximity behavior,-9999,9999,4800,s16,1,%d,s16,None
+Left-handed melee_dash jump attack (only with both hands),Left hand proximity behavior,-9999,9999,4900,s16,1,%d,s16,None
+Left hand long range _R1 shooting,Left-handed long-range weapon action,-9999,9999,5000,s16,1,%d,s16,None
+Left hand long range _R2 shooting,Left-handed long-range weapon action,-9999,9999,5100,s16,1,%d,s16,None
+unused,,-9999,9999,5200,s16,1,%d,s16,None
+Left hand magic _ long distance magic _ move forward,Left hand magic action,-9999,9999,6200,s16,1,%d,s16,None
+Left hand magic _ long distance magic _ move backward,Left hand magic action,-9999,9999,6220,s16,1,%d,s16,None
+Fatal Attack [Success Parry],Parry Success Interrupt,-9999,9999,26000,s16,1,%d,s16,None
+Do not interrupt [Success Parry],Parry Success Interrupt,-9999,9999,26100,s16,1,%d,s16,None
+unused,,-9999,9999,26200,s16,1,%d,s16,None
+unused,,-9999,9999,26300,s16,1,%d,s16,None
+unused,,-9999,9999,26400,s16,1,%d,s16,None
+Left hand magic_Melee magic_Left and right,Left hand magic action,-9999,9999,6010,s16,1,%d,s16,None
+Left hand magic_medium range magic_left and right,Left hand magic action,-9999,9999,6110,s16,1,%d,s16,None
+Left hand magic _ long distance magic _ left and right,Left hand magic action,-9999,9999,6210,s16,1,%d,s16,None
+Left hand magic _HP recovery magic,Left hand magic action,-9999,9999,6300,s16,1,%d,s16,None
+Left hand magic_buff magic,Left hand magic action,-9999,9999,6400,s16,1,%d,s16,None
+Left hand magic_Melee magic_Move forward,Left hand magic action,-9999,9999,6000,s16,1,%d,s16,None
+Left hand magic_Melee magic_Move backward,Left hand magic action,-9999,9999,6020,s16,1,%d,s16,None
+Left hand magic_medium range magic_move forward,Left hand magic action,-9999,9999,6100,s16,1,%d,s16,None
+Left hand magic_medium range magic_moving backwards,Left hand magic action,-9999,9999,6110,s16,1,%d,s16,None
+unused,,-9999,9999,6900,s16,1,%d,s16,None
+backstep,Common behavior,-9999,9999,7000,s16,1,%d,s16,None
+Front rolling,Common behavior,-9999,9999,7100,s16,1,%d,s16,None
+Left and right rolling,Common behavior,-9999,9999,7200,s16,1,%d,s16,None
+Rolling behind,Common behavior,-9999,9999,7300,s16,1,%d,s16,None
+Move left and right,Common behavior,-9999,9999,7400,s16,1,%d,s16,None
+Recession,Common behavior,-9999,9999,7500,s16,1,%d,s16,None
+Dash approach,Common behavior,-9999,9999,7600,s16,1,%d,s16,None
+stand-by,Common behavior,-9999,9999,7700,s16,1,%d,s16,None
+Switch to two-handed right hand,Common behavior,-9999,9999,7800,s16,1,%d,s16,None
+Switch to two-handed left hand,Common behavior,-9999,9999,7900,s16,1,%d,s16,None
+Switch to one-handed,Common behavior,-9999,9999,8000,s16,1,%d,s16,None
+Approach to combat distance,Common behavior,-9999,9999,7650,s16,1,%d,s16,None
+unused,,-9999,9999,8200,s16,1,%d,s16,None
+unused,,-9999,9999,8300,s16,1,%d,s16,None
+unused,,-9999,9999,8400,s16,1,%d,s16,None
+Deadly Attack [Guard Break],Guard break interrupt,-9999,9999,27000,s16,1,%d,s16,None
+Dash Attack [Guard Break],Guard break interrupt,-9999,9999,27100,s16,1,%d,s16,None
+Magic_Melee Magic [GuardBreak],Guard break interrupt,-9999,9999,27200,s16,1,%d,s16,None
+Do not interrupt [Guard Break],Guard break interrupt,-9999,9999,27300,s16,1,%d,s16,None
+unused,,-9999,9999,27400,s16,1,%d,s16,None
+Shield Chiku,Special behavior,-9999,9999,9000,s16,1,%d,s16,None
+unused,,-9999,9999,9100,s16,1,%d,s16,None
+unused,,-9999,9999,9200,s16,1,%d,s16,None
+unused,,-9999,9999,9300,s16,1,%d,s16,None
+unused,,-9999,9999,9400,s16,1,%d,s16,None
+Dash Attack [Estus],Interrupt who drank Est,-9999,9999,28000,s16,1,%d,s16,None
+Throwing item [Estus],Interrupt who drank Est,-9999,9999,28100,s16,1,%d,s16,None
+Do not interrupt [Estus],Interrupt who drank Est,-9999,9999,28200,s16,1,%d,s16,None
+unused,,-9999,9999,28300,s16,1,%d,s16,None
+unused,,-9999,9999,28400,s16,1,%d,s16,None
+Parry time,Parry Timing Interrupt,-9999,9999,29000,s16,1,%d,s16,None
+Front rolling [Parrytime],Parry Timing Interrupt,-9999,9999,29100,s16,1,%d,s16,None
+Left and right rolling [Parrytime],Parry Timing Interrupt,-9999,9999,29200,s16,1,%d,s16,None
+Rolling behind [Parrytime],Parry Timing Interrupt,-9999,9999,29300,s16,1,%d,s16,None
+Backstep attack [Parrytime],Parry Timing Interrupt,-9999,9999,29400,s16,1,%d,s16,None
+On-the-spot guard [Parrytime],Parry Timing Interrupt,-9999,9999,29500,s16,1,%d,s16,None
+Do not interrupt [Parrytime],Parry Timing Interrupt,-9999,9999,29600,s16,1,%d,s16,None
+unused,,-9999,9999,29700,s16,1,%d,s16,None
+unused,,-9999,9999,29800,s16,1,%d,s16,None
+unused,,-9999,9999,29900,s16,1,%d,s16,None
+Rolling behind [Damaged],Damaged interrupt,-9999,9999,21400,s16,1,%d,s16,None
+Left and right rolling [Damaged],Damaged interrupt,-9999,9999,21300,s16,1,%d,s16,None
+Back guard move [Damaged],Damaged interrupt,-9999,9999,21700,s16,1,%d,s16,None
+Left and right guard movement [Damaged],Damaged interrupt,-9999,9999,21600,s16,1,%d,s16,None
+Do not interrupt [Damaged],Damaged interrupt,-9999,9999,21800,s16,1,%d,s16,None
+R1 Combo [Damaged],Damaged interrupt,-9999,9999,21000,s16,1,%d,s16,None
+Front rolling [Damaged],Damaged interrupt,-9999,9999,21200,s16,1,%d,s16,None
+Backstep [Damaged],Damaged interrupt,-9999,9999,21100,s16,1,%d,s16,None
+Front guard move [Damaged],Damaged interrupt,-9999,9999,21500,s16,1,%d,s16,None
+unused,,-9999,9999,21900,s16,1,%d,s16,None
+Front rolling [Shoot],Projectile discovery interrupt,-9999,9999,22000,s16,1,%d,s16,None
+Left and right rolling [Shoot],Projectile discovery interrupt,-9999,9999,22100,s16,1,%d,s16,None
+Front guard move [Shoot],Projectile discovery interrupt,-9999,9999,22300,s16,1,%d,s16,None
+Left and right guard movement [Shoot],Projectile discovery interrupt,-9999,9999,22400,s16,1,%d,s16,None
+Do not interrupt [Shoot],Projectile discovery interrupt,-9999,9999,22600,s16,1,%d,s16,None
+After rolling [Shoot],Projectile discovery interrupt,-9999,9999,22200,s16,1,%d,s16,None
+Dash approach [Shoot],Projectile discovery interrupt,-9999,9999,22500,s16,1,%d,s16,None
+unused,,-9999,9999,22700,s16,1,%d,s16,None
+unused,,-9999,9999,22800,s16,1,%d,s16,None
+unused,,-9999,9999,22900,s16,1,%d,s16,None
+Backstep [Find Attack],Attack detection interrupt,-9999,9999,23000,s16,1,%d,s16,None
+Front rolling [Find Attack],Attack detection interrupt,-9999,9999,23100,s16,1,%d,s16,None
+Left and right rolling [Find Attack],Attack detection interrupt,-9999,9999,23200,s16,1,%d,s16,None
+After rolling [Find Attack],Attack detection interrupt,-9999,9999,23300,s16,1,%d,s16,None
+Front guard move [Find Attack],Attack detection interrupt,-9999,9999,23400,s16,1,%d,s16,None
+Left and right guard movement [Find Attack],Attack detection interrupt,-9999,9999,23500,s16,1,%d,s16,None
+On-the-spot guard [Find Attack],Attack detection interrupt,-9999,9999,23600,s16,1,%d,s16,None
+Shield Chiku [Find Attack],Attack detection interrupt,-9999,9999,23700,s16,1,%d,s16,None
+Do not interrupt [Find Attack],Attack detection interrupt,-9999,9999,23900,s16,1,%d,s16,None
+On-the-spot avoidance arts [Find Attack],Attack detection interrupt,-9999,9999,23800,s16,1,%d,s16,None
+Probability of holding both hands at R1 combo,Other probability corrections,-9999,9999,50000,s16,1,%d,s16,None
+Probability of holding both hands at R2 combo,Other probability corrections,-9999,9999,50100,s16,1,%d,s16,None
+Guard probability when moving during planning action,Other probability corrections,-9999,9999,50200,s16,1,%d,s16,None
+Probability of replacing R1 attack with dual wield attack,Other probability corrections,-9999,9999,50300,s16,1,%d,s16,None
+Probability of replacing evasion with special rolling arts,Other probability corrections,-9999,9999,50400,s16,1,%d,s16,None
+Use of throwing items,Item usage system,-9999,9999,9500,s16,1,%d,s16,None
+Use of HP recovery items,Item usage system,-9999,9999,9510,s16,1,%d,s16,None
+Use of buff items,Item usage system,-9999,9999,9520,s16,1,%d,s16,None
+Drug package combo attack,Item usage system,-9999,9999,9530,s16,1,%d,s16,None
+unused,,-9999,9999,50900,s16,1,%d,s16,None
+Arts_Short Range Attack,Arts behavior system,-9999,9999,10000,s16,1,%d,s16,None
+Arts_Medium Range Attack,Arts behavior system,-9999,9999,10100,s16,1,%d,s16,None
+Arts_range attack,Arts behavior system,-9999,9999,10200,s16,1,%d,s16,None
+Arts_Recovery,Arts behavior system,-9999,9999,10300,s16,1,%d,s16,None
+Arts_buff,Arts behavior system,-9999,9999,10400,s16,1,%d,s16,None
+unused,Arts behavior system,-9999,9999,10000155,s16,1,%d,s16,None
+unused,,-9999,9999,10000156,s16,1,%d,s16,None
+unused,,-9999,9999,10000157,s16,1,%d,s16,None
+unused,,-9999,9999,10000158,s16,1,%d,s16,None
+unused,,-9999,9999,10000159,s16,1,%d,s16,None
+unused,,-9999,9999,10000160,s16,1,%d,s16,None
+unused,,-9999,9999,10000161,s16,1,%d,s16,None
+unused,,-9999,9999,10000162,s16,1,%d,s16,None
+unused,,-9999,9999,10000163,s16,1,%d,s16,None
+unused,,-9999,9999,10000164,s16,1,%d,s16,None
+unused,,-9999,9999,10000165,s16,1,%d,s16,None
+unused,,-9999,9999,10000166,s16,1,%d,s16,None
+unused,,-9999,9999,10000167,s16,1,%d,s16,None
+unused,,-9999,9999,10000168,s16,1,%d,s16,None
+unused,,-9999,9999,10000169,s16,1,%d,s16,None
+unused,,-9999,9999,10000170,s16,1,%d,s16,None
+unused,,-9999,9999,10000171,s16,1,%d,s16,None
+unused,,-9999,9999,10000172,s16,1,%d,s16,None
+unused,,-9999,9999,10000173,s16,1,%d,s16,None
+unused,,-9999,9999,10000174,s16,1,%d,s16,None
+unused,,-9999,9999,10000175,s16,1,%d,s16,None
+unused,,-9999,9999,10000176,s16,1,%d,s16,None
+unused,,-9999,9999,10000177,s16,1,%d,s16,None
+unused,,-9999,9999,10000178,s16,1,%d,s16,None
+unused,,-9999,9999,10000179,s16,1,%d,s16,None
+unused,,-9999,9999,10000180,s16,1,%d,s16,None
+unused,,-9999,9999,10000181,s16,1,%d,s16,None
+unused,,-9999,9999,10000182,s16,1,%d,s16,None
+unused,,-9999,9999,10000183,s16,1,%d,s16,None
+unused,,-9999,9999,10000184,s16,1,%d,s16,None
+unused,,-9999,9999,10000185,s16,1,%d,s16,None
+unused,,-9999,9999,10000186,s16,1,%d,s16,None
+unused,,-9999,9999,10000187,s16,1,%d,s16,None
+unused,,-9999,9999,10000188,s16,1,%d,s16,None
+unused,,-9999,9999,10000189,s16,1,%d,s16,None
+unused,,-9999,9999,10000190,s16,1,%d,s16,None
+unused,,-9999,9999,10000191,s16,1,%d,s16,None
+unused,,-9999,9999,10000192,s16,1,%d,s16,None
+unused,,-9999,9999,10000193,s16,1,%d,s16,None
+unused,,-9999,9999,10000194,s16,1,%d,s16,None
+unused,,-9999,9999,10000195,s16,1,%d,s16,None
+unused,,-9999,9999,10000196,s16,1,%d,s16,None
+unused,,-9999,9999,10000197,s16,1,%d,s16,None
+unused,,-9999,9999,10000198,s16,1,%d,s16,None
+unused,,-9999,9999,10000199,s16,1,%d,s16,None

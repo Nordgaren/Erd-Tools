@@ -1,0 +1,21 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| srcAreaNo || Conversion source map ID: Area number || Conversion source map ID: Area number || - ||
+|| srcGridXNo || Source map ID: Grid X || Source map ID: Grid X || - ||
+|| srcGridZNo || Source map ID: Grid Z || Source map ID: Grid Z || - ||
+|| pad1 || Padding 1 || Padding 1 || - ||
+|| srcPosX || Source map reference coordinates X || Source map reference coordinates X || - ||
+|| srcPosY || Source map reference coordinates Y || Source map reference coordinates Y || - ||
+|| srcPosZ || Source map reference coordinates Z || Source map reference coordinates Z || - ||
+|| dstAreaNo || Conversion destination map ID: Area number || Conversion destination map ID: Area number || - ||
+|| dstGridXNo || Destination map ID: Grid X || Destination map ID: Grid X || - ||
+|| dstGridZNo || Destination map ID: Grid Z || Destination map ID: Grid Z || - ||
+|| pad2 || Padding 2 || Padding 2 || - ||
+|| dstPosX || Destination map reference coordinates X || Destination map reference coordinates X || - ||
+|| dstPosY || Destination map reference coordinates Y || Destination map reference coordinates Y || - ||
+|| dstPosZ || Destination map reference coordinates Z || Destination map reference coordinates Z || - ||
+|| isBasePoint || Is it a reference connection point? || Is it a reference connection point? One reference connection point is always set for one conversion source map ID. || BOOL_CIRCLECROSS_TYPE ||
+|| pad3 || Padding 3 || Padding 3 || - ||
+|| pad4 || Padding 4 || Padding 4 || - ||

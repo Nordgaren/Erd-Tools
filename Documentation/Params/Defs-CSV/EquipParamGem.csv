@@ -1,0 +1,97 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,6301,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,6302,dummy8,,%d,dummy8,None
+Icon ID,Menu icon ID,0,65535,100,u16,1,%d,u16,Wrap
+Magic stone rank,Magic stone rank,0,99,200,s8,1,%d,s8,Wrap
+Sort item type ID,Sort item type ID. In the sort "Item type order", the same ID is displayed together as the same group.,0,255,4010,u8,1,%d,u8,Wrap
+Resident special effect ID00,Special effect ID00,-1,999999999,1100,s32,1,%d,s32,Wrap
+Resident special effect ID01,Special effect ID01,-1,999999999,1110,s32,1,%d,s32,Wrap
+Resident special effect ID02,Special effect ID02,-1,999999999,1120,s32,1,%d,s32,Wrap
+Item acquisition tutorial Judgment flag ID,Event flag ID for the tutorial when you first get the item. Flag ON when item is obtained.,0,-294967297,6300,u32,1,%u,u32,Wrap
+Change destination arts parameter ID,ID of the destination arts parameter,-1,999999999,2000,s32,1,%d,s32,Wrap
+Installation price,Installation price,-1,99999999,3000,s32,1,%d,s32,Wrap
+Sale price,Sale price,-1,99999999,3100,s32,1,%d,s32,Wrap
+Selling price,Selling price,-1,99999999,3200,s32,1,%d,s32,Wrap
+Sort ID,Sort ID (-1: Do not collect),-1,99999999,4000,s32,1,%d,s32,Wrap
+Comptrophy SEQ number,SEQ number of complete trophy,-1,99,4100,s16,1,%d,s16,Wrap
+Trophy SEQ number,Trophy SEQ number,-1,99,4200,s16,1,%d,s16,Wrap
+0,Configurable weapon attribute ID 0,0,1,400,u8,1,%d,EQUIP_BOOL,Wrap
+1,Configurable Weapon Attribute ID 1,0,1,401,u8,1,%d,EQUIP_BOOL,Wrap
+2,Configurable Weapon Attribute ID 2,0,1,402,u8,1,%d,EQUIP_BOOL,Wrap
+3,Configurable Weapon Attribute ID 3,0,1,403,u8,1,%d,EQUIP_BOOL,Wrap
+Four,Configurable Weapon Attribute ID 4,0,1,404,u8,1,%d,EQUIP_BOOL,Wrap
+Five,Configurable Weapon Attribute ID 5,0,1,405,u8,1,%d,EQUIP_BOOL,Wrap
+6,Configurable Weapon Attribute ID 6,0,1,406,u8,1,%d,EQUIP_BOOL,Wrap
+7,Configurable Weapon Attribute ID 7,0,1,407,u8,1,%d,EQUIP_BOOL,Wrap
+8,Configurable Weapon Attribute ID 8,0,1,408,u8,1,%d,EQUIP_BOOL,Wrap
+9,Configurable Weapon Attribute ID 9,0,1,409,u8,1,%d,EQUIP_BOOL,Wrap
+Ten,Configurable Weapon Attribute ID 10,0,1,410,u8,1,%d,EQUIP_BOOL,Wrap
+11 11,Configurable Weapon Attribute ID 11,0,1,411,u8,1,%d,EQUIP_BOOL,Wrap
+12,Configurable Weapon Attribute ID 12,0,1,412,u8,1,%d,EQUIP_BOOL,Wrap
+13,Configurable Weapon Attribute ID 13,0,1,413,u8,1,%d,EQUIP_BOOL,Wrap
+14,Configurable Weapon Attribute ID 14,0,1,414,u8,1,%d,EQUIP_BOOL,Wrap
+15,Configurable Weapon Attribute ID 15,0,1,415,u8,1,%d,EQUIP_BOOL,Wrap
+Rarity,Rarity used in item acquisition logs,0,99,6200,u8,1,%d,u8,Wrap
+16 16,Configurable Weapon Attribute ID 16,0,1,416,u8,1,%d,EQUIP_BOOL,Wrap
+17 17,Configurable Weapon Attribute ID 17,0,1,417,u8,1,%d,EQUIP_BOOL,Wrap
+18 18,Configurable Weapon Attribute ID 18,0,1,418,u8,1,%d,EQUIP_BOOL,Wrap
+19 19,Configurable Weapon Attribute ID 19,0,1,419,u8,1,%d,EQUIP_BOOL,Wrap
+20,Configurable Weapon Attribute ID 20,0,1,420,u8,1,%d,EQUIP_BOOL,Wrap
+twenty one,Configurable Weapon Attribute ID 21,0,1,421,u8,1,%d,EQUIP_BOOL,Wrap
+twenty two,Configurable Weapon Attribute ID 22,0,1,422,u8,1,%d,EQUIP_BOOL,Wrap
+twenty three,Configurable Weapon Attribute ID 23,0,1,423,u8,1,%d,EQUIP_BOOL,Wrap
+Can you throw it away,Can you throw away the item? TRUE = thrown away,0,1,5000,u8,1,%d,EQUIP_BOOL,Wrap
+Can you put it on the spot,Can I put the item on the spot? TRUE = can be placed,0,1,5100,u8,1,%d,EQUIP_BOOL,Wrap
+Can i deposit,Can you leave it in the warehouse?,0,1,5200,u8,1,%d,EQUIP_BOOL,Wrap
+Is multi-drop sharing prohibited?,Is multi-drop sharing prohibited?,0,1,5300,u8,1,%d,EQUIP_BOOL,Wrap
+Acquisition dialog display condition,Whether to display it in the item acquisition dialog when acquiring an item (not entered: new only),0,2,6000,u8,1,%d,GET_DIALOG_CONDITION_TYPE,Wrap
+Acquisition log display condition,Whether to display in the item acquisition log when acquiring the item (not entered: ○),0,1,6100,u8,1,%d,EQUIP_BOOL,Wrap
+pad,pad,,,6303,dummy8,,%d,dummy8,Wrap
+Default weapon attribute ID,Default weapon attribute ID. Can be installed even with unopened weapon attributes,0,23,390,u8,1,%d,u8,Wrap
+pad2,pad2,,,6304,dummy8,,%d,dummy8,Wrap
+dagger,Can it be attached to "Weapon type: Dagger"? No input becomes x,0,1,300,u8,1,%d,EQUIP_BOOL,Wrap
+Straight sword,Can it be attached to "Weapon type: Straight sword"? No input becomes x,0,1,301,u8,1,%d,EQUIP_BOOL,Wrap
+Large sword,Can it be attached to "Weapon Type: Large Sword"? No input becomes x,0,1,302,u8,1,%d,EQUIP_BOOL,Wrap
+Oversized sword,Can it be attached to "Weapon Type: Oversized Sword"? No input becomes x,0,1,303,u8,1,%d,EQUIP_BOOL,Wrap
+Music sword,Can it be attached to "Weapon Type: Curly Sword"? No input becomes x,0,1,304,u8,1,%d,EQUIP_BOOL,Wrap
+Omagari sword,Can it be attached to "Weapon Type: Omagari Sword"? No input becomes x,0,1,305,u8,1,%d,EQUIP_BOOL,Wrap
+sword,Can it be attached to "Weapon type: Sword"? No input becomes x,0,1,306,u8,1,%d,EQUIP_BOOL,Wrap
+Double-edged sword,Can it be attached to "Weapon type: Double-edged sword"? No input becomes x,0,1,307,u8,1,%d,EQUIP_BOOL,Wrap
+Sword,Can it be attached to "Weapon type: Sword"? No input becomes x,0,1,308,u8,1,%d,EQUIP_BOOL,Wrap
+Large sword,Can it be attached to "Weapon Type: Large Sword"? No input becomes x,0,1,309,u8,1,%d,EQUIP_BOOL,Wrap
+axe,Can it be attached to "Weapon Type: Ax"? No input becomes x,0,1,310,u8,1,%d,EQUIP_BOOL,Wrap
+Large ax,Can it be attached to "Weapon Type: Large Ax"? No input becomes x,0,1,311,u8,1,%d,EQUIP_BOOL,Wrap
+Hammer,Can it be attached to "Weapon type: Hammer"? No input becomes x,0,1,312,u8,1,%d,EQUIP_BOOL,Wrap
+Gavel,Can it be attached to "Weapon Type: Gavel"? No input becomes x,0,1,313,u8,1,%d,EQUIP_BOOL,Wrap
+Frail,Can it be attached to "Weapon Type: Frail"? No input becomes x,0,1,314,u8,1,%d,EQUIP_BOOL,Wrap
+spear,Can it be attached to "Weapon Type: Spear"? No input becomes x,0,1,315,u8,1,%d,EQUIP_BOOL,Wrap
+Long spear,Can it be attached to "Weapon Type: Long Spear"? No input becomes x,0,1,316,u8,1,%d,EQUIP_BOOL,Wrap
+Large spear,Can it be attached to "Weapon Type: Large Spear"? No input becomes x,0,1,317,u8,1,%d,EQUIP_BOOL,Wrap
+Halberd,Can it be attached to "Weapon Type: Halberd"? No input becomes x,0,1,318,u8,1,%d,EQUIP_BOOL,Wrap
+Sickle,Can it be attached to "Weapon type: Sickle"? No input becomes x,0,1,319,u8,1,%d,EQUIP_BOOL,Wrap
+fist,Can it be attached to "Weapon type: Fist"? No input becomes x,0,1,321,u8,1,%d,EQUIP_BOOL,Wrap
+nail,Can it be attached to "Weapon type: Claw"? No input becomes x,0,1,322,u8,1,%d,EQUIP_BOOL,Wrap
+Whip,Can it be attached to "Weapon type: Whip"? No input becomes x,0,1,323,u8,1,%d,EQUIP_BOOL,Wrap
+Oversized ax mallet,Can it be attached to "Weapon type: Oversized ax mallet"? No input becomes x,0,1,324,u8,1,%d,EQUIP_BOOL,Wrap
+Small bow,Can it be attached to "Weapon type: Small bow"? No input becomes x,0,1,325,u8,1,%d,EQUIP_BOOL,Wrap
+bow,Can it be attached to "Weapon Type: Bow"? No input becomes x,0,1,326,u8,1,%d,EQUIP_BOOL,Wrap
+Large bow,Can it be attached to "Weapon Type: Large Bow"? No input becomes x,0,1,327,u8,1,%d,EQUIP_BOOL,Wrap
+Crossbow,Can it be attached to "Weapon Type: Crossbow"? No input becomes x,0,1,328,u8,1,%d,EQUIP_BOOL,Wrap
+Varistor,Can it be attached to "Weapon Type: Varistor"? No input becomes x,0,1,329,u8,1,%d,EQUIP_BOOL,Wrap
+Wand,Can it be attached to "Weapon type: Wand"? No input becomes x,0,1,330,u8,1,%d,EQUIP_BOOL,Wrap
+tattoo,Can it be attached to "Weapon type: Tattoo"? No input becomes x,0,1,331,u8,1,%d,EQUIP_BOOL,Wrap
+Holy mark,Can it be attached to "Weapon Type: Holy Mark"? No input becomes x,0,1,332,u8,1,%d,EQUIP_BOOL,Wrap
+Small shield,Can it be attached to "Weapon Type: Small Shield"? No input becomes x,0,1,333,u8,1,%d,EQUIP_BOOL,Wrap
+Middle shield,Can it be attached to "Weapon Type: Middle Shield"? No input becomes x,0,1,334,u8,1,%d,EQUIP_BOOL,Wrap
+Pavise,Can it be attached to "Weapon Type: Large Shield"? No input becomes x,0,1,335,u8,1,%d,EQUIP_BOOL,Wrap
+torch,Can it be attached to "Weapon type: Torch"? No input becomes x,0,1,336,u8,1,%d,EQUIP_BOOL,Wrap
+Reserved area (weapon type that can be installed),Reserved area for each type of weapon that can be installed (64 bits in total),,,6305,dummy8,,,dummy8,None
+Reserved area (weapon type that can be installed),Reserved area for each type of weapon that can be installed (64 bits in total),,,6306,dummy8,,,dummy8,None
+Effect text ID 00,Effect text ID 00 (Gem_Effect). Magic stone effect text to display in status,-1,99999999,1300,s32,1,%d,s32,Wrap
+Effect text ID 01,Effect text ID 01 (Gem_Effect). Magic stone effect text to display in status,-1,99999999,1310,s32,1,%d,s32,Wrap
+Special effect ID00 on attack hit,Special effect parameter ID for attack hit,-1,999999999,1000,s32,1,%d,s32,Wrap
+Special effect ID01 on attack hit,Special effect parameter ID for attack hit,-1,999999999,1010,s32,1,%d,s32,Wrap
+Special effect ID02 on attack hit,Special effect parameter ID for attack hit,-1,999999999,1020,s32,1,%d,s32,Wrap
+Corresponding weapon type overwrite text ID,Corresponding Weapon Type Overwrite Text ID (-1: Do not overwrite) [Menu Text],-1,99999999,360,s32,1,%d,s32,Wrap
+pad6,,,,6307,dummy8,,,dummy8,None

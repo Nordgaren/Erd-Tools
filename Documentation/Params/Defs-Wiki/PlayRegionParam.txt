@@ -1,0 +1,86 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| matchAreaId || Simple match area ID || Simple match area ID || - ||
+|| multiPlayStartLimitEventFlagId || Multiplayer start limit event flag ID || Multiplayer start limit event flag ID || - ||
+|| otherDisableDistance || Other distances that cannot be invaded by spirits || Other distances that cannot be invaded by spirits. The intrusion position is searched for the intrusion points within the "other ghost invasion impossible distance" to the "other ghost invasion range upper limit" from the host position. || - ||
+|| pcPositionSaveLimitEventFlagId || PC position save limit event flag ID || PC position save restriction event flag ID (flag ON: PC position save valid flag OFF: PC position save invalid 0: PC position save always valid) || - ||
+|| bossAreaId || Boss area ID || Areas with the same ID are treated as the same boss area. || - ||
+|| cultNpcWhiteGhostEntityId_byFree || NPC White Spirit Summon Ritual Summon NPC Entity ID Free Frame ID || NPC White Spirit Summon Ritual Summon The beginning of the free frame ID used as the NPC's entity ID || - ||
+|| bMapGuradianRegion || Is it a map guardian area? || Whether to increase or decrease the frame of the map protection area || ON_OFF ||
+|| bYellowCostumeRegion || Is it the old man sign area of yellow robe? || Is it the old man sign area of yellow robe? || ON_OFF ||
+|| multiPlayStartLimitEventFlagId_targetFlagState || Flag state to limit || Flag state that limits "multiplayer start restriction event flag ID" || ON_OFF ||
+|| breakInLimitEventFlagId_1_targetFlagState || Flag state to limit || Flag state that limits "intrusion restriction event flag ID1" || ON_OFF ||
+|| whiteSignLimitEventFlagId_1_targetFlagState || Flag state to limit || Flag state that limits "white sign restriction event flag ID1" || ON_OFF ||
+|| redSignLimitEventFlagId_1_targetFlagState || Flag state to limit || Flag state that limits "red sign limit event flag ID1" || ON_OFF ||
+|| breakInLimitEventFlagId_2_targetFlagState || Flag state to limit || Flag state that limits "intrusion restriction event flag ID2" || ON_OFF ||
+|| breakInLimitEventFlagId_3_targetFlagState || Flag state to limit || Flag state that limits "intrusion restriction event flag ID3" || ON_OFF ||
+|| whiteSignLimitEventFlagId_2_targetFlagState || Flag state to limit || Flag state that limits "white sign restriction event flag ID2" || ON_OFF ||
+|| warpItemUsePermitBonfireId_1 || Warp item permit bonfire ID1 || Bonfire entity ID1 used to determine whether to allow the use of warp items || - ||
+|| warpItemUsePermitBonfireId_2 || Warp item permit bonfire ID2 || Bonfire entity ID 2 used to determine permission to use warp items || - ||
+|| warpItemUsePermitBonfireId_3 || Warp item permit bonfire ID3 || Bonfire entity ID 3 used to determine permission to use warp items || - ||
+|| warpItemUsePermitBonfireId_4 || Warp item permit bonfire ID4 || Bonfire entity ID 4 used to determine permission to use warp items || - ||
+|| warpItemUsePermitBonfireId_5 || Warp item permit bonfire ID5 || Bonfire entity ID 5 used to determine permission to use warp items || - ||
+|| warpItemProhibitionEventFlagId_1 || Warp item prohibited event flag ID1 || Event flag ID 1 to determine the prohibition of warp items. Warp item permission Higher priority than judgment by bonfire ID || - ||
+|| warpItemProhibitionEventFlagId_2 || Warp item prohibited event flag ID2 || Event flag ID 2 to determine the prohibition of warp items. Warp item permission Higher priority than judgment by bonfire ID || - ||
+|| warpItemProhibitionEventFlagId_3 || Warp item prohibited event flag ID3 || Event flag ID 3 to determine the prohibition of warp items. Warp item permission Higher priority than judgment by bonfire ID || - ||
+|| warpItemProhibitionEventFlagId_4 || Warp item prohibited event flag ID4 || Event flag ID 4 to determine the prohibition of warp items. Warp item permission Higher priority than judgment by bonfire ID || - ||
+|| warpItemProhibitionEventFlagId_5 || Warp Item Ban Event Flag ID 5 || Event flag ID 5 to determine the prohibition of warp items. Warp item permission Higher priority than judgment by bonfire ID || - ||
+|| enableBloodstain || Effective bloodstain / death illusion || Effective bloodstain / death illusion || BOOL_CIRCLECROSS_TYPE ||
+|| enableBloodMessage || Blood character valid || Blood character valid || BOOL_CIRCLECROSS_TYPE ||
+|| enableGhost || Phantom effective || Phantom effective || BOOL_CIRCLECROSS_TYPE ||
+|| dispMask00 || Map display_display setting M00 || Whether to display on map M00 || BOOL_CIRCLECROSS_TYPE ||
+|| dispMask01 || For map display_Display setting M01 || Whether to display on map M01 || BOOL_CIRCLECROSS_TYPE ||
+|| whiteSignLimitEventFlagId_3_targetFlagState || Flag state to limit || Flag state that limits "white sign restriction event flag ID3" || ON_OFF ||
+|| redSignLimitEventFlagId_2_targetFlagState || Flag state to limit || Flag state that limits "red sign limit event flag ID2" || ON_OFF ||
+|| redSignLimitEventFlagId_3_targetFlagState || Flag state to limit || Flag state that limits "red sign limit event flag ID3" || ON_OFF ||
+|| isAutoIntrudePoint || Is it automatic generation of intrusion points? || Is it an intrusion point automatic generation? If it is set to ○, the intrusion position is searched by the automatically generated logic for the intrusion point. || BOOL_CIRCLECROSS_TYPE ||
+|| pad1 || pad1 ||  || - ||
+|| pad2 || pad2 ||  || - ||
+|| multiPlayHASHostLimitEventFlagId || Yellow robe's old man host restriction event flag || Yellow Coat Host Restriction Event Flag: When this flag is turned on, multiplayer as a host of Yellow Coat is prohibited. It is assumed that the block clear flag will be inserted. 0: No limit || - ||
+|| otherMaxDistance || Other ghost invasion range upper limit || Other ghost invasion range upper limit. The intrusion position is searched for the intrusion points within the "other ghost invasion impossible distance" to the "other ghost invasion range upper limit" from the host position. || - ||
+|| signPuddleOpenEventFlagId || Sign pool release event flag ID || Sign accumulation release event flag ID || - ||
+|| areaNo || Map display_area number (mXX_00_00_00) || Area number (mXX_00_00_00). Data for specifying the display position in the map menu || - ||
+|| gridXNo || Map display_grid X number (m00_XX_00_00) || Grid X number (m00_XX_00_00). Data for specifying the display position in the map menu || - ||
+|| gridZNo || Map display_grid Z number (m00_00_XX_00) || Grid Z number (m00_00_XX_00). Data for specifying the display position in the map menu || - ||
+|| pad4 || pad4 ||  || - ||
+|| posX || _X coordinates for map display || X coordinates (relative coordinates from the specified map). Data for specifying the display position in the map menu || - ||
+|| posY || _Y coordinates for map display || Y coordinates (relative coordinates from the specified map). Data for specifying the display position in the map menu. Not actually used, but keep XYZ aligned || - ||
+|| posZ || _Z coordinates for map display || Z coordinates (relative coordinates from the specified map). Data for specifying the display position in the map menu || - ||
+|| breakInLimitEventFlagId_1 || Intrusion restriction event flag ID1 || Intrusion restriction event flag ID1 || - ||
+|| whiteSignLimitEventFlagId_1 || White sign limit event flag ID1 || White sign limit event flag ID1 || - ||
+|| matchAreaSignCreateLimitEventFlagId || Sign accumulation registration restriction Event flag ID || Sign accumulation registration restriction Event flag ID (Flag ON: Sign accumulation registration is permitted Flag OFF: Sign accumulation registration is prohibited 0: Sign accumulation registration is always permitted) || - ||
+|| signAimId_1 || Multipurpose ID 01 || Multi-purpose ID to be displayed in the list when setting the purpose || - ||
+|| signAimId_2 || Multipurpose ID 02 || Multi-purpose ID to be displayed in the list when setting the purpose || - ||
+|| signAimId_3 || Multipurpose ID 03 || Multi-purpose ID to be displayed in the list when setting the purpose || - ||
+|| signAimId_4 || Multipurpose ID 04 || Multi-purpose ID to be displayed in the list when setting the purpose || - ||
+|| signAimId_5 || Multipurpose ID 05 || Multi-purpose ID to be displayed in the list when setting the purpose || - ||
+|| signAimId_6 || Multipurpose ID 06 || Multi-purpose ID to be displayed in the list when setting the purpose || - ||
+|| signAimId_7 || Multipurpose ID 07 || Multi-purpose ID to be displayed in the list when setting the purpose || - ||
+|| signAimId_8 || Multipurpose ID08 || Multi-purpose ID to be displayed in the list when setting the purpose || - ||
+|| redSignLimitEventFlagId_1 || Red sign limit event flag ID1 || Red sign limit event flag ID1 || - ||
+|| breakInLimitEventFlagId_2 || Intrusion restriction event flag ID2 || Intrusion restriction event flag ID2 || - ||
+|| breakInLimitEventFlagId_3 || Intrusion restriction event flag ID3 || Intrusion restriction event flag ID3 || - ||
+|| whiteSignLimitEventFlagId_2 || White sign limit event flag ID2 || White sign limit event flag ID2 || - ||
+|| whiteSignLimitEventFlagId_3 || White sign limit event flag ID3 || White sign limit event flag ID3 || - ||
+|| redSignLimitEventFlagId_2 || Red sign limit event flag ID2 || Red sign limit event flag ID2 || - ||
+|| redSignLimitEventFlagId_3 || Red sign limit event flag ID3 || Red sign limit event flag ID3 || - ||
+|| bossId_1 || Area boss ID01 || Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○. || - ||
+|| bossId_2 || Area boss ID02 || Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○. || - ||
+|| bossId_3 || Area boss ID03 || Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○. || - ||
+|| bossId_4 || Area boss ID04 || Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○. || - ||
+|| bossId_5 || Area Boss ID 05 || Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○. || - ||
+|| bossId_6 || Area Boss ID 06 || Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○. || - ||
+|| bossId_7 || Area Boss ID 07 || Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○. || - ||
+|| bossId_8 || Area boss ID08 || Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○. || - ||
+|| bossId_9 || Area Boss ID 09 || Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○. || - ||
+|| bossId_10 || Area boss ID 10 || Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○. || - ||
+|| bossId_11 || In-area boss ID 11 || Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○. || - ||
+|| bossId_12 || In-area boss ID 12 || Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○. || - ||
+|| bossId_13 || Area boss ID 13 || Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○. || - ||
+|| bossId_14 || Area boss ID14 || Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○. || - ||
+|| bossId_15 || Area boss ID15 || Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○. || - ||
+|| bossId_16 || Area boss ID 16 || Area boss ID. It is used to select the target boss when "Is the intrusion point automatically generated?" Is ○. || - ||
+|| mapMenuUnlockEventId || Map display_event flag ID || Map display_event flag ID (0: always displayed). Only when this event flag is set, it will be displayed in a lively manner in the map menu. || - ||
+|| pad5 || pad5 ||  || - ||

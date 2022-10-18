@@ -1,0 +1,40 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+stand-by,stand-by,-1,999999,100,s32,1,%d,s32,Wrap
+Before walking,Before walking,-1,999999,200,s32,1,%d,s32,Wrap
+After walking,After walking,-1,999999,300,s32,1,%d,s32,Wrap
+Walking left,Walking left,-1,999999,400,s32,1,%d,s32,Wrap
+Walking right,Walking right,-1,999999,500,s32,1,%d,s32,Wrap
+Before driving,Before driving,-1,999999,600,s32,1,%d,s32,Wrap
+After running,After running,-1,999999,700,s32,1,%d,s32,Wrap
+Driving left,Driving left,-1,999999,800,s32,1,%d,s32,Wrap
+Driving right,Driving right,-1,999999,900,s32,1,%d,s32,Wrap
+Dash move,Dash move,-1,999999,1000,s32,1,%d,s32,Wrap
+Before emergency avoidance,Before emergency avoidance,-1,999999,1100,s32,1,%d,s32,Wrap
+After emergency avoidance,After emergency avoidance,-1,999999,1200,s32,1,%d,s32,Wrap
+Emergency avoidance left,Emergency avoidance left,-1,999999,1300,s32,1,%d,s32,Wrap
+Emergency avoidance right,Emergency avoidance right,-1,999999,1400,s32,1,%d,s32,Wrap
+90 degree turn left,90 degree turn left,-1,999999,1500,s32,1,%d,s32,Wrap
+90 degree turn right,90 degree turn right,-1,999999,1600,s32,1,%d,s32,Wrap
+180 degree turn left,180 degree turn left,-1,999999,1700,s32,1,%d,s32,Wrap
+180 degree turn right,180 degree turn right,-1,999999,1800,s32,1,%d,s32,Wrap
+Step move,180 degree turn right,-1,999999,1900,s32,1,%d,s32,Wrap
+Flight standby,Flight standby,-1,999999,2100,s32,1,%d,s32,Wrap
+Flight advance,Flight advance,-1,999999,2200,s32,1,%d,s32,Wrap
+Fly left forward,Fly left forward. Low rotation,-1,999999,2300,s32,1,%d,s32,Wrap
+Flight right forward,Fly right forward. Low rotation,-1,999999,2400,s32,1,%d,s32,Wrap
+Flight left forward 2,Flight left forward 2. High rotation,-1,999999,2500,s32,1,%d,s32,Wrap
+Flight right forward 2,Flight right forward 2. High rotation,-1,999999,2600,s32,1,%d,s32,Wrap
+High speed flight advance,High speed flight advance,-1,999999,2700,s32,1,%d,s32,Wrap
+High speed flight left forward,High-speed flight left forward. Low rotation,-1,999999,2800,s32,1,%d,s32,Wrap
+High speed flight right forward,High speed flight right forward. Low rotation,-1,999999,2900,s32,1,%d,s32,Wrap
+High speed flight left forward 2,High speed flight left forward 2. High rotation,-1,999999,3000,s32,1,%d,s32,Wrap
+High speed flight right forward 2,High speed flight right forward 2. High rotation,-1,999999,3100,s32,1,%d,s32,Wrap
+Before dash emergency avoidance,Before dash emergency avoidance,-1,999999,3200,s32,1,%d,s32,Wrap
+After dash emergency avoidance,After dash emergency avoidance,-1,999999,3300,s32,1,%d,s32,Wrap
+Dash emergency avoidance left,Dash emergency avoidance left,-1,999999,3400,s32,1,%d,s32,Wrap
+Dash emergency avoidance right,Dash emergency avoidance right,-1,999999,3500,s32,1,%d,s32,Wrap
+Analog moving para ID,Mobile animation parameter ID used in mobile animation blend,-1,999999,3600,s32,1,%d,s32,Wrap
+No animation turning angle [deg],If the turning angle is less than this value, the turning animation will not be played (only the enemy turning control is effective).,0,180,3700,u8,1,%d,u8,Wrap
+45 degree turning animation angle [deg],If the turning angle is less than this value, the 45 degree turning animation will be played (only 2 bosses are valid).,0,180,3800,u8,1,%d,u8,Wrap
+90 degree turning animation angle [deg],If the turning angle is less than this value, the 90 degree turning animation will be played (only the enemy turning control is effective).,0,180,3900,u8,1,%d,u8,Wrap
+No animation when stopped Turning angle [deg],If the turning angle is less than this value, the turning animation will not be played [when stopped] (only valid for 2 boss legs),0,180,4000,u8,1,%d,u8,Wrap

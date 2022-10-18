@@ -1,0 +1,5 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| value || value || The value handled by the program. Make serial numbers within one group || - ||
+|| captionId || Item text ID || ID of the text to be displayed || - ||
+|| iconId || Icon ID || ID of the icon to be displayed || - ||
+|| reserved || reserve ||  || - ||

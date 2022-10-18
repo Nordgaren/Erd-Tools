@@ -7,7 +7,6 @@
 0x00000000 false Items/Weapons/Shields.txt Shields
 0x20000000 false Items/Talismans.txt Talismans
 0x00000000 false Items/Weapons/Ammo.txt Ammo
-//0x40000000 false Items/Goods/SeamlessCoop.txt Seamless Coop
 0x40000000 false Items/Goods/UpgradeMaterials.txt Upgrade Materials
 0x40000000 false Items/Goods/Tools.txt Tools
 0x40000000 false Items/Goods/Consumables.txt Consumables
@@ -24,3 +23,12 @@
 0x40000000 false Items/Magic.txt Magic
 //0x10000000 false Items/CutContent/Armor.txt Cut Content Armor
 //0x20000000 false Items/CutContent/Talismans.txt Cut Content Talismans
+
+//Uncomment the lines below for Seamless Coop items
+//0x40000000 false Items/Goods/SeamlessCoop.txt Seamless Coop
+
+// Uncomment the lines below for Elden Ring Reforged items.
+//0x40000000 false Items/Goods/ERRAshes.txt Elden Ring Reforged: Ashes
+//0x40000000 false Items/Goods/ERRFortunes.txt Elden Ring Reforged: Fortunes
+//0x40000000 false Items/Goods/ERRGoods.txt Elden Ring Reforged: Goods
+//0x40000000 false Items/ERRMagic.txt Elden Ring Reforged: Magic

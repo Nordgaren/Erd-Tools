@@ -1,0 +1,30 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| edgeColorA || A || Edge color A. || - ||
+|| frontColorA || A || The front color is A. || - ||
+|| diffMulColorA || A || Diffuse multiplication color A. || - ||
+|| specMulColorA || A || Specular multiplication color A. || - ||
+|| lightColorA || A || Light color A. || - ||
+|| edgeColorR || R || Edge color R. || - ||
+|| edgeColorG || G || Edge color G. || - ||
+|| edgeColorB || B || Edge color B. || - ||
+|| frontColorR || R || The front color is R. || - ||
+|| frontColorG || G || The front color is G. || - ||
+|| frontColorB || B || Front color B. || - ||
+|| diffMulColorR || R || Diffuse multiplication color R. || - ||
+|| diffMulColorG || G || Diffuse multiplication color G. || - ||
+|| diffMulColorB || B || Diffuse multiplication color B. || - ||
+|| specMulColorR || R || Specular multiplication color R. || - ||
+|| specMulColorG || G || Specular multiplication color G. || - ||
+|| specMulColorB || B || Specular multiplication color B. || - ||
+|| lightColorR || R || Light color R. || - ||
+|| lightColorG || G || Light color G. || - ||
+|| lightColorB || B || Light color B. || - ||
+|| reserve || Reserve ||  || - ||
+|| alpha || α || The overall transparency. || - ||
+|| blendRate || Blend rate || The blend ratio. || - ||
+|| blendType || α type || The type of alpha blend. || PHANTOM_BLEN_TYPE_ENUM ||
+|| isEdgeSubtract || Whether to perform edge color subtraction || Whether to perform edge color subtraction. || ON_OFF ||
+|| isFrontSubtract || Whether to perform front color subtraction || Is it front color subtraction? || ON_OFF ||
+|| isNo2Pass || Do not do 2pass || Do you not do 2pass? || ON_OFF ||
+|| edgePower || Edge width || Edge width || - ||
+|| glowScale || Glow strength || Glow strength || - ||

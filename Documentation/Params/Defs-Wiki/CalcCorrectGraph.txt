@@ -1,0 +1,21 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| stageMaxVal0 || Threshold point 0 || Those with "nth threshold [point]" written in the specifications || - ||
+|| stageMaxVal1 || Threshold point 1 || Those with "nth threshold [point]" written in the specifications || - ||
+|| stageMaxVal2 || Threshold point 2 || Those with "nth threshold [point]" written in the specifications || - ||
+|| stageMaxVal3 || Threshold point 3 || Those with "nth threshold [point]" written in the specifications || - ||
+|| stageMaxVal4 || Threshold point 4 || Those with "nth threshold [point]" written in the specifications || - ||
+|| stageMaxGrowVal0 || Threshold coefficient 0 || Those with "nth threshold [coefficient]" written in the specifications || - ||
+|| stageMaxGrowVal1 || Threshold coefficient 1 || Those with "nth threshold [coefficient]" written in the specifications || - ||
+|| stageMaxGrowVal2 || Threshold coefficient 2 || Those with "nth threshold [coefficient]" written in the specifications || - ||
+|| stageMaxGrowVal3 || Threshold coefficient 3 || Those with "nth threshold [coefficient]" written in the specifications || - ||
+|| stageMaxGrowVal4 || Threshold coefficient 4 || Those with "nth threshold [coefficient]" written in the specifications || - ||
+|| adjPt_maxGrowVal0 || Adjustment factor 0 || Adjustment factor || - ||
+|| adjPt_maxGrowVal1 || Adjustment factor 1 || Adjustment factor || - ||
+|| adjPt_maxGrowVal2 || Adjustment factor 2 || Adjustment factor || - ||
+|| adjPt_maxGrowVal3 || Adjustment factor 3 || Adjustment factor || - ||
+|| adjPt_maxGrowVal4 || Adjustment factor 4 || Adjustment factor || - ||
+|| init_inclination_soul || Growth Soul Slope of the early graph α1 || Growth Soul Slope of the early graph α1 || - ||
+|| adjustment_value || Growth soul Early soul adjustment α2 || Growth soul Early soul adjustment α2 || - ||
+|| boundry_inclination_soul || Affects the slope of the graph after the growth soul threshold α3 || Affects the slope of the graph after the growth soul threshold α3 || - ||
+|| boundry_value || Growth soul threshold t || Growth soul threshold t || - ||
+|| pad || Padding ||  || - ||

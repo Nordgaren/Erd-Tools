@@ -1,0 +1,11 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| addPoint1 || Addition after the first activation pt || A value that is added to the resistance value after the abnormal condition is activated once. || - ||
+|| addPoint2 || Addition after the second activation pt || A value that is added to the resistance value after the abnormal condition is activated twice. || - ||
+|| addPoint3 || Addition after the third activation pt || A value that is added to the resistance value after the abnormal condition is activated 3 times. || - ||
+|| addPoint4 || Addition after the 4th activation pt || A value that is added to the resistance value after the abnormal condition is activated 4 times. || - ||
+|| addPoint5 || Addition after the 5th activation pt || A value that is added to the resistance value after the abnormal condition is activated 5 times. || - ||
+|| addRate1 || Magnification after the first activation || Magnification applied to the resistance value after the abnormal condition is activated once || - ||
+|| addRate2 || Magnification after the second activation || Magnification applied to the resistance value after the abnormal condition is activated twice || - ||
+|| addRate3 || Magnification after the third activation || Magnification applied to the resistance value after the abnormal condition is activated 3 times || - ||
+|| addRate4 || Magnification after the 4th activation || Magnification applied to the resistance value after the abnormal condition is activated 4 times || - ||
+|| addRate5 || Magnification after the 5th activation || Magnification applied to the resistance value after the abnormal condition is activated 5 times || - ||

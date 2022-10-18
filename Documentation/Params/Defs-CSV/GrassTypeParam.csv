@@ -1,0 +1,39 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+LOD distance,,0,65535,1,u16,1,%d,u16,Wrap
+LOD0 cluster type,,0,255,2,u8,1,%u,GRASS_CLUSTER_TYPE_ENUM,Wrap
+LOD1 cluster type,,0,255,3,u8,1,%u,GRASS_CLUSTER_TYPE_ENUM,Wrap
+LOD2 cluster type,,0,255,4,u8,1,%u,GRASS_CLUSTER_TYPE_ENUM,Wrap
+pad0,,,,39,dummy8,,,dummy8,None
+Placement method,,0,255,5,u8,1,%u,GRASS_DISTRIBUTION_TYPE_ENUM,Wrap
+Basic density,,0,10,6,f32,0.1,%f,f32,None
+Model name (0),,,,7,fixstrW,,%d,fixstrW,Wrap
+Flat texture name,,,,8,fixstrW,,%d,fixstrW,Wrap
+Billboard texture name,,,,9,fixstrW,,%d,fixstrW,Wrap
+Effect of tilt (%),,0,100,10,u8,1,%u,u8,None
+Maximum tilt angle (degrees),,0,180,11,u8,1,%u,u8,None
+Randomness of tilt angle (degrees),,0,180,12,u8,1,%u,u8,None
+Width scale range (min,%),,0,200,13,u8,1,%u,u8,None
+Width scale range (max,%),,0,200,14,u8,1,%u,u8,None
+Height scale range (min,%),,0,200,15,u8,1,%u,u8,None
+Height scale range (max,%),,0,200,16,u8,1,%u,u8,None
+Multiplication color 1 (red),,0,255,17,u8,1,%u,u8,None
+Multiplication color 1 (green),,0,255,18,u8,1,%u,u8,None
+Multiplication color 1 (blue),,0,255,19,u8,1,%u,u8,None
+Multiplication color 2 (red),,0,255,20,u8,1,%u,u8,None
+Multiplication color 2 (green),,0,255,21,u8,1,%u,u8,None
+Multiplication color 2 (blue),,0,255,22,u8,1,%u,u8,None
+Separation of planes,,0,255,23,u8,1,%u,GRASS_FLAT_SPLIT_TYPE_ENUM,Wrap
+Number of planes,,1,8,24,u8,1,%u,u8,Wrap
+Plane angle (degrees),,-90,90,25,s8,1,%d,s8,Wrap
+Plane distance,,-10,10,26,f32,0.1,%f,f32,Wrap
+Do you want to cast a shadow,,0,255,27,u8,1,%u,GRASS_SHADOW_TYPE_ENUM,Wrap
+Amplitude (magnitude of shaking),,0,255,28,u8,1,%u,u8,Wrap
+pad1,,,,40,dummy8,,%d,dummy8,Wrap
+Cycle (speed),,0,255,29,u8,1,%u,u8,Wrap
+Direction (degree),Random for -1,-1,360,30,f32,1,%f,f32,Wrap
+Directional range (degrees),,-1,180,31,f32,1,%f,f32,Wrap
+Model spacing,,0,9999,32,f32,0.1,%f,f32,Wrap
+Dithering,,0,255,33,u8,1,%d,GRASS_DITHERING_TYPE_ENUM,Wrap
+pad2,,,,41,dummy8,,,dummy8,None
+Simple model name,,,,34,fixstrW,,%d,fixstrW,Wrap
+Model name (1),,,,35,fixstrW,,%d,fixstrW,Wrap

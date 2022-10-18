@@ -1,0 +1,78 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Whether to correct muscle strength (physical),,0,1,10000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Whether to correct the skill (physical),,0,1,11000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Whether to correct the force (physics),,0,1,12000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Do you correct your faith (physics)?,,0,1,13000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Whether to correct luck (physical),,0,1,14000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Whether to correct muscle strength (magic),,0,1,20000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Do you correct your workmanship (magic)?,,0,1,21000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Do you correct the force (magic)?,,0,1,22000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Do you correct your faith (magic)?,,0,1,23000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Do you correct your luck (magic),,0,1,24000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Do you correct muscle strength (flame)?,,0,1,30000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Do you correct your workmanship (flame)?,,0,1,31000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Do you correct the force (flame)?,,0,1,32000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Do you correct your faith (flame)?,,0,1,33000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Do you correct your luck (flame)?,,0,1,34000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Whether to correct muscle strength (lightning),,0,1,40000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Do you correct your workmanship (lightning)?,,0,1,41000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Do you correct the force (lightning)?,,0,1,42000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Do you correct your faith (thunder)?,,0,1,43000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Do you correct your luck (lightning)?,,0,1,44000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Do you correct your strength (darkness)?,,0,1,50000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Do you correct your workmanship (darkness)?,,0,1,51000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Do you correct the force (darkness)?,,0,1,52000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Do you correct your faith (darkness)?,,0,1,53000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Do you correct your luck (darkness)?,,0,1,54000,u8,1,%d,BOOL_YESNO_TYPE,Wrap
+Padding,,,,54111,dummy8,,,dummy8,None
+Overwrite muscle strength correction value (physical),,-1,999,10100,s16,1,%d,s16,Wrap
+Skill correction value overwrite (physical),,-1,999,11100,s16,1,%d,s16,Wrap
+Overwrite the force correction value (physical),,-1,999,12100,s16,1,%d,s16,Wrap
+Faith correction value overwrite (physical),,-1,999,13100,s16,1,%d,s16,Wrap
+Overwrite luck correction value (physical),,-1,999,14100,s16,1,%d,s16,Wrap
+Overwrite muscle strength correction value (magic),,-1,999,20100,s16,1,%d,s16,Wrap
+Skill correction value overwrite (magic),,-1,999,21100,s16,1,%d,s16,Wrap
+Overwrite the force correction value (magic),,-1,999,22100,s16,1,%d,s16,Wrap
+Faith correction value overwrite (magic),,-1,999,23100,s16,1,%d,s16,Wrap
+Overwrite luck correction value (magic),,-1,999,24100,s16,1,%d,s16,Wrap
+Overwrite muscle strength correction value (flame),,-1,999,30100,s16,1,%d,s16,Wrap
+Skill correction value overwrite (flame),,-1,999,31100,s16,1,%d,s16,Wrap
+Overwrite the force correction value (flame),,-1,999,32100,s16,1,%d,s16,Wrap
+Faith correction value overwrite (flame),,-1,999,33100,s16,1,%d,s16,Wrap
+Overwrite luck correction value (flame),,-1,999,34100,s16,1,%d,s16,Wrap
+Overwrite muscle strength correction value (lightning),,-1,999,40100,s16,1,%d,s16,Wrap
+Skill correction value overwrite (lightning),,-1,999,41100,s16,1,%d,s16,Wrap
+Overwrite the force correction value (lightning),,-1,999,42100,s16,1,%d,s16,Wrap
+Faith correction value overwrite (thunder),,-1,999,43100,s16,1,%d,s16,Wrap
+Overwrite luck correction value (lightning),,-1,999,44100,s16,1,%d,s16,Wrap
+Overwrite muscle strength correction value (darkness),,-1,999,50100,s16,1,%d,s16,Wrap
+Skill correction value overwrite (darkness),,-1,999,51100,s16,1,%d,s16,Wrap
+Overwrite the force correction value (darkness),,-1,999,52100,s16,1,%d,s16,Wrap
+Faith correction value overwrite (darkness),,-1,999,53100,s16,1,%d,s16,Wrap
+Overwrite luck correction value (darkness),,-1,999,54100,s16,1,%d,s16,Wrap
+Strength correction value Impact rate (physical),The rate of influence of the correction factor.,0,999,10110,s16,1,%d,s16,Wrap
+Skill correction value Impact rate (physical),The rate of influence of the correction factor.,0,999,11110,s16,1,%d,s16,Wrap
+Force correction value Impact rate (physical),The rate of influence of the correction factor.,0,999,12110,s16,1,%d,s16,Wrap
+Faith correction value Impact rate (physical),The rate of influence of the correction factor.,0,999,13110,s16,1,%d,s16,Wrap
+Luck correction value influence rate (physical),The rate of influence of the correction factor.,0,999,14110,s16,1,%d,s16,Wrap
+Strength correction value Impact rate (magic),The rate of influence of the correction factor.,0,999,20110,s16,1,%d,s16,Wrap
+Skill correction value Impact rate (magic),The rate of influence of the correction factor.,0,999,21110,s16,1,%d,s16,Wrap
+Force correction value Impact rate (magic),The rate of influence of the correction factor.,0,999,22110,s16,1,%d,s16,Wrap
+Faith correction value Impact rate (magic),The rate of influence of the correction factor.,0,999,23110,s16,1,%d,s16,Wrap
+Luck correction value influence rate (magic),The rate of influence of the correction factor.,0,999,24110,s16,1,%d,s16,Wrap
+Strength correction value Impact rate (flame),The rate of influence of the correction factor.,0,999,30110,s16,1,%d,s16,Wrap
+Skill correction value Impact rate (flame),The rate of influence of the correction factor.,0,999,31110,s16,1,%d,s16,Wrap
+Force correction value Impact rate (flame),The rate of influence of the correction factor.,0,999,32110,s16,1,%d,s16,Wrap
+Faith correction value Impact rate (flame),The rate of influence of the correction factor.,0,999,33110,s16,1,%d,s16,Wrap
+Luck correction value influence rate (flame),The rate of influence of the correction factor.,0,999,34110,s16,1,%d,s16,Wrap
+Strength correction value Impact rate (lightning),The rate of influence of the correction factor.,0,999,40110,s16,1,%d,s16,Wrap
+Skill correction value Impact rate (lightning),The rate of influence of the correction factor.,0,999,41110,s16,1,%d,s16,Wrap
+Force correction value Impact rate (lightning),The rate of influence of the correction factor.,0,999,42110,s16,1,%d,s16,Wrap
+Faith correction value Impact rate (lightning),The rate of influence of the correction factor.,0,999,43110,s16,1,%d,s16,Wrap
+Luck correction value influence rate (lightning),The rate of influence of the correction factor.,0,999,44110,s16,1,%d,s16,Wrap
+Strength correction value influence rate (darkness),The rate of influence of the correction factor.,0,999,50110,s16,1,%d,s16,Wrap
+Skill correction value Impact rate (darkness),The rate of influence of the correction factor.,0,999,51110,s16,1,%d,s16,Wrap
+Force correction value Impact rate (darkness),The rate of influence of the correction factor.,0,999,52110,s16,1,%d,s16,Wrap
+Faith correction value Impact rate (darkness),The rate of influence of the correction factor.,0,999,53110,s16,1,%d,s16,Wrap
+Luck correction value influence rate (darkness),The rate of influence of the correction factor.,0,999,54110,s16,1,%d,s16,Wrap
+Padding,,,,54112,dummy8,,,dummy8,None

@@ -1,0 +1,5 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| sssEnabled || SSS enabled || SSS enabled || ON_OFF ||
+|| tessellationEnabled || Tessellation enabled || Tessellation enabled || ON_OFF ||
+|| highPrecisionNormalEnabled || High precision normal effective || High precision normal valid (setting the accuracy of the normal stored in G-Buffer) || ON_OFF ||
+|| dmy || dmy ||  || - ||

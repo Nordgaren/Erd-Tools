@@ -1,0 +1,30 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+A,Edge color A.,0,10,3,f32,0.01,%f,f32,None
+A,The front color is A.,0,10,13,f32,0.01,%f,f32,None
+A,Diffuse multiplication color A.,0,10,23,f32,0.01,%f,f32,None
+A,Specular multiplication color A.,0,10,33,f32,0.01,%f,f32,None
+A,Light color A.,0,255,43,f32,0.01,%f,f32,None
+R,Edge color R.,0,255,0,u8,1,%u,u8,None
+G,Edge color G.,0,255,1,u8,1,%u,u8,None
+B,Edge color B.,0,255,2,u8,1,%u,u8,None
+R,The front color is R.,0,255,10,u8,1,%u,u8,None
+G,The front color is G.,0,255,11,u8,1,%u,u8,None
+B,Front color B.,0,255,12,u8,1,%u,u8,None
+R,Diffuse multiplication color R.,0,255,20,u8,1,%u,u8,None
+G,Diffuse multiplication color G.,0,255,21,u8,1,%u,u8,None
+B,Diffuse multiplication color B.,0,255,22,u8,1,%u,u8,None
+R,Specular multiplication color R.,0,255,30,u8,1,%u,u8,None
+G,Specular multiplication color G.,0,255,31,u8,1,%u,u8,None
+B,Specular multiplication color B.,0,255,32,u8,1,%u,u8,None
+R,Light color R.,0,255,40,u8,1,%u,u8,None
+G,Light color G.,0,255,41,u8,1,%u,u8,None
+B,Light color B.,0,255,42,u8,1,%u,u8,None
+Reserve,,,,75,dummy8,,,dummy8,None
+α,The overall transparency.,0,1,50,f32,0.01,%f,f32,None
+Blend rate,The blend ratio.,0,1,70,f32,0.01,%f,f32,None
+α type,The type of alpha blend.,0,4,71,u8,1,%d,PHANTOM_BLEN_TYPE_ENUM,None
+Whether to perform edge color subtraction,Whether to perform edge color subtraction.,0,1,72,u8,1,%u,ON_OFF,None
+Whether to perform front color subtraction,Is it front color subtraction?,0,1,73,u8,1,%u,ON_OFF,None
+Do not do 2pass,Do you not do 2pass?,0,1,74,u8,1,%u,ON_OFF,None
+Edge width,Edge width,0.1,8,4,f32,0.01,%f,f32,None
+Glow strength,Glow strength,0,10,60,f32,0.01,%f,f32,None

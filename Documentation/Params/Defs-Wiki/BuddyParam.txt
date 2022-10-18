@@ -1,0 +1,30 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| triggerSpEffectId || Summon special effect ID || Set the special effect ID that will be the summoning condition || - ||
+|| npcParamId || NPC parameter ID || Set the NPC parameter ID of the summoned buddy || - ||
+|| npcThinkParamId || Thinking parameter ID || Sets the NPC Thinking Parameter ID of the summoned buddy || - ||
+|| npcParamId_ridden || Riding (riding side): NPC parameter ID || For buddies that you want to summon while riding, set the NPC parameter ID for the "rider" || - ||
+|| npcThinkParamId_ridden || Riding (riding side): Thinking parameter ID || For buddies that you want to summon while riding, set the NPC Thinking Parameter ID for the "rider" || - ||
+|| x_offset || X: Placement coordinate offset [m] || Sets the distance in meters to offset the buddy from the summon point to the X coordinate || - ||
+|| z_offset || Z: Placement coordinate offset [m] || Sets the distance in meters that offsets the buddy from the summon point to the Z coordinate. || - ||
+|| y_angle || Y: Your placement angle [deg] || Set the angle to rotate yourself around the Y axis || - ||
+|| appearOnAroundSekihi || Will it emerge from around the stone monument? || Will it emerge from around the stone monument? || BOOL_CIRCLECROSS_TYPE ||
+|| disablePCTargetShare || Do you want to skip target sharing with your PC? || Do you want to skip target sharing with your PC? || BOOL_CIRCLECROSS_TYPE ||
+|| pcFollowType || PC tracking & warp type || PC tracking & warp type || BUDDY_PC_FOLLOW_TYPE ||
+|| Reserve || Reserve || Reserve || - ||
+|| dopingSpEffect_lv0 || +0 o'clock doping special effect || +0 o'clock doping special effect || - ||
+|| dopingSpEffect_lv1 || +1 o'clock doping special effect || +0 o'clock doping special effect || - ||
+|| dopingSpEffect_lv2 || +2 o'clock doping special effect || +0 o'clock doping special effect || - ||
+|| dopingSpEffect_lv3 || +3 o'clock doping special effect || +0 o'clock doping special effect || - ||
+|| dopingSpEffect_lv4 || +4 o'clock doping special effect || +0 o'clock doping special effect || - ||
+|| dopingSpEffect_lv5 || +5 o'clock doping special effect || +0 o'clock doping special effect || - ||
+|| dopingSpEffect_lv6 || +6 o'clock doping special effect || +0 o'clock doping special effect || - ||
+|| dopingSpEffect_lv7 || +7 o'clock doping special effect || +0 o'clock doping special effect || - ||
+|| dopingSpEffect_lv8 || +8 o'clock doping special effect || +0 o'clock doping special effect || - ||
+|| dopingSpEffect_lv9 || +9 o'clock doping special effect || +0 o'clock doping special effect || - ||
+|| dopingSpEffect_lv10 || +10 o'clock doping special effect || +0 o'clock doping special effect || - ||
+|| npcPlayerInitParamId || Initial parameter ID by architype || Initial parameter ID by architype || - ||
+|| generateAnimId || Generate Anime ID || Generate Anime ID || - ||
+|| Reserve2 || Reserve 2 || Reserve 2 || - ||

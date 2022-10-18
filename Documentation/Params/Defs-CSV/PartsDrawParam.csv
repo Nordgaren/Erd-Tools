@@ -1,0 +1,40 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+LOD level 0-1 boundary distance [m],Switching center,0,9999,100,f32,0.1,%0.3f,f32,None
+LOD level 0-1 play distance [m],± play at the center of the boundary,0,20,110,f32,0.1,%0.3f,f32,None
+LOD level 1-2 boundary distance [m],Switching center,0,9999,200,f32,0.1,%0.3f,f32,None
+LOD level 1-2 play distance [m],± play at the center of the boundary,0,40,210,f32,0.1,%0.3f,f32,None
+LOD level 2-3 Boundary distance [m],Switching center,0,9999,300,f32,0.1,%0.3f,f32,None
+LOD level 2-3 play distance [m],± play at the center of the boundary,0,40,310,f32,0.1,%0.3f,f32,None
+LOD level 3-4 Boundary distance [m],Switching center,0,9999,400,f32,0.1,%0.3f,f32,None
+LOD level 3-4 play distance [m],± play at the center of the boundary,0,160,410,f32,0.1,%0.3f,f32,None
+LOD level 4-5 Boundary distance [m],Switching center,0,9999,500,f32,0.1,%0.3f,f32,None
+LOD level 4-5 play distance [m],± play at the center of the boundary,0,160,510,f32,0.1,%0.3f,f32,None
+Texture LOD Level 0-1 Boundary distance [m],Texture switching center (Texure LOD disabled at 0),0,9999,1000,f32,0.1,%0.3f,f32,None
+Texture LOD Level 0-1 Play distance [m],Texture Play around the boundary,0,20,1100,f32,0.1,%0.3f,f32,None
+Crossfade enabled,Is crossfade enabled (0: disabled, 1: enabled)?,0,1,1200,u32,1,%d,u32,Wrap
+Drawing distance [m],Maximum drawing distance. In the open, it will be used for the activation distance,1,9999,1300,f32,1,%f,f32,None
+Fade range [m],Fade distance from the maximum drawing distance to the actual disappearance,0,100,1400,f32,0.1,%0.3f,f32,Wrap
+Shadow drawing distance [m],Maximum shadow drawing distance,1,9999,1500,f32,1,%f,f32,None
+Shadow fade range [m],Fade distance from the maximum shadow drawing distance to the actual disappearance,0,100,1600,f32,0.1,%0.3f,f32,Wrap
+Motion blur drawing boundary distance [m],Distance at which motion blur is enabled,0,100,1700,f32,0.1,%0.1f,f32,Wrap
+Cast the shadow of a point light source,Cast the shadow of a point light source,0,1,1800,s8,1,%d,s8,Wrap
+Cast the shadow of a parallel light source,Cast the shadow of a parallel light source,0,1,1900,s8,1,%d,s8,Wrap
+Receive a shadow,Receive a shadow,0,1,2000,s8,1,%d,s8,Wrap
+Shadow drawing only,Shadow drawing only,0,1,2100,s8,1,%d,s8,Wrap
+Reflected,Reflected,0,1,2200,s8,1,%d,s8,Wrap
+Reflection drawing only,Reflection drawing only,0,1,2300,s8,1,%d,s8,Wrap
+What level of LodMap to include,What level of LodMap to include,-1,16,2400,s8,1,%d,s8,Wrap
+Don't FarClip,Disable fur clips and always draw at the innermost depth of the clip space. Mainly for celestial sphere,0,1,2410,u8,1,%d,u8,Wrap
+LOD type,Type and size of LOD target,0,64,2500,u8,1,%d,PARTS_DRAW_LOD_TYPE,None
+Shadow drawing LOD level offset,LOD level offset value when drawing shadows,0,5,1601,s8,1,%d,s8,Wrap
+Follow the camera on the XZ plane,Follow the camera on the XZ plane (GR SEQ09242),0,1,2420,u8,1,%d,u8,Wrap
+Switch to the celestial sphere drawing phase,Set the drawing phase to the celestial sphere (GR SEQ09242),0,1,2421,u8,1,%d,u8,Wrap
+Distance switching distance [m],Distance switching distance [m],0,9999,1800,f32,0.1,%0.3f,f32,None
+Distant view switching play distance [m],Distant view switching play distance [m],0,9999,1801,f32,0.1,%0.3f,f32,None
+Construction limit distance for open [m],Construction limit distance for open [m]. If the distance to the camera is less than this distance in the open, it will not be built. This is a function for distant view assets. -1: Function disabled (default),-1,99999,1802,f32,0.1,%0.3f,f32,None
+Construction limit play distance for open [m],Open construction limit play distance [m],0,99999,1803,f32,0.1,%0.3f,f32,None
+Z sort offset,If the distance from the camera is the same in the same drawing phase, the smaller translucent system is drawn in the foreground, and the opaque system is drawn in the larger value. The base point of the offset is the origin in the celestial sphere drawing phase. Other than that, it is mainly Model AABB. (GR SEQ09242),-99999,99999,2411,f32,0.1,%0.3f,f32,None
+Shadow drawing alpha test effective distance [m],Distance to perform alpha test when drawing shadow [m],0,9999,1602,f32,1,%0.3f,f32,Wrap
+Forward Drawing environment map Blend type,Forward Drawing environment map Blend type,0,1,2430,u8,1,%d,PARTS_DRAW_FOWARD_DRAW_ENVMAP_BLEND_TYPE,None
+Drawing distance scale parameter ID,Load balancer drawing distance scale parameter ID,0,47,2501,u8,1,%u,u8,Wrap
+reserve,reserve,,,2502,dummy8,,,dummy8,None

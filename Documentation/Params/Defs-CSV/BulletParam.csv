@@ -1,0 +1,120 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Attack ID,Register each attack parameter ID. → Attack type / Attack material / Physical attack power / Magic attack power / Stamina attack power / Knockback distance.,-1,999999999,1000,s32,1,%d,s32,Wrap
+SFX ID [bullet],Enter the SFX ID for [Bullet]. -1 does not occur.,-1,99999999,2000,s32,1,%d,s32,Wrap
+SFXID [landing],[Impact] Enter the SFX ID. -1 does not occur.,-1,99999999,3000,s32,1,%d,s32,Wrap
+SFXID [at the time of repelling],[At the time of repelling] Enter the SFX ID. -1 does not occur.,-1,99999999,4000,s32,1,%d,s32,Wrap
+Lifespan [s],Time for missiles to continue to exist (-1 is infinite).,-1,99999,29000,f32,0.01,%f,f32,Wrap
+Range [m],Distance at which attenuation begins (not actual flight distance).,0,99999,33000,f32,0.1,%f,f32,Wrap
+Fire interval [s],Specify how many seconds the missile will be fired.,0,99,28000,f32,0.01,%f,f32,Wrap
+Gravity within range [m / s ^ 2],Downward gravity within range.,-999,999,34000,f32,0.1,%f,f32,Wrap
+Gravity outside range [m / s ^ 2],Gravity applied downward when damping begins (expresses the feeling of falling down.,-999,999,35000,f32,0.1,%f,f32,Wrap
+Guidance stop distance [m],The distance to the target to stop the guidance. A parameter that prevents you from hitting too much with a guided bullet.,0,999999,45000,f32,0.1,%f,f32,Wrap
+Initial velocity [m / s],Initial speed of SFX.,0,999,36000,f32,0.1,%f,f32,Wrap
+Acceleration within range [m / s ^ 2],Acceleration within SFX range.,-999,999,40000,f32,0.1,%f,f32,Wrap
+Acceleration outside range [m / s ^ 2],Acceleration when SFX goes out of range.,-999,999,41000,f32,0.1,%f,f32,Wrap
+Maximum speed [m / s],maximum speed.,0,999,38000,f32,0.1,%f,f32,Wrap
+Minimum speed [m / s],Minimum guaranteed speed.,0,999,37000,f32,0.1,%f,f32,Wrap
+Acceleration start time [s],Until this time, do not accelerate (make sure you can shoot magic like rockets).,0,99,39000,f32,0.01,%f,f32,Wrap
+Guidance start distance [m],How many meters should the guidance start?,0,999,44000,f32,0.1,%f,f32,Wrap
+Initial radius [m],Set the radius of the hit ball.,-1,999,30000,f32,0.01,%f,f32,Wrap
+Maximum radius [m],Maximum radius of the hit sphere (If -1, make it the same as the initial radius / default),-1,999,31000,f32,0.01,%f,f32,Wrap
+Range diffusion time [s],The time when the radius of the range expands to a small extent.,0,99,32000,f32,0.01,%f,f32,Wrap
+Activation delay [s],Time from landing to explosion (if 0, it explodes immediately).,0,99,59000,f32,0.01,%f,f32,Wrap
+Induction shift amount [m],It is accurate if it is 0. At the time of shooting, each component of XYZ should be aimed by shifting this amount.,0,999,46000,f32,0.1,%f,f32,Wrap
+Time to live in damage hit history [s],Damage hit history survival time [sec] (<= 0.0f: indefinite),0,9999,17000,f32,0.1,%f,f32,Wrap
+External force [m / s ^ 2],External force applied in the direction of shooting. (Y-axis is removed),0,10,35500,f32,0.001,%f,f32,Wrap
+Special effects on the person who shot,Special effects on the person who shot,-1,999999999,47000,s32,1,%d,s32,Wrap
+Funnel NPC Thinking ID,Parameters used by the funnel to search for the target,-1,999999999,60000,s32,1,%d,s32,Wrap
+Generated bullet ID,Specify the ID when generating a new bullet parameter from the bullet parameter,-1,999999999,11000,s32,1,%d,s32,Wrap
+Special effect ID0,Register each special effect parameter ID. → General special effects.,-1,999999999,48000,s32,1,%d,s32,Wrap
+Special effect ID1,Register each special effect parameter ID. → General special effects.,-1,999999999,49000,s32,1,%d,s32,Wrap
+Special effect ID2,Register each special effect parameter ID. → General special effects.,-1,999999999,50000,s32,1,%d,s32,Wrap
+Special effect ID3,Register each special effect parameter ID. → General special effects.,-1,999999999,51000,s32,1,%d,s32,Wrap
+Special effect ID4,Register each special effect parameter ID. → General special effects.,-1,999999999,52000,s32,1,%d,s32,Wrap
+Number of shots,The number of missiles fired at one time.,0,99,23000,u16,1,%d,u16,Wrap
+Induction performance [deg / s],How many corrections per second? ..,0,32767,43000,s16,1,%d,s16,Wrap
+Launch angle [deg],Specify how many times the missile is fired forward.,-360,360,24000,s16,1,%d,s16,Wrap
+Launch angle interval [deg],When firing multiple missiles, specify how often to fire them. (Y-axis),-360,360,25000,s16,1,%d,s16,Wrap
+Launch elevation interval [deg],When firing multiple missiles, specify how often to fire them. (X-axis),-360,360,27000,s16,1,%d,s16,Wrap
+Physical attack power attenuation rate [% / s],Correction value that decreases in 1 second after the attenuation distance.,0,100,53000,s8,1,%d,s8,Wrap
+Magic attack power attenuation rate [% / s],Correction value that decreases in 1 second after the attenuation distance.,0,100,54000,s8,1,%d,s8,Wrap
+Flame attack power attenuation rate [% / s],Correction value that decreases in 1 second after the attenuation distance.,0,100,55000,s8,1,%d,s8,Wrap
+Electric shock attack power attenuation rate [% / s],Correction value that decreases in 1 second after the attenuation distance.,0,100,56000,s8,1,%d,s8,Wrap
+Stamina damage attenuation rate [% / s],Correction value that decreases in 1 second after the attenuation distance.,0,100,57000,s8,1,%d,s8,Wrap
+Knockback attenuation factor [% / s],Correction value that decreases in 1 second after the attenuation distance.,0,100,58000,s8,1,%d,s8,Wrap
+Launch elevation angle [deg],Additional elevation angle from the horizontal.,-90,90,26000,s8,1,%d,s8,Wrap
+Lock direction limit angle,Limit angle when facing the lock direction,0,180,42000,u8,1,%d,u8,Wrap
+pad,,,,99201,dummy8,,%d,dummy8,Wrap
+Previous movement direction addition rate [%],Ratio to add the previous movement direction to the current direction when the sliding bullet hits the wall,0,100,46500,u8,1,%d,u8,Wrap
+Physical attributes,Set the physical attributes to set for the bullet,0,255,6000,u8,1,%d,ATKPARAM_ATKATTR_TYPE,Wrap
+Special attributes,Set special attributes to set for bullets,0,255,7000,u8,1,%d,ATKPARAM_SPATTR_TYPE,Wrap
+Attack attribute [SFX / SE],Specify what the attack attribute is,0,255,8000,u8,1,%d,BEHAVIOR_ATK_TYPE,Wrap
+Attack material [SFX / SE],Used for SFX / SE during attack,0,255,9000,u8,1,%d,WEP_MATERIAL_ATK,Wrap
+Penetrate the character?,If it is ON, it will penetrate without landing when it hits the character.,0,1,19000,u8,1,%d,ON_OFF,Wrap
+Penetrate the object?,If it is ON, it will penetrate without landing when hitting a dynamic / partial destruction asset.,0,1,19100,u8,1,%d,ON_OFF,Wrap
+pad,,,,99202,dummy8,,%d,dummy8,Wrap
+Occurrence condition,Specify the condition to judge whether to generate a bullet when it lands or the life is extinguished,0,255,12000,u8,1,%d,BULLET_LAUNCH_CONDITION_TYPE,Wrap
+Follow-up type,Follow-up type. "Do not follow" is the default.,0,255,14000,u8,1,%d,BULLET_FOLLOW_TYPE,Wrap
+Source type,Source type. Usually from Damipoli. (Introduced to judge meteo),0,7,13000,u8,1,%d,BULLET_EMITTE_POS_TYPE,Wrap
+Will it stay stuck?,Set whether bullets such as arrows will remain stuck in the character,0,1,5000,u8,1,%d,ON_OFF,Wrap
+Do you keep hitting?,Do you keep hitting?,0,1,15000,u8,1,%d,ON_OFF,Wrap
+Penetrate the map?,If it is ON, it will penetrate without landing when hitting a hit / static asset.,0,1,20000,u8,1,%d,ON_OFF,Wrap
+Are you an enemy or an ally?,Are you an enemy or an ally? (Not a wandering ghost),0,1,21000,u8,1,%d,ON_OFF,Wrap
+Do you want to share the hit list?,Specify whether to share the hit list,0,1,16000,u8,1,%d,ON_OFF,Wrap
+Do you use multiple Damipoli?,Do you use the same Damipoly ID more than once when placing bullets?,0,1,22000,u8,1,%d,ON_OFF,Wrap
+Does it hit other bullets forced erasure A?,Does it hit other bullets forced erasure A?,0,1,62200,u8,1,%d,u8,Wrap
+Does it hit the other bullet forced erasure B?,Does it hit the other bullet forced erasure B?,0,1,62300,u8,1,%d,u8,Wrap
+Do you hit the force magic?,Do you hit the force magic?,0,1,62000,u8,1,%d,u8,Wrap
+Whether to ignore the effect at the time of water collision,Should I ignore the effect if it hits the surface of the water?,0,1,63000,u8,1,%d,u8,Wrap
+Whether to ignore the state transition at the time of water collision,Whether to ignore the state transition even if it hits water,0,1,64000,u8,1,%d,u8,Wrap
+Do you hit the dark force magic?,Do you hit the dark force magic?,0,1,62000,u8,1,%d,u8,Wrap
+Damage calculation side,Damage calculation side. During multiplayer, the damage calculation is for switching between the giving side and the receiving side.,0,1,70000,u8,1,%d,DMG_CALC_SIDE_TYPE,Wrap
+Bullet automatic capture permission,Whether to automatically follow when not locked on,0,1,14500,u8,1,%d,ON_OFF,Wrap
+For synchronous bullets, do you recalculate at the Damipoli position?,In the case of a synchronously generated bullet, the emitter attitude at the time of synchronization is used without recalculating the attitude due to the Damipoli position when the bullet is generated.,0,1,14600,u8,1,%d,ON_OFF,Wrap
+Do you want to overwrite the owner with the reference direction of the bullet?,Only valid for sub-bullets. If it is ON, the reference direction is the owner.,0,1,42500,u8,1,%d,ON_OFF,Wrap
+Will SFX be taken over by the child bullets?,Take over the SFX of the parent bullet. Ignore the SFX ID set for the sub bullet,0,1,12500,u8,1,%d,ON_OFF,Wrap
+Dark attack power attenuation rate [% / s],Correction value that decreases in 1 second after the attenuation distance.,0,100,56500,s8,1,%d,s8,Wrap
+Bullet SFX extinction type at the time of landing,Bullet SFX extinction type when landing or playing,0,1,5500,s8,1,%d,BULLET_SFX_DELETE_TYPE,Wrap
+Bullet SFX extinction type at the end of life,Bullet SFX extinction type at the end of life,0,1,5600,s8,1,%d,BULLET_SFX_DELETE_TYPE,Wrap
+Target vertical offset [m],Vertical offset of landing position. Shift the target position up and down at the time of launch and during homing. (-N ~ n),-999,999,46100,f32,0.1,%f,f32,Wrap
+Launch angle random number [deg],Upper limit of random number of firing angle (0 to 360),0,360,25100,f32,0.01,%f,f32,Wrap
+Elevation angle random number [deg],Upper limit of firing elevation random number (0 to 360),0,360,27100,f32,0.01,%f,f32,Wrap
+Interval specified bullet ID,Bullet ID used when making bullets at regular intervals,-1,99999999,80000,s32,1,%d,s32,Wrap
+Occurrence interval: Minimum time [s],Minimum interval for making bullets at regular intervals (0 to n),0,999,81000,f32,0.01,%f,f32,Wrap
+Occurrence interval: Maximum time [s],Maximum interval for making bullets at regular intervals (function is disabled if 0 to n 0),0,999,82000,f32,0.01,%f,f32,Wrap
+Predicted shooting velocity observation time [s],Average speed observation time of predicted shooting function (function is invalid if 0 to 40),0,4,90000,f32,0.01,%f,f32,Wrap
+Waiting time for start of specified interval [s],Waiting time to start making bullets at regular intervals,0,999,83000,f32,0.01,%f,f32,Wrap
+The type of SFX attitude generated from the bullet,Set the initial attitude of an SFX or sub-bullet created from a bullet,0,2,95000,u8,1,%d,BULLET_SFX_CREATE_POSTURE_TYPE,Wrap
+Creation restriction group Id,If it is 0, it is unused. If the upper limit is reached when creating a bullet set in the same group Id, that bullet will not be created. (Bullets created synchronously on the network will be released regardless),0,255,96000,u8,1,%d,u8,Wrap
+pad,,,,99203,dummy8,,%d,dummy8,Wrap
+Will the speed be taken over by the submunition?,Take over the speed of the timing to replace the submunition. Ignore the speed set for the submunition,0,1,12600,u8,1,%d,ON_OFF,Wrap
+Do not play landing SFX when character / OBJ hits,When ON, the bullet parameter "landing SFX" does not play even if it hits a character / object.,0,1,20500,u8,1,%d,ON_OFF,Wrap
+Launch position Makes a wall digging judgment by skipping a ray that connects the center of the character in parallel.,There was a problem with the digging judgment when firing a bullet, so it is for error handling. SEQ23101 [Own character] If you use a soul short arrow or a strong soul short arrow in close contact with a character with a high lock-on position, the direction of the bullet will be reversed.,0,1,99000,u8,1,%d,ON_OFF,Wrap
+Do you hit flare magic?,Do you hit flare magic?,0,1,62100,u8,1,%d,u8,Wrap
+Do you use primitive magic Atari?,Do you use primitive magic Atari? It will change to a filter that corresponds to the Atari dedicated to primitive magic.,0,1,20100,u8,1,%d,ON_OFF,Wrap
+pad,,,,99204,dummy8,,%d,dummy8,Wrap
+The number of funnels on the PC does not fluctuate due to reason,The number of funnels on the PC does not fluctuate by force. Become the number of shots,0,1,60100,u8,1,%d,ON_OFF,Wrap
+Does it react to AI bullets (even with 0 attack power)?,Does it react to AI bullets (even with 0 attack power)?,0,1,21100,u8,1,%d,ON_OFF,Wrap
+Occurrence range (radius) at random occurrence [m],The range of bullets used when the source type is set to occur at random locations.,0,999999,13500,f32,0.01,%f,f32,Wrap
+Funnel tracking position_base point height [m],Funnel tracking position_base point height [m],-999,999,60200,f32,0.1,%f,f32,Wrap
+Asset number generated at the time of landing,The number of the asset to be generated at the time of landing. -1: Do not generate. The asset number is the last 6 digits of the asset. Example: AEG999_999 = 999999,-1,999999,4501,s32,1,%d,s32,Wrap
+Lifetime random number [s],Add a random number of seconds with a set time fluctuation range to the "lifetime [s]".,0,999,29100,f32,0.01,%f,f32,Wrap
+Induction performance (X-axis individual) [deg / s],Only the X-axis component of the inductive performance is changed. Do not change with -1,-1,32767,43500,s16,1,%d,s16,Wrap
+Ballistic calculation type,Ballistic calculation type,0,1,22500,u8,1,%d,BULLET_BALLISTIC_CALC_TYPE,Wrap
+Attach effect type,Effect type to attach,0,5,61000,u8,1,%d,BULLET_ATTACH_EFFECT_TYPE,Wrap
+SEID1 [bullet],Insert SE ID1 for [Bullet]. -1: Not generated 9 digits. Sound type is fixed to s: SFX.,-1,999999999,4100,s32,1,%d,s32,Wrap
+SEID2 [bullet],Insert SE ID 2 for [Bullet]. -1: Not generated 9 digits. Sound type is fixed to s: SFX.,-1,999999999,4101,s32,1,%d,s32,Wrap
+SEID [landing],Insert SE ID 1 for [landing]. -1 does not occur. 9 digits. Sound type is fixed to s: SFX.,-1,999999999,4102,s32,1,%d,s32,Wrap
+SEID [at the time of repelling],[At the time of repelling] Enter SE ID1 for. -1 does not occur. 9 digits. Sound type is fixed to s: SFX.,-1,999999999,4103,s32,1,%d,s32,Wrap
+[Curly shooting] Launch elevation limit_lower limit [deg],[Curly fire] The lower limit [deg] with the firing elevation angle as a reference (0 deg) before applying the curve fire calculation.,-180,180,27500,s16,1,%d,s16,Wrap
+[Song firing] Launch elevation limit_upper limit [deg],[Sky firing] The upper limit [deg] based on the firing elevation angle (0deg) before applying the bending firing calculation.,-180,180,27501,s16,1,%d,s16,Wrap
+[Song shooting] Minimum speed limit [m / s],[Song firing] The minimum speed limit for song firing calculation [m / s].,0,999,41500,f32,0.1,%f,f32,Wrap
+[Song shooting] Maximum speed limit [m / s],[Song firing] Maximum speed limit for song firing calculation [m / s].,0,999,41501,f32,0.1,%f,f32,Wrap
+SFXID [At the time of forced erasure],SFX ID at the time of forced erasure. -1 does not occur.,-1,99999999,4100,s32,1,%d,s32,Wrap
+Bullet SFX extinction type at the time of forced erasure,Bullet SFX extinction type at the time of forced erasure,0,1,5610,s8,1,%d,BULLET_SFX_DELETE_TYPE,Wrap
+Padding 3,pad3,,,99205,dummy8,,,dummy8,None
+SFX direction specification when following Damipoli,SFX direction specification when following Damipoli,-1,999,14200,s16,1,%d,s16,Wrap
+Funnel tracking position_radius [m],Funnel tracking position_radius [m],-999,999,60300,f32,0.1,%f,f32,Wrap
+Special effect flight distance correction magnification,Special effect flight distance correction magnification,0,99.99,99200,f32,0.1,%f,f32,Wrap
+Target range [m] when unlocked,Target range when unlocked (-1: Refer to "range", 0: No target),-1,99999,33500,f32,0.1,%f,f32,Wrap
+pad,,,,99206,dummy8,,,dummy8,None

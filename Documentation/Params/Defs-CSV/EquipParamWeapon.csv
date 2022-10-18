@@ -1,0 +1,271 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,30101,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,30102,dummy8,,%d,dummy8,None
+Behavior variation ID,Used when determining the action parameter ID to be referenced during an attack,-1,99999999,400,s32,1,%d,s32,Wrap
+Sort ID,Sort ID (-1: Do not collect) (7 digits is the limit in s32 to add the enhancement level in the program),-1,9999999,2400,s32,1,%d,s32,Wrap
+Wandering equipment ID,Replacement equipment ID for wandering ghosts.,0,999999999,2500,u32,1,%d,u32,Wrap
+Weight [kg],Weight [kg].,0,1000,3000,f32,0.1,%0.3f,f32,Wrap
+Equipment weight ratio,Equipment weight ratio,0,1,3100,f32,0.001,%0.3f,f32,Wrap
+Repair price,Basic repair price,0,99999999,3400,s32,1,%d,s32,Wrap
+Enhanced price,Enhanced price,0,99999999,3500,s32,1,%d,s32,Wrap
+Sale price,Selling price,-1,99999999,3510,s32,1,%d,s32,Wrap
+Strength correction,Charapara correction value.,0,999,6100,f32,0.1,%0.3f,f32,Wrap
+Agility correction,Charapara correction value.,0,999,6200,f32,0.1,%0.3f,f32,Wrap
+Magic correction,Charapara correction value.,0,999,6300,f32,0.1,%0.3f,f32,Wrap
+Faith correction,Charapara correction value.,0,999,6400,f32,0.1,%0.3f,f32,Wrap
+Physical attack cut rate when guarding,Set the damage cut rate when guarding for each attack,0,100,6500,f32,0.1,%0.1f,f32,Wrap
+Magic attack cut rate when guarding,If it is not a guard attack, enter 0,0,100,6600,f32,0.1,%0.1f,f32,Wrap
+Flame attack power cut rate when guarding,How much to cut the fire attack?,0,100,6700,f32,0.1,%0.1f,f32,Wrap
+Electric shock attack power cut rate when guarding,How much to cut the electric shock attack?,0,100,6800,f32,0.1,%0.1f,f32,Wrap
+Special effect ID 0 on attack hit,Register when adding special effects to weapons,-1,999999999,7900,s32,1,%d,s32,Wrap
+Special effect ID1 on attack hit,Register when adding special effects to weapons,-1,999999999,7910,s32,1,%d,s32,Wrap
+Special effect ID2 on attack hit,Register when adding special effects to weapons,-1,999999999,7920,s32,1,%d,s32,Wrap
+Resident special effect ID,Resident special effect ID0,-1,999999999,8000,s32,1,%d,s32,Wrap
+Resident special effect ID1,Resident special effect ID1,-1,999999999,8100,s32,1,%d,s32,Wrap
+Resident special effect ID2,Resident special effect ID2,-1,999999999,8200,s32,1,%d,s32,Wrap
+Material ID,Material parameter ID required for weapon enhancement,-1,999999,8500,s32,1,%d,s32,Wrap
+Derivation source,This weapon's enhancement source weapon ID,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +1,This weapon's enhancement source weapon ID1,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +2,This weapon's enhancement source weapon ID2,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +3,This weapon's enhancement source weapon ID3,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +4,This weapon's enhancement source weapon ID 4,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +5,This weapon's enhancement source weapon ID 5,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +6,This weapon's enhancement source weapon ID 6,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +7,This weapon's enhancement source weapon ID 7,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +8,This weapon's enhancement source weapon ID8,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +9,This weapon's enhancement source weapon ID 9,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +10,This weapon's enhancement source weapon ID 10,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +11,This weapon's enhancement source weapon ID 11,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +12,This weapon's enhancement source weapon ID 12,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +13,This weapon's enhancement source weapon ID 13,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +14,This weapon's enhancement source weapon ID14,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +15,This weapon's enhancement source weapon ID 15,-1,99999999,8600,s32,1,%d,s32,Wrap
+Special attack A damage multiplier,Damage multiplier for special attack A,0,99.999,8900,f32,0.001,%.3f,f32,Wrap
+Special attack B damage multiplier,Damage multiplier for special attack B,0,99.999,8910,f32,0.001,%.3f,f32,Wrap
+Special attack C damage multiplier,Damage multiplier for special attack C,0,99.999,8920,f32,0.001,%.3f,f32,Wrap
+Special attack D damage multiplier,Damage multiplier for special attack D,0,99.999,8930,f32,0.001,%.3f,f32,Wrap
+Sleep tolerance cut rate_maximum correction value,Maximum value of cut rate correction value for attack power against sleep (set as special effect parameter),0,100,7550,f32,0.01,%0.2f,f32,Wrap
+Madness resistance cut rate_maximum correction value,Maximum value of cut rate correction value for attack power against madness (set as special effect parameter),0,100,7560,f32,0.01,%0.2f,f32,Wrap
+SA weapon attack power,Super Armor Basic Attack Power,0,9999,5900,f32,0.1,%f,f32,Wrap
+Equipment model number,Equipment model number.,0,9999,300,u16,1,%d,u16,Wrap
+Icon ID,Menu icon ID.,0,65535,2300,u16,1,%d,u16,Wrap
+Durability,Initial durability.,0,999,3200,u16,1,%d,u16,Wrap
+Maximum durability,New durability.,0,999,3300,u16,1,%d,u16,Wrap
+Throw-through attack power basic value,Basic value of throw-through attack power,0,9999,4200,u16,1,%d,u16,Wrap
+Parry occurrence time [frame],Limit the life of parry damage. It does not last longer than it is set in TimeAct.,-1,9999,4300,s16,1,%d,s16,Wrap
+Physical attack power basic value,Basic value of physical attribute attack that damages the enemy's HP,0,9999,5400,u16,1,%d,u16,Wrap
+Magic attack power basic value,Basic value of magic attribute attack that damages the enemy's HP,0,9999,5500,u16,1,%d,u16,Wrap
+Fire attack power basic value,Basic value of fire attribute attack that damages the enemy's HP,0,9999,5600,u16,1,%d,u16,Wrap
+Electric shock attack power basic value,Basic value of electric shock attribute attack that damages the enemy's HP,0,9999,5700,u16,1,%d,u16,Wrap
+Stamina attack power,Stamina attack power against the enemy,0,999,5800,u16,1,%d,u16,Wrap
+Guard range [deg],Defense occurrence range angle when guarding weapons,0,180,5200,s16,1,%d,s16,Wrap
+SA durability value,Additional SA durability used during attack motion,-1,999,6000,f32,0.1,%f,f32,Wrap
+Stamina defense when guarding,Defense against enemy stamina attacks when guarding successfully,0,100,7350,s16,1,%d,s16,Wrap
+Enhanced type ID,Enhanced type ID,0,9999,8300,s16,1,%d,s16,Wrap
+Trophy S grade ID,Is it related to the trophy system?,-1,9999,8700,s16,1,%d,s16,Wrap
+Trophy SEQ number,Trophy SEQ number (13-29),-1,99,8800,s16,1,%d,s16,Wrap
+Throw attack power multiplier,Throw attack power multiplier,-100,999,9000,s16,1,%d,s16,Wrap
+Bow distance correction [%],Up% to extend the flight distance,-100,999,9100,s16,1,%d,s16,Wrap
+Equipment model type,Equipment model type.,0,99,100,u8,1,%d,EQUIP_MODEL_CATEGORY,Wrap
+Equipment model gender,Gender of equipment model.,0,99,200,u8,1,%d,EQUIP_MODEL_GENDER,Wrap
+Weapon category,Weapon category.,0,99,500,u8,1,%d,WEAPON_CATEGORY,Wrap
+Weapon motion category,Weapon motion category.,0,99,700,u8,1,%d,WEPMOTION_CATEGORY,Wrap
+Guard motion category,Guard motion category,0,255,800,u8,1,%d,GUARDMOTION_CATEGORY,Wrap
+Attack material,Attack material used from attack para,0,255,2000,u8,1,%d,WEP_MATERIAL_ATK,Wrap
+Defense SE Material 1,Defense SE material used from attack para 1,0,9999,2100,u16,1,%d,WEP_MATERIAL_DEF,Wrap
+Correction type (physical attack power),Correcting physical attack power by primary parameters Determines the type of graph,0,255,8400,u8,1,%d,WEP_CORRECT_TYPE,Wrap
+Special attributes,Weapon special attribute value,0,255,1945,u8,1,%d,ATKPARAM_SPATTR_TYPE,Wrap
+Special attack category,Special attack category (possible from 50 to 999),0,999,600,u16,1,%d,u16,Wrap
+Weapon motion one-handed ID,Basic motion ID when equipped with one hand.,0,99,900,u8,1,%d,u8,Wrap
+Weapon motion two-handed ID,Basic motion ID when equipped with both hands.,0,99,1000,u8,1,%d,u8,Wrap
+Equipment proper strength,Equipment appropriate value.,0,99,3700,u8,1,%d,u8,Wrap
+Equipment proper agility,Equipment appropriate value.,0,99,3800,u8,1,%d,u8,Wrap
+Equipment proper magic power,Equipment appropriate value.,0,99,3900,u8,1,%d,u8,Wrap
+Equipment proper faith,Equipment appropriate value.,0,99,4000,u8,1,%d,u8,Wrap
+Strength over start value,Strength over start value,0,99,4100,u8,1,%d,u8,Wrap
+Parry attack base value,Basic value to defeat the enemy's parry,0,99,4400,u8,1,%d,u8,Wrap
+Parry defense value,Used to judge whether to be a parry or a guard at the time of parry judgment,0,99,4500,u8,1,%d,u8,Wrap
+Flick defense basic value,Used to determine if it will pop when guarding an enemy attack,0,99,4600,u8,1,%d,u8,Wrap
+Flick attack power basic value,Guard Used to determine whether or not to be repelled when attacking an enemy,0,99,4700,u8,1,%d,u8,Wrap
+Guard cut invalidation magnification,Magnification that invalidates the opponent's guard cut. -100 is completely invalid. Double the defense effect of the opponent at 100.,-100,100,5100,s8,1,%d,s8,Wrap
+Guard level,When guarding, which guard motion will the enemy attack? Decide,0,100,5300,s8,1,%d,s8,Wrap
+Slash attack cut rate,Looking at the attack type, what percentage of the damage of the slashing attribute is cut? Specify,-100,100,4910,s8,1,%d,s8,Wrap
+Batter attack cut rate,Looking at the attack type, what percentage of the damage of the hit attribute is cut? Specify,-100,100,4911,s8,1,%d,s8,Wrap
+Puncture attack cut rate,Looking at the attack type, what percentage of the damage of the piercing attribute is cut? Specify,-100,100,4912,s8,1,%d,s8,Wrap
+Poison resistance cut rate,How much to cut the attack power to poison (set to the special effect parameter),0,100,7200,s8,1,%d,s8,Wrap
+Epidemic attack cut rate,How much to cut the attack power (set as a special effect parameter) to make it a plague,0,100,7210,s8,1,%d,s8,Wrap
+Bleeding attack cut rate,How much to cut the attack power (set as a special effect parameter) to make bleeding,0,100,7220,s8,1,%d,s8,Wrap
+Curse attack cut rate,How much to cut the attack power (set as a special effect parameter) to curse,0,100,7230,s8,1,%d,s8,Wrap
+Physical attribute 1,Physical attribute 1,0,255,1940,u8,1,%d,ATKPARAM_ATKATTR_TYPE,Wrap
+Right hand equipment,Is it possible to equip it with the right hand?,0,1,1100,u8,1,%d,EQUIP_BOOL,Wrap
+Left hand equipment,Is it possible to equip it with the left hand?,0,1,1200,u8,1,%d,EQUIP_BOOL,Wrap
+Two-handed equipment,Is it possible to equip with both hands?,0,1,1300,u8,1,%d,EQUIP_BOOL,Wrap
+Bow and arrow bullet equipment,Is it possible to equip a bow bullet?,0,1,1400,u8,1,%d,EQUIP_BOOL,Wrap
+Crossbow bullet equipment,Is it possible to equip a crossbow bullet?,0,1,1500,u8,1,%d,EQUIP_BOOL,Wrap
+Can be guarded,Guard with L1 when equipped with left hand,0,1,1600,u8,1,%d,EQUIP_BOOL,Wrap
+Parry possible,Parry with L2 when equipped with left hand,0,1,1700,u8,1,%d,EQUIP_BOOL,Wrap
+Magical possible,Activates magic when attacking,0,1,1800,u8,1,%d,EQUIP_BOOL,Wrap
+Can be spelled,Cast magic when attacking,0,1,1810,u8,1,%d,EQUIP_BOOL,Wrap
+Miracle possible,Miracle activated when attacking,0,1,1900,u8,1,%d,EQUIP_BOOL,Wrap
+Pledge magic possible,Activates pledge magic when attacking,0,1,1910,u8,1,%d,EQUIP_BOOL,Wrap
+Normal,Attack type for menu display. Is it normal?,0,1,2600,u8,1,%d,EQUIP_BOOL,Wrap
+Batter,Attack type for menu display. Is it a blow?,0,1,2700,u8,1,%d,EQUIP_BOOL,Wrap
+Slashing,Attack type for menu display. Is it a slash?,0,1,2800,u8,1,%d,EQUIP_BOOL,Wrap
+Piercing,Attack type for menu display. Is it a piercing?,0,1,2900,u8,1,%d,EQUIP_BOOL,Wrap
+Is it possible to enchant?,Can it be strengthened with pine fat?,0,1,3600,u8,1,%d,EQUIP_BOOL,Wrap
+Is there a humanity correction?,Is there an attack power correction by human nature?,0,1,5000,u8,1,%d,EQUIP_BOOL,Wrap
+Can it be strengthened?,Listed in the enhancement target list at the enhancement shop (may be deleted due to specification changes?),0,1,9200,u8,1,%d,EQUIP_BOOL,Wrap
+Is job change reset prohibited?,Is job change reset prohibited?,0,1,9220,u8,1,%d,EQUIP_BOOL,Wrap
+Is repair prohibited?,Is repair prohibited?,0,1,9240,u8,1,%d,EQUIP_BOOL,Wrap
+Is it a dark hand?,Is it a dark hand?,0,1,1950,u8,1,%d,EQUIP_BOOL,Wrap
+Is there a simple model for DLC?,Is there a simple model for DLC?,0,1,1970,u8,1,%d,EQUIP_BOOL,Wrap
+Lantern weapon,Is it a lantern weapon?,0,1,1920,u8,1,%d,EQUIP_BOOL,Wrap
+Anti-spirit weapon,NPC Para's "spirit body" will now hit the opponent of ○. Also, the attack para "Is it a ghost attack?" Will be able to guard the attack of ○.,0,1,1930,u8,1,%d,EQUIP_BOOL,Wrap
+Weapon career change category,Weapon career change category. Used to display the attribute icon.,0,55,8550,u8,1,%d,WEP_BASE_CHANGE_CATEGORY,Wrap
+Is it a dragon hunt?,Is it a dragon hunting weapon?,0,1,1947,u8,1,%d,EQUIP_BOOL,Wrap
+Can i deposit,Can you leave it in the warehouse?,0,1,1960,u8,1,%d,EQUIP_BOOL,Wrap
+Is multi-drop sharing prohibited?,Is multi-drop sharing prohibited?,0,1,1965,u8,1,%d,EQUIP_BOOL,Wrap
+Can you throw it away,Can you throw away the item? TRUE = thrown away,0,1,1955,u8,1,%d,EQUIP_BOOL,Wrap
+Can you put it on the spot,Can I put the item on the spot? TRUE = can be placed,0,1,1956,u8,1,%d,EQUIP_BOOL,Wrap
+Acquisition log display condition,Whether to display in the item acquisition log when acquiring the item (not entered: ○),0,1,25000,u8,1,%d,EQUIP_BOOL,Wrap
+Can be thrown,Whether it is a throwable weapon,0,1,1550,u8,1,%d,EQUIP_BOOL,Wrap
+Acquisition dialog display condition,Whether to display it in the item acquisition dialog when acquiring an item (not entered: new only),0,2,24900,u8,1,%d,GET_DIALOG_CONDITION_TYPE,Wrap
+Is it prohibited to change the magic stone attribute?,Is it prohibited to change the magic stone attribute?,0,1,30100,u8,1,%d,EQUIP_BOOL,Wrap
+Defensive SFX Material 1,Defensive SFX material used from attack para 1,0,9999,2200,u16,1,%d,WEP_MATERIAL_DEF_SFX,Wrap
+Weapon collaborative setting,Weapon collaborative setting,0,2,10000,u8,1,%d,WEP_COLLIDABLE_TYPE,Wrap
+Weapon 1 collaborative setting,Weapon 1 collaborative setting,0,2,10001,u8,1,%d,WEP_COLLIDABLE_TYPE,Wrap
+Attitude control ID (right hand),Attitude control ID (right hand),0,99,12010,u8,1,%u,u8,Wrap
+Attitude control ID (left hand),Attitude control ID (left hand),0,99,12020,u8,1,%u,u8,Wrap
+Sword Flash SfxID_0,Sword flash SfxID_0 (-1 invalid),-1,99999999,11000,s32,1,%d,s32,None
+Root Sword Flash Damipoli ID_0,Sword flash root Damipoli ID_0 (-1 invalid),-1,99999999,11001,s32,1,%d,s32,None
+Sword tip sword flash Damipoli ID_0,Sword Flash Sword Tip Damipoli ID_0,-1,99999999,11002,s32,1,%d,s32,None
+Sword Flash SfxID_1,Sword flash SfxID_1 (-1 invalid),-1,99999999,11003,s32,1,%d,s32,None
+Root Sword Flash Damipoli ID_1,Sword Flash Root Damipoli ID_1 (-1 invalid),-1,99999999,11004,s32,1,%d,s32,None
+Sword tip sword flash Damipoli ID_1,Sword Flash Sword Tip Damipoli ID_1,-1,99999999,11005,s32,1,%d,s32,None
+Sword Flash SfxID_2,Sword flash SfxID_2 (-1 invalid),-1,99999999,11006,s32,1,%d,s32,None
+Root Sword Flash Damipoli ID_2,Sword Flash Root Damipoli ID_2 (-1 invalid),-1,99999999,11007,s32,1,%d,s32,None
+Sword tip sword flash Damipoli ID_2,Sword Flash Sword Tip Damipoli ID_2,-1,99999999,11008,s32,1,%d,s32,None
+Sword Flash SfxID_3,Sword Flash SfxID_3 (-1 invalid),-1,99999999,11009,s32,1,%d,s32,None
+Root Sword Flash Damipoli ID_3,Sword flash root Damipoli ID_3 (-1 invalid),-1,99999999,11010,s32,1,%d,s32,None
+Sword tip sword flash Damipoli ID_3,Sword Flash Sword Tip Damipoli ID_3,-1,99999999,11011,s32,1,%d,s32,None
+Sword Flash SfxID_4,Sword Flash SfxID_4 (-1 invalid),-1,99999999,11012,s32,1,%d,s32,None
+Root Sword Flash Damipoli ID_4,Sword flash root Damipoli ID_4 (-1 invalid),-1,99999999,11013,s32,1,%d,s32,None
+Sword tip sword flash Damipoli ID_4,Sword Flash Sword Tip Damipoli ID_4,-1,99999999,11014,s32,1,%d,s32,None
+Sword Flash SfxID_5,Sword Flash SfxID_5 (-1 invalid),-1,99999999,11015,s32,1,%d,s32,None
+Root Sword Flash Damipoli ID_5,Sword Flash Root Damipoli ID_5 (-1 invalid),-1,99999999,11016,s32,1,%d,s32,None
+Sword tip sword flash Damipoli ID_5,Sword Flash Sword Tip Damipoli ID_5,-1,99999999,11017,s32,1,%d,s32,None
+Sword Flash SfxID_6,Sword Flash SfxID_6 (-1 invalid),-1,99999999,11018,s32,1,%d,s32,None
+Root Sword Flash Damipoli ID_6,Sword Flash Root Damipoli ID_6 (-1 invalid),-1,99999999,11019,s32,1,%d,s32,None
+Sword tip sword flash Damipoli ID_6,Sword Flash Sword Tip Damipoli ID_6,-1,99999999,11020,s32,1,%d,s32,None
+Sword Flash SfxID_7,Sword Flash SfxID_7 (-1 invalid),-1,99999999,11021,s32,1,%d,s32,None
+Root Sword Flash Damipoli ID_7,Sword Flash Root Damipoli ID_7 (-1 invalid),-1,99999999,11022,s32,1,%d,s32,None
+Sword tip sword flash Damipoli ID_7,Sword Flash Sword Tip Damipoli ID_7,-1,99999999,11023,s32,1,%d,s32,None
+Defensive SFX Material 2,Defensive SFX material used from attack para 2,0,9999,2201,u16,1,%d,WEP_MATERIAL_DEF_SFX,Wrap
+Defense SE Material 2,Defense SE material used from attack para 2,0,9999,2101,u16,1,%d,WEP_MATERIAL_DEF,Wrap
+Suction position Id,Weapon adsorption position parameter Id. This value determines the position where the weapon is attracted (-1: Refer to the value written directly in the old source code).,-1,999999999,12000,s32,1,%d,s32,Wrap
+Toughness correction factor,It is a magnification that corrects the basic value of toughness.,0,10,5950,f32,0.01,%.2f,f32,Wrap
+Is the armor SA damage multiplier valid even at the initial value?,Whether the toughness calculation is performed even if the armor SA is the initial value. Check the toughness specification .xlsx for details,0,1,5960,u8,1,%d,EQUIP_BOOL,Wrap
+Is it a twin sword?,Is this weapon a twin sword?,0,1,12110,u8,1,%d,EQUIP_BOOL,Wrap
+Is it possible to load automatically?,Only valid for arrows and bolts. Whether to automatically equip this weapon if the target equipment slot is empty when picking up this weapon,0,1,12120,u8,1,%d,EQUIP_BOOL,Wrap
+Is emergency avoidance possible?,Is it an emergency avoidable weapon? Pass it to the behavior script.,0,1,12130,u8,1,%d,EQUIP_BOOL,Wrap
+Is it hidden during cutscenes?,Is it hidden during cutscenes?,0,1,2530,u8,1,%d,EQUIP_BOOL,Wrap
+pad,,,,30103,dummy8,,%d,dummy8,Wrap
+Correction type (magic attack power),Determining the type of magic attack power correction graph with primary parameters,0,255,8410,u8,1,%d,WEP_CORRECT_TYPE,Wrap
+Correction type (flame attack power),Determine the type of flame attack power correction graph with primary parameters,0,255,8420,u8,1,%d,WEP_CORRECT_TYPE,Wrap
+Correction type (lightning attack power),Determine the type of lightning attack power correction graph with primary parameters,0,255,8430,u8,1,%d,WEP_CORRECT_TYPE,Wrap
+Special attack E damage multiplier,Damage multiplier for special attack E,0,99.999,8940,f32,0.001,%.3f,f32,Wrap
+Special attack F damage multiplier,Damage multiplier for special attack F,0,99.999,8950,f32,0.001,%.3f,f32,Wrap
+Dark attack power cut rate when guarding,How much to cut the dark attack?,0,100,6810,f32,0.1,%0.1f,f32,Wrap
+Dark attack power basic value,Basic value of darkness attack that damages the enemy's HP,0,9999,5750,u16,1,%d,u16,Wrap
+Correction type (dark attack power),Determine the type of darkness attack power correction graph with primary parameters,0,255,8440,u8,1,%d,WEP_CORRECT_TYPE,Wrap
+Correction type (poison attack power),Determining the type of poison attack power correction graph with primary parameters,0,255,8450,u8,1,%d,WEP_CORRECT_TYPE,Wrap
+Sort item type ID,Sort item type ID. In the sort "Item type order", the same ID is displayed together as the same group.,0,255,2410,u8,1,%d,u8,Wrap
+Physical attribute 2,Physical attribute 2,0,255,1941,u8,1,%d,ATKPARAM_ATKATTR_TYPE,Wrap
+Sleep attack cut rate,How much to cut the attack power (set as a special effect parameter) to sleep,0,100,7250,s8,1,%d,s8,Wrap
+Mad attack cut rate,How much to cut the attack power (set to the special effect parameter) that makes you go mad,0,100,7260,s8,1,%d,s8,Wrap
+Correction type (bleeding attack power),Determine the type of bleeding attack power correction graph with primary parameters,0,255,8460,u8,1,%d,WEP_CORRECT_TYPE,Wrap
+Equipment proper luck,Equipment appropriate value.,0,99,4020,u8,1,%d,u8,Wrap
+Cold attack cut rate,How much to cut the attack power (set to the special effect parameter) to cool down,0,100,7240,s8,1,%d,s8,Wrap
+Automatic replenishment type,Controls whether or not to automatically replenish and default settings,0,255,1961,u8,1,%d,AUTO_REPLENISH_TYPE,Wrap
+Arts parameter ID,Arts parameter ID,0,999999999,12100,s32,1,%d,s32,Wrap
+Luck correction,Charapara correction value.,0,999,6450,f32,0.1,%0.3f,f32,Wrap
+Equipment ID for quiver (magazine) display model,Equipment number of the quiver (magazine) display model. In the case of a bow, it is displayed as a quiver, and in the case of a crossbow, it is displayed as a magazine.,0,999999999,350,u32,1,%d,u32,Wrap
+Level setting at the time of reduction,Type of how to set the enhancement level when returning or deriving a weapon,0,255,8590,u8,1,%d,WEAPON_DERIVATION_LEVEL_TYPE,Wrap
+Enchantment Sfx size,Value offset to enchantment SfxId,0,255,11050,u8,1,%d,WEP_ENCHANT_SFX_SIZE,Wrap
+Weapon type,Weapon type. Used for linking text and magic stones (* It is now used for other than text),0,9999,550,u16,1,%d,WEP_TYPE,Wrap
+Physical attack cut rate when guarding_maximum correction value,Maximum damage physical cut rate correction value when guarding,0,100,7400,f32,0.01,%0.2f,f32,Wrap
+Magic attack cut rate when guarding_maximum correction value,Maximum value of correction value of damage magic cut rate when guarding,0,100,7410,f32,0.01,%0.2f,f32,Wrap
+Flame attack power cut rate when guarding_maximum correction value,Maximum value of correction value of damage flame cut rate when guarding,0,100,7420,f32,0.01,%0.2f,f32,Wrap
+Electric shock attack power cut rate when guarding_maximum correction value,Maximum value of correction value of damage electric shock cut rate when guarding,0,100,7430,f32,0.01,%0.2f,f32,Wrap
+Darkness attack power cut rate when guarding_maximum correction value,Maximum value of correction value of damage darkness cut rate when guarding,0,100,7440,f32,0.01,%0.2f,f32,Wrap
+Poison resistance cut rate_maximum correction value,Maximum value of cut rate correction value for attack power against poison (set as special effect parameter),0,100,7500,f32,0.01,%0.2f,f32,Wrap
+Epidemic resistance cut rate_maximum correction value,Maximum value of cut rate correction value for attack power against plague (set as special effect parameter),0,100,7510,f32,0.01,%0.2f,f32,Wrap
+Bleeding resistance cut rate_maximum correction value,Maximum value of cut rate correction value for attack power against bleeding (set as special effect parameter),0,100,7520,f32,0.01,%0.2f,f32,Wrap
+Curse resistance cut rate_maximum correction value,Maximum value of cut rate correction value for attack power against curse (set as special effect parameter),0,100,7530,f32,0.01,%0.2f,f32,Wrap
+Cold resistance cut rate_maximum correction value,Maximum value of cut rate correction value for attack power against cold air (set as special effect parameter),0,100,7540,f32,0.01,%0.2f,f32,Wrap
+Stamina defense when guarding_maximum correction value,When the guard is successful, the maximum value of the defense power correction value against the enemy's stamina attack,0,100,7600,f32,0.01,%0.2f,f32,Wrap
+Resident SfxId1,Resident SfxId1,-1,99999999,11100,s32,1,%d,s32,Wrap
+Resident SfxId2,Resident SfxId2,-1,99999999,11120,s32,1,%d,s32,Wrap
+Resident SfxId3,Resident SfxId3,-1,99999999,11140,s32,1,%d,s32,Wrap
+Resident SfxId4,Resident SfxId4,-1,99999999,11160,s32,1,%d,s32,Wrap
+Resident Sfx Damipoli Id1,Resident Sfx Damipoli Id1,-1,99999999,11110,s32,1,%d,s32,Wrap
+Resident Sfx Damipoli Id2,Resident Sfx Damipoli Id2,-1,99999999,11130,s32,1,%d,s32,Wrap
+Resident Sfx Damipoli Id3,Resident Sfx Damipoli Id3,-1,99999999,11150,s32,1,%d,s32,Wrap
+Resident Sfx Damipoli Id4,Resident Sfx Damipoli Id4,-1,99999999,11170,s32,1,%d,s32,Wrap
+Stamina consumption ratio,Stamina consumption ratio,0,10,5940,f32,0.001,%f,f32,Wrap
+Physical damage correction factor against player,Only attacks on the player will correct the damage done.,0,10,7700,f32,0.001,%0.3f,f32,Wrap
+Anti-player magic damage correction factor,Only attacks on the player will correct the damage done.,0,10,7710,f32,0.001,%0.3f,f32,Wrap
+Anti-player flame damage correction factor,Only attacks on the player will correct the damage done.,0,10,7720,f32,0.001,%0.3f,f32,Wrap
+Anti-player lightning damage correction factor,Only attacks on the player will correct the damage done.,0,10,7730,f32,0.001,%0.3f,f32,Wrap
+Against player darkness damage correction factor,Only attacks on the player will correct the damage done.,0,10,7740,f32,0.001,%0.3f,f32,Wrap
+Anti-player poison damage correction factor,Only attacks on the player will correct the damage done.,0,10,7800,f32,0.001,%0.3f,f32,Wrap
+Anti-player bleeding damage correction factor,Only attacks on the player will correct the damage done.,0,10,7820,f32,0.001,%0.3f,f32,Wrap
+Anti-player cold damage correction factor,Only attacks on the player will correct the damage done.,0,10,7840,f32,0.001,%0.3f,f32,Wrap
+Weapon ability release status value: Strength,To change the R2 attack into a special action when the status is X or higher when using a specific weapon.,-1,99,14000,s32,1,%d,s32,Wrap
+Weapon ability release status value: Skill,To change the R2 attack into a special action when the status is X or higher when using a specific weapon.,-1,99,14100,s32,1,%d,s32,Wrap
+Weapon ability release status value: reason,To change the R2 attack into a special action when the status is X or higher when using a specific weapon.,-1,99,14200,s32,1,%d,s32,Wrap
+Weapon ability release status value: Faith,This is to change the R2 attack into a special action when the status is X or higher when using a specific weapon.,-1,99,14300,s32,1,%d,s32,Wrap
+Weapon ability release status value: Luck,This is to change the R2 attack into a special action when the status is X or higher when using a specific weapon.,-1,99,14400,s32,1,%d,s32,Wrap
+Attack attribute correction ID,ID of the parameter that corrects the attack attribute,0,999999999,15000,s32,1,%d,s32,Wrap
+Selling price,Selling price,-1,99999999,3520,s32,1,%d,s32,Wrap
+Enhanced shop category,Enhanced shop category,0,255,9210,u8,1,%d,REINFORCE_SHOP_CATEGORY,Wrap
+Maximum number of arrows,Maximum number of arrows,0,99,20000,u8,1,%u,u8,Wrap
+Resident SFX1 Whether to display at the time of sword delivery,If "Do you want to display when resident SFX1 is delivered?" Is true, hide the SFX set to "resident SFX ID1" when the weapon is delivered.,0,1,11111,u8,1,%d,EQUIP_BOOL,Wrap
+Whether to display when resident SFX2 sword is delivered,If "Do you want to display when resident SFX2 is delivered?" Is true, hide the SFX set to "resident SFX ID2" when the weapon is delivered.,0,1,11131,u8,1,%d,EQUIP_BOOL,Wrap
+Whether to display when resident SFX3 sword is delivered,If "Do you want to display when resident SFX3 is delivered?" Is true, hide the SFX set to "resident SFX ID3" when the weapon is delivered.,0,1,11151,u8,1,%d,EQUIP_BOOL,Wrap
+Whether to display when resident SFX4 sword is delivered,If "Do you want to display when resident SFX4 is delivered?" Is true, hide the SFX set to "resident SFX ID 4" when the weapon is delivered.,0,1,11171,u8,1,%d,EQUIP_BOOL,Wrap
+Model_0 Is it possible to replace the Soul Param ID?,Whether the vfx parameter "Soul Param ID for Weapon Enchantment" and "Invisible Weapon for Weapon Enchantment" settings are applied,0,1,23000,u8,1,%d,EQUIP_BOOL,Wrap
+Is it possible to replace the model _1 Soul Param ID?,Whether the vfx parameter "Soul Param ID for Weapon Enchantment" and "Invisible Weapon for Weapon Enchantment" settings are applied,0,1,23010,u8,1,%d,EQUIP_BOOL,Wrap
+Model_2 Soul Param ID can be replaced?,Whether the vfx parameter "Soul Param ID for Weapon Enchantment" and "Invisible Weapon for Weapon Enchantment" settings are applied,0,1,23020,u8,1,%d,EQUIP_BOOL,Wrap
+Model_3 Is it possible to replace the Soul Param ID?,Whether the vfx parameter "Soul Param ID for Weapon Enchantment" and "Invisible Weapon for Weapon Enchantment" settings are applied,0,1,23030,u8,1,%d,EQUIP_BOOL,Wrap
+Weapon SEID offset value,SEID offset value,0,99,22000,s8,1,%d,s8,Wrap
+Evolution price,Evolution price,0,99999999,3501,s32,1,%d,s32,Wrap
+Level sync correction ID,Level sync correction ID,-1,999,24000,s16,1,%d,s16,Wrap
+Correction type (sleep attack power),Determine the type of sleep attack correction graph with primary parameters,0,255,8470,u8,1,%d,WEP_CORRECT_TYPE,Wrap
+Correction type (mad attack power),Determining the type of mad attack power correction graph with primary parameters,0,255,8480,u8,1,%d,WEP_CORRECT_TYPE,Wrap
+Rarity,Rarity used in item acquisition logs,0,99,25200,u8,1,%d,u8,Wrap
+Is it possible to attach magic stones?,Is it possible to attach magic stones?,0,2,30000,u8,1,%d,GEM_MOUNT_TYPE,Wrap
+Weapon regain amount,Weapon regain amount,0,60000,8850,u16,1,%d,u16,Wrap
+Effect text ID 00,Effect text ID 00 (Weapon_Effect). Weapon-specific effect text to display in status,-1,99999999,8250,s32,1,%d,s32,Wrap
+Effect text ID 01,Effect text ID 01 (Weapon_Effect). Weapon-specific effect text to display in status,-1,99999999,8260,s32,1,%d,s32,Wrap
+Effect text ID 02,Effect text ID 02 (Weapon_Effect). Weapon-specific effect text to display in status,-1,99999999,8270,s32,1,%d,s32,Wrap
+Derivative source enhancement +16,This weapon's enhancement source weapon ID 16,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +17,This weapon's enhancement source weapon ID 17,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +18,This weapon's enhancement source weapon ID18,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +19,This weapon's enhancement source weapon ID 19,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +20,This weapon's enhancement source weapon ID 20,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +21,This weapon's enhancement source weapon ID21,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +22,This weapon's enhancement source weapon ID 22,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +23,This weapon's enhancement source weapon ID 23,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +24,This weapon's enhancement source weapon ID 24,-1,99999999,8600,s32,1,%d,s32,Wrap
+Derivative source enhancement +25,This weapon's enhancement source weapon ID 25,-1,99999999,8600,s32,1,%d,s32,Wrap
+Anti-player sleep damage correction factor,Only attacks on the player will correct the damage done.,0,10,7850,f32,0.001,%0.3f,f32,Wrap
+Anti-player mad damage correction factor,Only attacks on the player will correct the damage done.,0,10,7860,f32,0.001,%0.3f,f32,Wrap
+SA attack cut rate when guarding,SA damage cut rate when guard is successful,0,100,7300,f32,0.1,%f,f32,Wrap
+Defensive material variation value,It is a value used to divide the damage SFX and SE into variations in combination with the defense material used when guarding. SEQ16473,0,99,2202,u8,1,%d,u8,Wrap
+Special attribute variation value,It is a value used to give variation to abnormal state SFX, SE, etc. in combination with the special attribute of the weapon. SEQ16473,0,99,1946,u8,1,%d,u8,Wrap
+Stealth attack power multiplier,Stealth attack power multiplier,-1,999,9050,s16,1,%d,s16,Wrap
+Anti-player plague damage correction factor,Only attacks on the player will correct the damage done.,0,10,7810,f32,0.001,%0.3f,f32,Wrap
+Anti-player curse damage correction factor,Only attacks on the player will correct the damage done.,0,10,7830,f32,0.001,%0.3f,f32,Wrap
+pad,pad,,,30104,dummy8,,,dummy8,None

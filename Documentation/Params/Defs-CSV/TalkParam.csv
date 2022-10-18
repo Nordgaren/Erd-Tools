@@ -1,0 +1,23 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,1501,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,1502,dummy8,,%d,dummy8,None
+PC Gender is Male: Message ID,PC Gender is Male: Specify Message-> Menu,-1,2000000000,100,s32,1,%d,s32,Wrap
+PC Gender is Male: Voice ID,PC Gender is Male: Specify Voice-> Sound,-1,2000000000,200,s32,1,%d,s32,Wrap
+Special effect ID0,Specify special effects-> Character,-1,2000000000,300,s32,1,%d,s32,Wrap
+Motion ID 0,Specify motion-> Character,-1,2000000000,400,s32,1,%d,s32,Wrap
+Special effect ID1,Specify special effects-> Character,-1,2000000000,500,s32,1,%d,s32,Wrap
+Motion ID 1,Specify motion-> Character,-1,2000000000,600,s32,1,%d,s32,Wrap
+Return position,Relative position of returning conversation-> Conversation,-1,2000000000,700,s32,1,%d,s32,Wrap
+Reaction ID,Conversation specification when returning-> Conversation,-1,2000000000,800,s32,1,%d,s32,Wrap
+Event ID,Event ID-> Event,-1,2000000000,900,s32,1,%d,s32,Wrap
+PC Gender is Female: Message,PC Gender is Female: Specify Message-> Menu,-1,2000000000,110,s32,1,%d,s32,Wrap
+PC Gender is Female: Voice ID,PC Gender is Female: Specify Voice-> Sound,-1,2000000000,210,s32,1,%d,s32,Wrap
+Speaker: Lip-sync start time,Speaker: Lip-sync start time. -1 with no lip-sync,-1,999,1400,s16,1,%d,s16,Wrap
+Speaker: Lip-sync duration,Speaker: Lip-sync duration. Lip-sync at -1 continues forever,-1,999,1410,s16,1,%d,s16,Wrap
+Padding,,,,1503,dummy8,,,dummy8,None
+Voice playback timeout time,Voice playback timeout period. In case of -1, time-out processing is performed in "NPC conversation voice playback timeout time" of "Common_Game system parameter".,-1,180,1500,f32,0.1,%f,f32,Wrap
+Speaker: Subtitled play Anime ID,Speaker: Animation ID during conversation,-1,9999999,1300,s32,1,%d,s32,Wrap
+Whether to forcibly display subtitles,Do you want to force the display of subtitles? Display subtitles even when subtitles are turned off as an option,0,1,250,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Padding,,,,1504,dummy8,,,dummy8,None
+Padding,Padding,,,1505,dummy8,,,dummy8,None

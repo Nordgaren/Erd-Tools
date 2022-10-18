@@ -1,0 +1,14 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| worldMapPieceId || Map fragment parameter ID || Map fragment parameter ID. Display text if you have this map fragment || - ||
+|| textId || Text ID || The text ID to display. PlaceName.xlsm || - ||
+|| pad1 || Padding ||  || - ||
+|| areaNo || Area number || AA part of mAA_BB_CC_DD || - ||
+|| gridXNo || Grid X number || BB part of mAA_BB_CC_DD || - ||
+|| gridZNo || Grid Z number || CC part of mAA_BB_CC_DD || - ||
+|| pad2 || Padding || Padding || - ||
+|| posX || X coordinate || X coordinate || - ||
+|| posY || Y coordinate || Y coordinate (not used) || - ||
+|| posZ || Z coordinate || Z coordinate || - ||

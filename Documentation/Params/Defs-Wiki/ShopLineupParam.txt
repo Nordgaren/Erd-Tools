@@ -1,0 +1,19 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| equipId || Equipment ID || ID of the equipment for sale || - ||
+|| value || price || Selling price to overwrite (-1: Do not overwrite) || - ||
+|| mtrlId || Material ID required for purchase || Material ID required for purchase (-1: None) || - ||
+|| eventFlag_forStock || Quantity retention event flag || Event flag value that holds the number || - ||
+|| eventFlag_forRelease || Sales ban event flag || Sales ban event flag || - ||
+|| sellQuantity || Number of units sold || Number of units sold || - ||
+|| pad3 || Padding ||  || - ||
+|| equipType || Equipment type || Types of equipment for sale || SHOP_LINEUP_EQUIPTYPE ||
+|| costType || Price type || Price type. Applies only when overwriting the selling price || SHOP_LINEUP_COSTTYPE ||
+|| pad1 || Padding ||  || - ||
+|| setNum || Number of sets sold || Number of sets sold. Number of pieces you can get with one purchase (default: 1) || - ||
+|| value_Add || Addition || Correction (addition) to the selling price of equipment. Equipment para selling price x magnification + addition || - ||
+|| value_Magnification || magnification || Correction (magnification) to the selling price of equipment. Equipment para selling price x magnification + addition || - ||
+|| iconId || Icon ID || Menu display_icon ID (-1: do not overwrite) || - ||
+|| nameMsgId || Text ID || Menu display_text ID (-1: do not overwrite) || - ||
+|| menuTitleMsgId || Menu title text ID || Text ID of the shop menu title (-1: Do not overwrite). This value of the first para found in the para ID range passed when launching the shop is referenced || - ||
+|| menuIconId || Menu icon ID || Shop menu icon ID (-1: Do not overwrite). This value of the first para found in the para ID range passed when launching the shop is referenced || - ||
+|| pad2 || Padding ||  || - ||

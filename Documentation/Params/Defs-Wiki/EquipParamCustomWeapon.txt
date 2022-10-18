@@ -1,0 +1,5 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| baseWepId || Weapon base ID || Weapon base ID || - ||
+|| gemId || Magic stone ID || Magic stone ID || - ||
+|| reinforceLv || Enhancement value || Enhancement value || - ||
+|| pad || pad || pad || - ||

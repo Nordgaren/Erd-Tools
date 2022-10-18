@@ -1,0 +1,11 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+text,Key specified ⇒ Item name, 1-line help ID. No key specified ⇒ Category name ID. No text specified ⇒ Not displayed in pad / key settings (operation list display only),0,99999999,200,s32,1,%d,s32,Wrap
+Key,User input key to be assigned. If not specified, it will be treated as a category display item.,-1,9999,201,s32,1,%d,CS_USER_INPUT_KEY,Wrap
+lift,Is it possible to unassign (default: possible),0,1,300,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+pad,Is it possible to change the pad operation assignment (default: possible)?,0,1,301,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+mouse,Is it possible to change the mouse operation assignment (default: possible)?,0,1,302,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+group,Group for determining duplicate assignments. Cannot be duplicated in the same group,0,1,303,u8,1,%d,CS_KEY_ASSIGN_GROUP,Wrap
+text,Item name to be displayed in the operation list. 0 :: Do not display in the list,0,99999999,400,s32,1,%d,s32,Wrap
+pad,Whether to display with key config (pad) (default: display),0,1,100,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Mouse / keyboard,Whether to display with key config (mouse / keyboard) (default: display),0,1,101,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+padding,Is it possible to change the pad operation assignment (default: possible)?,,,99999,dummy8,,,dummy8,None

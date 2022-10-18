@@ -1,0 +1,25 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| swordArtsType || Swashbuckler ID || To pass to the behavior script to determine which swashbuckler || - ||
+|| artsSpeedType || Arts speed || Which cancellation timing do you see? 0: Normal (left hand attack) / 1: Early / 2: Slow || - ||
+|| refStatus || Related status || Which system of arts points to refer to || SWORD_ARTS_REF_STATUS_TYPE ||
+|| isRefRightArts || Whether to display the arts of the right hand when the left hand (holding one hand) || When set to the arts of the left-handed weapon, the arts of the right-handed weapon are displayed in FE. Assumed to be used for "weapon maneuvers" etc. || BOOL_CIRCLECROSS_TYPE ||
+|| isGrayoutLeftHand || Whether to gray out with the left hand (holding one hand) || Whether to gray out when displaying the arts name of the left hand (one-handed) || BOOL_CIRCLECROSS_TYPE ||
+|| isGrayoutRightHand || Whether to gray out with the right hand (holding one hand) || Whether to gray out when displaying the arts name of the right hand (one-handed) || BOOL_CIRCLECROSS_TYPE ||
+|| isGrayoutBothHand || Will it be grayed out when holding both hands? || Whether to gray out when displaying the arts name of both hands || BOOL_CIRCLECROSS_TYPE ||
+|| reserve2 || Reserved area ||  || - ||
+|| usePoint_L1 || Consumption point L1 || Points to spend when putting out arts by L1 || - ||
+|| usePoint_L2 || Consumption point L2 || Points to spend when putting out arts by L2 || - ||
+|| usePoint_R1 || Consumption point R1 || Points to spend when putting out arts by R1 || - ||
+|| usePoint_R2 || Consumption point R2 || Points to spend when putting out arts by R2 || - ||
+|| textId || Text ID || Text ID for arts description || - ||
+|| useMagicPoint_L1 || MP L1 consumed || MP consumed when issuing arts by L1 || - ||
+|| useMagicPoint_L2 || MP L2 consumed || MP consumed when issuing arts by L2 || - ||
+|| useMagicPoint_R1 || MP R1 consumed || MP consumed when issuing arts by R1 || - ||
+|| useMagicPoint_R2 || MP R2 consumed || MP consumed when issuing arts by R2 || - ||
+|| shieldIconType || Shield type icon (overwrite) || If you do not overwrite it, the icon will be displayed based on the swashbuckler ID of the weapon para. || SWORD_ARTS_SHIELD_ICON_TYPE ||
+|| pad || pad ||  || - ||
+|| iconId || Icon ID || ID of the icon displayed in FE etc. || - ||
+|| aiUsageId || AI usage judgment ID || AI usage judgment ID || - ||

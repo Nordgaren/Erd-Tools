@@ -1,0 +1,13 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| enabled || Reflective effective || Reflective effective || ON_OFF ||
+|| localLightEnabled || Local light enabled || Local light enabled || ON_OFF ||
+|| localLightForceEnabled || Local light forced enable || Local light forced enable || ON_OFF ||
+|| dmy || dmy ||  || - ||
+|| resolutionDivider || Resolution scale || Resolution scale || - ||
+|| ssrEnabled || SSR enabled || SSR enabled || ON_OFF ||
+|| ssrGaussianBlurEnabled || Gaussian blur permission || Gaussian blur permission || ON_OFF ||
+|| dmy2 || dmy ||  || - ||
+|| ssrDepthRejectThresholdScale || Calculated distance scale || Calculated distance scale || - ||
+|| ssrRayTraceStepScale || Raytrace step factor (multiply by SSR parameter) || Raytrace step factor (multiply by SSR parameter) || - ||
+|| ssrFadeToViewerBias || Fade angle bias. High quality when made smaller || Fade angle bias. High quality when made smaller || - ||
+|| ssrFresnelRejectBias || Fresnel reject bias. High quality when made smaller || Fresnel reject bias. High quality when made smaller || - ||

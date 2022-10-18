@@ -1,0 +1,25 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+0: SfxID,0: SfxID,-1,999999999,1,s32,1,%d,s32,Wrap
+0: Damipoli ID,0: Damipoli ID,-1,99999999,2,s32,1,%d,s32,Wrap
+0: Reservation,0: Reservation,,,1000,dummy8,,,dummy8,None
+1: SfxID,1: SfxID,-1,999999999,11,s32,1,%d,s32,Wrap
+1: Damipoli ID,1: Damipoli ID,-1,99999999,12,s32,1,%d,s32,Wrap
+1: Reservation,1: Reservation,,,1001,dummy8,,,dummy8,None
+2: SfxID,2: SfxID,-1,999999999,21,s32,1,%d,s32,Wrap
+2: Damipoli ID,2: Damipoli ID,-1,99999999,22,s32,1,%d,s32,Wrap
+2: Reservation,2: Reservation,,,1002,dummy8,,,dummy8,None
+3: SfxID,3: SfxID,-1,999999999,31,s32,1,%d,s32,Wrap
+3: Damipoli ID,3: Damipoli ID,-1,99999999,32,s32,1,%d,s32,Wrap
+3: Reservation,3: Reservation,,,1003,dummy8,,,dummy8,None
+4: SfxID,4: SfxID,-1,999999999,41,s32,1,%d,s32,Wrap
+4: Damipoli ID,4: Damipoli ID,-1,99999999,42,s32,1,%d,s32,Wrap
+4: Reservation,4: Reservation,,,1004,dummy8,,,dummy8,None
+5: SfxID,5: SfxID,-1,999999999,51,s32,1,%d,s32,Wrap
+5: Damipoli ID,5: Damipoli ID,-1,99999999,52,s32,1,%d,s32,Wrap
+5: Reservation,5: Reservation,,,1005,dummy8,,,dummy8,None
+6: SfxID,6: SfxID,-1,999999999,61,s32,1,%d,s32,Wrap
+6: Damipoli ID,6: Damipoli ID,-1,99999999,62,s32,1,%d,s32,Wrap
+6: Reservation,6: Reservation,,,1006,dummy8,,,dummy8,None
+7: SfxID,7: SfxID,-1,999999999,71,s32,1,%d,s32,Wrap
+7: Damipoli ID,7: Damipoli ID,-1,99999999,72,s32,1,%d,s32,Wrap
+7: Reservation,7: Reservation,,,1007,dummy8,,,dummy8,None

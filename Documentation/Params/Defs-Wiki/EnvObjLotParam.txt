@@ -1,0 +1,18 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| AssetId_0 || AssetId_0 || AssetId_0 (-1: Ignore) || - ||
+|| AssetId_1 || AssetId_1_1 || AssetId_1 (-1: Ignore) || - ||
+|| AssetId_2 || AssetId_2 || AssetId_2 (-1: Ignore) || - ||
+|| AssetId_3 || AssetId_3 || AssetId_3 (-1: Ignore) || - ||
+|| AssetId_4 || AssetId_4 || AssetId_4 (-1: Ignore) || - ||
+|| AssetId_5 || AssetId_5 || AssetId_5 (-1: Ignore) || - ||
+|| AssetId_6 || AssetId_6 || AssetId_6 (-1: Ignore) || - ||
+|| AssetId_7 || AssetId_7 || AssetId_7 (-1: Ignore) || - ||
+|| CreateWeight_0 || Appearance weight _0 || Appearance ratio point (weight) _0: 0 is ignored || - ||
+|| CreateWeight_1 || Appearance weight _1 || Appearance ratio point (weight) _1 || - ||
+|| CreateWeight_2 || Appearance weight _2 || Appearance ratio point (weight) _2 || - ||
+|| CreateWeight_3 || Appearance weight _3 || Appearance ratio point (weight) _3 || - ||
+|| CreateWeight_4 || Appearance weight _4 || Appearance ratio point (weight) _4 || - ||
+|| CreateWeight_5 || Appearance weight _5 || Appearance ratio point (weight) _5 || - ||
+|| CreateWeight_6 || Appearance weight _6 || Appearance ratio point (weight) _6 || - ||
+|| CreateWeight_7 || Appearance weight _7 || Appearance ratio point (weight) _7 || - ||
+|| Reserve_0 || Reserve || Reserve || - ||

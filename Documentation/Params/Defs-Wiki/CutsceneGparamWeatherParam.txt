@@ -1,0 +1,56 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParam_Debug || Is it a debug parameter? || Parameters marked with a circle are excluded from all packages (because they are for debugging). || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| DstWeather_Sunny || Sunny || Sunny || WEATHER_TYPE ||
+|| DstWeather_ClearSky || Sunny || Sunny || WEATHER_TYPE ||
+|| DstWeather_WeakCloudy || Light cloudy || Light cloudy || WEATHER_TYPE ||
+|| DstWeather_Cloud || cloudy || cloudy || WEATHER_TYPE ||
+|| DstWeather_Rain || rain || rain || WEATHER_TYPE ||
+|| DstWeather_HeavyRain || Heavy rain || Heavy rain || WEATHER_TYPE ||
+|| DstWeather_Storm || storm || storm || WEATHER_TYPE ||
+|| DstWeather_StormForBattle || Storm (for combat with the descendants of the guardian) || Storm (for combat with the descendants of the guardian) || WEATHER_TYPE ||
+|| DstWeather_Snow || snow || snow || WEATHER_TYPE ||
+|| DstWeather_HeavySnow || heavy snow || heavy snow || WEATHER_TYPE ||
+|| DstWeather_Fog || fog || fog || WEATHER_TYPE ||
+|| DstWeather_HeavyFog || Thick fog || Thick fog || WEATHER_TYPE ||
+|| DstWeather_SandStorm || Sandstorm || Sandstorm || WEATHER_TYPE ||
+|| DstWeather_HeavyFogRain || Thick fog (rain) || Thick fog (rain) || WEATHER_TYPE ||
+|| PostPlayIngameWeather || In-game weather specifications at the end of playback (unused, invalid) || In-game weather specifications at the end of playback (nothing is done if blank or "invalid") || WEATHER_TYPE ||
+|| IndoorOutdoorType || Indoor / outdoor designation || When indoors, the SFX specified by "Weather SfxId (Outdoor)" and "Wind SfxId (Outdoor)" in "Weather Parameter.xlsm" will be invalid in the cutscene. || CUTSCENE_INDOOR_OUTDOOR_TYPE ||
+|| TakeOverDstWeather_Sunny || In-game weather SFX to take over? _Sunny || In-game weather SFX to take over? _Sunny || BOOL_CIRCLECROSS_TYPE ||
+|| TakeOverDstWeather_ClearSky || In-game weather SFX to take over? _ Sunny || In-game weather SFX to take over? _ Sunny || BOOL_CIRCLECROSS_TYPE ||
+|| TakeOverDstWeather_WeakCloudy || Will the in-game weather SFX be taken over? _ Light cloudy || Will the in-game weather SFX be taken over? _ Light cloudy || BOOL_CIRCLECROSS_TYPE ||
+|| TakeOverDstWeather_Cloud || In-game weather SFX to take over? _cloudy || Will the in-game weather SFX be taken over? _cloudy || BOOL_CIRCLECROSS_TYPE ||
+|| TakeOverDstWeather_Rain || In-game weather SFX to take over? _rain || In-game weather SFX to take over? _rain || BOOL_CIRCLECROSS_TYPE ||
+|| TakeOverDstWeather_HeavyRain || Will the in-game weather SFX be taken over? _ Heavy rain || In-game weather SFX to take over? _ Heavy rain || BOOL_CIRCLECROSS_TYPE ||
+|| TakeOverDstWeather_Storm || Will the in-game weather SFX be taken over? _storm || In-game weather SFX to take over? _storm || BOOL_CIRCLECROSS_TYPE ||
+|| TakeOverDstWeather_StormForBattle || In-game weather SFX to take over? _ Storm (for battle with the descendants of the guardian) || In-game weather SFX to take over? _ Storm (for battle with the descendants of the guardian) || BOOL_CIRCLECROSS_TYPE ||
+|| TakeOverDstWeather_Snow || In-game weather SFX to take over? _snow || In-game weather SFX to take over? _snow || BOOL_CIRCLECROSS_TYPE ||
+|| TakeOverDstWeather_HeavySnow || In-game weather SFX to take over? _heavy snow || In-game weather SFX to take over? _heavy snow || BOOL_CIRCLECROSS_TYPE ||
+|| TakeOverDstWeather_Fog || In-game weather SFX to take over? _fog || Will the in-game weather SFX be taken over? _fog || BOOL_CIRCLECROSS_TYPE ||
+|| TakeOverDstWeather_HeavyFog || In-game weather SFX to take over? _ Thick fog || Will the in-game weather SFX be taken over? _ Thick fog || BOOL_CIRCLECROSS_TYPE ||
+|| TakeOverDstWeather_SandStorm || Will the in-game weather SFX be taken over? _ Sandstorm || In-game weather SFX to take over? _ Sandstorm || BOOL_CIRCLECROSS_TYPE ||
+|| TakeOverDstWeather_HeavyFogRain || In-game weather SFX to take over? _ Thick fog (rain) || In-game weather SFX to take over? _ Thick fog (rain) || BOOL_CIRCLECROSS_TYPE ||
+|| reserved || reserved || reserved || - ||
+|| DstWeather_Snowstorm || Snowstorm || Snowstorm || WEATHER_TYPE ||
+|| DstWeather_LightningStorm || Storm (thunder) || Preliminary weather 2 || WEATHER_TYPE ||
+|| DstWeather_Reserved3 || Snow special (spare 3) || Preliminary weather 3 || WEATHER_TYPE ||
+|| DstWeather_Reserved4 || Preliminary weather 4 || Preliminary weather 4 || WEATHER_TYPE ||
+|| DstWeather_Reserved5 || Preliminary weather 5 || Preliminary weather 5 || WEATHER_TYPE ||
+|| DstWeather_Reserved6 || Preliminary weather 6 || Preliminary weather 6 || WEATHER_TYPE ||
+|| DstWeather_Reserved7 || Preliminary weather 7 || Preliminary weather 7 || WEATHER_TYPE ||
+|| DstWeather_Reserved8 || Preliminary weather 8 || Preliminary weather 8 || WEATHER_TYPE ||
+|| TakeOverDstWeather_Snowstorm || In-game weather SFX to take over? _ Snowstorm || In-game weather SFX to take over? _ Snowstorm || BOOL_CIRCLECROSS_TYPE ||
+|| TakeOverDstWeather_LightningStorm || Will the in-game weather SFX be taken over? _ Storm (thunder) || In-game weather SFX to take over? _ Storm (thunder) || BOOL_CIRCLECROSS_TYPE ||
+|| TakeOverDstWeather_Reserved3 || In-game weather SFX to take over? _ Snow Special (Spare 3) || Will the in-game weather SFX be taken over? _ Preliminary weather 3 || BOOL_CIRCLECROSS_TYPE ||
+|| TakeOverDstWeather_Reserved4 || Will the in-game weather SFX be taken over? _ Preliminary weather 4 || In-game weather SFX to take over? _ Preliminary weather 4 || BOOL_CIRCLECROSS_TYPE ||
+|| TakeOverDstWeather_Reserved5 || In-game weather SFX to take over? _ Preliminary weather 5 || Will the in-game weather SFX be taken over? _ Preliminary weather 5 || BOOL_CIRCLECROSS_TYPE ||
+|| TakeOverDstWeather_Reserved6 || In-game weather SFX to take over? _ Preliminary weather 6 || Will the in-game weather SFX be taken over? _ Preliminary weather 6 || BOOL_CIRCLECROSS_TYPE ||
+|| TakeOverDstWeather_Reserved7 || In-game weather SFX to take over? _ Preliminary weather 7 || Will the in-game weather SFX be taken over? _ Preliminary weather 7 || BOOL_CIRCLECROSS_TYPE ||
+|| TakeOverDstWeather_Reserved8 || Will the in-game weather SFX be taken over? _ Preliminary weather 8 || In-game weather SFX to take over? _ Preliminary weather 8 || BOOL_CIRCLECROSS_TYPE ||
+|| IsEnableApplyMapGdRegionIdForGparam || Do you want to apply the MapGD local ID to the weather Gparam? || Do you want to apply the mapGD local ID changes to the cutscene weather Gparam as in the in-game? ([GR] SEQ30194) || BOOL_CIRCLECROSS_TYPE ||
+|| reserved2 || reserved1 || reserved1 ver4-> 5 64-> 96 || - ||
+|| OverrideMapGdRegionId || Local ID overwrite for weather Gparam MapGD || Overwrite the ID used for cutscene weather Gparam (-1: No overwrite. MapGD local ID during cutscene playback is used). If "Do you want to apply MapGD local ID to weather Gparam?" Is x, it is not referenced. || - ||
+|| reserved1 || reserved1 || reserved1 ver4-> 5 64-> 96 || - ||

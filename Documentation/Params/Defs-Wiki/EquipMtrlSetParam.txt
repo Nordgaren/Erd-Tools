@@ -1,0 +1,29 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| materialId01 || Required Material Item ID 01 || Material item ID required to strengthen armor. || - ||
+|| materialId02 || Required Material Item ID 02 || Material item ID required to strengthen armor. || - ||
+|| materialId03 || Required Material Item ID 03 || Material item ID required to strengthen armor. || - ||
+|| materialId04 || Required Material Item ID 04 || Material item ID required to strengthen armor. || - ||
+|| materialId05 || Required Material Item ID 05 || Material item ID required to strengthen armor. || - ||
+|| materialId06 || Required Material Item ID 06 || Material item ID required to strengthen armor. || - ||
+|| pad_id || Padding || Padding. For when the material item ID increases || - ||
+|| itemNum01 || Required number 01 || The number of material items required to strengthen armor. || - ||
+|| itemNum02 || Required number 02 || The number of material items required to strengthen armor. || - ||
+|| itemNum03 || Required number 03 || The number of material items required to strengthen armor. || - ||
+|| itemNum04 || Required number 04 || The number of material items required to strengthen armor. || - ||
+|| itemNum05 || Required number 05 || The number of material items required to strengthen armor. || - ||
+|| itemNum06 || Required number 06 || The number of material items required to strengthen armor. || - ||
+|| pad_num || Padding || Padding. For when the number of items increases || - ||
+|| materialCate01 || Required Material Item Category 01 || This is a category of material items required for strengthening armor. || GAITEM_CATEGORY ||
+|| materialCate02 || Required Material Item Category 02 || This is a category of material items required for strengthening armor. || GAITEM_CATEGORY ||
+|| materialCate03 || Required Material Item Category 03 || This is a category of material items required for strengthening armor. || GAITEM_CATEGORY ||
+|| materialCate04 || Required Material Item Category 04 || This is a category of material items required for strengthening armor. || GAITEM_CATEGORY ||
+|| materialCate05 || Required Material Item Category 05 || This is a category of material items required for strengthening armor. || GAITEM_CATEGORY ||
+|| materialCate06 || Required Material Item Category 06 || This is a category of material items required for strengthening armor. || GAITEM_CATEGORY ||
+|| pad_cate || Padding || Padding. For when the number of categories increases || - ||
+|| isDisableDispNum01 || Disable number display 01 || Disable the number display (for enhanced shops) || - ||
+|| isDisableDispNum02 || Disable number display 02 || Whether to disable the number display || - ||
+|| isDisableDispNum03 || Disable number display 03 || Whether to disable the number display || - ||
+|| isDisableDispNum04 || Disable number display 04 || Whether to disable the number display || - ||
+|| isDisableDispNum05 || Disable number display 05 || Whether to disable the number display || - ||
+|| isDisableDispNum06 || Disable number display 06 || Whether to disable the number display || - ||
+|| pad || Padding || It's padding. || - ||

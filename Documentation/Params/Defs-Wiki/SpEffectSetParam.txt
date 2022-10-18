@@ -1,0 +1,5 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| spEffectId1 || Special effect ID1 || Special effect ID1 || - ||
+|| spEffectId2 || Special effect ID2 || Special effect ID2 || - ||
+|| spEffectId3 || Special effect ID3 || Special effect ID3 || - ||
+|| spEffectId4 || Special effect ID4 || Special effect ID4 || - ||

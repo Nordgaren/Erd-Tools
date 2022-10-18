@@ -1,0 +1,79 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+HP,Durability until destruction (-1: Indestructible),-1,9999,100,s16,1,%d,s16,None
+Defense power,Attack power below this value is no damage,0,9999,200,u16,1,%d,u16,None
+Xref texture ID,mAA / mAA_ ????. Tpf (-1: None) (AA: Area number),-1,9999,500,s16,1,%d,s16,None
+Material ID,Material ID. Treated the same as the floor material. When -1, the same behavior as before,-1,999,800,s16,1,%d,s16,None
+Anime destruction ID maximum value,What is the animation destruction ID from 0 to what?,0,99,700,u8,1,%d,u8,None
+Does the camera hit?,Does the camera hit (0: not hit, 1: hit),0,1,310,u8,1,%d,u8,Wrap
+Will it break in a player collision?,Broken when the player touches (0: no, 1:),0,1,400,u8,1,%d,u8,Wrap
+Is it anime destruction?,Is it animation destruction (0: physical destruction, 1: animation destruction),0,1,600,u8,1,%d,u8,Wrap
+Will it hit a penetrating bullet?,Will the penetrating bullet hit (0: not hit, 1: hit),0,1,900,u8,1,%d,u8,Wrap
+Will the character win?,Does the character win (0: not hit, 1: hit),0,1,311,u8,1,%d,u8,Wrap
+Do you play the attack,Do you play the attack (0: do not play, 1: play),0,1,950,u8,1,%d,u8,Wrap
+No destruction for initial appearance,Broken at the initial appearance of the player (0: ru, 1: no),0,1,450,u8,1,%d,u8,Wrap
+Is it a ladder?,Is it a ladder (0: different, 1: yes),0,1,970,u8,1,%d,u8,Wrap
+Do you want to stop the animation during the poly play?,Do you want to stop the animation during the poly play (0: not, 1: do),0,1,980,u8,1,%d,u8,Wrap
+Is it not damaged?,No damage (0: hit, 1: not hit),0,1,312,u8,1,%d,u8,Wrap
+Is it a moving object?,Is it a moving object (0: different, 1: yes),0,1,975,u8,1,%d,u8,Wrap
+Is it a suspension bridge object?,Suspension bridge object (0: different, 1: yes),0,1,971,u8,1,%d,u8,Wrap
+Does the damage blow off the rigid body?,Does the damage blow the rigid body (0: do not blow, 1: blow),0,1,376,u8,1,%d,u8,Wrap
+Will it break if the character gets on it?,Will it break if the character gets on (0: it won't break 1: it will break),0,1,402,u8,1,%d,u8,Wrap
+Will it burn,Will it burn (0: not, 1:),0,1,1400,u8,1,%d,u8,Wrap
+Will it be destroyed by an enemy character collision?,Broken when an enemy character touches (0: No, 1: Ru),0,1,401,u8,1,%d,u8,Wrap
+Default LOD Param ID,Default LOD Param ID (-1: None),-1,127,1300,s8,1,%d,s8,None
+SFX ID at the time of destruction,SFXID when destroying an object (-1: default (810030)),-1,1E+09,1000,s32,1,%d,s32,None
+SFX Damipoli ID at the time of destruction,SFX generation position when the object is destroyed Damipoly ID (-1: placement position),-1,1E+08,1001,s32,1,%d,s32,Wrap
+Bomb generation at the time of destruction Action parameter ID,Action parameter of [bullet] at the time of destruction (-1: does not occur),-1,1E+08,1050,s32,1,%d,s32,Wrap
+Damipoli ID,Location of [bullet] at the time of destruction Damipoli ID (-1: placement position),-1,1E+08,1051,s32,1,%d,s32,Wrap
+Fall destruction height (m),Height at which the object breaks when dropped (0: does not break when dropped),0,255,1100,u8,1,%u,u8,Wrap
+Wind effect type (before destruction),Wind effect type (before destruction),0,2,1200,u8,1,%u,OBJECT_WIND_EFFECT_TYPE,Wrap
+Wind effect type (after destruction),Wind effect type (after destruction),0,2,1201,u8,1,%u,OBJECT_WIND_EFFECT_TYPE,Wrap
+Camera avoidance setting,What to do if an object blocks between the camera and player,0,2,2100,u8,1,%d,OBJECT_CAM_AVOID_TYPE,None
+Wind coefficient (before destruction),Wind coefficient (before destruction),0,9999,1202,f32,0.01,%f,f32,Wrap
+Wind coefficient (after destruction),Wind coefficient (after destruction),0,9999,1203,f32,0.01,%f,f32,Wrap
+Forced stop time after destruction,Time from destruction to forced stop of rigid body (do not force stop at 0),0,9999,1101,f32,0.01,%f,f32,Wrap
+Burning time (seconds),Burning time (seconds) (continues to burn at 0),0,9999,1401,f32,0.01,%f,f32,Wrap
+Combustion fracture judgment progress,Burnup threshold for switching to the ruptured state,0,1,1402,f32,0.01,%f,f32,Wrap
+Combustion SFXID: 0,SFX ID at the time of combustion: 0 (-1: No SFX),-1,1E+08,1410,s32,1,%d,s32,Wrap
+Combustion SFXID: 1,SFX ID at the time of combustion: 1 (-1: No SFX),-1,1E+08,1411,s32,1,%d,s32,Wrap
+Combustion SFXID: 2,SFX ID at the time of combustion: 2 (-1: No SFX),-1,1E+08,1412,s32,1,%d,s32,Wrap
+Combustion SFXID: 3,SFX ID at the time of combustion: 3 (-1: No SFX),-1,1E+08,1413,s32,1,%d,s32,Wrap
+Combustion bullet generation Behavior parameter: 0,Bullet generation behavior parameter at the time of burning: 0 (-1: does not occur),-1,1E+08,1440,s32,1,%d,s32,Wrap
+Combustion bullet generation Behavior parameter: 1,Bullet generation behavior parameter at the time of burning: 1 (-1: does not occur),-1,1E+08,1441,s32,1,%d,s32,Wrap
+Combustion bullet generation Behavior parameter: 2,Bullet generation behavior parameter at the time of burning: 2 (-1: does not occur),-1,1E+08,1442,s32,1,%d,s32,Wrap
+Combustion bullet generation Behavior parameters: 3,Bullet generation behavior parameter at the time of burning: 3 (-1: does not occur),-1,1E+08,1443,s32,1,%d,s32,Wrap
+Combustion bullet generation interval (frame),Interval (frame) to generate bullets for spreading fire,0,9999,1450,u16,1,%u,u16,Wrap
+Navi mesh flag,Navigation mesh flag set from the object,0,99,1600,u8,1,%d,OBJECT_NAVIMESH_FLAG,None
+Collision detection type,Collision detection type,0,4,300,u8,1,%d,OBJECT_COLLISION_TYPE,Wrap
+Combustion bullet generation delay time (seconds),Time to delay the generation of bullets for fire spread (seconds),0,9999,1451,f32,0.01,%f,f32,Wrap
+Combustion SFX generation delay Start time (seconds): 0,SFX generation delay time during combustion Randomly determined between start and end times,0,9999,1420,f32,0.01,%f,f32,Wrap
+Combustion SFX generation delay Start time (seconds): 1,SFX generation delay time during combustion Randomly determined between start and end times,0,9999,1421,f32,0.01,%f,f32,Wrap
+Combustion SFX generation delay Start time (seconds): 2,SFX generation delay time during combustion Randomly determined between start and end times,0,9999,1422,f32,0.01,%f,f32,Wrap
+Combustion SFX generation delay Start time (seconds): 3,SFX generation delay time during combustion Randomly determined between start and end times,0,9999,1423,f32,0.01,%f,f32,Wrap
+Combustion SFX generation delay End time (seconds): 0,SFX generation delay time during combustion Randomly determined between start and end times,0,9999,1430,f32,0.01,%f,f32,Wrap
+Combustion SFX generation delay End time (seconds): 1,SFX generation delay time during combustion Randomly determined between start and end times,0,9999,1431,f32,0.01,%f,f32,Wrap
+Combustion SFX generation delay End time (seconds): 2,SFX generation delay time during combustion Randomly determined between start and end times,0,9999,1432,f32,0.01,%f,f32,Wrap
+Combustion SFX generation delay End time (seconds): 3,SFX generation delay time during combustion Randomly determined between start and end times,0,9999,1433,f32,0.01,%f,f32,Wrap
+AI sound ID generated at the time of destruction,AI sound ID generated at the time of destruction,0,1E+08,1500,s32,1,%d,s32,Wrap
+Hidden debris Wait time (seconds),Material ID of debris (-1: Do not hide),0,9999,1700,f32,0.01,%f,f32,Wrap
+Debris non-display time (seconds),Time to hide debris (seconds),0,9999,1701,f32,0.01,%f,f32,Wrap
+Padding,Material ID of debris (-1: Do not hide),-1,127,100000,dummy8,1,%d,dummy8,Wrap
+Rigid body collision point distance coefficient [soft],Rigid body soft contact setting Collision point distance coefficient [soft],0,1,1800,f32,0.001,%f,f32,Wrap
+Rigid body collision point distance coefficient [normal],Rigid soft contact setting Collision point distance coefficient [Normal],0,1,1801,f32,0.001,%f,f32,Wrap
+Rigid body collision point distance coefficient [hard],Rigid soft contact setting Collision point distance coefficient [hard],0,1,1802,f32,0.001,%f,f32,Wrap
+SFX ID at the time of terrain contact,SFX ID at terrain contact (-1: offset by terrain material),-1,1E+09,2000,s32,1,%d,s32,None
+Do you want to shield the damage?,Whether to pass the damage to the other side when receiving damage (0: pass, 1: do not pass),0,1,2100,u8,1,%u,u8,Wrap
+Padding,,0,0,100001,dummy8,0,,dummy8,None
+Paint decal target size,Paint decal target size (only powers of 0 to 4096 2 allowed),0,4096,2300,u16,128,%u,u16,Wrap
+Life of dynamically generated Obj (seconds),Time until dynamically generated Obj disappears after generation (0: does not disappear),0,9999,2200,f32,0.01,%f,f32,Wrap
+Cross update distance (m),Distance from the camera to update havokCloth (0: always update),0,9999,2201,f32,0.01,%f,f32,Wrap
+SE ID when contacting a player,SE ID to play when touched by a local player operated by you (-1: Do not play),-1,1E+09,990,s32,1,%d,s32,Wrap
+SFX identifier when landing after destruction,Object material-dependent SFX identifier that regenerates when first landing after being destroyed (-1: does not occur),-1,31,1102,s32,1,%d,s32,Wrap
+Waypoint Damipoli ID_0,Waypoint Damipoli ID_0 (-1: None),-1,1E+08,2300,s32,1,%d,s32,Wrap
+Waypoint parameter ID_0,Waypoint parameter ID_0 (-1: none),-1,1E+08,2302,s32,1,%d,s32,Wrap
+Sound bank ID,Sound bank ID (-1: no bank, other: bank with specified ID),-1,999999,2400,s32,1,%d,s32,Wrap
+Drawing parameter reference ID,Reference ID of drawing parameter,-1,1E+09,2500,s32,1,%d,s32,Wrap
+Automatically generated appearance height offset [m],Map automatic generation OBJ appearance height offset [m], does it float from where the ray cast hits?,0,256,2601,f32,0.01,%f,f32,Wrap
+Reserve,Reserve,-1,1E+09,99999,s32,1,%d,s32,Wrap
+Destruction sound SEID,Destruction sound SEID (9 digits) -1: Generated from objId,-1,1E+09,2401,s32,1,%d,s32,Wrap
+Padding,,0,0,99999,dummy8,0,,dummy8,None

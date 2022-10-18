@@ -1,0 +1,319 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| behaviorVariationId || Behavior variation ID || Variation ID used when calculating the action ID. || - ||
+|| resistCorrectId_poison || Poison resistance correction rule ID || When the abnormal condition is activated, the maximum value is temporarily changed by using the set value of the abnormal condition resistance correction parameter. || - ||
+|| nameId || NPC name ID || NPC Name Message Parameter ID || - ||
+|| turnVellocity || Turning speed [deg / sec] || Rotational speed [degrees / second] that can turn in 1 second. || - ||
+|| hitHeight || Height per map [m] || The height of the capsule per character. || - ||
+|| hitRadius || Radius per map [m] || Radius of capsule per character. || - ||
+|| weight || Weight [kg] || weight. || - ||
+|| hitYOffset || Display position Y offset [m] || Offset of the model display position in the Y (height) direction. It can be floated from the hit position. || - ||
+|| hp || HP || Death grace. || - ||
+|| mp || MP || Magic usage. || - ||
+|| getSoul || Seoul || The amount of soul that a character can get at the time of death. || - ||
+|| itemLotId_enemy || Item lottery ID_for enemies || Specify the lottery ID_for enemies of the item to be acquired at the time of death. Please set only one of them. || - ||
+|| itemLotId_map || Item lottery ID_for map || Specify for the lottery ID_map of the item to be acquired at the time of death. Please set only one of them. || - ||
+|| maxAnkleRollAngle || FootIK Ankle limit angle_roll || FootIK Ankle roll limit angle (-1: no limit) || - ||
+|| chrHitGroupAndNavimesh || Per group and used navigation mesh || Set the hit judgment with other characters (If you hit the ragdoll, other characters will hit the ragdoll) || CHR_HIT_GROUP ||
+|| faceIconId || NPC face image ID || NPC face image ID (0: invalid value (default)). Specify the ID of the face image to be displayed in the "Sign browsing menu", "Kick menu", etc. If it is an invalid value, the dress-up model is displayed. || - ||
+|| deactivateDist || Deactivate distance setting [m] || Distance at which the character is deactivated (valid only for open placement characters) || - ||
+|| chrActivateConditionParamId || Character appearance condition Para || Character appearance condition parameter ID || CHR_ACTIVATE_CONDITION_TYPE ||
+|| footIkErrorHeightLimit || FootIK Appearance up / down limit || FootIK Appearance up / down limit || - ||
+|| humanityLotId || Human nature lottery ID || Specify the lottery ID of human nature to be acquired at the time of death || - ||
+|| spEffectID0 || Resident special effect 0 || Resident special effect 0 || - ||
+|| spEffectID1 || Resident special effect 1 || Resident special effect 1 || - ||
+|| spEffectID2 || Resident special effect 2 || Resident special effect 2 || - ||
+|| spEffectID3 || Resident special effect 3 || Resident special effect 3 || - ||
+|| spEffectID4 || Resident special effect 4 || Resident special effect 4 || - ||
+|| spEffectID5 || Resident special effect 5 || Resident special effect 5 || - ||
+|| spEffectID6 || Resident special effect 6 || Resident special effect 6 || - ||
+|| spEffectID7 || Resident special effect 7 || Resident special effect 7 || - ||
+|| GameClearSpEffectID || Special effect ID for lap bonus || Special effect ID for lap bonus || - ||
+|| physGuardCutRate || Physical attack cut rate [%] || Set the damage cut rate when guarding for each attack || - ||
+|| magGuardCutRate || Magic attack cut rate [%] || If it is not a guard attack, enter 0 || - ||
+|| fireGuardCutRate || Flame attack power cut rate [%] || How much to cut the fire attack? || - ||
+|| thunGuardCutRate || Electric shock attack power cut rate [%] || How much to cut the electric shock attack? || - ||
+|| animIdOffset || Anime ID offset 1 || All animations will be played with IDs shifted by this number. If not, the original anime ID is referenced. || - ||
+|| lockGazePoint0 || Gaze point of Rock Damipoli 0 || Gaze at the Damipoli specified when locking the Lock-on Damipoly 22X (-1: Invalid) || - ||
+|| lockGazePoint1 || Gaze point of Rock Damipoli 1 || Gaze at the Damipoli specified when locking the Lock-on Damipoly 22X (-1: Invalid) || - ||
+|| lockGazePoint2 || Gaze point of Rock Damipoli 2 || Gaze at the Damipoli specified when locking the Lock-on Damipoly 22X (-1: Invalid) || - ||
+|| lockGazePoint3 || Gaze point of Rock Damipoli 3 || Gaze at the Damipoli specified when locking the Lock-on Damipoly 22X (-1: Invalid) || - ||
+|| lockGazePoint4 || Gaze point of Rock Damipoli 4 || Gaze at the Damipoli specified when locking the Lock-on Damipoly 22X (-1: Invalid) || - ||
+|| lockGazePoint5 || Gaze point of Rock Damipoli 5 || Gaze at the Damipoli specified when locking the Lock-on Damipoly 22X (-1: Invalid) || - ||
+|| networkWarpDist || Network warp judgment distance [m / sec] || Distance to warp instead of complementary movement in network synchronization. Faster people (ex dragons) need to be longer. || - ||
+|| dbgBehaviorR1 || R1 || Register the ID from the action parameter tool and specify the action. || - ||
+|| dbgBehaviorL1 || L1 || Register the ID from the action parameter tool and specify the action. || - ||
+|| dbgBehaviorR2 || R2 || Register the ID from the action parameter tool and specify the action. || - ||
+|| dbgBehaviorL2 || L2 || Register the ID from the action parameter tool and specify the action. || - ||
+|| dbgBehaviorRL || □ || Register the ID from the action parameter tool and specify the action. || - ||
+|| dbgBehaviorRR || ○ ○ || Register the ID from the action parameter tool and specify the action. || - ||
+|| dbgBehaviorRD || × || Register the ID from the action parameter tool and specify the action. || - ||
+|| dbgBehaviorRU || △ || Register the ID from the action parameter tool and specify the action. || - ||
+|| dbgBehaviorLL || ← || Register the ID from the action parameter tool and specify the action. || - ||
+|| dbgBehaviorLR || → || Register the ID from the action parameter tool and specify the action. || - ||
+|| dbgBehaviorLD || ↓ || Register the ID from the action parameter tool and specify the action. || - ||
+|| dbgBehaviorLU || ↑ || Register the ID from the action parameter tool and specify the action. || - ||
+|| animIdOffset2 || Anime ID offset 2 || All animations will be played with IDs shifted by this number. If not, the animation ID of the animation ID offset 1 is referred to. || - ||
+|| partsDamageRate1 || Damage group 1 Damage multiplier || Magnification that adapts to damage processing for part 1 || - ||
+|| partsDamageRate2 || Damage group 2 Damage multiplier || Magnification that adapts to damage processing for part 2 || - ||
+|| partsDamageRate3 || Damage group 3 Damage multiplier || Magnification that adapts to damage processing for part 3 || - ||
+|| partsDamageRate4 || Damage group 4 damage multiplier || Magnification that adapts to damage processing for part 4 || - ||
+|| partsDamageRate5 || Damage group 5 damage multiplier || Magnification that adapts to damage processing for part 5 || - ||
+|| partsDamageRate6 || Damage group 6 damage multiplier || Magnification to adapt to damage processing for part 6 || - ||
+|| partsDamageRate7 || Damage group 7 Damage multiplier || Magnification that adapts to damage processing for part 7 || - ||
+|| partsDamageRate8 || Damage group 8 damage multiplier || Magnification that adapts to damage processing for part 8 || - ||
+|| weakPartsDamageRate || Weak point damage ratio || Magnification that adapts to damage processing for weak points || - ||
+|| superArmorRecoverCorrection || SA recovery time correction value || Correction value for super armor recovery time || - ||
+|| superArmorBrakeKnockbackDist || Knockback distance at SA break || Knockback distance that can be used only at the time of SA break || - ||
+|| stamina || stamina || Total amount of stamina. || - ||
+|| staminaRecoverBaseVel || Stamina recovery basic speed [point / s] || Stamina recovery basic speed [point / s] || - ||
+|| def_phys || Physical defense || Damage reduction base value for physical attacks. || - ||
+|| def_slash || Slash defense [%] || Look at the attack attribute, and if it is a slash attribute, reduce the defense power. || - ||
+|| def_blow || Blow defense [%] || Look at the attack attribute, and if it is a hit attribute, reduce the defense power. || - ||
+|| def_thrust || Puncture defense [%] || Look at the attack attribute, and if it is a piercing attribute, reduce the defense power. || - ||
+|| def_mag || Magic defense || Damage reduction base value for magic attacks. || - ||
+|| def_fire || Fire defense || Damage reduction base value against fire attack. || - ||
+|| def_thunder || Electric shock defense || Damage reduction base value against electric shock attack. || - ||
+|| defFlickPower || Repellent defense || Used to determine the repelling of enemy attacks. // It is intended to be repelled by normal attacks other than guards. // Enemies with a hard skin can be repelled without doing anything ... It doesn't matter if it is a normal enemy. || - ||
+|| resist_poison || Poison resistance || Difficulty in getting poisonous || - ||
+|| resist_desease || Epidemic resistance || Difficulty in getting sick || - ||
+|| resist_blood || Bleeding resistance || Difficulty in getting bleeding abnormalities || - ||
+|| resist_curse || Curse resistance || Difficulty in dealing with abnormal curse conditions || - ||
+|| ghostModelId || Replacement model ID for wandering ghost || Replacement model when wandering ghost, texture ID || - ||
+|| normalChangeResouceId || Normal replacement resource ID || Replace resource ID during normal operation (do not use it unnecessarily) || - ||
+|| guardAngle || Guard range [deg] || Defense range angle when guarding weapons. Pending || - ||
+|| slashGuardCutRate || Slash attack cut rate [%] || Looking at the attack type, what percentage of the damage of the slashing attribute is cut? Specify || - ||
+|| blowGuardCutRate || Batter attack cut rate [%] || Looking at the attack type, what percentage of the damage of the hit attribute is cut? Specify || - ||
+|| thrustGuardCutRate || Puncture attack cut rate [%] || Looking at the attack type, what percentage of the damage of the piercing attribute is cut? Specify || - ||
+|| lockGazePoint6 || Gaze point of Rock Damipoli 6 || Gaze at the Damipoli specified when locking the Lock-on Damipoly 22X (-1: Invalid) || - ||
+|| normalChangeTexChrId || Normal replacement texture character ID || Normal replacement texture character ID (do not use it unnecessarily) || - ||
+|| dropType || Display format of drop items || Display method when dropping an item (corpse emission or item display) || NPC_ITEMDROP_TYPE ||
+|| knockbackRate || Knockback cut rate [%] || Decrease value when receiving knockback damage / Specifically, cut the initial knockback speed of the attacking side || - ||
+|| knockbackParamId || Knockback parameter ID || Set the parameter ID used for knockback || - ||
+|| fallDamageDump || Fall damage reduction correction [%] || Fall damage reduction correction [%] || - ||
+|| staminaGuardDef || Stamina attack cut rate [%] || Defense against enemy stamina attacks when guarding successfully || - ||
+|| resist_sleep || Sleep tolerance || Difficulty in getting sleep abnormalities || - ||
+|| resist_madness || Madness resistance || Difficulty in getting mad || - ||
+|| sleepGuardResist || Sleep attack cut rate [%] || How much to cut the attack power against sleep (set as a special effect parameter) || - ||
+|| madnessGuardResist || Mad attack cut rate [%] || How much to cut the attack power against madness (set as a special effect parameter) || - ||
+|| lockGazePoint7 || Gaze point of Rock Damipoli 7 || Gaze at the Damipoli specified when locking the Lock-on Damipoly 22X (-1: Invalid) || - ||
+|| mpRecoverBaseVel || MP recovery basic speed [% / s] || MP recovery basic speed [% / s] || - ||
+|| flickDamageCutRate || Damage attenuation rate when repelling [%] || Set a value to attenuate damage when repelling an attack || - ||
+|| defaultLodParamId || Default LOD Param ID || Default LOD Param ID (-1: None) || - ||
+|| drawType || Drawing type || Drawing type || NPC_DRAW_TYPE ||
+|| npcType || NPC type || NPC type. OK if Zako enemies / boss enemies are distinguished || NPC_TYPE ||
+|| teamType || Team type || NPC attack hit / not hit, aim / not aim setting || TEAM_TYPE ||
+|| moveType || Movement type || Moving method. This changes the control. || NPC_MOVE_TYPE ||
+|| lockDist || Lock distance || Lock-on distance [m] || - ||
+|| materialSe_Weak1 || Weakness defense material 1 [SE] || Determines the SE that sounds when the weak point is damaged. 1 || WEP_MATERIAL_DEF ||
+|| materialSfx_Weak1 || Weakness protection material 1 [SFX] || Determines the SFX that occurs when the weak point is damaged. 1 || WEP_MATERIAL_DEF_SFX ||
+|| partsDamageType || Part damage application attack || Set the attack type to apply site damage || ATK_PARAM_PARTSDMGTYPE ||
+|| vowType || Pledge || Pledge type || VOW_TYPE ||
+|| guardLevel || Guard level || When guarding, which guard motion will the enemy attack? Decide || - ||
+|| burnSfxType || Combustion SFX type || SFX type at the time of combustion || NPC_BURN_TYPE ||
+|| poisonGuardResist || Poison resistance cut rate [%] || How much to cut the attack power to poison (set to the special effect parameter) || - ||
+|| diseaseGuardResist || Epidemic attack cut rate [%] || How much to cut the attack power (set as a special effect parameter) to make it a plague || - ||
+|| bloodGuardResist || Bleeding attack cut rate [%] || How much to cut the attack power (set as a special effect parameter) to make bleeding || - ||
+|| curseGuardResist || Curse attack cut rate [%] || How much to cut the attack power (set as a special effect parameter) to make a curse || - ||
+|| parryAttack || Parry attack power || Parry attack power. Used by the parrying side || - ||
+|| parryDefence || Parry defense || Parry defense. Used by the parried side. || - ||
+|| sfxSize || SFX size || SFX size || NPC_SFX_SIZE ||
+|| pushOutCamRegionRadius || Camera extrusion area radius [m] || Camera extrusion area radius [m] || - ||
+|| hitStopType || Do you want to hit stop || Setting whether to perform hit stop processing || NPC_HITSTOP_TYPE ||
+|| ladderEndChkOffsetTop || Ladder top termination offset [1 / 10m] || Upper side of the ladder end judgment offset || - ||
+|| ladderEndChkOffsetLow || Ladder bottom termination offset [1 / 10m] || Lower side of ladder end judgment offset || - ||
+|| useRagdollCamHit || Ragdoll per camera hit || Does the camera hit the enemy ragdoll? (Valid only when hitting the player) || NPC_BOOL ||
+|| disableClothRigidHit || Disable cross-rigid hits || If you want to prevent the cross rigid from hitting you ○ || NPC_BOOL ||
+|| useUndulationAddAnimFB || Whether to use front and back undulation addition || Whether to use front and back undulation addition || NPC_BOOL ||
+|| isWeakA || Is it special attack A? || Special attack A? Special attack A damage multiplier will be included in the calculation || NPC_BOOL ||
+|| isGhost || Is it a ghost? || The opponent's attack will be able to slip through. The attack hits only when the "anti-spirit weapon" of the weapon para is attacked with the weapon of ○. Be careful not to confuse it with a wandering ghost || NPC_BOOL ||
+|| isNoDamageMotion || No damage motion when damage is 0 || Do you not play the damage motion when the damage is 0? || NPC_BOOL ||
+|| isUnduration || Do you adjust the angle to the undulations? || Do you match the back and forth rotation of the character with the undulations of the ground? Cannot be used for flying characters || NPC_BOOL ||
+|| isChangeWanderGhost || Will it be a wandering ghost? || Will it be a wandering ghost when the player is a client? || NPC_BOOL ||
+|| modelDispMask0 || Model display mask 0 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask1 || Model display mask 1 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask2 || Model display mask 2 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask3 || Model display mask 3 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask4 || Model display mask 4 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask5 || Model display mask 5 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask6 || Model display mask 6 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask7 || Model display mask 7 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask8 || Model display mask 8 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask9 || Model display mask 9 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask10 || Model display mask 10 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask11 || Model display mask 11 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask12 || Model display mask 12 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask13 || Model display mask 13 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask14 || Model display mask 14 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask15 || Model display mask 15 || Displays the model corresponding to the display mask. || - ||
+|| isEnableNeckTurn || Whether to enable swinging || Do you want to enable the swing set in Param Weaver? || - ||
+|| disableRespawn || Is it prohibited to respond? || Do you ban respawn? || - ||
+|| isMoveAnimWait || Do you wait for mobile animation? || Do you want to play the moving animation until the animation is over? (Like a mayfly dragon.) || - ||
+|| isCrowd || Whether to reduce crowd processing || Do you want to reduce the processing load during crowds? For babies (preferably phalanx) || NPC_BOOL ||
+|| isWeakB || Is it special attack B? || Special attack B? Special attack B damage multiplier will be included in the calculation || NPC_BOOL ||
+|| isWeakC || Is it special attack C? || Special attack C? Special attack C damage multiplier will be included in the calculation || NPC_BOOL ||
+|| isWeakD || Is it special attack D? || Special attack D? Special attack D damage multiplier will be included in the calculation || NPC_BOOL ||
+|| doesAlwaysUseSpecialTurn || Do you always make a special turn? || Always execute a special turn (even if there is no navigation mesh at the turn destination, the special turn is continuously executed) || NPC_BOOL ||
+|| isRideAtkTarget || Is it a riding special attack? || Will you be the target of a riding special attack (if you are riding)? || NPC_BOOL ||
+|| isEnableStepDispInterpolate || Whether to use step-over display interpolation || Whether to use step-over display interpolation || NPC_BOOL ||
+|| isStealthTarget || Is it a stealth attack target? || Is it a stealth attack target? || NPC_BOOL ||
+|| disableInitializeDead || No initial death || If you do not make an initial death, TRUE, even if you kill and save it, the corpse will not be reproduced. || NPC_BOOL ||
+|| isHitRumble || Does it vibrate when hit? || TRUE if it vibrates when hit. Use when you want to change from a normal hit stop, such as a dead person. || NPC_BOOL ||
+|| isSmoothTurn || Does it turn smoothly? || Whether to perform interpolation when turning between nodes in route movement || NPC_BOOL ||
+|| isWeakE || Is it special attack E? || Special attack E? Special attack E damage multiplier will be included in the calculation || NPC_BOOL ||
+|| isWeakF || Is it special attack F? || Special attack F? Special attack F damage multiplier will be included in the calculation || NPC_BOOL ||
+|| modelDispMask16 || Model display mask 16 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask17 || Model display mask 17 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask18 || Model display mask 18 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask19 || Model display mask 19 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask20 || Model display mask 20 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask21 || Model display mask 21 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask22 || Model display mask 22 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask23 || Model display mask 23 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask24 || Model display mask 24 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask25 || Model display mask 25 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask26 || Model display mask 26 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask27 || Model display mask 27 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask28 || Model display mask 28 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask29 || Model display mask 29 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask30 || Model display mask 30 || Displays the model corresponding to the display mask. || - ||
+|| modelDispMask31 || Model display mask 31 || Displays the model corresponding to the display mask. || - ||
+|| itemSearchRadius || Drop item radius correction || Radius to be added as a correction to the cylinder radius of normal Item search judgment (applicable to enemy drop items. Used for large characters etc.) || - ||
+|| chrHitHeight || Height per character [m] || The height of the capsule per character. || - ||
+|| chrHitRadius || Radius per character [m] || Radius of capsule per character. || - ||
+|| specialTurnType || Special turning type || Special turning type || NPC_SPECIAL_TURN_TYPE ||
+|| isSoulGetByBoss || Do you get a boss in soul? || Do you get a boss in soul? || NPC_BOOL ||
+|| isBulletOwner_byObject || Is it a bullet owner treated as an object? || If you become the owner of a bullet, a flag that applies the object's damage calculation related to the bullet. Used for damage correction by power. || NPC_BOOL ||
+|| isUseLowHitFootIk || Do you use low hit FootIK? || Whether to use the FootIk filter for low hits || NPC_BOOL ||
+|| isCalculatePvPDamage || Whether to apply PvP damage compensation control || Decide whether to calculate damage as a "player" when calculating damage. If it is invalid, it is treated as an "enemy". || NPC_BOOL ||
+|| isHostSyncChr || Can only be activated when active in the host world || Can only be activated when active in the host world || NPC_BOOL ||
+|| isSkipWeakDamageAnim || Do you want to skip the weakness animation? || Weakness damage Whether to skip animation playback. "Part damage rate" and "defense material" are treated as weak points just by not playing the animation. || NPC_BOOL ||
+|| isKeepHitOnRide || When riding, do you enable the capsule around the rider? || When riding on a character with this parameter ○, the character's Atari remains while riding. || NPC_BOOL ||
+|| isSpCollide || Is it a special character? || Is it a special character? || NPC_BOOL ||
+|| def_dark || Dark defense || Damage reduction base value for dark attacks. || - ||
+|| threatLv || Threat level || Threat level. If it is 0, even if the PC is found, "FE that seems to be found" is not displayed. || - ||
+|| specialTurnDistanceThreshold || Threshold for special turning distance [m] || Make a special turn when the distance to the target is greater than or equal to the set threshold || - ||
+|| autoFootEffectSfxId || Foot effect identifier || The SFX identifier used in the automatic foot effect. (ZZZ of XYYZZZ) || - ||
+|| materialSe1 || Defensive material 1 [SE] || Determine the SE that sounds when damaged. 1. It is OK to set it by appearance. || WEP_MATERIAL_DEF ||
+|| materialSfx1 || Defensive material 1 [SFX] || Determine the SFX that occurs when you take damage. 1. It is OK to set it by appearance. || WEP_MATERIAL_DEF_SFX ||
+|| materialSe_Weak2 || Weakness defense material 2 [SE] || Determines the SE that sounds when the weak point is damaged. 2 || WEP_MATERIAL_DEF ||
+|| materialSfx_Weak2 || Weakness protection material 2 [SFX] || Determines the SFX that occurs when the weak point is damaged. 2 || WEP_MATERIAL_DEF_SFX ||
+|| materialSe2 || Defensive material 2 [SE] || Determine the SE that sounds when damaged. 2. It is OK to set it by appearance. || WEP_MATERIAL_DEF ||
+|| materialSfx2 || Defensive material 2 [SFX] || Determine the SFX that occurs when you take damage. 2. It is OK to set it by appearance. || WEP_MATERIAL_DEF_SFX ||
+|| spEffectID8 || Resident special effect 8 || Resident special effect 8 || - ||
+|| spEffectID9 || Resident special effect 9 || Resident special effect 9 || - ||
+|| spEffectID10 || Resident special effect 10 || Resident special effect 10 || - ||
+|| spEffectID11 || Resident special effects 11 || Resident special effects 11 || - ||
+|| spEffectID12 || Resident special effect 12 || Resident special effect 12 || - ||
+|| spEffectID13 || Resident special effect 13 || Resident special effect 13 || - ||
+|| spEffectID14 || Resident special effect 14 || Resident special effect 14 || - ||
+|| spEffectID15 || Resident special effects 15 || Resident special effects 15 || - ||
+|| autoFootEffectDecalBaseId1 || Foot decal identifier 1 || Decal to be attached when a foot effect occurs. Floor material is also taken into consideration || - ||
+|| toughness || Toughness || Basic value of toughness || - ||
+|| toughnessRecoverCorrection || Toughness recovery time correction value || Correction value for toughness recovery time || - ||
+|| neutralDamageCutRate || Non-attribute damage multiplier || Non-attribute damage multiplier. The final damage value is the value obtained by multiplying the damage calculation result by this value. || - ||
+|| slashDamageCutRate || Slash damage multiplier || Slash damage multiplier. The final damage value is the value obtained by multiplying the damage calculation result by this value. || - ||
+|| blowDamageCutRate || Batter damage multiplier || Batter damage multiplier. The final damage value is the value obtained by multiplying the damage calculation result by this value. || - ||
+|| thrustDamageCutRate || Puncture damage ratio || Puncture damage ratio. The final damage value is the value obtained by multiplying the damage calculation result by this value. || - ||
+|| magicDamageCutRate || Magic damage multiplier || Magic damage multiplier. The final damage value is the value obtained by multiplying the damage calculation result by this value. || - ||
+|| fireDamageCutRate || Flame damage multiplier || Flame damage multiplier. The final damage value is the value obtained by multiplying the damage calculation result by this value. || - ||
+|| thunderDamageCutRate || Electric shock damage ratio || Electric shock damage ratio. The final damage value is the value obtained by multiplying the damage calculation result by this value. || - ||
+|| darkDamageCutRate || Dark damage multiplier || Dark damage multiplier. The final damage value is the value obtained by multiplying the damage calculation result by this value. || - ||
+|| darkGuardCutRate || Dark attack power cut rate [%] || How much to cut the dark attack? || - ||
+|| clothUpdateOffset || Cross update priority offset [m] || Cross update priority offset [m] || - ||
+|| npcPlayerWeightType || Weight setting for NPC players || Equipment weight type applied for NPC players || NPC_WEIGHT_TYPE ||
+|| normalChangeModelId || Normal time replacement model ID || Normal replacement model, texture ID || - ||
+|| normalChangeAnimChrId || Normal replacement anime character ID || Replace the target animation with the specified ID Anibnd || - ||
+|| paintRenderTargetSize || Paint render target size [pix] || Paint render target size [pix] || - ||
+|| resistCorrectId_disease || Epidemic resistance correction rule ID || When the abnormal condition is activated, the maximum value is temporarily changed by using the set value of the abnormal condition resistance correction parameter. || - ||
+|| phantomShaderId || Applicable shader ID || ID of the phantom parameter .xlsm to apply || - ||
+|| multiPlayCorrectionParamId || Multiplayer correction parameter ID || Multiplayer correction parameter ID || - ||
+|| maxAnklePitchAngle || FootIK Ankle limit angle_pitch || FootIK Ankle pitch limit angle (-1: no limit). If you have not set Foot End L S in HAT, this angle is used in common with rolls. || - ||
+|| resist_freeze || Cold resistance || Difficulty in getting cold air condition abnormal || - ||
+|| freezeGuardResist || Cold attack cut rate [%] || How much to cut the attack power against cold air (set as a special effect parameter) || - ||
+|| pad1 || pad ||  || - ||
+|| lockCameraParamId || Lock camera parameter ID || The ID of the lock camera parameter applied to the camera when locked on. Highest priority. Unused if -1 || - ||
+|| spEffectID16 || Resident special effects 16 || Resident special effects 16 || - ||
+|| spEffectID17 || Resident special effects 17 || Resident special effects 17 || - ||
+|| spEffectID18 || Resident special effects 18 || Resident special effects 18 || - ||
+|| spEffectID19 || Resident special effects 19 || Resident special effects 19 || - ||
+|| spEffectID20 || Resident special effect 20 || Resident special effect 20 || - ||
+|| spEffectID21 || Resident special effect 21 || Resident special effect 21 || - ||
+|| spEffectID22 || Resident special effect 22 || Resident special effect 22 || - ||
+|| spEffectID23 || Resident special effect 23 || Resident special effect 23 || - ||
+|| spEffectID24 || Resident special effect 24 || Resident special effect 24 || - ||
+|| spEffectID25 || Resident special effects 25 || Resident special effects 25 || - ||
+|| spEffectID26 || Resident special effect 26 || Resident special effect 26 || - ||
+|| spEffectID27 || Resident special effect 27 || Resident special effect 27 || - ||
+|| spEffectID28 || Resident special effects 28 || Resident special effects 28 || - ||
+|| spEffectID29 || Resident special effect 29 || Resident special effect 29 || - ||
+|| spEffectID30 || Resident special effect 30 || Resident special effect 30 || - ||
+|| spEffectID31 || Resident special effects 31 || Resident special effects 31 || - ||
+|| disableLockOnAng || Central angle of lockable area [deg] || Create a conical lock-on non-lockable area beneath the enemy. The angle of the size of the cone. Can be changed temporarily from TAE || - ||
+|| clothOffLodLevel || Cross OffLOD level || Set the LOD level to turn off cross processing || - ||
+|| isUseFootIKNormalByUnduration || Whether to use FootIK results to match undulations || Do you use the FootIK result to match your character to the undulations of the ground? Cannot be used for flying characters || NPC_BOOL ||
+|| attachHitInitializeDead || Whether to ground the capsule at the time of initial death || Whether to ground the capsule at the time of initial death || NPC_BOOL ||
+|| excludeGroupRewardCheck || Do you want to remove it from the group reward judgment? || Group reward: In the judgment of "all dead", characters with this parameter ○ are excluded from the judgment. || NPC_BOOL ||
+|| enableAILockDmyPoly_212 || Is Rock Damipoli (for Enemy) 212 Effective? || Is Rock Damipoli (for Enemy) 212 Effective? || NPC_BOOL ||
+|| enableAILockDmyPoly_213 || Is Rock Damipoli (for Enemy) 213 Effective? || Is Rock Damipoli (for Enemy) 213 Effective? || NPC_BOOL ||
+|| enableAILockDmyPoly_214 || Is Rock Damipoli (for Enemy) 214 Effective? || Is Rock Damipoli (for Enemy) 214 Effective? || NPC_BOOL ||
+|| disableActivateOpen_xb1 || Excluded from open_XB1 || Excluded from open_XB1 || NPC_BOOL ||
+|| disableActivateLegacy_xb1 || Excluded from Legacy_XB1 || Excluded from Legacy_XB1 || NPC_BOOL ||
+|| estusFlaskRecoveryParamId || HP Est Bottle / MP Est Bottle Recovery Number Parameter ID || When the character dies, the data ID of the est usage count recovery parameter .xlsm, which is the same as the value, is acquired and the est bottle is recovered. Unused if -1 || - ||
+|| roleNameId || Role name text ID || Specify the role name at the time of summoning. -1: Use the default role name of the target spirit body. 0: No display. 1 or more: Used as a text ID. || - ||
+|| estusFlaskLotPoint || HP & MP Est Bottle Recovery Lottery Probability || HP / MP est recovery probability when defeating an enemy. The numerator is obtained from the NPC para with 10000 as the denominator. || - ||
+|| hpEstusFlaskLotPoint || HP Est Bottle Recovery Lottery Probability || Recovery probability of MP Est when defeating an enemy. The numerator is obtained from the NPC para with 10000 as the denominator. || - ||
+|| mpEstusFlaskLotPoint || MP Est Bottle Recovery Lottery Probability || Recovery probability of MP Est when defeating an enemy. The numerator is obtained from the NPC para with 10000 as the denominator. || - ||
+|| estusFlaskRecovery_failedLotPointAdd || HP & MP Est Bottle Recovery Addition lottery probability at the time of defeat || Next time probability increase value when you miss the HP / MP est recovery lottery. Addition value of numerator. || - ||
+|| hpEstusFlaskRecovery_failedLotPointAdd || HP Est Bottle Recovery Addition lottery probability at the time of defeat || The next probability increase value when you miss the HP Est Recovery Lottery. Addition value of numerator. || - ||
+|| mpEstusFlaskRecovery_failedLotPointAdd || MP est bottle recovery Addition lottery probability at the time of defeat || The next probability increase value when the MP est recovery lottery is missed. Addition value of numerator. || - ||
+|| WanderGhostPhantomId || Will you be a wandering ghost using a phantom shader? || Phantom shader with ID specified only on the guest side Specify the phantom shader ID and make it an illusion || - ||
+|| hearingHeadSize || Hearing head size [m] || The offset size to be set instead of the capsule offset at the time of hearing judgment. Use this value as an offset only if it is set to 0 or higher. || - ||
+|| SoundBankId || Sound bank ID || Sound bank ID can be specified -1: Use the bank of character ID (resource name) || - ||
+|| forwardUndulationLimit || Maximum anteroposterior angle to match undulations || The upper limit angle when adjusting the front-back angle to the undulation. If the total length is long, it is better to set it lower. || - ||
+|| sideUndulationLimit || Maximum left-right angle to match undulations || Upper limit angle when adjusting the left and right angles to the undulations. If the total length is long, it is better to set it lower. || - ||
+|| deactiveMoveSpeed || Platoon Deactive Movement Speed [m / s] || Platoon Deactive Movement Speed [m / s] || - ||
+|| deactiveMoveDist || Distance to switch to platoon deactive movement [m] || Distance to switch to platoon deactive movement [m] || - ||
+|| enableSoundObjDist || Sound source effective distance [m] || The distance from the player for which the character sound source is valid. -1: Effective at all distances || - ||
+|| undulationCorrectGain || Correction gain value to match undulations || Set the speed when adjusting the angle to the undulations || - ||
+|| autoFootEffectDecalBaseId2 || Foot decal identifier 2 || Decal to be attached when a foot effect occurs. Floor material is also taken into consideration || - ||
+|| autoFootEffectDecalBaseId3 || Foot decal identifier 3 || Decal to be attached when a foot effect occurs. Floor material is also taken into consideration || - ||
+|| RetargetReferenceChrId || Retarget reference character ID || Character ID to be referred to when specifying the motion retarget destination || - ||
+|| SfxResBankId || SFX resource bank ID || SFX resource bank ID can be specified -1: Use the bank of character ID (resource name) || - ||
+|| updateActivatePriolity || Update and activate priorities || Used to determine the activation / renewal level. The larger it is, the lower the update level will be even if you are far from the player. || - ||
+|| chrNavimeshFlag_Alive || Pre-death navigation mesh flag || Flag the value of the touching Nav Mesh while the character is alive. Does not follow the movement. || NPC_NAVIMESH_FLAG ||
+|| chrNavimeshFlag_Dead || Post-mortem navigation mesh flag || Flag the value on the touching Nav Mesh while the character is dying. Does not follow the movement. || NPC_NAVIMESH_FLAG ||
+|| pad7 || pad ||  || - ||
+|| wheelRotType || Wheel control type || Wheel control type || NPC_WHEEL_ROT_TYPE ||
+|| wheelRotRadius || Wheel radius || Specify the radius of the wheel [m] || - ||
+|| retargetMoveRate || Retarget movement amount magnification || Magnification of movement amount at the time of retargeting || - ||
+|| ladderWarpOffset || Ladder warp position offset || Offsets along the Damipoly Z-axis at the specified value. Both positive and negative numbers can be specified. || - ||
+|| loadAssetId || Load asset ID || Asset ID to be read in connection with character loading (for dynamic generation of characters, etc.). || - ||
+|| overlapCameraDmypolyId || Overlap camera target lock Damipoli ID || Set the Damipoly ID (220-227) to enable the overlap camera. If it is -1, it will be invalid. || - ||
+|| residentMaterialExParamId00 || Resident Material Expansion Para ID0 || Resident Material Expansion Para ID0 || - ||
+|| residentMaterialExParamId01 || Resident Material Expansion Para ID1 || Resident Material Expansion Para ID1 || - ||
+|| residentMaterialExParamId02 || Resident Material Expansion Para ID2 || Resident Material Expansion Para ID2 || - ||
+|| residentMaterialExParamId03 || Resident Material Expansion Para ID3 || Resident Material Expansion Para ID3 || - ||
+|| residentMaterialExParamId04 || Resident Material Expansion Para ID4 || Resident Material Expansion Para ID4 || - ||
+|| sleepCollectorItemLotId_enemy || Item lottery ID_for enemies || Specify the lottery ID_for enemies of the item to be acquired when collecting Nemuri. Please set only one of them. || - ||
+|| sleepCollectorItemLotId_map || Nemuri item lottery ID_for map || Specify for the lottery ID_map of the item to be acquired when collecting Nemuri. Please set only one of them. || - ||
+|| footIkErrorOnGain || FootIK Appearance height correction ON gain value || FootIK Appearance height correction ON gain value || - ||
+|| footIkErrorOffGain || FootIK Appearance height correction OFF gain value || FootIK Appearance height correction OFF gain value || - ||
+|| SoundAddBankId || Additional sound bank ID || You can specify an additional sound bank ID -1 or 0: No addition (SEQ 16135) || - ||
+|| materialVariationValue || Defensive material variation value || It is a value used in combination with the defense material to classify abnormal conditions, damage SFX, and SE. SEQ16473 || - ||
+|| materialVariationValue_Weak || Weakness defense material variation value || It is a value used for variation of abnormal condition, damage SFX, SE in combination with weak point defense material. SEQ16473 || - ||
+|| superArmorDurability || SA endurance || Super armor durability value || - ||
+|| saRecoveryRate || SA recovery speed correction value || Correct the SA recovery speed by multiplying the SA basic recovery amount || - ||
+|| saGuardCutRate || SA attack cut rate [%] || Cut rate of SA damage when guard is successful || - ||
+|| resistCorrectId_blood || Bleeding resistance correction rule ID || When the abnormal condition is activated, the maximum value is temporarily changed by using the setting value of the abnormal condition resistance correction parameter. || - ||
+|| resistCorrectId_curse || Curse resistance correction rule ID || When the abnormal condition is activated, the maximum value is temporarily changed by using the set value of the abnormal condition resistance correction parameter. || - ||
+|| resistCorrectId_freeze || Cold resistance correction rule ID || When the abnormal condition is activated, the maximum value is temporarily changed by using the setting value of the abnormal condition resistance correction parameter. || - ||
+|| resistCorrectId_sleep || Sleep tolerance correction rule ID || When the abnormal condition is activated, the maximum value is temporarily changed by using the set value of the abnormal condition resistance correction parameter. || - ||
+|| resistCorrectId_madness || Madness resistance correction rule ID || When the abnormal condition is activated, the maximum value is temporarily changed by using the set value of the abnormal condition resistance correction parameter. || - ||
+|| chrDeadTutorialFlagId || Character death tutorial judgment flag ID || Event flag ID for the tutorial when the character is defeated for the first time. Flag ON when the character dies. || - ||
+|| stepDispInterpolateTime || Step crossing display interpolation time || Step crossing display interpolation time || - ||
+|| stepDispInterpolateTriggerValue || Step crossing display activation judgment value || Step crossing display activation judgment value || - ||
+|| lockScoreOffset || Lock score correction value || Lock score correction value || - ||
+|| pad12 || Padding 12 ||  || - ||

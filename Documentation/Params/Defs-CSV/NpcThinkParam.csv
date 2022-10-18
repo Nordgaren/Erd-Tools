@@ -1,0 +1,105 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,15201,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,15202,dummy8,,%d,dummy8,None
+Logic script ID,Set the ID of the logic created by the script.,-1,999999,100,s32,1,%d,s32,Wrap
+Battle goal ID,Battle goal ID,-1,999999,200,s32,1,%d,s32,Wrap
+Searching enemy vision_distance [m],Search range by visual search.,0,65535,11310,u16,1,%d,u16,Wrap
+Searching enemy vision_angle (width) [deg],Search range by visual search.,0,180,11330,u8,1,%d,u8,Wrap
+Do you not detour a huge enemy?,Do you not detour a huge enemy?,0,1,13560,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Do you want to pull out the sword?,Do you want to pull out the sword?,0,1,13010,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Do you aim for Rock Damipoli (for enemies)?,Do you aim for Rock Damipoli (for enemies)?,0,1,10650,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Padding,,,,15203,dummy8,,%f,dummy8,Wrap
+Special effects ID for ranged attacks,Special effects ID for ranged attacks,-1,999999,10330,s32,1,%d,s32,Wrap
+Search enemy Lv1 Target Forget time [sec],Search enemy Lv1 Target Time to forget.,0,999999,12510,f32,0.1,%f,f32,Wrap
+Search enemy Lv2 Target Forget time [sec],Search enemy Lv2 time to forget the target.,0,999999,12511,f32,0.1,%f,f32,Wrap
+Back Home time when touching an enemy wall [sec],The life of the BackToHome goal when it touches an enemy wall that blocks the block,0,999,10600,f32,0.1,%f,f32,Wrap
+Time to forget the visual target [sec],Time to forget the visual target.,0,999999,12300,f32,0.1,%f,f32,Wrap
+EzState number to do when you get stuck,An action that automatically takes place when a destructible object stops it.,-1,999999,10500,s32,1,%d,s32,Wrap
+Hearing_distance [m],Hearing search range ...,0,999999,11400,f32,0.1,%f,f32,Wrap
+Companion call response action anime ID,Animation ID (EzStateAnimID) when responding,-1,99999999,14500,s32,1,%d,s32,Wrap
+Fellow call _ Fellow call action ID,Action ID (EzStateAnimID) when calling a friend,-1,99999999,14600,s32,1,%d,s32,Wrap
+Visual_distance [m],Visual search range.,0,65535,10800,u16,1,%d,u16,Wrap
+Whether to use a guard during action,Whether to guard against actions (assumed when returning home, looking toward the target),0,1,10310,u8,1,%d,BOOL_DODONT_TYPE,Wrap
+Padding,,,,15204,dummy8,,%f,dummy8,Wrap
+Hearing influence cut distance [m],The distance to reduce the size of the sound source. You will not hear any sound below this distance.,0,65535,11500,u16,1,%d,u16,Wrap
+Smell _ distance [m],Search range by smell.,0,65535,11600,u16,1,%d,u16,Wrap
+Distance to go home no matter what [m],COMMON_SetBattleActLogic argument,0,65535,11700,u16,1,%d,u16,Wrap
+Distance to return home while fighting [m],COMMON_SetBattleActLogic argument,0,65535,11800,u16,1,%d,u16,Wrap
+Distance to give up and fight to return to the nest [m],COMMON_SetBattleActLogic argument,0,65535,11900,u16,1,%d,u16,Wrap
+Non-combat action time when conscious of the enemy [sec],COMMON_SetBattleActLogic argument,0,65534,12000,u16,1,%d,u16,Wrap
+When returning home: Time to look at the target [sec],When returning home: Time to look at the target [sec],0,65534,12100,u16,1,%d,u16,Wrap
+When returning home: Distance to see the target [m],When returning home: Distance to see the target [m],0,65534,12200,u16,1,%d,u16,Wrap
+Time to forget the sound target [sec],Time to forget the sound target.,0,999999,12400,f32,0.1,%f,f32,Wrap
+Battle start distance [m],,0,65534,10900,u16,1,%d,u16,Wrap
+Calling friends Your fellow group ID,My fellow group ID,0,65534,14300,u16,1,%d,u16,Wrap
+Companion call Companion group ID,Companion group ID to call a companion,0,65534,14400,u16,1,%d,u16,Wrap
+Damage impact rate [%],Damage impact rate acquisition (target system evaluation information),0,1000,13100,u16,1,%d,u16,Wrap
+Team attack influence [0-100],A value for determining the number of simultaneous attacks in a team. Increasing the value reduces the number of people who can participate in the attack at the same time.,0,100,13200,u8,1,%d,u8,Wrap
+Vision_angle (height) [deg],Visual search range.,0,180,11000,u8,1,%d,u8,Wrap
+Visual_angle (width) [deg],Visual search range.,0,180,11100,u8,1,%d,u8,Wrap
+Does not affect the darkness,Whether the alert vision_distance and battle start distance are not affected by the darkness,0,1,10700,u8,1,%d,ON_OFF,Wrap
+Role in the caravan,Role in the caravan,0,3,13510,u8,1,%d,NPC_THINK_CARAVAN_ROLE,Wrap
+Companion call_minimum distance to the target [m],If it is closer than this value, you cannot call a friend.,0,255,15000,u8,1,%d,u8,Wrap
+Calling friends_Effective distance to call friends [m],Do not call if the companion is farther than this value.,0,255,14900,u8,1,%d,u8,Wrap
+Time to forget after answering a fellow call [sec],Time to respond,0,255,14800,u8,1,%d,u8,Wrap
+Minimum waiting time for response [ssm => ss. mSec],Minimum time for the first wait goal of the response goal [101 => 10.1sec],0,255,15100,u8,1,%d,u8,Wrap
+Maximum waiting time for response [ssm => ss. mSec],Maximum time for the first waiting goal of the response goal [101 => 10.1sec],0,255,15200,u8,1,%d,u8,Wrap
+Goal action: alert / normal sound,Goal action: Target becomes alert due to normal sound detection,0,255,12600,u8,1,%d,NPC_THINK_GOAL_ACTION,Wrap
+Hearing_audible AI sound level,How good your ears are,0,128,11550,u8,1,%d,u8,Wrap
+Behavior type after responding to a fellow call,Action type to target position after response,0,3,14700,u8,1,%d,NPC_THINK_REPLY_BEHAVIOR_TYPE,Wrap
+Do not move the path,Whether to move directly without following the path even if a path move command comes,0,1,10100,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Do you want to skip the arrival judgment by the line of sight?,Do you want to skip the arrival judgment by the line of sight? When set to On, arrival judgment is performed even if the line of sight does not pass.,0,1,10400,u8,1,%d,ON_OFF,Wrap
+Will you be a companion?,Thinking attribute: When turned on, it plays a role of surrounding.,0,1,13300,u8,1,%d,ON_OFF,Wrap
+Can you pass the flag "cliff"?,Can you pass through the node "cliff"? (def: 1),0,1,13900,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Can the flag "wide" pass?,Can you pass through the node "wide"? (def: 1),0,1,14000,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Can you pass the flag "ladder"?,Can you pass through the node "ladder"? (def: 0),0,1,13600,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Can you go through the flag "hole"?,Can you go through the node "hole"? (def: 0),0,1,14100,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Can you go through the flag "door"?,Can you pass through the node "door"? (def: 0),0,1,13700,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Can you pass the flag "in the wall"?,Can you pass through the node "in the wall"? (def: 0),0,1,14200,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Can you pass the flag "lava"?,Can you pass through the node "lava"? (def: 0),0,1,13710,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Can you pass the flag "cliff"? (Normal / alert state),Can you pass the node "cliff" under normal / alert conditions? (def: 1),0,1,13800,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Really booked,If you need a new flag, put it here (Not Padding),,,15205,dummy8,,,dummy8,None
+Search enemy Lv0 → Lv1 threshold,Search enemy Lv0 → Lv1 threshold,-1,999999,12520,s32,1,%d,s32,Wrap
+Search enemy Lv1 → Lv2 threshold,Search enemy Lv1 → Lv2 threshold,-1,999999,12521,s32,1,%d,s32,Wrap
+Platoon reaction delay time [sec],Platoon reaction delay time [sec],0,99999,13400,f32,0.1,%f,f32,Wrap
+Platoon reaction additional random time [sec],Platoon reaction additional random time [sec],0,99999,13500,f32,0.1,%f,f32,Wrap
+Searching enemy vision_angle (height) [deg],Searching enemy vision_angle (height) [deg],0,180,11320,u8,1,%d,u8,Wrap
+Do you want to overwrite the combat view?,Do you want to overwrite the battle view?,0,1,11340,u8,1,%d,BOOL_DODONT_TYPE,Wrap
+Battle Vision_Overwrite Distance [m],Battle Vision_Overwrite Distance [m],0,65535,11350,u16,1,%d,u16,Wrap
+Battle Vision_Overwrite Angle (Height) [deg],Battle Vision_Overwrite Angle (Height) [deg],0,180,11360,u8,1,%d,u8,Wrap
+Battle Vision_Overwrite Angle (Width) [deg],Battle Vision_Overwrite Angle (Width) [deg],0,180,11370,u8,1,%d,u8,Wrap
+Padding,,,,15206,dummy8,,,dummy8,None
+Visual_occurrence distance [m],The viewing angle start position is behind this distance from the center of the character.,0,65535,11200,u16,1,%d,u16,Wrap
+Visual_cut distance [m],This distance is not recognized from the viewing angle generation position,0,65534,11300,u16,1,%d,u16,Wrap
+Behavior type at the time of path search failure / homecoming limit,Default action type to be performed when the path search fails, when the end point of the alternative path is reached / when the homecoming limit distance is reached,0,3,10300,u8,1,%d,NPC_THINK_ACTTYPE_ON_FAILEDPATH,Wrap
+Goal Action: Alert / Important Sound,Goal action: Target becomes alert due to detection of important sound,0,255,12700,u8,1,%d,NPC_THINK_GOAL_ACTION,Wrap
+Changeover animation ID for ranged attacks,Reference ID for AI attack parameters,-1,999999,10340,s32,1,%d,s32,Wrap
+Behavior when path search fails (during non-combat),Target [None] Sometimes, the action to be taken after rewriting the current location to a nest,0,2,10350,u8,1,%d,NPC_THINK_ACTTYPE_ON_NONBTL_FAILEDPATH,Wrap
+Buddy AI,Thinking for a buddy,0,1,13050,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Goal action: Search enemy Lv1,Goal action: Target becomes Lv1,0,255,12530,u8,1,%d,NPC_THINK_GOAL_ACTION,Wrap
+Goal action: Search enemy Lv2,Goal action: Target became enemy Lv2,0,255,12531,u8,1,%d,NPC_THINK_GOAL_ACTION,Wrap
+Do you use the edge "jump" (non-combat state)?,Whether to jump over the user edge for jumping (non-combat state),0,2,13550,u8,1,%d,NPC_THINK_JUMPUSEREDGE_USE_TYPE,Wrap
+Do not move around,Do you want to turn off the behavior (local steering) that tries to move while avoiding other characters?,0,1,10200,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Goal action: Memory target state,Goal action: Lost target,0,255,12900,u8,1,%d,NPC_THINK_GOAL_ACTION,Wrap
+Goal action: Start normal state,Action when transitioning to the normal state,0,255,13000,u8,1,%d,NPC_THINK_CHANGE_STATE_ACTION,Wrap
+Time to forget memory target [sec],Time to forget the memory target.,0,999999,12500,f32,0.1,%f,f32,Wrap
+Ranged attack anime ID,A parameter that specifies the attack ID issued by the enemy when making a ranged attack,-1,999999,10320,s32,1,%d,s32,Wrap
+Do you use the edge "jump" (non-combat state)?,Allows AI to pass the jumping edge in non-combat state,0,2,13555,u8,1,%d,NPC_THINK_JUMPUSEREDGE_USE_TYPE,Wrap
+Do you use the edge "jump" (combat state)?,Allow AI to pass through the jumping edge in combat,0,2,13556,u8,1,%d,NPC_THINK_JUMPUSEREDGE_USE_TYPE,Wrap
+Do you use the edge "jump" (combat state)?,Whether to jump over the user edge for jumping (combat state),0,2,13551,u8,1,%d,NPC_THINK_JUMPUSEREDGE_USE_TYPE,Wrap
+Behavior when addicted to the homecoming limit,Behavior when addicted to the homecoming limit,0,1,10360,u8,1,%d,NPC_THINK_BackToHomeStuckAct,Wrap
+Padding,pad,,,15207,dummy8,,,dummy8,None
+Behavior ID1,Corresponds to the behavior ID of the sound target that can be heard,-1,999999,13520,s32,1,%d,s32,Wrap
+Behavior ID2,Corresponds to the behavior ID of the sound target that can be heard,-1,999999,13521,s32,1,%d,s32,Wrap
+Behavior ID3,Corresponds to the behavior ID of the sound target that can be heard,-1,999999,13522,s32,1,%d,s32,Wrap
+Behavior ID4,Corresponds to the behavior ID of the sound target that can be heard,-1,999999,13523,s32,1,%d,s32,Wrap
+Behavior ID5,Corresponds to the behavior ID of the sound target that can be heard,-1,999999,13524,s32,1,%d,s32,Wrap
+Behavior ID6,Corresponds to the behavior ID of the sound target that can be heard,-1,999999,13525,s32,1,%d,s32,Wrap
+Behavior ID7,Corresponds to the behavior ID of the sound target that can be heard,-1,999999,13526,s32,1,%d,s32,Wrap
+Behavior ID8,Corresponds to the behavior ID of the sound target that can be heard,-1,999999,13527,s32,1,%d,s32,Wrap
+Special effect ID at the time of sword delivery,Special effect ID at the time of sword delivery,-1,999999,13011,s32,1,%d,s32,Wrap
+Special effect ID when pulling out a sword,Special effect ID when pulling out a sword,-1,999999,13012,s32,1,%d,s32,Wrap
+Katana Anime ID,Katana Anime ID,-1,999999,13013,s32,1,%d,s32,Wrap
+Sword animation ID,Sword animation ID,-1,999999,13014,s32,1,%d,s32,Wrap
+Amazing anime ID,Amazing anime ID,-1,999999,13020,s32,1,%d,s32,Wrap

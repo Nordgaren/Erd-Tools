@@ -1,0 +1,43 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Throwing side character ID,Throwing side character ID,0,10000,100,s32,1,%d,s32,Wrap
+Recipient character ID,Recipient character ID,0,10000,200,s32,1,%d,s32,None
+Effective distance [m],Do not throw unless the distance is closer than this value [m],0,10000,800,f32,0.1,%f,f32,None
+Angle difference range between your own direction and the direction of the other party min,If the angle difference (Y-axis) between the throwing side and the receiving side is not larger than this angle, it will not be thrown.,-180,180,1100,f32,0.01,%f,f32,Wrap
+Angle difference range between your own direction and the direction of the other party max,If the angle difference (Y-axis) between the throwing side and the receiving side is smaller than this angle, it will not be thrown.,-180,180,1200,f32,0.01,%f,f32,Wrap
+On the height range [m],Do not throw unless the relative distance of the Y axis from the throwing side to the receiving side is smaller than this value,0,10000,900,f32,0.01,%f,f32,None
+Below the height range [m],Do not throw unless the relative distance of the Y axis from the throwing side to the receiving side is smaller than this value,0,10000,1000,f32,0.01,%f,f32,None
+Angle difference between your own direction and the direction from yourself to the other party,The angle difference between the vector in front of you and the vector in the direction from you to the other party. If it is larger than this value, it will not be thrown,0,180,1300,f32,0.1,%f,f32,None
+Throw type ID,ID that identifies the type of throw (association with attack parameter),0,99999999,600,s32,1,%d,s32,None
+Throwing side anime ID,Set attack animation ID (linked to EzState),0,99999999,300,s32,1,%d,s32,None
+Recipient anime ID,Set damage animation ID (linked to EzState),0,99999999,400,s32,1,%d,s32,None
+Throw through HP,Value that can withstand throwing through,0,9999,2000,u16,1,%d,u16,None
+Self-throwing cycle time [ms],Cycle time for self-throwing [ms],0,65535,2030,u16,1,%d,u16,None
+Sphere Cast Radius Ratio_Top [1/100 Rate],Ratio of upper radius of sphere cast [80-> 0.8],0,999,2500,u16,1,%d,u16,Wrap
+Sphere Cast Radius Ratio_Bottom [1/100 Rate],Spherecast lower radius ratio [80-> 0.8],0,999,2600,u16,1,%d,u16,Wrap
+Operation type,Operation type,0,10,2100,u8,1,%d,THROW_PAD_TYPE,None
+Throwable state type on the throwing side,Please set the state type that can be thrown on the throwing side,0,255,650,u8,1,%d,THROW_ENABLE_STATE,None
+Throw-following method,How to follow the character possessed by Adsorbed Damipoli while throwing. * Follow-up period is controlled by TAE action,0,255,1800,u8,1,%d,THROW_FOLLOWING_TYPE,None
+pad,pad,,,999999,dummy8,,%d,dummy8,None
+Throw type,Type of throw,0,255,500,u8,1,%d,THROW_TYPE,None
+Number of self-throwing cycles,Number of self-throwing cycles,0,255,2050,u8,1,%d,u8,None
+Direction of Damipoli possession character when throwing occurs,Direction of Damipoli possession character when throwing occurs,0,255,1600,u8,1,%d,THROW_DMY_CHR_DIR_TYPE,None
+Does the throwing side turn?,Does the throwing side turn?,0,1,1700,u8,1,%d,u8,None
+Do you want to skip the weapon category check?,Do you want to skip the attacker's weapon category check?,0,1,2300,u8,1,%d,u8,None
+Do you want to skip the sphere cast?,Do you want to skip the sphere cast?,0,1,2400,u8,1,%d,u8,None
+Whether to return to the positional relationship equivalent to flat ground at the time of throwing adsorption,If it is set to ◯, the location of the throwing position will be the "position of the adsorption Damipoli that has returned to the positional relationship equivalent to the flat ground".,0,1,1810,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Do you prevent the fall when the throwing follow is released?,Is the same treatment as the wall removal prevention applied to the fall prevention wall so that it does not fall from the step when the follow-up is released?,0,1,1830,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Do you want to prevent the wall from digging in while following the throw?,Do you want to return the character with the Adsorbed Damipoli when it comes in contact with a hit or fall prevention wall so that it does not look like it will get stuck in the middle wall or fall from a step?,0,1,1840,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+pad,pad,,,99999998,dummy8,,,dummy8,None
+Throw side adsorption Damipoly ID,Where on the throwing side should the receiving side be attracted?,0,31999,1400,s16,1,%d,s16,None
+Recipient side adsorption Damipoly ID,Where on the receiving side should the throwing side be adsorbed?,0,31999,1500,s16,1,%d,s16,None
+Effective distance (start throwing) [m],Only throw at a distance closer than this value [m] Used for throwing at the start of the back stub,0,10000,710,f32,0.1,%f,f32,None
+Angle difference range between your own direction and the other's direction min (start throwing),If the angle difference (Y-axis) between the throwing side and the receiving side is not larger than this angle, it will not be thrown. It is used for throwing at the start of the back stub.,-180,180,740,f32,0.01,%f,f32,Wrap
+Angle difference range between your own direction and the opponent's direction max (start throwing),The angle difference (Y-axis) between the throwing side and the receiving side must be smaller than this angle to throw. Used for throwing at the start of the back stub.,-180,180,750,f32,0.01,%f,f32,Wrap
+On the height range (start throwing) [m],It will not be thrown unless the relative distance of the Y axis from the throwing side to the receiving side is smaller than this value. It is used for throwing at the start of the back stub.,0,10000,720,f32,0.01,%f,f32,None
+Below the height range (start throwing) [m],It will not be thrown unless the relative distance of the Y axis from the throwing side to the receiving side is smaller than this value. It is used for throwing at the start of the back stub.,0,10000,730,f32,0.01,%f,f32,None
+Angle difference between your own direction and the direction from yourself to the opponent (start throwing),The angle difference between the vector in front of you and the vector in the direction from you to the other party. If it is larger than this value, it will not be thrown. It will be used for throwing at the start of the back stub.,0,180,760,f32,0.1,%f,f32,None
+Throwing range judgment criteria on the throwing side Damipoli Id,Damipoli that the thrower considers to be his position when calculating the throw range. If -1, the capsule origin,-1,99999999,660,s32,1,%d,s32,None
+Criteria for throwing range on the thrown side Damipoli Id,Damipoli that the thrower considers to be his position when calculating the throw range. If -1, the capsule origin,-1,99999999,670,s32,1,%d,s32,None
+Model position interpolation time during adsorption [s],After the capsule is adsorbed on Damipoli, the time it takes for the character model to interpolate and move to the position according to the throwing animation data (when 0 is set, the model position is not interpolated and playback starts immediately after adsorption with the positional relationship according to the animation data. Will be),0,10,1820,f32,0.01,%f,f32,None
+Model position interpolation time at the end of tracking [s],Model position interpolation time at the end of tracking,0,10,1825,f32,0.01,%f,f32,None
+pad,pad,,,99999999,dummy8,,,dummy8,None

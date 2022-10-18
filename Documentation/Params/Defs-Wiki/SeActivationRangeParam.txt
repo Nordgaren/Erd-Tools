@@ -1,0 +1,2 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| activateRange || Activate distance || Distance to enable placement SE (m) (0 or less: always enabled) || - ||

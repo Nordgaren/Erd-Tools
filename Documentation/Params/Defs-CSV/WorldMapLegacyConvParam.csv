@@ -1,0 +1,21 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,8001,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,8002,dummy8,,%d,dummy8,None
+Conversion source map ID: Area number,Conversion source map ID: Area number,0,99,100,u8,1,%u,u8,Wrap
+Source map ID: Grid X,Source map ID: Grid X,0,99,200,u8,1,%u,u8,Wrap
+Source map ID: Grid Z,Source map ID: Grid Z,0,99,300,u8,1,%u,u8,Wrap
+Padding 1,Padding 1,,,8003,dummy8,,,dummy8,None
+Source map reference coordinates X,Source map reference coordinates X,-10000,10000,1100,f32,0.01,%f,f32,Wrap
+Source map reference coordinates Y,Source map reference coordinates Y,-10000,10000,1200,f32,0.01,%f,f32,Wrap
+Source map reference coordinates Z,Source map reference coordinates Z,-10000,10000,1300,f32,0.01,%f,f32,Wrap
+Conversion destination map ID: Area number,Conversion destination map ID: Area number,0,99,4100,u8,1,%u,u8,Wrap
+Destination map ID: Grid X,Destination map ID: Grid X,0,99,4200,u8,1,%u,u8,Wrap
+Destination map ID: Grid Z,Destination map ID: Grid Z,0,99,4300,u8,1,%u,u8,Wrap
+Padding 2,Padding 2,,,8004,dummy8,,,dummy8,None
+Destination map reference coordinates X,Destination map reference coordinates X,-10000,10000,5100,f32,0.01,%f,f32,Wrap
+Destination map reference coordinates Y,Destination map reference coordinates Y,-10000,10000,5200,f32,0.01,%f,f32,Wrap
+Destination map reference coordinates Z,Destination map reference coordinates Z,-10000,10000,5300,f32,0.01,%f,f32,Wrap
+Is it a reference connection point?,Is it a reference connection point? One reference connection point is always set for one conversion source map ID.,0,1,8000,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Padding 3,Padding 3,,,8005,dummy8,,,dummy8,None
+Padding 4,Padding 4,,,8006,dummy8,,,dummy8,None

@@ -1,0 +1,97 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| iconId || Icon ID || Menu icon ID || - ||
+|| rank || Magic stone rank || Magic stone rank || - ||
+|| sortGroupId || Sort item type ID || Sort item type ID. In the sort "Item type order", the same ID is displayed together as the same group. || - ||
+|| spEffectId0 || Resident special effect ID00 || Special effect ID00 || - ||
+|| spEffectId1 || Resident special effect ID01 || Special effect ID01 || - ||
+|| spEffectId2 || Resident special effect ID02 || Special effect ID02 || - ||
+|| itemGetTutorialFlagId || Item acquisition tutorial Judgment flag ID || Event flag ID for the tutorial when you first get the item. Flag ON when item is obtained. || - ||
+|| swordArtsParamId || Change destination arts parameter ID || ID of the destination arts parameter || - ||
+|| mountValue || Installation price || Installation price || - ||
+|| sellValue || Sale price || Sale price || - ||
+|| saleValue || Selling price || Selling price || - ||
+|| sortId || Sort ID || Sort ID (-1: Do not collect) || - ||
+|| compTrophySedId || Comptrophy SEQ number || SEQ number of complete trophy || - ||
+|| trophySeqId || Trophy SEQ number || Trophy SEQ number || - ||
+|| configurableWepAttr00 || 0 || Configurable weapon attribute ID 0 || EQUIP_BOOL ||
+|| configurableWepAttr01 || 1 || Configurable Weapon Attribute ID 1 || EQUIP_BOOL ||
+|| configurableWepAttr02 || 2 || Configurable Weapon Attribute ID 2 || EQUIP_BOOL ||
+|| configurableWepAttr03 || 3 || Configurable Weapon Attribute ID 3 || EQUIP_BOOL ||
+|| configurableWepAttr04 || Four || Configurable Weapon Attribute ID 4 || EQUIP_BOOL ||
+|| configurableWepAttr05 || Five || Configurable Weapon Attribute ID 5 || EQUIP_BOOL ||
+|| configurableWepAttr06 || 6 || Configurable Weapon Attribute ID 6 || EQUIP_BOOL ||
+|| configurableWepAttr07 || 7 || Configurable Weapon Attribute ID 7 || EQUIP_BOOL ||
+|| configurableWepAttr08 || 8 || Configurable Weapon Attribute ID 8 || EQUIP_BOOL ||
+|| configurableWepAttr09 || 9 || Configurable Weapon Attribute ID 9 || EQUIP_BOOL ||
+|| configurableWepAttr10 || Ten || Configurable Weapon Attribute ID 10 || EQUIP_BOOL ||
+|| configurableWepAttr11 || 11 11 || Configurable Weapon Attribute ID 11 || EQUIP_BOOL ||
+|| configurableWepAttr12 || 12 || Configurable Weapon Attribute ID 12 || EQUIP_BOOL ||
+|| configurableWepAttr13 || 13 || Configurable Weapon Attribute ID 13 || EQUIP_BOOL ||
+|| configurableWepAttr14 || 14 || Configurable Weapon Attribute ID 14 || EQUIP_BOOL ||
+|| configurableWepAttr15 || 15 || Configurable Weapon Attribute ID 15 || EQUIP_BOOL ||
+|| rarity || Rarity || Rarity used in item acquisition logs || - ||
+|| configurableWepAttr16 || 16 16 || Configurable Weapon Attribute ID 16 || EQUIP_BOOL ||
+|| configurableWepAttr17 || 17 17 || Configurable Weapon Attribute ID 17 || EQUIP_BOOL ||
+|| configurableWepAttr18 || 18 18 || Configurable Weapon Attribute ID 18 || EQUIP_BOOL ||
+|| configurableWepAttr19 || 19 19 || Configurable Weapon Attribute ID 19 || EQUIP_BOOL ||
+|| configurableWepAttr20 || 20 || Configurable Weapon Attribute ID 20 || EQUIP_BOOL ||
+|| configurableWepAttr21 || twenty one || Configurable Weapon Attribute ID 21 || EQUIP_BOOL ||
+|| configurableWepAttr22 || twenty two || Configurable Weapon Attribute ID 22 || EQUIP_BOOL ||
+|| configurableWepAttr23 || twenty three || Configurable Weapon Attribute ID 23 || EQUIP_BOOL ||
+|| isDiscard || Can you throw it away || Can you throw away the item? TRUE = thrown away || EQUIP_BOOL ||
+|| isDrop || Can you put it on the spot || Can I put the item on the spot? TRUE = can be placed || EQUIP_BOOL ||
+|| isDeposit || Can i deposit || Can you leave it in the warehouse? || EQUIP_BOOL ||
+|| disableMultiDropShare || Is multi-drop sharing prohibited? || Is multi-drop sharing prohibited? || EQUIP_BOOL ||
+|| showDialogCondType || Acquisition dialog display condition || Whether to display it in the item acquisition dialog when acquiring an item (not entered: new only) || GET_DIALOG_CONDITION_TYPE ||
+|| showLogCondType || Acquisition log display condition || Whether to display in the item acquisition log when acquiring the item (not entered: ○) || EQUIP_BOOL ||
+|| pad || pad || pad || - ||
+|| defaultWepAttr || Default weapon attribute ID || Default weapon attribute ID. Can be installed even with unopened weapon attributes || - ||
+|| pad2 || pad2 || pad2 || - ||
+|| canMountWep_Dagger || dagger || Can it be attached to "Weapon type: Dagger"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_SwordNormal || Straight sword || Can it be attached to "Weapon type: Straight sword"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_SwordLarge || Large sword || Can it be attached to "Weapon Type: Large Sword"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_SwordGigantic || Oversized sword || Can it be attached to "Weapon Type: Oversized Sword"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_SaberNormal || Music sword || Can it be attached to "Weapon Type: Curly Sword"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_SaberLarge || Omagari sword || Can it be attached to "Weapon Type: Omagari Sword"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_katana || sword || Can it be attached to "Weapon type: Sword"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_SwordDoubleEdge || Double-edged sword || Can it be attached to "Weapon type: Double-edged sword"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_SwordPierce || Sword || Can it be attached to "Weapon type: Sword"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_RapierHeavy || Large sword || Can it be attached to "Weapon Type: Large Sword"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_AxeNormal || axe || Can it be attached to "Weapon Type: Ax"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_AxeLarge || Large ax || Can it be attached to "Weapon Type: Large Ax"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_HammerNormal || Hammer || Can it be attached to "Weapon type: Hammer"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_HammerLarge || Gavel || Can it be attached to "Weapon Type: Gavel"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_Flail || Frail || Can it be attached to "Weapon Type: Frail"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_SpearNormal || spear || Can it be attached to "Weapon Type: Spear"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_SpearLarge || Long spear || Can it be attached to "Weapon Type: Long Spear"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_SpearHeavy || Large spear || Can it be attached to "Weapon Type: Large Spear"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_SpearAxe || Halberd || Can it be attached to "Weapon Type: Halberd"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_Sickle || Sickle || Can it be attached to "Weapon type: Sickle"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_Knuckle || fist || Can it be attached to "Weapon type: Fist"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_Claw || nail || Can it be attached to "Weapon type: Claw"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_Whip || Whip || Can it be attached to "Weapon type: Whip"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_AxhammerLarge || Oversized ax mallet || Can it be attached to "Weapon type: Oversized ax mallet"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_BowSmall || Small bow || Can it be attached to "Weapon type: Small bow"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_BowNormal || bow || Can it be attached to "Weapon Type: Bow"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_BowLarge || Large bow || Can it be attached to "Weapon Type: Large Bow"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_ClossBow || Crossbow || Can it be attached to "Weapon Type: Crossbow"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_Ballista || Varistor || Can it be attached to "Weapon Type: Varistor"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_Staff || Wand || Can it be attached to "Weapon type: Wand"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_Sorcery || tattoo || Can it be attached to "Weapon type: Tattoo"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_Talisman || Holy mark || Can it be attached to "Weapon Type: Holy Mark"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_ShieldSmall || Small shield || Can it be attached to "Weapon Type: Small Shield"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_ShieldNormal || Middle shield || Can it be attached to "Weapon Type: Middle Shield"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_ShieldLarge || Pavise || Can it be attached to "Weapon Type: Large Shield"? No input becomes x || EQUIP_BOOL ||
+|| canMountWep_Torch || torch || Can it be attached to "Weapon type: Torch"? No input becomes x || EQUIP_BOOL ||
+|| reserved_canMountWep || Reserved area (weapon type that can be installed) || Reserved area for each type of weapon that can be installed (64 bits in total) || - ||
+|| reserved2_canMountWep || Reserved area (weapon type that can be installed) || Reserved area for each type of weapon that can be installed (64 bits in total) || - ||
+|| spEffectMsgId0 || Effect text ID 00 || Effect text ID 00 (Gem_Effect). Magic stone effect text to display in status || - ||
+|| spEffectMsgId1 || Effect text ID 01 || Effect text ID 01 (Gem_Effect). Magic stone effect text to display in status || - ||
+|| spEffectId_forAtk0 || Special effect ID00 on attack hit || Special effect parameter ID for attack hit || - ||
+|| spEffectId_forAtk1 || Special effect ID01 on attack hit || Special effect parameter ID for attack hit || - ||
+|| spEffectId_forAtk2 || Special effect ID02 on attack hit || Special effect parameter ID for attack hit || - ||
+|| mountWepTextId || Corresponding weapon type overwrite text ID || Corresponding Weapon Type Overwrite Text ID (-1: Do not overwrite) [Menu Text] || - ||
+|| pad6 || pad6 ||  || - ||

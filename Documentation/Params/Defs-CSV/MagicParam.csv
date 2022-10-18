@@ -1,0 +1,114 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,10151,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,10152,dummy8,,%d,dummy8,None
+Yes / No Dialog Message ID,Message ID of Yes / No dialog issued when using magic,-1,99999999,2500,s32,1,%d,s32,Wrap
+Special effect ID that is out of usage restrictions,Usage restrictions can be ignored when the specified special effect ID is activated,-1,999999999,1020,s32,1,%d,s32,Wrap
+SortID,Sort ID (-1: Do not collect),-1,30000,1800,s16,1,%d,s16,Wrap
+Equipment conditions [luck],Can't be equipped without more PC luck,0,99,1603,u8,1,%d,u8,Wrap
+AI notification type,AI interrupt occurs in act ("AI notification when magic is activated"),0,2,9150,u8,1,%d,MAGIC_AI_NOTIFY_TYPE,Wrap
+MP consumption [normal],MP consumption,0,9999,300,s16,1,%d,s16,Wrap
+Consumed stamina [normal],Consumption stamina,0,9999,310,s16,1,%d,s16,Wrap
+Icon ID,Specify icon> For menu,-1,30000,160,s16,1,%d,s16,Wrap
+Action ID,Set the action ID,-1,30000,1400,s16,1,%d,s16,Wrap
+Required item ID,Item ID required for purchase,-1,30000,2000,s16,1,%d,s16,Wrap
+Magic ID to replace,ID to be replaced when the state change matches (-1: invalid),-1,30000,3000,s16,1,%d,s16,Wrap
+Maximum number,Number per piece (-1: infinity),-1,9999,450,s16,1,%d,s16,Wrap
+ID category,Call ID category [Attack, Projectile, Special Effects],0,255,500,u8,1,%d,BEHAVIOR_REF_TYPE,Wrap
+Skill over start value,Skill over start value,0,99,200,u8,1,%d,u8,Wrap
+ID category,Call ID category [Attack, Projectile, Special Effects],0,255,510,u8,1,%d,BEHAVIOR_REF_TYPE,Wrap
+Required slot,Number of slots required for equipment> For menu,0,3,1600,u8,1,%d,u8,Wrap
+Equipment conditions [Intelligence],Can't be equipped without more PC intelligence,0,99,1601,u8,1,%d,u8,Wrap
+Equipment conditions [reason],It cannot be equipped without the power of the PC any more.,0,99,1602,u8,1,%d,u8,Wrap
+Analog minimum workmanship,Motion cancel analog: Minimum skill value,0,99,1005,u8,1,%d,u8,Wrap
+Maximum analog workmanship,Motion cancel analog: Maximum skill value,0,99,1006,u8,1,%d,u8,Wrap
+category,Used for sorting> For menu,0,255,100,u8,1,%d,MAGIC_CATEGORY,Wrap
+ID category,Call ID category [Attack, Projectile, Special Effects],0,255,520,u8,1,%d,BEHAVIOR_REF_TYPE,Wrap
+Special effects category,Since there are effects (enchantment weapons, etc.) whose parameters fluctuate depending on skills, magic, items, etc., set each action so that the determined effect can correspond to the effect such as "power up only weapon attack". Set "None" for items that do not need to be set, such as varistor.
+,0,255,900,u8,1,%d,BEHAVIOR_CATEGORY,Wrap
+Motion category,Specify motion> For EzState,0,255,1000,u8,1,%d,MAGIC_MOTION_TYPE,Wrap
+Menu type at the time of use,Menu type to be displayed when using magic,0,255,2600,u8,1,%d,GOODS_OPEN_MENU,Wrap
+ID category,Call ID category [Attack, Projectile, Special Effects],0,255,530,u8,1,%d,BEHAVIOR_REF_TYPE,Wrap
+Which normal is it?,Specify the state change that needs to replace the magic ID,0,255,2800,u16,1,%d,SP_EFFECT_TYPE,Wrap
+Replacement category,Additional conditions when replacing the magic ID,0,255,3100,u8,1,%d,REPLACE_CATEGORY,Wrap
+Restrictions on use by special effects category,Specified to control availability by special effects,0,255,1010,u8,1,%d,SP_EFFECT_USELIMIT_CATEGORY,Wrap
+Pledge 0,Pledge 0,0,1,10000,u8,1,%d,MAGIC_BOOL,Wrap
+Pledge 1,Pledge 1,0,1,10010,u8,1,%d,MAGIC_BOOL,Wrap
+Pledge 2,Pledge 2,0,1,10020,u8,1,%d,MAGIC_BOOL,Wrap
+Pledge 3,Pledge 3,0,1,10030,u8,1,%d,MAGIC_BOOL,Wrap
+Pledge 4,Pledge 4,0,1,10040,u8,1,%d,MAGIC_BOOL,Wrap
+Pledge 5,Pledge 5,0,1,10050,u8,1,%d,MAGIC_BOOL,Wrap
+Pledge 6,Pledge 6,0,1,10060,u8,1,%d,MAGIC_BOOL,Wrap
+Pledge 7,Pledge 7,0,1,10070,u8,1,%d,MAGIC_BOOL,Wrap
+Can it be used in multi?,Can it be used in multi? Can be used for both single and multi,0,1,1100,u8,1,%d,MAGIC_BOOL,Wrap
+Is it only for multi?,Is it only for multi? It cannot be used when it is a single. It can be used when it is multi.,0,1,1200,u8,1,%d,MAGIC_BOOL,Wrap
+Is it an enchantment?,Is it magic to enchant?,0,1,1700,u8,1,%d,MAGIC_BOOL,Wrap
+Is it a shield enchantment?,Is it magic to enchant guards and shields?,0,1,1710,u8,1,%d,MAGIC_BOOL,Wrap
+Can be used alive,Can surviving characters be used?,0,1,2100,u8,1,%d,MAGIC_BOOL,Wrap
+Gray available,Can gray characters be used?,0,1,2200,u8,1,%d,MAGIC_BOOL,Wrap
+White can be used,Can white ghost characters be used?,0,1,2300,u8,1,%d,MAGIC_BOOL,Wrap
+Black can be used,Can black ghost characters be used?,0,1,2400,u8,1,%d,MAGIC_BOOL,Wrap
+Is it unavailable offline?,Is it unavailable offline?,0,1,2700,u8,1,%d,MAGIC_BOOL,Wrap
+Do you deliver resonance magic?,Do you deliver resonance magic?,0,1,3200,u8,1,%d,MAGIC_BOOL,Wrap
+Is the armor SA damage multiplier valid even at the initial value?,Whether the toughness calculation is performed even if the armor SA is the initial value. Check the toughness specification .xlsx for details,0,1,740,u8,1,%d,MAGIC_BOOL,Wrap
+Is it warp magic?,Is it magic to warp? Magic with a check mark here is prohibited by the special effect "Warp Prohibition".,0,1,3300,u8,1,%d,MAGIC_BOOL,Wrap
+Can it be used while riding?,Can it be used while riding?,0,1,2710,u8,1,%d,MAGIC_BOOL,Wrap
+Is it prohibited to use while not riding?,Is it prohibited to use while not riding?,0,1,2720,u8,1,%d,MAGIC_BOOL,Wrap
+Can it be used in an attack-prohibited area?,Can it be used in an attack-prohibited area?,0,1,2730,u8,1,%d,MAGIC_BOOL,Wrap
+pading,,,,10153,dummy8,,%d,dummy8,Wrap
+Pledge 8,Pledge 8,0,1,10080,u8,1,%d,MAGIC_BOOL,Wrap
+Pledge 9,Pledge 9,0,1,10090,u8,1,%d,MAGIC_BOOL,Wrap
+Pledge 10,Pledge 10,0,1,10100,u8,1,%d,MAGIC_BOOL,Wrap
+Pledge 11,Pledge 11,0,1,10110,u8,1,%d,MAGIC_BOOL,Wrap
+Pledge 12,Pledge 12,0,1,10120,u8,1,%d,MAGIC_BOOL,Wrap
+Pledge 13,Pledge 13,0,1,10130,u8,1,%d,MAGIC_BOOL,Wrap
+Pledge 14,Pledge 14,0,1,10140,u8,1,%d,MAGIC_BOOL,Wrap
+Pledge 15,Pledge 15,0,1,10150,u8,1,%d,MAGIC_BOOL,Wrap
+Chanting SFXID,SFXID during magical chanting,-1,99999999,800,s32,1,%d,s32,Wrap
+Activate SFXID,SFX ID when magic is activated,-1,99999999,801,s32,1,%d,s32,Wrap
+Effect SFXID,SFXID during magic effect,-1,99999999,802,s32,1,%d,s32,Wrap
+Toughness correction factor,It is a magnification that corrects the basic value of toughness.,0,10,750,f32,0.01,%.2f,f32,Wrap
+Replacement status type,Replacement status type,0,100,7000,u8,1,%u,MAGIC_STATUS_TYPE,Wrap
+Replacement status value 1,Replacement status value 1,-1,100,7010,s8,1,%d,s8,Wrap
+Replacement status value 2,Replacement status value 2,-1,100,7020,s8,1,%d,s8,Wrap
+Replacement status value 3,Replacement status value 3,-1,100,7030,s8,1,%d,s8,Wrap
+Replacement status value 4,Replacement status value 4,-1,100,7040,s8,1,%d,s8,Wrap
+ID category,Call ID category [Attack, Projectile, Special Effects],0,255,540,u8,1,%d,BEHAVIOR_REF_TYPE,Wrap
+Consume SA [Normal / Reservoir],SA consumption [normal / reservoir],0,9999,400,s16,1,%d,s16,Wrap
+Replacement ID1,Replacement ID1,-1,99999999,7200,s32,1,%d,s32,Wrap
+Replacement ID2,Replacement ID2,-1,99999999,7210,s32,1,%d,s32,Wrap
+Replacement ID3,Replacement ID3,-1,99999999,7220,s32,1,%d,s32,Wrap
+Replacement ID 4,Replacement ID 4,-1,99999999,7230,s32,1,%d,s32,Wrap
+MP consumption [reservoir],MP consumption [reservoir],0,9999,350,s16,1,%d,s16,Wrap
+Consumption stamina [reservoir],Consumption stamina [reservoir],0,9999,360,s16,1,%d,s16,Wrap
+Creation limit group Id,If it is 0, it is unused. Check the number of bullets created for the specified group Id, and if the upper limit is reached, you will not be able to use magic.,0,255,9000,u8,1,%d,u8,Wrap
+ID category,Call ID category [Attack, Projectile, Special Effects],0,255,550,u8,1,%d,BEHAVIOR_REF_TYPE,Wrap
+Subcategory 1,Subcategory 1,0,255,950,u8,1,%d,ATK_SUB_CATEGORY,Wrap
+Subcategory 2,Subcategory 2,0,255,960,u8,1,%d,ATK_SUB_CATEGORY,Wrap
+ID category,Call ID category [Attack, Projectile, Special Effects],0,255,560,u8,1,%d,BEHAVIOR_REF_TYPE,Wrap
+ID category,Call ID category [Attack, Projectile, Special Effects],0,255,570,u8,1,%d,BEHAVIOR_REF_TYPE,Wrap
+ID category,Call ID category [Attack, Projectile, Special Effects],0,255,580,u8,1,%d,BEHAVIOR_REF_TYPE,Wrap
+ID category,Call ID category [Attack, Projectile, Special Effects],0,255,590,u8,1,%d,BEHAVIOR_REF_TYPE,Wrap
+Call ID,ID called from magic,-1,999999999,501,s32,1,%d,s32,Wrap
+Call ID,ID called from magic,-1,999999999,511,s32,1,%d,s32,Wrap
+Call ID,ID called from magic,-1,999999999,521,s32,1,%d,s32,Wrap
+AI usage judgment ID,AI usage judgment ID,-1,999999999,9100,s32,1,%d,s32,Wrap
+Call ID,ID called from magic,-1,999999999,531,s32,1,%d,s32,Wrap
+Call ID,ID called from magic,-1,999999999,541,s32,1,%d,s32,Wrap
+Call ID,ID called from magic,-1,999999999,551,s32,1,%d,s32,Wrap
+Call ID,ID called from magic,-1,999999999,561,s32,1,%d,s32,Wrap
+Call ID,ID called from magic,-1,999999999,571,s32,1,%d,s32,Wrap
+Call ID,ID called from magic,-1,999999999,581,s32,1,%d,s32,Wrap
+Call ID,ID called from magic,-1,999999999,591,s32,1,%d,s32,Wrap
+Consumption type,Consumption type,0,2,502,u8,1,%d,MAGIC_CONSUME_TYPE,Wrap
+Consumption type,Consumption type,0,2,512,u8,1,%d,MAGIC_CONSUME_TYPE,Wrap
+Consumption type,Consumption type,0,2,522,u8,1,%d,MAGIC_CONSUME_TYPE,Wrap
+Consumption type,Consumption type,0,2,532,u8,1,%d,MAGIC_CONSUME_TYPE,Wrap
+Consumption type,Consumption type,0,2,542,u8,1,%d,MAGIC_CONSUME_TYPE,Wrap
+Consumption type,Consumption type,0,2,552,u8,1,%d,MAGIC_CONSUME_TYPE,Wrap
+Consumption type,Consumption type,0,2,562,u8,1,%d,MAGIC_CONSUME_TYPE,Wrap
+Consumption type,Consumption type,0,2,572,u8,1,%d,MAGIC_CONSUME_TYPE,Wrap
+Consumption type,Consumption type,0,2,582,u8,1,%d,MAGIC_CONSUME_TYPE,Wrap
+Consumption type,Consumption type,0,2,592,u8,1,%d,MAGIC_CONSUME_TYPE,Wrap
+MP consumption for menu supplement display,MP consumption for menu supplement display,-1,9999,420,s16,1,%d,s16,Wrap
+PAD12,PAD12,,,10154,dummy8,,,dummy8,None

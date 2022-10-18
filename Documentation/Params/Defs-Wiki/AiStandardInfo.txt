@@ -1,0 +1,41 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| RadarRange || Recognition distance [m] || Distance to recognize hostile characters || - ||
+|| RadarAngleX || Recognition angle X [deg] || X angle for recognizing hostile characters: The current line-of-sight direction is 0 degrees, and the top is +. || - ||
+|| RadarAngleY || Recognition angle Y [deg] || Y angle for recognizing hostile characters: The current line-of-sight direction is 0 degrees, and the right is +. || - ||
+|| TerritorySize || Territory distance [m] || The distance of your territory. If the recognizing player deviates from this distance, it will return to the initial position. || - ||
+|| ThreatBeforeAttackRate || Intimidation rate before attack [0-100] || Probability of threatening before attack || - ||
+|| ForceThreatOnFirstLocked || First recognition menacing || Whether to intimidate when recognizing the first player || ON_OFF ||
+|| reserve0 || reserve ||  || - ||
+|| Attack1_Distance || Attack 1 Maai [m] || Time to attack [m] || - ||
+|| Attack1_Margin || Attack 1 Maai play [m] || Play between attacks. Do not vibrate near the distance || - ||
+|| Attack1_Rate || Attack 1 ratio [0-100] || Frequency of attacks || - ||
+|| Attack1_ActionID || Attack 1 type || Types of attacks || ACTION_PATTERN ||
+|| Attack1_DelayMin || Attack 1 Minimum delay time [frame] || The minimum delay time from the time when an attack becomes possible to the time when an attack is possible. || - ||
+|| Attack1_DelayMax || Attack 1 Maximum delay time [frame] || The longest delay time from the time when an attack becomes possible to the time when an attack is possible. || - ||
+|| Attack1_ConeAngle || Attack 1 Attack permission Conical angle [deg] || If the angle between the line-of-sight direction and the direction vector to the target is within this angle, the attack is OK. || - ||
+|| reserve10 || reserve ||  || - ||
+|| Attack2_Distance || Attack 2 Maai [m] || Time to attack [m] || - ||
+|| Attack2_Margin || Attack 2 Maai play [m] || Play between attacks. Do not vibrate near the distance || - ||
+|| Attack2_Rate || Attack 1 ratio [0-100] || Frequency of attacks || - ||
+|| Attack2_ActionID || Attack 2 type || Types of attacks || ACTION_PATTERN ||
+|| Attack2_DelayMin || Attack 2 Minimum delay time [frame] || The minimum delay time from the time when an attack becomes possible to the time when an attack is possible. || - ||
+|| Attack2_DelayMax || Attack 2 Maximum delay time [frame] || The longest delay time from the time when an attack becomes possible to the time when an attack is possible. || - ||
+|| Attack2_ConeAngle || Attack 2 Attack permission Conical angle [deg] || If the angle between the line-of-sight direction and the direction vector to the target is within this angle, the attack is OK. || - ||
+|| reserve11 || reserve ||  || - ||
+|| Attack3_Distance || Attack 3 Maai [m] || Time to attack [m] || - ||
+|| Attack3_Margin || Attack 3 Maai play [m] || Play between attacks. Do not vibrate near the distance || - ||
+|| Attack3_Rate || Attack 1 ratio [0-100] || Frequency of attacks || - ||
+|| Attack3_ActionID || Attack 3 types || Types of attacks || ACTION_PATTERN ||
+|| Attack3_DelayMin || Attack 3 Minimum delay time [frame] || The minimum delay time from the time when an attack becomes possible to the time when an attack is possible. || - ||
+|| Attack3_DelayMax || Attack 3 Maximum delay time [frame] || The longest delay time from the time when an attack becomes possible to the time when an attack is possible. || - ||
+|| Attack3_ConeAngle || Attack 3 Attack permission Conical angle [deg] || If the angle between the line-of-sight direction and the direction vector to the target is within this angle, the attack is OK. || - ||
+|| reserve12 || reserve ||  || - ||
+|| Attack4_Distance || Attack 4 Maai [m] || Time to attack [m] || - ||
+|| Attack4_Margin || Attack 4 Maai play [m] || Play between attacks. Do not vibrate near the distance || - ||
+|| Attack4_Rate || Attack 1 ratio [0-100] || Frequency of attacks || - ||
+|| Attack4_ActionID || 4 types of attacks || Types of attacks || ACTION_PATTERN ||
+|| Attack4_DelayMin || Attack 4 Minimum delay time [frame] || The minimum delay time from the time when an attack becomes possible to the time when an attack is possible. || - ||
+|| Attack4_DelayMax || Attack 4 Maximum delay time [frame] || The longest delay time from the time when an attack becomes possible to the time when an attack is possible. || - ||
+|| Attack4_ConeAngle || Attack 4 Attack permission Conical angle [deg] || If the angle between the line-of-sight direction and the direction vector to the target is within this angle, the attack is OK. || - ||
+|| reserve13 || reserve ||  || - ||
+|| reserve_last || reserve ||  || - ||

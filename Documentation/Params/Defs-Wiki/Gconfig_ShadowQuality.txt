@@ -1,0 +1,9 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| enabled || Shadow is enabled || Shadow is enabled || ON_OFF ||
+|| maxFilterLevel || Maximum filter quality allowed || Maximum filter quality allowed || GX_SHADOW_FILTER_LEVEL ||
+|| dmy || dmy ||  || - ||
+|| textureSizeScaler || Scaler with set shadow map resolution || Scaler with set shadow map resolution || - ||
+|| textureSizeDivider || Divide the set shadow map resolution || Divide the set shadow map resolution || - ||
+|| textureMinSize || Minimum resolution || Clamp resolution || - ||
+|| textureMaxSize || Maximum resolution || Clamp the resolution. It will be the resolution judgment for each cascade || - ||
+|| blurCountBias || Blur count bias || Blur count bias (set count bias, unchanged at 0) || - ||

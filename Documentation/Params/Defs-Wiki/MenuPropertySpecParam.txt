@@ -1,0 +1,8 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| CaptionTextID || Item name Text ID ||  || - ||
+|| IconID || Item icon ID ||  || - ||
+|| RequiredPropertyID || Required skills ||  || MENU_PROPERTY_ID ||
+|| CompareType || Superiority or inferiority judgment ||  || MENU_PROPERTY_CMP_TYPE ||
+|| pad2 || Padding ||  || - ||
+|| FormatType || Format ||  || MENU_PROPERTY_FORMAT_TYPE ||
+|| pad || Padding ||  || - ||

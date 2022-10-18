@@ -1,0 +1,5 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Special effect ID1,Special effect ID1,-1,999999,1000,s32,1,%d,s32,None
+Special effect ID2,Special effect ID2,-1,999999,1001,s32,1,%d,s32,None
+Special effect ID3,Special effect ID3,-1,999999,1002,s32,1,%d,s32,None
+Special effect ID4,Special effect ID4,-1,999999,1003,s32,1,%d,s32,None

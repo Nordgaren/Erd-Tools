@@ -1,0 +1,23 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| Lv00 || Lv00 || Lv00 Drawing distance scale || - ||
+|| Lv01 || Lv01 || Lv01 Drawing distance scale || - ||
+|| Lv02 || Lv02 || Lv02 Drawing distance scale || - ||
+|| Lv03 || Lv03 || Lv03 Drawing distance scale || - ||
+|| Lv04 || Lv04 || Lv04 Drawing distance scale || - ||
+|| Lv05 || Lv05 || Lv05 Drawing distance scale || - ||
+|| Lv06 || Lv06 || Lv06 Drawing distance scale || - ||
+|| Lv07 || Lv07 || Lv07 Drawing distance scale || - ||
+|| Lv08 || Lv08 || Lv08 Drawing distance scale || - ||
+|| Lv09 || Lv09 || Lv09 Drawing distance scale || - ||
+|| Lv10 || Lv10 || Lv10 Drawing distance scale || - ||
+|| Lv11 || Lv11 || Lv11 Drawing distance scale || - ||
+|| Lv12 || Lv12 || Lv12 Drawing distance scale || - ||
+|| Lv13 || Lv13 || Lv13 Drawing distance scale || - ||
+|| Lv14 || Lv14 || Lv14 Drawing distance scale || - ||
+|| Lv15 || Lv15 || Lv15 Drawing distance scale || - ||
+|| Lv16 || Lv16 || Lv16 Drawing distance scale || - ||
+|| Lv17 || Lv17 || Lv17 Drawing distance scale || - ||
+|| Lv18 || Lv18 || Lv18 Drawing distance scale || - ||
+|| Lv19 || Lv19 || Lv19 Drawing distance scale || - ||
+|| Lv20 || Lv20 || Lv20 Drawing distance scale || - ||
+|| reserve || Reserve || Reserve || - ||

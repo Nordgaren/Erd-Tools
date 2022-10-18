@@ -1,0 +1,24 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+MsgID when action is enabled,The MsgID of the menu displayed when the action is enabled.,-1,99999999,9000,s32,1,%d,s32,Wrap
+MsgID when action fails,The MsgID of the menu to display when the action fails.,-1,99999999,10000,s32,1,%d,s32,Wrap
+Event flags for special condition paths,Event flags for unconditionally passing special conditions.,0,-294967297,8500,u32,1,%u,u32,Wrap
+Player anime ID 0,This is the animation ID for the action of the player character.,0,999999999,5000,u32,1,%d,u32,Wrap
+Character anime ID0,Anime ID at the time of action such as enemy,0,999999999,6000,u32,1,%d,u32,Wrap
+Effective distance of action [cm],The effective distance of the action.,0,60000,3000,u16,1,%d,u16,Wrap
+Special condition ID,Special condition ID,0,9999,8000,u16,1,%d,u16,Wrap
+Special condition ID 2,Special condition ID part 2,0,9999,8011,u16,1,%d,u16,Wrap
+Damipoli ID0 of the object,Damipoli ID that is the action position of the object,0,255,1000,u8,1,%d,u8,Wrap
+Whether to synchronize event kicks,ObjAct Whether to synchronize the events used in the execution judgment. Set to basic ×. It may be set to ○ only when the actor is not important.,0,1,950,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Object Anime ID0,This is the animation ID for the action of the object.,0,999999999,2000,u32,1,%d,u32,Wrap
+Effective angle of player action,The effective angle of the player's action. Effective angle difference between the player's orientation vector and the orientation vector to the object,0,180,4000,u8,1,%d,u8,Wrap
+Special condition type,Types of special conditions,0,255,7000,u8,1,%d,OBJACT_SP_QUALIFIED_TYPE,Wrap
+Special condition type 2,Type of special condition 2,0,255,8010,u8,1,%d,OBJACT_SP_QUALIFIED_TYPE,Wrap
+Effective angle of action of the object,The action effective angle of the object. Effective angle difference between the action vector of the object and the character vector,0,180,4500,u8,1,%d,u8,Wrap
+Character adsorption type,It is a method of adsorbing characters during object action.,0,255,1500,u8,1,%d,OBJACT_CHR_SORB_TYPE,Wrap
+Event activation timing,Event execution timing,0,255,900,u8,1,%d,OBJACT_EVENT_KICK_TIMING,Wrap
+pad1,,,,13001,dummy8,,,dummy8,None
+Action button parameter ID,Action button parameter ID,-1,99999999,100,s32,1,%d,s32,Wrap
+Treasure activation delay (seconds),The number of seconds from the execution of the object action to the activation of the treasure. A setting exclusively for the object type "treasure box" of the object act.,0,1E+09,11000,f32,0.01,%f,f32,Wrap
+Damipoly ID for SFX before execution,Issue SFX from this Damipoli ID before executing the object. If it is -1, start from the origin.,-1,999999999,12000,s32,1,%d,s32,Wrap
+Pre-execution SFXID,SFX issued before executing the object. If it is -1, it will not be issued.,-1,999999999,13000,s32,1,%d,s32,Wrap
+pad2,,,,13002,dummy8,,,dummy8,None

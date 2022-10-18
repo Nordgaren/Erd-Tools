@@ -1,0 +1,23 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| EnemyBehaviorID || Behavior id || Enemy behavior ID || ENEMY_BEHAVIOR_ID ||
+|| HP || Hit points || Hit points || - ||
+|| AttackPower || Offensive power || Attack power (for proto only) || - ||
+|| ChrType || Character type || Character type || ChrType ||
+|| HitHeight || Height per [m] || Height per (Please specify a size larger than the diameter) || - ||
+|| HitRadius || Radius around [m] || Radius around || - ||
+|| Weight || Weight [kg] || The weight of the character || - ||
+|| DynamicFriction || Dynamic friction force || Dynamic friction force || - ||
+|| StaticFriction || Static friction || Static friction force || - ||
+|| UpperDefState || Upper body initial state || Upper body initial state (PG input) || - ||
+|| ActionDefState || Initial state of action || Action initial state (PG input) || - ||
+|| RotY_per_Second || Angle that can be turned per unit time [deg / s] || Y-axis turning angle per unit time [deg / s] || - ||
+|| reserve0 || reserve ||  || - ||
+|| RotY_per_Second_old || unused || unused || - ||
+|| EnableSideStep || Can you move left and right? || Can you move left and right? || - ||
+|| UseRagdollHit || Whether to use a ragdoll per character || Whether to use a ragdoll per character || - ||
+|| reserve_last || reserve ||  || - ||
+|| stamina || Amount of stamina || Total amount of stamina || - ||
+|| staminaRecover || Stamina recovery || Stamina recovery amount per second || - ||
+|| staminaConsumption || Stamina basic consumption || Basic value of stamina consumption used when attacking and guarding || - ||
+|| deffenct_Phys || Physical defense || Damage reduction base value for physical attacks || - ||
+|| reserve_last2 || Reservation 1 ||  || - ||

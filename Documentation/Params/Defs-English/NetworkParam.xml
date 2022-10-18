@@ -1,0 +1,1528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PARAMDEF XmlVersion="3">
+  <ParamType>NETWORK_PARAM_ST</ParamType>
+  <DataVersion>10</DataVersion>
+  <BigEndian>False</BigEndian>
+  <Unicode>True</Unicode>
+  <FormatVersion>203</FormatVersion>
+  <Fields>
+    <Field Def="f32 signVerticalOffset">
+      <DisplayName>Sign height offset [m]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1</Maximum>
+      <UnkB8>common</UnkB8>
+      <UnkC0>NET_COMMON_PARAM</UnkC0>
+      <UnkC8>共通</UnkC8>
+    </Field>
+    <Field Def="f32 maxSignPosCorrectionRange">
+      <DisplayName>Sign position correction maximum distance [m]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1</Maximum>
+      <SortID>1</SortID>
+      <UnkB8>common</UnkB8>
+      <UnkC0>NET_COMMON_PARAM</UnkC0>
+      <UnkC8>共通</UnkC8>
+    </Field>
+    <Field Def="f32 summonTimeoutTime">
+      <DisplayName>Summon desired timeout time [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>999</Maximum>
+      <Increment>1</Increment>
+      <SortID>2</SortID>
+      <UnkB8>common</UnkB8>
+      <UnkC0>NET_COMMON_PARAM</UnkC0>
+      <UnkC8>共通</UnkC8>
+    </Field>
+    <Field Def="dummy8 pad[4]">
+      <DisplayName>reserve</DisplayName>
+      <SortID>3</SortID>
+      <UnkB8>common</UnkB8>
+      <UnkC0>NET_COMMON_PARAM</UnkC0>
+      <UnkC8>共通</UnkC8>
+    </Field>
+    <Field Def="f32 signPuddleActiveMessageIntervalSec = 1">
+      <DisplayName>Message display interval [seconds] during registration of signature accumulation</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>10000</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>100</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="f32 keyGuideHeight = 1">
+      <DisplayName>Key guide vertical range [m]</DisplayName>
+      <Minimum>1</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>101</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="f32 reloadSignIntervalTime1 = 1">
+      <DisplayName>Waiting time for reacquisition of summoning sign (during depopulation) [seconds]</DisplayName>
+      <Minimum>1</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>102</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="f32 reloadSignIntervalTime2 = 1">
+      <DisplayName>Summon sign reacquisition waiting time [seconds]</DisplayName>
+      <Minimum>1</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>103</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="u32 reloadSignTotalCount = 1">
+      <DisplayName>Maximum number of summon signs you can have (overall)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Minimum>1</Minimum>
+      <Maximum>20</Maximum>
+      <SortID>105</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="u32 reloadSignCellCount = 1">
+      <DisplayName>Maximum number of summon signs you can have (cell)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Minimum>1</Minimum>
+      <Maximum>99</Maximum>
+      <SortID>106</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="f32 updateSignIntervalTime = 1">
+      <DisplayName>Summon sign update waiting time [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>107</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="f32 basicExclusiveRange = 1">
+      <DisplayName>Exclusive horizontal range for drawing between summon signs [m]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>108</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="f32 basicExclusiveHeight = 1">
+      <DisplayName>Exclusive vertical range for drawing between summon signs [m]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>109</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="f32 previewChrWaitingTime = 1">
+      <DisplayName>Summon sign character model drawing waiting time [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>110</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="f32 signVisibleRange = 1">
+      <DisplayName>Summon sign PC drawing distance [m]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>112</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="u32 cellGroupHorizontalRange = 1">
+      <DisplayName>Summon sign acquisition cell range (horizontal)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>1</Maximum>
+      <SortID>113</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="u32 cellGroupTopRange = 1">
+      <DisplayName>Summon sign acquisition cell range (upward)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>1</Maximum>
+      <SortID>114</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="u32 cellGroupBottomRange = 1">
+      <DisplayName>Summon sign acquisition cell range (downward)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>1</Maximum>
+      <SortID>115</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="f32 minWhitePhantomLimitTimeScale = 1">
+      <DisplayName>White spirit sign display time limit lower limit magnification</DisplayName>
+      <Minimum>1</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>116</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="f32 minSmallPhantomLimitTimeScale = 1">
+      <DisplayName>Small spirit sign display time limit lower limit magnification</DisplayName>
+      <Minimum>1</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>117</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="f32 whiteKeywordLimitTimeScale = 1">
+      <DisplayName>White spirit sign keyword extension magnification</DisplayName>
+      <Minimum>1</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>118</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="f32 smallKeywordLimitTimeScale = 1">
+      <DisplayName>Ghost sign keyword extension magnification</DisplayName>
+      <Minimum>1</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>119</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="f32 blackKeywordLimitTimeScale = 1">
+      <DisplayName>Dark Spirit Sign Keyword Extension Magnification</DisplayName>
+      <Minimum>1</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>120</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="f32 dragonKeywordLimitTimeScale = 1">
+      <DisplayName>Dragon Spirit Sign Keyword Extension Magnification</DisplayName>
+      <Minimum>1</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>121</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="u32 singGetMax = 1">
+      <DisplayName>Sign acquisition limit</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>1000</Maximum>
+      <SortID>122</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="f32 signDownloadSpan = 1">
+      <DisplayName>Sign download span</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>123</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="f32 signUpdateSpan = 1">
+      <DisplayName>Sign upload span</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>124</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="dummy8 signPad[4]">
+      <DisplayName>reserve</DisplayName>
+      <SortID>125</SortID>
+      <UnkB8>summonSign</UnkB8>
+      <UnkC0>NET_SUMMON_SIGN_PARAM</UnkC0>
+      <UnkC8>召喚サイン</UnkC8>
+    </Field>
+    <Field Def="u32 maxBreakInTargetListCount = 1">
+      <DisplayName>Number of intruders acquired</DisplayName>
+      <DisplayFormat>%u</DisplayFormat>
+      <Minimum>1</Minimum>
+      <Maximum>1000</Maximum>
+      <SortID>200</SortID>
+      <UnkB8>breakIn</UnkB8>
+      <UnkC0>NET_BREAKIN_PARAM</UnkC0>
+      <UnkC8>乱入</UnkC8>
+    </Field>
+    <Field Def="f32 breakInRequestIntervalTimeSec = 4">
+      <DisplayName>Intrusion request interval [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>999</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>201</SortID>
+      <UnkB8>breakIn</UnkB8>
+      <UnkC0>NET_BREAKIN_PARAM</UnkC0>
+      <UnkC8>乱入</UnkC8>
+    </Field>
+    <Field Def="f32 breakInRequestTimeOutSec = 20">
+      <DisplayName>Intrusion request timeout time [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>999</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>202</SortID>
+      <UnkB8>breakIn</UnkB8>
+      <UnkC0>NET_BREAKIN_PARAM</UnkC0>
+      <UnkC8>乱入</UnkC8>
+    </Field>
+    <Field Def="dummy8 pad[4]">
+      <DisplayName>reserve</DisplayName>
+      <DisplayFormat>%f</DisplayFormat>
+      <EditFlags>Wrap</EditFlags>
+      <SortID>203</SortID>
+      <UnkB8>breakIn</UnkB8>
+      <UnkC0>NET_BREAKIN_PARAM</UnkC0>
+      <UnkC8>乱入</UnkC8>
+    </Field>
+    <Field Def="f32 keyGuideRange = 1">
+      <DisplayName>Key guide horizontal range [m]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>300</SortID>
+      <UnkB8>bloodMessage</UnkB8>
+      <UnkC0>NET_BLOOD_MESSAGE_PARAM</UnkC0>
+      <UnkC8>血文字</UnkC8>
+    </Field>
+    <Field Def="f32 keyGuideHeight = 1">
+      <DisplayName>Key guide vertical range [m]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>301</SortID>
+      <UnkB8>bloodMessage</UnkB8>
+      <UnkC0>NET_BLOOD_MESSAGE_PARAM</UnkC0>
+      <UnkC8>血文字</UnkC8>
+    </Field>
+    <Field Def="u32 reloadSignTotalCount = 1">
+      <DisplayName>Number of blood characters acquired (overall)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Minimum>1</Minimum>
+      <Maximum>99</Maximum>
+      <SortID>302</SortID>
+      <UnkB8>bloodMessage</UnkB8>
+      <UnkC0>NET_BLOOD_MESSAGE_PARAM</UnkC0>
+      <UnkC8>血文字</UnkC8>
+    </Field>
+    <Field Def="u32 reloadNewSignCellCount = 1">
+      <DisplayName>Number of blood characters acquired (cell, new order)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Minimum>1</Minimum>
+      <Maximum>99</Maximum>
+      <SortID>303</SortID>
+      <UnkB8>bloodMessage</UnkB8>
+      <UnkC0>NET_BLOOD_MESSAGE_PARAM</UnkC0>
+      <UnkC8>血文字</UnkC8>
+    </Field>
+    <Field Def="u32 reloadRandomSignCellCount = 1">
+      <DisplayName>Number of blood characters acquired (cell, random)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Minimum>1</Minimum>
+      <Maximum>99</Maximum>
+      <SortID>304</SortID>
+      <UnkB8>bloodMessage</UnkB8>
+      <UnkC0>NET_BLOOD_MESSAGE_PARAM</UnkC0>
+      <UnkC8>血文字</UnkC8>
+    </Field>
+    <Field Def="u32 maxSignTotalCount = 1">
+      <DisplayName>Upper limit of the number of blood characters that can be possessed (overall)</DisplayName>
+      <Description>Actually u16 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Minimum>1</Minimum>
+      <Maximum>999</Maximum>
+      <SortID>305</SortID>
+      <UnkB8>bloodMessage</UnkB8>
+      <UnkC0>NET_BLOOD_MESSAGE_PARAM</UnkC0>
+      <UnkC8>血文字</UnkC8>
+    </Field>
+    <Field Def="u32 maxSignCellCount = 1">
+      <DisplayName>Upper limit of the number of blood characters that can be possessed (cell)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Minimum>1</Minimum>
+      <Maximum>100</Maximum>
+      <SortID>307</SortID>
+      <UnkB8>bloodMessage</UnkB8>
+      <UnkC0>NET_BLOOD_MESSAGE_PARAM</UnkC0>
+      <UnkC8>血文字</UnkC8>
+    </Field>
+    <Field Def="f32 basicExclusiveRange = 1">
+      <DisplayName>Blood character drawing exclusive horizontal range [m]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>308</SortID>
+      <UnkB8>bloodMessage</UnkB8>
+      <UnkC0>NET_BLOOD_MESSAGE_PARAM</UnkC0>
+      <UnkC8>血文字</UnkC8>
+    </Field>
+    <Field Def="f32 basicExclusiveHeight = 1">
+      <DisplayName>Blood character drawing exclusive vertical range [m]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>309</SortID>
+      <UnkB8>bloodMessage</UnkB8>
+      <UnkC0>NET_BLOOD_MESSAGE_PARAM</UnkC0>
+      <UnkC8>血文字</UnkC8>
+    </Field>
+    <Field Def="f32 signVisibleRange = 1">
+      <DisplayName>Blood character PC drawing distance [m]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>310</SortID>
+      <UnkB8>bloodMessage</UnkB8>
+      <UnkC0>NET_BLOOD_MESSAGE_PARAM</UnkC0>
+      <UnkC8>血文字</UnkC8>
+    </Field>
+    <Field Def="u32 maxWriteSignCount = 1">
+      <DisplayName>Maximum number of written blood characters history</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>1000</Maximum>
+      <SortID>311</SortID>
+      <UnkB8>bloodMessage</UnkB8>
+      <UnkC0>NET_BLOOD_MESSAGE_PARAM</UnkC0>
+      <UnkC8>血文字</UnkC8>
+    </Field>
+    <Field Def="u32 maxReadSignCount = 1">
+      <DisplayName>Maximum number of blood characters read</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>1000</Maximum>
+      <SortID>312</SortID>
+      <UnkB8>bloodMessage</UnkB8>
+      <UnkC0>NET_BLOOD_MESSAGE_PARAM</UnkC0>
+      <UnkC8>血文字</UnkC8>
+    </Field>
+    <Field Def="f32 reloadSignIntervalTime = 1">
+      <DisplayName>Blood character reacquisition waiting time [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>313</SortID>
+      <UnkB8>bloodMessage</UnkB8>
+      <UnkC0>NET_BLOOD_MESSAGE_PARAM</UnkC0>
+      <UnkC8>血文字</UnkC8>
+    </Field>
+    <Field Def="u32 cellGroupHorizontalRange = 1">
+      <DisplayName>Blood character acquisition cell range (horizontal)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>1</Maximum>
+      <SortID>314</SortID>
+      <UnkB8>bloodMessage</UnkB8>
+      <UnkC0>NET_BLOOD_MESSAGE_PARAM</UnkC0>
+      <UnkC8>血文字</UnkC8>
+    </Field>
+    <Field Def="u32 cellGroupTopRange = 1">
+      <DisplayName>Blood character acquisition cell range (upward)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>1</Maximum>
+      <SortID>315</SortID>
+      <UnkB8>bloodMessage</UnkB8>
+      <UnkC0>NET_BLOOD_MESSAGE_PARAM</UnkC0>
+      <UnkC8>血文字</UnkC8>
+    </Field>
+    <Field Def="u32 cellGroupBottomRange = 1">
+      <DisplayName>Blood character acquisition cell range (downward)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>1</Maximum>
+      <SortID>316</SortID>
+      <UnkB8>bloodMessage</UnkB8>
+      <UnkC0>NET_BLOOD_MESSAGE_PARAM</UnkC0>
+      <UnkC8>血文字</UnkC8>
+    </Field>
+    <Field Def="u32 lifeTime = 1">
+      <DisplayName>Blood character data retention period upper limit [seconds]</DisplayName>
+      <Description>Actually u16 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Minimum>1</Minimum>
+      <Maximum>1800</Maximum>
+      <SortID>317</SortID>
+      <UnkB8>bloodMessage</UnkB8>
+      <UnkC0>NET_BLOOD_MESSAGE_PARAM</UnkC0>
+      <UnkC8>血文字</UnkC8>
+    </Field>
+    <Field Def="f32 downloadSpan">
+      <DisplayName>Blood character download interval</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>10000</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>318</SortID>
+      <UnkB8>bloodMessage</UnkB8>
+      <UnkC0>NET_BLOOD_MESSAGE_PARAM</UnkC0>
+      <UnkC8>血文字</UnkC8>
+    </Field>
+    <Field Def="f32 downloadEvaluationSpan">
+      <DisplayName>Blood character evaluation number Download interval</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>10000</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>318</SortID>
+      <UnkB8>bloodMessage</UnkB8>
+      <UnkC0>NET_BLOOD_MESSAGE_PARAM</UnkC0>
+      <UnkC8>血文字</UnkC8>
+    </Field>
+    <Field Def="dummy8 pad[4]">
+      <DisplayName>reserve</DisplayName>
+      <SortID>319</SortID>
+      <UnkB8>bloodMessage</UnkB8>
+      <UnkC0>NET_BLOOD_MESSAGE_PARAM</UnkC0>
+      <UnkC8>血文字</UnkC8>
+    </Field>
+    <Field Def="f32 deadingGhostStartPosThreshold = 1">
+      <DisplayName>Allowable distance between bloodstain position and illusion start position [m]</DisplayName>
+      <Description>If the distance between the bloodstain position and the illusion start position is farther than this value, the server will not be registered.</Description>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>401</SortID>
+      <UnkB8>bloodstain</UnkB8>
+      <UnkC0>NET_BLOODSTAIN_PARAM</UnkC0>
+      <UnkC8>血痕</UnkC8>
+    </Field>
+    <Field Def="f32 keyGuideHeight = 1">
+      <DisplayName>Key guide vertical range [m]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>402</SortID>
+      <UnkB8>bloodstain</UnkB8>
+      <UnkC0>NET_BLOODSTAIN_PARAM</UnkC0>
+      <UnkC8>血痕</UnkC8>
+    </Field>
+    <Field Def="f32 keyGuideRangePlayer = 1">
+      <DisplayName>Player Bloodstain Key Guide Horizontal Range [m]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>403</SortID>
+      <UnkB8>bloodstain</UnkB8>
+      <UnkC0>NET_BLOODSTAIN_PARAM</UnkC0>
+      <UnkC8>血痕</UnkC8>
+    </Field>
+    <Field Def="f32 keyGuideHeightPlayer = 1">
+      <DisplayName>Player Bloodstain Key Guide Vertical Range [m]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>404</SortID>
+      <UnkB8>bloodstain</UnkB8>
+      <UnkC0>NET_BLOODSTAIN_PARAM</UnkC0>
+      <UnkC8>血痕</UnkC8>
+    </Field>
+    <Field Def="u32 reloadSignTotalCount = 1">
+      <DisplayName>Number of blood stains acquired (overall)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>99</Maximum>
+      <SortID>405</SortID>
+      <UnkB8>bloodstain</UnkB8>
+      <UnkC0>NET_BLOODSTAIN_PARAM</UnkC0>
+      <UnkC8>血痕</UnkC8>
+    </Field>
+    <Field Def="u32 reloadSignCellCount = 1">
+      <DisplayName>Number of blood stains obtained (cell)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>99</Maximum>
+      <SortID>406</SortID>
+      <UnkB8>bloodstain</UnkB8>
+      <UnkC0>NET_BLOODSTAIN_PARAM</UnkC0>
+      <UnkC8>血痕</UnkC8>
+    </Field>
+    <Field Def="u32 maxSignTotalCount = 1">
+      <DisplayName>Upper limit of the number of blood stains that can be possessed (overall)</DisplayName>
+      <Description>Actually u16 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>100</Maximum>
+      <SortID>407</SortID>
+      <UnkB8>bloodstain</UnkB8>
+      <UnkC0>NET_BLOODSTAIN_PARAM</UnkC0>
+      <UnkC8>血痕</UnkC8>
+    </Field>
+    <Field Def="u32 maxSignCellCount = 1">
+      <DisplayName>Maximum number of blood stains (cell)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>99</Maximum>
+      <SortID>408</SortID>
+      <UnkB8>bloodstain</UnkB8>
+      <UnkC0>NET_BLOODSTAIN_PARAM</UnkC0>
+      <UnkC8>血痕</UnkC8>
+    </Field>
+    <Field Def="f32 reloadSignIntervalTime = 1">
+      <DisplayName>Waiting time for reacquisition of blood stains [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>409</SortID>
+      <UnkB8>bloodstain</UnkB8>
+      <UnkC0>NET_BLOODSTAIN_PARAM</UnkC0>
+      <UnkC8>血痕</UnkC8>
+    </Field>
+    <Field Def="f32 signVisibleRange = 1">
+      <DisplayName>Bloodstain PC drawing distance [m]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>410</SortID>
+      <UnkB8>bloodstain</UnkB8>
+      <UnkC0>NET_BLOODSTAIN_PARAM</UnkC0>
+      <UnkC8>血痕</UnkC8>
+    </Field>
+    <Field Def="f32 basicExclusiveRange = 1">
+      <DisplayName>Exclusive horizontal range for drawing between blood stains [m]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>411</SortID>
+      <UnkB8>bloodstain</UnkB8>
+      <UnkC0>NET_BLOODSTAIN_PARAM</UnkC0>
+      <UnkC8>血痕</UnkC8>
+    </Field>
+    <Field Def="f32 basicExclusiveHeight = 1">
+      <DisplayName>Exclusive vertical range for drawing between blood stains [m]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>412</SortID>
+      <UnkB8>bloodstain</UnkB8>
+      <UnkC0>NET_BLOODSTAIN_PARAM</UnkC0>
+      <UnkC8>血痕</UnkC8>
+    </Field>
+    <Field Def="u32 cellGroupHorizontalRange = 1">
+      <DisplayName>Blood stain acquisition cell range (horizontal)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>1</Maximum>
+      <SortID>413</SortID>
+      <UnkB8>bloodstain</UnkB8>
+      <UnkC0>NET_BLOODSTAIN_PARAM</UnkC0>
+      <UnkC8>血痕</UnkC8>
+    </Field>
+    <Field Def="u32 cellGroupTopRange = 1">
+      <DisplayName>Blood stain acquisition cell range (upward)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>1</Maximum>
+      <SortID>414</SortID>
+      <UnkB8>bloodstain</UnkB8>
+      <UnkC0>NET_BLOODSTAIN_PARAM</UnkC0>
+      <UnkC8>血痕</UnkC8>
+    </Field>
+    <Field Def="u32 cellGroupBottomRange = 1">
+      <DisplayName>Blood stain acquisition cell range (downward)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>1</Maximum>
+      <SortID>415</SortID>
+      <UnkB8>bloodstain</UnkB8>
+      <UnkC0>NET_BLOODSTAIN_PARAM</UnkC0>
+      <UnkC8>血痕</UnkC8>
+    </Field>
+    <Field Def="u32 lifeTime = 1">
+      <DisplayName>Bloodstain data retention period upper limit [seconds]</DisplayName>
+      <Description>Actually u16 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Minimum>1</Minimum>
+      <Maximum>1800</Maximum>
+      <SortID>416</SortID>
+      <UnkB8>bloodstain</UnkB8>
+      <UnkC0>NET_BLOODSTAIN_PARAM</UnkC0>
+      <UnkC8>血痕</UnkC8>
+    </Field>
+    <Field Def="f32 recordDeadingGhostTotalTime">
+      <DisplayName>Death illusion record total time [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>999</Maximum>
+      <Increment>1</Increment>
+      <SortID>417</SortID>
+      <UnkB8>bloodstain</UnkB8>
+      <UnkC0>NET_BLOODSTAIN_PARAM</UnkC0>
+      <UnkC8>血痕</UnkC8>
+    </Field>
+    <Field Def="f32 recordDeadingGhostMinTime = 5">
+      <DisplayName>Minimum recording time of death illusion [seconds]</DisplayName>
+      <Description>Death illusions less than this recording time will not register the server</Description>
+      <Minimum>0</Minimum>
+      <Maximum>40</Maximum>
+      <Increment>1</Increment>
+      <SortID>418</SortID>
+      <UnkB8>bloodstain</UnkB8>
+      <UnkC0>NET_BLOODSTAIN_PARAM</UnkC0>
+      <UnkC8>血痕</UnkC8>
+    </Field>
+    <Field Def="f32 downloadSpan">
+      <DisplayName>Bloodstain download interval</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>10000</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>419</SortID>
+      <UnkB8>bloodstain</UnkB8>
+      <UnkC0>NET_BLOODSTAIN_PARAM</UnkC0>
+      <UnkC8>血痕</UnkC8>
+    </Field>
+    <Field Def="f32 statueCreatableDistance = 80">
+      <DisplayName>Petrified blood stain drawing limit distance [m]</DisplayName>
+      <Description>For open fields. When a stone statue is generated, it can be generated if the distance between the PC and the generation position is greater than or equal to this value.</Description>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>420</SortID>
+      <UnkB8>bloodstain</UnkB8>
+      <UnkC0>NET_BLOODSTAIN_PARAM</UnkC0>
+      <UnkC8>血痕</UnkC8>
+    </Field>
+    <Field Def="u32 reloadGhostTotalCount = 1">
+      <DisplayName>Number of illusions acquired (overall)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>99</Maximum>
+      <SortID>500</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="u32 reloadGhostCellCount = 1">
+      <DisplayName>Number of illusions acquired (cell)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>99</Maximum>
+      <SortID>501</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="u32 maxGhostTotalCount = 1">
+      <DisplayName>Maximum number of illusions you can have (overall)</DisplayName>
+      <Description>Actually u16 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>10</Maximum>
+      <SortID>502</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="f32 distanceOfBeginRecordVersus = 1">
+      <DisplayName>Hostile PC replay recording start distance [m]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>503</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="f32 distanceOfEndRecordVersus = 1">
+      <DisplayName>Hostile PC replay recording end distance [m]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>504</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="f32 updateWanderGhostIntervalTime = 1">
+      <DisplayName>Wandering illusion upload interval [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>505</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="f32 updateVersusGhostIntervalTime = 1">
+      <DisplayName>Battle illusion upload interval [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>506</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="f32 recordWanderingGhostTime = 1">
+      <DisplayName>Phantom recording time [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>40</Maximum>
+      <Increment>1</Increment>
+      <SortID>507</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="f32 recordWanderingGhostMinTime = 5">
+      <DisplayName>Minimum recording time of wandering illusion [seconds]</DisplayName>
+      <Description>Wandering illusions less than this recording time do not register the server</Description>
+      <Minimum>0</Minimum>
+      <Maximum>40</Maximum>
+      <Increment>1</Increment>
+      <SortID>508</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="f32 updateBonfireGhostIntervalTime = 1">
+      <DisplayName>Kagaribi illusion upload interval [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>509</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="f32 replayGhostRangeOnView = 1">
+      <DisplayName>Phantom reproduction distance (in the field of view) [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>510</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="f32 replayGhostRangeOutView = 1">
+      <DisplayName>Phantom playback distance (out of field of view) [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>511</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="f32 replayBonfireGhostTime = 1">
+      <DisplayName>Kagaribi illusion Playing time [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>512</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="f32 minBonfireGhostValidRange = 1">
+      <DisplayName>Kagaribi illusion placement minimum distance [seconds]</DisplayName>
+      <Description>Do not place bonfire illusions less than this distance from the bonfire</Description>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>513</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="f32 maxBonfireGhostValidRange = 1">
+      <DisplayName>Kagaribi illusion placement maximum distance [seconds]</DisplayName>
+      <Description>Do not place bonfire illusions beyond this distance from the bonfire</Description>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>514</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="f32 minReplayIntervalTime = 1">
+      <DisplayName>Phantom playback interval lower limit [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>515</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="f32 maxReplayIntervalTime = 1">
+      <DisplayName>Phantom playback interval upper limit [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>516</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="f32 reloadGhostIntervalTime = 1">
+      <DisplayName>Phantom periodic acquisition interval [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>517</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="u32 cellGroupHorizontalRange = 1">
+      <DisplayName>Phantom acquisition cell range (horizontal)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>1</Maximum>
+      <SortID>518</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="u32 cellGroupTopRange = 1">
+      <DisplayName>Phantom acquisition cell range (upward)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>1</Maximum>
+      <SortID>519</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="s32 replayBonfirePhantomParamIdForCodename">
+      <DisplayName>Phantom bonfire mode phantom parameter ID (codename)</DisplayName>
+      <Description>Phantom bonfire mode phantom parameter ID used when codename matches</Description>
+      <Minimum>0</Minimum>
+      <Maximum>999999999</Maximum>
+      <SortID>520</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="f32 replayBonfireModeRange = 1">
+      <DisplayName>Phantom bonfire mode playback applicable distance</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>521</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="s32 replayBonfirePhantomParamId">
+      <DisplayName>Phantom bonfire mode phantom parameter ID</DisplayName>
+      <Description>Phantom bonfire mode phantom parameter ID</Description>
+      <Minimum>0</Minimum>
+      <Maximum>999999999</Maximum>
+      <SortID>522</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="dummy8 ghostpad[4]">
+      <DisplayName>reserve</DisplayName>
+      <DisplayFormat>%f</DisplayFormat>
+      <EditFlags>Wrap</EditFlags>
+      <SortID>523</SortID>
+      <UnkB8>ghost</UnkB8>
+      <UnkC0>NET_GHOST_PARAM</UnkC0>
+      <UnkC8>幻影</UnkC8>
+    </Field>
+    <Field Def="f32 reloadVisitListCoolTime = 1">
+      <DisplayName>Ring search interval [seconds]</DisplayName>
+      <Minimum>1</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>1</Increment>
+      <SortID>600</SortID>
+      <UnkB8>visit</UnkB8>
+      <UnkC0>NET_VISIT_PARAM</UnkC0>
+      <UnkC8>指輪検索</UnkC8>
+    </Field>
+    <Field Def="u32 maxCoopBlueSummonCount = 1">
+      <DisplayName>Maximum number of rescue blue spirits appearing</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Minimum>1</Minimum>
+      <Maximum>255</Maximum>
+      <SortID>601</SortID>
+      <UnkB8>visit</UnkB8>
+      <UnkC0>NET_VISIT_PARAM</UnkC0>
+      <UnkC8>指輪検索</UnkC8>
+    </Field>
+    <Field Def="u32 maxBellGuardSummonCount = 1">
+      <DisplayName>Upper limit of the number of bell guard ghosts that appear</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Minimum>1</Minimum>
+      <Maximum>255</Maximum>
+      <SortID>602</SortID>
+      <UnkB8>visit</UnkB8>
+      <UnkC0>NET_VISIT_PARAM</UnkC0>
+      <UnkC8>指輪検索</UnkC8>
+    </Field>
+    <Field Def="u32 maxVisitListCount = 1">
+      <DisplayName>Number of ring search destinations acquired</DisplayName>
+      <DisplayFormat>%u</DisplayFormat>
+      <Minimum>1</Minimum>
+      <Maximum>255</Maximum>
+      <SortID>603</SortID>
+      <UnkB8>visit</UnkB8>
+      <UnkC0>NET_VISIT_PARAM</UnkC0>
+      <UnkC8>指輪検索</UnkC8>
+    </Field>
+    <Field Def="f32 reloadSearch_CoopBlue_Min">
+      <DisplayName>Relief Blue Spirit reload time minimum [sec]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>999</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>604</SortID>
+      <UnkB8>visit</UnkB8>
+      <UnkC0>NET_VISIT_PARAM</UnkC0>
+      <UnkC8>指輪検索</UnkC8>
+    </Field>
+    <Field Def="f32 reloadSearch_CoopBlue_Max">
+      <DisplayName>Relief Blue Spirit reload time maximum [sec]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>999</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>605</SortID>
+      <UnkB8>visit</UnkB8>
+      <UnkC0>NET_VISIT_PARAM</UnkC0>
+      <UnkC8>指輪検索</UnkC8>
+    </Field>
+    <Field Def="f32 reloadSearch_BellGuard_Min">
+      <DisplayName>Kanemori reload time minimum [sec]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>999</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>606</SortID>
+      <UnkB8>visit</UnkB8>
+      <UnkC0>NET_VISIT_PARAM</UnkC0>
+      <UnkC8>指輪検索</UnkC8>
+    </Field>
+    <Field Def="f32 reloadSearch_BellGuard_Max">
+      <DisplayName>Kanemori reload time maximum [sec]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>999</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>607</SortID>
+      <UnkB8>visit</UnkB8>
+      <UnkC0>NET_VISIT_PARAM</UnkC0>
+      <UnkC8>指輪検索</UnkC8>
+    </Field>
+    <Field Def="f32 reloadSearch_RatKing_Min">
+      <DisplayName>Mouse King Reload Time Minimum [sec]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>999</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>608</SortID>
+      <UnkB8>visit</UnkB8>
+      <UnkC0>NET_VISIT_PARAM</UnkC0>
+      <UnkC8>指輪検索</UnkC8>
+    </Field>
+    <Field Def="f32 reloadSearch_RatKing_Max">
+      <DisplayName>Mouse King Reload Time Maximum [sec]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>999</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>609</SortID>
+      <UnkB8>visit</UnkB8>
+      <UnkC0>NET_VISIT_PARAM</UnkC0>
+      <UnkC8>指輪検索</UnkC8>
+    </Field>
+    <Field Def="dummy8 visitpad00[8]">
+      <DisplayName>reserve</DisplayName>
+      <SortID>610</SortID>
+      <UnkB8>visit</UnkB8>
+      <UnkC0>NET_VISIT_PARAM</UnkC0>
+      <UnkC8>指輪検索</UnkC8>
+    </Field>
+    <Field Def="f32 srttMaxLimit = 1000">
+      <DisplayName>SRTT upper limit [milliseconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>99999</Maximum>
+      <Increment>1</Increment>
+      <SortID>700</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="f32 srttMeanLimit = 1000">
+      <DisplayName>SRTT upper limit (when stable) [milliseconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>99999</Maximum>
+      <Increment>1</Increment>
+      <SortID>701</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="f32 srttMeanDeviationLimit = 1000">
+      <DisplayName>RTT mean deviation upper limit [milliseconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>99999</Maximum>
+      <Increment>1</Increment>
+      <SortID>702</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="f32 darkPhantomLimitBoostTime = 1000">
+      <DisplayName>Dark spirit time limit Acceleration time [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>99999</Maximum>
+      <Increment>1</Increment>
+      <SortID>703</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="f32 darkPhantomLimitBoostScale = 1000">
+      <DisplayName>Dark spirit time limit acceleration time magnification</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>99999</Maximum>
+      <Increment>1</Increment>
+      <SortID>704</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="f32 multiplayDisableLifeTime = 1">
+      <DisplayName>Multiplayer invalidation life</DisplayName>
+      <Minimum>1</Minimum>
+      <Maximum>999999</Maximum>
+      <Increment>1</Increment>
+      <SortID>705</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="u8 abyssMultiplayLimit = 10">
+      <DisplayName>Abyss Spirit Multiplayer Count</DisplayName>
+      <Description>The number of times the abyss spirit enters the host in the abyss area</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Minimum>1</Minimum>
+      <SortID>706</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="u8 phantomWarpMinimumTime = 5">
+      <DisplayName>Minimum time for a ghost to warp [seconds]</DisplayName>
+      <DisplayFormat>%u</DisplayFormat>
+      <SortID>707</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="u8 phantomReturnDelayTime = 5">
+      <DisplayName>Delay time until returning after using black crystal [seconds]</DisplayName>
+      <DisplayFormat>%u</DisplayFormat>
+      <SortID>708</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="u8 terminateTimeoutTime = 30">
+      <DisplayName>Time-out time waiting for disconnection</DisplayName>
+      <DisplayFormat>%u</DisplayFormat>
+      <SortID>709</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="u16 penaltyPointLanDisconnect">
+      <DisplayName>Penalty addition value without LAN</DisplayName>
+      <DisplayFormat>%u</DisplayFormat>
+      <SortID>717</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="u16 penaltyPointSignout">
+      <DisplayName>Penalty addition value for sign-out</DisplayName>
+      <DisplayFormat>%u</DisplayFormat>
+      <SortID>718</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="u16 penaltyPointReboot">
+      <DisplayName>Penalty addition value due to power failure</DisplayName>
+      <DisplayFormat>%u</DisplayFormat>
+      <SortID>719</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="u16 penaltyPointBeginPenalize">
+      <DisplayName>Penalty value that activates the penalty</DisplayName>
+      <DisplayFormat>%u</DisplayFormat>
+      <SortID>720</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="f32 penaltyForgiveItemLimitTime">
+      <DisplayName>Sales time limit for "Line Reason" [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1E+08</Maximum>
+      <Increment>1</Increment>
+      <SortID>725</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="u8 allAreaSearchRate_CoopBlue">
+      <DisplayName>Area search rate: Relief Blue Spirit [0-100]</DisplayName>
+      <Description>Percentage of searching for intrusion targets from all areas (%)</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>100</Maximum>
+      <SortID>730</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="u8 allAreaSearchRate_VsBlue">
+      <DisplayName>Area search rate: Retribution Blue Spirit [0-100]</DisplayName>
+      <Description>Percentage of searching for intrusion targets from all areas (%)</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>100</Maximum>
+      <SortID>730</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="u8 allAreaSearchRate_BellGuard">
+      <DisplayName>Area search rate: Kanemori Ashrei [0-100]</DisplayName>
+      <Description>Percentage of searching for intrusion targets from all areas (%)</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>100</Maximum>
+      <SortID>730</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="u8 bloodMessageEvalHealRate = 100">
+      <DisplayName>HP recovery rate at the time of blood character evaluation [0-100]</DisplayName>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>100</Maximum>
+      <SortID>735</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="u32 smallGoldSuccessHostRewardId">
+      <DisplayName>Kogane Rei Success Return Host Reward ID</DisplayName>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>999999</Maximum>
+      <SortID>740</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="f32 doorInvalidPlayAreaExtents = 1">
+      <DisplayName>Play area invalidation distance near the door [m]</DisplayName>
+      <Description>The area around the black door that separates the multiplayer area is set to the systematically invalid play area (-1). At that time, make the invalid area thicker with this parameter on the thinner side of the OBJ's bounding box with a black door.</Description>
+      <Minimum>0</Minimum>
+      <Maximum>9999</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>750</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="u8 signDisplayMax = 10">
+      <DisplayName>Maximum number of simultaneous displays of signs</DisplayName>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>100</Maximum>
+      <SortID>760</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="u8 bloodStainDisplayMax = 7">
+      <DisplayName>Maximum number of blood stains displayed at the same time</DisplayName>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>100</Maximum>
+      <SortID>761</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="u8 bloodMessageDisplayMax = 3">
+      <DisplayName>Maximum number of blood characters displayed at the same time</DisplayName>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>100</Maximum>
+      <SortID>762</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="dummy8 pad00[9]">
+      <DisplayName>reserve</DisplayName>
+      <SortID>763</SortID>
+      <UnkB8>extra</UnkB8>
+      <UnkC0>NET_EXTRA_PARAM</UnkC0>
+      <UnkC8>その他</UnkC8>
+    </Field>
+    <Field Def="dummy8 pad10[32]">
+      <DisplayName>reserve</DisplayName>
+      <SortID>1560</SortID>
+      <UnkB8>VisitorAddition</UnkB8>
+      <UnkC0>VISITOR_ADDITION</UnkC0>
+      <UnkC8>訪問</UnkC8>
+    </Field>
+    <Field Def="f32 summonMessageInterval = 1">
+      <DisplayName>Summon message is displayed at interval [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>1000</SortID>
+      <UnkB8>QuickMatch</UnkB8>
+      <UnkC0>QUICK_MATCH</UnkC0>
+      <UnkC8>クイックマッチ</UnkC8>
+    </Field>
+    <Field Def="f32 hostRegisterUpdateTime = 1">
+      <DisplayName>Host periodic update request interval [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>1010</SortID>
+      <UnkB8>QuickMatch</UnkB8>
+      <UnkC0>QUICK_MATCH</UnkC0>
+      <UnkC8>クイックマッチ</UnkC8>
+    </Field>
+    <Field Def="f32 hostTimeOutTime = 1">
+      <DisplayName>Host guest join wait timeout time [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>1020</SortID>
+      <UnkB8>QuickMatch</UnkB8>
+      <UnkC0>QUICK_MATCH</UnkC0>
+      <UnkC8>クイックマッチ</UnkC8>
+    </Field>
+    <Field Def="f32 guestUpdateTime = 1">
+      <DisplayName>Authentication wait timeout time from guest host [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>1030</SortID>
+      <UnkB8>QuickMatch</UnkB8>
+      <UnkC0>QUICK_MATCH</UnkC0>
+      <UnkC8>クイックマッチ</UnkC8>
+    </Field>
+    <Field Def="f32 guestPlayerNoTimeOutTime = 1">
+      <DisplayName>Guest PlayNo Sync wait timeout time [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>1040</SortID>
+      <UnkB8>QuickMatch</UnkB8>
+      <UnkC0>QUICK_MATCH</UnkC0>
+      <UnkC8>クイックマッチ</UnkC8>
+    </Field>
+    <Field Def="f32 hostPlayerNoTimeOutTime = 1">
+      <DisplayName>Host PlayNo Sync wait timeout time [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>1050</SortID>
+      <UnkB8>QuickMatch</UnkB8>
+      <UnkC0>QUICK_MATCH</UnkC0>
+      <UnkC8>クイックマッチ</UnkC8>
+    </Field>
+    <Field Def="u32 requestSearchQuickMatchLimit = 1">
+      <DisplayName>RequestSearchQuickMatch limit value</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>255</Maximum>
+      <Increment>0</Increment>
+      <SortID>1060</SortID>
+      <UnkB8>QuickMatch</UnkB8>
+      <UnkC0>QUICK_MATCH</UnkC0>
+      <UnkC8>クイックマッチ</UnkC8>
+    </Field>
+    <Field Def="u32 AvatarMatchSearchMax = 1">
+      <DisplayName>Maximum number of people when searching for avatar battles (unused)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>255</Maximum>
+      <SortID>1070</SortID>
+      <UnkB8>QuickMatch</UnkB8>
+      <UnkC0>QUICK_MATCH</UnkC0>
+      <UnkC8>クイックマッチ</UnkC8>
+    </Field>
+    <Field Def="u32 BattleRoyalMatchSearchMin = 1">
+      <DisplayName>Minimum number of people when searching for battle royale (unused)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>255</Maximum>
+      <SortID>1080</SortID>
+      <UnkB8>QuickMatch</UnkB8>
+      <UnkC0>QUICK_MATCH</UnkC0>
+      <UnkC8>クイックマッチ</UnkC8>
+    </Field>
+    <Field Def="u32 BattleRoyalMatchSearchMax = 1">
+      <DisplayName>Maximum number of people when searching for battle royale (unused)</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>255</Maximum>
+      <SortID>1090</SortID>
+      <UnkB8>QuickMatch</UnkB8>
+      <UnkC0>QUICK_MATCH</UnkC0>
+      <UnkC8>クイックマッチ</UnkC8>
+    </Field>
+    <Field Def="dummy8 pad11[8]">
+      <DisplayName>reserve</DisplayName>
+      <SortID>1100</SortID>
+      <UnkB8>QuickMatch</UnkB8>
+      <UnkC0>QUICK_MATCH</UnkC0>
+      <UnkC8>クイックマッチ</UnkC8>
+    </Field>
+    <Field Def="u32 VisitorListMax = 1">
+      <DisplayName>Maximum number of people to get a list of visitors</DisplayName>
+      <Description>Actually u8 is enough</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <Maximum>10000</Maximum>
+      <SortID>1500</SortID>
+      <UnkB8>Visitor</UnkB8>
+      <UnkC0>VISITOR</UnkC0>
+      <UnkC8>訪問</UnkC8>
+    </Field>
+    <Field Def="f32 VisitorTimeOutTime = 1">
+      <DisplayName>Time-out waiting for visit</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>10000</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>1520</SortID>
+      <UnkB8>Visitor</UnkB8>
+      <UnkC0>VISITOR</UnkC0>
+      <UnkC8>訪問</UnkC8>
+    </Field>
+    <Field Def="f32 DownloadSpan = 1">
+      <DisplayName>Visitor list download interval [seconds]</DisplayName>
+      <Minimum>0</Minimum>
+      <Maximum>10000</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>1530</SortID>
+      <UnkB8>Visitor</UnkB8>
+      <UnkC0>VISITOR</UnkC0>
+      <UnkC8>訪問</UnkC8>
+    </Field>
+    <Field Def="f32 VisitorGuestRequestMessageIntervalSec = 1">
+      <DisplayName>Visit search message display interval [seconds]</DisplayName>
+      <Description>Display interval [seconds] of messages sent by visiting guests while searching for a destination</Description>
+      <Minimum>0</Minimum>
+      <Maximum>10000</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>1540</SortID>
+      <UnkB8>Visitor</UnkB8>
+      <UnkC0>VISITOR</UnkC0>
+      <UnkC8>訪問</UnkC8>
+    </Field>
+    <Field Def="f32 wanderGhostIntervalLifeTime = 40">
+      <DisplayName>Wandering illusion life</DisplayName>
+      <Description>Wandering illusion life</Description>
+      <Minimum>0</Minimum>
+      <Maximum>10000</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>550</SortID>
+      <UnkB8>ghostAddition</UnkB8>
+      <UnkC0>NET_GHOST_ADDITION_PARAM</UnkC0>
+      <UnkC8>幻影追加要素</UnkC8>
+    </Field>
+    <Field Def="dummy8 pad13[12]">
+      <DisplayName>reserve</DisplayName>
+      <Description>reserve</Description>
+      <SortID>551</SortID>
+      <UnkB8>ghostAddition</UnkB8>
+      <UnkC0>NET_GHOST_ADDITION_PARAM</UnkC0>
+      <UnkC8>幻影追加要素</UnkC8>
+    </Field>
+    <Field Def="f32 YellowMonkTimeOutTime = 1">
+      <DisplayName>Yellow robe's old man waiting time out</DisplayName>
+      <EditFlags>None</EditFlags>
+      <Minimum>0</Minimum>
+      <Maximum>10000</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>2000</SortID>
+      <UnkB8>YellowMonk</UnkB8>
+      <UnkC0>YELLOW_MONK_PARAM</UnkC0>
+      <UnkC8>黄衣の翁</UnkC8>
+    </Field>
+    <Field Def="f32 YellowMonkDownloadSpan = 1">
+      <DisplayName>Yellow robe list download interval</DisplayName>
+      <EditFlags>None</EditFlags>
+      <Minimum>0</Minimum>
+      <Maximum>10000</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>2010</SortID>
+      <UnkB8>YellowMonk</UnkB8>
+      <UnkC0>YELLOW_MONK_PARAM</UnkC0>
+      <UnkC8>黄衣の翁</UnkC8>
+    </Field>
+    <Field Def="f32 YellowMonkOverallFlowTimeOutTime = 1">
+      <DisplayName>Yellow robe's whole flow time-out</DisplayName>
+      <EditFlags>None</EditFlags>
+      <Minimum>0</Minimum>
+      <Maximum>10000</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>2020</SortID>
+      <UnkB8>YellowMonk</UnkB8>
+      <UnkC0>YELLOW_MONK_PARAM</UnkC0>
+      <UnkC8>黄衣の翁</UnkC8>
+    </Field>
+    <Field Def="dummy8 pad14[4]">
+      <DisplayName>reserve</DisplayName>
+      <SortID>2030</SortID>
+      <UnkB8>YellowMonk</UnkB8>
+      <UnkC0>YELLOW_MONK_PARAM</UnkC0>
+      <UnkC8>黄衣の翁</UnkC8>
+    </Field>
+    <Field Def="dummy8 pad14[8]">
+      <DisplayName>reserve</DisplayName>
+      <SortID>2031</SortID>
+    </Field>
+  </Fields>
+</PARAMDEF>

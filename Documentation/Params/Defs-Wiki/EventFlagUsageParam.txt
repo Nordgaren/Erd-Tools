@@ -1,0 +1,6 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| usageType || Use || Use of the flag. || EVENT_FLAG_USAGE_TYPE ||
+|| playlogCategory || Playlog category || Valid only when the usage is "ON / OFF". If this is set, the play log will be collected when the flag is turned ON. || EVENT_FLAG_USAGE_PLAYLOG_CATEGORY ||
+|| padding1 || Padding || Padding || - ||
+|| flagNum || Number of secured flags || Set to 1 for "ON / OFF". In the case of "frame allocation" and "integer", "parameter number-parameter number + number of secured flags-1" is secured. || - ||
+|| padding2 || Padding || Padding || - ||

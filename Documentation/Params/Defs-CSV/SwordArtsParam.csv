@@ -1,0 +1,25 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,1101,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,1102,dummy8,,%d,dummy8,None
+Swashbuckler ID,To pass to the behavior script to determine which swashbuckler,0,255,100,u8,1,%d,u8,Wrap
+Arts speed,Which cancellation timing do you see? 0: Normal (left hand attack) / 1: Early / 2: Slow,0,2,200,u8,1,%d,u8,Wrap
+Related status,Which system of arts points to refer to,0,128,400,s8,1,%d,SWORD_ARTS_REF_STATUS_TYPE,Wrap
+Whether to display the arts of the right hand when the left hand (holding one hand),When set to the arts of the left-handed weapon, the arts of the right-handed weapon are displayed in FE. Assumed to be used for "weapon maneuvers" etc.,0,1,900,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Whether to gray out with the left hand (holding one hand),Whether to gray out when displaying the arts name of the left hand (one-handed),0,1,910,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Whether to gray out with the right hand (holding one hand),Whether to gray out when displaying the arts name of the right hand (one-handed),0,1,920,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Will it be grayed out when holding both hands?,Whether to gray out when displaying the arts name of both hands,0,1,930,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Reserved area,,,,1103,dummy8,,,dummy8,None
+Consumption point L1,Points to spend when putting out arts by L1,-1,99,500,s8,1,%d,s8,Wrap
+Consumption point L2,Points to spend when putting out arts by L2,-1,99,600,s8,1,%d,s8,Wrap
+Consumption point R1,Points to spend when putting out arts by R1,-1,99,700,s8,1,%d,s8,Wrap
+Consumption point R2,Points to spend when putting out arts by R2,-1,99,800,s8,1,%d,s8,Wrap
+Text ID,Text ID for arts description,0,999999999,300,s32,1,%d,s32,Wrap
+MP L1 consumed,MP consumed when issuing arts by L1,-1,999,810,s16,1,%d,s16,Wrap
+MP L2 consumed,MP consumed when issuing arts by L2,-1,999,820,s16,1,%d,s16,Wrap
+MP R1 consumed,MP consumed when issuing arts by R1,-1,999,830,s16,1,%d,s16,Wrap
+MP R2 consumed,MP consumed when issuing arts by R2,-1,999,840,s16,1,%d,s16,Wrap
+Shield type icon (overwrite),If you do not overwrite it, the icon will be displayed based on the swashbuckler ID of the weapon para.,0,128,990,s8,1,%d,SWORD_ARTS_SHIELD_ICON_TYPE,Wrap
+pad,,,,1104,dummy8,,%d,dummy8,Wrap
+Icon ID,ID of the icon displayed in FE etc.,0,65535,310,u16,1,%d,u16,Wrap
+AI usage judgment ID,AI usage judgment ID,-1,999999999,1100,s32,1,%d,s32,Wrap

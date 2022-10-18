@@ -1,0 +1,8 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Item name Text ID,,-1,999999999,1,s32,1,%d,s32,Wrap
+Item icon ID,,-1,999999999,3,s32,1,%d,s32,Wrap
+Required skills,,-1,999999999,4,u32,1,%d,MENU_PROPERTY_ID,Wrap
+Superiority or inferiority judgment,,-1,999999999,5,s8,1,%d,MENU_PROPERTY_CMP_TYPE,Wrap
+Padding,,,,8,dummy8,,,dummy8,None
+Format,,-1,999999999,6,u16,1,%d,MENU_PROPERTY_FORMAT_TYPE,Wrap
+Padding,,,,9,dummy8,,%d,dummy8,Wrap

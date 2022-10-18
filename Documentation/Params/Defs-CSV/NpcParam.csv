@@ -1,0 +1,319 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,2000001,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,2000002,dummy8,,%d,dummy8,None
+Behavior variation ID,Variation ID used when calculating the action ID.,0,99999,1000,s32,1,%d,s32,Wrap
+Poison resistance correction rule ID,When the abnormal condition is activated, the maximum value is temporarily changed by using the set value of the abnormal condition resistance correction parameter.,-1,999999999,44000,s32,1,%d,s32,Wrap
+NPC name ID,NPC Name Message Parameter ID,-1,999999,3000,s32,1,%d,s32,Wrap
+Turning speed [deg / sec],Rotational speed [degrees / second] that can turn in 1 second.,0,1000000,8000,f32,0.1,%f,f32,Wrap
+Height per map [m],The height of the capsule per character.,0,999999,13000,f32,0.1,%f,f32,Wrap
+Radius per map [m],Radius of capsule per character.,0,999999,13100,f32,0.1,%f,f32,Wrap
+Weight [kg],weight.,0,999999,15000,u32,1,%d,u32,Wrap
+Display position Y offset [m],Offset of the model display position in the Y (height) direction. It can be floated from the hit position.,-100,100,16000,f32,0.1,%f,f32,Wrap
+HP,Death grace.,0,99999,21000,u32,1,%d,u32,Wrap
+MP,Magic usage.,0,99999,22000,u32,1,%d,u32,Wrap
+Seoul,The amount of soul that a character can get at the time of death.,0,999999,27000,u32,1,%d,u32,Wrap
+Item lottery ID_for enemies,Specify the lottery ID_for enemies of the item to be acquired at the time of death. Please set only one of them.,-1,999999999,28000,s32,1,%d,s32,Wrap
+Item lottery ID_for map,Specify for the lottery ID_map of the item to be acquired at the time of death. Please set only one of them.,-1,999999999,28001,s32,1,%d,s32,Wrap
+FootIK Ankle limit angle_roll,FootIK Ankle roll limit angle (-1: no limit),-1,90,200070,f32,0.1,%f,f32,Wrap
+Per group and used navigation mesh,Set the hit judgment with other characters (If you hit the ragdoll, other characters will hit the ragdoll),0,255,9060,u8,1,%d,CHR_HIT_GROUP,Wrap
+NPC face image ID,NPC face image ID (0: invalid value (default)). Specify the ID of the face image to be displayed in the "Sign browsing menu", "Kick menu", etc. If it is an invalid value, the dress-up model is displayed.,0,99,2000000,u8,1,%d,u8,Wrap
+Deactivate distance setting [m],Distance at which the character is deactivated (valid only for open placement characters),-1,220,450100,s16,1,%d,s16,Wrap
+Character appearance condition Para,Character appearance condition parameter ID,0,999999999,450000,u32,1,%d,CHR_ACTIVATE_CONDITION_TYPE,Wrap
+FootIK Appearance up / down limit,FootIK Appearance up / down limit,0,100,200100,f32,0.01,%.3f,f32,Wrap
+Human nature lottery ID,Specify the lottery ID of human nature to be acquired at the time of death,-1,999999999,33010,s32,1,%d,s32,Wrap
+Resident special effect 0,Resident special effect 0,-1,999999,46000,s32,1,%d,s32,Wrap
+Resident special effect 1,Resident special effect 1,-1,999999,47000,s32,1,%d,s32,Wrap
+Resident special effect 2,Resident special effect 2,-1,999999,48000,s32,1,%d,s32,Wrap
+Resident special effect 3,Resident special effect 3,-1,999999,49000,s32,1,%d,s32,Wrap
+Resident special effect 4,Resident special effect 4,-1,999999,50000,s32,1,%d,s32,Wrap
+Resident special effect 5,Resident special effect 5,-1,999999,50010,s32,1,%d,s32,Wrap
+Resident special effect 6,Resident special effect 6,-1,999999,50020,s32,1,%d,s32,Wrap
+Resident special effect 7,Resident special effect 7,-1,999999,50030,s32,1,%d,s32,Wrap
+Special effect ID for lap bonus,Special effect ID for lap bonus,-1,999999,51000,s32,1,%d,s32,Wrap
+Physical attack cut rate [%],Set the damage cut rate when guarding for each attack,0,100,55000,f32,0.1,%0.1f,f32,Wrap
+Magic attack cut rate [%],If it is not a guard attack, enter 0,0,100,60000,f32,0.1,%0.1f,f32,Wrap
+Flame attack power cut rate [%],How much to cut the fire attack?,0,100,61000,f32,0.1,%0.1f,f32,Wrap
+Electric shock attack power cut rate [%],How much to cut the electric shock attack?,0,100,61100,f32,0.1,%0.1f,f32,Wrap
+Anime ID offset 1,All animations will be played with IDs shifted by this number. If not, the original anime ID is referenced.,-1,99999999,83000,s32,1,%d,s32,Wrap
+Gaze point of Rock Damipoli 0,Gaze at the Damipoli specified when locking the Lock-on Damipoly 22X (-1: Invalid),-1,999,10600,s16,1,%d,s16,Wrap
+Gaze point of Rock Damipoli 1,Gaze at the Damipoli specified when locking the Lock-on Damipoly 22X (-1: Invalid),-1,999,10610,s16,1,%d,s16,Wrap
+Gaze point of Rock Damipoli 2,Gaze at the Damipoli specified when locking the Lock-on Damipoly 22X (-1: Invalid),-1,999,10620,s16,1,%d,s16,Wrap
+Gaze point of Rock Damipoli 3,Gaze at the Damipoli specified when locking the Lock-on Damipoly 22X (-1: Invalid),-1,999,10630,s16,1,%d,s16,Wrap
+Gaze point of Rock Damipoli 4,Gaze at the Damipoli specified when locking the Lock-on Damipoly 22X (-1: Invalid),-1,999,10640,s16,1,%d,s16,Wrap
+Gaze point of Rock Damipoli 5,Gaze at the Damipoli specified when locking the Lock-on Damipoly 22X (-1: Invalid),-1,999,10650,s16,1,%d,s16,Wrap
+Network warp judgment distance [m / sec],Distance to warp instead of complementary movement in network synchronization. Faster people (ex dragons) need to be longer.,0,1000,101000,f32,0.1,%f,f32,Wrap
+R1,Register the ID from the action parameter tool and specify the action.,-1,999999,102000,s32,1,%d,s32,Wrap
+L1,Register the ID from the action parameter tool and specify the action.,-1,999999,103000,s32,1,%d,s32,Wrap
+R2,Register the ID from the action parameter tool and specify the action.,-1,999999,104000,s32,1,%d,s32,Wrap
+L2,Register the ID from the action parameter tool and specify the action.,-1,999999,105000,s32,1,%d,s32,Wrap
+□,Register the ID from the action parameter tool and specify the action.,-1,999999,106000,s32,1,%d,s32,Wrap
+○ ○,Register the ID from the action parameter tool and specify the action.,-1,999999,107000,s32,1,%d,s32,Wrap
+×,Register the ID from the action parameter tool and specify the action.,-1,999999,108000,s32,1,%d,s32,Wrap
+△,Register the ID from the action parameter tool and specify the action.,-1,999999,109000,s32,1,%d,s32,Wrap
+←,Register the ID from the action parameter tool and specify the action.,-1,999999,110000,s32,1,%d,s32,Wrap
+→,Register the ID from the action parameter tool and specify the action.,-1,999999,111000,s32,1,%d,s32,Wrap
+↓,Register the ID from the action parameter tool and specify the action.,-1,999999,112000,s32,1,%d,s32,Wrap
+↑,Register the ID from the action parameter tool and specify the action.,-1,999999,113000,s32,1,%d,s32,Wrap
+Anime ID offset 2,All animations will be played with IDs shifted by this number. If not, the animation ID of the animation ID offset 1 is referred to.,-1,99999999,122000,s32,1,%d,s32,Wrap
+Damage group 1 Damage multiplier,Magnification that adapts to damage processing for part 1,0,99,51110,f32,0.01,%.2f,f32,Wrap
+Damage group 2 Damage multiplier,Magnification that adapts to damage processing for part 2,0,99,51120,f32,0.01,%.2f,f32,Wrap
+Damage group 3 Damage multiplier,Magnification that adapts to damage processing for part 3,0,99,51130,f32,0.01,%.2f,f32,Wrap
+Damage group 4 damage multiplier,Magnification that adapts to damage processing for part 4,0,99,51140,f32,0.01,%.2f,f32,Wrap
+Damage group 5 damage multiplier,Magnification that adapts to damage processing for part 5,0,99,51150,f32,0.01,%.2f,f32,Wrap
+Damage group 6 damage multiplier,Magnification to adapt to damage processing for part 6,0,99,51160,f32,0.01,%.2f,f32,Wrap
+Damage group 7 Damage multiplier,Magnification that adapts to damage processing for part 7,0,99,51165,f32,0.01,%.2f,f32,Wrap
+Damage group 8 damage multiplier,Magnification that adapts to damage processing for part 8,0,99,51166,f32,0.01,%.2f,f32,Wrap
+Weak point damage ratio,Magnification that adapts to damage processing for weak points,0,99,51170,f32,0.01,%.2f,f32,Wrap
+SA recovery time correction value,Correction value for super armor recovery time,-1,99.99,39200,f32,0.01,%.2f,f32,Wrap
+Knockback distance at SA break,Knockback distance that can be used only at the time of SA break,0,99.99,41110,f32,0.01,%.2f,f32,Wrap
+stamina,Total amount of stamina.,0,999,24000,u16,1,%d,u16,Wrap
+Stamina recovery basic speed [point / s],Stamina recovery basic speed [point / s],0,1000,25000,u16,1,%d,u16,Wrap
+Physical defense,Damage reduction base value for physical attacks.,0,9999,35000,u16,1,%d,u16,Wrap
+Slash defense [%],Look at the attack attribute, and if it is a slash attribute, reduce the defense power.,-100,999,35100,s16,1,%d,s16,Wrap
+Blow defense [%],Look at the attack attribute, and if it is a hit attribute, reduce the defense power.,-100,999,35200,s16,1,%d,s16,Wrap
+Puncture defense [%],Look at the attack attribute, and if it is a piercing attribute, reduce the defense power.,-100,999,35300,s16,1,%d,s16,Wrap
+Magic defense,Damage reduction base value for magic attacks.,0,9999,35400,u16,1,%d,u16,Wrap
+Fire defense,Damage reduction base value against fire attack.,0,9999,35500,u16,1,%d,u16,Wrap
+Electric shock defense,Damage reduction base value against electric shock attack.,0,9999,35600,u16,1,%d,u16,Wrap
+Repellent defense,Used to determine the repelling of enemy attacks. // It is intended to be repelled by normal attacks other than guards. // Enemies with a hard skin can be repelled without doing anything ... It doesn't matter if it is a normal enemy.,0,999,40000,u16,1,%d,u16,Wrap
+Poison resistance,Difficulty in getting poisonous,0,999,43000,u16,1,%d,u16,Wrap
+Epidemic resistance,Difficulty in getting sick,0,999,43100,u16,1,%d,u16,Wrap
+Bleeding resistance,Difficulty in getting bleeding abnormalities,0,999,43200,u16,1,%d,u16,Wrap
+Curse resistance,Difficulty in dealing with abnormal curse conditions,0,999,43300,u16,1,%d,u16,Wrap
+Replacement model ID for wandering ghost,Replacement model when wandering ghost, texture ID,-1,9999,99000,s16,1,%d,s16,Wrap
+Normal replacement resource ID,Replace resource ID during normal operation (do not use it unnecessarily),-1,9999,100000,s16,1,%d,s16,Wrap
+Guard range [deg],Defense range angle when guarding weapons. Pending,0,180,54000,s16,1,%d,s16,Wrap
+Slash attack cut rate [%],Looking at the attack type, what percentage of the damage of the slashing attribute is cut? Specify,-100,100,56000,s16,1,%d,s16,Wrap
+Batter attack cut rate [%],Looking at the attack type, what percentage of the damage of the hit attribute is cut? Specify,-100,100,57000,s16,1,%d,s16,Wrap
+Puncture attack cut rate [%],Looking at the attack type, what percentage of the damage of the piercing attribute is cut? Specify,-100,100,58000,s16,1,%d,s16,Wrap
+Gaze point of Rock Damipoli 6,Gaze at the Damipoli specified when locking the Lock-on Damipoly 22X (-1: Invalid),-1,999,10660,s16,1,%d,s16,Wrap
+Normal replacement texture character ID,Normal replacement texture character ID (do not use it unnecessarily),-1,9999,100100,s16,1,%d,s16,Wrap
+Display format of drop items,Display method when dropping an item (corpse emission or item display),0,1,26000,u16,1,%d,NPC_ITEMDROP_TYPE,Wrap
+Knockback cut rate [%],Decrease value when receiving knockback damage / Specifically, cut the initial knockback speed of the attacking side,0,100,41000,u8,1,%d,u8,Wrap
+Knockback parameter ID,Set the parameter ID used for knockback,0,255,41100,u8,1,%d,u8,Wrap
+Fall damage reduction correction [%],Fall damage reduction correction [%],0,100,42000,u8,1,%d,u8,Wrap
+Stamina attack cut rate [%],Defense against enemy stamina attacks when guarding successfully,0,100,66000,u8,1,%d,u8,Wrap
+Sleep tolerance,Difficulty in getting sleep abnormalities,0,999,43500,u16,1,%d,u16,Wrap
+Madness resistance,Difficulty in getting mad,0,999,43600,u16,1,%d,u16,Wrap
+Sleep attack cut rate [%],How much to cut the attack power against sleep (set as a special effect parameter),0,100,63500,s8,1,%d,s8,Wrap
+Mad attack cut rate [%],How much to cut the attack power against madness (set as a special effect parameter),0,100,63600,s8,1,%d,s8,Wrap
+Gaze point of Rock Damipoli 7,Gaze at the Damipoli specified when locking the Lock-on Damipoly 22X (-1: Invalid),-1,999,10670,s16,1,%d,s16,Wrap
+MP recovery basic speed [% / s],MP recovery basic speed [% / s],0,100,23000,u8,1,%d,u8,Wrap
+Damage attenuation rate when repelling [%],Set a value to attenuate damage when repelling an attack,0,100,40100,u8,1,%d,u8,Wrap
+Default LOD Param ID,Default LOD Param ID (-1: None),-1,127,200000,s8,1,%d,s8,None
+Drawing type,Drawing type,0,255,4000,s8,1,%d,NPC_DRAW_TYPE,Wrap
+NPC type,NPC type. OK if Zako enemies / boss enemies are distinguished,0,255,5000,u8,1,%d,NPC_TYPE,Wrap
+Team type,NPC attack hit / not hit, aim / not aim setting,0,255,6000,u8,1,%d,TEAM_TYPE,Wrap
+Movement type,Moving method. This changes the control.,0,255,7000,u8,1,%d,NPC_MOVE_TYPE,Wrap
+Lock distance,Lock-on distance [m],0,255,10000,u8,1,%d,u8,Wrap
+Weakness defense material 1 [SE],Determines the SE that sounds when the weak point is damaged. 1,0,9999,51200,u16,1,%d,WEP_MATERIAL_DEF,Wrap
+Weakness protection material 1 [SFX],Determines the SFX that occurs when the weak point is damaged. 1,0,9999,51300,u16,1,%d,WEP_MATERIAL_DEF_SFX,Wrap
+Part damage application attack,Set the attack type to apply site damage,0,2,51100,u8,1,%d,ATK_PARAM_PARTSDMGTYPE,Wrap
+Pledge,Pledge type,0,15,125000,u8,1,%d,VOW_TYPE,Wrap
+Guard level,When guarding, which guard motion will the enemy attack? Decide,0,100,52000,s8,1,%d,s8,Wrap
+Combustion SFX type,SFX type at the time of combustion,0,255,53000,u8,1,%d,NPC_BURN_TYPE,Wrap
+Poison resistance cut rate [%],How much to cut the attack power to poison (set to the special effect parameter),0,100,63000,s8,1,%d,s8,Wrap
+Epidemic attack cut rate [%],How much to cut the attack power (set as a special effect parameter) to make it a plague,0,100,63100,s8,1,%d,s8,Wrap
+Bleeding attack cut rate [%],How much to cut the attack power (set as a special effect parameter) to make bleeding,0,100,63200,s8,1,%d,s8,Wrap
+Curse attack cut rate [%],How much to cut the attack power (set as a special effect parameter) to make a curse,0,100,63300,s8,1,%d,s8,Wrap
+Parry attack power,Parry attack power. Used by the parrying side,0,255,72000,u8,1,%d,u8,Wrap
+Parry defense,Parry defense. Used by the parried side.,0,255,73000,u8,1,%d,u8,Wrap
+SFX size,SFX size,0,255,97000,u8,1,%d,NPC_SFX_SIZE,Wrap
+Camera extrusion area radius [m],Camera extrusion area radius [m],0,255,98000,u8,1,%d,u8,None
+Do you want to hit stop,Setting whether to perform hit stop processing,0,255,9510,u8,1,%d,NPC_HITSTOP_TYPE,Wrap
+Ladder top termination offset [1 / 10m],Upper side of the ladder end judgment offset,0,255,16500,u8,1,%d,u8,Wrap
+Ladder bottom termination offset [1 / 10m],Lower side of ladder end judgment offset,0,255,16600,u8,1,%d,u8,Wrap
+Ragdoll per camera hit,Does the camera hit the enemy ragdoll? (Valid only when hitting the player),0,1,9100,u8,1,%d,NPC_BOOL,Wrap
+Disable cross-rigid hits,If you want to prevent the cross rigid from hitting you ○,0,1,9500,u8,1,%d,NPC_BOOL,Wrap
+Whether to use front and back undulation addition,Whether to use front and back undulation addition,0,1,20200,u8,1,%d,NPC_BOOL,Wrap
+Is it special attack A?,Special attack A? Special attack A damage multiplier will be included in the calculation,0,1,11000,u8,1,%d,NPC_BOOL,Wrap
+Is it a ghost?,The opponent's attack will be able to slip through. The attack hits only when the "anti-spirit weapon" of the weapon para is attacked with the weapon of ○. Be careful not to confuse it with a wandering ghost,0,1,11010,u8,1,%d,NPC_BOOL,Wrap
+No damage motion when damage is 0,Do you not play the damage motion when the damage is 0?,0,1,12000,u8,1,%d,NPC_BOOL,Wrap
+Do you adjust the angle to the undulations?,Do you match the back and forth rotation of the character with the undulations of the ground? Cannot be used for flying characters,0,1,19000,u8,1,%d,NPC_BOOL,Wrap
+Will it be a wandering ghost?,Will it be a wandering ghost when the player is a client?,0,1,95000,u8,1,%d,NPC_BOOL,Wrap
+Model display mask 0,Displays the model corresponding to the display mask.,0,1,84000,u8,1,%d,u8,Wrap
+Model display mask 1,Displays the model corresponding to the display mask.,0,1,84001,u8,1,%d,u8,Wrap
+Model display mask 2,Displays the model corresponding to the display mask.,0,1,84002,u8,1,%d,u8,Wrap
+Model display mask 3,Displays the model corresponding to the display mask.,0,1,84003,u8,1,%d,u8,Wrap
+Model display mask 4,Displays the model corresponding to the display mask.,0,1,84004,u8,1,%d,u8,Wrap
+Model display mask 5,Displays the model corresponding to the display mask.,0,1,84005,u8,1,%d,u8,Wrap
+Model display mask 6,Displays the model corresponding to the display mask.,0,1,84006,u8,1,%d,u8,Wrap
+Model display mask 7,Displays the model corresponding to the display mask.,0,1,84007,u8,1,%d,u8,Wrap
+Model display mask 8,Displays the model corresponding to the display mask.,0,1,84008,u8,1,%d,u8,Wrap
+Model display mask 9,Displays the model corresponding to the display mask.,0,1,84009,u8,1,%d,u8,Wrap
+Model display mask 10,Displays the model corresponding to the display mask.,0,1,84010,u8,1,%d,u8,Wrap
+Model display mask 11,Displays the model corresponding to the display mask.,0,1,84011,u8,1,%d,u8,Wrap
+Model display mask 12,Displays the model corresponding to the display mask.,0,1,84012,u8,1,%d,u8,Wrap
+Model display mask 13,Displays the model corresponding to the display mask.,0,1,84013,u8,1,%d,u8,Wrap
+Model display mask 14,Displays the model corresponding to the display mask.,0,1,84014,u8,1,%d,u8,Wrap
+Model display mask 15,Displays the model corresponding to the display mask.,0,1,84015,u8,1,%d,u8,Wrap
+Whether to enable swinging,Do you want to enable the swing set in Param Weaver?,0,1,123000,u8,1,%d,u8,Wrap
+Is it prohibited to respond?,Do you ban respawn?,0,1,124000,u8,1,%d,u8,Wrap
+Do you wait for mobile animation?,Do you want to play the moving animation until the animation is over? (Like a mayfly dragon.),0,1,7500,u8,1,%d,u8,Wrap
+Whether to reduce crowd processing,Do you want to reduce the processing load during crowds? For babies (preferably phalanx),0,1,96000,u8,1,%d,NPC_BOOL,Wrap
+Is it special attack B?,Special attack B? Special attack B damage multiplier will be included in the calculation,0,1,11001,u8,1,%d,NPC_BOOL,Wrap
+Is it special attack C?,Special attack C? Special attack C damage multiplier will be included in the calculation,0,1,11002,u8,1,%d,NPC_BOOL,Wrap
+Is it special attack D?,Special attack D? Special attack D damage multiplier will be included in the calculation,0,1,11003,u8,1,%d,NPC_BOOL,Wrap
+Do you always make a special turn?,Always execute a special turn (even if there is no navigation mesh at the turn destination, the special turn is continuously executed),0,1,201002,u8,1,%d,NPC_BOOL,Wrap
+Is it a riding special attack?,Will you be the target of a riding special attack (if you are riding)?,0,1,11006,u8,1,%d,NPC_BOOL,Wrap
+Whether to use step-over display interpolation,Whether to use step-over display interpolation,0,1,200500,u8,1,%d,NPC_BOOL,Wrap
+Is it a stealth attack target?,Is it a stealth attack target?,0,1,11008,u8,1,%d,NPC_BOOL,Wrap
+No initial death,If you do not make an initial death, TRUE, even if you kill and save it, the corpse will not be reproduced.,0,1,124001,u8,1,%d,NPC_BOOL,Wrap
+Does it vibrate when hit?,TRUE if it vibrates when hit. Use when you want to change from a normal hit stop, such as a dead person.,0,1,9520,u8,1,%d,NPC_BOOL,Wrap
+Does it turn smoothly?,Whether to perform interpolation when turning between nodes in route movement,0,1,202000,u8,1,%d,NPC_BOOL,Wrap
+Is it special attack E?,Special attack E? Special attack E damage multiplier will be included in the calculation,0,1,11004,u8,1,%d,NPC_BOOL,Wrap
+Is it special attack F?,Special attack F? Special attack F damage multiplier will be included in the calculation,0,1,11005,u8,1,%d,NPC_BOOL,Wrap
+Model display mask 16,Displays the model corresponding to the display mask.,0,1,84016,u8,1,%d,u8,Wrap
+Model display mask 17,Displays the model corresponding to the display mask.,0,1,84017,u8,1,%d,u8,Wrap
+Model display mask 18,Displays the model corresponding to the display mask.,0,1,84018,u8,1,%d,u8,Wrap
+Model display mask 19,Displays the model corresponding to the display mask.,0,1,84019,u8,1,%d,u8,Wrap
+Model display mask 20,Displays the model corresponding to the display mask.,0,1,84020,u8,1,%d,u8,Wrap
+Model display mask 21,Displays the model corresponding to the display mask.,0,1,84021,u8,1,%d,u8,Wrap
+Model display mask 22,Displays the model corresponding to the display mask.,0,1,84022,u8,1,%d,u8,Wrap
+Model display mask 23,Displays the model corresponding to the display mask.,0,1,84023,u8,1,%d,u8,Wrap
+Model display mask 24,Displays the model corresponding to the display mask.,0,1,84024,u8,1,%d,u8,Wrap
+Model display mask 25,Displays the model corresponding to the display mask.,0,1,84025,u8,1,%d,u8,Wrap
+Model display mask 26,Displays the model corresponding to the display mask.,0,1,84026,u8,1,%d,u8,Wrap
+Model display mask 27,Displays the model corresponding to the display mask.,0,1,84027,u8,1,%d,u8,Wrap
+Model display mask 28,Displays the model corresponding to the display mask.,0,1,84028,u8,1,%d,u8,Wrap
+Model display mask 29,Displays the model corresponding to the display mask.,0,1,84029,u8,1,%d,u8,Wrap
+Model display mask 30,Displays the model corresponding to the display mask.,0,1,84030,u8,1,%d,u8,Wrap
+Model display mask 31,Displays the model corresponding to the display mask.,0,1,84031,u8,1,%d,u8,Wrap
+Drop item radius correction,Radius to be added as a correction to the cylinder radius of normal Item search judgment (applicable to enemy drop items. Used for large characters etc.),-99,99,26001,f32,0.1,%f,f32,Wrap
+Height per character [m],The height of the capsule per character.,0,999999,14000,f32,0.1,%f,f32,Wrap
+Radius per character [m],Radius of capsule per character.,0,999999,14100,f32,0.1,%f,f32,Wrap
+Special turning type,Special turning type,0,2,201000,u8,1,%d,NPC_SPECIAL_TURN_TYPE,Wrap
+Do you get a boss in soul?,Do you get a boss in soul?,0,1,27010,u8,1,%d,NPC_BOOL,Wrap
+Is it a bullet owner treated as an object?,If you become the owner of a bullet, a flag that applies the object's damage calculation related to the bullet. Used for damage correction by power.,0,1,410000,u8,1,%d,NPC_BOOL,Wrap
+Do you use low hit FootIK?,Whether to use the FootIk filter for low hits,0,1,420000,u8,1,%d,NPC_BOOL,Wrap
+Whether to apply PvP damage compensation control,Decide whether to calculate damage as a "player" when calculating damage. If it is invalid, it is treated as an "enemy".,0,1,430000,u8,1,%d,NPC_BOOL,Wrap
+Can only be activated when active in the host world,Can only be activated when active in the host world,0,1,450150,u8,1,%d,NPC_BOOL,Wrap
+Do you want to skip the weakness animation?,Weakness damage Whether to skip animation playback. "Part damage rate" and "defense material" are treated as weak points just by not playing the animation.,0,1,51105,u8,1,%d,NPC_BOOL,Wrap
+When riding, do you enable the capsule around the rider?,When riding on a character with this parameter ○, the character's Atari remains while riding.,0,1,9505,u8,1,%d,NPC_BOOL,Wrap
+Is it a special character?,Is it a special character?,0,1,12960,u8,1,%d,NPC_BOOL,Wrap
+Dark defense,Damage reduction base value for dark attacks.,0,9999,35700,u16,1,%d,u16,Wrap
+Threat level,Threat level. If it is 0, even if the PC is found, "FE that seems to be found" is not displayed.,0,9999,460000,u32,1,%d,u32,Wrap
+Threshold for special turning distance [m],Make a special turn when the distance to the target is greater than or equal to the set threshold,0,999999,201001,f32,0.1,%f,f32,Wrap
+Foot effect identifier,The SFX identifier used in the automatic foot effect. (ZZZ of XYYZZZ),-1,999,97100,s32,1,%d,s32,Wrap
+Defensive material 1 [SE],Determine the SE that sounds when damaged. 1. It is OK to set it by appearance.,0,9999,17000,u16,1,%d,WEP_MATERIAL_DEF,Wrap
+Defensive material 1 [SFX],Determine the SFX that occurs when you take damage. 1. It is OK to set it by appearance.,0,9999,18000,u16,1,%d,WEP_MATERIAL_DEF_SFX,Wrap
+Weakness defense material 2 [SE],Determines the SE that sounds when the weak point is damaged. 2,0,9999,51201,u16,1,%d,WEP_MATERIAL_DEF,Wrap
+Weakness protection material 2 [SFX],Determines the SFX that occurs when the weak point is damaged. 2,0,9999,51301,u16,1,%d,WEP_MATERIAL_DEF_SFX,Wrap
+Defensive material 2 [SE],Determine the SE that sounds when damaged. 2. It is OK to set it by appearance.,0,9999,17001,u16,1,%d,WEP_MATERIAL_DEF,Wrap
+Defensive material 2 [SFX],Determine the SFX that occurs when you take damage. 2. It is OK to set it by appearance.,0,9999,18001,u16,1,%d,WEP_MATERIAL_DEF_SFX,Wrap
+Resident special effect 8,Resident special effect 8,-1,999999,50040,s32,1,%d,s32,Wrap
+Resident special effect 9,Resident special effect 9,-1,999999,50050,s32,1,%d,s32,Wrap
+Resident special effect 10,Resident special effect 10,-1,999999,50060,s32,1,%d,s32,Wrap
+Resident special effects 11,Resident special effects 11,-1,999999,50070,s32,1,%d,s32,Wrap
+Resident special effect 12,Resident special effect 12,-1,999999,50080,s32,1,%d,s32,Wrap
+Resident special effect 13,Resident special effect 13,-1,999999,50090,s32,1,%d,s32,Wrap
+Resident special effect 14,Resident special effect 14,-1,999999,50100,s32,1,%d,s32,Wrap
+Resident special effects 15,Resident special effects 15,-1,999999,50110,s32,1,%d,s32,Wrap
+Foot decal identifier 1,Decal to be attached when a foot effect occurs. Floor material is also taken into consideration,-1,999,97110,s32,1,%d,s32,Wrap
+Toughness,Basic value of toughness,0,999,39300,u32,1,%d,u32,Wrap
+Toughness recovery time correction value,Correction value for toughness recovery time,0,99.99,39400,f32,0.01,%.2f,f32,Wrap
+Non-attribute damage multiplier,Non-attribute damage multiplier. The final damage value is the value obtained by multiplying the damage calculation result by this value.,0,99.999,36000,f32,0.001,%.3f,f32,Wrap
+Slash damage multiplier,Slash damage multiplier. The final damage value is the value obtained by multiplying the damage calculation result by this value.,0,99.999,36100,f32,0.001,%.3f,f32,Wrap
+Batter damage multiplier,Batter damage multiplier. The final damage value is the value obtained by multiplying the damage calculation result by this value.,0,99.999,36200,f32,0.001,%.3f,f32,Wrap
+Puncture damage ratio,Puncture damage ratio. The final damage value is the value obtained by multiplying the damage calculation result by this value.,0,99.999,36300,f32,0.001,%.3f,f32,Wrap
+Magic damage multiplier,Magic damage multiplier. The final damage value is the value obtained by multiplying the damage calculation result by this value.,0,99.999,36400,f32,0.001,%.3f,f32,Wrap
+Flame damage multiplier,Flame damage multiplier. The final damage value is the value obtained by multiplying the damage calculation result by this value.,0,99.999,36500,f32,0.001,%.3f,f32,Wrap
+Electric shock damage ratio,Electric shock damage ratio. The final damage value is the value obtained by multiplying the damage calculation result by this value.,0,99.999,36600,f32,0.001,%.3f,f32,Wrap
+Dark damage multiplier,Dark damage multiplier. The final damage value is the value obtained by multiplying the damage calculation result by this value.,0,99.999,36700,f32,0.001,%.3f,f32,Wrap
+Dark attack power cut rate [%],How much to cut the dark attack?,0,100,61200,f32,0.1,%0.1f,f32,Wrap
+Cross update priority offset [m],Cross update priority offset [m],-128,127,140000,s8,1,%d,s8,Wrap
+Weight setting for NPC players,Equipment weight type applied for NPC players,0,5,7700,u8,1,%d,NPC_WEIGHT_TYPE,Wrap
+Normal time replacement model ID,Normal replacement model, texture ID,-1,9999,99100,s16,1,%d,s16,Wrap
+Normal replacement anime character ID,Replace the target animation with the specified ID Anibnd,-1,9999,100200,s16,1,%d,s16,Wrap
+Paint render target size [pix],Paint render target size [pix],0,4096,200050,u16,128,%d,u16,None
+Epidemic resistance correction rule ID,When the abnormal condition is activated, the maximum value is temporarily changed by using the set value of the abnormal condition resistance correction parameter.,-1,999999999,44100,s32,1,%d,s32,Wrap
+Applicable shader ID,ID of the phantom parameter .xlsm to apply,-1,999999999,4500,s32,1,%d,s32,Wrap
+Multiplayer correction parameter ID,Multiplayer correction parameter ID,-1,999999999,400000,s32,1,%d,s32,Wrap
+FootIK Ankle limit angle_pitch,FootIK Ankle pitch limit angle (-1: no limit). If you have not set Foot End L S in HAT, this angle is used in common with rolls.,-1,90,200060,f32,0.1,%f,f32,Wrap
+Cold resistance,Difficulty in getting cold air condition abnormal,0,999,43400,u16,1,%d,u16,Wrap
+Cold attack cut rate [%],How much to cut the attack power against cold air (set as a special effect parameter),0,100,63400,s8,1,%d,s8,Wrap
+pad,,,,2000003,dummy8,,%d,dummy8,Wrap
+Lock camera parameter ID,The ID of the lock camera parameter applied to the camera when locked on. Highest priority. Unused if -1,-1,999999999,10500,s32,1,%d,s32,Wrap
+Resident special effects 16,Resident special effects 16,-1,999999999,50111,s32,1,%d,s32,Wrap
+Resident special effects 17,Resident special effects 17,-1,999999999,50112,s32,1,%d,s32,Wrap
+Resident special effects 18,Resident special effects 18,-1,999999999,50113,s32,1,%d,s32,Wrap
+Resident special effects 19,Resident special effects 19,-1,999999999,50114,s32,1,%d,s32,Wrap
+Resident special effect 20,Resident special effect 20,-1,999999999,50115,s32,1,%d,s32,Wrap
+Resident special effect 21,Resident special effect 21,-1,999999999,50116,s32,1,%d,s32,Wrap
+Resident special effect 22,Resident special effect 22,-1,999999999,50117,s32,1,%d,s32,Wrap
+Resident special effect 23,Resident special effect 23,-1,999999999,50118,s32,1,%d,s32,Wrap
+Resident special effect 24,Resident special effect 24,-1,999999999,50119,s32,1,%d,s32,Wrap
+Resident special effects 25,Resident special effects 25,-1,999999999,50120,s32,1,%d,s32,Wrap
+Resident special effect 26,Resident special effect 26,-1,999999999,50121,s32,1,%d,s32,Wrap
+Resident special effect 27,Resident special effect 27,-1,999999999,50122,s32,1,%d,s32,Wrap
+Resident special effects 28,Resident special effects 28,-1,999999999,50123,s32,1,%d,s32,Wrap
+Resident special effect 29,Resident special effect 29,-1,999999999,50124,s32,1,%d,s32,Wrap
+Resident special effect 30,Resident special effect 30,-1,999999999,50125,s32,1,%d,s32,Wrap
+Resident special effects 31,Resident special effects 31,-1,999999999,50126,s32,1,%d,s32,Wrap
+Central angle of lockable area [deg],Create a conical lock-on non-lockable area beneath the enemy. The angle of the size of the cone. Can be changed temporarily from TAE,0,360,10800,f32,1,%f,f32,Wrap
+Cross OffLOD level,Set the LOD level to turn off cross processing,-1,2,141000,s8,1,%d,s8,Wrap
+Whether to use FootIK results to match undulations,Do you use the FootIK result to match your character to the undulations of the ground? Cannot be used for flying characters,0,1,19500,u8,1,%d,NPC_BOOL,Wrap
+Whether to ground the capsule at the time of initial death,Whether to ground the capsule at the time of initial death,0,1,124005,u8,1,%d,NPC_BOOL,Wrap
+Do you want to remove it from the group reward judgment?,Group reward: In the judgment of "all dead", characters with this parameter ○ are excluded from the judgment.,0,1,760000,u8,1,%d,NPC_BOOL,Wrap
+Is Rock Damipoli (for Enemy) 212 Effective?,Is Rock Damipoli (for Enemy) 212 Effective?,0,1,10900,u8,1,%d,NPC_BOOL,Wrap
+Is Rock Damipoli (for Enemy) 213 Effective?,Is Rock Damipoli (for Enemy) 213 Effective?,0,1,10901,u8,1,%d,NPC_BOOL,Wrap
+Is Rock Damipoli (for Enemy) 214 Effective?,Is Rock Damipoli (for Enemy) 214 Effective?,0,1,10902,u8,1,%d,NPC_BOOL,Wrap
+Excluded from open_XB1,Excluded from open_XB1,0,1,100,u8,1,%d,NPC_BOOL,Wrap
+Excluded from Legacy_XB1,Excluded from Legacy_XB1,0,1,110,u8,1,%d,NPC_BOOL,Wrap
+HP Est Bottle / MP Est Bottle Recovery Number Parameter ID,When the character dies, the data ID of the est usage count recovery parameter .xlsm, which is the same as the value, is acquired and the est bottle is recovered. Unused if -1,-1,9999,750000,s16,1,%d,s16,Wrap
+Role name text ID,Specify the role name at the time of summoning. -1: Use the default role name of the target spirit body. 0: No display. 1 or more: Used as a text ID.,-1,999999999,405000,s32,1,%d,s32,Wrap
+HP & MP Est Bottle Recovery Lottery Probability,HP / MP est recovery probability when defeating an enemy. The numerator is obtained from the NPC para with 10000 as the denominator.,0,10000,751000,u16,1,%d,u16,Wrap
+HP Est Bottle Recovery Lottery Probability,Recovery probability of MP Est when defeating an enemy. The numerator is obtained from the NPC para with 10000 as the denominator.,0,10000,751100,u16,1,%d,u16,Wrap
+MP Est Bottle Recovery Lottery Probability,Recovery probability of MP Est when defeating an enemy. The numerator is obtained from the NPC para with 10000 as the denominator.,0,10000,751200,u16,1,%d,u16,Wrap
+HP & MP Est Bottle Recovery Addition lottery probability at the time of defeat,Next time probability increase value when you miss the HP / MP est recovery lottery. Addition value of numerator.,0,10000,752000,u16,1,%d,u16,Wrap
+HP Est Bottle Recovery Addition lottery probability at the time of defeat,The next probability increase value when you miss the HP Est Recovery Lottery. Addition value of numerator.,0,10000,752100,u16,1,%d,u16,Wrap
+MP est bottle recovery Addition lottery probability at the time of defeat,The next probability increase value when the MP est recovery lottery is missed. Addition value of numerator.,0,10000,752200,u16,1,%d,u16,Wrap
+Will you be a wandering ghost using a phantom shader?,Phantom shader with ID specified only on the guest side Specify the phantom shader ID and make it an illusion,-1,1000000000,95500,s32,1,%d,s32,Wrap
+Hearing head size [m],The offset size to be set instead of the capsule offset at the time of hearing judgment. Use this value as an offset only if it is set to 0 or higher.,-1,999999,14200,f32,0.1,%f,f32,Wrap
+Sound bank ID,Sound bank ID can be specified -1: Use the bank of character ID (resource name),-1,9999,1000000,s16,1,%d,s16,Wrap
+Maximum anteroposterior angle to match undulations,The upper limit angle when adjusting the front-back angle to the undulation. If the total length is long, it is better to set it lower.,0,180,20000,u8,1,%d,u8,Wrap
+Maximum left-right angle to match undulations,Upper limit angle when adjusting the left and right angles to the undulations. If the total length is long, it is better to set it lower.,0,180,20010,u8,1,%d,u8,Wrap
+Platoon Deactive Movement Speed [m / s],Platoon Deactive Movement Speed [m / s],0,999,450200,f32,0.1,%f,f32,Wrap
+Distance to switch to platoon deactive movement [m],Distance to switch to platoon deactive movement [m],0,9999,450250,f32,1,%f,f32,Wrap
+Sound source effective distance [m],The distance from the player for which the character sound source is valid. -1: Effective at all distances,-1,4096,1000002,f32,0.1,%f,f32,Wrap
+Correction gain value to match undulations,Set the speed when adjusting the angle to the undulations,0,1,20100,f32,0.01,%f,f32,Wrap
+Foot decal identifier 2,Decal to be attached when a foot effect occurs. Floor material is also taken into consideration,-1,999,97111,s16,1,%d,s16,Wrap
+Foot decal identifier 3,Decal to be attached when a foot effect occurs. Floor material is also taken into consideration,-1,999,97112,s16,1,%d,s16,Wrap
+Retarget reference character ID,Character ID to be referred to when specifying the motion retarget destination,-1,9999,100300,s16,1,%d,s16,Wrap
+SFX resource bank ID,SFX resource bank ID can be specified -1: Use the bank of character ID (resource name),-1,9999,1000100,s16,1,%d,s16,Wrap
+Update and activate priorities,Used to determine the activation / renewal level. The larger it is, the lower the update level will be even if you are far from the player.,0,9999,450050,f32,0.1,%f,f32,Wrap
+Pre-death navigation mesh flag,Flag the value of the touching Nav Mesh while the character is alive. Does not follow the movement.,0,3,470000,u8,1,%d,NPC_NAVIMESH_FLAG,Wrap
+Post-mortem navigation mesh flag,Flag the value on the touching Nav Mesh while the character is dying. Does not follow the movement.,0,3,470010,u8,1,%d,NPC_NAVIMESH_FLAG,Wrap
+pad,,,,2000004,dummy8,,%d,dummy8,Wrap
+Wheel control type,Wheel control type,0,3,16300,u8,1,%d,NPC_WHEEL_ROT_TYPE,Wrap
+Wheel radius,Specify the radius of the wheel [m],0,99.99,16350,f32,0.01,%f,f32,Wrap
+Retarget movement amount magnification,Magnification of movement amount at the time of retargeting,0,99.99,100400,f32,0.01,%f,f32,Wrap
+Ladder warp position offset,Offsets along the Damipoly Z-axis at the specified value. Both positive and negative numbers can be specified.,-99.99,99.99,16400,f32,0.01,%f,f32,Wrap
+Load asset ID,Asset ID to be read in connection with character loading (for dynamic generation of characters, etc.).,-1,999999,100250,s32,1,%d,s32,Wrap
+Overlap camera target lock Damipoli ID,Set the Damipoly ID (220-227) to enable the overlap camera. If it is -1, it will be invalid.,-1,999,10700,s32,1,%d,s32,Wrap
+Resident Material Expansion Para ID0,Resident Material Expansion Para ID0,-1,999999999,90000,s32,1,%d,s32,Wrap
+Resident Material Expansion Para ID1,Resident Material Expansion Para ID1,-1,999999999,90010,s32,1,%d,s32,Wrap
+Resident Material Expansion Para ID2,Resident Material Expansion Para ID2,-1,999999999,90020,s32,1,%d,s32,Wrap
+Resident Material Expansion Para ID3,Resident Material Expansion Para ID3,-1,999999999,90030,s32,1,%d,s32,Wrap
+Resident Material Expansion Para ID4,Resident Material Expansion Para ID4,-1,999999999,90040,s32,1,%d,s32,Wrap
+Item lottery ID_for enemies,Specify the lottery ID_for enemies of the item to be acquired when collecting Nemuri. Please set only one of them.,-1,999999999,29000,s32,1,%d,s32,Wrap
+Nemuri item lottery ID_for map,Specify for the lottery ID_map of the item to be acquired when collecting Nemuri. Please set only one of them.,-1,999999999,29001,s32,1,%d,s32,Wrap
+FootIK Appearance height correction ON gain value,FootIK Appearance height correction ON gain value,0,1,200200,f32,0.01,%.2f,f32,Wrap
+FootIK Appearance height correction OFF gain value,FootIK Appearance height correction OFF gain value,0,1,200250,f32,0.01,%.2f,f32,Wrap
+Additional sound bank ID,You can specify an additional sound bank ID -1 or 0: No addition (SEQ 16135),-1,9999,1000001,s16,1,%d,s16,Wrap
+Defensive material variation value,It is a value used in combination with the defense material to classify abnormal conditions, damage SFX, and SE. SEQ16473,0,99,18002,u8,1,%d,u8,Wrap
+Weakness defense material variation value,It is a value used for variation of abnormal condition, damage SFX, SE in combination with weak point defense material. SEQ16473,0,99,51302,u8,1,%d,u8,Wrap
+SA endurance,Super armor durability value,-1,9999,39120,f32,0.1,%f,f32,Wrap
+SA recovery speed correction value,Correct the SA recovery speed by multiplying the SA basic recovery amount,-99.99,99.99,39250,f32,0.1,%f,f32,Wrap
+SA attack cut rate [%],Cut rate of SA damage when guard is successful,0,100,67000,f32,0.1,%f,f32,Wrap
+Bleeding resistance correction rule ID,When the abnormal condition is activated, the maximum value is temporarily changed by using the setting value of the abnormal condition resistance correction parameter.,-1,999999999,44200,s32,1,%d,s32,Wrap
+Curse resistance correction rule ID,When the abnormal condition is activated, the maximum value is temporarily changed by using the set value of the abnormal condition resistance correction parameter.,-1,999999999,44300,s32,1,%d,s32,Wrap
+Cold resistance correction rule ID,When the abnormal condition is activated, the maximum value is temporarily changed by using the setting value of the abnormal condition resistance correction parameter.,-1,999999999,44400,s32,1,%d,s32,Wrap
+Sleep tolerance correction rule ID,When the abnormal condition is activated, the maximum value is temporarily changed by using the set value of the abnormal condition resistance correction parameter.,-1,999999999,44500,s32,1,%d,s32,Wrap
+Madness resistance correction rule ID,When the abnormal condition is activated, the maximum value is temporarily changed by using the set value of the abnormal condition resistance correction parameter.,-1,999999999,44600,s32,1,%d,s32,Wrap
+Character death tutorial judgment flag ID,Event flag ID for the tutorial when the character is defeated for the first time. Flag ON when the character dies.,0,-294967297,761000,u32,1,%u,u32,Wrap
+Step crossing display interpolation time,Step crossing display interpolation time,0.01,999.9,200510,f32,0.01,%f,f32,Wrap
+Step crossing display activation judgment value,Step crossing display activation judgment value,0.01,999.9,200520,f32,0.01,%f,f32,Wrap
+Lock score correction value,Lock score correction value,-999.9,999.9,461000,f32,0.1,%f,f32,Wrap
+Padding 12,,,,2000005,dummy8,,,dummy8,None

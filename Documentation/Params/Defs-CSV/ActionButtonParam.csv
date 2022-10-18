@@ -1,0 +1,30 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Range type,Range shape (cylinder, prism, capsule),0,99,100,u8,1,%d,ACTION_BUTTON_REGION_TYPE,None
+category,category. The number on the left side of the name is the priority when multiple action buttons overlap (the closer it is to 0, the higher the priority is displayed).,0,99,50,u8,1,%d,ACTION_BUTTON_CATEGORY,None
+Padding 1,,,,100010,dummy8,,,dummy8,None
+Damipoli 1,Specify the Damipoli ID that is the center of the bottom of the range. If there is no Damipoly or -1 is entered, the center coordinates will be the reference.,-1,999999999,200,s32,1,%d,s32,None
+Damipoli 2,Used only when the range type is a capsule. Additional Damipoly (capsule) that creates a line segment with two Damipoly,-1,999999999,210,s32,1,%d,s32,None
+radius,Radius (cylinder / capsule),0,1E+09,300,f32,0.1,%f,f32,None
+angle,Angle (cylinder),0,180,400,s32,1,%d,s32,None
+depth,Depth (prism),0,1E+09,500,f32,0.1,%f,f32,None
+width,Width (prism),0,1E+09,510,f32,0.1,%f,f32,None
+height,Height (cylinder / prism),0,1E+09,520,f32,0.1,%f,f32,None
+Bottom height offset,How much to raise or lower the Y coordinate of the bottom (cylinder / prism),-1E+09,1E+09,600,f32,0.1,%f,f32,None
+Angle difference judgment type,Angle difference judgment type (cylinder / prism),0,99,700,u8,1,%d,ACTION_BUTTON_ANGLE_CHECK_TYPE,None
+Padding 2,,,,100020,dummy8,,,dummy8,None
+Allowable angle difference,Allowable angle difference (cylinder / prism),0,180,800,s32,1,%d,s32,None
+Action spot Damipoli,If there is no Damipoli that specifies the Damipoli ID that will be the position of the action spot, or if -1 is entered, the center coordinates will be the reference.,-1,999999999,850,s32,1,%d,s32,None
+Text box type,Text box type,0,99,900,u8,1,%d,ACTION_BUTTON_TEXT_BOX_TYPE,None
+Padding 3,,,,100030,dummy8,,,dummy8,None
+Padding 5,,,,100050,dummy8,,%d,dummy8,None
+Is it invalid when riding?,If this item is YES, the action button will not appear when riding and no judgment will be made.,0,1,1250,u8,1,%d,BOOL_YESNO_TYPE,None
+Is it gray out when riding?,If this item is YES, the action button will be grayed out when riding and no judgment will be made.,0,1,1260,u8,1,%d,BOOL_YESNO_TYPE,None
+Is it invalid when crouching?,If this item is YES, the action button will not appear when crouching, and no judgment will be made.,0,1,1300,u8,1,%d,BOOL_YESNO_TYPE,None
+Is it gray out when crouching?,If this item is YES, the action button will be grayed out when crouching and no judgment will be made.,0,1,1310,u8,1,%d,BOOL_YESNO_TYPE,None
+Padding 4,,,,100061,dummy8,,,dummy8,None
+Text ID,Text ID to display,-1,999999999,1000,s32,1,%d,s32,None
+Invalid flag,If this flag is ON, the action button will not appear and no judgment will be made.,0,-294967297,1100,u32,1,%u,u32,None
+Gray out flag,If this flag is ON, the action button will be grayed out and no judgment will be made.,0,-294967297,1200,u32,1,%u,u32,None
+Replacement action button ID when riding,Replace with this action button ID parameter while riding (-1: No replacement),-1,999999999,1270,s32,1,%d,s32,None
+Invalid time after execution,Invalid time after execution (-infinite by value),-1,1E+09,1400,f32,0.1,%f,f32,None
+Padding 6,,,,100060,dummy8,,,dummy8,None

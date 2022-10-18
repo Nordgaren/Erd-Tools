@@ -1,0 +1,50 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Number of simultaneous appearances,Number of simultaneous appearances,0,99,1,u32,1,%d,u32,Wrap
+Random appearance lottery Para ID1,Random appearance lottery Para ID1,-1,999999999,2,s32,1,%d,s32,Wrap
+Lottery weight rate 1,Lottery weight rate 1,0,9999,3,u32,1,%d,u32,Wrap
+Random appearance lottery Para ID2,Random appearance lottery Para ID2,-1,999999999,4,s32,1,%d,s32,Wrap
+Lottery weight rate 2,Lottery weight rate 2,0,9999,5,u32,1,%d,u32,Wrap
+Random appearance lottery Para ID3,Random appearance lottery Para ID3,-1,999999999,6,s32,1,%d,s32,Wrap
+Lottery weight rate 3,Lottery weight rate 3,0,9999,7,u32,1,%d,u32,Wrap
+Random appearance lottery Para ID4,Random appearance lottery Para ID4,-1,999999999,8,s32,1,%d,s32,Wrap
+Lottery weight rate 4,Lottery weight rate 4,0,9999,9,u32,1,%d,u32,Wrap
+Random appearance lottery Para ID5,Random appearance lottery Para ID5,-1,999999999,10,s32,1,%d,s32,Wrap
+Lottery weight rate 5,Lottery weight rate 5,0,9999,11,u32,1,%d,u32,Wrap
+Random appearance lottery Para ID6,Random appearance lottery Para ID6,-1,999999999,12,s32,1,%d,s32,Wrap
+Lottery weight rate 6,Lottery weight rate 6,0,9999,13,u32,1,%d,u32,Wrap
+Random appearance lottery Para ID7,Random appearance lottery Para ID7,-1,999999999,14,s32,1,%d,s32,Wrap
+Lottery weight rate 7,Lottery weight rate 7,0,9999,15,u32,1,%d,u32,Wrap
+Random appearance lottery Para ID8,Random appearance lottery Para ID8,-1,999999999,16,s32,1,%d,s32,Wrap
+Lottery weight rate 8,Lottery weight rate 8,0,9999,17,u32,1,%d,u32,Wrap
+Random appearance lottery Para ID9,Random appearance lottery Para ID9,-1,999999999,18,s32,1,%d,s32,Wrap
+Lottery weight rate 9,Lottery weight rate 9,0,9999,19,u32,1,%d,u32,Wrap
+Random appearance lottery Para ID10,Random appearance lottery Para ID10,-1,999999999,20,s32,1,%d,s32,Wrap
+Lottery weight rate 10,Lottery weight rate 10,0,9999,21,u32,1,%d,u32,Wrap
+Random appearance lottery Para ID11,Random appearance lottery Para ID11,-1,999999999,22,s32,1,%d,s32,Wrap
+Lottery weight rate 11,Lottery weight rate 11,0,9999,23,u32,1,%d,u32,Wrap
+Random appearance lottery Para ID12,Random appearance lottery Para ID12,-1,999999999,24,s32,1,%d,s32,Wrap
+Lottery weight rate 12,Lottery weight rate 12,0,9999,25,u32,1,%d,u32,Wrap
+Random appearance lottery Para ID13,Random appearance lottery Para ID13,-1,999999999,26,s32,1,%d,s32,Wrap
+Lottery weight rate 13,Lottery weight rate 13,0,9999,27,u32,1,%d,u32,Wrap
+Random appearance lottery Para ID14,Random appearance lottery Para ID14,-1,999999999,28,s32,1,%d,s32,Wrap
+Lottery weight rate 14,Lottery weight rate 14,0,9999,29,u32,1,%d,u32,Wrap
+Random appearance lottery Para ID15,Random appearance lottery Para ID15,-1,999999999,30,s32,1,%d,s32,Wrap
+Lottery weight rate 15,Lottery weight rate 15,0,9999,31,u32,1,%d,u32,Wrap
+Random appearance lottery para ID16,Random appearance lottery para ID16,-1,999999999,32,s32,1,%d,s32,Wrap
+Lottery weight rate 16,Lottery weight rate 16,0,9999,33,u32,1,%d,u32,Wrap
+Random appearance lottery Para ID17,Random appearance lottery Para ID17,-1,999999999,34,s32,1,%d,s32,Wrap
+Lottery weight rate 17,Lottery weight rate 17,0,9999,35,u32,1,%d,u32,Wrap
+Random appearance lottery Para ID18,Random appearance lottery Para ID18,-1,999999999,36,s32,1,%d,s32,Wrap
+Lottery weight rate 18,Lottery weight rate 18,0,9999,37,u32,1,%d,u32,Wrap
+Random appearance lottery para ID19,Random appearance lottery para ID19,-1,999999999,38,s32,1,%d,s32,Wrap
+Lottery weight rate 19,Lottery weight rate 19,0,9999,39,u32,1,%d,u32,Wrap
+Random appearance lottery para ID20,Random appearance lottery para ID20,-1,999999999,40,s32,1,%d,s32,Wrap
+Lottery weight rate 20,Lottery weight rate 20,0,9999,41,u32,1,%d,u32,Wrap
+Random appearance lottery Para ID21,Random appearance lottery Para ID21,-1,999999999,42,s32,1,%d,s32,Wrap
+Lottery weight rate 21,Lottery weight rate 21,0,9999,43,u32,1,%d,u32,Wrap
+Random appearance lottery Para ID22,Random appearance lottery Para ID22,-1,999999999,44,s32,1,%d,s32,Wrap
+Lottery weight rate 22,Lottery weight rate 22,0,9999,45,u32,1,%d,u32,Wrap
+Random appearance lottery Para ID23,Random appearance lottery Para ID23,-1,999999999,46,s32,1,%d,s32,Wrap
+Lottery weight rate 23,Lottery weight rate 23,0,9999,47,u32,1,%d,u32,Wrap
+Random appearance lottery Para ID24,Random appearance lottery Para ID24,-1,999999999,48,s32,1,%d,s32,Wrap
+Lottery weight rate 24,Lottery weight rate 24,0,9999,49,u32,1,%d,u32,Wrap

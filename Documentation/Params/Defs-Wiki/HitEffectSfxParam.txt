@@ -1,0 +1,21 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| Slash_Normal || Slash: Standard || Slash: Standard || - ||
+|| Slash_S || Slash: Small || Slash: Small || - ||
+|| Slash_L || Slash: Large || Slash: Large || - ||
+|| Slash_Specific1 || Slash: Designation 1 || Slash: Designation 1 || - ||
+|| Slash_Specific2 || Slash: Designation 2 || Slash: Designation 2 || - ||
+|| Blow_Normal || Batter: Standard || Batter: Standard || - ||
+|| Blow_S || Batter: Small || Batter: Small || - ||
+|| Blow_L || Batter: Large || Batter: Large || - ||
+|| Blow_Specific1 || Batter: Designation 1 || Batter: Designation 1 || - ||
+|| Blow_Specific2 || Batter: Designation 2 || Batter: Designation 2 || - ||
+|| Thrust_Normal || Piercing: Standard || Piercing: Standard || - ||
+|| Thrust_S || Piercing: Small || Piercing: Small || - ||
+|| Thrust_L || Piercing: Large || Piercing: Large || - ||
+|| Thrust_Specific1 || Piercing: Designation 1 || Piercing: Designation 1 || - ||
+|| Thrust_Specific2 || Piercing: Designation 2 || Piercing: Designation 2 || - ||
+|| Neutral_Normal || Non-attribute: standard || Non-attribute: standard || - ||
+|| Neutral_S || Non-attribute: small || Non-attribute: small || - ||
+|| Neutral_L || Non-attribute: Large || Non-attribute: Large || - ||
+|| Neutral_Specific1 || Non-attribute: Designation 1 || Non-attribute: Designation 1 || - ||
+|| Neutral_Specific2 || Non-attribute: Designation 2 || Non-attribute: Designation 2 || - ||

@@ -1,0 +1,42 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,10000,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,10001,dummy8,,%d,dummy8,None
+Weather type 0,Weather type 0,-2,9999,50,s16,1,%d,WEATHER_TYPE,None
+Weather type 1,Weather type 1,-2,9999,100,s16,1,%d,WEATHER_TYPE,None
+Weather type 2,Weather type 2,-2,9999,200,s16,1,%d,WEATHER_TYPE,None
+Weather type 3,Weather type 3,-2,9999,300,s16,1,%d,WEATHER_TYPE,None
+Weather type 4,Weather type 4,-2,9999,400,s16,1,%d,WEATHER_TYPE,None
+Weather type 5,Weather type 5,-2,9999,500,s16,1,%d,WEATHER_TYPE,None
+Weather type 6,Weather type 6,-2,9999,600,s16,1,%d,WEATHER_TYPE,None
+Weather type 7,Weather type 7,-2,9999,700,s16,1,%d,WEATHER_TYPE,None
+Weather type 8,Weather type 8,-2,9999,800,s16,1,%d,WEATHER_TYPE,None
+Weather type 9,Weather type 9,-2,9999,900,s16,1,%d,WEATHER_TYPE,None
+Weather type 10,Weather type 10,-2,9999,1000,s16,1,%d,WEATHER_TYPE,None
+Weather type 11,Weather type 11,-2,9999,1100,s16,1,%d,WEATHER_TYPE,None
+Weather type 12,Weather type 12,-2,9999,1200,s16,1,%d,WEATHER_TYPE,None
+Weather type 13,Weather type 13,-2,9999,1300,s16,1,%d,WEATHER_TYPE,None
+Weather type 14,Weather type 14,-2,9999,1400,s16,1,%d,WEATHER_TYPE,None
+Weather type 15,Weather type 15,-2,9999,1500,s16,1,%d,WEATHER_TYPE,None
+Lottery weight 0,Lottery weight 0,0,65535,51,u16,1,%d,u16,None
+Lottery weight 1,Lottery weight 1,0,65535,101,u16,1,%d,u16,None
+Lottery weight 2,Lottery weight 2,0,65535,201,u16,1,%d,u16,None
+Lottery weight 3,Lottery weight 3,0,65535,301,u16,1,%d,u16,None
+Lottery weight 4,Lottery weight 4,0,65535,401,u16,1,%d,u16,None
+Lottery weight 5,Lottery weight 5,0,65535,501,u16,1,%d,u16,None
+Lottery weight 6,Lottery weight 6,0,65535,601,u16,1,%d,u16,None
+Lottery weight 7,Lottery weight 7,0,65535,701,u16,1,%d,u16,None
+Lottery weight 8,Lottery weight 8,0,65535,801,u16,1,%d,u16,None
+Lottery weight 9,Lottery weight 9,0,65535,901,u16,1,%d,u16,None
+Lottery weight 10,Lottery weight 10,0,65535,1001,u16,1,%d,u16,None
+Lottery weight 11,Lottery weight 11,0,65535,1101,u16,1,%d,u16,None
+Lottery weight 12,Lottery weight 12,0,65535,1201,u16,1,%d,u16,None
+Lottery weight 13,Lottery weight 13,0,65535,1301,u16,1,%d,u16,None
+Lottery weight 14,Lottery weight 14,0,65535,1401,u16,1,%d,u16,None
+Lottery weight 15,Lottery weight 15,0,65535,1501,u16,1,%d,u16,None
+Time zone condition list,Time zone condition list,0,99,1,u8,1,%d,WEATHER_LOT_TIMEZONE_TYPE,None
+Direct time specification_start_hour,Direct time specification_start_hour,0,23,2,u8,1,%d,u8,None
+Direct time specification_start_minute,Direct time specification_start_minute,0,59,3,u8,1,%d,u8,None
+Direct time specification_start_hour,Direct time specification_start_hour,0,23,4,u8,1,%d,u8,None
+Direct time specification_start_minute,Direct time specification_start_minute,0,59,5,u8,1,%d,u8,None
+Reserve,Reserved area,,,9999,dummy8,,,dummy8,None

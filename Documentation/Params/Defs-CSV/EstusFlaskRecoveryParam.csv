@@ -1,0 +1,22 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+host,Number of host est recovery,0,255,1000,u8,1,%d,u8,Wrap
+No intrusion route_orb_,The number of est recovery of the power of the orb whose invasion route is,0,255,2000,u8,1,%d,u8,Wrap
+Invasion route_Orb_Sun,The number of est recovery of the power of the orb whose invasion route is,0,255,2100,u8,1,%d,u8,Wrap
+Intrusion route_Orb_Berserker,The number of est recovery of the power of the orb whose invasion route is,0,255,2200,u8,1,%d,u8,Wrap
+Invasion route_Orb_Sinner,The number of est recovery of the power of the orb whose invasion route is,0,255,2300,u8,1,%d,u8,Wrap
+No intrusion route_sign_,The number of est recovery of the power whose invasion route is a sign,0,255,3000,u8,1,%d,u8,Wrap
+Invasion route_sign_sun,The number of est recovery of the power whose invasion route is a sign,0,255,3100,u8,1,%d,u8,Wrap
+Intrusion route_sign_berserker,The number of est recovery of the power whose invasion route is a sign,0,255,3200,u8,1,%d,u8,Wrap
+Intrusion route_sign_sinner,The number of est recovery of the power whose invasion route is a sign,0,255,3300,u8,1,%d,u8,Wrap
+Invasion route_ring_sinner,The number of est recovery of the power of the ring whose invasion route is,0,255,4000,u8,1,%d,u8,Wrap
+Invasion route_Ring_Boss guard (Rosalia),The number of est recovery of the power of the ring whose invasion route is,0,255,4100,u8,1,%d,u8,Wrap
+Invasion route_Ring_Map Mamoru (Forest),The number of est recovery of the power of the ring whose invasion route is,0,255,4200,u8,1,%d,u8,Wrap
+Cooperation route_sign_ None,The number of est recovery of the power whose cooperation route is a sign,0,255,5000,u8,1,%d,u8,Wrap
+Cooperation route_sign_sun,The number of est recovery of the power whose cooperation route is a sign,0,255,5100,u8,1,%d,u8,Wrap
+Cooperation route_sign_berserker,The number of est recovery of the power whose cooperation route is a sign,0,255,5200,u8,1,%d,u8,Wrap
+Cooperation route_sign_sinner,The number of est recovery of the power whose cooperation route is a sign,0,255,5300,u8,1,%d,u8,Wrap
+Cooperation route _ ring _ red hunting,Cooperation route is the number of est recovery of the power of the ring,0,255,5400,u8,1,%d,u8,Wrap
+Intrusion route_Ring_Map guard (Anor),The number of est recovery of the power of the ring whose invasion route is,0,255,4250,u8,1,%d,u8,Wrap
+Recovery number Parameter replacement rate,Recovery number Parameter replacement rate,0,10000,10000,u16,1,%d,u16,None
+Recovery number Parameter replacement destination ID,Recovery number Parameter replacement destination ID,-1,99999999,10100,s32,1,%d,s32,None
+pad,,,,10101,dummy8,,,dummy8,None

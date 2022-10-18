@@ -1,0 +1,4 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| grassType0 || Grass type 0 ||  || - ||
+|| grassType1 || Grass type 1 ||  || - ||
+|| grassType2 || Grass type 2 ||  || - ||

@@ -1,0 +1,4 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Grass type 0,,0,1E+08,1,u32,1,%d,u32,Wrap
+Grass type 1,,0,1E+08,2,u32,1,%d,u32,Wrap
+Grass type 2,,0,1E+08,3,u32,1,%d,u32,Wrap

@@ -1,0 +1,15 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Is it a debug parameter?,Parameters marked with a circle are excluded from all packages (because they are for debugging).,0,0,1,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,9999,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,9999,dummy8,,%d,dummy8,None
+Map number to play,Please enter the map number to be played back as an 8-digit number. This is the map number used as the reference in the cutscene. If you do not specify the correct map number, the playback position will shift.,0,99999999,10,u32,1,%d,u32,None
+Map number 1 required for display,Please enter the map number required for display as an 8-digit number. This parameter is used by the guest as a list to determine if the cutscene can be played. If you don't need it, you can leave it as 0 or blank.,0,99999999,21,u32,1,%d,u32,None
+Map number 2 required for display,Please enter the map number required for display as an 8-digit number. This parameter is used by the guest as a list to determine if the cutscene can be played. If you don't need it, you can leave it as 0 or blank.,0,99999999,22,u32,1,%d,u32,None
+Map number 3 required for display,Please enter the map number required for display as an 8-digit number. This parameter is used by the guest as a list to determine if the cutscene can be played. If you don't need it, you can leave it as 0 or blank.,0,99999999,23,u32,1,%d,u32,None
+Hit part ID for calculating camera position during loading,Hit part ID for calculating camera position during loading,-1,999999,102,s32,1,%d,s32,None
+Reserve,,,,10000,dummy8,,,dummy8,None
+Waiting time when cannot be displayed [seconds],The number of seconds used to display the progress of the loading screen progress bar that is displayed when the guest side cannot play in the multi. [GR] SEQ22843 [Cutscene] Players who have not read the map number required for display during cutscene playback will see the screen go dark.,0,65535,15,u16,1,%d,u16,None
+reserved,reserved,,,9999,dummy8,,,dummy8,None
+Hit parts waiting to be read 0,Hit parts waiting to be read 0,-1,999999,100,s32,1,%d,s32,None
+Hit parts waiting to be read 1,Hit parts waiting to be read 1,-1,999999,101,s32,1,%d,s32,None

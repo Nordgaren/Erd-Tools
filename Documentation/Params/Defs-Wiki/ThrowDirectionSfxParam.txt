@@ -1,0 +1,33 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| sfxId_00 || 0 || ID of SFX to use || - ||
+|| sfxId_01 || 1 || ID of SFX to use || - ||
+|| sfxId_02 || 2 || ID of SFX to use || - ||
+|| sfxId_03 || 3 || ID of SFX to use || - ||
+|| sfxId_04 || Four || ID of SFX to use || - ||
+|| sfxId_05 || Five || ID of SFX to use || - ||
+|| sfxId_06 || 6 || ID of SFX to use || - ||
+|| sfxId_07 || 7 || ID of SFX to use || - ||
+|| sfxId_08 || 8 || ID of SFX to use || - ||
+|| sfxId_09 || 9 || ID of SFX to use || - ||
+|| sfxId_10 || Ten || ID of SFX to use || - ||
+|| sfxId_11 || 11 11 || ID of SFX to use || - ||
+|| sfxId_12 || 12 || ID of SFX to use || - ||
+|| sfxId_13 || 13 || ID of SFX to use || - ||
+|| sfxId_14 || 14 || ID of SFX to use || - ||
+|| sfxId_15 || 15 || ID of SFX to use || - ||
+|| sfxId_16 || 16 16 || ID of SFX to use || - ||
+|| sfxId_17 || 17 17 || ID of SFX to use || - ||
+|| sfxId_18 || 18 18 || ID of SFX to use || - ||
+|| sfxId_19 || 19 19 || ID of SFX to use || - ||
+|| sfxId_20 || 20 || ID of SFX to use || - ||
+|| sfxId_21 || twenty one || ID of SFX to use || - ||
+|| sfxId_22 || twenty two || ID of SFX to use || - ||
+|| sfxId_23 || twenty three || ID of SFX to use || - ||
+|| sfxId_24 || twenty four || ID of SFX to use || - ||
+|| sfxId_25 || twenty five || ID of SFX to use || - ||
+|| sfxId_26 || 26 || ID of SFX to use || - ||
+|| sfxId_27 || 27 || ID of SFX to use || - ||
+|| sfxId_28 || 28 28 || ID of SFX to use || - ||
+|| sfxId_29 || 29 || ID of SFX to use || - ||
+|| sfxId_30 || 30 || ID of SFX to use || - ||
+|| pad1 || pad || pad || - ||

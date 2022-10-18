@@ -1,0 +1,7 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| padKeyId || pad || Pad (physical key) || CS_PAD_KEY ||
+|| keyboardModifyKey || Keyboard modifier || Keyboard modifier keys || CS_MODIFIER_KEY ||
+|| keyboardKeyId || keyboard || Keyboard (physical keys) || CS_KEYBOARD_KEY ||
+|| mouseModifyKey || Mouse modification || Mouse modifier key || CS_MODIFIER_KEY ||
+|| mouseKeyId || mouse || Mouse (physical key) || CS_MOUSE_KEY ||
+|| reserved || ---- ||  || - ||

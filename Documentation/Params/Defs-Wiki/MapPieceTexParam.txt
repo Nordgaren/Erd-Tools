@@ -1,0 +1,10 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| srcR || R || Color information (R) of the map image before conversion. Pixels with matching RGB values are associated with this parameter || - ||
+|| srcG || G || Color information (G) of the map image before conversion. Pixels with matching RGB values are associated with this parameter || - ||
+|| srcB || B || Color information (B) of the map image before conversion. Pixels with matching RGB values are associated with this parameter || - ||
+|| pad1 || pad || pad. For the time being, leave it open for "image color information (A)" || - ||
+|| saveMapNameId || Map name ID_for saving data display || Map name ID for displaying save data [PlaceName] (0: invalid value) || - ||
+|| multiPlayAreaId || Multiplayer area ID || Multiplayer area ID (-1: invalid value) || - ||

@@ -1,0 +1,5 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| hitBulletDecalOffset_HitIns || Decal generation position offset when a bullet hits HIT INS || The position where the decal that occurs when hitting HIT INS is offset by this value in the normal direction. || - ||
+|| reserved02 || reserve || (dummy8) || - ||
+|| charaWetDecalFadeRange || Decal fade range when the character gets wet [m] || Fade range that erases decals when the character gets wet [m] || - ||
+|| reserved04 || reserve || (dummy8) || - ||

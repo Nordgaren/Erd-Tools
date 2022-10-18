@@ -1,0 +1,8 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Weapon toughness correction factor,It is a correction magnification applied to the "toughness correction magnification" of the weapon when calculating the toughness.,0,10,100,f32,0.01,%f,f32,Wrap
+Minimum toughness,The lower limit of current toughness applied at the beginning of the toughness period. If the toughness falls below this value at the start of toughness, it will recover to this value.,0,999,200,u16,1,%d,u16,Wrap
+Minimum toughness value is not affected by toughness multiplier,The toughness correction factor will no longer be applied to the minimum toughness.,0,1,250,u8,1,%d,u8,Wrap
+pad,pad,,,301,dummy8,,,dummy8,None
+Special effect ID,Replacement special effect Id that takes place during the toughness period. If -1, the normal replacement rule applies. Only used by player characters,-1,9999999,300,s32,1,%d,s32,Wrap
+Armor toughness correction factor,This is the correction factor applied to the "toughness correction factor" of the armor when determining the toughness.,0,10,150,f32,0.01,%f,f32,Wrap
+pad,pad,,,302,dummy8,,,dummy8,None

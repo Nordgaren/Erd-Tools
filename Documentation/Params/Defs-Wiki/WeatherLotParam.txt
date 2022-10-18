@@ -1,0 +1,42 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| weatherType0 || Weather type 0 || Weather type 0 || WEATHER_TYPE ||
+|| weatherType1 || Weather type 1 || Weather type 1 || WEATHER_TYPE ||
+|| weatherType2 || Weather type 2 || Weather type 2 || WEATHER_TYPE ||
+|| weatherType3 || Weather type 3 || Weather type 3 || WEATHER_TYPE ||
+|| weatherType4 || Weather type 4 || Weather type 4 || WEATHER_TYPE ||
+|| weatherType5 || Weather type 5 || Weather type 5 || WEATHER_TYPE ||
+|| weatherType6 || Weather type 6 || Weather type 6 || WEATHER_TYPE ||
+|| weatherType7 || Weather type 7 || Weather type 7 || WEATHER_TYPE ||
+|| weatherType8 || Weather type 8 || Weather type 8 || WEATHER_TYPE ||
+|| weatherType9 || Weather type 9 || Weather type 9 || WEATHER_TYPE ||
+|| weatherType10 || Weather type 10 || Weather type 10 || WEATHER_TYPE ||
+|| weatherType11 || Weather type 11 || Weather type 11 || WEATHER_TYPE ||
+|| weatherType12 || Weather type 12 || Weather type 12 || WEATHER_TYPE ||
+|| weatherType13 || Weather type 13 || Weather type 13 || WEATHER_TYPE ||
+|| weatherType14 || Weather type 14 || Weather type 14 || WEATHER_TYPE ||
+|| weatherType15 || Weather type 15 || Weather type 15 || WEATHER_TYPE ||
+|| lotteryWeight0 || Lottery weight 0 || Lottery weight 0 || - ||
+|| lotteryWeight1 || Lottery weight 1 || Lottery weight 1 || - ||
+|| lotteryWeight2 || Lottery weight 2 || Lottery weight 2 || - ||
+|| lotteryWeight3 || Lottery weight 3 || Lottery weight 3 || - ||
+|| lotteryWeight4 || Lottery weight 4 || Lottery weight 4 || - ||
+|| lotteryWeight5 || Lottery weight 5 || Lottery weight 5 || - ||
+|| lotteryWeight6 || Lottery weight 6 || Lottery weight 6 || - ||
+|| lotteryWeight7 || Lottery weight 7 || Lottery weight 7 || - ||
+|| lotteryWeight8 || Lottery weight 8 || Lottery weight 8 || - ||
+|| lotteryWeight9 || Lottery weight 9 || Lottery weight 9 || - ||
+|| lotteryWeight10 || Lottery weight 10 || Lottery weight 10 || - ||
+|| lotteryWeight11 || Lottery weight 11 || Lottery weight 11 || - ||
+|| lotteryWeight12 || Lottery weight 12 || Lottery weight 12 || - ||
+|| lotteryWeight13 || Lottery weight 13 || Lottery weight 13 || - ||
+|| lotteryWeight14 || Lottery weight 14 || Lottery weight 14 || - ||
+|| lotteryWeight15 || Lottery weight 15 || Lottery weight 15 || - ||
+|| timezoneLimit || Time zone condition list || Time zone condition list || WEATHER_LOT_TIMEZONE_TYPE ||
+|| timezoneStartHour || Direct time specification_start_hour || Direct time specification_start_hour || - ||
+|| timezoneStartMinute || Direct time specification_start_minute || Direct time specification_start_minute || - ||
+|| timezoneEndHour || Direct time specification_start_hour || Direct time specification_start_hour || - ||
+|| timezoneEndMinute || Direct time specification_start_minute || Direct time specification_start_minute || - ||
+|| reserve || Reserve || Reserved area || - ||

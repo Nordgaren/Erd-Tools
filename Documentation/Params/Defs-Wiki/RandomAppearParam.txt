@@ -1,0 +1,102 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| slot0 || Lottery slot ID 0 || Will it appear if the slot is won? || - ||
+|| slot1 || Lottery slot ID1 || Will it appear if the slot is won? || - ||
+|| slot2 || Lottery slot ID2 || Will it appear if the slot is won? || - ||
+|| slot3 || Lottery slot ID3 || Will it appear if the slot is won? || - ||
+|| slot4 || Lottery slot ID 4 || Will it appear if the slot is won? || - ||
+|| slot5 || Lottery slot ID 5 || Will it appear if the slot is won? || - ||
+|| slot6 || Lottery slot ID 6 || Will it appear if the slot is won? || - ||
+|| slot7 || Lottery slot ID 7 || Will it appear if the slot is won? || - ||
+|| slot8 || Lottery slot ID 8 || Will it appear if the slot is won? || - ||
+|| slot9 || Lottery slot ID 9 || Will it appear if the slot is won? || - ||
+|| slot10 || Lottery slot ID 10 || Will it appear if the slot is won? || - ||
+|| slot11 || Lottery slot ID 11 || Will it appear if the slot is won? || - ||
+|| slot12 || Lottery slot ID 12 || Will it appear if the slot is won? || - ||
+|| slot13 || Lottery slot ID 13 || Will it appear if the slot is won? || - ||
+|| slot14 || Lottery slot ID 14 || Will it appear if the slot is won? || - ||
+|| slot15 || Lottery slot ID 15 || Will it appear if the slot is won? || - ||
+|| slot16 || Lottery slot ID 16 || Will it appear if the slot is won? || - ||
+|| slot17 || Lottery slot ID 17 || Will it appear if the slot is won? || - ||
+|| slot18 || Lottery slot ID 18 || Will it appear if the slot is won? || - ||
+|| slot19 || Lottery slot ID 19 || Will it appear if the slot is won? || - ||
+|| slot20 || Lottery slot ID 20 || Will it appear if the slot is won? || - ||
+|| slot21 || Lottery slot ID21 || Will it appear if the slot is won? || - ||
+|| slot22 || Lottery slot ID 22 || Will it appear if the slot is won? || - ||
+|| slot23 || Lottery slot ID 23 || Will it appear if the slot is won? || - ||
+|| slot24 || Lottery slot ID 24 || Will it appear if the slot is won? || - ||
+|| slot25 || Lottery slot ID 25 || Will it appear if the slot is won? || - ||
+|| slot26 || Lottery slot ID 26 || Will it appear if the slot is won? || - ||
+|| slot27 || Lottery slot ID 27 || Will it appear if the slot is won? || - ||
+|| slot28 || Lottery slot ID 28 || Will it appear if the slot is won? || - ||
+|| slot29 || Lottery slot ID 29 || Will it appear if the slot is won? || - ||
+|| slot30 || Lottery slot ID 30 || Will it appear if the slot is won? || - ||
+|| slot31 || Lottery slot ID 31 || Will it appear if the slot is won? || - ||
+|| slot32 || Lottery slot ID 32 || Will it appear if the slot is won? || - ||
+|| slot33 || Lottery slot ID 33 || Will it appear if the slot is won? || - ||
+|| slot34 || Lottery slot ID 34 || Will it appear if the slot is won? || - ||
+|| slot35 || Lottery slot ID35 || Will it appear if the slot is won? || - ||
+|| slot36 || Lottery slot ID 36 || Will it appear if the slot is won? || - ||
+|| slot37 || Lottery slot ID 37 || Will it appear if the slot is won? || - ||
+|| slot38 || Lottery slot ID 38 || Will it appear if the slot is won? || - ||
+|| slot39 || Lottery slot ID 39 || Will it appear if the slot is won? || - ||
+|| slot40 || Lottery slot ID 40 || Will it appear if the slot is won? || - ||
+|| slot41 || Lottery slot ID 41 || Will it appear if the slot is won? || - ||
+|| slot42 || Lottery slot ID 42 || Will it appear if the slot is won? || - ||
+|| slot43 || Lottery slot ID 43 || Will it appear if the slot is won? || - ||
+|| slot44 || Lottery slot ID 44 || Will it appear if the slot is won? || - ||
+|| slot45 || Lottery slot ID 45 || Will it appear if the slot is won? || - ||
+|| slot46 || Lottery slot ID 46 || Will it appear if the slot is won? || - ||
+|| slot47 || Lottery slot ID 47 || Will it appear if the slot is won? || - ||
+|| slot48 || Lottery slot ID 48 || Will it appear if the slot is won? || - ||
+|| slot49 || Lottery slot ID 49 || Will it appear if the slot is won? || - ||
+|| slot50 || Lottery slot ID 50 || Will it appear if the slot is won? || - ||
+|| slot51 || Lottery slot ID 51 || Will it appear if the slot is won? || - ||
+|| slot52 || Lottery slot ID 52 || Will it appear if the slot is won? || - ||
+|| slot53 || Lottery slot ID53 || Will it appear if the slot is won? || - ||
+|| slot54 || Lottery slot ID 54 || Will it appear if the slot is won? || - ||
+|| slot55 || Lottery slot ID 55 || Will it appear if the slot is won? || - ||
+|| slot56 || Lottery slot ID 56 || Will it appear if the slot is won? || - ||
+|| slot57 || Lottery slot ID 57 || Will it appear if the slot is won? || - ||
+|| slot58 || Lottery slot ID 58 || Will it appear if the slot is won? || - ||
+|| slot59 || Lottery slot ID 59 || Will it appear if the slot is won? || - ||
+|| slot60 || Lottery slot ID 60 || Will it appear if the slot is won? || - ||
+|| slot61 || Lottery slot ID61 || Will it appear if the slot is won? || - ||
+|| slot62 || Lottery slot ID 62 || Will it appear if the slot is won? || - ||
+|| slot63 || Lottery slot ID 63 || Will it appear if the slot is won? || - ||
+|| slot64 || Lottery slot ID 64 || Will it appear if the slot is won? || - ||
+|| slot65 || Lottery slot ID 65 || Will it appear if the slot is won? || - ||
+|| slot66 || Lottery slot ID66 || Will it appear if the slot is won? || - ||
+|| slot67 || Lottery slot ID 67 || Will it appear if the slot is won? || - ||
+|| slot68 || Lottery slot ID 68 || Will it appear if the slot is won? || - ||
+|| slot69 || Lottery slot ID 69 || Will it appear if the slot is won? || - ||
+|| slot70 || Lottery slot ID 70 || Will it appear if the slot is won? || - ||
+|| slot71 || Lottery slot ID 71 || Will it appear if the slot is won? || - ||
+|| slot72 || Lottery slot ID 72 || Will it appear if the slot is won? || - ||
+|| slot73 || Lottery slot ID73 || Will it appear if the slot is won? || - ||
+|| slot74 || Lottery slot ID 74 || Will it appear if the slot is won? || - ||
+|| slot75 || Lottery slot ID 75 || Will it appear if the slot is won? || - ||
+|| slot76 || Lottery slot ID76 || Will it appear if the slot is won? || - ||
+|| slot77 || Lottery slot ID77 || Will it appear if the slot is won? || - ||
+|| slot78 || Lottery slot ID 78 || Will it appear if the slot is won? || - ||
+|| slot79 || Lottery slot ID 79 || Will it appear if the slot is won? || - ||
+|| slot80 || Lottery slot ID 80 || Will it appear if the slot is won? || - ||
+|| slot81 || Lottery slot ID 81 || Will it appear if the slot is won? || - ||
+|| slot82 || Lottery slot ID 82 || Will it appear if the slot is won? || - ||
+|| slot83 || Lottery slot ID83 || Will it appear if the slot is won? || - ||
+|| slot84 || Lottery slot ID 84 || Will it appear if the slot is won? || - ||
+|| slot85 || Lottery slot ID 85 || Will it appear if the slot is won? || - ||
+|| slot86 || Lottery slot ID86 || Will it appear if the slot is won? || - ||
+|| slot87 || Lottery slot ID 87 || Will it appear if the slot is won? || - ||
+|| slot88 || Lottery slot ID 88 || Will it appear if the slot is won? || - ||
+|| slot89 || Lottery slot ID 89 || Will it appear if the slot is won? || - ||
+|| slot90 || Lottery slot ID 90 || Will it appear if the slot is won? || - ||
+|| slot91 || Lottery slot ID91 || Will it appear if the slot is won? || - ||
+|| slot92 || Lottery slot ID 92 || Will it appear if the slot is won? || - ||
+|| slot93 || Lottery slot ID 93 || Will it appear if the slot is won? || - ||
+|| slot94 || Lottery slot ID 94 || Will it appear if the slot is won? || - ||
+|| slot95 || Lottery slot ID 95 || Will it appear if the slot is won? || - ||
+|| slot96 || Lottery slot ID 96 || Will it appear if the slot is won? || - ||
+|| slot97 || Lottery slot ID 97 || Will it appear if the slot is won? || - ||
+|| slot98 || Lottery slot ID 98 || Will it appear if the slot is won? || - ||
+|| slot99 || Lottery slot ID 99 || Will it appear if the slot is won? || - ||
+|| pad || pad ||  || - ||

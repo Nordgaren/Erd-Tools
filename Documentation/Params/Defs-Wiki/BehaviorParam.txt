@@ -1,0 +1,13 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| variationId || Behavior variation ID || Used when calculating the ID for attack parameters. It is not used directly on the actual machine. || - ||
+|| behaviorJudgeId || Action judgment ID || Used when calculating the ID for attack parameters. This ID matches the action judgment ID entered in TimeActEditor. It is not used directly on the actual machine. || - ||
+|| ezStateBehaviorType_old || For ID rules || For ID calculation rules || - ||
+|| refType || Reference ID type || Specify the reference ID so that it is correct. || BEHAVIOR_REF_TYPE ||
+|| pad2 || pad ||  || - ||
+|| refId || Reference ID || It can be used properly according to the attack power, missile, ID of special effect parameter, and refType. || - ||
+|| consumeSA || Consumption SA || Set the amount of SA consumed during action. || - ||
+|| stamina || Consumption stamina || Set the amount of stamina consumed during action. || - ||
+|| consumeDurability || Weapon durability consumption (only when using missiles) || Set the durability of weapons consumed during action. || - ||
+|| category || category || Since there are effects (enchantment weapons, etc.) whose parameters fluctuate depending on skills, magic, items, etc., set each action so that the determined effect can correspond to the effect such as "power up only weapon attack". Set "None" for items that do not need to be set, such as varistor. || BEHAVIOR_CATEGORY ||
+|| heroPoint || Consumer nature || Set the amount of humanity consumed during action || - ||
+|| pad1 || pad ||  || - ||

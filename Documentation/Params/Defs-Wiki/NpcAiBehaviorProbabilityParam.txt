@@ -1,0 +1,201 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| param000 || Right hand proximity_R1 combo || Right-handed proximity behavior || - ||
+|| param001 || Right hand proximity_R2 combo || Right-handed proximity behavior || - ||
+|| param002 || Right-handed melee_dash attack || Right-handed proximity behavior || - ||
+|| param003 || Right-handed melee_front rolling attack || Right-handed proximity behavior || - ||
+|| param004 || Right hand proximity_left and right rolling attack || Right-handed proximity behavior || - ||
+|| param005 || Right-handed melee_rear rolling attack || Right-handed proximity behavior || - ||
+|| param006 || Right-handed melee_backstep attack || Right-handed proximity behavior || - ||
+|| param007 || Right-handed melee_jump attack || Right-handed proximity behavior || - ||
+|| param008 || Right-handed melee_dash jump attack || Right-handed proximity behavior || - ||
+|| param009 || unused ||  || - ||
+|| param010 || Right hand long range _R1 shooting || Right-handed long-range weapon action || - ||
+|| param011 || Right hand long range _R2 shooting || Right-handed long-range weapon action || - ||
+|| param012 || unused ||  || - ||
+|| param013 || Right hand magic _ long distance magic _ move forward || Right hand magic action || - ||
+|| param014 || Right-handed magic_long-distance magic_moving backwards || Right hand magic action || - ||
+|| param015 || Move left / right [Close Draw Bow] || Interrupt approached while holding a bow || - ||
+|| param016 || Left and right rolling [Close Draw Bow] || Interrupt approached while holding a bow || - ||
+|| param017 || Do not interrupt [Close Draw Bow] || Interrupt approached while holding a bow || - ||
+|| param018 || unused ||  || - ||
+|| param019 || unused ||  || - ||
+|| param020 || Right hand magic_Melee magic_Left and right || Right hand magic action || - ||
+|| param021 || Right hand magic_medium range magic_left and right || Right hand magic action || - ||
+|| param022 || Right hand magic _ long distance magic _ left and right || Right hand magic action || - ||
+|| param023 || Right hand magic _HP recovery magic || Right hand magic action || - ||
+|| param024 || Right hand magic_buff magic || Right hand magic action || - ||
+|| param025 || Right hand magic_Melee magic_Move forward || Right hand magic action || - ||
+|| param026 || Right hand magic_Melee magic_Move backwards || Right hand magic action || - ||
+|| param027 || Right-handed magic_Medium-range magic_Move forward || Right hand magic action || - ||
+|| param028 || Right-handed magic_Medium-range magic_Move backwards || Right hand magic action || - ||
+|| param029 || unused ||  || - ||
+|| param030 || Right hand shield_R1 attack || Right hand shield action || - ||
+|| param031 || Right hand shield_R2 attack || Right hand shield action || - ||
+|| param032 || unused ||  || - ||
+|| param033 || unused ||  || - ||
+|| param034 || unused ||  || - ||
+|| param035 || Backstep [SuccessGuard] || Guard success interrupt || - ||
+|| param036 || Do not interrupt [SuccessGuard] || Guard success interrupt || - ||
+|| param037 || Guard Counter Attack [SuccessGuard] || Guard success interrupt || - ||
+|| param038 || unused ||  || - ||
+|| param039 || unused ||  || - ||
+|| param040 || Left hand proximity_R1 combo (both hands only) || Left hand proximity behavior || - ||
+|| param041 || Left hand proximity_R2 combo (both hands only) || Left hand proximity behavior || - ||
+|| param042 || Left-handed proximity_L1 combo (one-handed only) || Left hand proximity behavior || - ||
+|| param043 || Left-handed melee_dash attack (both hands only) || Left hand proximity behavior || - ||
+|| param044 || Left hand proximity_front rolling attack (both hands only) || Left hand proximity behavior || - ||
+|| param045 || Left hand proximity_left and right rolling attack (only with both hands) || Left hand proximity behavior || - ||
+|| param046 || Left hand proximity_rear rolling attack (only with both hands) || Left hand proximity behavior || - ||
+|| param047 || Left-handed melee_backstep attack (only with both hands) || Left hand proximity behavior || - ||
+|| param048 || Left-handed melee_jump attack (only with both hands) || Left hand proximity behavior || - ||
+|| param049 || Left-handed melee_dash jump attack (only with both hands) || Left hand proximity behavior || - ||
+|| param050 || Left hand long range _R1 shooting || Left-handed long-range weapon action || - ||
+|| param051 || Left hand long range _R2 shooting || Left-handed long-range weapon action || - ||
+|| param052 || unused ||  || - ||
+|| param053 || Left hand magic _ long distance magic _ move forward || Left hand magic action || - ||
+|| param054 || Left hand magic _ long distance magic _ move backward || Left hand magic action || - ||
+|| param055 || Fatal Attack [Success Parry] || Parry Success Interrupt || - ||
+|| param056 || Do not interrupt [Success Parry] || Parry Success Interrupt || - ||
+|| param057 || unused ||  || - ||
+|| param058 || unused ||  || - ||
+|| param059 || unused ||  || - ||
+|| param060 || Left hand magic_Melee magic_Left and right || Left hand magic action || - ||
+|| param061 || Left hand magic_medium range magic_left and right || Left hand magic action || - ||
+|| param062 || Left hand magic _ long distance magic _ left and right || Left hand magic action || - ||
+|| param063 || Left hand magic _HP recovery magic || Left hand magic action || - ||
+|| param064 || Left hand magic_buff magic || Left hand magic action || - ||
+|| param065 || Left hand magic_Melee magic_Move forward || Left hand magic action || - ||
+|| param066 || Left hand magic_Melee magic_Move backward || Left hand magic action || - ||
+|| param067 || Left hand magic_medium range magic_move forward || Left hand magic action || - ||
+|| param068 || Left hand magic_medium range magic_moving backwards || Left hand magic action || - ||
+|| param069 || unused ||  || - ||
+|| param070 || backstep || Common behavior || - ||
+|| param071 || Front rolling || Common behavior || - ||
+|| param072 || Left and right rolling || Common behavior || - ||
+|| param073 || Rolling behind || Common behavior || - ||
+|| param074 || Move left and right || Common behavior || - ||
+|| param075 || Recession || Common behavior || - ||
+|| param076 || Dash approach || Common behavior || - ||
+|| param077 || stand-by || Common behavior || - ||
+|| param078 || Switch to two-handed right hand || Common behavior || - ||
+|| param079 || Switch to two-handed left hand || Common behavior || - ||
+|| param080 || Switch to one-handed || Common behavior || - ||
+|| param081 || Approach to combat distance || Common behavior || - ||
+|| param082 || unused ||  || - ||
+|| param083 || unused ||  || - ||
+|| param084 || unused ||  || - ||
+|| param085 || Deadly Attack [Guard Break] || Guard break interrupt || - ||
+|| param086 || Dash Attack [Guard Break] || Guard break interrupt || - ||
+|| param087 || Magic_Melee Magic [GuardBreak] || Guard break interrupt || - ||
+|| param088 || Do not interrupt [Guard Break] || Guard break interrupt || - ||
+|| param089 || unused ||  || - ||
+|| param090 || Shield Chiku || Special behavior || - ||
+|| param091 || unused ||  || - ||
+|| param092 || unused ||  || - ||
+|| param093 || unused ||  || - ||
+|| param094 || unused ||  || - ||
+|| param095 || Dash Attack [Estus] || Interrupt who drank Est || - ||
+|| param096 || Throwing item [Estus] || Interrupt who drank Est || - ||
+|| param097 || Do not interrupt [Estus] || Interrupt who drank Est || - ||
+|| param098 || unused ||  || - ||
+|| param099 || unused ||  || - ||
+|| param100 || Parry time || Parry Timing Interrupt || - ||
+|| param101 || Front rolling [Parrytime] || Parry Timing Interrupt || - ||
+|| param102 || Left and right rolling [Parrytime] || Parry Timing Interrupt || - ||
+|| param103 || Rolling behind [Parrytime] || Parry Timing Interrupt || - ||
+|| param104 || Backstep attack [Parrytime] || Parry Timing Interrupt || - ||
+|| param105 || On-the-spot guard [Parrytime] || Parry Timing Interrupt || - ||
+|| param106 || Do not interrupt [Parrytime] || Parry Timing Interrupt || - ||
+|| param107 || unused ||  || - ||
+|| param108 || unused ||  || - ||
+|| param109 || unused ||  || - ||
+|| param110 || Rolling behind [Damaged] || Damaged interrupt || - ||
+|| param111 || Left and right rolling [Damaged] || Damaged interrupt || - ||
+|| param112 || Back guard move [Damaged] || Damaged interrupt || - ||
+|| param113 || Left and right guard movement [Damaged] || Damaged interrupt || - ||
+|| param114 || Do not interrupt [Damaged] || Damaged interrupt || - ||
+|| param115 || R1 Combo [Damaged] || Damaged interrupt || - ||
+|| param116 || Front rolling [Damaged] || Damaged interrupt || - ||
+|| param117 || Backstep [Damaged] || Damaged interrupt || - ||
+|| param118 || Front guard move [Damaged] || Damaged interrupt || - ||
+|| param119 || unused ||  || - ||
+|| param120 || Front rolling [Shoot] || Projectile discovery interrupt || - ||
+|| param121 || Left and right rolling [Shoot] || Projectile discovery interrupt || - ||
+|| param122 || Front guard move [Shoot] || Projectile discovery interrupt || - ||
+|| param123 || Left and right guard movement [Shoot] || Projectile discovery interrupt || - ||
+|| param124 || Do not interrupt [Shoot] || Projectile discovery interrupt || - ||
+|| param125 || After rolling [Shoot] || Projectile discovery interrupt || - ||
+|| param126 || Dash approach [Shoot] || Projectile discovery interrupt || - ||
+|| param127 || unused ||  || - ||
+|| param128 || unused ||  || - ||
+|| param129 || unused ||  || - ||
+|| param130 || Backstep [Find Attack] || Attack detection interrupt || - ||
+|| param131 || Front rolling [Find Attack] || Attack detection interrupt || - ||
+|| param132 || Left and right rolling [Find Attack] || Attack detection interrupt || - ||
+|| param133 || After rolling [Find Attack] || Attack detection interrupt || - ||
+|| param134 || Front guard move [Find Attack] || Attack detection interrupt || - ||
+|| param135 || Left and right guard movement [Find Attack] || Attack detection interrupt || - ||
+|| param136 || On-the-spot guard [Find Attack] || Attack detection interrupt || - ||
+|| param137 || Shield Chiku [Find Attack] || Attack detection interrupt || - ||
+|| param138 || Do not interrupt [Find Attack] || Attack detection interrupt || - ||
+|| param139 || On-the-spot avoidance arts [Find Attack] || Attack detection interrupt || - ||
+|| param140 || Probability of holding both hands at R1 combo || Other probability corrections || - ||
+|| param141 || Probability of holding both hands at R2 combo || Other probability corrections || - ||
+|| param142 || Guard probability when moving during planning action || Other probability corrections || - ||
+|| param143 || Probability of replacing R1 attack with dual wield attack || Other probability corrections || - ||
+|| param144 || Probability of replacing evasion with special rolling arts || Other probability corrections || - ||
+|| param145 || Use of throwing items || Item usage system || - ||
+|| param146 || Use of HP recovery items || Item usage system || - ||
+|| param147 || Use of buff items || Item usage system || - ||
+|| param148 || Drug package combo attack || Item usage system || - ||
+|| param149 || unused ||  || - ||
+|| param150 || Arts_Short Range Attack || Arts behavior system || - ||
+|| param151 || Arts_Medium Range Attack || Arts behavior system || - ||
+|| param152 || Arts_range attack || Arts behavior system || - ||
+|| param153 || Arts_Recovery || Arts behavior system || - ||
+|| param154 || Arts_buff || Arts behavior system || - ||
+|| param155 || unused || Arts behavior system || - ||
+|| param156 || unused ||  || - ||
+|| param157 || unused ||  || - ||
+|| param158 || unused ||  || - ||
+|| param159 || unused ||  || - ||
+|| param160 || unused ||  || - ||
+|| param161 || unused ||  || - ||
+|| param162 || unused ||  || - ||
+|| param163 || unused ||  || - ||
+|| param164 || unused ||  || - ||
+|| param165 || unused ||  || - ||
+|| param166 || unused ||  || - ||
+|| param167 || unused ||  || - ||
+|| param168 || unused ||  || - ||
+|| param169 || unused ||  || - ||
+|| param170 || unused ||  || - ||
+|| param171 || unused ||  || - ||
+|| param172 || unused ||  || - ||
+|| param173 || unused ||  || - ||
+|| param174 || unused ||  || - ||
+|| param175 || unused ||  || - ||
+|| param176 || unused ||  || - ||
+|| param177 || unused ||  || - ||
+|| param178 || unused ||  || - ||
+|| param179 || unused ||  || - ||
+|| param180 || unused ||  || - ||
+|| param181 || unused ||  || - ||
+|| param182 || unused ||  || - ||
+|| param183 || unused ||  || - ||
+|| param184 || unused ||  || - ||
+|| param185 || unused ||  || - ||
+|| param186 || unused ||  || - ||
+|| param187 || unused ||  || - ||
+|| param188 || unused ||  || - ||
+|| param189 || unused ||  || - ||
+|| param190 || unused ||  || - ||
+|| param191 || unused ||  || - ||
+|| param192 || unused ||  || - ||
+|| param193 || unused ||  || - ||
+|| param194 || unused ||  || - ||
+|| param195 || unused ||  || - ||
+|| param196 || unused ||  || - ||
+|| param197 || unused ||  || - ||
+|| param198 || unused ||  || - ||
+|| param199 || unused ||  || - ||

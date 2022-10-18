@@ -1,0 +1,4 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| filter || filter || filter || GX_TEXTURE_FILTER ||
+|| dmy || dmy ||  || - ||
+|| maxAnisoLevel || Aniso level || Aniso level || - ||

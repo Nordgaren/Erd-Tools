@@ -1,0 +1,13 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| softParticleEnabled || Soft particles enabled || Soft particles enabled || ON_OFF ||
+|| glowEnabled || Glow effective || Glow effective || ON_OFF ||
+|| distortionEnable || Distortion effective || Distortion effective || ON_OFF ||
+|| cs_upScaleEnabledType || Enable bilateral upscale || Bilateral upscale effective || CS_GCONFIG_ENABLED_TYPE ||
+|| fNumOnceEmitsScale || Number of Emits at one time || Number of Emits at one time || - ||
+|| fEmitSpanScale || Emit interval || Emit interval || - ||
+|| fLodDistance1Scale || 1st stage LOD distance scale || 1st stage LOD distance scale || - ||
+|| fLodDistance2Scale || Second stage LOD distance scale || Second stage LOD distance scale || - ||
+|| fLodDistance3Scale || 3rd stage LOD distance scale || 3rd stage LOD distance scale || - ||
+|| fLodDistance4Scale || 4th stage LOD distance scale || 4th stage LOD distance scale || - ||
+|| fScaleRenderDistanceScale || Magnification to the distance registered in the reduction buffer || Magnification to the distance registered in the reduction buffer || - ||
+|| dmy || dummy ||  || - ||

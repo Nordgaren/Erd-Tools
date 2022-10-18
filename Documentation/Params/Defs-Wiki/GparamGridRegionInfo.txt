@@ -1,0 +1,3 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| GparamGridRegionId || Open local ID for MapGparam || Open local ID for MapGparam. Used for the XX part of m60_00_00XX.gparamxml || - ||
+|| Reserve || Reserve || Reserve || - ||

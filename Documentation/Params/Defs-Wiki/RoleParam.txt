@@ -1,0 +1,33 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| teamType || Team type || Team type || TEAM_TYPE ||
+|| pad10 || pad10 ||  || - ||
+|| phantomParamId || Phantom parameter ID (pledge rank 0) || Phantom parameter ID when pledge rank is 0 || - ||
+|| spEffectID0 || Resident special effect 0 || Resident special effect 0 || - ||
+|| spEffectID1 || Resident special effect 1 || Resident special effect 1 || - ||
+|| spEffectID2 || Resident special effect 2 || Resident special effect 2 || - ||
+|| spEffectID3 || Resident special effect 3 || Resident special effect 3 || - ||
+|| spEffectID4 || Resident special effect 4 || Resident special effect 4 || - ||
+|| spEffectID5 || Resident special effect 5 || Resident special effect 5 || - ||
+|| spEffectID6 || Resident special effect 6 || Resident special effect 6 || - ||
+|| spEffectID7 || Resident special effect 7 || Resident special effect 7 || - ||
+|| spEffectID8 || Resident special effect 8 || Resident special effect 8 || - ||
+|| spEffectID9 || Resident special effect 9 || Resident special effect 9 || - ||
+|| sosSignSfxId || SOS sign SFX ID || SOS sign SFX ID issued by another person || - ||
+|| mySosSignSfxId || SOS sign SFX ID issued by me || SOS sign SFX ID issued by me || - ||
+|| summonStartAnimId || Anime ID (player) when summoned || Anime ID to play when the player is summoned and the game starts || - ||
+|| itemlotParamId || Reward item lottery ID_for map || Acquisition reward item lottery parameter ID_for map (not -1) || - ||
+|| voiceChatGroup || Voice chat group || Voice chat group || VOICE_CHAT_GROUP_Type ||
+|| roleNameColor || Role name text color || The color of the role name text displayed on the FE of the network PC || ROLE_NAME_COLOR_TYPE ||
+|| pad1 || pad1 ||  || - ||
+|| roleNameId || Role name text ID || Text ID of the role name to be displayed on the FE of the network PC || - ||
+|| threatLv || Threat level || Threat level || - ||
+|| phantomParamId_vowRank1 || Phantom parameter ID (pledge rank 1) || Phantom parameter ID when pledge rank is 1 || - ||
+|| phantomParamId_vowRank2 || Phantom Parameter ID (Pledge Rank 2) || Phantom parameter ID when pledge rank is 2 || - ||
+|| phantomParamId_vowRank3 || Phantom Parameter ID (Pledge Rank 3) || Phantom parameter ID when pledge rank is 3 || - ||
+|| spEffectID_vowRank0 || Special effect ID for SFX (pledge rank 0) || Special effect ID for SFX when pledge rank 0 || - ||
+|| spEffectID_vowRank1 || Special effect ID for SFX (pledge rank 1) || Special effect ID for SFX when pledge rank 1 || - ||
+|| spEffectID_vowRank2 || Special effect ID for SFX (pledge rank 2) || Special effect ID for SFX when pledge rank 2 || - ||
+|| spEffectID_vowRank3 || Special effect ID for SFX (pledge rank 3) || Special effect ID for SFX when pledge rank 3 || - ||
+|| signPhantomId || Phantom ID for sign illusion || Multiplayer pledge ghost body sign phantom ID designation for illusion || - ||
+|| nonPlayerSummonStartAnimId || Anime ID when summoned (other than player) || Anime ID to play when a player other than the player is summoned and the game starts || - ||
+|| pad2 || pad2 ||  || - ||

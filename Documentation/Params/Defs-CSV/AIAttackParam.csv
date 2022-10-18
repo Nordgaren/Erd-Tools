@@ -1,0 +1,48 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Reference ID,ID specified by NPC thinking parameters,0,999999999,1,s32,1,%d,s32,Wrap
+Attack ID,Attack number,0,999999999,2,s32,1,%d,s32,Wrap
+Success judgment distance,For arguments of Common_Attack type subgoals,-999999,999999,45,f32,0.1,%f,f32,Wrap
+Turn time before attack,For arguments of Common_Attack type subgoals,-999999,999999,41,f32,0.1,%f,f32,Wrap
+Front judgment angle,For arguments of Common_Attack type subgoals,-180,180,42,s16,1,%d,s16,Wrap
+Upward execution threshold,For arguments of Common_Attack type subgoals,-180,180,43,s16,1,%d,s16,Wrap
+Downward execution threshold,For arguments of Common_Attack type subgoals,-180,180,44,s16,1,%d,s16,Wrap
+Is it a starting technique?,Attacks from the second stage of the combo are ×,0,1,34,u8,1,%d,AI_ATTACK_BOOL,Wrap
+Whether to select outside the proper distance,Whether to select when the distance is out of the proper distance,0,1,201,u8,1,%d,AI_ATTACK_BOOL,Wrap
+Minimum proper distance,Minimum value of proper attack distance,-999999,999999,3,f32,0.1,%f,f32,Wrap
+Maximum proper distance,Maximum attack suitability distance,-999999,999999,4,f32,0.1,%f,f32,Wrap
+Appropriate angle reference direction 1,Direction that serves as a reference for the proper angle of attack (XZ plane),-180,180,5,s16,1,%d,s16,Wrap
+Appropriate angle reference range 1,Range of aptitude angles for attacks,0,360,6,s16,1,%d,s16,Wrap
+Appropriate angle reference direction 2,Direction that serves as a reference for attack aptitude accuracy (XZ plane),-180,180,7,s16,1,%d,s16,Wrap
+Appropriate angle reference range 2,Range of aptitude angles for attacks,0,360,8,s16,1,%d,s16,Wrap
+Executable interval,Time required to attack once and then use it again,-999999,999999,22,f32,0.01,%f,f32,Wrap
+Selection rate,Specify the ease of selection by magnification,-999999,999999,9,f32,0.01,%f,f32,Wrap
+Short range selection rate,Selection rate at close range,-999999,999999,10,f32,0.01,%f,f32,Wrap
+Medium range selection rate,Selection rate at medium range,-999999,999999,11,f32,0.01,%f,f32,Wrap
+Distance selection rate,Selection rate at long distances,-999999,999999,12,f32,0.01,%f,f32,Wrap
+Out of range rate,Selection rate out of range,-999999,999999,21,f32,0.01,%f,f32,Wrap
+Derived attack 1,Derivable attack number,-1,9999999,100,s32,1,%d,s32,Wrap
+Derived attack 2,Derivable attack number,-1,9999999,101,s32,1,%d,s32,Wrap
+Derived attack 3,Derivable attack number,-1,9999999,102,s32,1,%d,s32,Wrap
+Derived attack 4,Derivable attack number,-1,9999999,103,s32,1,%d,s32,Wrap
+Derived attack 5,Derivable attack number,-1,9999999,104,s32,1,%d,s32,Wrap
+Derived attack 6,Derivable attack number,-1,9999999,105,s32,1,%d,s32,Wrap
+Derived attack 7,Derivable attack number,-1,9999999,106,s32,1,%d,s32,Wrap
+Derived attack 8,Derivable attack number,-1,9999999,107,s32,1,%d,s32,Wrap
+Derived attack 9,Derivable attack number,-1,9999999,108,s32,1,%d,s32,Wrap
+Derived attack 10,Derivable attack number,-1,9999999,109,s32,1,%d,s32,Wrap
+Derived attack 11,Derivable attack number,-1,9999999,110,s32,1,%d,s32,Wrap
+Derived attack 12,Derivable attack number,-1,9999999,111,s32,1,%d,s32,Wrap
+Derived attack 13,Derivable attack number,-1,9999999,112,s32,1,%d,s32,Wrap
+Derived attack 14,Derivable attack number,-1,9999999,113,s32,1,%d,s32,Wrap
+Derived attack 15,Derivable attack number,-1,9999999,114,s32,1,%d,s32,Wrap
+Derived attack 16,Derivable attack number,-1,9999999,115,s32,1,%d,s32,Wrap
+Minimum life of the goal,Minimum life of the goal,-999999,999999,202,f32,0.1,%f,f32,Wrap
+Maximum life span of the goal,Maximum life span of the goal,-999999,999999,203,f32,0.1,%f,f32,Wrap
+Whether to select within the appropriate distance,Whether to select when within the appropriate distance,0,1,200,u8,1,%d,AI_ATTACK_BOOL,Wrap
+Whether to use it as the first hit,Whether to use it as the first hit,0,1,24,u8,1,%d,AI_ATTACK_BOOL,Wrap
+Whether to select when the target is down,Whether to select when the target is down,0,1,21,u8,1,%d,AI_ATTACK_BOOL,Wrap
+pad,,,,204,dummy8,,,dummy8,None
+Minimum reach judgment distance,Minimum reach judgment distance,-999999,999999,30,f32,0.1,%f,f32,Wrap
+Maximum reach judgment distance,Maximum reach judgment distance,-999999,999999,31,f32,0.1,%f,f32,Wrap
+Continuous attack execution distance,Distance used to determine the execution of attacks from the second stage onward,-999999,999999,32,f32,0.1,%f,f32,Wrap
+Continuous attack execution angle,Distance used to determine the execution of attacks from the second stage onward,-999999,999999,33,f32,0.1,%f,f32,Wrap

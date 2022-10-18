@@ -1,0 +1,74 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| lotItemId01 || 1: Item ID || Item ID that can be obtained || - ||
+|| lotItemId02 || 2: Item ID || Item ID that can be obtained || - ||
+|| lotItemId03 || 3: Item ID || Item ID that can be obtained || - ||
+|| lotItemId04 || 4: Item ID || Item ID that can be obtained || - ||
+|| lotItemId05 || 5: Item ID || Item ID that can be obtained || - ||
+|| lotItemId06 || 6: Item ID || Item ID that can be obtained || - ||
+|| lotItemId07 || 7: Item ID || Item ID that can be obtained || - ||
+|| lotItemId08 || 8: Item ID || Item ID that can be obtained || - ||
+|| lotItemCategory01 || 1: Item category || Category of items that can be obtained || ITEMLOT_ITEMCATEGORY ||
+|| lotItemCategory02 || 2: Item category || Category of items that can be obtained || ITEMLOT_ITEMCATEGORY ||
+|| lotItemCategory03 || 3: Item category || Category of items that can be obtained || ITEMLOT_ITEMCATEGORY ||
+|| lotItemCategory04 || 4: Item category || Category of items that can be obtained || ITEMLOT_ITEMCATEGORY ||
+|| lotItemCategory05 || 5: Item category || Category of items that can be obtained || ITEMLOT_ITEMCATEGORY ||
+|| lotItemCategory06 || 6: Item category || Category of items that can be obtained || ITEMLOT_ITEMCATEGORY ||
+|| lotItemCategory07 || 7: Item category || Category of items that can be obtained || ITEMLOT_ITEMCATEGORY ||
+|| lotItemCategory08 || 8: Item category || Category of items that can be obtained || ITEMLOT_ITEMCATEGORY ||
+|| lotItemBasePoint01 || Basic appearance point || Appearance point at normal time || - ||
+|| lotItemBasePoint02 || Basic appearance point || Appearance point at normal time || - ||
+|| lotItemBasePoint03 || Basic appearance point || Appearance point at normal time || - ||
+|| lotItemBasePoint04 || Basic appearance point || Appearance point at normal time || - ||
+|| lotItemBasePoint05 || Basic appearance point || Appearance point at normal time || - ||
+|| lotItemBasePoint06 || Basic appearance point || Appearance point at normal time || - ||
+|| lotItemBasePoint07 || Basic appearance point || Appearance point at normal time || - ||
+|| lotItemBasePoint08 || Basic appearance point || Appearance point at normal time || - ||
+|| cumulateLotPoint01 || Appearance points after accumulation || Appearance point at maximum cumulative || - ||
+|| cumulateLotPoint02 || Appearance points after accumulation || Appearance point at maximum cumulative || - ||
+|| cumulateLotPoint03 || Cumulative post-appearance points || Appearance point at maximum cumulative || - ||
+|| cumulateLotPoint04 || Appearance points after accumulation || Appearance point at maximum cumulative || - ||
+|| cumulateLotPoint05 || Appearance points after accumulation || Appearance point at maximum cumulative || - ||
+|| cumulateLotPoint06 || Appearance points after accumulation || Appearance point at maximum cumulative || - ||
+|| cumulateLotPoint07 || Cumulative post-appearance points || Appearance point at maximum cumulative || - ||
+|| cumulateLotPoint08 || Cumulative post-appearance points || Appearance point at maximum cumulative || - ||
+|| getItemFlagId01 || Another crunchy flag ID || Combined use of acquired flag and crunchy frame (0: common use) || - ||
+|| getItemFlagId02 || Another crunchy flag ID || Combined use of acquired flag and crunchy frame (0: common use) || - ||
+|| getItemFlagId03 || Another crunchy flag ID || Combined use of acquired flag and crunchy frame (0: common use) || - ||
+|| getItemFlagId04 || Another crunchy flag ID || Combined use of acquired flag and crunchy frame (0: common use) || - ||
+|| getItemFlagId05 || Another crunchy flag ID || Combined use of acquired flag and crunchy frame (0: common use) || - ||
+|| getItemFlagId06 || Another crunchy flag ID || Combined use of acquired flag and crunchy frame (0: common use) || - ||
+|| getItemFlagId07 || Another crunchy flag ID || Combined use of acquired flag and crunchy frame (0: common use) || - ||
+|| getItemFlagId08 || Another crunchy flag ID || Combined use of acquired flag and crunchy frame (0: common use) || - ||
+|| getItemFlagId || Crunchy flag ID || Combined use of acquired flag and crunchy frame (0: flag invalid) || - ||
+|| cumulateNumFlagId || Lottery cumulative save flag ID || For saving the number of lottery (* 8 flag serial number used) || - ||
+|| cumulateNumMax || Maximum number of lottery cumulative || Maximum number of lottery cumulative (0: no cumulative) || - ||
+|| lotItem_Rarity || Rarity overwrite || Specify how valuable items are in the treasure chest. When -1, use the rarity of the equipment para without overwriting || - ||
+|| lotItemNum01 || Quantity || Number of items that can be acquired || - ||
+|| lotItemNum02 || Quantity || Number of items that can be acquired || - ||
+|| lotItemNum03 || Quantity || Number of items that can be acquired || - ||
+|| lotItemNum04 || Quantity || Number of items that can be acquired || - ||
+|| lotItemNum05 || Quantity || Number of items that can be acquired || - ||
+|| lotItemNum06 || Quantity || Number of items that can be acquired || - ||
+|| lotItemNum07 || Quantity || Number of items that can be acquired || - ||
+|| lotItemNum08 || Quantity || Number of items that can be acquired || - ||
+|| enableLuck01 || Luck parameter valid || Whether the probability of lottery reflects the player's luck || ITEMLOT_ENABLE_LUCK ||
+|| enableLuck02 || Luck parameter valid || Whether the probability of lottery reflects the player's luck || ITEMLOT_ENABLE_LUCK ||
+|| enableLuck03 || Luck parameter valid || Whether the probability of lottery reflects the player's luck || ITEMLOT_ENABLE_LUCK ||
+|| enableLuck04 || Luck parameter valid || Whether the probability of lottery reflects the player's luck || ITEMLOT_ENABLE_LUCK ||
+|| enableLuck05 || Luck parameter valid || Whether the probability of lottery reflects the player's luck || ITEMLOT_ENABLE_LUCK ||
+|| enableLuck06 || Luck parameter valid || Whether the probability of lottery reflects the player's luck || ITEMLOT_ENABLE_LUCK ||
+|| enableLuck07 || Luck parameter valid || Whether the probability of lottery reflects the player's luck || ITEMLOT_ENABLE_LUCK ||
+|| enableLuck08 || Luck parameter valid || Whether the probability of lottery reflects the player's luck || ITEMLOT_ENABLE_LUCK ||
+|| cumulateReset01 || Cumulative reset || Whether to reset cumulatively || ITEMLOT_CUMULATE_RESET ||
+|| cumulateReset02 || Cumulative reset || Whether to reset cumulatively || ITEMLOT_CUMULATE_RESET ||
+|| cumulateReset03 || Cumulative reset || Whether to reset cumulatively || ITEMLOT_CUMULATE_RESET ||
+|| cumulateReset04 || Cumulative reset || Whether to reset cumulatively || ITEMLOT_CUMULATE_RESET ||
+|| cumulateReset05 || Cumulative reset || Whether to reset cumulatively || ITEMLOT_CUMULATE_RESET ||
+|| cumulateReset06 || Cumulative reset || Whether to reset cumulatively || ITEMLOT_CUMULATE_RESET ||
+|| cumulateReset07 || Cumulative reset || Whether to reset cumulatively || ITEMLOT_CUMULATE_RESET ||
+|| cumulateReset08 || Cumulative reset || Whether to reset cumulatively || ITEMLOT_CUMULATE_RESET ||
+|| GameClearOffset || Offset after X week || Offset during lap play || ITEMLOT_ROUND_COUNT ||
+|| canExecByFriendlyGhost || Do you draw lots even with cooperating spirits? || Do you draw lots even when you are a cooperating spirit? || BOOL_CIRCLECROSS_TYPE ||
+|| canExecByHostileGhost || Do you draw even hostile spirits? || Do you draw lots even when you are a hostile spirit? || BOOL_CIRCLECROSS_TYPE ||
+|| PAD1 || PAD1 || PAD1 || - ||
+|| PAD2 || PAD2 || PAD2 || - ||

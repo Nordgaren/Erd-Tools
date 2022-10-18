@@ -1,0 +1,13 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Reflective effective,Reflective effective,0,1,1,u8,1,%u,ON_OFF,None
+Local light enabled,Local light enabled,0,1,2,u8,1,%u,ON_OFF,None
+Local light forced enable,Local light forced enable,0,1,3,u8,1,%u,ON_OFF,None
+dmy,,,,13,dummy8,,,dummy8,None
+Resolution scale,Resolution scale,1,4,4,u32,1,%u,u32,None
+SSR enabled,SSR enabled,0,1,5,u8,1,%u,ON_OFF,None
+Gaussian blur permission,Gaussian blur permission,0,1,6,u8,1,%u,ON_OFF,None
+dmy,,,,14,dummy8,,,dummy8,None
+Calculated distance scale,Calculated distance scale,0.2,2,7,f32,0.01,%f,f32,None
+Raytrace step factor (multiply by SSR parameter),Raytrace step factor (multiply by SSR parameter),0.2,4,8,f32,0.01,%f,f32,None
+Fade angle bias. High quality when made smaller,Fade angle bias. High quality when made smaller,-1,1,9,f32,0.01,%f,f32,None
+Fresnel reject bias. High quality when made smaller,Fresnel reject bias. High quality when made smaller,-1,1,10,f32,0.01,%f,f32,None

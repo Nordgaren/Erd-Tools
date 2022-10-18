@@ -1,0 +1,8 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| enabled || Motion blur enabled || Motion blur enabled || ON_OFF ||
+|| ombEnabled || OMB (object motion blur) enabled || OMB (object motion blur) enabled || ON_OFF ||
+|| forceScaleVelocityBuffer || Decrease the resolution of the velocity buffer used internally || Decrease the resolution of the velocity buffer used internally. Not effective if you are not using precision velocity buffers || ON_OFF ||
+|| cheapFilterMode || Normally processed by the Reconstruction filter, but downgraded to a lighter process || Normally processed by the Reconstruction filter, but downgraded to a lighter process || ON_OFF ||
+|| sampleCountBias || Give an offset to the sample count || Give an offset to the sample count * Set to a multiple of 2 || - ||
+|| recurrenceCountBias || Offset the number of recursive blurs || Give an offset to the number of recursive blurs || - ||
+|| blurMaxLengthScale || Scale value for blur maximum length parameter || Scale value for blur maximum length parameter || - ||

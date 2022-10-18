@@ -1,0 +1,30 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,30,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,31,dummy8,,%d,dummy8,None
+Ground contact SEID,SEID pronounced when contacting the ground after death. (-1: Invalid). SEID category is fixed to c,-1,999999999,1,s32,1,%d,s32,None
+Ground contact additional SEID (for material),Additional SEID (for material) that sounds when it comes into contact with the ground after death. (-1: Invalid). SEID category is fixed to c,-1,999999999,2,s32,1,%d,s32,None
+Number of ground contact pronunciations,Number of pronunciations when touching the ground after death,1,16,3,s32,1,%d,s32,None
+Do you count the number of ground contact sounds in rigid body units?,Do you count the number of pronunciations of surface contact after death in rigid body units? (○: Rigid body unit, ×: Character unit),0,1,4,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+pad,,,,32,dummy8,,,dummy8,None
+Ground contact minimum impulse value,Minimum impulse value required for ground contact determination after death,0,99999,5,f32,1,%d,f32,None
+Ground contact minimum velocity value,Minimum speed value required for ground contact determination after death,0,99999,6,f32,1,%d,f32,None
+Player contact SEID,SEID that sounds when you come into contact with Player after death. (-1: Invalid). SEID category is fixed to c,-1,999999999,7,s32,1,%d,s32,None
+Player minimum contact impulse value,Minimum impulse value required for Player contact judgment after death,0,99999,8,f32,1,%d,f32,None
+Player minimum contact speed value,Minimum speed value required for Player contact judgment after death,0,99999,9,f32,1,%d,f32,None
+Contact judgment rigid body IDX0,Specify the INDEX of the rigid body for contact judgment. Specify only the rigid body to which you want to attach SE,-1,127,10,s8,1,%d,s8,None
+Contact judgment rigid body IDX1,Specify the INDEX of the rigid body for contact judgment. Specify only the rigid body to which you want to attach SE,-1,127,11,s8,1,%d,s8,None
+Contact judgment rigid body IDX2,Specify the INDEX of the rigid body for contact judgment. Specify only the rigid body to which you want to attach SE,-1,127,12,s8,1,%d,s8,None
+Contact judgment rigid body IDX3,Specify the INDEX of the rigid body for contact judgment. Specify only the rigid body to which you want to attach SE,-1,127,13,s8,1,%d,s8,None
+Contact judgment rigid body IDX4,Specify the INDEX of the rigid body for contact judgment. Specify only the rigid body to which you want to attach SE,-1,127,14,s8,1,%d,s8,None
+Contact judgment rigid body IDX5,Specify the INDEX of the rigid body for contact judgment. Specify only the rigid body to which you want to attach SE,-1,127,15,s8,1,%d,s8,None
+Contact judgment rigid body IDX6,Specify the INDEX of the rigid body for contact judgment. Specify only the rigid body to which you want to attach SE,-1,127,16,s8,1,%d,s8,None
+Contact judgment rigid body IDX7,Specify the INDEX of the rigid body for contact judgment. Specify only the rigid body to which you want to attach SE,-1,127,17,s8,1,%d,s8,None
+Contact judgment rigid body IDX8,Specify the INDEX of the rigid body for contact judgment. Specify only the rigid body to which you want to attach SE,-1,127,18,s8,1,%d,s8,None
+Contact judgment rigid body IDX9,Specify the INDEX of the rigid body for contact judgment. Specify only the rigid body to which you want to attach SE,-1,127,19,s8,1,%d,s8,None
+Contact judgment rigid body IDX10,Specify the INDEX of the rigid body for contact judgment. Specify only the rigid body to which you want to attach SE,-1,127,20,s8,1,%d,s8,None
+Contact judgment rigid body IDX11,Specify the INDEX of the rigid body for contact judgment. Specify only the rigid body to which you want to attach SE,-1,127,21,s8,1,%d,s8,None
+Contact judgment rigid body IDX12,Specify the INDEX of the rigid body for contact judgment. Specify only the rigid body to which you want to attach SE,-1,127,22,s8,1,%d,s8,None
+Contact judgment rigid body IDX13,Specify the INDEX of the rigid body for contact judgment. Specify only the rigid body to which you want to attach SE,-1,127,23,s8,1,%d,s8,None
+Contact judgment rigid body IDX14,Specify the INDEX of the rigid body for contact judgment. Specify only the rigid body to which you want to attach SE,-1,127,24,s8,1,%d,s8,None
+Contact judgment rigid body IDX15,Specify the INDEX of the rigid body for contact judgment. Specify only the rigid body to which you want to attach SE,-1,127,25,s8,1,%d,s8,None

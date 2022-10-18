@@ -1,0 +1,7 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,301,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,302,dummy8,,%d,dummy8,None
+Lifting flag,Lifting flag (default: 0). If this event flag is set, the ban will be lifted (displayed on the loading screen). If it is 0, the ban is always lifted. The invalid flag has priority,0,999999999,200,u32,1,%d,u32,Wrap
+Invalid flag,Invalid flag (default: 0). If this event flag is set, it will be disabled (it will not be displayed on the loading screen). If it is 0, this flag is not always set.,0,999999999,300,u32,1,%d,u32,Wrap
+Text ID,Text ID (Loading Text.xlsx). Used for both loading titles and loading text,-1,999999999,100,s32,1,%d,s32,Wrap

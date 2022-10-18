@@ -1,0 +1,8 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Resource ID,Instance name of the menu resource. ID of TextEffect_X,-1,32767,100,s16,1,%d,s16,None
+Padding,,,,401,dummy8,,,dummy8,None
+Text ID,Text ID to display (-1: No text). MenuText,-1,999999999,200,s32,1,%d,s32,None
+SE ID,Voice ID to play (-1: No SE),-1,999999999,300,s32,1,%d,s32,None
+Whether to display at the same time as the map name,Whether to display at the same time as the map name,0,1,400,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Padding,,,,402,dummy8,,,dummy8,None
+Padding,,,,403,dummy8,,,dummy8,None

@@ -1,0 +1,22 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| camDistTarget || Camera distance target [m] || Camera distance target || - ||
+|| rotRangeMinX || Minimum X-axis rotation [deg] || Minimum X-axis rotation || - ||
+|| lockRotXShiftRatio || Lock X rotation shift rate (0.0-1.0) || Lock X rotation shift rate || - ||
+|| chrOrgOffset_Y || Character base point offset (character space) || Character base point offset || - ||
+|| chrLockRangeMaxRadius || Character range maximum radius [m] || Maximum radius of character range || - ||
+|| camFovY || Vertical angle of view [deg] || Vertical angle of view || - ||
+|| chrLockRangeMaxRadius_forD || Maximum radius of character range for darkness [m] || Lockable range of characters in dark places || - ||
+|| chrLockRangeMaxRadius_forPD || Maximum radius of character range for pitch darkness [m] || Character lockable range in total darkness || - ||
+|| closeMaxHeight || Melee attack automatic capture Upper limit height [m] || Automatic lock-on judgment height upper limit when non-lock-on is close || - ||
+|| closeMinHeight || Melee attack automatic capture Lower limit height [m] || Automatic lock-on judgment height lower limit when not locked on Proximity || - ||
+|| closeAngRange || Melee attack automatic capture Angle range Left and right [deg] || Automatic lock-on judgment when non-lock-on Left / right angle [deg] Proximity || - ||
+|| closeMaxRadius || Melee attack automatic capture Character range maximum radius [m] || Automatic lock-on judgment distance when non-lock-on is close || - ||
+|| closeMaxRadius_forD || Melee attack automatic capture Dark character range maximum radius [m] || Automatic lock-on judgment distance at non-lock-on _ darkness proximity || - ||
+|| closeMaxRadius_forPD || Melee attack automatic capture Character range for total darkness Maximum radius [m] || Automatic lock-on when non-lock-on _ pitch black proximity || - ||
+|| bulletMaxRadius || Bullet automatic capture Character range maximum radius [m] || Automatic lock-on judgment distance when non-lock-on bullet || - ||
+|| bulletMaxRadius_forD || Bullet automatic capture Maximum radius of character range for darkness [m] || Automatic lock-on judgment distance at non-lock-on _ darkness bullet || - ||
+|| bulletMaxRadius_forPD || Automatic bullet capture Character range for total darkness Maximum radius [m] || Automatic lock-on judgment distance at non-lock-on _ pitch black bullet || - ||
+|| bulletAngRange || Bullet automatic capture Angle range Left and right [deg] || Automatic lock-on left / right angle when non-lock-on bullet || - ||
+|| lockTgtKeepTime || Time to continue locking even if the lock condition is not met [s] || Time to continue locking even if the lock condition is not met (disabled at 0.0) || - ||
+|| chrTransChaseRateForNormal || Normal character translation tracking rate || Normal character translation tracking rate (disabled at -1.0) || - ||
+|| pad || Padding ||  || - ||

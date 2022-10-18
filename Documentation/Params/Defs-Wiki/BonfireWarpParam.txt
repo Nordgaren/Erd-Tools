@@ -1,0 +1,78 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| eventflagId || Event flag ID || Release condition event flag ID || - ||
+|| bonfireEntityId || Bonfire entity ID || Bonfire entity ID || - ||
+|| pad4 || pad || Padding. The place where the deleted old work origin data was defined || - ||
+|| bonfireSubCategorySortId || Sort ID || Bonfire Warp Subcategory Sort ID. Specify the order (ascending order) in the same subcategory || - ||
+|| forbiddenIconId || Warp Prohibition Icon ID || Icon ID when warp is prohibited || - ||
+|| dispMinZoomStep || Display zoom step || Zoom step to display the bonfire (0 when zoomed out most, +1 for each zoom). Displayed when "<< Display zoom step >> ≤ Current zoom step". Default is 0 (always displayed) || - ||
+|| selectMinZoomStep || Selectable zoom steps || A zoom step that allows you to select and snap a bonfire (0 for the most zoomed out state, +1 for each zoom). Can be selected and snapped when "<< Selectable zoom step >> ≤ current enlargement stage". The default is 0 (always selectable / snappable) || - ||
+|| bonfireSubCategoryId || Subcategory ID || Bonfire Warp Subcategory Parameter ID (-1: Invalid). Set which subcategory it belongs to. If it is invalid, it will not be displayed in the bonfire list. || - ||
+|| clearedEventFlagId || Cleared event flag ID || Cleared event flag ID (0: always treated as cleared) || - ||
+|| iconId || Icon ID || Icon ID || - ||
+|| dispMask00 || Display setting M00 || Whether to display with M00 || BOOL_CIRCLECROSS_TYPE ||
+|| dispMask01 || Display setting M01 || Whether to display with M01 || BOOL_CIRCLECROSS_TYPE ||
+|| pad1 || pad || pad1: 6 || - ||
+|| pad2 || pad || pad2 || - ||
+|| areaNo || Area number || AA part of mAA_BB_CC_DD || - ||
+|| gridXNo || Grid X number || BB part of mAA_BB_CC_DD || - ||
+|| gridZNo || Grid Z number || CC part of mAA_BB_CC_DD || - ||
+|| pad3 || Padding || pad3 || - ||
+|| posX || X coordinate || X coordinate || - ||
+|| posY || Y coordinate || Y coordinate (not used) || - ||
+|| posZ || Z coordinate || Z coordinate || - ||
+|| textId1 || Text ID || The text ID to display. If the value is invalid (-1), nothing is displayed. || - ||
+|| textEnableFlagId1 || Occurrence event flag ID || Display text Event flag ID. Display if the event flag is On. If the event flag ID (0) is invalid, it will be treated as On. || - ||
+|| textDisableFlagId1 || Hidden event flag ID || Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (0) is invalid, it will be treated as Off. || - ||
+|| textId2 || Text ID || The text ID to display. If it is an invalid value (-2), nothing is displayed. || - ||
+|| textEnableFlagId2 || Occurrence event flag ID || Display text Event flag ID. Display if the event flag is On. If the event flag ID (1) is invalid, it will be treated as On. || - ||
+|| textDisableFlagId2 || Hidden event flag ID || Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (1) is invalid, it will be treated as Off. || - ||
+|| textId3 || Text ID || The text ID to display. If it is an invalid value (-3), nothing is displayed. || - ||
+|| textEnableFlagId3 || Occurrence event flag ID || Display text Event flag ID. Display if the event flag is On. If the event flag ID (2) is invalid, it will be treated as On. || - ||
+|| textDisableFlagId3 || Hidden event flag ID || Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (2) is invalid, it will be treated as Off. || - ||
+|| textId4 || Text ID || The text ID to display. If it is an invalid value (-4), nothing is displayed. || - ||
+|| textEnableFlagId4 || Occurrence event flag ID || Display text Event flag ID. Display if the event flag is On. If the event flag ID (3) is invalid, it will be treated as On. || - ||
+|| textDisableFlagId4 || Hidden event flag ID || Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (3) is invalid, it will be treated as Off. || - ||
+|| textId5 || Text ID || The text ID to display. If it is an invalid value (-5), nothing is displayed. || - ||
+|| textEnableFlagId5 || Occurrence event flag ID || Display text Event flag ID. Display if the event flag is On. If the event flag ID (4) is invalid, it will be treated as On. || - ||
+|| textDisableFlagId5 || Hidden event flag ID || Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (4) is invalid, it will be treated as Off. || - ||
+|| textId6 || Text ID || The text ID to display. If it is an invalid value (-6), nothing is displayed. || - ||
+|| textEnableFlagId6 || Occurrence event flag ID || Display text Event flag ID. Display if the event flag is On. If the event flag ID (5) is invalid, it will be treated as On. || - ||
+|| textDisableFlagId6 || Hidden event flag ID || Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (5) is invalid, it will be treated as Off. || - ||
+|| textId7 || Text ID || The text ID to display. If it is an invalid value (-7), nothing is displayed. || - ||
+|| textEnableFlagId7 || Occurrence event flag ID || Display text Event flag ID. Display if the event flag is On. If the event flag ID (6) is invalid, it will be treated as On. || - ||
+|| textDisableFlagId7 || Hidden event flag ID || Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (6) is invalid, it will be treated as Off. || - ||
+|| textId8 || Text ID || The text ID to display. If it is an invalid value (-8), nothing is displayed. || - ||
+|| textEnableFlagId8 || Occurrence event flag ID || Display text Event flag ID. Display if the event flag is On. If the event flag ID (7) is invalid, it will be treated as On. || - ||
+|| textDisableFlagId8 || Hidden event flag ID || Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (7) is invalid, it will be treated as Off. || - ||
+|| textType1 || Text type || Text type (place name, NPC name, ...) || WORLD_MAP_POINT_TEXT_TYPE ||
+|| textType2 || Text type || Text type (place name, NPC name, ...) || WORLD_MAP_POINT_TEXT_TYPE ||
+|| textType3 || Text type || Text type (place name, NPC name, ...) || WORLD_MAP_POINT_TEXT_TYPE ||
+|| textType4 || Text type || Text type (place name, NPC name, ...) || WORLD_MAP_POINT_TEXT_TYPE ||
+|| textType5 || Text type || Text type (place name, NPC name, ...) || WORLD_MAP_POINT_TEXT_TYPE ||
+|| textType6 || Text type || Text type (place name, NPC name, ...) || WORLD_MAP_POINT_TEXT_TYPE ||
+|| textType7 || Text type || Text type (place name, NPC name, ...) || WORLD_MAP_POINT_TEXT_TYPE ||
+|| textType8 || Text type || Text type (place name, NPC name, ...) || WORLD_MAP_POINT_TEXT_TYPE ||
+|| noIgnitionSfxDmypolyId_0 || Before ignition SFX Damipoly ID0 || Damipoli ID that issues SFX before bonfire ignition || - ||
+|| noIgnitionSfxId_0 || Before ignition SFXID0 || SFX ID issued before bonfire ignition. It goes out when ignited. In case of -1, SFX is not issued. || - ||
+|| noIgnitionSfxDmypolyId_1 || Before ignition SFX Damipoly ID1 || Damipoli ID that issues SFX before bonfire ignition || - ||
+|| noIgnitionSfxId_1 || Before ignition SFXID1 || SFX ID issued before bonfire ignition. It goes out when ignited. In case of -1, SFX is not issued. || - ||
+|| unkA8 || unkA8 ||  || - ||
+|| unkAC || unkAC ||  || - ||
+|| unkB0 || unkB0 ||  || - ||
+|| unkB4 || unkB4 ||  || - ||
+|| unkB8 || unkB8 ||  || - ||
+|| unkBC || unkBC ||  || - ||
+|| unkC0 || unkC0 ||  || - ||
+|| unkC4 || unkC4 ||  || - ||
+|| unkC8 || unkC8 ||  || - ||
+|| unkCC || unkCC ||  || - ||
+|| unkD0 || unkD0 ||  || - ||
+|| unkD4 || unkD4 ||  || - ||
+|| unkD8 || unkD8 ||  || - ||
+|| unkDC || unkDC ||  || - ||
+|| unkE0 || unkE0 ||  || - ||
+|| unkE4 || unkE4 ||  || - ||
+|| unkE8 || unkE8 ||  || - ||

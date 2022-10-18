@@ -1,0 +1,45 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| refId || Call ID || ID called from decorations || - ||
+|| sfxVariationId || SFX variation ID || Specify SFX variation (used to identify SFX in combination with TimeActEditor ID) || - ||
+|| weight || Weight [kg] || Weight [kg] || - ||
+|| behaviorId || Action ID || Action ID (= Skill) || - ||
+|| basicPrice || Basic price || Basic price || - ||
+|| sellValue || Sale price || Selling price || - ||
+|| sortId || sortID ||  || - ||
+|| qwcId || QWCID ||  || - ||
+|| equipModelId || Equipment model number || Equipment model number || - ||
+|| iconId || Icon ID || Menu icon ID || - ||
+|| shopLv || Shop level || Level that can be sold at the store || - ||
+|| trophySGradeId || Trophy ||  || - ||
+|| trophySeqId || Trophy SEQ number || Trophy SEQ number || - ||
+|| equipModelCategory || Equipment model type || Equipment model type || EQUIP_MODEL_CATEGORY ||
+|| equipModelGender || Equipment model gender || Gender of equipment model || EQUIP_MODEL_GENDER ||
+|| accessoryCategory || Decoration category || Armor category || ACCESSORY_CATEGORY ||
+|| refCategory || ID category || ↓ ID category [Attack, Projectile, Special] || BEHAVIOR_REF_TYPE ||
+|| spEffectCategory || Special effects category || Since there are effects (enchantment weapons, etc.) whose parameters fluctuate depending on skills, magic, items, etc., set each action so that the determined effect can correspond to the effect such as "power up only weapon attack". Set "None" for items that do not need to be set, such as varistor.
+ || BEHAVIOR_CATEGORY ||
+|| sortGroupId || Sort item type ID || Sort item type ID. In the sort "Item type order", the same ID is displayed together as the same group. || - ||
+|| vagrantItemLotId || Item lottery ID_for map at the time of vagrant || -1: No vagrant 0: No lottery 1 ~: With lottery || - ||
+|| vagrantBonusEneDropItemLotId || Vagrant Bonus Enemy Drop Item Lottery ID_Map || -1: No drop 0: No lottery 1 ~: With lottery || - ||
+|| vagrantItemEneDropItemLotId || Vagrant item Enemy drop item Lottery ID_for map || -1: No drop 0: No lottery 1 ~: With lottery || - ||
+|| isDeposit || Can i deposit || Can you deposit it in the warehouse? || EQUIP_BOOL ||
+|| isEquipOutBrake || Will it break if removed? || Will it break when equipped and removed? || EQUIP_BOOL ||
+|| disableMultiDropShare || Is multi-drop sharing prohibited? || Is multi-drop sharing prohibited? || EQUIP_BOOL ||
+|| isDiscard || Can you throw it away || Can you throw away the item? TRUE = thrown away || EQUIP_BOOL ||
+|| isDrop || Can you put it on the spot || Can I put the item on the spot? TRUE = can be placed || EQUIP_BOOL ||
+|| showLogCondType || Acquisition log display condition || Whether to display in the item acquisition log when acquiring the item (not entered: ○) || EQUIP_BOOL ||
+|| showDialogCondType || Acquisition dialog display condition || Whether to display it in the item acquisition dialog when acquiring an item (not entered: new only) || GET_DIALOG_CONDITION_TYPE ||
+|| rarity || Rarity || Rarity used in item acquisition logs || - ||
+|| pad2 || pad || (Old log icon ID) || - ||
+|| saleValue || Selling price || Selling price || - ||
+|| accessoryGroup || Wearing group ID || Items of the same group cannot be equipped at the same time || - ||
+|| pad3 || pad || pad || - ||
+|| compTrophySedId || Comptrophy SEQ number || SEQ number of complete trophy || - ||
+|| residentSpEffectId1 || Resident special effect ID1 || Resident special effect ID1 || - ||
+|| residentSpEffectId2 || Resident special effect ID2 || Resident special effect ID2 || - ||
+|| residentSpEffectId3 || Resident special effect ID3 || Resident special effect ID3 || - ||
+|| residentSpEffectId4 || Resident special effect ID4 || Resident special effect ID4 || - ||
+|| pad1 || pad || pad || - ||

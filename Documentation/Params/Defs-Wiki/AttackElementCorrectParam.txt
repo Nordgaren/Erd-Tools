@@ -1,0 +1,78 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| isStrengthCorrect_byPhysics || Whether to correct muscle strength (physical) ||  || BOOL_YESNO_TYPE ||
+|| isDexterityCorrect_byPhysics || Whether to correct the skill (physical) ||  || BOOL_YESNO_TYPE ||
+|| isMagicCorrect_byPhysics || Whether to correct the force (physics) ||  || BOOL_YESNO_TYPE ||
+|| isFaithCorrect_byPhysics || Do you correct your faith (physics)? ||  || BOOL_YESNO_TYPE ||
+|| isLuckCorrect_byPhysics || Whether to correct luck (physical) ||  || BOOL_YESNO_TYPE ||
+|| isStrengthCorrect_byMagic || Whether to correct muscle strength (magic) ||  || BOOL_YESNO_TYPE ||
+|| isDexterityCorrect_byMagic || Do you correct your workmanship (magic)? ||  || BOOL_YESNO_TYPE ||
+|| isMagicCorrect_byMagic || Do you correct the force (magic)? ||  || BOOL_YESNO_TYPE ||
+|| isFaithCorrect_byMagic || Do you correct your faith (magic)? ||  || BOOL_YESNO_TYPE ||
+|| isLuckCorrect_byMagic || Do you correct your luck (magic) ||  || BOOL_YESNO_TYPE ||
+|| isStrengthCorrect_byFire || Do you correct muscle strength (flame)? ||  || BOOL_YESNO_TYPE ||
+|| isDexterityCorrect_byFire || Do you correct your workmanship (flame)? ||  || BOOL_YESNO_TYPE ||
+|| isMagicCorrect_byFire || Do you correct the force (flame)? ||  || BOOL_YESNO_TYPE ||
+|| isFaithCorrect_byFire || Do you correct your faith (flame)? ||  || BOOL_YESNO_TYPE ||
+|| isLuckCorrect_byFire || Do you correct your luck (flame)? ||  || BOOL_YESNO_TYPE ||
+|| isStrengthCorrect_byThunder || Whether to correct muscle strength (lightning) ||  || BOOL_YESNO_TYPE ||
+|| isDexterityCorrect_byThunder || Do you correct your workmanship (lightning)? ||  || BOOL_YESNO_TYPE ||
+|| isMagicCorrect_byThunder || Do you correct the force (lightning)? ||  || BOOL_YESNO_TYPE ||
+|| isFaithCorrect_byThunder || Do you correct your faith (thunder)? ||  || BOOL_YESNO_TYPE ||
+|| isLuckCorrect_byThunder || Do you correct your luck (lightning)? ||  || BOOL_YESNO_TYPE ||
+|| isStrengthCorrect_byDark || Do you correct your strength (darkness)? ||  || BOOL_YESNO_TYPE ||
+|| isDexterityCorrect_byDark || Do you correct your workmanship (darkness)? ||  || BOOL_YESNO_TYPE ||
+|| isMagicCorrect_byDark || Do you correct the force (darkness)? ||  || BOOL_YESNO_TYPE ||
+|| isFaithCorrect_byDark || Do you correct your faith (darkness)? ||  || BOOL_YESNO_TYPE ||
+|| isLuckCorrect_byDark || Do you correct your luck (darkness)? ||  || BOOL_YESNO_TYPE ||
+|| pad1 || Padding ||  || - ||
+|| overwriteStrengthCorrectRate_byPhysics || Overwrite muscle strength correction value (physical) ||  || - ||
+|| overwriteDexterityCorrectRate_byPhysics || Skill correction value overwrite (physical) ||  || - ||
+|| overwriteMagicCorrectRate_byPhysics || Overwrite the force correction value (physical) ||  || - ||
+|| overwriteFaithCorrectRate_byPhysics || Faith correction value overwrite (physical) ||  || - ||
+|| overwriteLuckCorrectRate_byPhysics || Overwrite luck correction value (physical) ||  || - ||
+|| overwriteStrengthCorrectRate_byMagic || Overwrite muscle strength correction value (magic) ||  || - ||
+|| overwriteDexterityCorrectRate_byMagic || Skill correction value overwrite (magic) ||  || - ||
+|| overwriteMagicCorrectRate_byMagic || Overwrite the force correction value (magic) ||  || - ||
+|| overwriteFaithCorrectRate_byMagic || Faith correction value overwrite (magic) ||  || - ||
+|| overwriteLuckCorrectRate_byMagic || Overwrite luck correction value (magic) ||  || - ||
+|| overwriteStrengthCorrectRate_byFire || Overwrite muscle strength correction value (flame) ||  || - ||
+|| overwriteDexterityCorrectRate_byFire || Skill correction value overwrite (flame) ||  || - ||
+|| overwriteMagicCorrectRate_byFire || Overwrite the force correction value (flame) ||  || - ||
+|| overwriteFaithCorrectRate_byFire || Faith correction value overwrite (flame) ||  || - ||
+|| overwriteLuckCorrectRate_byFire || Overwrite luck correction value (flame) ||  || - ||
+|| overwriteStrengthCorrectRate_byThunder || Overwrite muscle strength correction value (lightning) ||  || - ||
+|| overwriteDexterityCorrectRate_byThunder || Skill correction value overwrite (lightning) ||  || - ||
+|| overwriteMagicCorrectRate_byThunder || Overwrite the force correction value (lightning) ||  || - ||
+|| overwriteFaithCorrectRate_byThunder || Faith correction value overwrite (thunder) ||  || - ||
+|| overwriteLuckCorrectRate_byThunder || Overwrite luck correction value (lightning) ||  || - ||
+|| overwriteStrengthCorrectRate_byDark || Overwrite muscle strength correction value (darkness) ||  || - ||
+|| overwriteDexterityCorrectRate_byDark || Skill correction value overwrite (darkness) ||  || - ||
+|| overwriteMagicCorrectRate_byDark || Overwrite the force correction value (darkness) ||  || - ||
+|| overwriteFaithCorrectRate_byDark || Faith correction value overwrite (darkness) ||  || - ||
+|| overwriteLuckCorrectRate_byDark || Overwrite luck correction value (darkness) ||  || - ||
+|| InfluenceStrengthCorrectRate_byPhysics || Strength correction value Impact rate (physical) || The rate of influence of the correction factor. || - ||
+|| InfluenceDexterityCorrectRate_byPhysics || Skill correction value Impact rate (physical) || The rate of influence of the correction factor. || - ||
+|| InfluenceMagicCorrectRate_byPhysics || Force correction value Impact rate (physical) || The rate of influence of the correction factor. || - ||
+|| InfluenceFaithCorrectRate_byPhysics || Faith correction value Impact rate (physical) || The rate of influence of the correction factor. || - ||
+|| InfluenceLuckCorrectRate_byPhysics || Luck correction value influence rate (physical) || The rate of influence of the correction factor. || - ||
+|| InfluenceStrengthCorrectRate_byMagic || Strength correction value Impact rate (magic) || The rate of influence of the correction factor. || - ||
+|| InfluenceDexterityCorrectRate_byMagic || Skill correction value Impact rate (magic) || The rate of influence of the correction factor. || - ||
+|| InfluenceMagicCorrectRate_byMagic || Force correction value Impact rate (magic) || The rate of influence of the correction factor. || - ||
+|| InfluenceFaithCorrectRate_byMagic || Faith correction value Impact rate (magic) || The rate of influence of the correction factor. || - ||
+|| InfluenceLuckCorrectRate_byMagic || Luck correction value influence rate (magic) || The rate of influence of the correction factor. || - ||
+|| InfluenceStrengthCorrectRate_byFire || Strength correction value Impact rate (flame) || The rate of influence of the correction factor. || - ||
+|| InfluenceDexterityCorrectRate_byFire || Skill correction value Impact rate (flame) || The rate of influence of the correction factor. || - ||
+|| InfluenceMagicCorrectRate_byFire || Force correction value Impact rate (flame) || The rate of influence of the correction factor. || - ||
+|| InfluenceFaithCorrectRate_byFire || Faith correction value Impact rate (flame) || The rate of influence of the correction factor. || - ||
+|| InfluenceLuckCorrectRate_byFire || Luck correction value influence rate (flame) || The rate of influence of the correction factor. || - ||
+|| InfluenceStrengthCorrectRate_byThunder || Strength correction value Impact rate (lightning) || The rate of influence of the correction factor. || - ||
+|| InfluenceDexterityCorrectRate_byThunder || Skill correction value Impact rate (lightning) || The rate of influence of the correction factor. || - ||
+|| InfluenceMagicCorrectRate_byThunder || Force correction value Impact rate (lightning) || The rate of influence of the correction factor. || - ||
+|| InfluenceFaithCorrectRate_byThunder || Faith correction value Impact rate (lightning) || The rate of influence of the correction factor. || - ||
+|| InfluenceLuckCorrectRate_byThunder || Luck correction value influence rate (lightning) || The rate of influence of the correction factor. || - ||
+|| InfluenceStrengthCorrectRate_byDark || Strength correction value influence rate (darkness) || The rate of influence of the correction factor. || - ||
+|| InfluenceDexterityCorrectRate_byDark || Skill correction value Impact rate (darkness) || The rate of influence of the correction factor. || - ||
+|| InfluenceMagicCorrectRate_byDark || Force correction value Impact rate (darkness) || The rate of influence of the correction factor. || - ||
+|| InfluenceFaithCorrectRate_byDark || Faith correction value Impact rate (darkness) || The rate of influence of the correction factor. || - ||
+|| InfluenceLuckCorrectRate_byDark || Luck correction value influence rate (darkness) || The rate of influence of the correction factor. || - ||
+|| pad2 || Padding ||  || - ||

@@ -1,0 +1,14 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| cellSizeX || Cell size X || Cell size X || - ||
+|| cellSizeY || Cell size Y || Cell size Y || - ||
+|| cellSizeZ || Cell size Z || Cell size Z || - ||
+|| cellOffsetX || Cell offset X || Cell offset X || - ||
+|| cellOffsetY || Cell offset Y || Cell offset Y || - ||
+|| cellOffsetZ || Cell offset Z || Cell offset Z || - ||
+|| enableBloodstain || Effective bloodstain / death illusion || Effective bloodstain / death illusion || BOOL_CIRCLECROSS_TYPE ||
+|| enableBloodMessage || Blood character valid || Blood character valid || BOOL_CIRCLECROSS_TYPE ||
+|| enableGhost || Phantom effective || Phantom effective || BOOL_CIRCLECROSS_TYPE ||
+|| enableMultiPlay || Multiplayer enabled || Multiplayer enabled || BOOL_CIRCLECROSS_TYPE ||
+|| enableRingSearch || Ring search enabled || Is it a search target for ring search? (Area called Kanemori Ash Spirit / Relief Blue Spirit) || BOOL_CIRCLECROSS_TYPE ||
+|| enableBreakInSearch || Intrusion search enabled || Is it the target of intrusion search? || BOOL_CIRCLECROSS_TYPE ||
+|| dummy || dummy ||  || - ||

@@ -1,0 +1,3 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+At the start of the game Map name ID_for save data,At the start of the game Map name ID_for save data (SEQ15052),0,-1,0,u32,0,%d,u32,None
+Reserve,Reserve,,,3,dummy8,,,dummy8,None

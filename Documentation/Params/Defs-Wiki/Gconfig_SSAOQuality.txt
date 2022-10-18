@@ -1,0 +1,6 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| enabled || SSAO enabled || SSAO enabled || ON_OFF ||
+|| cs_reprojEnabledType || Reprojection enabled || When reprojection is forcibly enabled, Prevent Ghost is also enabled. || CS_GCONFIG_ENABLED_TYPE ||
+|| cs_upScaleEnabledType || Bilateral upscale effective || Bilateral upscale effective || CS_GCONFIG_ENABLED_TYPE ||
+|| cs_useNormalEnabledType || Valid to use normals || Valid to use normals || CS_GCONFIG_ENABLED_TYPE ||
+|| dmy || dmy ||  || - ||

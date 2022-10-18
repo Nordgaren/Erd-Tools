@@ -1,0 +1,40 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| physicsAtkRate || Physical attack power basic value || Physical attack power correction value || - ||
+|| magicAtkRate || Magic attack power basic value || Magic attack power correction value || - ||
+|| fireAtkRate || Fire attack power basic value || Fire attack power correction value || - ||
+|| thunderAtkRate || Electric shock attack power basic value || Correction value of electric shock attack power || - ||
+|| staminaAtkRate || Stamina attack power || Stamina attack power correction value || - ||
+|| saWeaponAtkRate || SA weapon attack power || Super Armor Weapon Attack Color Correction Value || - ||
+|| saDurabilityRate || SA durability value || SA endurance correction value || - ||
+|| correctStrengthRate || Strength correction || Correction value of muscle strength correction || - ||
+|| correctAgilityRate || Agility correction || Correction value of agility correction || - ||
+|| correctMagicRate || Magic correction || Correction value of magic power correction || - ||
+|| correctFaithRate || Faith correction || Correction value of faith correction || - ||
+|| physicsGuardCutRate || Physical attack cut rate when guarding || Correction value of physical attack cut rate when guarding || - ||
+|| magicGuardCutRate || Magic attack cut rate when guarding || Correction value of magic attack cut rate when guarding || - ||
+|| fireGuardCutRate || Flame attack cut rate when guarding || Correction value of flame attack cut rate when guarding || - ||
+|| thunderGuardCutRate || Electric shock attack cut rate when guarding || Correction value of electric shock attack cut rate when guarding || - ||
+|| poisonGuardResistRate || Guard time poison attack cut rate || Correction value of poison attack cut rate when guarding || - ||
+|| diseaseGuardResistRate || Epidemic attack cut rate when guarding || Correction value of plague attack cut rate when guarding || - ||
+|| bloodGuardResistRate || Bleeding attack cut rate when guarding || Correction value for bleeding attack cut rate when guarding || - ||
+|| curseGuardResistRate || Curse attack cut rate when guarding || Correction value of curse attack cut rate when guarding || - ||
+|| staminaGuardDefRate || Stamina defense when guarding || Correction value of stamina defense power when guarding || - ||
+|| spEffectId1 || Special effect ID1 || Addition correction value for special effect ID1 || - ||
+|| spEffectId2 || Special effect ID2 || Addition correction value for special effect ID2 || - ||
+|| spEffectId3 || Special effect ID3 || Addition correction value for special effect ID3 || - ||
+|| residentSpEffectId1 || Resident special effect ID1 || Addition correction value for resident special effect ID1 || - ||
+|| residentSpEffectId2 || Resident special effect ID2 || Addition correction value for resident special effect ID2 || - ||
+|| residentSpEffectId3 || Resident special effect ID3 || Addition correction value for resident special effect ID3 || - ||
+|| materialSetId || Material ID addition value || Addition correction value of material parameter ID || - ||
+|| maxReinforceLevel || Level value for maximum enhanced weapon level || Level value for maximum enhanced weapon level || - ||
+|| darkAtkRate || Dark attack power basic value || Dark attack power correction value || - ||
+|| darkGuardCutRate || Dark attack cut rate when guarding || Correction value of darkness attack cut rate when guarding || - ||
+|| correctLuckRate || Luck correction || Correction value of luck correction || - ||
+|| freezeGuardDefRate || Cold attack cut rate when guarding || Correction value of cold air attack cut rate when guarding || - ||
+|| reinforcePriceRate || Enhanced price correction value || Correction value to multiply the enhancement price of the weapon parameter || - ||
+|| baseChangePriceRate || Evolution price correction value || Correction value to multiply the evolution price of the weapon parameter || - ||
+|| enableGemRank || Mountable magic stone rank || Mountable magic stone rank || - ||
+|| pad2 || pad ||  || - ||
+|| sleepGuardDefRate || Sleep attack cut rate when guarding || Correction value of sleep attack cut rate when guarding || - ||
+|| madnessGuardDefRate || Mad attack cut rate when guarding || Correction value of mad attack cut rate when guarding || - ||
+|| baseAtkRate || Additional attack power multiplier || Additional attack power multiplier || - ||

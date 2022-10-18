@@ -1,0 +1,105 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| logicId || Logic script ID || Set the ID of the logic created by the script. || - ||
+|| battleGoalID || Battle goal ID || Battle goal ID || - ||
+|| searchEye_dist || Searching enemy vision_distance [m] || Search range by visual search. || - ||
+|| searchEye_angY || Searching enemy vision_angle (width) [deg] || Search range by visual search. || - ||
+|| isNoAvoidHugeEnemy || Do you not detour a huge enemy? || Do you not detour a huge enemy? || BOOL_CIRCLECROSS_TYPE ||
+|| enableWeaponOnOff || Do you want to pull out the sword? || Do you want to pull out the sword? || BOOL_CIRCLECROSS_TYPE ||
+|| targetAILockDmyPoly || Do you aim for Rock Damipoli (for enemies)? || Do you aim for Rock Damipoli (for enemies)? || BOOL_CIRCLECROSS_TYPE ||
+|| pad8 || Padding ||  || - ||
+|| spEffectId_RangedAttack || Special effects ID for ranged attacks || Special effects ID for ranged attacks || - ||
+|| searchTargetLv1ForgetTime || Search enemy Lv1 Target Forget time [sec] || Search enemy Lv1 Target Time to forget. || - ||
+|| searchTargetLv2ForgetTime || Search enemy Lv2 Target Forget time [sec] || Search enemy Lv2 time to forget the target. || - ||
+|| BackHomeLife_OnHitEneWal || Back Home time when touching an enemy wall [sec] || The life of the BackToHome goal when it touches an enemy wall that blocks the block || - ||
+|| SightTargetForgetTime || Time to forget the visual target [sec] || Time to forget the visual target. || - ||
+|| idAttackCannotMove || EzState number to do when you get stuck || An action that automatically takes place when a destructible object stops it. || - ||
+|| ear_dist || Hearing_distance [m] || Hearing search range ... || - ||
+|| callHelp_ActionAnimId || Companion call response action anime ID || Animation ID (EzStateAnimID) when responding || - ||
+|| callHelp_CallActionId || Fellow call _ Fellow call action ID || Action ID (EzStateAnimID) when calling a friend || - ||
+|| eye_dist || Visual_distance [m] || Visual search range. || - ||
+|| isGuard_Act || Whether to use a guard during action || Whether to guard against actions (assumed when returning home, looking toward the target) || BOOL_DODONT_TYPE ||
+|| pad6 || Padding ||  || - ||
+|| ear_soundcut_dist || Hearing influence cut distance [m] || The distance to reduce the size of the sound source. You will not hear any sound below this distance. || - ||
+|| nose_dist || Smell _ distance [m] || Search range by smell. || - ||
+|| maxBackhomeDist || Distance to go home no matter what [m] || COMMON_SetBattleActLogic argument || - ||
+|| backhomeDist || Distance to return home while fighting [m] || COMMON_SetBattleActLogic argument || - ||
+|| backhomeBattleDist || Distance to give up and fight to return to the nest [m] || COMMON_SetBattleActLogic argument || - ||
+|| nonBattleActLife || Non-combat action time when conscious of the enemy [sec] || COMMON_SetBattleActLogic argument || - ||
+|| BackHome_LookTargetTime || When returning home: Time to look at the target [sec] || When returning home: Time to look at the target [sec] || - ||
+|| BackHome_LookTargetDist || When returning home: Distance to see the target [m] || When returning home: Distance to see the target [m] || - ||
+|| SoundTargetForgetTime || Time to forget the sound target [sec] || Time to forget the sound target. || - ||
+|| BattleStartDist || Battle start distance [m] ||  || - ||
+|| callHelp_MyPeerId || Calling friends Your fellow group ID || My fellow group ID || - ||
+|| callHelp_CallPeerId || Companion call Companion group ID || Companion group ID to call a companion || - ||
+|| targetSys_DmgEffectRate || Damage impact rate [%] || Damage impact rate acquisition (target system evaluation information) || - ||
+|| TeamAttackEffectivity || Team attack influence [0-100] || A value for determining the number of simultaneous attacks in a team. Increasing the value reduces the number of people who can participate in the attack at the same time. || - ||
+|| eye_angX || Vision_angle (height) [deg] || Visual search range. || - ||
+|| eye_angY || Visual_angle (width) [deg] || Visual search range. || - ||
+|| disableDark || Does not affect the darkness || Whether the alert vision_distance and battle start distance are not affected by the darkness || ON_OFF ||
+|| caravanRole || Role in the caravan || Role in the caravan || NPC_THINK_CARAVAN_ROLE ||
+|| callHelp_CallValidMinDistTarget || Companion call_minimum distance to the target [m] || If it is closer than this value, you cannot call a friend. || - ||
+|| callHelp_CallValidRange || Calling friends_Effective distance to call friends [m] || Do not call if the companion is farther than this value. || - ||
+|| callHelp_ForgetTimeByArrival || Time to forget after answering a fellow call [sec] || Time to respond || - ||
+|| callHelp_MinWaitTime || Minimum waiting time for response [ssm => ss. mSec] || Minimum time for the first wait goal of the response goal [101 => 10.1sec] || - ||
+|| callHelp_MaxWaitTime || Maximum waiting time for response [ssm => ss. mSec] || Maximum time for the first waiting goal of the response goal [101 => 10.1sec] || - ||
+|| goalAction_ToCaution || Goal action: alert / normal sound || Goal action: Target becomes alert due to normal sound detection || NPC_THINK_GOAL_ACTION ||
+|| ear_listenLevel || Hearing_audible AI sound level || How good your ears are || - ||
+|| callHelp_ReplyBehaviorType || Behavior type after responding to a fellow call || Action type to target position after response || NPC_THINK_REPLY_BEHAVIOR_TYPE ||
+|| disablePathMove || Do not move the path || Whether to move directly without following the path even if a path move command comes || BOOL_CIRCLECROSS_TYPE ||
+|| skipArrivalVisibleCheck || Do you want to skip the arrival judgment by the line of sight? || Do you want to skip the arrival judgment by the line of sight? When set to On, arrival judgment is performed even if the line of sight does not pass. || ON_OFF ||
+|| thinkAttr_doAdmirer || Will you be a companion? || Thinking attribute: When turned on, it plays a role of surrounding. || ON_OFF ||
+|| enableNaviFlg_Edge || Can you pass the flag "cliff"? || Can you pass through the node "cliff"? (def: 1) || BOOL_CIRCLECROSS_TYPE ||
+|| enableNaviFlg_LargeSpace || Can the flag "wide" pass? || Can you pass through the node "wide"? (def: 1) || BOOL_CIRCLECROSS_TYPE ||
+|| enableNaviFlg_Ladder || Can you pass the flag "ladder"? || Can you pass through the node "ladder"? (def: 0) || BOOL_CIRCLECROSS_TYPE ||
+|| enableNaviFlg_Hole || Can you go through the flag "hole"? || Can you go through the node "hole"? (def: 0) || BOOL_CIRCLECROSS_TYPE ||
+|| enableNaviFlg_Door || Can you go through the flag "door"? || Can you pass through the node "door"? (def: 0) || BOOL_CIRCLECROSS_TYPE ||
+|| enableNaviFlg_InSideWall || Can you pass the flag "in the wall"? || Can you pass through the node "in the wall"? (def: 0) || BOOL_CIRCLECROSS_TYPE ||
+|| enableNaviFlg_Lava || Can you pass the flag "lava"? || Can you pass through the node "lava"? (def: 0) || BOOL_CIRCLECROSS_TYPE ||
+|| enableNaviFlg_Edge_Ordinary || Can you pass the flag "cliff"? (Normal / alert state) || Can you pass the node "cliff" under normal / alert conditions? (def: 1) || BOOL_CIRCLECROSS_TYPE ||
+|| enableNaviFlg_reserve1 || Really booked || If you need a new flag, put it here (Not Padding) || - ||
+|| searchThreshold_Lv0toLv1 || Search enemy Lv0 → Lv1 threshold || Search enemy Lv0 → Lv1 threshold || - ||
+|| searchThreshold_Lv1toLv2 || Search enemy Lv1 → Lv2 threshold || Search enemy Lv1 → Lv2 threshold || - ||
+|| platoonReplyTime || Platoon reaction delay time [sec] || Platoon reaction delay time [sec] || - ||
+|| platoonReplyAddRandomTime || Platoon reaction additional random time [sec] || Platoon reaction additional random time [sec] || - ||
+|| searchEye_angX || Searching enemy vision_angle (height) [deg] || Searching enemy vision_angle (height) [deg] || - ||
+|| isUpdateBattleSight || Do you want to overwrite the combat view? || Do you want to overwrite the battle view? || BOOL_DODONT_TYPE ||
+|| battleEye_updateDist || Battle Vision_Overwrite Distance [m] || Battle Vision_Overwrite Distance [m] || - ||
+|| battleEye_updateAngX || Battle Vision_Overwrite Angle (Height) [deg] || Battle Vision_Overwrite Angle (Height) [deg] || - ||
+|| battleEye_updateAngY || Battle Vision_Overwrite Angle (Width) [deg] || Battle Vision_Overwrite Angle (Width) [deg] || - ||
+|| pad4 || Padding ||  || - ||
+|| eye_BackOffsetDist || Visual_occurrence distance [m] || The viewing angle start position is behind this distance from the center of the character. || - ||
+|| eye_BeginDist || Visual_cut distance [m] || This distance is not recognized from the viewing angle generation position || - ||
+|| actTypeOnFailedPath || Behavior type at the time of path search failure / homecoming limit || Default action type to be performed when the path search fails, when the end point of the alternative path is reached / when the homecoming limit distance is reached || NPC_THINK_ACTTYPE_ON_FAILEDPATH ||
+|| goalAction_ToCautionImportant || Goal Action: Alert / Important Sound || Goal action: Target becomes alert due to detection of important sound || NPC_THINK_GOAL_ACTION ||
+|| shiftAnimeId_RangedAttack || Changeover animation ID for ranged attacks || Reference ID for AI attack parameters || - ||
+|| actTypeOnNonBtlFailedPath || Behavior when path search fails (during non-combat) || Target [None] Sometimes, the action to be taken after rewriting the current location to a nest || NPC_THINK_ACTTYPE_ON_NONBTL_FAILEDPATH ||
+|| isBuddyAI || Buddy AI || Thinking for a buddy || BOOL_CIRCLECROSS_TYPE ||
+|| goalAction_ToSearchLv1 || Goal action: Search enemy Lv1 || Goal action: Target becomes Lv1 || NPC_THINK_GOAL_ACTION ||
+|| goalAction_ToSearchLv2 || Goal action: Search enemy Lv2 || Goal action: Target became enemy Lv2 || NPC_THINK_GOAL_ACTION ||
+|| enableJumpMove || Do you use the edge "jump" (non-combat state)? || Whether to jump over the user edge for jumping (non-combat state) || NPC_THINK_JUMPUSEREDGE_USE_TYPE ||
+|| disableLocalSteering || Do not move around || Do you want to turn off the behavior (local steering) that tries to move while avoiding other characters? || BOOL_CIRCLECROSS_TYPE ||
+|| goalAction_ToDisappear || Goal action: Memory target state || Goal action: Lost target || NPC_THINK_GOAL_ACTION ||
+|| changeStateAction_ToNormal || Goal action: Start normal state || Action when transitioning to the normal state || NPC_THINK_CHANGE_STATE_ACTION ||
+|| MemoryTargetForgetTime || Time to forget memory target [sec] || Time to forget the memory target. || - ||
+|| rangedAttackId || Ranged attack anime ID || A parameter that specifies the attack ID issued by the enemy when making a ranged attack || - ||
+|| useFall_onNormalCaution || Do you use the edge "jump" (non-combat state)? || Allows AI to pass the jumping edge in non-combat state || NPC_THINK_JUMPUSEREDGE_USE_TYPE ||
+|| useFall_onSearchBattle || Do you use the edge "jump" (combat state)? || Allow AI to pass through the jumping edge in combat || NPC_THINK_JUMPUSEREDGE_USE_TYPE ||
+|| enableJumpMove_onBattle || Do you use the edge "jump" (combat state)? || Whether to jump over the user edge for jumping (combat state) || NPC_THINK_JUMPUSEREDGE_USE_TYPE ||
+|| backToHomeStuckAct || Behavior when addicted to the homecoming limit || Behavior when addicted to the homecoming limit || NPC_THINK_BackToHomeStuckAct ||
+|| pad3 || Padding || pad || - ||
+|| soundBehaviorId01 || Behavior ID1 || Corresponds to the behavior ID of the sound target that can be heard || - ||
+|| soundBehaviorId02 || Behavior ID2 || Corresponds to the behavior ID of the sound target that can be heard || - ||
+|| soundBehaviorId03 || Behavior ID3 || Corresponds to the behavior ID of the sound target that can be heard || - ||
+|| soundBehaviorId04 || Behavior ID4 || Corresponds to the behavior ID of the sound target that can be heard || - ||
+|| soundBehaviorId05 || Behavior ID5 || Corresponds to the behavior ID of the sound target that can be heard || - ||
+|| soundBehaviorId06 || Behavior ID6 || Corresponds to the behavior ID of the sound target that can be heard || - ||
+|| soundBehaviorId07 || Behavior ID7 || Corresponds to the behavior ID of the sound target that can be heard || - ||
+|| soundBehaviorId08 || Behavior ID8 || Corresponds to the behavior ID of the sound target that can be heard || - ||
+|| weaponOffSpecialEffectId || Special effect ID at the time of sword delivery || Special effect ID at the time of sword delivery || - ||
+|| weaponOnSpecialEffectId || Special effect ID when pulling out a sword || Special effect ID when pulling out a sword || - ||
+|| weaponOffAnimId || Katana Anime ID || Katana Anime ID || - ||
+|| weaponOnAnimId || Sword animation ID || Sword animation ID || - ||
+|| surpriseAnimId || Amazing anime ID || Amazing anime ID || - ||

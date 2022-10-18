@@ -1,0 +1,29 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+VRAM: ALL,VRAM: ALL (unit is MB),0,999999,100,f32,0.01,%f,f32,Wrap
+VRAM: Map / Object Texture,VRAM: Map / Object Texture (Unit: MB),0,999999,2010,f32,0.01,%f,f32,Wrap
+VRAM: Map / Object Model,VRAM: Map / object model (in MB),0,999999,2020,f32,0.01,%f,f32,Wrap
+VRAM: map,VRAM: Map (in MB),0,999999,1010,f32,0.01,%f,f32,Wrap
+VRAM: Character,VRAM: Character (unit is MB),0,999999,1020,f32,0.01,%f,f32,Wrap
+VRAM: Parts,VRAM: Parts (unit is MB),0,999999,1030,f32,0.01,%f,f32,Wrap
+VRAM: SFX,VRAM: SFX (unit is MB),0,999999,1040,f32,0.01,%f,f32,Wrap
+VRAM: Character texture,VRAM: Character texture (unit is MB),0,999999,2030,f32,0.01,%f,f32,Wrap
+VRAM: Character model,VRAM: Character model (unit is MB),0,999999,2040,f32,0.01,%f,f32,Wrap
+VRAM: Parts texture,VRAM: Parts texture (unit is MB),0,999999,2050,f32,0.01,%f,f32,Wrap
+VRAM: Parts model,VRAM: Parts model (unit is MB),0,999999,2060,f32,0.01,%f,f32,Wrap
+VRAM: SFX texture,VRAM: SFX texture (unit is MB),0,999999,2070,f32,0.01,%f,f32,Wrap
+VRAM: SFX model,VRAM: SFX model (in MB),0,999999,2080,f32,0.01,%f,f32,Wrap
+VRAM: Gi,VRAM: Gi (unit is MB),0,999999,2090,f32,0.01,%f,f32,Wrap
+VRAM: Menu,VRAM: Menu (unit is MB),0,999999,2085,f32,0.01,%f,f32,Wrap
+VRAM: DECAL_RT,VRAM: DECAL render target (unit is MB),0,999999,2105,f32,0.01,%f,f32,Wrap
+VRAM: DECAL,VRAM: DECAL (unit is MB),0,999999,2100,f32,0.01,%f,f32,Wrap
+Reserved area,,,,3041,dummy8,,%f,dummy8,Wrap
+VRAM: Other textures,VRAM: Other models (in MB),0,999999,2110,f32,0.01,%f,f32,Wrap
+VRAM: Other models,VRAM: Other textures (in MB),0,999999,2120,f32,0.01,%f,f32,Wrap
+HAVOK: Anime,HAVOK: Animation (unit is MB),0,999999,3010,f32,0.01,%f,f32,Wrap
+HAVOK: Placement,HAVOK: Placement (unit is MB),0,999999,3020,f32,0.01,%f,f32,Wrap
+HAVOK: Hit,HAVOK: Hit (unit is MB),0,999999,3030,f32,0.01,%f,f32,Wrap
+VRAM: Other,VRAM: Other (unit is MB),0,999999,1050,f32,0.01,%f,f32,Wrap
+VRAM: total value,VRAM: Total value (unit is MB),0,999999,200,f32,0.01,%f,f32,Wrap
+VRAM: Characters & Parts,VRAM: Total value of characters and parts (unit is MB),0,999999,1035,f32,0.01,%f,f32,Wrap
+HAVOK: Navimesh,HAVOK: Navimesh (unit is MB),0,999999,3040,f32,0.01,%f,f32,Wrap
+Reserved area,Reserved area,,,3042,dummy8,,,dummy8,None

@@ -1,0 +1,18 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+host,Host reward soul multiplier,0,10,1000,f32,0.001,%f,f32,Wrap
+White sign,Cooperation sign white spirit reward soul multiplier,0,10,2000,f32,0.001,%f,f32,Wrap
+Gold spirit (sun),Cooperative sign gold spirit reward soul multiplier,0,10,2100,f32,0.001,%f,f32,Wrap
+White berserker,Cooperation sign white Berserker reward soul multiplier,0,10,2200,f32,0.001,%f,f32,Wrap
+Red sign,Hostile sign red spirit reward soul multiplier,0,10,3000,f32,0.001,%f,f32,Wrap
+Red gold spirit (signature),Hostile sign red gold spirit reward soul multiplier,0,10,3100,f32,0.001,%f,f32,Wrap
+Red berserker (sign),Hostile sign red berserker reward soul multiplier,0,10,3200,f32,0.001,%f,f32,Wrap
+Invasion,Invasion reward Soul multiplier,0,10,4000,f32,0.001,%f,f32,Wrap
+Red Gold Spirit (Invasion),Invasion Orb's Red Gold Spirit Reward Soul Multiplier,0,10,4500,f32,0.001,%f,f32,Wrap
+Red berserker (invasion),Invasion Orb Red Berserker Reward Soul Multiplier,0,10,4600,f32,0.001,%f,f32,Wrap
+Relief guest,Relief guest reward soul multiplier,0,10,5000,f32,0.001,%f,f32,Wrap
+Red Scare Spirit 2,Red Scare Spirit 2 Reward Soul Multiplier,0,10,5100,f32,0.001,%f,f32,Wrap
+Map Guardian Spirit (Forest),Map Guardian Spirit (Forest) Reward Soul Magnification,0,10,6000,f32,0.001,%f,f32,Wrap
+Map Guardian (Anor),Map Guardian Spirit (Anor) Reward Soul Multiplier,0,10,6100,f32,0.001,%f,f32,Wrap
+Arena,Arena reward soul multiplier,0,10,7000,f32,0.001,%f,f32,Wrap
+Yellow robe's old man,Yellow robe's old man's reward soul multiplier,0,10,7100,f32,0.001,%f,f32,Wrap
+pad,,,,7101,dummy8,,,dummy8,None

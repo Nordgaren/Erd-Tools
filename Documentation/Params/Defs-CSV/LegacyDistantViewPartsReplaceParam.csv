@@ -1,0 +1,20 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Map ID,Specify the target map ID. Legacy only. (m12_34_56_78 → 12345678). Initially it was only legacy, but it also supports open celestial sphere maps,-1,99999999,0,s32,1,%d,s32,None
+Natural disaster event ID,If you enter the target natural disaster event ID from "300, 310, 311 and 312", it will be [natural disaster replacement data]. If it is 0 or blank, it will be [Regional ID switching data] (SEQ16039).,0,999,100,u32,1,%d,u32,None
+Replacement source asset ID,Replacement source AssetId: AEG123_456_9999 → 123456,-1,999999,200,s32,1,%d,s32,None
+Replacement source asset part ID,Replacement source PartsNo: AEG123_456_9999 → 9999,-1,99999,300,s32,1,%d,s32,None
+Replacement destination asset ID,Replacement destination AssetId: AEG123_456_9999 → 123456,-1,999999,400,s32,1,%d,s32,None
+Replacement destination asset part ID,Replacement destination PartsNo: AEG123_456_9999 → 9999,-1,99999,500,s32,1,%d,s32,None
+Replacement source asset ID range specification Min,Replacement source asset ID range specification Min,-1,999999,600,s32,1,%d,s32,None
+Replacement source asset ID range specification Max,Replacement source asset ID range specification Max,-1,999999,700,s32,1,%d,s32,None
+Replacement destination asset ID range specification Min,Replacement destination asset ID range specification Min,-1,999999,800,s32,1,%d,s32,None
+Replacement destination asset ID range specification Max,Replacement destination asset ID range specification Max,-1,999999,900,s32,1,%d,s32,None
+Local ID limit 0,MapGD Local ID restriction 0: Valid only when "Natural disaster event ID" is 0. The part is valid only with the MapGD local ID you set (SEQ16039).,-1,99,1000,s8,1,%d,s8,None
+Local ID limit 1,MapGD Local ID Restriction 1: Valid only when "Natural Disaster Event ID" is 0. The part is valid only with the MapGD local ID you set (SEQ16039).,-1,99,1001,s8,1,%d,s8,None
+Local ID limit 2,MapGD Local ID restriction 2: Valid only when "Natural disaster event ID" is 0. The part is valid only with the MapGD local ID you set (SEQ16039).,-1,99,1002,s8,1,%d,s8,None
+Local ID limit 3,MapGD Local ID restriction 3: Valid only when "Natural disaster event ID" is 0. The part is valid only with the MapGD local ID you set (SEQ16039).,-1,99,1003,s8,1,%d,s8,None
+reserve,reserve,,,9999,dummy8,,%d,dummy8,None
+Local restricted asset ID,MapGD Valid assets specified by local ID: AssetId: AEG123_456_9999 → 123456,-1,999999,1100,s32,1,%d,s32,None
+Local restriction asset part ID,MapGD Valid assets specified by local ID: PartsNo: AEG123_456_9999 → 9999,-1,99999,1101,s32,1,%d,s32,None
+Local restriction asset ID range specification Min,MapGD Valid asset specification with local ID: Asset ID range specification Min,-1,999999,1200,s32,1,%d,s32,None
+Local limit asset ID range specification Max,MapGD Valid asset specification for local ID: Asset ID range specification Max,-1,999999,1201,s32,1,%d,s32,None

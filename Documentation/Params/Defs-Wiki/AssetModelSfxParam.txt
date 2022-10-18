@@ -1,0 +1,26 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| sfxId_0 || 0: SfxID || 0: SfxID || - ||
+|| dmypolyId_0 || 0: Damipoli ID || 0: Damipoli ID || - ||
+|| reserve_0 || 0: Reservation || 0: Reservation || - ||
+|| sfxId_1 || 1: SfxID || 1: SfxID || - ||
+|| dmypolyId_1 || 1: Damipoli ID || 1: Damipoli ID || - ||
+|| reserve_1 || 1: Reservation || 1: Reservation || - ||
+|| sfxId_2 || 2: SfxID || 2: SfxID || - ||
+|| dmypolyId_2 || 2: Damipoli ID || 2: Damipoli ID || - ||
+|| reserve_2 || 2: Reservation || 2: Reservation || - ||
+|| sfxId_3 || 3: SfxID || 3: SfxID || - ||
+|| dmypolyId_3 || 3: Damipoli ID || 3: Damipoli ID || - ||
+|| reserve_3 || 3: Reservation || 3: Reservation || - ||
+|| sfxId_4 || 4: SfxID || 4: SfxID || - ||
+|| dmypolyId_4 || 4: Damipoli ID || 4: Damipoli ID || - ||
+|| reserve_4 || 4: Reservation || 4: Reservation || - ||
+|| sfxId_5 || 5: SfxID || 5: SfxID || - ||
+|| dmypolyId_5 || 5: Damipoli ID || 5: Damipoli ID || - ||
+|| reserve_5 || 5: Reservation || 5: Reservation || - ||
+|| sfxId_6 || 6: SfxID || 6: SfxID || - ||
+|| dmypolyId_6 || 6: Damipoli ID || 6: Damipoli ID || - ||
+|| reserve_6 || 6: Reservation || 6: Reservation || - ||
+|| sfxId_7 || 7: SfxID || 7: SfxID || - ||
+|| dmypolyId_7 || 7: Damipoli ID || 7: Damipoli ID || - ||
+|| isDisableIV || Disables the effect on irradiance volume || When enabled, the effect on irradiance volume shooting is disabled. || - ||
+|| reserve_7 || 7: Reservation || 7: Reservation || - ||

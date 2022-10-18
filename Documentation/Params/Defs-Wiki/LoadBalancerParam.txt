@@ -1,0 +1,34 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| lowerFpsThreshold || lowerFpsThreshold || If it falls below this FPS, increase the load balance level by 1. || - ||
+|| upperFpsThreshold || upperFpsThreshold || If you exceed this FPS, lower the load balance level by 1. || - ||
+|| lowerFpsContinousCount || lowerFpsContinousCount || If this frame continues below the threshold, level up || - ||
+|| upperFpsContinousCount || upperFpsContinousCount || If the threshold is exceeded continuously for this frame, level down || - ||
+|| downAfterChangeSleep || downAfterChangeSleep || Sleep frame count after level down || - ||
+|| upAfterChangeSleep || upAfterChangeSleep || Sleep frame count after leveling up || - ||
+|| postProcessLightShaft || Light shaft || Light shaft of filter || - ||
+|| postProcessBloom || Bloom || Bloom || - ||
+|| postProcessGlow || Glow || Glow || - ||
+|| postProcessAA || AA || Antialiasing || - ||
+|| postProcessSSAO || SSAO || SSAO || - ||
+|| postProcessDOF || DOF || DOF || - ||
+|| postProcessMotionBlur || Motion Blur || Motion Blur || - ||
+|| postProcessMotionBlurIteration || MotionBlurIteration || Reduce the number of Motion Blur iterations || - ||
+|| reserve0 || Reserve || Reserve || - ||
+|| shadowBlur || Shadow Blur || Cut the shadow blur || - ||
+|| sfxParticleHalf || Around the SFX Emit || Emit interval, number of emits, LOD distance halved in graphics config || - ||
+|| sfxReflection || SFX reflection || Omit the reflection scene SFX || - ||
+|| sfxWaterInteraction || Water interaction || Omit water surface interact SFX || - ||
+|| sfxGlow || SFX glow || Omit Glow playing with SFX || - ||
+|| sfxDistortion || SFX distortion || Omit of distortion applied by SFX || - ||
+|| sftSoftSprite || Soft sprite || Soft sprite omit with SFX || - ||
+|| sfxLightShaft || Light shaft || SFX Light Shaft Omit || - ||
+|| sfxScaleRenderDistanceScale || Scale to the distance judgment of the effect dynamically registered in the reduction buffer || Scale to the distance judgment of the effect dynamically registered in the reduction buffer by the distance of SFX || - ||
+|| dynamicResolution || Dynamic resolution || Dynamic resolution || - ||
+|| shadowCascade0ResolutionHalf || Shadow Cascade0 Resolution Half || Cut the shadow (cascade 0) resolution in half || - ||
+|| shadowCascade1ResolutionHalf || Shadow Cascade1 Resolution Half || Cut the shadow (cascade 1) resolution in half || - ||
+|| chrWetDisablePlayer || Local player || Turn off the water wetting process for local players || - ||
+|| chrWetDisableRemotePlayer || Remote player || Turn off the water wetting process of the remote player || - ||
+|| chrWetDisableEnemy || Enemy character || Turn off the water wetting process of enemy characters || - ||
+|| dynamicResolutionPercentageMin || Resolution reduction lower limit (%) || Resolution reduction lower limit (%) || - ||
+|| dynamicResolutionPercentageMax || Resolution reduction upper limit (%) || Resolution reduction upper limit (%) || - ||
+|| reserve1 || Reserve || Reserve || - ||

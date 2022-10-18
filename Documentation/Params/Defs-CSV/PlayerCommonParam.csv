@@ -1,0 +1,66 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Player's automatic foot effect SFX identifier [3 digits],The identifier used for the SFX ID of the automatic foot effect. It corresponds to ZZZ of XYYZZZ.,-1,999,100,s32,1,%d,s32,None
+Player hidden fade time during precision shooting,The fade time when hiding the player during precision shooting. The unit is seconds,0,10,200,f32,0.01,%f,f32,None
+Player toughness recovery time correction value,A correction value used to calculate the player's toughness recovery time.,0,999,300,f32,0.001,%f,f32,None
+Magic memory slot initial value,Magic memory slot initial value,0,99,400,u8,1,%d,u8,None
+Talisman equipment slot initial value,Talisman equipment slot initial value,0,4,500,u8,1,%d,u8,None
+reserve,(dummy8),,,8031,dummy8,,,dummy8,None
+Drop item acquisition animation ID,Animation ID when picking up a drop item,0,999999,700,s32,1,%d,s32,None
+Player resistance value recovery amount_sleep [point / s],Player resistance value recovery amount_sleep [point / s],0,999.99,4050,f32,0.01,%f,f32,None
+Flare overwrite induction performance [deg / s],Flare overwrite guidance performance [deg / s] (-1: no overwrite),-1,99999,6000,s32,1,%d,s32,None
+Flare overwrite guidance stop distance [m],Flare overwrite guidance stop distance [m] (-1: no overwrite),-1,999999,6100,f32,0.1,%f,f32,None
+Animation ID when acquiring Nemuri item,Animation ID when acquiring Nemuri item,0,999999,900,s32,1,%d,s32,None
+Weapon attribute ban event flag base ID,Weapon attribute ban event flag base ID,0,-294967297,7000,u32,1,%u,u32,None
+Special effect ID for activating large runes via the system,Special effect Id to call when a large rune is activated from the system,0,999999999,1300,s32,1,%d,s32,None
+Insufficient status Basic attack power reduction,Insufficient status Basic attack power reduction,0,10,1400,f32,0.01,%f,f32,None
+Insufficient status Stamina consumption ratio,Insufficient status Stamina consumption ratio,0,10,1500,f32,0.01,%f,f32,None
+Insufficient status Playing attack power,Insufficient status Playing attack power,0,999,1600,s16,1,%d,s16,None
+Shield status correction Judgment status maximum value,Maximum status value to increase performance used when calculating the status correction value of shield performance,0,99,1700,s16,1,%d,s16,None
+Weapon attribute ban event flag number of steps,How much space is left for each weapon attribute ID from the base ID. Weapon attribute ban event flag ID = << Weapon attribute ban event flag base ID >> + Weapon attribute ID x << Weapon attribute ban event flag number of steps >>,1,65535,7010,u16,1,%u,u16,None
+Causal Retribution_Number of Damages Before Counterattack,Causal Retribution_Number of Damages Before Counterattack,0,999,8000,u16,1,%u,u16,None
+Causal response_Number of damages until counterattack Duration [s],Causal response_Number of damages until counterattack Duration [s],0,999,8010,u16,1,%u,u16,None
+Causal Retribution_Counterattack Magic Damipoli ID,Causal Retribution_Counterattack Magic Damipoli ID,0,999,8030,u16,1,%u,u16,None
+Causal Retribution_Counterattack Magic Param ID,Causal Retribution_Counterattack Magic Param ID,-1,999999,8020,s32,1,%d,s32,None
+Riding precision shooting camera offset height,Riding precision shooting camera offset height,-10,10,250,f32,0.1,%f,f32,None
+reserve,(dummy8),,,8032,dummy8,,,dummy8,None
+Quiver adsorption Damipoly ID,Quiver adsorption Damipoly ID,0,99999,3900,s32,1,%d,s32,None
+Bolt tube adsorption Damipoly ID,Bolt cylinder adsorption Damipoly ID (However, if the bolt cylinder is used alone, the quiver Damipoly ID is used),0,99999,3950,s32,1,%d,s32,None
+Multi-time client bottle correction magnification,Multi-time client bottle correction magnification (0.5 specified to halve the number of possessions),0,100,2500,f32,0.01,%f,f32,None
+reserve,(dummy8),,,8033,dummy8,,%d,dummy8,None
+Angle at which a kick can be taken when viewed from the front of the player,Angle at which a kick can be taken when viewed from the front of the player,0,180,2800,u8,1,%u,u8,None
+Analog Weight Ratio for NPC Players_Lightweight,Analog weight ratio for NPC players [%]. lightweight.,0,200,2900,u8,1,%d,u8,None
+Analog Weight Ratio for NPC Players_Medium Weight,Analog weight ratio for NPC players [%]. Medium weight.,0,200,3000,u8,1,%d,u8,None
+Analog Weight Ratio for NPC Players_Weight,Analog weight ratio for NPC players [%]. weight.,0,200,3100,u8,1,%d,u8,None
+Analog Weight Ratio for NPC Players_Overweight,Analog weight ratio for NPC players [%]. Overweight.,0,200,3200,u8,1,%d,u8,None
+Analog Weight Ratio for NPC Players_Ultra Lightweight,Analog weight ratio for NPC players [%]. Super lightweight.,0,200,3300,u8,1,%d,u8,None
+reserve,(dummy8),,,8034,dummy8,,%d,dummy8,None
+Orbit correction special effect standard ID,Criteria ID for special effects applied for lap correction,0,999999999,3500,s32,1,%d,s32,None
+Arrow, bolt model Id offset,Offset added to the model ID when equipped in slot 1 when displaying the arrow and bolt models. (Model Id + offset value),0,999999999,3600,s32,1,%d,s32,None
+Threshold for the remaining number of model masks based on the remaining amount of arrows and bolts _1 step [%],When displaying the arrow and bolt models, the one-step judgment value [%] of the threshold value when applying the display mask by the number. (If it is more than this value, it is displayed in one step),0,100,3700,s8,1,%d,s8,None
+Threshold for the remaining number of model masks based on the remaining amount of arrows and bolts _2 steps [%],Two-step judgment value [%] of the threshold value when applying a display mask based on the number of arrows and bolt models. (If it is more than this value, it is displayed in 2 steps),0,100,3800,s8,1,%d,s8,None
+reserve,(dummy8),,,8035,dummy8,,,dummy8,None
+Player resistance recovery amount_poison [point / s],Player resistance recovery amount_poison [point / s],0,999.99,4000,f32,0.01,%f,f32,None
+Player resistance value recovery amount_plague [point / s],Player resistance value recovery amount_plague [point / s],0,999.99,4010,f32,0.01,%f,f32,None
+Player resistance recovery amount_bleeding [point / s],Player resistance recovery amount_bleeding [point / s],0,999.99,4020,f32,0.01,%f,f32,None
+Player resistance recovery amount_curse [point / s],Player resistance recovery amount_curse [point / s],0,999.99,4030,f32,0.01,%f,f32,None
+Player resistance value recovery amount_cold air [point / s],Player resistance value recovery amount_cold air [point / s],0,999.99,4040,f32,0.01,%f,f32,None
+Enemy resistance recovery amount_poison [point / s],Enemy resistance recovery amount_poison [point / s],0,999.99,4500,f32,0.01,%f,f32,None
+Enemy resistance value recovery amount_plague [point / s],Enemy resistance value recovery amount_plague [point / s],0,999.99,4510,f32,0.01,%f,f32,None
+Enemy resistance recovery amount_bleeding [point / s],Enemy resistance recovery amount_bleeding [point / s],0,999.99,4520,f32,0.01,%f,f32,None
+Enemy resistance recovery amount_curse [point / s],Enemy resistance recovery amount_curse [point / s],0,999.99,4530,f32,0.01,%f,f32,None
+Enemy resistance value recovery amount_cold air [point / s],Enemy resistance value recovery amount_cold air [point / s],0,999.99,4540,f32,0.01,%f,f32,None
+Left hand two-handed request button long press time [s],Button input time when holding both left hand,0,10,5000,f32,0.001,%f,f32,None
+Player resistance value recovery amount_madness [point / s],Player resistance value recovery amount_madness [point / s],0,999.99,4050,f32,0.01,%f,f32,None
+Material Item acquisition animation ID,Animation ID when picking up a material item,0,999999,800,s32,1,%d,s32,None
+Yellow Cloth HP Est Bottle Correction Magnification,Yellow Cloth HP Est Bottle Correction Magnification,0,100,5300,f32,0.01,%f,f32,None
+Yellow Cloth HP Est Bottle Offset,Yellow Cloth HP Est Bottle Offset,-100000,100000,5400,s32,1,%d,s32,None
+Yellow Cloth MP Est Bottle Correction Magnification,Yellow Cloth MP Est Bottle Correction Magnification,0,100,5500,f32,0.01,%f,f32,None
+Yellow Cloth MP Est Bottle Offset,Yellow Cloth MP Est Bottle Offset,-100000,100000,5600,s32,1,%d,s32,None
+Enemy resistance value recovery amount_sleep [point / s],Enemy resistance value recovery amount_sleep [point / s],0,999.99,4550,f32,0.01,%f,f32,None
+Enemy resistance value recovery amount_madness [point / s],Enemy resistance value recovery amount_madness [point / s],0,999.99,4560,f32,0.01,%f,f32,None
+Abnormal condition_immediate death_immediate death Item ID,Abnormal condition_immediate death_immediate death Item ID,-1,999999999,7100,s32,1,%d,s32,None
+Abnormal condition_immediate death_maximum number of instant death items,Abnormal condition_immediate death_maximum number of instant death items,0,99,7200,u8,1,%u,u8,None
+reserve,(dummy8),,,8036,dummy8,,,dummy8,None
+Abnormal condition_Instant death_Instant death Item possession Special effect base ID,Abnormal condition_Instant death_Instant death Item possession Special effect base ID,-1,999999999,7300,s32,1,%d,s32,None
+Abnormal condition_immediate death_immediate death item lottery ID_for map,Abnormal condition_immediate death_immediate death item lottery ID_for map,-1,999999999,7400,s32,1,%d,s32,None
+reserve,(dummy8),,,8037,dummy8,,,dummy8,None

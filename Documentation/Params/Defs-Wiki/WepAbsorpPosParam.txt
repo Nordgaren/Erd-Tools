@@ -1,0 +1,60 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| hangPosType || Storage location type || The animation at the time of sword delivery changes depending on this value || WEP_HANG_POS_TYPE ||
+|| isSkeletonBind || Do you want to combine skeletons? || Do you want to combine skeletons? || BOOL_CIRCLECROSS_TYPE ||
+|| pad0 || Padding ||  || - ||
+|| right_0 || Model 0_ Right hand adsorption Damipoly || Model 0 adsorption Damipoli when holding the weapon in one hand. || - ||
+|| left_0 || Model 0_ Left hand adsorption Damipoly || Model 0 adsorption Damipoli when holding the weapon in one hand. || - ||
+|| both_0 || Model 0_ Right hand Adsorption Damipoly with both hands || Model 0 adsorption Damipoli when holding a right-handed weapon with both hands. || - ||
+|| leftHang_0 || Model 0_ Left hand sword adsorption Damipoly || Model 0 adsorption Damipoli when holding a weapon in the left hand and delivering the weapon. || - ||
+|| rightHang_0 || Model 0_Suction Damipoli at the time of right hand sword delivery || Model 0 adsorption Damipoli when holding a weapon in the right hand and delivering the weapon. || - ||
+|| right_1 || Model 1_Right-handed adsorption Damipoly || Model 1 adsorption Damipoli when holding the weapon in one hand. || - ||
+|| left_1 || Model 1_ Left hand adsorption Damipoly || Model 1 adsorption Damipoli when holding the weapon in one hand. || - ||
+|| both_1 || Model 1_Right-handed two-handed adsorption Damipoly || Model 1 adsorption Damipoli when holding a right-handed weapon with both hands. || - ||
+|| leftHang_1 || Model 1_ Left hand sword adsorption Damipoli || Model 1 adsorption Damipoli when holding a weapon in the left hand and delivering the weapon. || - ||
+|| rightHang_1 || Model 1_Suction Damipoli at the time of right hand sword delivery || Model 1 adsorption Damipoli when holding a weapon in the right hand and delivering the weapon. || - ||
+|| right_2 || Model 2_Right-handed adsorption Damipoly || Model 2 adsorption Damipoli when holding the weapon in one hand. || - ||
+|| left_2 || Model 2_ Left hand adsorption Damipoly || Model 2 adsorption Damipoli when holding the weapon in one hand. || - ||
+|| both_2 || Model 2_Right-handed two-handed adsorption Damipoly || Model 2 adsorption Damipoli when holding a right-handed weapon with both hands. || - ||
+|| leftHang_2 || Model 2_ Left hand sword adsorption Damipoli || Model 2 adsorption Damipoli when holding a weapon in the left hand and delivering the weapon. || - ||
+|| rightHang_2 || Model 2_Suction Damipoli at the time of right hand sword delivery || Model 2 adsorption Damipoli when holding a weapon in the right hand and delivering the weapon. || - ||
+|| right_3 || Model 3_Right-handed adsorption Damipoly || Model 3 adsorption Damipoli when holding the weapon in one hand. || - ||
+|| left_3 || Model 3_ Left hand adsorption Damipoly || Model 3 adsorption Damipoli when holding the weapon in one hand. || - ||
+|| both_3 || Model 3_Right-handed two-handed adsorption Damipoly || Model 3 adsorption Damipoli when holding a right-handed weapon with both hands. || - ||
+|| leftHang_3 || Model 3_ Left hand sword adsorption Damipoli || Model 3 Adsorption Damipoli when holding a weapon in the left hand and delivering the weapon. || - ||
+|| rightHang_3 || Model 3_Suction Damipoli at the time of right hand sword delivery || Model 3 Adsorption Damipoli when holding a weapon in his right hand and delivering the weapon. || - ||
+|| wepInvisibleType_0 || Model 0_Weapon hidden type || Hidden type of model 0. When hiding a weapon with TAE, erase the one that matches this || WEP_INVISIBLE_TYPE ||
+|| wepInvisibleType_1 || Model 1_Weapon hidden type || Hidden type of model 1. When hiding a weapon with TAE, erase the one that matches this || WEP_INVISIBLE_TYPE ||
+|| wepInvisibleType_2 || Model 2_Weapon hidden type || Hidden type of model 2. When hiding a weapon with TAE, erase the one that matches this || WEP_INVISIBLE_TYPE ||
+|| wepInvisibleType_3 || Model 3_Weapon hidden type || Model 3 hidden type. When hiding a weapon with TAE, erase the one that matches this || WEP_INVISIBLE_TYPE ||
+|| leftBoth_0 || Model 0_Left hand Adsorption Damipoly with both hands || Model 0 adsorption Damipoli when holding a left-handed weapon with both hands. || - ||
+|| leftBoth_1 || Model 1_Left hand Adsorption Damipoly with both hands || Model 1 adsorption Damipoli when holding a left-handed weapon with both hands. || - ||
+|| leftBoth_2 || Model 2_Left hand Adsorption Damipoly with both hands || Model 2 adsorption Damipoli when holding a left-handed weapon with both hands. || - ||
+|| leftBoth_3 || Model 3_ Left hand adsorption Damipoly with both hands || Model 3 adsorption Damipoli when holding a left-handed weapon with both hands. || - ||
+|| dispPosType_right_0 || Model 0_Right hand display position || Model 0_ Right-hand display position (used to specify hidden position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_left_0 || Model 0_left hand display position || Model 0_Left hand display position (used to specify hidden position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_rightBoth_0 || Model 0_Right hand Display position with both hands || Model 0_Right-handed two-handed display position (used to specify hidden position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_leftBoth_0 || Model 0_ Left hand Display position with both hands || Model 0_ Left-handed two-handed display position (used to specify hidden position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_rightHang_0 || Model 0_ Right hand display position when sword is delivered || Model 0_ Right-handed sword display position (used to specify the non-display position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_leftHang_0 || Model 0_ Display position when delivering the left hand sword || Model 0_ Left hand sword display position (used to specify the non-display position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_right_1 || Model 1_Right hand display position || Model 1_ Right-hand display position (used to specify hidden position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_left_1 || Model 1_left hand display position || Model 1_Left hand display position (used to specify hidden position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_rightBoth_1 || Model 1_Right hand Display position with both hands || Model 1_Right-handed two-handed display position (used to specify hidden position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_leftBoth_1 || Model 1_ Left hand Display position with both hands || Model 1_ Left-handed two-handed display position (used to specify hidden position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_rightHang_1 || Model 1_ Right hand display position when sword is delivered || Model 1_ Right-handed sword display position (used to specify the non-display position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_leftHang_1 || Model 1_ Display position when delivering the left hand sword || Model 1_ Left hand sword display position (used to specify the non-display position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_right_2 || Model 2_Right hand display position || Model 2_ Right-hand display position (used to specify hidden position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_left_2 || Model 2_left hand display position || Model 2_Left hand display position (used to specify hidden position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_rightBoth_2 || Model 2_Right hand Display position with both hands || Model 2_Right-handed two-handed display position (used to specify hidden position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_leftBoth_2 || Model 2_ Left hand Display position with both hands || Model 2_ Left-handed two-handed display position (used to specify hidden position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_rightHang_2 || Model 2_ Right hand display position when sword is delivered || Model 2_Right-handed sword display position (used to specify the non-display position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_leftHang_2 || Model 2_ Display position when delivering the left hand sword || Model 2_ Left hand sword display position (used to specify the non-display position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_right_3 || Model 3_ Right hand display position || Model 3_ Right-hand display position (used to specify hidden position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_left_3 || Model 3_left hand display position || Model 3_Left hand display position (used to specify hidden position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_rightBoth_3 || Model 3_Right hand display position with both hands || Model 3_Right-handed two-handed display position (used to specify hidden position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_leftBoth_3 || Model 3_ Left hand Display position with both hands || Model 3_ Left-handed two-handed display position (used to specify hidden position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_rightHang_3 || Model 3_ Right hand display position when sword is delivered || Model 3_Right-handed sword display position (used to specify the non-display position from TAE) || WEP_DISP_POS_TYPE ||
+|| dispPosType_leftHang_3 || Model 3_ Display position when delivering the left hand sword || Model 3_ Left hand sword display position (used to specify the non-display position from TAE) || WEP_DISP_POS_TYPE ||
+|| reserve || Reserved area ||  || - ||

@@ -1,0 +1,21 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParam_Debug || Is it a debug parameter? || Parameters marked with a circle are excluded from all packages (because they are for debugging). || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| texName_00 || Texture name 00 || Texture name 00 || - ||
+|| texName_01 || Texture name 01 || Texture name 01 || - ||
+|| texName_02 || Texture name 02 || Texture name 02 || - ||
+|| texName_03 || Texture name 03 || Texture name 03 || - ||
+|| texName_04 || Texture name 04 || Texture name 04 || - ||
+|| texName_05 || Texture name 05 || Texture name 05 || - ||
+|| texName_06 || Texture name 06 || Texture name 06 || - ||
+|| texName_07 || Texture name 07 || Texture name 07 || - ||
+|| texName_08 || Texture name 08 || Texture name 08 || - ||
+|| texName_09 || Texture name 09 || Texture name 09 || - ||
+|| texName_10 || Texture name 10 || Texture name 10 || - ||
+|| texName_11 || Texture name 11 || Texture name 11 || - ||
+|| texName_12 || Texture name 12 || Texture name 12 || - ||
+|| texName_13 || Texture name 13 || Texture name 13 || - ||
+|| texName_14 || Texture name 14 || Texture name 14 || - ||
+|| texName_15 || Texture name 15 || Texture name 15 || - ||

@@ -1,0 +1,5 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| enabled || DOF permission || DOF permission || ON_OFF ||
+|| dmy || dmy ||  || - ||
+|| forceHiResoBlur || Change HiResolutionBlur settings || Change the HiResolutionBlur setting (-1: forced off, 0: as-is, 1: forced on) || - ||
+|| maxBlurLevel || Maximum blur level || Maximum blur level. 2: Maximum, 1: Level to one paragraph, 0: Further reduce accuracy || - ||

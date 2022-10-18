@@ -1,0 +1,3 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Pre-conversion time zone start time [hour],Start time of the time zone to be converted to cutscene time [hour],0,24,1,f32,0.1,%f,f32,None
+Cutscene time after conversion [hour],Enter the time used during cutscene playback in hours [hour],0,24,2,f32,0.1,%f,f32,None

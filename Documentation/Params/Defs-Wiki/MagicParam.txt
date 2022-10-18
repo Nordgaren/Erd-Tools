@@ -1,0 +1,114 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| yesNoDialogMessageId || Yes / No Dialog Message ID || Message ID of Yes / No dialog issued when using magic || - ||
+|| limitCancelSpEffectId || Special effect ID that is out of usage restrictions || Usage restrictions can be ignored when the specified special effect ID is activated || - ||
+|| sortId || SortID || Sort ID (-1: Do not collect) || - ||
+|| requirementLuck || Equipment conditions [luck] || Can't be equipped without more PC luck || - ||
+|| aiNotifyType || AI notification type || AI interrupt occurs in act ("AI notification when magic is activated") || MAGIC_AI_NOTIFY_TYPE ||
+|| mp || MP consumption [normal] || MP consumption || - ||
+|| stamina || Consumed stamina [normal] || Consumption stamina || - ||
+|| iconId || Icon ID || Specify icon> For menu || - ||
+|| behaviorId || Action ID || Set the action ID || - ||
+|| mtrlItemId || Required item ID || Item ID required for purchase || - ||
+|| replaceMagicId || Magic ID to replace || ID to be replaced when the state change matches (-1: invalid) || - ||
+|| maxQuantity || Maximum number || Number per piece (-1: infinity) || - ||
+|| refCategory1 || ID category || Call ID category [Attack, Projectile, Special Effects] || BEHAVIOR_REF_TYPE ||
+|| overDexterity || Skill over start value || Skill over start value || - ||
+|| refCategory2 || ID category || Call ID category [Attack, Projectile, Special Effects] || BEHAVIOR_REF_TYPE ||
+|| slotLength || Required slot || Number of slots required for equipment> For menu || - ||
+|| requirementIntellect || Equipment conditions [Intelligence] || Can't be equipped without more PC intelligence || - ||
+|| requirementFaith || Equipment conditions [reason] || It cannot be equipped without the power of the PC any more. || - ||
+|| analogDexterityMin || Analog minimum workmanship || Motion cancel analog: Minimum skill value || - ||
+|| analogDexterityMax || Maximum analog workmanship || Motion cancel analog: Maximum skill value || - ||
+|| ezStateBehaviorType || category || Used for sorting> For menu || MAGIC_CATEGORY ||
+|| refCategory3 || ID category || Call ID category [Attack, Projectile, Special Effects] || BEHAVIOR_REF_TYPE ||
+|| spEffectCategory || Special effects category || Since there are effects (enchantment weapons, etc.) whose parameters fluctuate depending on skills, magic, items, etc., set each action so that the determined effect can correspond to the effect such as "power up only weapon attack". Set "None" for items that do not need to be set, such as varistor.
+ || BEHAVIOR_CATEGORY ||
+|| refType || Motion category || Specify motion> For EzState || MAGIC_MOTION_TYPE ||
+|| opmeMenuType || Menu type at the time of use || Menu type to be displayed when using magic || GOODS_OPEN_MENU ||
+|| refCategory4 || ID category || Call ID category [Attack, Projectile, Special Effects] || BEHAVIOR_REF_TYPE ||
+|| hasSpEffectType || Which normal is it? || Specify the state change that needs to replace the magic ID || SP_EFFECT_TYPE ||
+|| replaceCategory || Replacement category || Additional conditions when replacing the magic ID || REPLACE_CATEGORY ||
+|| useLimitCategory || Restrictions on use by special effects category || Specified to control availability by special effects || SP_EFFECT_USELIMIT_CATEGORY ||
+|| vowType0 || Pledge 0 || Pledge 0 || MAGIC_BOOL ||
+|| vowType1 || Pledge 1 || Pledge 1 || MAGIC_BOOL ||
+|| vowType2 || Pledge 2 || Pledge 2 || MAGIC_BOOL ||
+|| vowType3 || Pledge 3 || Pledge 3 || MAGIC_BOOL ||
+|| vowType4 || Pledge 4 || Pledge 4 || MAGIC_BOOL ||
+|| vowType5 || Pledge 5 || Pledge 5 || MAGIC_BOOL ||
+|| vowType6 || Pledge 6 || Pledge 6 || MAGIC_BOOL ||
+|| vowType7 || Pledge 7 || Pledge 7 || MAGIC_BOOL ||
+|| enable_multi || Can it be used in multi? || Can it be used in multi? Can be used for both single and multi || MAGIC_BOOL ||
+|| enable_multi_only || Is it only for multi? || Is it only for multi? It cannot be used when it is a single. It can be used when it is multi. || MAGIC_BOOL ||
+|| isEnchant || Is it an enchantment? || Is it magic to enchant? || MAGIC_BOOL ||
+|| isShieldEnchant || Is it a shield enchantment? || Is it magic to enchant guards and shields? || MAGIC_BOOL ||
+|| enable_live || Can be used alive || Can surviving characters be used? || MAGIC_BOOL ||
+|| enable_gray || Gray available || Can gray characters be used? || MAGIC_BOOL ||
+|| enable_white || White can be used || Can white ghost characters be used? || MAGIC_BOOL ||
+|| enable_black || Black can be used || Can black ghost characters be used? || MAGIC_BOOL ||
+|| disableOffline || Is it unavailable offline? || Is it unavailable offline? || MAGIC_BOOL ||
+|| castResonanceMagic || Do you deliver resonance magic? || Do you deliver resonance magic? || MAGIC_BOOL ||
+|| isValidTough_ProtSADmg || Is the armor SA damage multiplier valid even at the initial value? || Whether the toughness calculation is performed even if the armor SA is the initial value. Check the toughness specification .xlsx for details || MAGIC_BOOL ||
+|| isWarpMagic || Is it warp magic? || Is it magic to warp? Magic with a check mark here is prohibited by the special effect "Warp Prohibition". || MAGIC_BOOL ||
+|| enableRiding || Can it be used while riding? || Can it be used while riding? || MAGIC_BOOL ||
+|| disableRiding || Is it prohibited to use while not riding? || Is it prohibited to use while not riding? || MAGIC_BOOL ||
+|| isUseNoAttackRegion || Can it be used in an attack-prohibited area? || Can it be used in an attack-prohibited area? || MAGIC_BOOL ||
+|| pad_1 || pading ||  || - ||
+|| vowType8 || Pledge 8 || Pledge 8 || MAGIC_BOOL ||
+|| vowType9 || Pledge 9 || Pledge 9 || MAGIC_BOOL ||
+|| vowType10 || Pledge 10 || Pledge 10 || MAGIC_BOOL ||
+|| vowType11 || Pledge 11 || Pledge 11 || MAGIC_BOOL ||
+|| vowType12 || Pledge 12 || Pledge 12 || MAGIC_BOOL ||
+|| vowType13 || Pledge 13 || Pledge 13 || MAGIC_BOOL ||
+|| vowType14 || Pledge 14 || Pledge 14 || MAGIC_BOOL ||
+|| vowType15 || Pledge 15 || Pledge 15 || MAGIC_BOOL ||
+|| castSfxId || Chanting SFXID || SFXID during magical chanting || - ||
+|| fireSfxId || Activate SFXID || SFX ID when magic is activated || - ||
+|| effectSfxId || Effect SFXID || SFXID during magic effect || - ||
+|| toughnessCorrectRate || Toughness correction factor || It is a magnification that corrects the basic value of toughness. || - ||
+|| ReplacementStatusType || Replacement status type || Replacement status type || MAGIC_STATUS_TYPE ||
+|| ReplacementStatus1 || Replacement status value 1 || Replacement status value 1 || - ||
+|| ReplacementStatus2 || Replacement status value 2 || Replacement status value 2 || - ||
+|| ReplacementStatus3 || Replacement status value 3 || Replacement status value 3 || - ||
+|| ReplacementStatus4 || Replacement status value 4 || Replacement status value 4 || - ||
+|| refCategory5 || ID category || Call ID category [Attack, Projectile, Special Effects] || BEHAVIOR_REF_TYPE ||
+|| consumeSA || Consume SA [Normal / Reservoir] || SA consumption [normal / reservoir] || - ||
+|| ReplacementMagic1 || Replacement ID1 || Replacement ID1 || - ||
+|| ReplacementMagic2 || Replacement ID2 || Replacement ID2 || - ||
+|| ReplacementMagic3 || Replacement ID3 || Replacement ID3 || - ||
+|| ReplacementMagic4 || Replacement ID 4 || Replacement ID 4 || - ||
+|| mp_charge || MP consumption [reservoir] || MP consumption [reservoir] || - ||
+|| stamina_charge || Consumption stamina [reservoir] || Consumption stamina [reservoir] || - ||
+|| createLimitGroupId || Creation limit group Id || If it is 0, it is unused. Check the number of bullets created for the specified group Id, and if the upper limit is reached, you will not be able to use magic. || - ||
+|| refCategory6 || ID category || Call ID category [Attack, Projectile, Special Effects] || BEHAVIOR_REF_TYPE ||
+|| subCategory1 || Subcategory 1 || Subcategory 1 || ATK_SUB_CATEGORY ||
+|| subCategory2 || Subcategory 2 || Subcategory 2 || ATK_SUB_CATEGORY ||
+|| refCategory7 || ID category || Call ID category [Attack, Projectile, Special Effects] || BEHAVIOR_REF_TYPE ||
+|| refCategory8 || ID category || Call ID category [Attack, Projectile, Special Effects] || BEHAVIOR_REF_TYPE ||
+|| refCategory9 || ID category || Call ID category [Attack, Projectile, Special Effects] || BEHAVIOR_REF_TYPE ||
+|| refCategory10 || ID category || Call ID category [Attack, Projectile, Special Effects] || BEHAVIOR_REF_TYPE ||
+|| refId1 || Call ID || ID called from magic || - ||
+|| refId2 || Call ID || ID called from magic || - ||
+|| refId3 || Call ID || ID called from magic || - ||
+|| aiUseJudgeId || AI usage judgment ID || AI usage judgment ID || - ||
+|| refId4 || Call ID || ID called from magic || - ||
+|| refId5 || Call ID || ID called from magic || - ||
+|| refId6 || Call ID || ID called from magic || - ||
+|| refId7 || Call ID || ID called from magic || - ||
+|| refId8 || Call ID || ID called from magic || - ||
+|| refId9 || Call ID || ID called from magic || - ||
+|| refId10 || Call ID || ID called from magic || - ||
+|| consumeType1 || Consumption type || Consumption type || MAGIC_CONSUME_TYPE ||
+|| consumeType2 || Consumption type || Consumption type || MAGIC_CONSUME_TYPE ||
+|| consumeType3 || Consumption type || Consumption type || MAGIC_CONSUME_TYPE ||
+|| consumeType4 || Consumption type || Consumption type || MAGIC_CONSUME_TYPE ||
+|| consumeType5 || Consumption type || Consumption type || MAGIC_CONSUME_TYPE ||
+|| consumeType6 || Consumption type || Consumption type || MAGIC_CONSUME_TYPE ||
+|| consumeType7 || Consumption type || Consumption type || MAGIC_CONSUME_TYPE ||
+|| consumeType8 || Consumption type || Consumption type || MAGIC_CONSUME_TYPE ||
+|| consumeType9 || Consumption type || Consumption type || MAGIC_CONSUME_TYPE ||
+|| consumeType10 || Consumption type || Consumption type || MAGIC_CONSUME_TYPE ||
+|| consumeLoopMP_forMenu || MP consumption for menu supplement display || MP consumption for menu supplement display || - ||
+|| pad || PAD12 || PAD12 || - ||

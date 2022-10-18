@@ -1,0 +1,18 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| SfxId || Weather SfxId (common) || SfxId for weather -1: No weather Sfx Set for indoor and outdoor use. Items that can be erased with Above Shadow, such as raindrops of interactive particles, are OK here. || - ||
+|| WindSfxId || Wind SfxId (outdoor) || Wind SfxId -1: No wind Sfx Created only outdoors || - ||
+|| GroundHitSfxId || SfxId for ground hit effect || SfxId for ground hit effect -1: None for ground hit effect || - ||
+|| SoundId || SoundId for weather (common) || SoundId for weather -1: No Sound || - ||
+|| WetTime || Wet time (seconds) || Time to get completely wet (time until the weight of m00_00_0000_WeatherBase reaches 1.0) -1: No wetness (m00_00_0000_WeatherBase remains 0.0) || - ||
+|| GparamId || GparamId for weather || Specify the XXX part of Gparam (m00_00_? XXX_WeatherOutdoor.gparamxml) for outdoor weather. Gparam to be used can be shared between weather. || - ||
+|| NextLotIngameSecondsMin || Minimum time until the next weather lottery (in-game seconds) || Specify the minimum time to the next weather lottery in in-game seconds. When transitioning to this weather, the time to the next weather will be a random time between the minimum and maximum. || - ||
+|| NextLotIngameSecondsMax || Maximum time until the next weather lottery (in-game seconds) || Specify the maximum time until the next weather lottery in in-game seconds. When transitioning to this weather, the time to the next weather will be a random time between the minimum and maximum. || - ||
+|| WetSpEffectId00 || Wet special effect ID_00 || Special effect ID on the character (-1: None) || - ||
+|| WetSpEffectId01 || Wet special effect ID_01 || Special effect ID on the character (-1: None) || - ||
+|| WetSpEffectId02 || Wet special effect ID_02 || Special effect ID on the character (-1: None) || - ||
+|| WetSpEffectId03 || Wet special effect ID_03 || Special effect ID on the character (-1: None) || - ||
+|| WetSpEffectId04 || Wet special effect ID_04 || Special effect ID on the character (-1: None) || - ||
+|| SfxIdInoor || Weather SfxId (indoor) || Weather SfxId -1: No weather Sfx indoors only || - ||
+|| SfxIdOutdoor || Weather SfxId (outdoor) || Weather SfxId -1: No weather Sfx, outdoor only || - ||
+|| aiSightRate || AI field of view magnification || AI field of view magnification || - ||
+|| DistViewWeatherGparamOverrideWeight || Overwrite weight value in the distance camera || Overwrite weight value in distant view camera (SEQ16724) || - ||

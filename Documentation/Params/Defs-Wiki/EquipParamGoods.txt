@@ -1,0 +1,119 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| refId_default || Call ID 0 (default) || ID0 called from the item (default) || - ||
+|| sfxVariationId || SFX variation ID || Specify SFX variation (used to identify SFX in combination with TimeActEditor ID) || - ||
+|| weight || Weight [kg] || Weight [kg] || - ||
+|| basicPrice || Basic price || Basic price || - ||
+|| sellValue || Sale price || Selling price || - ||
+|| behaviorId || Action ID || Set the effect that occurs when using a tool || - ||
+|| replaceItemId || Replacement item ID || Item ID when replacing || - ||
+|| sortId || Sort ID || Sort ID (-1: Do not collect) || - ||
+|| appearanceReplaceItemId || Display replacement destination item ID || Conditionally replace the display with another tool ID. The tool ID on the game data side does not change || - ||
+|| yesNoDialogMessageId || YES / NO message ID || YesNo Message ID used when displaying the dialog || - ||
+|| useEnableSpEffectType || Usable condition_state change type || Allow to use only when the special effect of the set state change type is applied || SP_EFFECT_TYPE ||
+|| potGroupId || Vase group ID || "Consumable items" for which 0 or more is set for the pot group ID can be possessed by the number of "pots" with the same pot group ID. || - ||
+|| pad || PAD || Old (magic ID linked to a scroll) || - ||
+|| iconId || Icon ID || Menu icon ID || - ||
+|| modelId || Model ID || Model ID || - ||
+|| shopLv || Shop level || Level that can be sold at the store || - ||
+|| compTrophySedId || Comptrophy SEQ number || SEQ number of complete trophy || - ||
+|| trophySeqId || Trophy SEQ number || Trophy SEQ number || - ||
+|| maxNum || Maximum number of possessions || Maximum number of possessions || - ||
+|| consumeHeroPoint || Consumer nature || Consumer nature || - ||
+|| overDexterity || Skill over start value || Skill over start value || - ||
+|| goodsType || Tool type || Types of tools || GOODS_TYPE ||
+|| refCategory || ID category || ↓ ID category [Attack, Projectile, Special] || BEHAVIOR_REF_TYPE ||
+|| spEffectCategory || Special effects category || Since there are effects (enchantment weapons, etc.) whose parameters fluctuate depending on skills, magic, items, etc., set each action so that the determined effect can correspond to the effect such as "power up only weapon attack". Set "None" for items that do not need to be set, such as varistor.
+ || BEHAVIOR_CATEGORY ||
+|| pad3 || pad ||  || - ||
+|| goodsUseAnim || Animation when using tools || Set the animation to play when using the tool || GOODS_USE_ANIM ||
+|| opmeMenuType || Do you want to open the menu || Menu type that opens when using an item || GOODS_OPEN_MENU ||
+|| useLimitCategory || Prohibition conditions_Special effects category || Specified to control whether it can be used by the special effect applied || SP_EFFECT_USELIMIT_CATEGORY ||
+|| replaceCategory || Replacement category || Condition category to add to call ID || REPLACE_CATEGORY ||
+|| reserve4 || Reserve ||  || - ||
+|| enable_live || Can be used alive || Is it possible to use a surviving player? || EQUIP_BOOL ||
+|| enable_gray || Gray available || Can Gray Ghost be used? || EQUIP_BOOL ||
+|| enable_white || White can be used || Can white ghost be used? || EQUIP_BOOL ||
+|| enable_black || Black can be used || Is it possible to do a black ghost? || EQUIP_BOOL ||
+|| enable_multi || Multiplayer possible || Can it be used during multiplayer? || EQUIP_BOOL ||
+|| disable_offline || Not available offline || Is it unavailable while offline? || EQUIP_BOOL ||
+|| isEquip || Can be equipped || Whether it can be equipped || EQUIP_BOOL ||
+|| isConsume || Is it a consumable item? || Will it be consumed when used (whether the number of possessions will decrease) || EQUIP_BOOL ||
+|| isAutoEquip || Is it automatically equipped? || Will it be equipped automatically when picked up? || EQUIP_BOOL ||
+|| isEstablishment || Is it a stationary item? || Is it a stationary item? || EQUIP_BOOL ||
+|| isOnlyOne || Can i have only one || Is it an item that you can only have one? || EQUIP_BOOL ||
+|| isDiscard || Can you throw it away || Can you throw away the item? TRUE = thrown away || EQUIP_BOOL ||
+|| isDeposit || Can you deposit || Can you leave it in the warehouse? || EQUIP_BOOL ||
+|| isDisableHand || Can I use it with my right bare hand? || Can't be used when the right-handed weapon is bare-handed? || EQUIP_BOOL ||
+|| isRemoveItem_forGameClear || Whether to delete at the time of lap || Whether to delete at the time of lap || EQUIP_BOOL ||
+|| isSuppleItem || Is it a replenishment item? || Used to determine replenishable items || EQUIP_BOOL ||
+|| isFullSuppleItem || Is it a replenished item? || Used to determine replenished items || EQUIP_BOOL ||
+|| isEnhance || Do you want to enchant? || Do you want to enchant your weapon? || EQUIP_BOOL ||
+|| isFixItem || Is it a repair item? || Is it an item to repair? || EQUIP_BOOL ||
+|| disableMultiDropShare || Is multi-drop sharing prohibited? || Is multi-drop sharing prohibited? || EQUIP_BOOL ||
+|| disableUseAtColiseum || Is it prohibited to use in the arena? || Is it prohibited to use in the arena? || EQUIP_BOOL ||
+|| disableUseAtOutOfColiseum || Is it prohibited to use outside the arena? || Is it prohibited to use outside the arena? || EQUIP_BOOL ||
+|| isEnableFastUseItem || Is it possible to cancel early? || Is it possible to cancel early? || EQUIP_BOOL ||
+|| isApplySpecialEffect || Does it reflect special effects? || Whether to reflect special effects (such as ability value correction) || EQUIP_BOOL ||
+|| syncNumVaryId || ID that synchronizes the number increase / decrease || When the number of items is changed, the items with the same ID will be changed at the same time. 0: Not synchronized || - ||
+|| refId_1 || Call ID1 || ID1 called from the item || - ||
+|| refVirtualWepId || Reference Virtual Weapon ID || Weapon ID to refer to when using the tool || - ||
+|| vagrantItemLotId || Item lottery ID_for map at the time of vagrant || -1: No vagrant 0: No lottery 1 ~: With lottery || - ||
+|| vagrantBonusEneDropItemLotId || Vagrant Bonus Enemy Drop Item Lottery ID_Map || -1: No drop 0: No lottery 1 ~: With lottery || - ||
+|| vagrantItemEneDropItemLotId || Vagrant item Enemy drop item Lottery ID_for map || -1: No drop 0: No lottery 1 ~: With lottery || - ||
+|| castSfxId || Handheld SFXID || SFXID until the effect is activated when you try to use the item || - ||
+|| fireSfxId || Activate SFXID || SFX ID when the item is activated || - ||
+|| effectSfxId || Effect SFXID || After the item is activated, the SFX ID in effect || - ||
+|| enable_ActiveBigRune || Can be used while the Great Rune is active || Can it be used with a large rune activated? || EQUIP_BOOL ||
+|| isBonfireWarpItem || Is it a bonfire warp item? || If the state change type "Warp Prohibition" is applied when TRUE, remove the function to disable the item. || EQUIP_BOOL ||
+|| enable_Ladder || Can it be used in a ladder? || Check here for items available in the ladder || EQUIP_BOOL ||
+|| isUseMultiPlayPreparation || Preparing for multiplayer || Whether items can be used between session probability and initial synchronization || EQUIP_BOOL ||
+|| canMultiUse || Can it be used together? || Can it be used together? || EQUIP_BOOL ||
+|| isShieldEnchant || Is it a shield enchantment? || Is it a shield enchantment? || EQUIP_BOOL ||
+|| isWarpProhibited || Is it subject to warp prohibition? || When this is TRUE, disable the item if the state change type "Warp Prohibition" is applied. || EQUIP_BOOL ||
+|| isUseMultiPenaltyOnly || Only available when there is a disconnect penalty || A flag that allows you to determine if an item is only available when a client disconnect penalty is incurred. || EQUIP_BOOL ||
+|| suppleType || Replenishment type || Replenishment item / Replenishment type when replenishing a replenished item. || GOODS_SUPPLE_TYPE ||
+|| autoReplenishType || Automatic replenishment type || Controls whether or not to automatically replenish and default settings || AUTO_REPLENISH_TYPE ||
+|| isDrop || Can you put it on the spot || Can I put the item on the spot? TRUE = can be placed || EQUIP_BOOL ||
+|| showLogCondType || Acquisition log display condition || Whether to display in the item acquisition log when acquiring the item (not entered: ○) || EQUIP_BOOL ||
+|| isSummonHorse || Is it a horse call item? || Is it an item that summons a horse? Cannot be used if the horse died or the PC is in a horse-prohibited area || EQUIP_BOOL ||
+|| showDialogCondType || Acquisition dialog display condition || Whether to display it in the item acquisition dialog when acquiring an item (not entered: new only) || GET_DIALOG_CONDITION_TYPE ||
+|| isSleepCollectionItem || Is it a Nemuri collection item? || Is it a Nemuri collection item? || EQUIP_BOOL ||
+|| enableRiding || Can it be used while riding? || Can it be used while riding? || EQUIP_BOOL ||
+|| disableRiding || Is it prohibited to use while not riding? || Is it prohibited to use while not riding? || EQUIP_BOOL ||
+|| maxRepositoryNum || Number of warehouses || Number of warehouses || - ||
+|| sortGroupId || Sort item type ID || Sort item type ID. In the sort "Item type order", the same ID is displayed together as the same group. || - ||
+|| isUseNoAttackRegion || Can it be used in an attack-prohibited area? || Can it be used in an attack-prohibited area? || EQUIP_BOOL ||
+|| pad1 || pad || (Old log icon) || - ||
+|| saleValue || Selling price || Selling price || - ||
+|| rarity || Rarity || Rarity used in item acquisition logs || - ||
+|| useLimitSummonBuddy || Is it a buddy item? || Whether there are item usage restrictions for buddy items || GOODS_USELIMIT_SUMMONBUDDY ||
+|| useLimitSpEffectType || Use prohibition condition_state change type || Specified to control whether it can be used depending on the state change type of the special effect applied || SP_EFFECT_TYPE ||
+|| aiUseJudgeId || AI usage judgment ID || AI usage judgment ID || - ||
+|| consumeMP || MP consumption || MP consumption || - ||
+|| consumeHP || HP consumed || HP consumed || - ||
+|| reinforceGoodsId || Strengthening tool ID || Strengthening tool ID || - ||
+|| reinforceMaterialId || Material ID at the time of strengthening || Material ID at the time of strengthening || - ||
+|| reinforcePrice || Enhanced price || Enhanced price || - ||
+|| useLevel_vowType0 || Pledge 0 usage level || Pledge 0 usage level || - ||
+|| useLevel_vowType1 || Pledge 1 usage level || Pledge 1 usage level || - ||
+|| useLevel_vowType2 || Pledge 2 usage level || Pledge 2 usage level || - ||
+|| useLevel_vowType3 || Pledge 3 usage level || Pledge 3 usage level || - ||
+|| useLevel_vowType4 || Pledge 4 usage level || Pledge 4 usage level || - ||
+|| useLevel_vowType5 || Pledge 5 usage level || Pledge 5 usage level || - ||
+|| useLevel_vowType6 || Pledge 6 usage level || Pledge 6 usage level || - ||
+|| useLevel_vowType7 || Pledge 7 usage level || Pledge 7 usage level || - ||
+|| useLevel_vowType8 || Pledge 8 usage level || Pledge 8 usage level || - ||
+|| useLevel_vowType9 || Pledge 9 usage level || Pledge 9 usage level || - ||
+|| useLevel_vowType10 || Pledge 10 usage level || Pledge 10 usage level || - ||
+|| useLevel_vowType11 || Pledge 11 usage level || Pledge 11 usage level || - ||
+|| useLevel_vowType12 || Pledge 12 usage level || Pledge 12 usage level || - ||
+|| useLevel_vowType13 || Pledge 13 usage level || Pledge 13 usage level || - ||
+|| useLevel_vowType14 || Pledge 14 usage level || Pledge 14 usage level || - ||
+|| useLevel_vowType15 || Pledge 15 usage level || Pledge 15 usage level || - ||
+|| useLevel || Appropriate level of use || Appropriate level of use || - ||
+|| reserve5 || Reserved area || Reserved area || - ||
+|| itemGetTutorialFlagId || Item acquisition tutorial Judgment flag ID || Event flag ID for the tutorial when you first get the item. Flag ON when item is obtained. || - ||
+|| reserve3 || Reserved area || Reserved area || - ||

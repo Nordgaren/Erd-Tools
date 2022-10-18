@@ -1,0 +1,18 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+host,Number of host est recovery,0,255,1000,u8,1,%d,u8,Wrap
+White sign,Number of white spirits recovering from the cooperation sign,0,255,2000,u8,1,%d,u8,Wrap
+Gold spirit (sun),Number of est recovery of gold spirits of cooperation sign,0,255,2100,u8,1,%d,u8,Wrap
+White berserker,Number of recovery of white Berserker's est of cooperation sign,0,255,2200,u8,1,%d,u8,Wrap
+Red sign,Number of est recovery of red spirits of hostile sign,0,255,3000,u8,1,%d,u8,Wrap
+Red gold spirit (signature),Number of est recovery of red gold spirit of hostile sign,0,255,3100,u8,1,%d,u8,Wrap
+Red berserker (sign),Number of est recovery of red Berserker of hostile sign,0,255,3200,u8,1,%d,u8,Wrap
+Invasion,Number of intrusion est recovery,0,255,4000,u8,1,%d,u8,Wrap
+Red Gold Spirit (Invasion),Number of est recovery of red gold spirits of invading orbs,0,255,4500,u8,1,%d,u8,Wrap
+Red berserker (invasion),Invasion Orb Red Berserker Est Recovery Number,0,255,4600,u8,1,%d,u8,Wrap
+Relief guest,Number of rescue guests' est recovery,0,255,5000,u8,1,%d,u8,Wrap
+Red Scare Spirit 2,Number of est recovery of Red Scare Spirit 2,0,255,5100,u8,1,%d,u8,Wrap
+Map Guardian Spirit (Forest),Map guardian spirit (forest) est recovery number,0,255,6000,u8,1,%d,u8,Wrap
+Map Guardian (Anor),Map Guardian Spirit (Anor) Est Recovery Number,0,255,6100,u8,1,%d,u8,Wrap
+Arena,Number of est recovery in the arena,0,255,7000,u8,1,%d,u8,Wrap
+Yellow robe's old man,The number of est recovery of the old man in yellow,0,255,7100,u8,1,%d,u8,Wrap
+pad,,,,7101,dummy8,,,dummy8,None

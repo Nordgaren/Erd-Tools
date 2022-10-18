@@ -1,0 +1,56 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Is it a debug parameter?,Parameters marked with a circle are excluded from all packages (because they are for debugging).,0,0,1,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,9999,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,10000,dummy8,,%d,dummy8,None
+Sunny,Sunny,-128,128,10,s16,1,%d,WEATHER_TYPE,None
+Sunny,Sunny,-128,128,20,s16,1,%d,WEATHER_TYPE,None
+Light cloudy,Light cloudy,-128,128,30,s16,1,%d,WEATHER_TYPE,None
+cloudy,cloudy,-128,128,40,s16,1,%d,WEATHER_TYPE,None
+rain,rain,-128,128,50,s16,1,%d,WEATHER_TYPE,None
+Heavy rain,Heavy rain,-128,128,60,s16,1,%d,WEATHER_TYPE,None
+storm,storm,-128,128,70,s16,1,%d,WEATHER_TYPE,None
+Storm (for combat with the descendants of the guardian),Storm (for combat with the descendants of the guardian),-128,128,80,s16,1,%d,WEATHER_TYPE,None
+snow,snow,-128,128,90,s16,1,%d,WEATHER_TYPE,None
+heavy snow,heavy snow,-128,128,100,s16,1,%d,WEATHER_TYPE,None
+fog,fog,-128,128,110,s16,1,%d,WEATHER_TYPE,None
+Thick fog,Thick fog,-128,128,120,s16,1,%d,WEATHER_TYPE,None
+Sandstorm,Sandstorm,-128,128,130,s16,1,%d,WEATHER_TYPE,None
+Thick fog (rain),Thick fog (rain),-128,128,121,s16,1,%d,WEATHER_TYPE,None
+In-game weather specifications at the end of playback (unused, invalid),In-game weather specifications at the end of playback (nothing is done if blank or "invalid"),-128,128,9998,s16,1,%d,WEATHER_TYPE,None
+Indoor / outdoor designation,When indoors, the SFX specified by "Weather SfxId (Outdoor)" and "Wind SfxId (Outdoor)" in "Weather Parameter.xlsm" will be invalid in the cutscene.,0,1,9,u8,1,%d,CUTSCENE_INDOOR_OUTDOOR_TYPE,None
+In-game weather SFX to take over? _Sunny,In-game weather SFX to take over? _Sunny,0,1,1010,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+In-game weather SFX to take over? _ Sunny,In-game weather SFX to take over? _ Sunny,0,1,1020,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Will the in-game weather SFX be taken over? _ Light cloudy,Will the in-game weather SFX be taken over? _ Light cloudy,0,1,1030,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+In-game weather SFX to take over? _cloudy,Will the in-game weather SFX be taken over? _cloudy,0,1,1040,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+In-game weather SFX to take over? _rain,In-game weather SFX to take over? _rain,0,1,1050,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Will the in-game weather SFX be taken over? _ Heavy rain,In-game weather SFX to take over? _ Heavy rain,0,1,1060,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Will the in-game weather SFX be taken over? _storm,In-game weather SFX to take over? _storm,0,1,1070,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+In-game weather SFX to take over? _ Storm (for battle with the descendants of the guardian),In-game weather SFX to take over? _ Storm (for battle with the descendants of the guardian),0,1,1080,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+In-game weather SFX to take over? _snow,In-game weather SFX to take over? _snow,0,1,1090,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+In-game weather SFX to take over? _heavy snow,In-game weather SFX to take over? _heavy snow,0,1,1100,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+In-game weather SFX to take over? _fog,Will the in-game weather SFX be taken over? _fog,0,1,1110,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+In-game weather SFX to take over? _ Thick fog,Will the in-game weather SFX be taken over? _ Thick fog,0,1,1120,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Will the in-game weather SFX be taken over? _ Sandstorm,In-game weather SFX to take over? _ Sandstorm,0,1,1130,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+In-game weather SFX to take over? _ Thick fog (rain),In-game weather SFX to take over? _ Thick fog (rain),0,1,1140,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+reserved,reserved,,,9999,dummy8,,,dummy8,None
+Snowstorm,Snowstorm,-128,128,141,s16,1,%d,WEATHER_TYPE,None
+Storm (thunder),Preliminary weather 2,-128,128,142,s16,1,%d,WEATHER_TYPE,None
+Snow special (spare 3),Preliminary weather 3,-128,128,143,s16,1,%d,WEATHER_TYPE,None
+Preliminary weather 4,Preliminary weather 4,-128,128,144,s16,1,%d,WEATHER_TYPE,None
+Preliminary weather 5,Preliminary weather 5,-128,128,145,s16,1,%d,WEATHER_TYPE,None
+Preliminary weather 6,Preliminary weather 6,-128,128,146,s16,1,%d,WEATHER_TYPE,None
+Preliminary weather 7,Preliminary weather 7,-128,128,147,s16,1,%d,WEATHER_TYPE,None
+Preliminary weather 8,Preliminary weather 8,-128,128,148,s16,1,%d,WEATHER_TYPE,None
+In-game weather SFX to take over? _ Snowstorm,In-game weather SFX to take over? _ Snowstorm,0,1,1401,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Will the in-game weather SFX be taken over? _ Storm (thunder),In-game weather SFX to take over? _ Storm (thunder),0,1,1402,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+In-game weather SFX to take over? _ Snow Special (Spare 3),Will the in-game weather SFX be taken over? _ Preliminary weather 3,0,1,1403,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Will the in-game weather SFX be taken over? _ Preliminary weather 4,In-game weather SFX to take over? _ Preliminary weather 4,0,1,1404,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+In-game weather SFX to take over? _ Preliminary weather 5,Will the in-game weather SFX be taken over? _ Preliminary weather 5,0,1,1405,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+In-game weather SFX to take over? _ Preliminary weather 6,Will the in-game weather SFX be taken over? _ Preliminary weather 6,0,1,1406,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+In-game weather SFX to take over? _ Preliminary weather 7,Will the in-game weather SFX be taken over? _ Preliminary weather 7,0,1,1407,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Will the in-game weather SFX be taken over? _ Preliminary weather 8,In-game weather SFX to take over? _ Preliminary weather 8,0,1,1408,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Do you want to apply the MapGD local ID to the weather Gparam?,Do you want to apply the mapGD local ID changes to the cutscene weather Gparam as in the in-game? ([GR] SEQ30194),0,1,5,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+reserved1,reserved1 ver4-> 5 64-> 96,,,9999,dummy8,,,dummy8,None
+Local ID overwrite for weather Gparam MapGD,Overwrite the ID used for cutscene weather Gparam (-1: No overwrite. MapGD local ID during cutscene playback is used). If "Do you want to apply MapGD local ID to weather Gparam?" Is x, it is not referenced.,-1,9999,6,s16,1,%d,s16,None
+reserved1,reserved1 ver4-> 5 64-> 96,,,9999,dummy8,,,dummy8,None

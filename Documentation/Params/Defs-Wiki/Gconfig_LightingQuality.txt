@@ -1,0 +1,6 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| localLightDistFactor || Local light effective distance coefficient || Local light effective distance coefficient (smaller, it disappears at a short distance) || - ||
+|| localLightShadowEnabled || Local light shadow enabled || Local light shadow enabled || ON_OFF ||
+|| forwardPassLightingEnabled || Forward pass writing enabled || Forward pass writing enabled || ON_OFF ||
+|| localLightShadowSpecLevelMax || Local light shadow spec level || Local light shadow spec level. The larger the value, the more light sources will be shadowed. || - ||
+|| dmy || dmy ||  || - ||

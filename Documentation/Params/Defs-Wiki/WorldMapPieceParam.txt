@@ -1,0 +1,17 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| openEventFlagId || Open event flag ID || Event flag ID of open condition || - ||
+|| openTravelAreaLeft || Opened traversal area: Xmin || Coordinates of the traversal area that expands when opened (Xmin) || - ||
+|| openTravelAreaRight || Opened traversal area: Xmax || Coordinates of the traversal area that expands when opened (Xmax) || - ||
+|| openTravelAreaTop || Opened traversal area: Ymin || Coordinates of the traversal area that expands when opened (Ymin) || - ||
+|| openTravelAreaBottom || Opened traversal area: Ymax || Coordinates of the traversal area that expands when opened (Ymax) || - ||
+|| acquisitionEventFlagId || Acquisition production event flag ID || Event flag ID of the acquisition production start condition. Assuming that only one of the map fragments is On || - ||
+|| acquisitionEventScale || Acquisition effect: Display magnification || Display magnification at the time of acquisition production || - ||
+|| acquisitionEventCenterX || Obtained production: Center coordinates X || Center coordinates (X) at the time of acquisition production || - ||
+|| acquisitionEventCenterY || Obtained production: Center coordinates Y || For the central seat at the time of acquisition production (Y) || - ||
+|| acquisitionEventResScale || Acquisition effect: Resource multiplier || Display magnification of blindfold resources for acquisition production || - ||
+|| acquisitionEventResOffsetX || Acquisition effect: Resource offset X || Display position offset (X) of blindfold resource for acquisition production || - ||
+|| acquisitionEventResOffsetY || Acquisition effect: Resource offset Y || Offset of display position of blindfold resource for acquisition production (Y) || - ||
+|| pad || pad ||  || - ||

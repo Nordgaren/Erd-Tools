@@ -1,0 +1,16 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| radius || Sound radius [m] || AI sound radius || - ||
+|| lifeFrame || Extinction time [seconds] || Time for AI sound to remain || - ||
+|| bSpEffectEnable || Is it affected by special effects? || Whether it is affected by the special effect "Sound Radius Magnification" || ON_OFF ||
+|| type || kinds || AI sound type || AI_SOUND_RATE_TYPE ||
+|| opposeTarget || Target: ● Hostile || Target: ● Hostile || AI_SOUND_BOOL ||
+|| friendlyTarget || Target: ○ Allies || Target: ○ Allies || AI_SOUND_BOOL ||
+|| selfTarget || Target: myself || Target: myself || AI_SOUND_BOOL ||
+|| disableOnTargetPCompany || You can't listen while targeting your PC || You can't listen while targeting your PC || AI_SOUND_BOOL ||
+|| rank || Character behavior || Character behavior (former: sound type) || AI_SOUND_RANK ||
+|| forgetTime || Time to forget the sound target (overwrite) [sec] || Time to forget the sound target (overwrite) [sec] || - ||
+|| priority || AI sound priority || AI sound priority || - ||
+|| soundBehaviorId || Behavior ID || Behavior ID || - ||
+|| aiSoundLevel || AI sound level || How hard it is to hear || - ||
+|| replaningState || AI state to replan || AI state setting to run replanning when listening to AI sound || AI_SOUND_REPLANNING_STATE_TYPE ||
+|| pad1 || pad || pad || - ||

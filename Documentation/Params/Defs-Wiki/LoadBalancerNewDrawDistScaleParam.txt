@@ -1,0 +1,12 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| DrawDist_LvBegin || Activation level (start) || Drawing distance scale activation level (start) || - ||
+|| DrawDist_LvEnd || Activation level (end) || Drawing distance scale activation level (completed) || - ||
+|| reserve0 || Reserve || Reserve || - ||
+|| DrawDist_ScaleBegin || Scale (start) || Drawing distance scale (start) || - ||
+|| DrawDist_ScaleEnd || Scale (end) || Drawing distance scale (completed) || - ||
+|| ShadwDrawDist_LvBegin || Activation level (start) || Shadow drawing distance scale activation level (start) || - ||
+|| ShadwDrawDist_LvEnd || Activation level (end) || Shadow drawing distance scale activation level (completed) || - ||
+|| reserve1 || Reserve || Reserve || - ||
+|| ShadwDrawDist_ScaleBegin || Scale (start) || Shadow drawing distance scale (start) || - ||
+|| ShadwDrawDist_ScaleEnd || Scale (end) || Shadow drawing distance scale (completed) || - ||
+|| reserve2 || Reserve || Reserve || - ||

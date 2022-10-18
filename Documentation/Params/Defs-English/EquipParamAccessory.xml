@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PARAMDEF XmlVersion="3">
+  <ParamType>EQUIP_PARAM_ACCESSORY_ST</ParamType>
+  <DataVersion>2</DataVersion>
+  <BigEndian>False</BigEndian>
+  <Unicode>True</Unicode>
+  <FormatVersion>203</FormatVersion>
+  <Fields>
+    <Field Def="u8 disableParam_NT:1">
+      <DisplayName>Do you remove it from the NT version output?</DisplayName>
+      <Enum>BOOL_CIRCLECROSS_TYPE</Enum>
+      <Description>Parameters marked with ○ are excluded in the NT version package.</Description>
+      <EditFlags>None</EditFlags>
+      <Maximum>1</Maximum>
+    </Field>
+    <Field Def="dummy8 disableParamReserve1:7">
+      <DisplayName>Reserve for package output 1</DisplayName>
+      <Description>Reserve for package output 1</Description>
+      <DisplayFormat>%d</DisplayFormat>
+      <SortID>13011</SortID>
+    </Field>
+    <Field Def="dummy8 disableParamReserve2[3]">
+      <DisplayName>Reserve for package output 2</DisplayName>
+      <Description>Reserve for package output 2</Description>
+      <DisplayFormat>%d</DisplayFormat>
+      <SortID>13012</SortID>
+    </Field>
+    <Field Def="s32 refId = -1">
+      <DisplayName>Call ID</DisplayName>
+      <Description>ID called from decorations</Description>
+      <Minimum>-1</Minimum>
+      <Maximum>999999999</Maximum>
+      <SortID>700</SortID>
+    </Field>
+    <Field Def="s32 sfxVariationId = -1">
+      <DisplayName>SFX variation ID</DisplayName>
+      <Description>Specify SFX variation (used to identify SFX in combination with TimeActEditor ID)</Description>
+      <Minimum>-1</Minimum>
+      <Maximum>99999999</Maximum>
+      <SortID>800</SortID>
+    </Field>
+    <Field Def="f32 weight = 1">
+      <DisplayName>Weight [kg]</DisplayName>
+      <Description>Weight [kg]</Description>
+      <DisplayFormat>%0.3f</DisplayFormat>
+      <Minimum>0</Minimum>
+      <Maximum>1000</Maximum>
+      <Increment>0.1</Increment>
+      <SortID>1100</SortID>
+    </Field>
+    <Field Def="s32 behaviorId">
+      <DisplayName>Action ID</DisplayName>
+      <Description>Action ID (= Skill)</Description>
+      <Minimum>0</Minimum>
+      <Maximum>99999999</Maximum>
+      <SortID>1200</SortID>
+    </Field>
+    <Field Def="s32 basicPrice">
+      <DisplayName>Basic price</DisplayName>
+      <Description>Basic price</Description>
+      <Minimum>0</Minimum>
+      <Maximum>99999999</Maximum>
+      <SortID>1300</SortID>
+    </Field>
+    <Field Def="s32 sellValue">
+      <DisplayName>Sale price</DisplayName>
+      <Description>Selling price</Description>
+      <Minimum>-1</Minimum>
+      <Maximum>99999999</Maximum>
+      <SortID>1310</SortID>
+    </Field>
+    <Field Def="s32 sortId">
+      <DisplayName>sortID</DisplayName>
+      <Minimum>-1</Minimum>
+      <Maximum>9999999</Maximum>
+      <SortID>1600</SortID>
+    </Field>
+    <Field Def="s32 qwcId = -1">
+      <DisplayName>QWCID</DisplayName>
+      <Minimum>-1</Minimum>
+      <Maximum>99999999</Maximum>
+      <SortID>1900</SortID>
+    </Field>
+    <Field Def="u16 equipModelId">
+      <DisplayName>Equipment model number</DisplayName>
+      <Description>Equipment model number</Description>
+      <Maximum>9999</Maximum>
+      <SortID>300</SortID>
+    </Field>
+    <Field Def="u16 iconId">
+      <DisplayName>Icon ID</DisplayName>
+      <Description>Menu icon ID</Description>
+      <SortID>400</SortID>
+    </Field>
+    <Field Def="s16 shopLv">
+      <DisplayName>Shop level</DisplayName>
+      <Description>Level that can be sold at the store</Description>
+      <Minimum>-1</Minimum>
+      <Maximum>9999</Maximum>
+      <SortID>1400</SortID>
+    </Field>
+    <Field Def="s16 trophySGradeId = -1">
+      <DisplayName>Trophy</DisplayName>
+      <Minimum>-1</Minimum>
+      <Maximum>9999</Maximum>
+      <SortID>1700</SortID>
+    </Field>
+    <Field Def="s16 trophySeqId = -1">
+      <DisplayName>Trophy SEQ number</DisplayName>
+      <Description>Trophy SEQ number</Description>
+      <Minimum>-1</Minimum>
+      <Maximum>9999</Maximum>
+      <SortID>1750</SortID>
+    </Field>
+    <Field Def="u8 equipModelCategory">
+      <DisplayName>Equipment model type</DisplayName>
+      <Enum>EQUIP_MODEL_CATEGORY</Enum>
+      <Description>Equipment model type</Description>
+      <Maximum>99</Maximum>
+      <SortID>100</SortID>
+    </Field>
+    <Field Def="u8 equipModelGender">
+      <DisplayName>Equipment model gender</DisplayName>
+      <Enum>EQUIP_MODEL_GENDER</Enum>
+      <Description>Gender of equipment model</Description>
+      <Maximum>99</Maximum>
+      <SortID>200</SortID>
+    </Field>
+    <Field Def="u8 accessoryCategory">
+      <DisplayName>Decoration category</DisplayName>
+      <Enum>ACCESSORY_CATEGORY</Enum>
+      <Description>Armor category</Description>
+      <Maximum>99</Maximum>
+      <SortID>500</SortID>
+    </Field>
+    <Field Def="u8 refCategory">
+      <DisplayName>ID category</DisplayName>
+      <Enum>BEHAVIOR_REF_TYPE</Enum>
+      <Description>↓ ID category [Attack, Projectile, Special]</Description>
+      <SortID>600</SortID>
+    </Field>
+    <Field Def="u8 spEffectCategory">
+      <DisplayName>Special effects category</DisplayName>
+      <Enum>BEHAVIOR_CATEGORY</Enum>
+      <Description>Since there are effects (enchantment weapons, etc.) whose parameters fluctuate depending on skills, magic, items, etc., set each action so that the determined effect can correspond to the effect such as "power up only weapon attack". Set "None" for items that do not need to be set, such as varistor.
+</Description>
+      <SortID>900</SortID>
+    </Field>
+    <Field Def="u8 sortGroupId = 255">
+      <DisplayName>Sort item type ID</DisplayName>
+      <Description>Sort item type ID. In the sort "Item type order", the same ID is displayed together as the same group.</Description>
+      <SortID>1610</SortID>
+    </Field>
+    <Field Def="s32 vagrantItemLotId">
+      <DisplayName>Item lottery ID_for map at the time of vagrant</DisplayName>
+      <Description>-1: No vagrant 0: No lottery 1 ~: With lottery</Description>
+      <EditFlags>None</EditFlags>
+      <Minimum>-1</Minimum>
+      <Maximum>99999999</Maximum>
+      <SortID>10000</SortID>
+    </Field>
+    <Field Def="s32 vagrantBonusEneDropItemLotId">
+      <DisplayName>Vagrant Bonus Enemy Drop Item Lottery ID_Map</DisplayName>
+      <Description>-1: No drop 0: No lottery 1 ~: With lottery</Description>
+      <EditFlags>None</EditFlags>
+      <Minimum>-1</Minimum>
+      <Maximum>99999999</Maximum>
+      <SortID>10000</SortID>
+    </Field>
+    <Field Def="s32 vagrantItemEneDropItemLotId">
+      <DisplayName>Vagrant item Enemy drop item Lottery ID_for map</DisplayName>
+      <Description>-1: No drop 0: No lottery 1 ~: With lottery</Description>
+      <EditFlags>None</EditFlags>
+      <Minimum>-1</Minimum>
+      <Maximum>99999999</Maximum>
+      <SortID>10000</SortID>
+    </Field>
+    <Field Def="u8 isDeposit:1">
+      <DisplayName>Can i deposit</DisplayName>
+      <Enum>EQUIP_BOOL</Enum>
+      <Description>Can you deposit it in the warehouse?</Description>
+      <EditFlags>None</EditFlags>
+      <Maximum>1</Maximum>
+      <SortID>1800</SortID>
+    </Field>
+    <Field Def="u8 isEquipOutBrake:1">
+      <DisplayName>Will it break if removed?</DisplayName>
+      <Enum>EQUIP_BOOL</Enum>
+      <Description>Will it break when equipped and removed?</Description>
+      <Maximum>1</Maximum>
+      <SortID>1810</SortID>
+    </Field>
+    <Field Def="u8 disableMultiDropShare:1">
+      <DisplayName>Is multi-drop sharing prohibited?</DisplayName>
+      <Enum>EQUIP_BOOL</Enum>
+      <Description>Is multi-drop sharing prohibited?</Description>
+      <Maximum>1</Maximum>
+      <SortID>1805</SortID>
+    </Field>
+    <Field Def="u8 isDiscard:1">
+      <DisplayName>Can you throw it away</DisplayName>
+      <Enum>EQUIP_BOOL</Enum>
+      <Description>Can you throw away the item? TRUE = thrown away</Description>
+      <Maximum>1</Maximum>
+      <SortID>1780</SortID>
+    </Field>
+    <Field Def="u8 isDrop:1">
+      <DisplayName>Can you put it on the spot</DisplayName>
+      <Enum>EQUIP_BOOL</Enum>
+      <Description>Can I put the item on the spot? TRUE = can be placed</Description>
+      <Maximum>1</Maximum>
+      <SortID>1790</SortID>
+    </Field>
+    <Field Def="u8 showLogCondType:1 = 1">
+      <DisplayName>Acquisition log display condition</DisplayName>
+      <Enum>EQUIP_BOOL</Enum>
+      <Description>Whether to display in the item acquisition log when acquiring the item (not entered: ○)</Description>
+      <Maximum>1</Maximum>
+      <SortID>13000</SortID>
+    </Field>
+    <Field Def="u8 showDialogCondType:2 = 2">
+      <DisplayName>Acquisition dialog display condition</DisplayName>
+      <Enum>GET_DIALOG_CONDITION_TYPE</Enum>
+      <Description>Whether to display it in the item acquisition dialog when acquiring an item (not entered: new only)</Description>
+      <Maximum>2</Maximum>
+      <SortID>12900</SortID>
+    </Field>
+    <Field Def="u8 rarity">
+      <DisplayName>Rarity</DisplayName>
+      <Description>Rarity used in item acquisition logs</Description>
+      <Maximum>99</Maximum>
+      <SortID>13010</SortID>
+    </Field>
+    <Field Def="dummy8 pad2[2]">
+      <DisplayName>pad</DisplayName>
+      <Description>(Old log icon ID)</Description>
+      <DisplayFormat>%d</DisplayFormat>
+      <EditFlags>Wrap</EditFlags>
+      <SortID>13013</SortID>
+    </Field>
+    <Field Def="s32 saleValue = -1">
+      <DisplayName>Selling price</DisplayName>
+      <Description>Selling price</Description>
+      <Minimum>-1</Minimum>
+      <Maximum>99999999</Maximum>
+      <SortID>1320</SortID>
+    </Field>
+    <Field Def="s16 accessoryGroup = -1">
+      <DisplayName>Wearing group ID</DisplayName>
+      <Description>Items of the same group cannot be equipped at the same time</Description>
+      <Minimum>-1</Minimum>
+      <Maximum>9999</Maximum>
+      <SortID>11000</SortID>
+    </Field>
+    <Field Def="dummy8 pad3[1]">
+      <DisplayName>pad</DisplayName>
+      <Description>pad</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <EditFlags>Wrap</EditFlags>
+      <SortID>13014</SortID>
+    </Field>
+    <Field Def="s8 compTrophySedId = -1">
+      <DisplayName>Comptrophy SEQ number</DisplayName>
+      <Description>SEQ number of complete trophy</Description>
+      <Minimum>-1</Minimum>
+      <Maximum>99</Maximum>
+      <SortID>1725</SortID>
+    </Field>
+    <Field Def="s32 residentSpEffectId1">
+      <DisplayName>Resident special effect ID1</DisplayName>
+      <Description>Resident special effect ID1</Description>
+      <Minimum>-1</Minimum>
+      <Maximum>999999999</Maximum>
+      <SortID>710</SortID>
+    </Field>
+    <Field Def="s32 residentSpEffectId2">
+      <DisplayName>Resident special effect ID2</DisplayName>
+      <Description>Resident special effect ID2</Description>
+      <Minimum>-1</Minimum>
+      <Maximum>999999999</Maximum>
+      <SortID>720</SortID>
+    </Field>
+    <Field Def="s32 residentSpEffectId3">
+      <DisplayName>Resident special effect ID3</DisplayName>
+      <Description>Resident special effect ID3</Description>
+      <Minimum>-1</Minimum>
+      <Maximum>999999999</Maximum>
+      <SortID>730</SortID>
+    </Field>
+    <Field Def="s32 residentSpEffectId4">
+      <DisplayName>Resident special effect ID4</DisplayName>
+      <Description>Resident special effect ID4</Description>
+      <Minimum>-1</Minimum>
+      <Maximum>999999999</Maximum>
+      <SortID>740</SortID>
+    </Field>
+    <Field Def="dummy8 pad1[4]">
+      <DisplayName>pad</DisplayName>
+      <Description>pad</Description>
+      <SortID>13015</SortID>
+    </Field>
+  </Fields>
+</PARAMDEF>

@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PARAMDEF XmlVersion="3">
+  <ParamType>MULTI_SOUL_BONUS_RATE_PARAM_ST</ParamType>
+  <DataVersion>3</DataVersion>
+  <BigEndian>False</BigEndian>
+  <Unicode>True</Unicode>
+  <FormatVersion>203</FormatVersion>
+  <Fields>
+    <Field Def="f32 host">
+      <Description>Host reward soul multiplier</Description>
+      <Minimum>0</Minimum>
+      <Maximum>10</Maximum>
+      <Increment>0.001</Increment>
+      <SortID>1000</SortID>
+    </Field>
+    <Field Def="f32 WhiteGhost_None">
+      <DisplayName>White sign</DisplayName>
+      <Description>Cooperation sign white spirit reward soul multiplier</Description>
+      <Minimum>0</Minimum>
+      <Maximum>10</Maximum>
+      <Increment>0.001</Increment>
+      <SortID>2000</SortID>
+    </Field>
+    <Field Def="f32 WhiteGhost_Umbasa">
+      <DisplayName>Gold spirit (sun)</DisplayName>
+      <Description>Cooperative sign gold spirit reward soul multiplier</Description>
+      <Minimum>0</Minimum>
+      <Maximum>10</Maximum>
+      <Increment>0.001</Increment>
+      <SortID>2100</SortID>
+    </Field>
+    <Field Def="f32 WhiteGhost_Berserker">
+      <DisplayName>White berserker</DisplayName>
+      <Description>Cooperation sign white Berserker reward soul multiplier</Description>
+      <Minimum>0</Minimum>
+      <Maximum>10</Maximum>
+      <Increment>0.001</Increment>
+      <SortID>2200</SortID>
+    </Field>
+    <Field Def="f32 BlackGhost_None_Sign">
+      <DisplayName>Red sign</DisplayName>
+      <Description>Hostile sign red spirit reward soul multiplier</Description>
+      <Minimum>0</Minimum>
+      <Maximum>10</Maximum>
+      <Increment>0.001</Increment>
+      <SortID>3000</SortID>
+    </Field>
+    <Field Def="f32 BlackGhost_Umbasa_Sign">
+      <DisplayName>Red gold spirit (signature)</DisplayName>
+      <Description>Hostile sign red gold spirit reward soul multiplier</Description>
+      <Minimum>0</Minimum>
+      <Maximum>10</Maximum>
+      <Increment>0.001</Increment>
+      <SortID>3100</SortID>
+    </Field>
+    <Field Def="f32 BlackGhost_Berserker_Sign">
+      <DisplayName>Red berserker (sign)</DisplayName>
+      <Description>Hostile sign red berserker reward soul multiplier</Description>
+      <Minimum>0</Minimum>
+      <Maximum>10</Maximum>
+      <Increment>0.001</Increment>
+      <SortID>3200</SortID>
+    </Field>
+    <Field Def="f32 BlackGhost_None_Invade">
+      <DisplayName>Invasion</DisplayName>
+      <Description>Invasion reward Soul multiplier</Description>
+      <Minimum>0</Minimum>
+      <Maximum>10</Maximum>
+      <Increment>0.001</Increment>
+      <SortID>4000</SortID>
+    </Field>
+    <Field Def="f32 BlackGhost_Umbasa_Invade">
+      <DisplayName>Red Gold Spirit (Invasion)</DisplayName>
+      <Description>Invasion Orb's Red Gold Spirit Reward Soul Multiplier</Description>
+      <Minimum>0</Minimum>
+      <Maximum>10</Maximum>
+      <Increment>0.001</Increment>
+      <SortID>4500</SortID>
+    </Field>
+    <Field Def="f32 BlackGhost_Berserker_Invade">
+      <DisplayName>Red berserker (invasion)</DisplayName>
+      <Description>Invasion Orb Red Berserker Reward Soul Multiplier</Description>
+      <Minimum>0</Minimum>
+      <Maximum>10</Maximum>
+      <Increment>0.001</Increment>
+      <SortID>4600</SortID>
+    </Field>
+    <Field Def="f32 RedHunter1">
+      <DisplayName>Relief guest</DisplayName>
+      <Description>Relief guest reward soul multiplier</Description>
+      <Minimum>0</Minimum>
+      <Maximum>10</Maximum>
+      <Increment>0.001</Increment>
+      <SortID>5000</SortID>
+    </Field>
+    <Field Def="f32 RedHunter2">
+      <DisplayName>Red Scare Spirit 2</DisplayName>
+      <Description>Red Scare Spirit 2 Reward Soul Multiplier</Description>
+      <Minimum>0</Minimum>
+      <Maximum>10</Maximum>
+      <Increment>0.001</Increment>
+      <SortID>5100</SortID>
+    </Field>
+    <Field Def="f32 GuardianOfForest">
+      <DisplayName>Map Guardian Spirit (Forest)</DisplayName>
+      <Description>Map Guardian Spirit (Forest) Reward Soul Magnification</Description>
+      <Minimum>0</Minimum>
+      <Maximum>10</Maximum>
+      <Increment>0.001</Increment>
+      <SortID>6000</SortID>
+    </Field>
+    <Field Def="f32 GuardianOfAnor">
+      <DisplayName>Map Guardian (Anor)</DisplayName>
+      <Description>Map Guardian Spirit (Anor) Reward Soul Multiplier</Description>
+      <Minimum>0</Minimum>
+      <Maximum>10</Maximum>
+      <Increment>0.001</Increment>
+      <SortID>6100</SortID>
+    </Field>
+    <Field Def="f32 BattleRoyal">
+      <DisplayName>Arena</DisplayName>
+      <Description>Arena reward soul multiplier</Description>
+      <Minimum>0</Minimum>
+      <Maximum>10</Maximum>
+      <Increment>0.001</Increment>
+      <SortID>7000</SortID>
+    </Field>
+    <Field Def="f32 YellowMonk">
+      <DisplayName>Yellow robe's old man</DisplayName>
+      <Description>Yellow robe's old man's reward soul multiplier</Description>
+      <Minimum>0</Minimum>
+      <Maximum>10</Maximum>
+      <Increment>0.001</Increment>
+      <SortID>7100</SortID>
+    </Field>
+    <Field Def="dummy8 pad1[64]">
+      <DisplayName>pad</DisplayName>
+      <SortID>7101</SortID>
+    </Field>
+  </Fields>
+</PARAMDEF>

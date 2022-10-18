@@ -1,0 +1,14 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| mimicryEstablishment0 || Mimicry weight 0 || Mimicry weight 0 || - ||
+|| mimicryEstablishment1 || Mimicry weight 1 || Mimicry weight 1 || - ||
+|| mimicryEstablishment2 || Mimicry weight 2 || Mimicry weight 2 || - ||
+|| mimicryBeginSfxId0 || Mimicry 0 SFXID Forward swing || Mimicry 0 SFXID Forward swing || - ||
+|| mimicrySfxId0 || Mimicry 0 SFXID body || Mimicry 0 SFXID body || - ||
+|| mimicryEndSfxId0 || Mimicry 0 SFXID release || Mimicry 0 SFXID release || - ||
+|| mimicryBeginSfxId1 || Mimicry 1 SFXID Forward swing || Mimicry 1 SFXID Forward swing || - ||
+|| mimicrySfxId1 || Mimicry 1 SFXID body || Mimicry 1 SFXID body || - ||
+|| mimicryEndSfxId1 || Mimicry 1 SFXID release || Mimicry 1 SFXID release || - ||
+|| mimicryBeginSfxId2 || Mimicry 2 SFXID Forward swing || Mimicry 2 SFXID Forward swing || - ||
+|| mimicrySfxId2 || Mimicry 2 SFXID body || Mimicry 2 SFXID body || - ||
+|| mimicryEndSfxId2 || Mimicry 2 SFXID cancellation || Mimicry 2 SFXID cancellation || - ||
+|| pad1 || pad || pad || - ||

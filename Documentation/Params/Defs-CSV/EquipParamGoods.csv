@@ -1,0 +1,119 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,100000,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,100001,dummy8,,%d,dummy8,None
+Call ID 0 (default),ID0 called from the item (default),-1,999999999,400,s32,1,%d,s32,Wrap
+SFX variation ID,Specify SFX variation (used to identify SFX in combination with TimeActEditor ID),-1,99999999,99999,s32,1,%d,s32,Wrap
+Weight [kg],Weight [kg],0,1000,900,f32,0.1,%d,f32,Wrap
+Basic price,Basic price,0,99999999,1200,s32,1,%d,s32,Wrap
+Sale price,Selling price,-1,99999999,1210,s32,1,%d,s32,Wrap
+Action ID,Set the effect that occurs when using a tool,-1,99999999,1600,s32,1,%d,s32,Wrap
+Replacement item ID,Item ID when replacing,-1,999999999,3500,s32,1,%d,s32,Wrap
+Sort ID,Sort ID (-1: Do not collect),-1,99999999,3600,s32,1,%d,s32,Wrap
+Display replacement destination item ID,Conditionally replace the display with another tool ID. The tool ID on the game data side does not change,-1,99999999,4400,s32,1,%d,s32,Wrap
+YES / NO message ID,YesNo Message ID used when displaying the dialog,-1,99999999,4300,s32,1,%d,s32,Wrap
+Usable condition_state change type,Allow to use only when the special effect of the set state change type is applied,0,65000,1621,u16,1,%d,SP_EFFECT_TYPE,Wrap
+Vase group ID,"Consumable items" for which 0 or more is set for the pot group ID can be possessed by the number of "pots" with the same pot group ID.,-1,15,3960,s8,1,%d,s8,Wrap
+PAD,Old (magic ID linked to a scroll),,,100002,dummy8,,%d,dummy8,Wrap
+Icon ID,Menu icon ID,0,65535,100,u16,1,%d,u16,Wrap
+Model ID,Model ID,0,9999,1000,u16,1,%d,u16,Wrap
+Shop level,Level that can be sold at the store,-1,9999,2800,s16,1,%d,s16,Wrap
+Comptrophy SEQ number,SEQ number of complete trophy,-1,99,3700,s16,1,%d,s16,Wrap
+Trophy SEQ number,Trophy SEQ number,-1,99,3800,s16,1,%d,s16,Wrap
+Maximum number of possessions,Maximum number of possessions,0,9999,610,s16,1,%d,s16,Wrap
+Consumer nature,Consumer nature,0,255,612,u8,1,%d,u8,Wrap
+Skill over start value,Skill over start value,0,99,700,u8,1,%d,u8,Wrap
+Tool type,Types of tools,0,99,200,u8,1,%d,GOODS_TYPE,Wrap
+ID category,↓ ID category [Attack, Projectile, Special],0,255,300,u8,1,%d,BEHAVIOR_REF_TYPE,Wrap
+Special effects category,Since there are effects (enchantment weapons, etc.) whose parameters fluctuate depending on skills, magic, items, etc., set each action so that the determined effect can correspond to the effect such as "power up only weapon attack". Set "None" for items that do not need to be set, such as varistor.
+,0,255,600,u8,1,%d,BEHAVIOR_CATEGORY,Wrap
+pad,,,,100003,dummy8,,%d,dummy8,Wrap
+Animation when using tools,Set the animation to play when using the tool,0,99,1500,u8,1,%d,GOODS_USE_ANIM,Wrap
+Do you want to open the menu,Menu type that opens when using an item,0,255,4100,u8,1,%d,GOODS_OPEN_MENU,Wrap
+Prohibition conditions_Special effects category,Specified to control whether it can be used by the special effect applied,0,255,1610,u8,1,%d,SP_EFFECT_USELIMIT_CATEGORY,Wrap
+Replacement category,Condition category to add to call ID,0,255,15001,u8,1,%d,REPLACE_CATEGORY,Wrap
+Reserve,,,,100004,dummy8,,%d,dummy8,Wrap
+Can be used alive,Is it possible to use a surviving player?,0,1,1710,u8,1,%d,EQUIP_BOOL,Wrap
+Gray available,Can Gray Ghost be used?,0,1,1800,u8,1,%d,EQUIP_BOOL,Wrap
+White can be used,Can white ghost be used?,0,1,1900,u8,1,%d,EQUIP_BOOL,Wrap
+Black can be used,Is it possible to do a black ghost?,0,1,2000,u8,1,%d,EQUIP_BOOL,Wrap
+Multiplayer possible,Can it be used during multiplayer?,0,1,2100,u8,1,%d,EQUIP_BOOL,Wrap
+Not available offline,Is it unavailable while offline?,0,1,2200,u8,1,%d,EQUIP_BOOL,Wrap
+Can be equipped,Whether it can be equipped,0,1,2400,u8,1,%d,EQUIP_BOOL,Wrap
+Is it a consumable item?,Will it be consumed when used (whether the number of possessions will decrease),0,1,2500,u8,1,%d,EQUIP_BOOL,Wrap
+Is it automatically equipped?,Will it be equipped automatically when picked up?,0,1,2600,u8,1,%d,EQUIP_BOOL,Wrap
+Is it a stationary item?,Is it a stationary item?,0,1,2700,u8,1,%d,EQUIP_BOOL,Wrap
+Can i have only one,Is it an item that you can only have one?,0,1,2900,u8,1,%d,EQUIP_BOOL,Wrap
+Can you throw it away,Can you throw away the item? TRUE = thrown away,0,1,3100,u8,1,%d,EQUIP_BOOL,Wrap
+Can you deposit,Can you leave it in the warehouse?,0,1,3150,u8,1,%d,EQUIP_BOOL,Wrap
+Can I use it with my right bare hand?,Can't be used when the right-handed weapon is bare-handed?,0,1,3200,u8,1,%d,EQUIP_BOOL,Wrap
+Whether to delete at the time of lap,Whether to delete at the time of lap,0,1,21800,u8,1,%d,EQUIP_BOOL,Wrap
+Is it a replenishment item?,Used to determine replenishable items,0,1,3350,u8,1,%d,EQUIP_BOOL,Wrap
+Is it a replenished item?,Used to determine replenished items,0,1,3351,u8,1,%d,EQUIP_BOOL,Wrap
+Do you want to enchant?,Do you want to enchant your weapon?,0,1,4000,u8,1,%d,EQUIP_BOOL,Wrap
+Is it a repair item?,Is it an item to repair?,0,1,3250,u8,1,%d,EQUIP_BOOL,Wrap
+Is multi-drop sharing prohibited?,Is multi-drop sharing prohibited?,0,1,3155,u8,1,%d,EQUIP_BOOL,Wrap
+Is it prohibited to use in the arena?,Is it prohibited to use in the arena?,0,1,3160,u8,1,%d,EQUIP_BOOL,Wrap
+Is it prohibited to use outside the arena?,Is it prohibited to use outside the arena?,0,1,3160,u8,1,%d,EQUIP_BOOL,Wrap
+Is it possible to cancel early?,Is it possible to cancel early?,0,1,15100,u8,1,%d,EQUIP_BOOL,Wrap
+Does it reflect special effects?,Whether to reflect special effects (such as ability value correction),0,1,4020,u8,1,%d,EQUIP_BOOL,Wrap
+ID that synchronizes the number increase / decrease,When the number of items is changed, the items with the same ID will be changed at the same time. 0: Not synchronized,0,255,3950,u8,1,%d,u8,Wrap
+Call ID1,ID1 called from the item,-1,999999999,410,s32,1,%d,s32,Wrap
+Reference Virtual Weapon ID,Weapon ID to refer to when using the tool,-1,999999999,250,s32,1,%d,s32,Wrap
+Item lottery ID_for map at the time of vagrant,-1: No vagrant 0: No lottery 1 ~: With lottery,-1,99999999,10000,s32,1,%d,s32,None
+Vagrant Bonus Enemy Drop Item Lottery ID_Map,-1: No drop 0: No lottery 1 ~: With lottery,-1,99999999,10000,s32,1,%d,s32,None
+Vagrant item Enemy drop item Lottery ID_for map,-1: No drop 0: No lottery 1 ~: With lottery,-1,99999999,10000,s32,1,%d,s32,None
+Handheld SFXID,SFXID until the effect is activated when you try to use the item,-1,99999999,500,s32,1,%d,s32,Wrap
+Activate SFXID,SFX ID when the item is activated,-1,99999999,501,s32,1,%d,s32,Wrap
+Effect SFXID,After the item is activated, the SFX ID in effect,-1,99999999,502,s32,1,%d,s32,Wrap
+Can be used while the Great Rune is active,Can it be used with a large rune activated?,0,1,1700,u8,1,%d,EQUIP_BOOL,Wrap
+Is it a bonfire warp item?,If the state change type "Warp Prohibition" is applied when TRUE, remove the function to disable the item.,0,1,3310,u8,1,%d,EQUIP_BOOL,Wrap
+Can it be used in a ladder?,Check here for items available in the ladder,0,1,2210,u8,1,%d,EQUIP_BOOL,Wrap
+Preparing for multiplayer,Whether items can be used between session probability and initial synchronization,0,1,2050,u8,1,%d,EQUIP_BOOL,Wrap
+Can it be used together?,Can it be used together?,0,1,2910,u8,1,%d,EQUIP_BOOL,Wrap
+Is it a shield enchantment?,Is it a shield enchantment?,0,1,4010,u8,1,%d,EQUIP_BOOL,Wrap
+Is it subject to warp prohibition?,When this is TRUE, disable the item if the state change type "Warp Prohibition" is applied.,0,1,3320,u8,1,%d,EQUIP_BOOL,Wrap
+Only available when there is a disconnect penalty,A flag that allows you to determine if an item is only available when a client disconnect penalty is incurred.,0,1,2051,u8,1,%d,EQUIP_BOOL,Wrap
+Replenishment type,Replenishment item / Replenishment type when replenishing a replenished item.,0,2,3352,u8,1,%d,GOODS_SUPPLE_TYPE,Wrap
+Automatic replenishment type,Controls whether or not to automatically replenish and default settings,0,255,3550,u8,1,%d,AUTO_REPLENISH_TYPE,Wrap
+Can you put it on the spot,Can I put the item on the spot? TRUE = can be placed,0,1,3110,u8,1,%d,EQUIP_BOOL,Wrap
+Acquisition log display condition,Whether to display in the item acquisition log when acquiring the item (not entered: ○),0,1,21000,u8,1,%d,EQUIP_BOOL,Wrap
+Is it a horse call item?,Is it an item that summons a horse? Cannot be used if the horse died or the PC is in a horse-prohibited area,0,1,3330,u8,1,%d,EQUIP_BOOL,Wrap
+Acquisition dialog display condition,Whether to display it in the item acquisition dialog when acquiring an item (not entered: new only),0,2,20990,u8,1,%d,GET_DIALOG_CONDITION_TYPE,Wrap
+Is it a Nemuri collection item?,Is it a Nemuri collection item?,0,1,3340,u8,1,%d,EQUIP_BOOL,Wrap
+Can it be used while riding?,Can it be used while riding?,0,1,2220,u8,1,%d,EQUIP_BOOL,Wrap
+Is it prohibited to use while not riding?,Is it prohibited to use while not riding?,0,1,2230,u8,1,%d,EQUIP_BOOL,Wrap
+Number of warehouses,Number of warehouses,0,9999,611,s16,1,%d,s16,Wrap
+Sort item type ID,Sort item type ID. In the sort "Item type order", the same ID is displayed together as the same group.,0,255,3610,u8,1,%d,u8,Wrap
+Can it be used in an attack-prohibited area?,Can it be used in an attack-prohibited area?,0,1,2240,u8,1,%d,EQUIP_BOOL,Wrap
+pad,(Old log icon),,,100005,dummy8,,%d,dummy8,Wrap
+Selling price,Selling price,-1,99999999,1220,s32,1,%d,s32,Wrap
+Rarity,Rarity used in item acquisition logs,0,99,21200,u8,1,%d,u8,Wrap
+Is it a buddy item?,Whether there are item usage restrictions for buddy items,0,255,2750,u8,1,%d,GOODS_USELIMIT_SUMMONBUDDY,Wrap
+Use prohibition condition_state change type,Specified to control whether it can be used depending on the state change type of the special effect applied,0,65000,1620,u16,1,%d,SP_EFFECT_TYPE,Wrap
+AI usage judgment ID,AI usage judgment ID,-1,999999999,21300,s32,1,%d,s32,Wrap
+MP consumption,MP consumption,-1,9999,650,s16,1,%d,s16,Wrap
+HP consumed,HP consumed,-1,9999,640,s16,1,%d,s16,Wrap
+Strengthening tool ID,Strengthening tool ID,-1,999999999,21500,s32,1,%d,s32,Wrap
+Material ID at the time of strengthening,Material ID at the time of strengthening,-1,999999,21510,s32,1,%d,s32,Wrap
+Enhanced price,Enhanced price,0,99999999,21520,s32,1,%d,s32,Wrap
+Pledge 0 usage level,Pledge 0 usage level,-1,99,21600,s8,1,%d,s8,Wrap
+Pledge 1 usage level,Pledge 1 usage level,-1,99,21601,s8,1,%d,s8,Wrap
+Pledge 2 usage level,Pledge 2 usage level,-1,99,21602,s8,1,%d,s8,Wrap
+Pledge 3 usage level,Pledge 3 usage level,-1,99,21603,s8,1,%d,s8,Wrap
+Pledge 4 usage level,Pledge 4 usage level,-1,99,21604,s8,1,%d,s8,Wrap
+Pledge 5 usage level,Pledge 5 usage level,-1,99,21605,s8,1,%d,s8,Wrap
+Pledge 6 usage level,Pledge 6 usage level,-1,99,21606,s8,1,%d,s8,Wrap
+Pledge 7 usage level,Pledge 7 usage level,-1,99,21607,s8,1,%d,s8,Wrap
+Pledge 8 usage level,Pledge 8 usage level,-1,99,21608,s8,1,%d,s8,Wrap
+Pledge 9 usage level,Pledge 9 usage level,-1,99,21609,s8,1,%d,s8,Wrap
+Pledge 10 usage level,Pledge 10 usage level,-1,99,21610,s8,1,%d,s8,Wrap
+Pledge 11 usage level,Pledge 11 usage level,-1,99,21611,s8,1,%d,s8,Wrap
+Pledge 12 usage level,Pledge 12 usage level,-1,99,21612,s8,1,%d,s8,Wrap
+Pledge 13 usage level,Pledge 13 usage level,-1,99,21613,s8,1,%d,s8,Wrap
+Pledge 14 usage level,Pledge 14 usage level,-1,99,21614,s8,1,%d,s8,Wrap
+Pledge 15 usage level,Pledge 15 usage level,-1,99,21615,s8,1,%d,s8,Wrap
+Appropriate level of use,Appropriate level of use,0,999,1605,u16,1,%d,u16,Wrap
+Reserved area,Reserved area,,,100006,dummy8,,,dummy8,None
+Item acquisition tutorial Judgment flag ID,Event flag ID for the tutorial when you first get the item. Flag ON when item is obtained.,0,-294967297,21700,u32,1,%u,u32,Wrap
+Reserved area,Reserved area,,,100007,dummy8,,,dummy8,None

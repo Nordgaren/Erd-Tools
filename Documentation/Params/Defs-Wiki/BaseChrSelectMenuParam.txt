@@ -1,0 +1,9 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| chrInitParam || Architype ID: Base character || Specify the initial parameter ID for each architype for which face para is set. || - ||
+|| originChrInitParam || Architype ID: Identity || Specify the initial parameter ID for each feature archetype || - ||
+|| imageId || Image ID || Images lined up on the base character selection screen. Specify the number of frames of resources embedded in Fla || - ||
+|| textId || Text ID || Occupation name menu text ID || - ||
+|| reserve || Reserve ||  || - ||

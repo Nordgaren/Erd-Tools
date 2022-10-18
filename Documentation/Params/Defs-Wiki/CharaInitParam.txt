@@ -1,0 +1,115 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| baseRec_mp || MP recovery speed basic value [s] || Time until MP recovers 1 point (first decimal place) || - ||
+|| baseRec_sp || Stamina recovery speed basic value [s] || Time to recover 1 point of stamina (first decimal place) || - ||
+|| red_Falldam || Fall damage reduction correction [%] || Damage reduction amount (%) that can be a cushion when scolded by another character from above (first decimal place) || - ||
+|| soul || Early soul || The amount of soul you have at the beginning || - ||
+|| equip_Wep_Right || Right-handed weapon slot 1 || Weapon ID of equipment parameter (right hand slot 1) || - ||
+|| equip_Subwep_Right || Right-handed weapon slot 2 || Weapon ID of equipment parameter (right hand slot 2) || - ||
+|| equip_Wep_Left || Left-handed weapon slot 1 || Weapon ID of equipment parameter (left hand slot 1) || - ||
+|| equip_Subwep_Left || Left-handed weapon slot 2 || Weapon ID of equipment parameter (left hand slot 2) || - ||
+|| equip_Helm || Head armor || Equipment parameter armor ID (head armor) || - ||
+|| equip_Armer || Torso armor || Equipment parameter armor ID (torso armor) || - ||
+|| equip_Gaunt || Arm armor || Equipment parameter armor ID (arm armor) || - ||
+|| equip_Leg || Leg armor || Equipment parameter armor ID (leg armor) || - ||
+|| equip_Arrow || arrow || Weapon ID (arrow) of equipment parameter || - ||
+|| equip_Bolt || bolt || Weapon ID (bolt) of equipment parameter || - ||
+|| equip_SubArrow || Spare arrow || Weapon ID of equipment parameter (arrow reserve) || - ||
+|| equip_SubBolt || Spare bolt || Weapon ID of equipment parameter (spare bolt) || - ||
+|| equip_Accessory01 || Ornaments 1 || Equipment parameter decoration ID01 || - ||
+|| equip_Accessory02 || Ornament 2 || Equipment parameter decoration ID02 || - ||
+|| equip_Accessory03 || Ornaments 3 || Equipment parameter decoration ID03 || - ||
+|| equip_Accessory04 || Ornament 4 || Equipment parameter decoration ID04 || - ||
+|| pad8 || pad || pad || - ||
+|| elixir_material00 || Material ID1 for Elixir || Material ID1 for Elixir || - ||
+|| elixir_material01 || Material ID2 for Elixir || Material ID2 for Elixir || - ||
+|| elixir_material02 || Material ID3 for Elixir || Material ID3 for Elixir || - ||
+|| equip_Spell_01 || Magic / miracle 1 || Initial placement magic / miracle ID01 || - ||
+|| equip_Spell_02 || Magic / miracle 2 || Initial placement magic / miracle ID02 || - ||
+|| equip_Spell_03 || Magic / miracle 3 || Initial placement magic / miracle ID03 || - ||
+|| equip_Spell_04 || Magic / miracle 4 || Initial placement magic / miracle ID04 || - ||
+|| equip_Spell_05 || Magic / miracle 5 || Initial placement magic / miracle ID05 || - ||
+|| equip_Spell_06 || Magic / miracle 6 || Initial placement magic / miracle ID06 || - ||
+|| equip_Spell_07 || Magic / miracle 7 || Initial placement magic / miracle ID07 || - ||
+|| item_01 || Item 01 || Initial possession item ID 01 || - ||
+|| item_02 || Item 02 || Initial possession item ID 02 || - ||
+|| item_03 || Item 03 || Initial possession item ID 03 || - ||
+|| item_04 || Item 04 || Initial possession item ID 04 || - ||
+|| item_05 || Item 05 || Initial possession item ID 05 || - ||
+|| item_06 || Item 06 || Initial possession item ID 06 || - ||
+|| item_07 || Item 07 || Initial possession item ID 07 || - ||
+|| item_08 || Item 08 || Initial possession item ID 08 || - ||
+|| item_09 || Item 09 || Initial possession item ID 09 || - ||
+|| item_10 || Item 10 || Initial possession item ID 10 || - ||
+|| npcPlayerFaceGenId || Facegen Parameter ID || Facegen parameter ID used by NPC players. Not used by normal players. || - ||
+|| npcPlayerThinkId || NPC player thinking ID || NPC Thinking Parameter ID used by NPC players. Not used by normal players. || - ||
+|| baseHp || HP basic value || Basic value of HP (actually, it is corrected by the calculation formula) || - ||
+|| baseMp || MP basic value || Basic value of MP (actually, it is corrected by the calculation formula) || - ||
+|| baseSp || Stamina base value || Basic value of stamina (actually, it is corrected by the formula) || - ||
+|| arrowNum || Number of arrows possessed || Initial number of arrows || - ||
+|| boltNum || Number of bolts || Initial number of bolts || - ||
+|| subArrowNum || Number of spare arrows possessed || Initial number of arrows || - ||
+|| subBoltNum || Number of spare bolts || Initial number of bolts || - ||
+|| pad4 || pad ||  || - ||
+|| soulLv || Soul Lv || Initial Lv || - ||
+|| baseVit || Physical fitness || Basic value of physical fitness || - ||
+|| baseWil || spirit || Basic value of spirit || - ||
+|| baseEnd || Robust || Robust base value || - ||
+|| baseStr || Strength || Basic value of muscle strength || - ||
+|| baseDex || Agility || Basic value of agility || - ||
+|| baseMag || Magical power || Basic value of magic power || - ||
+|| baseFai || faith || Basic value of faith || - ||
+|| baseLuc || luck || Basic value of luck || - ||
+|| baseHeroPoint || Human nature || Basic value of human nature || - ||
+|| baseDurability || Endurance || Basic value of endurance || - ||
+|| itemNum_01 || Number of possession of item 01 || Initial possession number of items 01 || - ||
+|| itemNum_02 || Number of possession of item 02 || Initial possession number of items 02 || - ||
+|| itemNum_03 || Number of items 03 || Initial possession number of items 03 || - ||
+|| itemNum_04 || Item quantity 04 || Initial possession number of items 04 || - ||
+|| itemNum_05 || Item quantity 05 || Initial possession number of items 05 || - ||
+|| itemNum_06 || Item quantity 06 || Initial possession number of items 06 || - ||
+|| itemNum_07 || Item quantity 07 || Initial possession number of items 07 || - ||
+|| itemNum_08 || Item quantity 08 || Initial possession number of items 08 || - ||
+|| itemNum_09 || Item quantity 09 || Initial possession number of items 09 || - ||
+|| itemNum_10 || Item quantity 10 || Initial possession number of items 10 || - ||
+|| pad5 || pad ||  || - ||
+|| gestureId0 || Gesture ID 0 || Gesture 0th (0 if you want to play EzState gesture 0) || - ||
+|| gestureId1 || Gesture ID1 || Gesture 1st (0 if you want to play EzState gesture 0) || - ||
+|| gestureId2 || Gesture ID 2 || Gesture 2nd (0 if you want to play EzState's gesture 0) || - ||
+|| gestureId3 || Gesture ID 3 || Gesture 3rd (0 if you want to play EzState gesture 0) || - ||
+|| gestureId4 || Gesture ID 4 || Gesture 4th (0 if you want to play EzState's gesture 0) || - ||
+|| gestureId5 || Gesture ID 5 || Gesture 5th (0 if you want to play EzState gesture 0) || - ||
+|| gestureId6 || Gesture ID 6 || Gesture 6th (0 if you want to play EzState gesture 0) || - ||
+|| npcPlayerType || NPC type of NPC player || NPC type used by NPC players. Not used by normal players. || NPC_TYPE ||
+|| npcPlayerDrawType || NPC player drawing type || Drawing type used by NPC players. Not used by normal players. || NPC_DRAW_TYPE ||
+|| npcPlayerSex || Gender of NPC players || The gender used by NPC players. It is not reflected to normal players. || CHARACTER_INIT_SEX ||
+|| vowType || Pledge || Pledge type (None: 0) || VOW_TYPE ||
+|| isSyncTarget || Is it a transmission / reception target? || Is it a send / receive target (for copy NPCs)? || BOOL_CIRCLECROSS_TYPE ||
+|| pad || pad ||  || - ||
+|| pad6 || pad ||  || - ||
+|| wepParamType_Right1 || Right-handed weapon slot 1 equipment type || Right-handed weapon slot 1 parameter reference || CHARA_INIT_WEP_TYPE ||
+|| wepParamType_Right2 || Right-handed weapon slot 2 equipment type || Right-handed weapon slot 2 parameter reference || CHARA_INIT_WEP_TYPE ||
+|| wepParamType_Right3 || Right-handed weapon slot 3 equipment type || Right-handed weapon slot 3 parameter reference || CHARA_INIT_WEP_TYPE ||
+|| wepParamType_Left1 || Left-handed weapon slot 1 equipment type || Parameter reference for left-handed weapon slot 1 || CHARA_INIT_WEP_TYPE ||
+|| wepParamType_Left2 || Left-handed weapon slot 2 equipment type || Parameter reference for left-handed weapon slot 2 || CHARA_INIT_WEP_TYPE ||
+|| wepParamType_Left3 || Left-handed weapon slot 3 equipment type || Parameter reference for left-handed weapon slot 3 || CHARA_INIT_WEP_TYPE ||
+|| pad2 || pad ||  || - ||
+|| equip_Subwep_Right3 || Right-handed weapon slot 3 || Weapon ID of equipment parameter (right hand slot 3) || - ||
+|| equip_Subwep_Left3 || Left-handed weapon slot 3 || Weapon ID of equipment parameter (left hand slot 3) || - ||
+|| pad3 || pad ||  || - ||
+|| secondaryItem_01 || Second item 01 || Item ID 01 of the second shortcut initial possession || - ||
+|| secondaryItem_02 || Second item 02 || Item ID 02 of the second shortcut initial possession || - ||
+|| secondaryItem_03 || Second item 03 || Item ID 03 of the second shortcut initial possession || - ||
+|| secondaryItem_04 || Second item 04 || Item ID 04 of the second shortcut initial possession || - ||
+|| secondaryItem_05 || Second item 05 || Item ID 05 of the second shortcut initial possession || - ||
+|| secondaryItem_06 || Second item 06 || Item ID 06 of the second shortcut initial possession || - ||
+|| secondaryItemNum_01 || Number of possessions of the second item 01 || 2nd Shortcut Initial possession number of items 01 || - ||
+|| secondaryItemNum_02 || Number of possessions of the second item 02 || 2nd Shortcut Initial possession number of items 02 || - ||
+|| secondaryItemNum_03 || Number of possessions of the second item 03 || 2nd Shortcut Initial possession number of items 03 || - ||
+|| secondaryItemNum_04 || Number of possessions of the second item 04 || 2nd Shortcut Initial possession number of items 04 || - ||
+|| secondaryItemNum_05 || Number of possessions of the second item 05 || 2nd Shortcut Initial possession number of items 05 || - ||
+|| secondaryItemNum_06 || Number of possessions of the second item 06 || 2nd Shortcut Initial possession number of items 06 || - ||
+|| HpEstMax || HP Est Bottle Possession Limit || HP Est Bottle Possession Limit || - ||
+|| MpEstMax || MP Est Bottle Possession Limit || MP Est Bottle Possession Limit || - ||
+|| pad7 || pad ||  || - ||
+|| voiceType || Voice type || Voice type || - ||
+|| reserve || Reserved area || Reserved area || - ||

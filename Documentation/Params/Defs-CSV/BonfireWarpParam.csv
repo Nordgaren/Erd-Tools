@@ -1,0 +1,78 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,1704,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,1705,dummy8,,%d,dummy8,None
+Event flag ID,Release condition event flag ID,0,-294967297,100,u32,1,%u,u32,Wrap
+Bonfire entity ID,Bonfire entity ID,0,-294967297,200,u32,1,%u,u32,Wrap
+pad,Padding. The place where the deleted old work origin data was defined,,,1706,dummy8,,,dummy8,None
+Sort ID,Bonfire Warp Subcategory Sort ID. Specify the order (ascending order) in the same subcategory,0,65535,340,u16,1,%u,u16,Wrap
+Warp Prohibition Icon ID,Icon ID when warp is prohibited,0,65535,320,u16,1,%u,u16,Wrap
+Display zoom step,Zoom step to display the bonfire (0 when zoomed out most, +1 for each zoom). Displayed when "<< Display zoom step >> ≤ Current zoom step". Default is 0 (always displayed),0,128,900,u8,1,%d,u8,Wrap
+Selectable zoom steps,A zoom step that allows you to select and snap a bonfire (0 for the most zoomed out state, +1 for each zoom). Can be selected and snapped when "<< Selectable zoom step >> ≤ current enlargement stage". The default is 0 (always selectable / snappable),0,128,910,u8,1,%d,u8,Wrap
+Subcategory ID,Bonfire Warp Subcategory Parameter ID (-1: Invalid). Set which subcategory it belongs to. If it is invalid, it will not be displayed in the bonfire list.,-1,65535,330,s32,1,%d,s32,Wrap
+Cleared event flag ID,Cleared event flag ID (0: always treated as cleared),0,-294967297,110,u32,1,%u,u32,Wrap
+Icon ID,Icon ID,0,65535,310,u16,1,%u,u16,Wrap
+Display setting M00,Whether to display with M00,0,1,800,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Display setting M01,Whether to display with M01,0,1,810,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+pad,pad1: 6,,,1707,dummy8,,,dummy8,None
+pad,pad2,,,1708,dummy8,,,dummy8,None
+Area number,AA part of mAA_BB_CC_DD,0,99,1100,u8,1,%u,u8,Wrap
+Grid X number,BB part of mAA_BB_CC_DD,0,99,1200,u8,1,%u,u8,Wrap
+Grid Z number,CC part of mAA_BB_CC_DD,0,99,1300,u8,1,%u,u8,Wrap
+Padding,pad3,,,1709,dummy8,,,dummy8,None
+X coordinate,X coordinate,-20000,20000,1400,f32,0.01,%f,f32,Wrap
+Y coordinate,Y coordinate (not used),-20000,20000,1500,f32,0.01,%f,f32,Wrap
+Z coordinate,Z coordinate,-20000,20000,1600,f32,0.01,%f,f32,Wrap
+Text ID,The text ID to display. If the value is invalid (-1), nothing is displayed.,-1,99999999,210,s32,1,%d,s32,Wrap
+Occurrence event flag ID,Display text Event flag ID. Display if the event flag is On. If the event flag ID (0) is invalid, it will be treated as On.,0,-294967297,215,u32,1,%u,u32,Wrap
+Hidden event flag ID,Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (0) is invalid, it will be treated as Off.,0,-294967297,216,u32,1,%u,u32,Wrap
+Text ID,The text ID to display. If it is an invalid value (-2), nothing is displayed.,-1,99999999,220,s32,1,%d,s32,Wrap
+Occurrence event flag ID,Display text Event flag ID. Display if the event flag is On. If the event flag ID (1) is invalid, it will be treated as On.,0,-294967297,225,u32,1,%u,u32,Wrap
+Hidden event flag ID,Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (1) is invalid, it will be treated as Off.,0,-294967297,226,u32,1,%u,u32,Wrap
+Text ID,The text ID to display. If it is an invalid value (-3), nothing is displayed.,-1,99999999,230,s32,1,%d,s32,Wrap
+Occurrence event flag ID,Display text Event flag ID. Display if the event flag is On. If the event flag ID (2) is invalid, it will be treated as On.,0,-294967297,235,u32,1,%u,u32,Wrap
+Hidden event flag ID,Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (2) is invalid, it will be treated as Off.,0,-294967297,236,u32,1,%u,u32,Wrap
+Text ID,The text ID to display. If it is an invalid value (-4), nothing is displayed.,-1,99999999,240,s32,1,%d,s32,Wrap
+Occurrence event flag ID,Display text Event flag ID. Display if the event flag is On. If the event flag ID (3) is invalid, it will be treated as On.,0,-294967297,245,u32,1,%u,u32,Wrap
+Hidden event flag ID,Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (3) is invalid, it will be treated as Off.,0,-294967297,246,u32,1,%u,u32,Wrap
+Text ID,The text ID to display. If it is an invalid value (-5), nothing is displayed.,-1,99999999,250,s32,1,%d,s32,Wrap
+Occurrence event flag ID,Display text Event flag ID. Display if the event flag is On. If the event flag ID (4) is invalid, it will be treated as On.,0,-294967297,255,u32,1,%u,u32,Wrap
+Hidden event flag ID,Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (4) is invalid, it will be treated as Off.,0,-294967297,256,u32,1,%u,u32,Wrap
+Text ID,The text ID to display. If it is an invalid value (-6), nothing is displayed.,-1,99999999,260,s32,1,%d,s32,Wrap
+Occurrence event flag ID,Display text Event flag ID. Display if the event flag is On. If the event flag ID (5) is invalid, it will be treated as On.,0,-294967297,265,u32,1,%u,u32,Wrap
+Hidden event flag ID,Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (5) is invalid, it will be treated as Off.,0,-294967297,266,u32,1,%u,u32,Wrap
+Text ID,The text ID to display. If it is an invalid value (-7), nothing is displayed.,-1,99999999,270,s32,1,%d,s32,Wrap
+Occurrence event flag ID,Display text Event flag ID. Display if the event flag is On. If the event flag ID (6) is invalid, it will be treated as On.,0,-294967297,275,u32,1,%u,u32,Wrap
+Hidden event flag ID,Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (6) is invalid, it will be treated as Off.,0,-294967297,276,u32,1,%u,u32,Wrap
+Text ID,The text ID to display. If it is an invalid value (-8), nothing is displayed.,-1,99999999,280,s32,1,%d,s32,Wrap
+Occurrence event flag ID,Display text Event flag ID. Display if the event flag is On. If the event flag ID (7) is invalid, it will be treated as On.,0,-294967297,285,u32,1,%u,u32,Wrap
+Hidden event flag ID,Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (7) is invalid, it will be treated as Off.,0,-294967297,286,u32,1,%u,u32,Wrap
+Text type,Text type (place name, NPC name, ...),0,255,211,u8,1,%u,WORLD_MAP_POINT_TEXT_TYPE,Wrap
+Text type,Text type (place name, NPC name, ...),0,255,221,u8,1,%u,WORLD_MAP_POINT_TEXT_TYPE,Wrap
+Text type,Text type (place name, NPC name, ...),0,255,231,u8,1,%u,WORLD_MAP_POINT_TEXT_TYPE,Wrap
+Text type,Text type (place name, NPC name, ...),0,255,241,u8,1,%u,WORLD_MAP_POINT_TEXT_TYPE,Wrap
+Text type,Text type (place name, NPC name, ...),0,255,251,u8,1,%u,WORLD_MAP_POINT_TEXT_TYPE,Wrap
+Text type,Text type (place name, NPC name, ...),0,255,261,u8,1,%u,WORLD_MAP_POINT_TEXT_TYPE,Wrap
+Text type,Text type (place name, NPC name, ...),0,255,271,u8,1,%u,WORLD_MAP_POINT_TEXT_TYPE,Wrap
+Text type,Text type (place name, NPC name, ...),0,255,281,u8,1,%u,WORLD_MAP_POINT_TEXT_TYPE,Wrap
+Before ignition SFX Damipoly ID0,Damipoli ID that issues SFX before bonfire ignition,-1,99999999,1700,s32,1,%d,s32,Wrap
+Before ignition SFXID0,SFX ID issued before bonfire ignition. It goes out when ignited. In case of -1, SFX is not issued.,-1,999999999,1701,s32,1,%d,s32,Wrap
+Before ignition SFX Damipoly ID1,Damipoli ID that issues SFX before bonfire ignition,-1,99999999,1702,s32,1,%d,s32,Wrap
+Before ignition SFXID1,SFX ID issued before bonfire ignition. It goes out when ignited. In case of -1, SFX is not issued.,-1,999999999,1703,s32,1,%d,s32,Wrap
+unkA8,,-2147483648,2147483647,0,s32,1,%d,s32,Wrap
+unkAC,,-2147483648,2147483647,0,s32,1,%d,s32,Wrap
+unkB0,,-2147483648,2147483647,0,s32,1,%d,s32,Wrap
+unkB4,,-2147483648,2147483647,0,s32,1,%d,s32,Wrap
+unkB8,,-2147483648,2147483647,0,s32,1,%d,s32,Wrap
+unkBC,,-2147483648,2147483647,0,s32,1,%d,s32,Wrap
+unkC0,,-2147483648,2147483647,0,s32,1,%d,s32,Wrap
+unkC4,,-2147483648,2147483647,0,s32,1,%d,s32,Wrap
+unkC8,,-2147483648,2147483647,0,s32,1,%d,s32,Wrap
+unkCC,,-2147483648,2147483647,0,s32,1,%d,s32,Wrap
+unkD0,,-2147483648,2147483647,0,s32,1,%d,s32,Wrap
+unkD4,,-2147483648,2147483647,0,s32,1,%d,s32,Wrap
+unkD8,,-2147483648,2147483647,0,s32,1,%d,s32,Wrap
+unkDC,,-2147483648,2147483647,0,s32,1,%d,s32,Wrap
+unkE0,,-2147483648,2147483647,0,s32,1,%d,s32,Wrap
+unkE4,,-2147483648,2147483647,0,s32,1,%d,s32,Wrap
+unkE8,,-2147483648,2147483647,0,s32,1,%d,s32,Wrap

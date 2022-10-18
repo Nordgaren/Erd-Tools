@@ -1,0 +1,207 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Face part ID,Face part ID,-1000,1000,1000,f32,0.01,%.2f,f32,Wrap
+Skin color (R),Skin color (R),-1000,1000,1010,f32,0.01,%.2f,f32,Wrap
+Skin color (G),Skin color (G),-1000,1000,1011,f32,0.01,%.2f,f32,Wrap
+Skin color (B),Skin color (B),-1000,1000,1012,f32,0.01,%.2f,f32,Wrap
+Shiny skin,Shiny skin,-1000,1000,1020,f32,0.01,%.2f,f32,Wrap
+pores,pores,-1000,1000,1030,f32,0.01,%.2f,f32,Wrap
+Blue beard,Blue beard,-1000,1000,1040,f32,0.01,%.2f,f32,Wrap
+Bear,Bear,-1000,1000,1050,f32,0.01,%.2f,f32,Wrap
+Bear color (R),Bear color (R),-1000,1000,1060,f32,0.01,%.2f,f32,Wrap
+Bear color (G),Bear color (G),-1000,1000,1061,f32,0.01,%.2f,f32,Wrap
+Bear color (B),Bear color (B),-1000,1000,1062,f32,0.01,%.2f,f32,Wrap
+cheek,cheek,-1000,1000,1070,f32,0.01,%.2f,f32,Wrap
+Teak color (R),Teak color (R),-1000,1000,1080,f32,0.01,%.2f,f32,Wrap
+Teak color (G),Teak color (G),-1000,1000,1081,f32,0.01,%.2f,f32,Wrap
+Teak color (B),Teak color (B),-1000,1000,1082,f32,0.01,%.2f,f32,Wrap
+Eyeline,Eyeline,-1000,1000,1090,f32,0.01,%.2f,f32,Wrap
+Eyeliner color (R),Eyeliner color (R),-1000,1000,1100,f32,0.01,%.2f,f32,Wrap
+Eyeliner color (G),Eyeliner color (G),-1000,1000,1101,f32,0.01,%.2f,f32,Wrap
+Eyeliner color (B),Eyeliner color (B),-1000,1000,1102,f32,0.01,%.2f,f32,Wrap
+Eye shadow (bottom),Eye shadow (bottom),-1000,1000,1110,f32,0.01,%.2f,f32,Wrap
+Eyeshadow (bottom) color (R),Eyeshadow (bottom) color (R),-1000,1000,1120,f32,0.01,%.2f,f32,Wrap
+Eyeshadow (bottom) color (G),Eyeshadow (bottom) color (G),-1000,1000,1121,f32,0.01,%.2f,f32,Wrap
+Eyeshadow (bottom) color (B),Eyeshadow (bottom) color (B),-1000,1000,1122,f32,0.01,%.2f,f32,Wrap
+Eye shadow (top),Eye shadow (top),-1000,1000,1130,f32,0.01,%.2f,f32,Wrap
+Eyeshadow (top) color (R),Eyeshadow (top) color (R),-1000,1000,1140,f32,0.01,%.2f,f32,Wrap
+Eyeshadow (top) color (G),Eyeshadow (top) color (G),-1000,1000,1141,f32,0.01,%.2f,f32,Wrap
+Eyeshadow (top) color (B),Eyeshadow (top) color (B),-1000,1000,1142,f32,0.01,%.2f,f32,Wrap
+lipstick,lipstick,-1000,1000,1150,f32,0.01,%.2f,f32,Wrap
+Lipstick color (R),Lipstick color (R),-1000,1000,1160,f32,0.01,%.2f,f32,Wrap
+Lipstick color (G),Lipstick color (G),-1000,1000,1161,f32,0.01,%.2f,f32,Wrap
+Lipstick color (B),Lipstick color (B),-1000,1000,1162,f32,0.01,%.2f,f32,Wrap
+Hair thickness,Hair thickness,-1000,1000,1200,f32,0.01,%.2f,f32,Wrap
+Hair color (R),Hair color (R),-1000,1000,1210,f32,0.01,%.2f,f32,Wrap
+Hair color (G),Hair color (G),-1000,1000,1211,f32,0.01,%.2f,f32,Wrap
+Hair color (B),Hair color (B),-1000,1000,1212,f32,0.01,%.2f,f32,Wrap
+Eyeball part ID,Eyeball part ID,-1000,1000,1300,f32,0.01,%.2f,f32,Wrap
+Iris color (R),Right eye iris color (R),-1000,1000,1400,f32,0.01,%.2f,f32,Wrap
+Iris color (G),Right eye iris color (G),-1000,1000,1401,f32,0.01,%.2f,f32,Wrap
+Iris color (B),Right eye iris color (B),-1000,1000,1402,f32,0.01,%.2f,f32,Wrap
+The size of the iris,The size of the iris of the right eye,-1000,1000,1410,f32,0.01,%.2f,f32,Wrap
+Cloudiness of the crystalline lens,Cloudiness of the crystalline lens of the right eye,-1000,1000,1420,f32,0.01,%.2f,f32,Wrap
+The turbid color of the crystalline lens (R),The turbid color of the crystalline lens of the right eye (R),-1000,1000,1430,f32,0.01,%.2f,f32,Wrap
+The turbid color of the crystalline lens (G),The turbid color of the crystalline lens of the right eye (G),-1000,1000,1431,f32,0.01,%.2f,f32,Wrap
+The turbid color of the crystalline lens (B),The turbid color of the crystalline lens of the right eye (B),-1000,1000,1432,f32,0.01,%.2f,f32,Wrap
+White eye color (R),White eye color of the right eye (R),-1000,1000,1440,f32,0.01,%.2f,f32,Wrap
+White eye color (G),White eye color of the right eye (G),-1000,1000,1441,f32,0.01,%.2f,f32,Wrap
+White eye color (B),White eye color of the right eye (B),-1000,1000,1442,f32,0.01,%.2f,f32,Wrap
+Position of the iris,Position of the iris of the right eye,-1000,1000,1450,f32,0.01,%.2f,f32,Wrap
+Iris color (R),Left eye iris color (R),-1000,1000,1500,f32,0.01,%.2f,f32,Wrap
+Iris color (G),Left eye iris color (G),-1000,1000,1501,f32,0.01,%.2f,f32,Wrap
+Iris color (B),Left eye iris color (B),-1000,1000,1502,f32,0.01,%.2f,f32,Wrap
+The size of the iris,The size of the iris of the left eye,-1000,1000,1510,f32,0.01,%.2f,f32,Wrap
+Cloudiness of the crystalline lens,Cloudiness of the crystalline lens of the left eye,-1000,1000,1520,f32,0.01,%.2f,f32,Wrap
+The turbid color of the crystalline lens (R),The turbid color of the crystalline lens of the left eye (R),-1000,1000,1530,f32,0.01,%.2f,f32,Wrap
+The turbid color of the crystalline lens (G),The turbid color of the crystalline lens of the left eye (G),-1000,1000,1531,f32,0.01,%.2f,f32,Wrap
+The turbid color of the crystalline lens (B),The turbid color of the crystalline lens of the left eye (B),-1000,1000,1532,f32,0.01,%.2f,f32,Wrap
+White eye color (R),White eye color of the left eye (R),-1000,1000,1540,f32,0.01,%.2f,f32,Wrap
+White eye color (G),White eye color of the left eye (G),-1000,1000,1541,f32,0.01,%.2f,f32,Wrap
+White eye color (B),White eye color of the left eye (B),-1000,1000,1542,f32,0.01,%.2f,f32,Wrap
+Position of the iris,Position of the iris of the left eye,-1000,1000,1550,f32,0.01,%.2f,f32,Wrap
+Hair part ID,Hair part ID,-1000,1000,1600,f32,0.01,%.2f,f32,Wrap
+Hair color (R),Hair color (R),-1000,1000,1610,f32,0.01,%.2f,f32,Wrap
+Hair color (G),Hair color (G),-1000,1000,1611,f32,0.01,%.2f,f32,Wrap
+Hair color (B),Hair color (B),-1000,1000,1612,f32,0.01,%.2f,f32,Wrap
+Gloss,Hair gloss,-1000,1000,1620,f32,0.01,%.2f,f32,Wrap
+Blackness at the base,Blackness at the base of hair,-1000,1000,1630,f32,0.01,%.2f,f32,Wrap
+Amount of gray hair,Amount of white hair,-1000,1000,1640,f32,0.01,%.2f,f32,Wrap
+Beard part ID,Beard part ID,-1000,1000,1700,f32,0.01,%.2f,f32,Wrap
+Beard color (R),Beard color (R),-1000,1000,1710,f32,0.01,%.2f,f32,Wrap
+Beard color (G),Beard color (G),-1000,1000,1711,f32,0.01,%.2f,f32,Wrap
+Beard color (B),Beard color (B),-1000,1000,1712,f32,0.01,%.2f,f32,Wrap
+Gloss,Beard luster,-1000,1000,1720,f32,0.01,%.2f,f32,Wrap
+Blackness at the base,Blackness at the base of the beard,-1000,1000,1730,f32,0.01,%.2f,f32,Wrap
+Amount of gray hair,Amount of white hair with a beard,-1000,1000,1740,f32,0.01,%.2f,f32,Wrap
+Eyebrow part ID,Eyebrow part ID,-1000,1000,1800,f32,0.01,%.2f,f32,Wrap
+Eyebrow color (R),Eyebrow color (R),-1000,1000,1810,f32,0.01,%.2f,f32,Wrap
+Eyebrow color (G),Eyebrow color (G),-1000,1000,1811,f32,0.01,%.2f,f32,Wrap
+Eyebrow color (B),Eyebrow color (B),-1000,1000,1812,f32,0.01,%.2f,f32,Wrap
+Gloss,Glossy eyebrows,-1000,1000,1820,f32,0.01,%.2f,f32,Wrap
+Blackness at the base,Blackness at the base of the eyebrows,-1000,1000,1830,f32,0.01,%.2f,f32,Wrap
+Amount of gray hair,Amount of white hair on the eyebrows,-1000,1000,1840,f32,0.01,%.2f,f32,Wrap
+Eyelash parts ID,Eyelash parts ID,-1000,1000,1900,f32,0.01,%.2f,f32,Wrap
+Eyelash color (R),Eyelash color (R),-1000,1000,1910,f32,0.01,%.2f,f32,Wrap
+Eyelash color (G),Eyelash color (G),-1000,1000,1911,f32,0.01,%.2f,f32,Wrap
+Eyelash color (B),Eyelash color (B),-1000,1000,1912,f32,0.01,%.2f,f32,Wrap
+Decorative part ID,Decorative part ID,-1000,1000,2000,f32,0.01,%.2f,f32,Wrap
+Decoration color (R),Decoration color (R),-1000,1000,2010,f32,0.01,%.2f,f32,Wrap
+Decoration color (G),Decoration color (G),-1000,1000,2011,f32,0.01,%.2f,f32,Wrap
+Decorative color (B),Decorative color (B),-1000,1000,2012,f32,0.01,%.2f,f32,Wrap
+Decal part ID,Decal part ID,-1000,1000,2100,f32,0.01,%.2f,f32,Wrap
+Decal position (x),Decal position (x),-1000,1000,2110,f32,0.01,%.2f,f32,Wrap
+Decal position (y),Decal position (y),-1000,1000,2111,f32,0.01,%.2f,f32,Wrap
+Decal angle,Decal angle,-1000,1000,2120,f32,0.01,%.2f,f32,Wrap
+Decal scale,Decal scale,-1000,1000,2130,f32,0.01,%.2f,f32,Wrap
+Decal color (R),Decal color (R),-1000,1000,2140,f32,0.01,%.2f,f32,Wrap
+Decal color (G),Decal color (G),-1000,1000,2141,f32,0.01,%.2f,f32,Wrap
+Decal color (B),Decal color (B),-1000,1000,2142,f32,0.01,%.2f,f32,Wrap
+Decal gloss,Decal gloss,-1000,1000,2150,f32,0.01,%.2f,f32,Wrap
+Decal reversal,Decal reversal,-1000,1000,2160,f32,0.01,%.2f,f32,Wrap
+Character body head scale,Character body head scale,-1000,1000,2500,f32,0.01,%.2f,f32,Wrap
+Character body chest scale,Character body chest scale,-1000,1000,2510,f32,0.01,%.2f,f32,Wrap
+Character body type abdominal scale,Character body type abdominal scale,-1000,1000,2520,f32,0.01,%.2f,f32,Wrap
+Character body type arm scale,Character body type arm scale,-1000,1000,2530,f32,0.01,%.2f,f32,Wrap
+Character body type leg scale,Character body type leg scale,-1000,1000,2540,f32,0.01,%.2f,f32,Wrap
+age,age,-1000,1000,3000,f32,0.01,%.2f,f32,Wrap
+sex,sex,-1000,1000,3100,f32,0.01,%.2f,f32,Wrap
+Exaggeration (model),Exaggeration (model),-1000,1000,3200,f32,0.01,%.2f,f32,Wrap
+Exaggeration (texture),Exaggeration (texture),-1000,1000,3300,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 00,Face creation geometry data 00,-1000,1000,3400,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 01,Face creation geometry data 01,-1000,1000,3401,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 02,Face creation geometry data 02,-1000,1000,3402,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 03,Face creation geometry data 03,-1000,1000,3403,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 04,Face creation geometry data 04,-1000,1000,3404,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 05,Face creation geometry data 05,-1000,1000,3405,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 06,Face creation geometry data 06,-1000,1000,3406,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 07,Face creation geometry data 07,-1000,1000,3407,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 08,Face creation geometry data 08,-1000,1000,3408,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 09,Face creation geometry data 09,-1000,1000,3409,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 10,Face creation geometry data 10,-1000,1000,3410,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 11,Face creation geometry data 11,-1000,1000,3411,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 12,Face creation geometry data 12,-1000,1000,3412,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 13,Face creation geometry data 13,-1000,1000,3413,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 14,Face creation geometry data 14,-1000,1000,3414,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 15,Face creation geometry data 15,-1000,1000,3415,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 16,Face creation geometry data 16,-1000,1000,3416,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 17,Face creation geometry data 17,-1000,1000,3417,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 18,Face creation geometry data 18,-1000,1000,3418,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 19,Face creation geometry data 19,-1000,1000,3419,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 20,Face creation geometry data 20,-1000,1000,3420,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 21,Face creation geometry data 21,-1000,1000,3421,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 22,Face creation geometry data 22,-1000,1000,3422,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 23,Face creation geometry data 23,-1000,1000,3423,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 24,Face creation geometry data 24,-1000,1000,3424,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 25,Face creation geometry data 25,-1000,1000,3425,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 26,Face creation geometry data 26,-1000,1000,3426,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 27,Face creation geometry data 27,-1000,1000,3427,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 28,Face creation geometry data 28,-1000,1000,3428,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 29,Face creation geometry data 29,-1000,1000,3429,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 30,Face creation geometry data 30,-1000,1000,3430,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 31,Face creation geometry data 31,-1000,1000,3431,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 32,Face creation geometry data 32,-1000,1000,3432,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 33,Face creation geometry data 33,-1000,1000,3433,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 34,Face creation geometry data 34,-1000,1000,3434,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 35,Face creation geometry data 35,-1000,1000,3435,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 36,Face creation geometry data 36,-1000,1000,3436,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 37,Face creation geometry data 37,-1000,1000,3437,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 38,Face creation geometry data 38,-1000,1000,3438,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 39,Face creation geometry data 39,-1000,1000,3439,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 40,Face creation geometry data 40,-1000,1000,3440,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 41,Face creation geometry data 41,-1000,1000,3441,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 42,Face creation geometry data 42,-1000,1000,3442,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 43,Face creation geometry data 43,-1000,1000,3443,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 44,Face creation geometry data 44,-1000,1000,3444,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 45,Face creation geometry data 45,-1000,1000,3445,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 46,Face creation geometry data 46,-1000,1000,3446,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 47,Face creation geometry data 47,-1000,1000,3447,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 48,Face creation geometry data 48,-1000,1000,3448,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 49,Face creation geometry data 49,-1000,1000,3449,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 50,Face creation geometry data 50,-1000,1000,3450,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 51,Face creation geometry data 51,-1000,1000,3451,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 52,Face creation geometry data 52,-1000,1000,3452,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 53,Face creation geometry data 53,-1000,1000,3453,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 54,Face creation geometry data 54,-1000,1000,3454,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 55,Face creation geometry data 55,-1000,1000,3455,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 56,Face creation geometry data 56,-1000,1000,3456,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 57,Face creation geometry data 57,-1000,1000,3457,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 58,Face creation geometry data 58,-1000,1000,3458,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 59,Face creation geometry data 59,-1000,1000,3459,f32,0.01,%.2f,f32,Wrap
+Face creation geometry data 60,Face creation geometry data 60,-1000,1000,3460,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 00,Face creation texture data 00,-1000,1000,3500,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 01,Face creation texture data 01,-1000,1000,3501,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 02,Face creation texture data 02,-1000,1000,3502,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 03,Face creation texture data 03,-1000,1000,3503,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 04,Face creation texture data 04,-1000,1000,3504,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 05,Face creation texture data 05,-1000,1000,3505,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 06,Face creation texture data 06,-1000,1000,3506,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 07,Face creation texture data 07,-1000,1000,3507,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 08,Face creation texture data 08,-1000,1000,3508,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 09,Face creation texture data 09,-1000,1000,3509,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 10,Face creation texture data 10,-1000,1000,3510,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 11,Face creation texture data 11,-1000,1000,3511,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 12,Face creation texture data 12,-1000,1000,3512,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 13,Face creation texture data 13,-1000,1000,3513,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 14,Face creation texture data 14,-1000,1000,3514,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 15,Face creation texture data 15,-1000,1000,3515,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 16,Face creation texture data 16,-1000,1000,3516,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 17,Face creation texture data 17,-1000,1000,3517,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 18,Face creation texture data 18,-1000,1000,3518,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 19,Face creation texture data 19,-1000,1000,3519,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 20,Face creation texture data 20,-1000,1000,3520,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 21,Face creation texture data 21,-1000,1000,3521,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 22,Face creation texture data 22,-1000,1000,3522,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 23,Face creation texture data 23,-1000,1000,3523,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 24,Face creation texture data 24,-1000,1000,3524,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 25,Face creation texture data 25,-1000,1000,3525,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 26,Face creation texture data 26,-1000,1000,3526,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 27,Face creation texture data 27,-1000,1000,3527,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 28,Face creation texture data 28,-1000,1000,3528,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 29,Face creation texture data 29,-1000,1000,3529,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 30,Face creation texture data 30,-1000,1000,3530,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 31,Face creation texture data 31,-1000,1000,3531,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 32,Face creation texture data 32,-1000,1000,3532,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 33,Face creation texture data 33,-1000,1000,3533,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 34,Face creation texture data 34,-1000,1000,3534,f32,0.01,%.2f,f32,Wrap
+Face creation texture data 35,Face creation texture data 35,-1000,1000,3535,f32,0.01,%.2f,f32,Wrap
+Burn scars,Burn scars,0,1,2200,f32,0.01,%.2f,f32,Wrap

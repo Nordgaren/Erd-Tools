@@ -1,0 +1,8 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| modelMemoryType || Model used memory type || Model used memory type || CHR_MEMORY_TYPE ||
+|| texMemoryType || Texture usage memory type || Texture usage memory type || CHR_MEMORY_TYPE ||
+|| cameraDitherFadeId || Camera fade parameter ID || Camera fade parameter ID (-1: refer to material, 0: do not disappear, 1 ~: parameter ID) || - ||
+|| reportAnimMemSizeMb || Report animation capacity (MB) || If this value is exceeded, a report will be sent by the reporting system. || - ||

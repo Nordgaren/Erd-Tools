@@ -1,0 +1,14 @@
+900108 Fortune of the Barbarian
+900118 Fortune of the Rogue
+900128 Fortune of the Wizard
+900138 Fortune of the Ranger
+900148 Fortune of the Cleric
+900158 Fortune of the Artificer
+900168 Fortune of the Warlock
+900178 Fortune of the Sorcerer
+900188 Fortune of the Paladin
+900198 Fortune of the Fighter
+900208 Fortune of the Latenna
+900218 Fortune of the Houses
+900228 Fortune of the Spellsword
+900238 Fortune of the Godslayers

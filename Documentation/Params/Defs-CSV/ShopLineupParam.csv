@@ -1,0 +1,19 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Equipment ID,ID of the equipment for sale,0,99999999,400,s32,1,%d,s32,Wrap
+price,Selling price to overwrite (-1: Do not overwrite),-1,999999999,500,s32,1,%d,s32,Wrap
+Material ID required for purchase,Material ID required for purchase (-1: None),-1,99999999,600,s32,1,%d,s32,Wrap
+Quantity retention event flag,Event flag value that holds the number,0,-294967297,700,u32,1,%u,u32,Wrap
+Sales ban event flag,Sales ban event flag,0,-294967297,900,u32,1,%u,u32,Wrap
+Number of units sold,Number of units sold,-1,9999,800,s16,1,%d,s16,Wrap
+Padding,,,,1011,dummy8,,,dummy8,None
+Equipment type,Types of equipment for sale,0,6,200,u8,1,%d,SHOP_LINEUP_EQUIPTYPE,Wrap
+Price type,Price type. Applies only when overwriting the selling price,0,1,505,u8,1,%d,SHOP_LINEUP_COSTTYPE,Wrap
+Padding,,,,1012,dummy8,,%d,dummy8,Wrap
+Number of sets sold,Number of sets sold. Number of pieces you can get with one purchase (default: 1),1,65535,810,u16,1,%u,u16,Wrap
+Addition,Correction (addition) to the selling price of equipment. Equipment para selling price x magnification + addition,0,999999999,520,s32,1,%d,s32,Wrap
+magnification,Correction (magnification) to the selling price of equipment. Equipment para selling price x magnification + addition,0.1,9999,510,f32,0.1,%f,f32,Wrap
+Icon ID,Menu display_icon ID (-1: do not overwrite),-1,65535,1000,s32,1,%d,s32,Wrap
+Text ID,Menu display_text ID (-1: do not overwrite),-1,99999999,1010,s32,1,%d,s32,Wrap
+Menu title text ID,Text ID of the shop menu title (-1: Do not overwrite). This value of the first para found in the para ID range passed when launching the shop is referenced,-1,99999999,100,s32,1,%d,s32,Wrap
+Menu icon ID,Shop menu icon ID (-1: Do not overwrite). This value of the first para found in the para ID range passed when launching the shop is referenced,-1,32767,110,s16,1,%d,s16,Wrap
+Padding,,,,1013,dummy8,,,dummy8,None

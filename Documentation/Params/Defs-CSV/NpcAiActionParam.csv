@@ -1,0 +1,12 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Move direction input,Moving direction to enter,0,255,100,u8,1,%d,NPC_AI_ACTION_MOVE_DIR,Wrap
+Key input 1,Key to enter,0,255,200,u8,1,%d,NPC_AI_ACTION_KEY,Wrap
+Key input 2,Key to enter,0,255,300,u8,1,%d,NPC_AI_ACTION_KEY,Wrap
+Key input 3,Key to enter,0,255,400,u8,1,%d,NPC_AI_ACTION_KEY,Wrap
+Press and hold the movement direction input?,Whether to handle the input movement direction as long press,0,1,110,u8,1,%d,ON_OFF,Wrap
+Press and hold key input 1?,Whether to treat the key to be entered as a long press,0,1,210,u8,1,%d,ON_OFF,Wrap
+Press and hold key input 2?,Whether to treat the key to be entered as a long press,0,1,310,u8,1,%d,ON_OFF,Wrap
+Press and hold key input 3?,Whether to treat the key to be entered as a long press,0,1,410,u8,1,%d,ON_OFF,Wrap
+Gesture ID (valid only when any key input is GESTURE),Gesture ID,0,999999999,500,s32,1,%d,s32,Wrap
+Treat as successful when life is over,If this is ON, the AI goal will not be successful until the end of its life,0,1,600,u8,1,%d,ON_OFF,Wrap
+pad,pad,,,601,dummy8,,,dummy8,None

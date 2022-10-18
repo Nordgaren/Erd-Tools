@@ -1,0 +1,14 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| commandType || Command type || Command type || CHARMAKEMENU_CMD_TYPE ||
+|| captionId || Item text ID || ID of the text to be displayed || - ||
+|| faceParamId || Face Param ID || Face Param ID || FACE_PARAM ||
+|| tableId || Table ID (male) || First ID (male) in the list of items to select. The command type is [Slider: Text ID of minimum label (n) and maximum label (n + 1), Color: ID of color table, Grid or text: First ID of character make list item, Other: Ignore] || - ||
+|| viewCondition || Display conditions || Conditions for displaying this command || CHARMAKEMENU_VIEW_CONDITION ||
+|| previewMode || Preview mode || Display mode of the character model displayed in preview || CHARMAKEMENU_PREVIEW_MODE ||
+|| reserved2 || reserve ||  || - ||
+|| tableId2 || Table ID (female) || For women with table ID. If -1, refer to for men || - ||
+|| refFaceParamId || Referenced face Param ID || Face param ID of the matching destination for "matching to XX" || FACE_PARAM ||
+|| refTextId || Referenced text ID || Display text ID for "fit to XX" || - ||
+|| helpTextId || 1 line help text ID (overwrite) || 1-line help text ID (-1: Get 1-line help with item text ID). Basically, item text ID = 1 line help text ID, but if you want to overwrite part of it, specify it with this parameter. || - ||
+|| unlockEventFlagId || Event flag ID || Event flag to unlock this item (0: invalid value). Invalid value will always be unlocked || - ||
+|| reserved || reserve ||  || - ||

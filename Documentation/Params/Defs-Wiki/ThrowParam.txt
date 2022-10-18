@@ -1,0 +1,43 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| AtkChrId || Throwing side character ID || Throwing side character ID || - ||
+|| DefChrId || Recipient character ID || Recipient character ID || - ||
+|| Dist || Effective distance [m] || Do not throw unless the distance is closer than this value [m] || - ||
+|| DiffAngMin || Angle difference range between your own direction and the direction of the other party min || If the angle difference (Y-axis) between the throwing side and the receiving side is not larger than this angle, it will not be thrown. || - ||
+|| DiffAngMax || Angle difference range between your own direction and the direction of the other party max || If the angle difference (Y-axis) between the throwing side and the receiving side is smaller than this angle, it will not be thrown. || - ||
+|| upperYRange || On the height range [m] || Do not throw unless the relative distance of the Y axis from the throwing side to the receiving side is smaller than this value || - ||
+|| lowerYRange || Below the height range [m] || Do not throw unless the relative distance of the Y axis from the throwing side to the receiving side is smaller than this value || - ||
+|| diffAngMyToDef || Angle difference between your own direction and the direction from yourself to the other party || The angle difference between the vector in front of you and the vector in the direction from you to the other party. If it is larger than this value, it will not be thrown || - ||
+|| throwTypeId || Throw type ID || ID that identifies the type of throw (association with attack parameter) || - ||
+|| atkAnimId || Throwing side anime ID || Set attack animation ID (linked to EzState) || - ||
+|| defAnimId || Recipient anime ID || Set damage animation ID (linked to EzState) || - ||
+|| escHp || Throw through HP || Value that can withstand throwing through || - ||
+|| selfEscCycleTime || Self-throwing cycle time [ms] || Cycle time for self-throwing [ms] || - ||
+|| sphereCastRadiusRateTop || Sphere Cast Radius Ratio_Top [1/100 Rate] || Ratio of upper radius of sphere cast [80-> 0.8] || - ||
+|| sphereCastRadiusRateLow || Sphere Cast Radius Ratio_Bottom [1/100 Rate] || Spherecast lower radius ratio [80-> 0.8] || - ||
+|| PadType || Operation type || Operation type || THROW_PAD_TYPE ||
+|| AtkEnableState || Throwable state type on the throwing side || Please set the state type that can be thrown on the throwing side || THROW_ENABLE_STATE ||
+|| throwFollowingType || Throw-following method || How to follow the character possessed by Adsorbed Damipoli while throwing. * Follow-up period is controlled by TAE action || THROW_FOLLOWING_TYPE ||
+|| pad2 || pad || pad || - ||
+|| throwType || Throw type || Type of throw || THROW_TYPE ||
+|| selfEscCycleCnt || Number of self-throwing cycles || Number of self-throwing cycles || - ||
+|| dmyHasChrDirType || Direction of Damipoli possession character when throwing occurs || Direction of Damipoli possession character when throwing occurs || THROW_DMY_CHR_DIR_TYPE ||
+|| isTurnAtker || Does the throwing side turn? || Does the throwing side turn? || - ||
+|| isSkipWepCate || Do you want to skip the weapon category check? || Do you want to skip the attacker's weapon category check? || - ||
+|| isSkipSphereCast || Do you want to skip the sphere cast? || Do you want to skip the sphere cast? || - ||
+|| isEnableCorrectPos_forThrowAdjust || Whether to return to the positional relationship equivalent to flat ground at the time of throwing adsorption || If it is set to ◯, the location of the throwing position will be the "position of the adsorption Damipoli that has returned to the positional relationship equivalent to the flat ground". || BOOL_CIRCLECROSS_TYPE ||
+|| isEnableThrowFollowingFallAssist || Do you prevent the fall when the throwing follow is released? || Is the same treatment as the wall removal prevention applied to the fall prevention wall so that it does not fall from the step when the follow-up is released? || BOOL_CIRCLECROSS_TYPE ||
+|| isEnableThrowFollowingFeedback || Do you want to prevent the wall from digging in while following the throw? || Do you want to return the character with the Adsorbed Damipoli when it comes in contact with a hit or fall prevention wall so that it does not look like it will get stuck in the middle wall or fall from a step? || BOOL_CIRCLECROSS_TYPE ||
+|| pad0 || pad || pad || - ||
+|| atkSorbDmyId || Throw side adsorption Damipoly ID || Where on the throwing side should the receiving side be attracted? || - ||
+|| defSorbDmyId || Recipient side adsorption Damipoly ID || Where on the receiving side should the throwing side be adsorbed? || - ||
+|| Dist_start || Effective distance (start throwing) [m] || Only throw at a distance closer than this value [m] Used for throwing at the start of the back stub || - ||
+|| DiffAngMin_start || Angle difference range between your own direction and the other's direction min (start throwing) || If the angle difference (Y-axis) between the throwing side and the receiving side is not larger than this angle, it will not be thrown. It is used for throwing at the start of the back stub. || - ||
+|| DiffAngMax_start || Angle difference range between your own direction and the opponent's direction max (start throwing) || The angle difference (Y-axis) between the throwing side and the receiving side must be smaller than this angle to throw. Used for throwing at the start of the back stub. || - ||
+|| upperYRange_start || On the height range (start throwing) [m] || It will not be thrown unless the relative distance of the Y axis from the throwing side to the receiving side is smaller than this value. It is used for throwing at the start of the back stub. || - ||
+|| lowerYRange_start || Below the height range (start throwing) [m] || It will not be thrown unless the relative distance of the Y axis from the throwing side to the receiving side is smaller than this value. It is used for throwing at the start of the back stub. || - ||
+|| diffAngMyToDef_start || Angle difference between your own direction and the direction from yourself to the opponent (start throwing) || The angle difference between the vector in front of you and the vector in the direction from you to the other party. If it is larger than this value, it will not be thrown. It will be used for throwing at the start of the back stub. || - ||
+|| judgeRangeBasePosDmyId1 || Throwing range judgment criteria on the throwing side Damipoli Id || Damipoli that the thrower considers to be his position when calculating the throw range. If -1, the capsule origin || - ||
+|| judgeRangeBasePosDmyId2 || Criteria for throwing range on the thrown side Damipoli Id || Damipoli that the thrower considers to be his position when calculating the throw range. If -1, the capsule origin || - ||
+|| adsrobModelPosInterpolationTime || Model position interpolation time during adsorption [s] || After the capsule is adsorbed on Damipoli, the time it takes for the character model to interpolate and move to the position according to the throwing animation data (when 0 is set, the model position is not interpolated and playback starts immediately after adsorption with the positional relationship according to the animation data. Will be) || - ||
+|| throwFollowingEndEasingTime || Model position interpolation time at the end of tracking [s] || Model position interpolation time at the end of tracking || - ||
+|| pad1 || pad || pad || - ||

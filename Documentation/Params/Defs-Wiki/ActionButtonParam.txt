@@ -1,0 +1,30 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| regionType || Range type || Range shape (cylinder, prism, capsule) || ACTION_BUTTON_REGION_TYPE ||
+|| category || category || category. The number on the left side of the name is the priority when multiple action buttons overlap (the closer it is to 0, the higher the priority is displayed). || ACTION_BUTTON_CATEGORY ||
+|| padding1 || Padding 1 ||  || - ||
+|| dummyPoly1 || Damipoli 1 || Specify the Damipoli ID that is the center of the bottom of the range. If there is no Damipoly or -1 is entered, the center coordinates will be the reference. || - ||
+|| dummyPoly2 || Damipoli 2 || Used only when the range type is a capsule. Additional Damipoly (capsule) that creates a line segment with two Damipoly || - ||
+|| radius || radius || Radius (cylinder / capsule) || - ||
+|| angle || angle || Angle (cylinder) || - ||
+|| depth || depth || Depth (prism) || - ||
+|| width || width || Width (prism) || - ||
+|| height || height || Height (cylinder / prism) || - ||
+|| baseHeightOffset || Bottom height offset || How much to raise or lower the Y coordinate of the bottom (cylinder / prism) || - ||
+|| angleCheckType || Angle difference judgment type || Angle difference judgment type (cylinder / prism) || ACTION_BUTTON_ANGLE_CHECK_TYPE ||
+|| padding2 || Padding 2 ||  || - ||
+|| allowAngle || Allowable angle difference || Allowable angle difference (cylinder / prism) || - ||
+|| spotDummyPoly || Action spot Damipoli || If there is no Damipoli that specifies the Damipoli ID that will be the position of the action spot, or if -1 is entered, the center coordinates will be the reference. || - ||
+|| textBoxType || Text box type || Text box type || ACTION_BUTTON_TEXT_BOX_TYPE ||
+|| padding3 || Padding 3 ||  || - ||
+|| padding5 || Padding 5 ||  || - ||
+|| isInvalidForRide || Is it invalid when riding? || If this item is YES, the action button will not appear when riding and no judgment will be made. || BOOL_YESNO_TYPE ||
+|| isGrayoutForRide || Is it gray out when riding? || If this item is YES, the action button will be grayed out when riding and no judgment will be made. || BOOL_YESNO_TYPE ||
+|| isInvalidForCrouching || Is it invalid when crouching? || If this item is YES, the action button will not appear when crouching, and no judgment will be made. || BOOL_YESNO_TYPE ||
+|| isGrayoutForCrouching || Is it gray out when crouching? || If this item is YES, the action button will be grayed out when crouching and no judgment will be made. || BOOL_YESNO_TYPE ||
+|| padding4 || Padding 4 ||  || - ||
+|| textId || Text ID || Text ID to display || - ||
+|| invalidFlag || Invalid flag || If this flag is ON, the action button will not appear and no judgment will be made. || - ||
+|| grayoutFlag || Gray out flag || If this flag is ON, the action button will be grayed out and no judgment will be made. || - ||
+|| overrideActionButtonIdForRide || Replacement action button ID when riding || Replace with this action button ID parameter while riding (-1: No replacement) || - ||
+|| execInvalidTime || Invalid time after execution || Invalid time after execution (-infinite by value) || - ||
+|| padding6 || Padding 6 ||  || - ||

@@ -1,0 +1,5 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| limitNum_byGroup || Maximum number of bullets in the group || Maximum number of creations in the same group || - ||
+|| isLimitEachOwner || Is it restricted for each owner? || Is it restricted for each owner? || ON_OFF ||
+|| pad2 || Padding || pad2 || - ||
+|| pad || Padding || pad3 || - ||

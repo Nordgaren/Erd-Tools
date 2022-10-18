@@ -1,0 +1,156 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| signVerticalOffset || Sign height offset [m] ||  || - ||
+|| maxSignPosCorrectionRange || Sign position correction maximum distance [m] ||  || - ||
+|| summonTimeoutTime || Summon desired timeout time [seconds] ||  || - ||
+|| pad || reserve ||  || - ||
+|| signPuddleActiveMessageIntervalSec || Message display interval [seconds] during registration of signature accumulation ||  || - ||
+|| keyGuideHeight || Key guide vertical range [m] ||  || - ||
+|| reloadSignIntervalTime1 || Waiting time for reacquisition of summoning sign (during depopulation) [seconds] ||  || - ||
+|| reloadSignIntervalTime2 || Summon sign reacquisition waiting time [seconds] ||  || - ||
+|| reloadSignTotalCount || Maximum number of summon signs you can have (overall) || Actually u8 is enough || - ||
+|| reloadSignCellCount || Maximum number of summon signs you can have (cell) || Actually u8 is enough || - ||
+|| updateSignIntervalTime || Summon sign update waiting time [seconds] ||  || - ||
+|| basicExclusiveRange || Exclusive horizontal range for drawing between summon signs [m] ||  || - ||
+|| basicExclusiveHeight || Exclusive vertical range for drawing between summon signs [m] ||  || - ||
+|| previewChrWaitingTime || Summon sign character model drawing waiting time [seconds] ||  || - ||
+|| signVisibleRange || Summon sign PC drawing distance [m] ||  || - ||
+|| cellGroupHorizontalRange || Summon sign acquisition cell range (horizontal) || Actually u8 is enough || - ||
+|| cellGroupTopRange || Summon sign acquisition cell range (upward) || Actually u8 is enough || - ||
+|| cellGroupBottomRange || Summon sign acquisition cell range (downward) || Actually u8 is enough || - ||
+|| minWhitePhantomLimitTimeScale || White spirit sign display time limit lower limit magnification ||  || - ||
+|| minSmallPhantomLimitTimeScale || Small spirit sign display time limit lower limit magnification ||  || - ||
+|| whiteKeywordLimitTimeScale || White spirit sign keyword extension magnification ||  || - ||
+|| smallKeywordLimitTimeScale || Ghost sign keyword extension magnification ||  || - ||
+|| blackKeywordLimitTimeScale || Dark Spirit Sign Keyword Extension Magnification ||  || - ||
+|| dragonKeywordLimitTimeScale || Dragon Spirit Sign Keyword Extension Magnification ||  || - ||
+|| singGetMax || Sign acquisition limit || Actually u8 is enough || - ||
+|| signDownloadSpan || Sign download span ||  || - ||
+|| signUpdateSpan || Sign upload span ||  || - ||
+|| signPad || reserve ||  || - ||
+|| maxBreakInTargetListCount || Number of intruders acquired ||  || - ||
+|| breakInRequestIntervalTimeSec || Intrusion request interval [seconds] ||  || - ||
+|| breakInRequestTimeOutSec || Intrusion request timeout time [seconds] ||  || - ||
+|| pad || reserve ||  || - ||
+|| keyGuideRange || Key guide horizontal range [m] ||  || - ||
+|| keyGuideHeight || Key guide vertical range [m] ||  || - ||
+|| reloadSignTotalCount || Number of blood characters acquired (overall) || Actually u8 is enough || - ||
+|| reloadNewSignCellCount || Number of blood characters acquired (cell, new order) || Actually u8 is enough || - ||
+|| reloadRandomSignCellCount || Number of blood characters acquired (cell, random) || Actually u8 is enough || - ||
+|| maxSignTotalCount || Upper limit of the number of blood characters that can be possessed (overall) || Actually u16 is enough || - ||
+|| maxSignCellCount || Upper limit of the number of blood characters that can be possessed (cell) || Actually u8 is enough || - ||
+|| basicExclusiveRange || Blood character drawing exclusive horizontal range [m] ||  || - ||
+|| basicExclusiveHeight || Blood character drawing exclusive vertical range [m] ||  || - ||
+|| signVisibleRange || Blood character PC drawing distance [m] ||  || - ||
+|| maxWriteSignCount || Maximum number of written blood characters history || Actually u8 is enough || - ||
+|| maxReadSignCount || Maximum number of blood characters read || Actually u8 is enough || - ||
+|| reloadSignIntervalTime || Blood character reacquisition waiting time [seconds] ||  || - ||
+|| cellGroupHorizontalRange || Blood character acquisition cell range (horizontal) || Actually u8 is enough || - ||
+|| cellGroupTopRange || Blood character acquisition cell range (upward) || Actually u8 is enough || - ||
+|| cellGroupBottomRange || Blood character acquisition cell range (downward) || Actually u8 is enough || - ||
+|| lifeTime || Blood character data retention period upper limit [seconds] || Actually u16 is enough || - ||
+|| downloadSpan || Blood character download interval ||  || - ||
+|| downloadEvaluationSpan || Blood character evaluation number Download interval ||  || - ||
+|| pad || reserve ||  || - ||
+|| deadingGhostStartPosThreshold || Allowable distance between bloodstain position and illusion start position [m] || If the distance between the bloodstain position and the illusion start position is farther than this value, the server will not be registered. || - ||
+|| keyGuideHeight || Key guide vertical range [m] ||  || - ||
+|| keyGuideRangePlayer || Player Bloodstain Key Guide Horizontal Range [m] ||  || - ||
+|| keyGuideHeightPlayer || Player Bloodstain Key Guide Vertical Range [m] ||  || - ||
+|| reloadSignTotalCount || Number of blood stains acquired (overall) || Actually u8 is enough || - ||
+|| reloadSignCellCount || Number of blood stains obtained (cell) || Actually u8 is enough || - ||
+|| maxSignTotalCount || Upper limit of the number of blood stains that can be possessed (overall) || Actually u16 is enough || - ||
+|| maxSignCellCount || Maximum number of blood stains (cell) || Actually u8 is enough || - ||
+|| reloadSignIntervalTime || Waiting time for reacquisition of blood stains [seconds] ||  || - ||
+|| signVisibleRange || Bloodstain PC drawing distance [m] ||  || - ||
+|| basicExclusiveRange || Exclusive horizontal range for drawing between blood stains [m] ||  || - ||
+|| basicExclusiveHeight || Exclusive vertical range for drawing between blood stains [m] ||  || - ||
+|| cellGroupHorizontalRange || Blood stain acquisition cell range (horizontal) || Actually u8 is enough || - ||
+|| cellGroupTopRange || Blood stain acquisition cell range (upward) || Actually u8 is enough || - ||
+|| cellGroupBottomRange || Blood stain acquisition cell range (downward) || Actually u8 is enough || - ||
+|| lifeTime || Bloodstain data retention period upper limit [seconds] || Actually u16 is enough || - ||
+|| recordDeadingGhostTotalTime || Death illusion record total time [seconds] ||  || - ||
+|| recordDeadingGhostMinTime || Minimum recording time of death illusion [seconds] || Death illusions less than this recording time will not register the server || - ||
+|| downloadSpan || Bloodstain download interval ||  || - ||
+|| statueCreatableDistance || Petrified blood stain drawing limit distance [m] || For open fields. When a stone statue is generated, it can be generated if the distance between the PC and the generation position is greater than or equal to this value. || - ||
+|| reloadGhostTotalCount || Number of illusions acquired (overall) || Actually u8 is enough || - ||
+|| reloadGhostCellCount || Number of illusions acquired (cell) || Actually u8 is enough || - ||
+|| maxGhostTotalCount || Maximum number of illusions you can have (overall) || Actually u16 is enough || - ||
+|| distanceOfBeginRecordVersus || Hostile PC replay recording start distance [m] ||  || - ||
+|| distanceOfEndRecordVersus || Hostile PC replay recording end distance [m] ||  || - ||
+|| updateWanderGhostIntervalTime || Wandering illusion upload interval [seconds] ||  || - ||
+|| updateVersusGhostIntervalTime || Battle illusion upload interval [seconds] ||  || - ||
+|| recordWanderingGhostTime || Phantom recording time [seconds] ||  || - ||
+|| recordWanderingGhostMinTime || Minimum recording time of wandering illusion [seconds] || Wandering illusions less than this recording time do not register the server || - ||
+|| updateBonfireGhostIntervalTime || Kagaribi illusion upload interval [seconds] ||  || - ||
+|| replayGhostRangeOnView || Phantom reproduction distance (in the field of view) [seconds] ||  || - ||
+|| replayGhostRangeOutView || Phantom playback distance (out of field of view) [seconds] ||  || - ||
+|| replayBonfireGhostTime || Kagaribi illusion Playing time [seconds] ||  || - ||
+|| minBonfireGhostValidRange || Kagaribi illusion placement minimum distance [seconds] || Do not place bonfire illusions less than this distance from the bonfire || - ||
+|| maxBonfireGhostValidRange || Kagaribi illusion placement maximum distance [seconds] || Do not place bonfire illusions beyond this distance from the bonfire || - ||
+|| minReplayIntervalTime || Phantom playback interval lower limit [seconds] ||  || - ||
+|| maxReplayIntervalTime || Phantom playback interval upper limit [seconds] ||  || - ||
+|| reloadGhostIntervalTime || Phantom periodic acquisition interval [seconds] ||  || - ||
+|| cellGroupHorizontalRange || Phantom acquisition cell range (horizontal) || Actually u8 is enough || - ||
+|| cellGroupTopRange || Phantom acquisition cell range (upward) || Actually u8 is enough || - ||
+|| replayBonfirePhantomParamIdForCodename || Phantom bonfire mode phantom parameter ID (codename) || Phantom bonfire mode phantom parameter ID used when codename matches || - ||
+|| replayBonfireModeRange || Phantom bonfire mode playback applicable distance ||  || - ||
+|| replayBonfirePhantomParamId || Phantom bonfire mode phantom parameter ID || Phantom bonfire mode phantom parameter ID || - ||
+|| ghostpad || reserve ||  || - ||
+|| reloadVisitListCoolTime || Ring search interval [seconds] ||  || - ||
+|| maxCoopBlueSummonCount || Maximum number of rescue blue spirits appearing || Actually u8 is enough || - ||
+|| maxBellGuardSummonCount || Upper limit of the number of bell guard ghosts that appear || Actually u8 is enough || - ||
+|| maxVisitListCount || Number of ring search destinations acquired ||  || - ||
+|| reloadSearch_CoopBlue_Min || Relief Blue Spirit reload time minimum [sec] ||  || - ||
+|| reloadSearch_CoopBlue_Max || Relief Blue Spirit reload time maximum [sec] ||  || - ||
+|| reloadSearch_BellGuard_Min || Kanemori reload time minimum [sec] ||  || - ||
+|| reloadSearch_BellGuard_Max || Kanemori reload time maximum [sec] ||  || - ||
+|| reloadSearch_RatKing_Min || Mouse King Reload Time Minimum [sec] ||  || - ||
+|| reloadSearch_RatKing_Max || Mouse King Reload Time Maximum [sec] ||  || - ||
+|| visitpad00 || reserve ||  || - ||
+|| srttMaxLimit || SRTT upper limit [milliseconds] ||  || - ||
+|| srttMeanLimit || SRTT upper limit (when stable) [milliseconds] ||  || - ||
+|| srttMeanDeviationLimit || RTT mean deviation upper limit [milliseconds] ||  || - ||
+|| darkPhantomLimitBoostTime || Dark spirit time limit Acceleration time [seconds] ||  || - ||
+|| darkPhantomLimitBoostScale || Dark spirit time limit acceleration time magnification ||  || - ||
+|| multiplayDisableLifeTime || Multiplayer invalidation life ||  || - ||
+|| abyssMultiplayLimit || Abyss Spirit Multiplayer Count || The number of times the abyss spirit enters the host in the abyss area || - ||
+|| phantomWarpMinimumTime || Minimum time for a ghost to warp [seconds] ||  || - ||
+|| phantomReturnDelayTime || Delay time until returning after using black crystal [seconds] ||  || - ||
+|| terminateTimeoutTime || Time-out time waiting for disconnection ||  || - ||
+|| penaltyPointLanDisconnect || Penalty addition value without LAN ||  || - ||
+|| penaltyPointSignout || Penalty addition value for sign-out ||  || - ||
+|| penaltyPointReboot || Penalty addition value due to power failure ||  || - ||
+|| penaltyPointBeginPenalize || Penalty value that activates the penalty ||  || - ||
+|| penaltyForgiveItemLimitTime || Sales time limit for "Line Reason" [seconds] ||  || - ||
+|| allAreaSearchRate_CoopBlue || Area search rate: Relief Blue Spirit [0-100] || Percentage of searching for intrusion targets from all areas (%) || - ||
+|| allAreaSearchRate_VsBlue || Area search rate: Retribution Blue Spirit [0-100] || Percentage of searching for intrusion targets from all areas (%) || - ||
+|| allAreaSearchRate_BellGuard || Area search rate: Kanemori Ashrei [0-100] || Percentage of searching for intrusion targets from all areas (%) || - ||
+|| bloodMessageEvalHealRate || HP recovery rate at the time of blood character evaluation [0-100] ||  || - ||
+|| smallGoldSuccessHostRewardId || Kogane Rei Success Return Host Reward ID ||  || - ||
+|| doorInvalidPlayAreaExtents || Play area invalidation distance near the door [m] || The area around the black door that separates the multiplayer area is set to the systematically invalid play area (-1). At that time, make the invalid area thicker with this parameter on the thinner side of the OBJ's bounding box with a black door. || - ||
+|| signDisplayMax || Maximum number of simultaneous displays of signs ||  || - ||
+|| bloodStainDisplayMax || Maximum number of blood stains displayed at the same time ||  || - ||
+|| bloodMessageDisplayMax || Maximum number of blood characters displayed at the same time ||  || - ||
+|| pad00 || reserve ||  || - ||
+|| pad10 || reserve ||  || - ||
+|| summonMessageInterval || Summon message is displayed at interval [seconds] ||  || - ||
+|| hostRegisterUpdateTime || Host periodic update request interval [seconds] ||  || - ||
+|| hostTimeOutTime || Host guest join wait timeout time [seconds] ||  || - ||
+|| guestUpdateTime || Authentication wait timeout time from guest host [seconds] ||  || - ||
+|| guestPlayerNoTimeOutTime || Guest PlayNo Sync wait timeout time [seconds] ||  || - ||
+|| hostPlayerNoTimeOutTime || Host PlayNo Sync wait timeout time [seconds] ||  || - ||
+|| requestSearchQuickMatchLimit || RequestSearchQuickMatch limit value || Actually u8 is enough || - ||
+|| AvatarMatchSearchMax || Maximum number of people when searching for avatar battles (unused) || Actually u8 is enough || - ||
+|| BattleRoyalMatchSearchMin || Minimum number of people when searching for battle royale (unused) || Actually u8 is enough || - ||
+|| BattleRoyalMatchSearchMax || Maximum number of people when searching for battle royale (unused) || Actually u8 is enough || - ||
+|| pad11 || reserve ||  || - ||
+|| VisitorListMax || Maximum number of people to get a list of visitors || Actually u8 is enough || - ||
+|| VisitorTimeOutTime || Time-out waiting for visit ||  || - ||
+|| DownloadSpan || Visitor list download interval [seconds] ||  || - ||
+|| VisitorGuestRequestMessageIntervalSec || Visit search message display interval [seconds] || Display interval [seconds] of messages sent by visiting guests while searching for a destination || - ||
+|| wanderGhostIntervalLifeTime || Wandering illusion life || Wandering illusion life || - ||
+|| pad13 || reserve || reserve || - ||
+|| YellowMonkTimeOutTime || Yellow robe's old man waiting time out ||  || - ||
+|| YellowMonkDownloadSpan || Yellow robe list download interval ||  || - ||
+|| YellowMonkOverallFlowTimeOutTime || Yellow robe's whole flow time-out ||  || - ||
+|| pad14 || reserve ||  || - ||
+|| pad14 || reserve ||  || - ||

@@ -1,0 +1,32 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Sound radius magnification,Normal when 1x. When set to 0, the radius of sound becomes 0 (SE and SFX are unrelated game-like parameters).,0,99,1000,f32,0.01,%f,f32,Wrap
+Special effect 0 applied when stepping on hit material,When the character steps on the hit material, the set special effect 0 is exhibited.,-1,99999999,2000,s32,1,%d,s32,Wrap
+Special effect applied when stepping on the hit material 1,When the character steps on the hit material, the set special effect 1 is exhibited.,-1,99999999,2000,s32,1,%d,s32,Wrap
+Foot effect height type,Height to generate foot effect,0,2,3000,u8,1,%d,HMP_FOOT_EFFECT_HEIGHT_TYPE,Wrap
+Foot effect orientation type,Direction of foot effect,0,2,3000,u8,1,%d,HMP_FOOT_EFFECT_DIR_TYPE,Wrap
+Ground height type,For floating items such as the surface of the water,0,1,4000,u8,1,%d,HMP_FLOOR_HEIGHT_TYPE,Wrap
+Is fall damage invalid?,Set to 1 for floors that are not subject to fall damage,0,1,6000,u8,1,%d,u8,Wrap
+Is it a hard material for sound echo?,Is it a hard material for sound echo? (0: soft, 1: hard),0,1,5001,u8,1,%d,u8,Wrap
+Material hardness type,The hardness of the material. Used for soft contact processing of rigid bodies.,0,2,5000,u8,1,%u,HMP_HARDNESS_TYPE,Wrap
+pad,pad,,,99999999,dummy8,,%u,dummy8,Wrap
+Special effect applied when stepping on the hit material 0 2nd lap,Special effect applied when stepping on the hit material 0 2nd lap,-1,99999999,2200,s32,1,%d,s32,Wrap
+Special effect applied when stepping on the hit material 0 3rd lap,Special effect applied when stepping on the hit material 0 3rd lap,-1,99999999,2201,s32,1,%d,s32,Wrap
+Special effect applied when stepping on the hit material 0 4th lap,Special effect applied when stepping on the hit material 0 4th lap,-1,99999999,2202,s32,1,%d,s32,Wrap
+Special effect applied when stepping on the hit material 0 5th lap,Special effect applied when stepping on the hit material 0 5th lap,-1,99999999,2203,s32,1,%d,s32,Wrap
+Special effect applied when stepping on the hit material 0 6th lap,Special effect applied when stepping on the hit material 0 6th lap,-1,99999999,2204,s32,1,%d,s32,Wrap
+Special effect applied when stepping on the hit material 0 7th lap,Special effect applied when stepping on the hit material 0 7th lap,-1,99999999,2205,s32,1,%d,s32,Wrap
+Special effect applied when stepping on the hit material 0 8th lap,Special effect applied when stepping on the hit material 0 8th lap,-1,99999999,2206,s32,1,%d,s32,Wrap
+Special effect applied when stepping on the hit material 1st lap,Special effect applied when stepping on the hit material 1st lap,-1,99999999,2300,s32,1,%d,s32,Wrap
+Special effect applied when stepping on the hit material 1 3rd lap,Special effect applied when stepping on the hit material 1 3rd lap,-1,99999999,2301,s32,1,%d,s32,Wrap
+Special effect when stepping on the hit material 1 4th lap,Special effect applied when stepping on the hit material 1 4th lap,-1,99999999,2302,s32,1,%d,s32,Wrap
+Special effect applied when stepping on the hit material 1 5th lap,Special effect applied when stepping on the hit material 1 5th lap,-1,99999999,2303,s32,1,%d,s32,Wrap
+Special effect when stepping on the hit material 1 6th lap,Special effect when stepping on the hit material 1 6th lap,-1,99999999,2304,s32,1,%d,s32,Wrap
+Special effect applied when stepping on the hit material 1 7th lap,Special effect applied when stepping on the hit material 1 7th lap,-1,99999999,2305,s32,1,%d,s32,Wrap
+Special effect when stepping on the hit material 1 8th lap,Special effect applied when stepping on the hit material 1 8th lap,-1,99999999,2306,s32,1,%d,s32,Wrap
+Hit material replacement (rain),Hit material change destination ID due to weather (rain) (-1: No change),-1,99,7000,s16,1,%d,s16,Wrap
+pad,pad,,,99999999,dummy8,,,dummy8,None
+Wet special effect ID_00,Special effect for wetting 00,-1,99999999,3400,s32,1,%d,s32,Wrap
+Wet special effect ID_01,Special effects for wetting 01,-1,99999999,3410,s32,1,%d,s32,Wrap
+Wet special effect ID_02,Special effects for wetting 02,-1,99999999,3420,s32,1,%d,s32,Wrap
+Wet special effect ID_03,Special effects for wetting 03,-1,99999999,3430,s32,1,%d,s32,Wrap
+Wet special effect ID_04,Special effects for wetting 04,-1,99999999,3440,s32,1,%d,s32,Wrap

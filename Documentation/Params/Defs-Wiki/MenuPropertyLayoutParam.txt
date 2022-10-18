@@ -1,0 +1,6 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| LayoutPath || Layout path ||  || - ||
+|| PropertyID || Property ID ||  || MENU_PROPERTY_ID ||
+|| CaptionTextID || Item name Text ID || If a valid text ID is set, this will be displayed in preference to the property name. || - ||
+|| HelpTextID || Help text ID || Only if this is a valid text ID will it be selectable in the field help. || - ||
+|| reserved || reserve ||  || - ||

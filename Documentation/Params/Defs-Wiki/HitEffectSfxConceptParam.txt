@@ -1,0 +1,15 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| atkIron_1 || Iron: Concept 1 || Iron: Concept 1 || HIT_EFFECT_SFX_CONCEPT_TYPE ||
+|| atkIron_2 || Iron: Concept 2 || Iron: Concept 2 || HIT_EFFECT_SFX_CONCEPT_TYPE ||
+|| atkLeather_1 || Made of leather: Concept 1 || Leather: Concept 1 || HIT_EFFECT_SFX_CONCEPT_TYPE ||
+|| atkLeather_2 || Made of leather: Concept 2 || Leather: Concept 2 || HIT_EFFECT_SFX_CONCEPT_TYPE ||
+|| atkWood_1 || Wooden: Concept 1 || Wooden: Concept 1 || HIT_EFFECT_SFX_CONCEPT_TYPE ||
+|| atkWood_2 || Wooden: Concept 2 || Wooden: Concept 2 || HIT_EFFECT_SFX_CONCEPT_TYPE ||
+|| atkBody_1 || Meat: Concept 1 || Meat: Concept 1 || HIT_EFFECT_SFX_CONCEPT_TYPE ||
+|| atkBody_2 || Meat: Concept 2 || Meat: Concept 2 || HIT_EFFECT_SFX_CONCEPT_TYPE ||
+|| atkStone_1 || Stone: Concept 1 || Corrosion: Concept 1 || HIT_EFFECT_SFX_CONCEPT_TYPE ||
+|| atkStone_2 || Stone: Concept 2 || Corrosion: Concept 2 || HIT_EFFECT_SFX_CONCEPT_TYPE ||
+|| pad || pad ||  || - ||
+|| atkNone_1 || None: Concept 1 || None: Concept 1 || HIT_EFFECT_SFX_CONCEPT_TYPE ||
+|| atkNone_2 || None: Concept 2 || None: Concept 2 || HIT_EFFECT_SFX_CONCEPT_TYPE ||
+|| reserve || Reserved area ||  || - ||

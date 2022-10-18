@@ -1,0 +1,39 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| lodRange || LOD distance ||  || - ||
+|| lod0ClusterType || LOD0 cluster type ||  || GRASS_CLUSTER_TYPE_ENUM ||
+|| lod1ClusterType || LOD1 cluster type ||  || GRASS_CLUSTER_TYPE_ENUM ||
+|| lod2ClusterType || LOD2 cluster type ||  || GRASS_CLUSTER_TYPE_ENUM ||
+|| pad0 || pad0 ||  || - ||
+|| distributionType || Placement method ||  || GRASS_DISTRIBUTION_TYPE_ENUM ||
+|| baseDensity || Basic density ||  || - ||
+|| model0Name || Model name (0) ||  || - ||
+|| flatTextureName || Flat texture name ||  || - ||
+|| billboardTextureName || Billboard texture name ||  || - ||
+|| normalInfluence || Effect of tilt (%) ||  || - ||
+|| inclinationMax || Maximum tilt angle (degrees) ||  || - ||
+|| inclinationJitter || Randomness of tilt angle (degrees) ||  || - ||
+|| scaleBaseMin || Width scale range (min,%) ||  || - ||
+|| scaleBaseMax || Width scale range (max,%) ||  || - ||
+|| scaleHeightMin || Height scale range (min,%) ||  || - ||
+|| scaleHeightMax || Height scale range (max,%) ||  || - ||
+|| colorShade1_r || Multiplication color 1 (red) ||  || - ||
+|| colorShade1_g || Multiplication color 1 (green) ||  || - ||
+|| colorShade1_b || Multiplication color 1 (blue) ||  || - ||
+|| colorShade2_r || Multiplication color 2 (red) ||  || - ||
+|| colorShade2_g || Multiplication color 2 (green) ||  || - ||
+|| colorShade2_b || Multiplication color 2 (blue) ||  || - ||
+|| flatSplitType || Separation of planes ||  || GRASS_FLAT_SPLIT_TYPE_ENUM ||
+|| flatBladeCount || Number of planes ||  || - ||
+|| flatSlant || Plane angle (degrees) ||  || - ||
+|| flatRadius || Plane distance ||  || - ||
+|| castShadow || Do you want to cast a shadow ||  || GRASS_SHADOW_TYPE_ENUM ||
+|| windAmplitude || Amplitude (magnitude of shaking) ||  || - ||
+|| pad1 || pad1 ||  || - ||
+|| windCycle || Cycle (speed) ||  || - ||
+|| orientationAngle || Direction (degree) || Random for -1 || - ||
+|| orientationRange || Directional range (degrees) ||  || - ||
+|| spacing || Model spacing ||  || - ||
+|| dithering || Dithering ||  || GRASS_DITHERING_TYPE_ENUM ||
+|| pad || pad2 ||  || - ||
+|| simpleModelName || Simple model name ||  || - ||
+|| model1Name || Model name (1) ||  || - ||

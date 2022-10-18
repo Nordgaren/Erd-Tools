@@ -1,0 +1,14 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| baseColorR || Base color value R || Base color color R. || - ||
+|| baseColorG || Base color value G || Base color color G. || - ||
+|| baseColorB || Base color value B || Base color color B. || - ||
+|| reserve_0 || Spare 1 ||  || - ||
+|| baseColorA || Base color% || Base color override rate. || - ||
+|| metallic || Metallic value || It's metallic. || - ||
+|| reserve_1 || Spare 2 ||  || - ||
+|| reserve_2 || Spare 3 ||  || - ||
+|| reserve_3 || Spare 4 ||  || - ||
+|| metallicRate || Metallic% || Metallic override rate. || - ||
+|| shininessRate || Shininess% || Shininess override rate. || - ||
+|| shininess || Shininess value || Shininess. || - ||
+|| reserve_4 || Spare 5 ||  || - ||

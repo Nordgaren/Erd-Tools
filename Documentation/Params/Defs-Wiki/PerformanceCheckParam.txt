@@ -1,0 +1,8 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| workTag || Report destination_Job type tag || Report destination_Job type tag || PerformanceCheckParamWork ||
+|| categoryTag || Report destination_category tag || Report destination_category tag || PerformanceCheckParamCategory ||
+|| compareType || Comparison symbol || Comparison symbol || PerformanceCheckParamCompare ||
+|| dummy1 || Reservation 1 || Reservation 1 || - ||
+|| compareValue || Comparison value || Comparison value || - ||
+|| dummy2 || Reservation 2 || Reservation 2 || - ||
+|| userTag || Report destination_user tag || Report to_Performance person tag || - ||

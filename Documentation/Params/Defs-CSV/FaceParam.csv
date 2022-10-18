@@ -1,0 +1,243 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Face part ID,Face part ID,0,255,1000,u8,1,%d,u8,Wrap
+Skin color (R),Skin color (R),0,255,1010,u8,1,%d,u8,Wrap
+Skin color (G),Skin color (G),0,255,1011,u8,1,%d,u8,Wrap
+Skin color (B),Skin color (B),0,255,1012,u8,1,%d,u8,Wrap
+Shiny skin,Shiny skin,0,255,1020,u8,1,%d,u8,Wrap
+pores,pores,0,255,1030,u8,1,%d,u8,Wrap
+Blue beard,Blue beard,0,255,1040,u8,1,%d,u8,Wrap
+Bear,Bear,0,255,1050,u8,1,%d,u8,Wrap
+Bear color (R),Bear color (R),0,255,1060,u8,1,%d,u8,Wrap
+Bear color (G),Bear color (G),0,255,1061,u8,1,%d,u8,Wrap
+Bear color (B),Bear color (B),0,255,1062,u8,1,%d,u8,Wrap
+cheek,cheek,0,255,1070,u8,1,%d,u8,Wrap
+Teak color (R),Teak color (R),0,255,1080,u8,1,%d,u8,Wrap
+Teak color (G),Teak color (G),0,255,1081,u8,1,%d,u8,Wrap
+Teak color (B),Teak color (B),0,255,1082,u8,1,%d,u8,Wrap
+Eyeline,Eyeline,0,255,1090,u8,1,%d,u8,Wrap
+Eyeliner color (R),Eyeliner color (R),0,255,1100,u8,1,%d,u8,Wrap
+Eyeliner color (G),Eyeliner color (G),0,255,1101,u8,1,%d,u8,Wrap
+Eyeliner color (B),Eyeliner color (B),0,255,1102,u8,1,%d,u8,Wrap
+Eye shadow (bottom),Eye shadow (bottom),0,255,1110,u8,1,%d,u8,Wrap
+Eyeshadow (bottom) color (R),Eyeshadow (bottom) color (R),0,255,1120,u8,1,%d,u8,Wrap
+Eyeshadow (bottom) color (G),Eyeshadow (bottom) color (G),0,255,1121,u8,1,%d,u8,Wrap
+Eyeshadow (bottom) color (B),Eyeshadow (bottom) color (B),0,255,1122,u8,1,%d,u8,Wrap
+Eye shadow (top),Eye shadow (top),0,255,1130,u8,1,%d,u8,Wrap
+Eyeshadow (top) color (R),Eyeshadow (top) color (R),0,255,1140,u8,1,%d,u8,Wrap
+Eyeshadow (top) color (G),Eyeshadow (top) color (G),0,255,1141,u8,1,%d,u8,Wrap
+Eyeshadow (top) color (B),Eyeshadow (top) color (B),0,255,1142,u8,1,%d,u8,Wrap
+lipstick,lipstick,0,255,1150,u8,1,%d,u8,Wrap
+Lipstick color (R),Lipstick color (R),0,255,1160,u8,1,%d,u8,Wrap
+Lipstick color (G),Lipstick color (G),0,255,1161,u8,1,%d,u8,Wrap
+Lipstick color (B),Lipstick color (B),0,255,1162,u8,1,%d,u8,Wrap
+Hair thickness,Hair thickness,0,255,1200,u8,1,%d,u8,Wrap
+Hair color (R),Hair color (R),0,255,1210,u8,1,%d,u8,Wrap
+Hair color (G),Hair color (G),0,255,1211,u8,1,%d,u8,Wrap
+Hair color (B),Hair color (B),0,255,1212,u8,1,%d,u8,Wrap
+Eyeball part ID,Eyeball part ID,0,255,1300,u8,1,%d,u8,Wrap
+Iris color (R),Right eye iris color (R),0,255,1400,u8,1,%d,u8,Wrap
+Iris color (G),Right eye iris color (G),0,255,1401,u8,1,%d,u8,Wrap
+Iris color (B),Right eye iris color (B),0,255,1402,u8,1,%d,u8,Wrap
+The size of the iris,The size of the iris of the right eye,0,255,1410,u8,1,%d,u8,Wrap
+Cloudiness of the crystalline lens,Cloudiness of the crystalline lens of the right eye,0,255,1420,u8,1,%d,u8,Wrap
+The turbid color of the crystalline lens (R),The turbid color of the crystalline lens of the right eye (R),0,255,1430,u8,1,%d,u8,Wrap
+The turbid color of the crystalline lens (G),The turbid color of the crystalline lens of the right eye (G),0,255,1431,u8,1,%d,u8,Wrap
+The turbid color of the crystalline lens (B),The turbid color of the crystalline lens of the right eye (B),0,255,1432,u8,1,%d,u8,Wrap
+White eye color (R),White eye color of the right eye (R),0,255,1440,u8,1,%d,u8,Wrap
+White eye color (G),White eye color of the right eye (G),0,255,1441,u8,1,%d,u8,Wrap
+White eye color (B),White eye color of the right eye (B),0,255,1442,u8,1,%d,u8,Wrap
+Position of the iris,Position of the iris of the right eye,0,255,1450,u8,1,%d,u8,Wrap
+Iris color (R),Left eye iris color (R),0,255,1500,u8,1,%d,u8,Wrap
+Iris color (G),Left eye iris color (G),0,255,1501,u8,1,%d,u8,Wrap
+Iris color (B),Left eye iris color (B),0,255,1502,u8,1,%d,u8,Wrap
+The size of the iris,The size of the iris of the left eye,0,255,1510,u8,1,%d,u8,Wrap
+Cloudiness of the crystalline lens,Cloudiness of the crystalline lens of the left eye,0,255,1520,u8,1,%d,u8,Wrap
+The turbid color of the crystalline lens (R),The turbid color of the crystalline lens of the left eye (R),0,255,1530,u8,1,%d,u8,Wrap
+The turbid color of the crystalline lens (G),The turbid color of the crystalline lens of the left eye (G),0,255,1531,u8,1,%d,u8,Wrap
+The turbid color of the crystalline lens (B),The turbid color of the crystalline lens of the left eye (B),0,255,1532,u8,1,%d,u8,Wrap
+White eye color (R),White eye color of the left eye (R),0,255,1540,u8,1,%d,u8,Wrap
+White eye color (G),White eye color of the left eye (G),0,255,1541,u8,1,%d,u8,Wrap
+White eye color (B),White eye color of the left eye (B),0,255,1542,u8,1,%d,u8,Wrap
+Position of the iris,Position of the iris of the left eye,0,255,1550,u8,1,%d,u8,Wrap
+Hair part ID,Hair part ID,0,255,1600,u8,1,%d,u8,Wrap
+Hair color (R),Hair color (R),0,255,1610,u8,1,%d,u8,Wrap
+Hair color (G),Hair color (G),0,255,1611,u8,1,%d,u8,Wrap
+Hair color (B),Hair color (B),0,255,1612,u8,1,%d,u8,Wrap
+Gloss,Hair gloss,0,255,1620,u8,1,%d,u8,Wrap
+Blackness at the base,Blackness at the base of hair,0,255,1630,u8,1,%d,u8,Wrap
+Amount of gray hair,Amount of white hair,0,255,1640,u8,1,%d,u8,Wrap
+Beard part ID,Beard part ID,0,255,1700,u8,1,%d,u8,Wrap
+Beard color (R),Beard color (R),0,255,1710,u8,1,%d,u8,Wrap
+Beard color (G),Beard color (G),0,255,1711,u8,1,%d,u8,Wrap
+Beard color (B),Beard color (B),0,255,1712,u8,1,%d,u8,Wrap
+Gloss,Beard luster,0,255,1720,u8,1,%d,u8,Wrap
+Blackness at the base,Blackness at the base of the beard,0,255,1730,u8,1,%d,u8,Wrap
+Amount of gray hair,Amount of white hair with a beard,0,255,1740,u8,1,%d,u8,Wrap
+Eyebrow part ID,Eyebrow part ID,0,255,1800,u8,1,%d,u8,Wrap
+Eyebrow color (R),Eyebrow color (R),0,255,1810,u8,1,%d,u8,Wrap
+Eyebrow color (G),Eyebrow color (G),0,255,1811,u8,1,%d,u8,Wrap
+Eyebrow color (B),Eyebrow color (B),0,255,1812,u8,1,%d,u8,Wrap
+Gloss,Glossy eyebrows,0,255,1820,u8,1,%d,u8,Wrap
+Blackness at the base,Blackness at the base of the eyebrows,0,255,1830,u8,1,%d,u8,Wrap
+Amount of gray hair,Amount of white hair on the eyebrows,0,255,1840,u8,1,%d,u8,Wrap
+Eyelash parts ID,Eyelash parts ID,0,255,1900,u8,1,%d,u8,Wrap
+Eyelash color (R),Eyelash color (R),0,255,1910,u8,1,%d,u8,Wrap
+Eyelash color (G),Eyelash color (G),0,255,1911,u8,1,%d,u8,Wrap
+Eyelash color (B),Eyelash color (B),0,255,1912,u8,1,%d,u8,Wrap
+Decorative part ID,Decorative part ID,0,255,2000,u8,1,%d,u8,Wrap
+Decoration color (R),Decoration color (R),0,255,2010,u8,1,%d,u8,Wrap
+Decoration color (G),Decoration color (G),0,255,2011,u8,1,%d,u8,Wrap
+Decorative color (B),Decorative color (B),0,255,2012,u8,1,%d,u8,Wrap
+Decal part ID,Decal part ID,0,255,2100,u8,1,%d,u8,Wrap
+Decal position (x),Decal position (x),0,255,2110,u8,1,%d,u8,Wrap
+Decal position (y),Decal position (y),0,255,2111,u8,1,%d,u8,Wrap
+Decal angle,Decal angle,0,255,2120,u8,1,%d,u8,Wrap
+Decal scale,Decal scale,0,255,2130,u8,1,%d,u8,Wrap
+Decal color (R),Decal color (R),0,255,2140,u8,1,%d,u8,Wrap
+Decal color (G),Decal color (G),0,255,2141,u8,1,%d,u8,Wrap
+Decal color (B),Decal color (B),0,255,2142,u8,1,%d,u8,Wrap
+Decal gloss,Decal gloss,0,255,2150,u8,1,%d,u8,Wrap
+Decal reversal,Decal reversal,0,1,2160,u8,1,%d,u8,Wrap
+Character body head scale,Character body head scale,0,255,2500,u8,1,%d,u8,Wrap
+Character body chest scale,Character body chest scale,0,255,2510,u8,1,%d,u8,Wrap
+Character body type abdominal scale,Character body type abdominal scale,0,255,2520,u8,1,%d,u8,Wrap
+Character body right arm scale,Character body right arm scale,0,255,2530,u8,1,%d,u8,Wrap
+Character body right leg scale,Character body right leg scale,0,255,2540,u8,1,%d,u8,Wrap
+Character body shape left arm scale,Character body shape left arm scale,0,255,2550,u8,1,%d,u8,Wrap
+Character body type left leg scale,Character body type left leg scale,0,255,2560,u8,1,%d,u8,Wrap
+Burn scars,Burn scars,0,255,2200,u8,1,%d,u8,Wrap
+Eyeball part ID,Whether to overwrite the eyeball part ID,0,1,10000,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Iris color,Do you want to overwrite the color of the iris?,0,1,10010,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Cloudiness of the crystalline lens,Do you want to overwrite the turbidity of the crystalline lens?,0,1,10020,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+The turbid color of the crystalline lens,Do you want to overwrite the muddy color of the crystalline lens?,0,1,10030,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+White eye color,Do you want to overwrite the white eye color?,0,1,10040,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Burn scars,Do you want to overwrite the burn scars?,0,1,10050,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+pad2,,,,10051,dummy8,,,dummy8,None
+pad,,,,10052,dummy8,,,dummy8,None
+age,age,0,255,3000,u8,1,%d,u8,Wrap
+sex,sex,0,255,3100,u8,1,%d,u8,Wrap
+Exaggeration (model),Exaggeration (model),0,255,3200,u8,1,%d,u8,Wrap
+Exaggeration (texture),Exaggeration (texture),0,255,3300,u8,1,%d,u8,Wrap
+Face creation geometry data 00,Face creation geometry data 00,0,255,3400,u8,1,%d,u8,Wrap
+Face creation geometry data 01,Face creation geometry data 01,0,255,3401,u8,1,%d,u8,Wrap
+Face creation geometry data 02,Face creation geometry data 02,0,255,3402,u8,1,%d,u8,Wrap
+Face creation geometry data 03,Face creation geometry data 03,0,255,3403,u8,1,%d,u8,Wrap
+Face creation geometry data 04,Face creation geometry data 04,0,255,3404,u8,1,%d,u8,Wrap
+Face creation geometry data 05,Face creation geometry data 05,0,255,3405,u8,1,%d,u8,Wrap
+Face creation geometry data 06,Face creation geometry data 06,0,255,3406,u8,1,%d,u8,Wrap
+Face creation geometry data 07,Face creation geometry data 07,0,255,3407,u8,1,%d,u8,Wrap
+Face creation geometry data 08,Face creation geometry data 08,0,255,3408,u8,1,%d,u8,Wrap
+Face creation geometry data 09,Face creation geometry data 09,0,255,3409,u8,1,%d,u8,Wrap
+Face creation geometry data 10,Face creation geometry data 10,0,255,3410,u8,1,%d,u8,Wrap
+Face creation geometry data 11,Face creation geometry data 11,0,255,3411,u8,1,%d,u8,Wrap
+Face creation geometry data 12,Face creation geometry data 12,0,255,3412,u8,1,%d,u8,Wrap
+Face creation geometry data 13,Face creation geometry data 13,0,255,3413,u8,1,%d,u8,Wrap
+Face creation geometry data 14,Face creation geometry data 14,0,255,3414,u8,1,%d,u8,Wrap
+Face creation geometry data 15,Face creation geometry data 15,0,255,3415,u8,1,%d,u8,Wrap
+Face creation geometry data 16,Face creation geometry data 16,0,255,3416,u8,1,%d,u8,Wrap
+Face creation geometry data 17,Face creation geometry data 17,0,255,3417,u8,1,%d,u8,Wrap
+Face creation geometry data 18,Face creation geometry data 18,0,255,3418,u8,1,%d,u8,Wrap
+Face creation geometry data 19,Face creation geometry data 19,0,255,3419,u8,1,%d,u8,Wrap
+Face creation geometry data 20,Face creation geometry data 20,0,255,3420,u8,1,%d,u8,Wrap
+Face creation geometry data 21,Face creation geometry data 21,0,255,3421,u8,1,%d,u8,Wrap
+Face creation geometry data 22,Face creation geometry data 22,0,255,3422,u8,1,%d,u8,Wrap
+Face creation geometry data 23,Face creation geometry data 23,0,255,3423,u8,1,%d,u8,Wrap
+Face creation geometry data 24,Face creation geometry data 24,0,255,3424,u8,1,%d,u8,Wrap
+Face creation geometry data 25,Face creation geometry data 25,0,255,3425,u8,1,%d,u8,Wrap
+Face creation geometry data 26,Face creation geometry data 26,0,255,3426,u8,1,%d,u8,Wrap
+Face creation geometry data 27,Face creation geometry data 27,0,255,3427,u8,1,%d,u8,Wrap
+Face creation geometry data 28,Face creation geometry data 28,0,255,3428,u8,1,%d,u8,Wrap
+Face creation geometry data 29,Face creation geometry data 29,0,255,3429,u8,1,%d,u8,Wrap
+Face creation geometry data 30,Face creation geometry data 30,0,255,3430,u8,1,%d,u8,Wrap
+Face creation geometry data 31,Face creation geometry data 31,0,255,3431,u8,1,%d,u8,Wrap
+Face creation geometry data 32,Face creation geometry data 32,0,255,3432,u8,1,%d,u8,Wrap
+Face creation geometry data 33,Face creation geometry data 33,0,255,3433,u8,1,%d,u8,Wrap
+Face creation geometry data 34,Face creation geometry data 34,0,255,3434,u8,1,%d,u8,Wrap
+Face creation geometry data 35,Face creation geometry data 35,0,255,3435,u8,1,%d,u8,Wrap
+Face creation geometry data 36,Face creation geometry data 36,0,255,3436,u8,1,%d,u8,Wrap
+Face creation geometry data 37,Face creation geometry data 37,0,255,3437,u8,1,%d,u8,Wrap
+Face creation geometry data 38,Face creation geometry data 38,0,255,3438,u8,1,%d,u8,Wrap
+Face creation geometry data 39,Face creation geometry data 39,0,255,3439,u8,1,%d,u8,Wrap
+Face creation geometry data 40,Face creation geometry data 40,0,255,3440,u8,1,%d,u8,Wrap
+Face creation geometry data 41,Face creation geometry data 41,0,255,3441,u8,1,%d,u8,Wrap
+Face creation geometry data 42,Face creation geometry data 42,0,255,3442,u8,1,%d,u8,Wrap
+Face creation geometry data 43,Face creation geometry data 43,0,255,3443,u8,1,%d,u8,Wrap
+Face creation geometry data 44,Face creation geometry data 44,0,255,3444,u8,1,%d,u8,Wrap
+Face creation geometry data 45,Face creation geometry data 45,0,255,3445,u8,1,%d,u8,Wrap
+Face creation geometry data 46,Face creation geometry data 46,0,255,3446,u8,1,%d,u8,Wrap
+Face creation geometry data 47,Face creation geometry data 47,0,255,3447,u8,1,%d,u8,Wrap
+Face creation geometry data 48,Face creation geometry data 48,0,255,3448,u8,1,%d,u8,Wrap
+Face creation geometry data 49,Face creation geometry data 49,0,255,3449,u8,1,%d,u8,Wrap
+Face creation geometry data 50,Face creation geometry data 50,0,255,3450,u8,1,%d,u8,Wrap
+Face creation geometry data 51,Face creation geometry data 51,0,255,3451,u8,1,%d,u8,Wrap
+Face creation geometry data 52,Face creation geometry data 52,0,255,3452,u8,1,%d,u8,Wrap
+Face creation geometry data 53,Face creation geometry data 53,0,255,3453,u8,1,%d,u8,Wrap
+Face creation geometry data 54,Face creation geometry data 54,0,255,3454,u8,1,%d,u8,Wrap
+Face creation geometry data 55,Face creation geometry data 55,0,255,3455,u8,1,%d,u8,Wrap
+Face creation geometry data 56,Face creation geometry data 56,0,255,3456,u8,1,%d,u8,Wrap
+Face creation geometry data 57,Face creation geometry data 57,0,255,3457,u8,1,%d,u8,Wrap
+Face creation geometry data 58,Face creation geometry data 58,0,255,3458,u8,1,%d,u8,Wrap
+Face creation geometry data 59,Face creation geometry data 59,0,255,3459,u8,1,%d,u8,Wrap
+Face creation geometry data 60,Face creation geometry data 60,0,255,3460,u8,1,%d,u8,Wrap
+Face creation texture data 00,Face creation texture data 00,0,255,3500,u8,1,%d,u8,Wrap
+Face creation texture data 01,Face creation texture data 01,0,255,3501,u8,1,%d,u8,Wrap
+Face creation texture data 02,Face creation texture data 02,0,255,3502,u8,1,%d,u8,Wrap
+Face creation texture data 03,Face creation texture data 03,0,255,3503,u8,1,%d,u8,Wrap
+Face creation texture data 04,Face creation texture data 04,0,255,3504,u8,1,%d,u8,Wrap
+Face creation texture data 05,Face creation texture data 05,0,255,3505,u8,1,%d,u8,Wrap
+Face creation texture data 06,Face creation texture data 06,0,255,3506,u8,1,%d,u8,Wrap
+Face creation texture data 07,Face creation texture data 07,0,255,3507,u8,1,%d,u8,Wrap
+Face creation texture data 08,Face creation texture data 08,0,255,3508,u8,1,%d,u8,Wrap
+Face creation texture data 09,Face creation texture data 09,0,255,3509,u8,1,%d,u8,Wrap
+Face creation texture data 10,Face creation texture data 10,0,255,3510,u8,1,%d,u8,Wrap
+Face creation texture data 11,Face creation texture data 11,0,255,3511,u8,1,%d,u8,Wrap
+Face creation texture data 12,Face creation texture data 12,0,255,3512,u8,1,%d,u8,Wrap
+Face creation texture data 13,Face creation texture data 13,0,255,3513,u8,1,%d,u8,Wrap
+Face creation texture data 14,Face creation texture data 14,0,255,3514,u8,1,%d,u8,Wrap
+Face creation texture data 15,Face creation texture data 15,0,255,3515,u8,1,%d,u8,Wrap
+Face creation texture data 16,Face creation texture data 16,0,255,3516,u8,1,%d,u8,Wrap
+Face creation texture data 17,Face creation texture data 17,0,255,3517,u8,1,%d,u8,Wrap
+Face creation texture data 18,Face creation texture data 18,0,255,3518,u8,1,%d,u8,Wrap
+Face creation texture data 19,Face creation texture data 19,0,255,3519,u8,1,%d,u8,Wrap
+Face creation texture data 20,Face creation texture data 20,0,255,3520,u8,1,%d,u8,Wrap
+Face creation texture data 21,Face creation texture data 21,0,255,3521,u8,1,%d,u8,Wrap
+Face creation texture data 22,Face creation texture data 22,0,255,3522,u8,1,%d,u8,Wrap
+Face creation texture data 23,Face creation texture data 23,0,255,3523,u8,1,%d,u8,Wrap
+Face creation texture data 24,Face creation texture data 24,0,255,3524,u8,1,%d,u8,Wrap
+Face creation texture data 25,Face creation texture data 25,0,255,3525,u8,1,%d,u8,Wrap
+Face creation texture data 26,Face creation texture data 26,0,255,3526,u8,1,%d,u8,Wrap
+Face creation texture data 27,Face creation texture data 27,0,255,3527,u8,1,%d,u8,Wrap
+Face creation texture data 28,Face creation texture data 28,0,255,3528,u8,1,%d,u8,Wrap
+Face creation texture data 29,Face creation texture data 29,0,255,3529,u8,1,%d,u8,Wrap
+Face creation texture data 30,Face creation texture data 30,0,255,3530,u8,1,%d,u8,Wrap
+Face creation texture data 31,Face creation texture data 31,0,255,3531,u8,1,%d,u8,Wrap
+Face creation texture data 32,Face creation texture data 32,0,255,3532,u8,1,%d,u8,Wrap
+Face creation texture data 33,Face creation texture data 33,0,255,3533,u8,1,%d,u8,Wrap
+Face creation texture data 34,Face creation texture data 34,0,255,3534,u8,1,%d,u8,Wrap
+Face creation texture data 35,Face creation texture data 35,0,255,3535,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 00,Face creation geometry asymmetric data 00,0,255,3600,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 01,Face creation geometry asymmetric data 01,0,255,3601,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 02,Face creation geometry asymmetric data 02,0,255,3602,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 03,Face creation geometry asymmetric data 03,0,255,3603,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 04,Face creation geometry asymmetric data 04,0,255,3604,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 05,Face creation geometry asymmetric data 05,0,255,3605,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 06,Face creation geometry asymmetric data 06,0,255,3606,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 07,Face creation geometry asymmetric data 07,0,255,3607,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 08,Face creation geometry asymmetric data 08,0,255,3608,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 09,Face creation geometry asymmetric data 09,0,255,3609,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 10,Face creation geometry asymmetric data 10,0,255,3610,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 11,Face creation geometry asymmetric data 11,0,255,3611,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 12,Face creation geometry asymmetric data 12,0,255,3612,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 13,Face creation geometry asymmetric data 13,0,255,3613,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 14,Face creation geometry asymmetric data 14,0,255,3614,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 15,Face creation geometry asymmetric data 15,0,255,3615,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 16,Face creation geometry asymmetric data 16,0,255,3616,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 17,Face creation geometry asymmetric data 17,0,255,3617,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 18,Face creation geometry asymmetric data 18,0,255,3618,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 19,Face creation geometry asymmetric data 19,0,255,3619,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 20,Face creation geometry asymmetric data 20,0,255,3620,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 21,Face creation geometry asymmetric data 21,0,255,3621,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 22,Face creation geometry asymmetric data 22,0,255,3622,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 23,Face creation geometry asymmetric data 23,0,255,3623,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 24,Face creation geometry asymmetric data 24,0,255,3624,u8,1,%d,u8,Wrap
+Face creation geometry asymmetric data 25,Face creation geometry asymmetric data 25,0,255,3625,u8,1,%d,u8,Wrap

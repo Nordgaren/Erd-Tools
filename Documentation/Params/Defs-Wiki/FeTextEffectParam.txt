@@ -1,0 +1,8 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| resId || Resource ID || Instance name of the menu resource. ID of TextEffect_X || - ||
+|| pad1 || Padding ||  || - ||
+|| textId || Text ID || Text ID to display (-1: No text). MenuText || - ||
+|| seId || SE ID || Voice ID to play (-1: No SE) || - ||
+|| canMixMapName || Whether to display at the same time as the map name || Whether to display at the same time as the map name || BOOL_CIRCLECROSS_TYPE ||
+|| pad3 || Padding ||  || - ||
+|| pad2 || Padding ||  || - ||

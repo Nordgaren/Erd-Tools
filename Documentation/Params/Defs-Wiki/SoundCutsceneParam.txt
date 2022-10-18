@@ -1,0 +1,12 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| ReverbType || Reverb type in cutscenes || Specifies the reverb type to apply during the cutscene || - ||
+|| pad0 || pad0 ||  || - ||
+|| BgmBehaviorTypeOnStart || Normal BGM behavior at the start of cutscenes || Specifies normal BGM behavior at the start of cutscenes || SOUND_CUTSCENE_BGM_BEHAVIOR_TYPE ||
+|| OneShotBgmBehaviorOnStart || One-shot BGM behavior at the start of the cutscene || Specifies the one-shot BGM behavior at the start of the cutscene || SOUND_CUTSCENE_BGM_BEHAVIOR_TYPE ||
+|| PostPlaySeId || SEID (category: p) specification to post at the end of the cutscene (-1: do not post) || SEID (category: p) specification to post at the end of the cutscene (-1: do not post) || - ||
+|| PostPlaySeIdForSkip || Post at the end of the cutscene SEID_Skip (category: p) specified (-1: do not post) || SEID_ for skipping to post at the end of the cutscene (category: p) specified (-1: not posted) || - ||
+|| EnterMapMuteStopTimeOnDrawCutscene || Cutscene drawing time to unmute immediately after entering [seconds] (less than 0: not canceled in drawing time) || Cutscene drawing time to unmute immediately after entering [seconds] (less than 0: not canceled in drawing time) || - ||
+|| reserved || Reserve || Reserve || - ||

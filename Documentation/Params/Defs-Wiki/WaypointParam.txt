@@ -1,0 +1,6 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| attribute1 || Attribute 1 ||  || WAYPOINT_ATTRIBUTE ||
+|| attribute2 || Attribute 2 ||  || WAYPOINT_ATTRIBUTE ||
+|| attribute3 || Attribute 3 ||  || WAYPOINT_ATTRIBUTE ||
+|| attribute4 || Attribute 4 ||  || WAYPOINT_ATTRIBUTE ||
+|| padding4 || Padding 4 ||  || - ||

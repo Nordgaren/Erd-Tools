@@ -1,0 +1,45 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,13011,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,13012,dummy8,,%d,dummy8,None
+Call ID,ID called from decorations,-1,999999999,700,s32,1,%d,s32,Wrap
+SFX variation ID,Specify SFX variation (used to identify SFX in combination with TimeActEditor ID),-1,99999999,800,s32,1,%d,s32,Wrap
+Weight [kg],Weight [kg],0,1000,1100,f32,0.1,%0.3f,f32,Wrap
+Action ID,Action ID (= Skill),0,99999999,1200,s32,1,%d,s32,Wrap
+Basic price,Basic price,0,99999999,1300,s32,1,%d,s32,Wrap
+Sale price,Selling price,-1,99999999,1310,s32,1,%d,s32,Wrap
+sortID,,-1,9999999,1600,s32,1,%d,s32,Wrap
+QWCID,,-1,99999999,1900,s32,1,%d,s32,Wrap
+Equipment model number,Equipment model number,0,9999,300,u16,1,%d,u16,Wrap
+Icon ID,Menu icon ID,0,65535,400,u16,1,%d,u16,Wrap
+Shop level,Level that can be sold at the store,-1,9999,1400,s16,1,%d,s16,Wrap
+Trophy,,-1,9999,1700,s16,1,%d,s16,Wrap
+Trophy SEQ number,Trophy SEQ number,-1,9999,1750,s16,1,%d,s16,Wrap
+Equipment model type,Equipment model type,0,99,100,u8,1,%d,EQUIP_MODEL_CATEGORY,Wrap
+Equipment model gender,Gender of equipment model,0,99,200,u8,1,%d,EQUIP_MODEL_GENDER,Wrap
+Decoration category,Armor category,0,99,500,u8,1,%d,ACCESSORY_CATEGORY,Wrap
+ID category,↓ ID category [Attack, Projectile, Special],0,255,600,u8,1,%d,BEHAVIOR_REF_TYPE,Wrap
+Special effects category,Since there are effects (enchantment weapons, etc.) whose parameters fluctuate depending on skills, magic, items, etc., set each action so that the determined effect can correspond to the effect such as "power up only weapon attack". Set "None" for items that do not need to be set, such as varistor.
+,0,255,900,u8,1,%d,BEHAVIOR_CATEGORY,Wrap
+Sort item type ID,Sort item type ID. In the sort "Item type order", the same ID is displayed together as the same group.,0,255,1610,u8,1,%d,u8,Wrap
+Item lottery ID_for map at the time of vagrant,-1: No vagrant 0: No lottery 1 ~: With lottery,-1,99999999,10000,s32,1,%d,s32,None
+Vagrant Bonus Enemy Drop Item Lottery ID_Map,-1: No drop 0: No lottery 1 ~: With lottery,-1,99999999,10000,s32,1,%d,s32,None
+Vagrant item Enemy drop item Lottery ID_for map,-1: No drop 0: No lottery 1 ~: With lottery,-1,99999999,10000,s32,1,%d,s32,None
+Can i deposit,Can you deposit it in the warehouse?,0,1,1800,u8,1,%d,EQUIP_BOOL,None
+Will it break if removed?,Will it break when equipped and removed?,0,1,1810,u8,1,%d,EQUIP_BOOL,Wrap
+Is multi-drop sharing prohibited?,Is multi-drop sharing prohibited?,0,1,1805,u8,1,%d,EQUIP_BOOL,Wrap
+Can you throw it away,Can you throw away the item? TRUE = thrown away,0,1,1780,u8,1,%d,EQUIP_BOOL,Wrap
+Can you put it on the spot,Can I put the item on the spot? TRUE = can be placed,0,1,1790,u8,1,%d,EQUIP_BOOL,Wrap
+Acquisition log display condition,Whether to display in the item acquisition log when acquiring the item (not entered: ○),0,1,13000,u8,1,%d,EQUIP_BOOL,Wrap
+Acquisition dialog display condition,Whether to display it in the item acquisition dialog when acquiring an item (not entered: new only),0,2,12900,u8,1,%d,GET_DIALOG_CONDITION_TYPE,Wrap
+Rarity,Rarity used in item acquisition logs,0,99,13010,u8,1,%d,u8,Wrap
+pad,(Old log icon ID),,,13013,dummy8,,%d,dummy8,Wrap
+Selling price,Selling price,-1,99999999,1320,s32,1,%d,s32,Wrap
+Wearing group ID,Items of the same group cannot be equipped at the same time,-1,9999,11000,s16,1,%d,s16,Wrap
+pad,pad,,,13014,dummy8,,%u,dummy8,Wrap
+Comptrophy SEQ number,SEQ number of complete trophy,-1,99,1725,s8,1,%d,s8,Wrap
+Resident special effect ID1,Resident special effect ID1,-1,999999999,710,s32,1,%d,s32,Wrap
+Resident special effect ID2,Resident special effect ID2,-1,999999999,720,s32,1,%d,s32,Wrap
+Resident special effect ID3,Resident special effect ID3,-1,999999999,730,s32,1,%d,s32,Wrap
+Resident special effect ID4,Resident special effect ID4,-1,999999999,740,s32,1,%d,s32,Wrap
+pad,pad,,,13015,dummy8,,,dummy8,None

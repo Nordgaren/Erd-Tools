@@ -1,0 +1,9 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,201,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,202,dummy8,,%d,dummy8,None
+1 cooperating client Special effect ID,1 cooperating client Special effect ID,-1,999999999,100,s32,1,%d,s32,Wrap
+2 cooperating clients Special effect ID,2 cooperating clients Special effect ID,-1,999999999,110,s32,1,%d,s32,Wrap
+3 cooperating clients Special effect ID,3 cooperating clients Special effect ID,-1,999999999,120,s32,1,%d,s32,Wrap
+Whether to overwrite when the number of cooperating people fluctuates,Whether to overwrite when the number of cooperating people fluctuates,-1,255,200,u8,1,%d,MULTI_PLAY_CORRECTION_OVERRIDE_TYPE,Wrap
+pad,pad,,,203,dummy8,,,dummy8,None

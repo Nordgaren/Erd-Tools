@@ -1,0 +1,79 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| hp || HP || Durability until destruction (-1: Indestructible) || - ||
+|| defense || Defense power || Attack power below this value is no damage || - ||
+|| extRefTexId || Xref texture ID || mAA / mAA_ ????. Tpf (-1: None) (AA: Area number) || - ||
+|| materialId || Material ID || Material ID. Treated the same as the floor material. When -1, the same behavior as before || - ||
+|| animBreakIdMax || Anime destruction ID maximum value || What is the animation destruction ID from 0 to what? || - ||
+|| isCamHit || Does the camera hit? || Does the camera hit (0: not hit, 1: hit) || - ||
+|| isBreakByPlayerCollide || Will it break in a player collision? || Broken when the player touches (0: no, 1:) || - ||
+|| isAnimBreak || Is it anime destruction? || Is it animation destruction (0: physical destruction, 1: animation destruction) || - ||
+|| isPenetrationBulletHit || Will it hit a penetrating bullet? || Will the penetrating bullet hit (0: not hit, 1: hit) || - ||
+|| isChrHit || Will the character win? || Does the character win (0: not hit, 1: hit) || - ||
+|| isAttackBacklash || Do you play the attack || Do you play the attack (0: do not play, 1: play) || - ||
+|| isDisableBreakForFirstAppear || No destruction for initial appearance || Broken at the initial appearance of the player (0: ru, 1: no) || - ||
+|| isLadder || Is it a ladder? || Is it a ladder (0: different, 1: yes) || - ||
+|| isAnimPauseOnRemoPlay || Do you want to stop the animation during the poly play? || Do you want to stop the animation during the poly play (0: not, 1: do) || - ||
+|| isDamageNoHit || Is it not damaged? || No damage (0: hit, 1: not hit) || - ||
+|| isMoveObj || Is it a moving object? || Is it a moving object (0: different, 1: yes) || - ||
+|| isRopeBridge || Is it a suspension bridge object? || Suspension bridge object (0: different, 1: yes) || - ||
+|| isAddRigidImpulse_ByDamage || Does the damage blow off the rigid body? || Does the damage blow the rigid body (0: do not blow, 1: blow) || - ||
+|| isBreak_ByChrRide || Will it break if the character gets on it? || Will it break if the character gets on (0: it won't break 1: it will break) || - ||
+|| isBurn || Will it burn || Will it burn (0: not, 1:) || - ||
+|| isBreakByEnemyCollide || Will it be destroyed by an enemy character collision? || Broken when an enemy character touches (0: No, 1: Ru) || - ||
+|| defaultLodParamId || Default LOD Param ID || Default LOD Param ID (-1: None) || - ||
+|| breakSfxId || SFX ID at the time of destruction || SFXID when destroying an object (-1: default (810030)) || - ||
+|| breakSfxCpId || SFX Damipoli ID at the time of destruction || SFX generation position when the object is destroyed Damipoly ID (-1: placement position) || - ||
+|| breakBulletBehaviorId || Bomb generation at the time of destruction Action parameter ID || Action parameter of [bullet] at the time of destruction (-1: does not occur) || - ||
+|| breakBulletCpId || Damipoli ID || Location of [bullet] at the time of destruction Damipoli ID (-1: placement position) || - ||
+|| breakFallHeight || Fall destruction height (m) || Height at which the object breaks when dropped (0: does not break when dropped) || - ||
+|| windEffectType_0 || Wind effect type (before destruction) || Wind effect type (before destruction) || OBJECT_WIND_EFFECT_TYPE ||
+|| windEffectType_1 || Wind effect type (after destruction) || Wind effect type (after destruction) || OBJECT_WIND_EFFECT_TYPE ||
+|| camAvoidType || Camera avoidance setting || What to do if an object blocks between the camera and player || OBJECT_CAM_AVOID_TYPE ||
+|| windEffectRate_0 || Wind coefficient (before destruction) || Wind coefficient (before destruction) || - ||
+|| windEffectRate_1 || Wind coefficient (after destruction) || Wind coefficient (after destruction) || - ||
+|| breakStopTime || Forced stop time after destruction || Time from destruction to forced stop of rigid body (do not force stop at 0) || - ||
+|| burnTime || Burning time (seconds) || Burning time (seconds) (continues to burn at 0) || - ||
+|| burnBraekRate || Combustion fracture judgment progress || Burnup threshold for switching to the ruptured state || - ||
+|| burnSfxId || Combustion SFXID: 0 || SFX ID at the time of combustion: 0 (-1: No SFX) || - ||
+|| burnSfxId_1 || Combustion SFXID: 1 || SFX ID at the time of combustion: 1 (-1: No SFX) || - ||
+|| burnSfxId_2 || Combustion SFXID: 2 || SFX ID at the time of combustion: 2 (-1: No SFX) || - ||
+|| burnSfxId_3 || Combustion SFXID: 3 || SFX ID at the time of combustion: 3 (-1: No SFX) || - ||
+|| burnBulletBehaviorId || Combustion bullet generation Behavior parameter: 0 || Bullet generation behavior parameter at the time of burning: 0 (-1: does not occur) || - ||
+|| burnBulletBehaviorId_1 || Combustion bullet generation Behavior parameter: 1 || Bullet generation behavior parameter at the time of burning: 1 (-1: does not occur) || - ||
+|| burnBulletBehaviorId_2 || Combustion bullet generation Behavior parameter: 2 || Bullet generation behavior parameter at the time of burning: 2 (-1: does not occur) || - ||
+|| burnBulletBehaviorId_3 || Combustion bullet generation Behavior parameters: 3 || Bullet generation behavior parameter at the time of burning: 3 (-1: does not occur) || - ||
+|| burnBulletInterval || Combustion bullet generation interval (frame) || Interval (frame) to generate bullets for spreading fire || - ||
+|| navimeshFlag || Navi mesh flag || Navigation mesh flag set from the object || OBJECT_NAVIMESH_FLAG ||
+|| collisionType || Collision detection type || Collision detection type || OBJECT_COLLISION_TYPE ||
+|| burnBulletDelayTime || Combustion bullet generation delay time (seconds) || Time to delay the generation of bullets for fire spread (seconds) || - ||
+|| burnSfxDelayTimeMin || Combustion SFX generation delay Start time (seconds): 0 || SFX generation delay time during combustion Randomly determined between start and end times || - ||
+|| burnSfxDelayTimeMin_1 || Combustion SFX generation delay Start time (seconds): 1 || SFX generation delay time during combustion Randomly determined between start and end times || - ||
+|| burnSfxDelayTimeMin_2 || Combustion SFX generation delay Start time (seconds): 2 || SFX generation delay time during combustion Randomly determined between start and end times || - ||
+|| burnSfxDelayTimeMin_3 || Combustion SFX generation delay Start time (seconds): 3 || SFX generation delay time during combustion Randomly determined between start and end times || - ||
+|| burnSfxDelayTimeMax || Combustion SFX generation delay End time (seconds): 0 || SFX generation delay time during combustion Randomly determined between start and end times || - ||
+|| burnSfxDelayTimeMax_1 || Combustion SFX generation delay End time (seconds): 1 || SFX generation delay time during combustion Randomly determined between start and end times || - ||
+|| burnSfxDelayTimeMax_2 || Combustion SFX generation delay End time (seconds): 2 || SFX generation delay time during combustion Randomly determined between start and end times || - ||
+|| burnSfxDelayTimeMax_3 || Combustion SFX generation delay End time (seconds): 3 || SFX generation delay time during combustion Randomly determined between start and end times || - ||
+|| BreakAiSoundID || AI sound ID generated at the time of destruction || AI sound ID generated at the time of destruction || - ||
+|| FragmentInvisibleWaitTime || Hidden debris Wait time (seconds) || Material ID of debris (-1: Do not hide) || - ||
+|| FragmentInvisibleTime || Debris non-display time (seconds) || Time to hide debris (seconds) || - ||
+|| pad_3 || Padding || Material ID of debris (-1: Do not hide) || - ||
+|| RigidPenetrationScale_Soft || Rigid body collision point distance coefficient [soft] || Rigid body soft contact setting Collision point distance coefficient [soft] || - ||
+|| RigidPenetrationScale_Normal || Rigid body collision point distance coefficient [normal] || Rigid soft contact setting Collision point distance coefficient [Normal] || - ||
+|| RigidPenetrationScale_Hard || Rigid body collision point distance coefficient [hard] || Rigid soft contact setting Collision point distance coefficient [hard] || - ||
+|| LandTouchSfxId || SFX ID at the time of terrain contact || SFX ID at terrain contact (-1: offset by terrain material) || - ||
+|| isDamageCover || Do you want to shield the damage? || Whether to pass the damage to the other side when receiving damage (0: pass, 1: do not pass) || - ||
+|| pad_4 || Padding ||  || - ||
+|| paintDecalTargetTextureSize || Paint decal target size || Paint decal target size (only powers of 0 to 4096 2 allowed) || - ||
+|| lifeTime_forDC || Life of dynamically generated Obj (seconds) || Time until dynamically generated Obj disappears after generation (0: does not disappear) || - ||
+|| clothUpdateDist || Cross update distance (m) || Distance from the camera to update havokCloth (0: always update) || - ||
+|| contactSeId || SE ID when contacting a player || SE ID to play when touched by a local player operated by you (-1: Do not play) || - ||
+|| breakLandingSfxId || SFX identifier when landing after destruction || Object material-dependent SFX identifier that regenerates when first landing after being destroyed (-1: does not occur) || - ||
+|| waypointDummyPolyId_0 || Waypoint Damipoli ID_0 || Waypoint Damipoli ID_0 (-1: None) || - ||
+|| waypointParamId_0 || Waypoint parameter ID_0 || Waypoint parameter ID_0 (-1: none) || - ||
+|| soundBankId || Sound bank ID || Sound bank ID (-1: no bank, other: bank with specified ID) || - ||
+|| refDrawParamId || Drawing parameter reference ID || Reference ID of drawing parameter || - ||
+|| autoCreateDynamicOffsetHeight || Automatically generated appearance height offset [m] || Map automatic generation OBJ appearance height offset [m], does it float from where the ray cast hits? || - ||
+|| reserved0 || Reserve || Reserve || - ||
+|| soundBreakSEId || Destruction sound SEID || Destruction sound SEID (9 digits) -1: Generated from objId || - ||
+|| pad_5 || Padding ||  || - ||

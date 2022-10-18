@@ -1,0 +1,29 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Required Material Item ID 01,Material item ID required to strengthen armor.,-1,10000000,100,s32,1,%d,s32,Wrap
+Required Material Item ID 02,Material item ID required to strengthen armor.,-1,10000000,300,s32,1,%d,s32,Wrap
+Required Material Item ID 03,Material item ID required to strengthen armor.,-1,10000000,500,s32,1,%d,s32,Wrap
+Required Material Item ID 04,Material item ID required to strengthen armor.,-1,10000000,700,s32,1,%d,s32,Wrap
+Required Material Item ID 05,Material item ID required to strengthen armor.,-1,10000000,900,s32,1,%d,s32,Wrap
+Required Material Item ID 06,Material item ID required to strengthen armor.,-1,10000000,1100,s32,1,%d,s32,Wrap
+Padding,Padding. For when the material item ID increases,,,99999999,dummy8,,,dummy8,None
+Required number 01,The number of material items required to strengthen armor.,-1,99,200,s8,1,%d,s8,Wrap
+Required number 02,The number of material items required to strengthen armor.,-1,99,400,s8,1,%d,s8,Wrap
+Required number 03,The number of material items required to strengthen armor.,-1,99,600,s8,1,%d,s8,Wrap
+Required number 04,The number of material items required to strengthen armor.,-1,99,800,s8,1,%d,s8,Wrap
+Required number 05,The number of material items required to strengthen armor.,-1,99,1000,s8,1,%d,s8,Wrap
+Required number 06,The number of material items required to strengthen armor.,-1,99,1200,s8,1,%d,s8,Wrap
+Padding,Padding. For when the number of items increases,,,99999999,dummy8,,,dummy8,None
+Required Material Item Category 01,This is a category of material items required for strengthening armor.,0,15,110,u8,1,%d,GAITEM_CATEGORY,Wrap
+Required Material Item Category 02,This is a category of material items required for strengthening armor.,0,15,310,u8,1,%d,GAITEM_CATEGORY,Wrap
+Required Material Item Category 03,This is a category of material items required for strengthening armor.,0,15,510,u8,1,%d,GAITEM_CATEGORY,Wrap
+Required Material Item Category 04,This is a category of material items required for strengthening armor.,0,15,710,u8,1,%d,GAITEM_CATEGORY,Wrap
+Required Material Item Category 05,This is a category of material items required for strengthening armor.,0,15,910,u8,1,%d,GAITEM_CATEGORY,Wrap
+Required Material Item Category 06,This is a category of material items required for strengthening armor.,0,15,1110,u8,1,%d,GAITEM_CATEGORY,Wrap
+Padding,Padding. For when the number of categories increases,,,99999999,dummy8,,,dummy8,None
+Disable number display 01,Disable the number display (for enhanced shops),0,1,250,u8,1,%d,u8,Wrap
+Disable number display 02,Whether to disable the number display,0,1,450,u8,1,%d,u8,Wrap
+Disable number display 03,Whether to disable the number display,0,1,650,u8,1,%d,u8,Wrap
+Disable number display 04,Whether to disable the number display,0,1,850,u8,1,%d,u8,Wrap
+Disable number display 05,Whether to disable the number display,0,1,1050,u8,1,%d,u8,Wrap
+Disable number display 06,Whether to disable the number display,0,1,1250,u8,1,%d,u8,Wrap
+Padding,It's padding.,,,99999999,dummy8,,,dummy8,None

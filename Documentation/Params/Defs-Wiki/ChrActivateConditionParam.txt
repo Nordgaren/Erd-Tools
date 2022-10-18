@@ -1,0 +1,21 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| weatherSunny || Appearance condition _ sunny || Will it appear when the weather is "sunny"? || BOOL_CIRCLECROSS_TYPE ||
+|| weatherClearSky || Appearance condition _ fine weather || Will it appear when the weather is "clear"? || BOOL_CIRCLECROSS_TYPE ||
+|| weatherWeakCloudy || Appearance condition_light cloudy || Will it appear when the weather is "lightly cloudy"? || BOOL_CIRCLECROSS_TYPE ||
+|| weatherCloudy || Appearance condition_cloudy || Will it appear when the weather is "cloudy"? || BOOL_CIRCLECROSS_TYPE ||
+|| weatherRain || Appearance condition_rain || Will it appear when the weather is "rainy"? || BOOL_CIRCLECROSS_TYPE ||
+|| weatherHeavyRain || Appearance condition_heavy rain || Will it appear when the weather is "heavy rain"? || BOOL_CIRCLECROSS_TYPE ||
+|| weatherStorm || Appearance condition_storm || Will it appear when the weather is "stormy"? || BOOL_CIRCLECROSS_TYPE ||
+|| weatherStormForBattle || Appearance condition_Arashi (for battle with the descendants of the guardian) || Will it appear when the weather is "storm (for combat with the descendants of the guardian)"? || BOOL_CIRCLECROSS_TYPE ||
+|| weatherSnow || Appearance condition_Snow || Will it appear when the weather is "snow"? || BOOL_CIRCLECROSS_TYPE ||
+|| weatherHeavySnow || Appearance condition _ heavy snow || Will it appear when the weather is "heavy snow"? || BOOL_CIRCLECROSS_TYPE ||
+|| weatherFog || Appearance condition_fog || Will it appear when the weather is "fog"? || BOOL_CIRCLECROSS_TYPE ||
+|| weatherHeavyFog || Appearance condition_Dense fog || Will it appear when the weather is "dense fog"? || BOOL_CIRCLECROSS_TYPE ||
+|| weatherHeavyFogRain || Appearance condition_Dense fog (rain) || Does it appear when the weather is "dense fog (rain)"? || BOOL_CIRCLECROSS_TYPE ||
+|| weatherSandStorm || Appearance condition_sandstorm || Will it appear when the weather is a "sandstorm"? || BOOL_CIRCLECROSS_TYPE ||
+|| pad1 || pad ||  || - ||
+|| timeStartHour || Appearance start in game time_hour || Appearance start in game time_hour || - ||
+|| timeStartMin || Appearance start in-game time_minutes || Appearance start in-game time_minutes || - ||
+|| timeEndHour || Appearance end in game time_hour || Appearance end in game time_hour || - ||
+|| timeEndMin || End of appearance In-game time_minutes || End of appearance In-game time_minutes || - ||
+|| pad2 || pad ||  || - ||

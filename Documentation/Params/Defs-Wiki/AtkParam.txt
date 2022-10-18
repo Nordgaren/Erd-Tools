@@ -1,0 +1,208 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| hit0_Radius || 0 radius per || Sphere, capsule radius || - ||
+|| hit1_Radius || 1 radius per || Sphere, capsule radius || - ||
+|| hit2_Radius || 2 radii per || Sphere, capsule radius || - ||
+|| hit3_Radius || 3 radii per || Sphere, capsule radius || - ||
+|| knockbackDist || Knockback distance [m] || Knockback distance [m] || - ||
+|| hitStopTime || Hit stop time [s] || Hit stop stop time [s] || - ||
+|| spEffectId0 || Special effects 0 || Enter the ID created with the special effects parameter || - ||
+|| spEffectId1 || Special effect 1 || Enter the ID created with the special effects parameter || - ||
+|| spEffectId2 || Special effect 2 || Enter the ID created with the special effects parameter || - ||
+|| spEffectId3 || Special effect 3 || Enter the ID created with the special effects parameter || - ||
+|| spEffectId4 || Special effect 4 || Enter the ID created with the special effects parameter || - ||
+|| hit0_DmyPoly1 || Per 0 Damipoli 1 || Damipoli in sphere, capsule position || - ||
+|| hit1_DmyPoly1 || 1 per Damipoli 1 || Damipoli in sphere, capsule position || - ||
+|| hit2_DmyPoly1 || 2 per Damipoli 1 || Damipoli in sphere, capsule position || - ||
+|| hit3_DmyPoly1 || 3 per Damipoli 1 || Damipoli in sphere, capsule position || - ||
+|| hit0_DmyPoly2 || Per 0 Damipoli 2 || The position of another point on the capsule Damipoli. -1 makes it a sphere || - ||
+|| hit1_DmyPoly2 || 1 per Damipoli 2 || The position of another point on the capsule Damipoli. -1 makes it a sphere || - ||
+|| hit2_DmyPoly2 || 2 per Damipoli 2 || The position of another point on the capsule Damipoli. -1 makes it a sphere || - ||
+|| hit3_DmyPoly2 || 3 per Damipoli 2 || The position of another point on the capsule Damipoli. -1 makes it a sphere || - ||
+|| blowingCorrection || Blow-off correction value || Correction value when blowing off || - ||
+|| atkPhysCorrection || Physical attack power correction value || PC only. Multiplier by multiplying the basic physical attack power || - ||
+|| atkMagCorrection || Magic attack power correction value || PC only. Multiply the magic attack power (in the case of a bow, correct the missile) || - ||
+|| atkFireCorrection || Fire attack power correction value || PC only. Multiply the fire attack power (in the case of a bow, correct the missile) || - ||
+|| atkThunCorrection || Electric shock attack power correction value || PC only. Multiplier for electric shock attack power (in the case of a bow, correct the missile) || - ||
+|| atkStamCorrection || Stamina attack power correction value || PC only. Multiplier for stamina attack power || - ||
+|| guardAtkRateCorrection || Repellent attack power correction value || PC only. 1 only || - ||
+|| guardBreakCorrection || Repellent defense correction value || PC only. Multiplying the base value by the repelling of the attack || - ||
+|| atkThrowEscapeCorrection || Throw-through attack power correction value || Weapon correction value for throw-through attacks || - ||
+|| subCategory1 || Subcategory 1 || Subcategory 1 || ATK_SUB_CATEGORY ||
+|| subCategory2 || Subcategory 2 || Subcategory 2 || ATK_SUB_CATEGORY ||
+|| atkPhys || Physical attack power || NPCs only. Basic damage of physical attack || - ||
+|| atkMag || Magic attack power || NPCs only. Additional damage from magic attacks || - ||
+|| atkFire || Fire attack power || NPCs only. Additional damage from fire attacks || - ||
+|| atkThun || Electric shock attack power || NPCs only. Additional damage from electric shock attacks || - ||
+|| atkStam || Stamina attack power || NPCs only. Amount of damage to enemy (player) stamina || - ||
+|| guardAtkRate || Repellent attack power || NPCs only. Flick value || - ||
+|| guardBreakRate || Repellent defense || NPCs only. Value used to determine if an attack is repelled || - ||
+|| pad6 || pad ||  || - ||
+|| isEnableCalcDamageForBushesObj || Can damage bushes || Do you want to calculate damage for assets that are "Break due to bush damage"? To set. 〇: Calculate, ×: Do not calculate (that is, you cannot inflict damage) [GR] SEQ20617 || ATK_PARAM_BOOL ||
+|| atkThrowEscape || Throw-through attack power || Throw-through attack power || - ||
+|| atkObj || Object attack power || Attack power against OBJ || - ||
+|| guardStaminaCutRate || Stamina cut rate correction when guarding || Correct the [stamina cut rate when guarding] set in the weapon parameter and NPC parameter. || - ||
+|| guardRate || Guard magnification || NPC, the guard performance set in the weapon parameter is uniformly corrected. 0, 1x / 100, 2x / -100, guard multiplier = (guard multiplier / 100) to increase / decrease the parameter to 0. + 1) || - ||
+|| throwTypeId || Throw type ID || ID associated with the throw parameter || - ||
+|| hit0_hitType || 0 parts per || Hit part || ATK_PARAM_HIT_TYPE ||
+|| hit1_hitType || 1 part per part || Hit part || ATK_PARAM_HIT_TYPE ||
+|| hit2_hitType || 2 parts per || Hit part || ATK_PARAM_HIT_TYPE ||
+|| hit3_hitType || 3 parts per || Hit part || ATK_PARAM_HIT_TYPE ||
+|| hti0_Priority || 0 Priority per || priority. If there are two or more hits at the same time, the one with the higher priority will be adopted. || - ||
+|| hti1_Priority || 1 priority per || priority. If there are two or more hits at the same time, the one with the higher priority will be adopted. || - ||
+|| hti2_Priority || 2 priorities per || priority. If there are two or more hits at the same time, the one with the higher priority will be adopted. || - ||
+|| hti3_Priority || 3 priorities per || priority. If there are two or more hits at the same time, the one with the higher priority will be adopted. || - ||
+|| dmgLevel || Damage level || Which damage motion should be played against the enemy when attacking? To decide. || - ||
+|| mapHitType || See per map || Which map do you see around the attack? The set || ATK_PARAM_MAP_HIT ||
+|| guardCutCancelRate || Guard cut rate invalidation factor || Guard cut rate invalidation ratio (-100 to 100) → Normal at 0 / Completely invalidated at -100 / Doubles the defense effect of the opponent at 100 → -50, 100% cut shield becomes 50% cut Become  || - ||
+|| atkAttribute || Physical attributes || Physical attributes to set for attacks || ATKPARAM_ATKATTR_TYPE ||
+|| spAttribute || Special attributes || Special attributes to set for attacks || ATKPARAM_SPATTR_TYPE ||
+|| atkType || Attack attribute [SFX / SE] || Specify SFX / SE at the time of attack (1 set by attribute, material, size) || BEHAVIOR_ATK_TYPE ||
+|| atkMaterial || Attack material [SFX / SE] || Specify SFX / SE at the time of attack (1 set by attribute, material, size) || WEP_MATERIAL_ATK ||
+|| guardRangeType || Guard judgment position || Guard judgment position || ATKPARAM_GUARD_RANGE_TYPE ||
+|| defSeMaterial1 || Defensive material 1 [SE] || Used for SE when guarding 1 || WEP_MATERIAL_DEF ||
+|| hitSourceType || Source per || Where do you get the Damipoli ID per attack? To specify || ATK_PARAM_HIT_SOURCE ||
+|| throwFlag || Throw || Flag used for throwing information || ATK_PATAM_THROWFLAG_TYPE ||
+|| disableGuard || Unguardable flag || If 1, ignore the guard on the guard side and enter the damage level || ATK_PARAM_BOOL ||
+|| disableStaminaAttack || Stamina does not decrease || "Destruction judgment" is performed by stamina attack power, but stamina is not actually reduced. || ATK_PARAM_BOOL ||
+|| disableHitSpEffect || Special effects disabled on hit || Disables special effects when an attack hits. SCE bug countermeasures || ATK_PARAM_BOOL ||
+|| IgnoreNotifyMissSwingForAI || Do not notify AI of missed swing || Do not notify AI of missed swing || ATK_PARAM_BOOL ||
+|| repeatHitSfx || Do you issue SFX many times during HIT? || Enemy only: Does SFX occur continuously when hitting a wall? || ATK_PARAM_BOOL ||
+|| isArrowAtk || Is it an arrow attack? || Used for site damage judgment. || ATK_PARAM_BOOL ||
+|| isGhostAtk || Is it a ghost attack? || Used for determining spirit damage. || ATK_PARAM_BOOL ||
+|| isDisableNoDamage || Do you penetrate invincible || Ignore invincible effects such as steps, TAE's complete invincibility cannot be ignored. || ATK_PARAM_BOOL ||
+|| atkPow_forSfx || Attack strength [SFX] || Attack strength [SFX] || ATKPARAM_SFX_ATK_POW ||
+|| atkDir_forSfx || Attack direction [SFX] || Attack direction [SFX] || ATKPARAM_SFX_ATK_DIR ||
+|| opposeTarget || Target: ● Hostile || Target: ● Hostile || ATK_PARAM_BOOL ||
+|| friendlyTarget || Target: ○ Allies || Target: ○ Allies || ATK_PARAM_BOOL ||
+|| selfTarget || Target: myself || Target: myself || ATK_PARAM_BOOL ||
+|| isCheckDoorPenetration || Do you want to check the door penetration? || Whether to check the door penetration. In the case of ○, it is judged whether or not the target through the door can be attacked. || ATK_PARAM_BOOL ||
+|| isVsRideAtk || Is it a riding special attack? || If you hit the target of the riding special attack while riding, the SA damage will be multiplied by the multiplier. || ATK_PARAM_BOOL ||
+|| isAddBaseAtk || Do you refer to the additional attack power even in weapon attacks? || Do you refer to the additional attack power even in weapon attacks? || ATK_PARAM_BOOL ||
+|| excludeThreatLvNotify || Is it excluded from threat level notification? || Is it excluded from threat level notification? || ATK_PARAM_BOOL ||
+|| pad1 || pad1 ||  || - ||
+|| atkBehaviorId || Behavior identification value 1 || Behavior identification value: Extra large damage transition || ATKPARAM_BEHAVIOR_ID ||
+|| atkPow_forSe || Attack strength [SE] || Attack strength [SE] || ATKPARAM_SE_ATK_POW ||
+|| atkSuperArmor || SA attack power || NPCs only. Value used for SA break calculation formula || - ||
+|| decalId1 || Decal ID 1 (directly specified) || Decal ID 1 (directly specified) || - ||
+|| decalId2 || Decal ID 2 (directly specified) || Decal ID 2 (directly specified) || - ||
+|| AppearAiSoundId || AI sound ID when it occurs || ID of AI sound generated when an attack occurs || - ||
+|| HitAiSoundId || AI sound ID on hit || ID of AI sound generated at the time of hit || - ||
+|| HitRumbleId || Vibration effect on hit (-1 invalid) || Vibration ID at the time of hit (-1 invalid). It is a vibration ID when none of the following three applies || - ||
+|| HitRumbleIdByNormal || Vibration ID when the tip hits || Vibration ID at the time of hit when hitting the tip (-1 invalid) || - ||
+|| HitRumbleIdByMiddle || Vibration ID when hit in the middle || Vibration ID at the time of hit when hit in the middle (-1 invalid) || - ||
+|| HitRumbleIdByRoot || Vibration ID at the time of root hit || Vibration ID at the time of hit when hitting the root (-1 invalid) || - ||
+|| traceSfxId0 || Sword Flash SfxID_0 || Sword flash SfxID_0 (-1 invalid) || - ||
+|| traceDmyIdHead0 || Root Sword Flash Damipoli ID_0 || Sword flash root Damipoli ID_0 (-1 invalid) || - ||
+|| traceDmyIdTail0 || Sword tip sword flash Damipoli ID_0 || Sword Flash Sword Tip Damipoli ID_0 || - ||
+|| traceSfxId1 || Sword Flash SfxID_1 || Sword flash SfxID_1 (-1 invalid) || - ||
+|| traceDmyIdHead1 || Root Sword Flash Damipoli ID_1 || Sword Flash Root Damipoli ID_1 (-1 invalid) || - ||
+|| traceDmyIdTail1 || Sword tip sword flash Damipoli ID_1 || Sword Flash Sword Tip Damipoli ID_1 || - ||
+|| traceSfxId2 || Sword Flash SfxID_2 || Sword flash SfxID_2 (-1 invalid) || - ||
+|| traceDmyIdHead2 || Root Sword Flash Damipoli ID_2 || Sword Flash Root Damipoli ID_2 (-1 invalid) || - ||
+|| traceDmyIdTail2 || Sword tip sword flash Damipoli ID_2 || Sword Flash Sword Tip Damipoli ID_2 || - ||
+|| traceSfxId3 || Sword Flash SfxID_3 || Sword Flash SfxID_3 (-1 invalid) || - ||
+|| traceDmyIdHead3 || Root Sword Flash Damipoli ID_3 || Sword flash root Damipoli ID_3 (-1 invalid) || - ||
+|| traceDmyIdTail3 || Sword tip sword flash Damipoli ID_3 || Sword Flash Sword Tip Damipoli ID_3 || - ||
+|| traceSfxId4 || Sword Flash SfxID_4 || Sword Flash SfxID_4 (-1 invalid) || - ||
+|| traceDmyIdHead4 || Root Sword Flash Damipoli ID_4 || Sword flash root Damipoli ID_4 (-1 invalid) || - ||
+|| traceDmyIdTail4 || Sword tip sword flash Damipoli ID_4 || Sword Flash Sword Tip Damipoli ID_4 || - ||
+|| traceSfxId5 || Sword Flash SfxID_5 || Sword Flash SfxID_5 (-1 invalid) || - ||
+|| traceDmyIdHead5 || Root Sword Flash Damipoli ID_5 || Sword Flash Root Damipoli ID_5 (-1 invalid) || - ||
+|| traceDmyIdTail5 || Sword tip sword flash Damipoli ID_5 || Sword Flash Sword Tip Damipoli ID_5 || - ||
+|| traceSfxId6 || Sword Flash SfxID_6 || Sword Flash SfxID_6 (-1 invalid) || - ||
+|| traceDmyIdHead6 || Root Sword Flash Damipoli ID_6 || Sword Flash Root Damipoli ID_6 (-1 invalid) || - ||
+|| traceDmyIdTail6 || Sword tip sword flash Damipoli ID_6 || Sword Flash Sword Tip Damipoli ID_6 || - ||
+|| traceSfxId7 || Sword Flash SfxID_7 || Sword Flash SfxID_7 (-1 invalid) || - ||
+|| traceDmyIdHead7 || Root Sword Flash Damipoli ID_7 || Sword Flash Root Damipoli ID_7 (-1 invalid) || - ||
+|| traceDmyIdTail7 || Sword tip sword flash Damipoli ID_7 || Sword Flash Sword Tip Damipoli ID_7 || - ||
+|| hit4_Radius || 4 radii per || Sphere, capsule radius || - ||
+|| hit5_Radius || 5 radii per || Sphere, capsule radius || - ||
+|| hit6_Radius || 6 radii per || Sphere, capsule radius || - ||
+|| hit7_Radius || 7 radii per || Sphere, capsule radius || - ||
+|| hit8_Radius || 8 radii per || Sphere, capsule radius || - ||
+|| hit9_Radius || 9 radii per || Sphere, capsule radius || - ||
+|| hit10_Radius || 10 radii per || Sphere, capsule radius || - ||
+|| hit11_Radius || 11 radii per || Sphere, capsule radius || - ||
+|| hit12_Radius || 12 radii per || Sphere, capsule radius || - ||
+|| hit13_Radius || 13 radii per || Sphere, capsule radius || - ||
+|| hit14_Radius || 14 radii per || Sphere, capsule radius || - ||
+|| hit15_Radius || 15 radii per || Sphere, capsule radius || - ||
+|| hit4_DmyPoly1 || 4 per Damipoli 1 || Damipoli in sphere, capsule position || - ||
+|| hit5_DmyPoly1 || 5 per Damipoli 1 || Damipoli in sphere, capsule position || - ||
+|| hit6_DmyPoly1 || 6 per Damipoli 1 || Damipoli in sphere, capsule position || - ||
+|| hit7_DmyPoly1 || 7 per Damipoli 1 || Damipoli in sphere, capsule position || - ||
+|| hit8_DmyPoly1 || 8 Damipoli per 1 || Damipoli in sphere, capsule position || - ||
+|| hit9_DmyPoly1 || 9 per Damipoli 1 || Damipoli in sphere, capsule position || - ||
+|| hit10_DmyPoly1 || 10 per Damipoli 1 || Damipoli in sphere, capsule position || - ||
+|| hit11_DmyPoly1 || Per 11 Damipoli 1 || Damipoli in sphere, capsule position || - ||
+|| hit12_DmyPoly1 || 12 per Damipoli 1 || Damipoli in sphere, capsule position || - ||
+|| hit13_DmyPoly1 || 13 Damipoli per 1 || Damipoli in sphere, capsule position || - ||
+|| hit14_DmyPoly1 || Per 14 Damipoli 1 || Damipoli in sphere, capsule position || - ||
+|| hit15_DmyPoly1 || 15 per Damipoli 1 || Damipoli in sphere, capsule position || - ||
+|| hit4_DmyPoly2 || 4 per Damipoli 2 || The position of another point on the capsule Damipoli. -1 makes it a sphere || - ||
+|| hit5_DmyPoly2 || 5 Damipoli 2 per || The position of another point on the capsule Damipoli. -1 makes it a sphere || - ||
+|| hit6_DmyPoly2 || 6 Damipoli 2 per || The position of another point on the capsule Damipoli. -1 makes it a sphere || - ||
+|| hit7_DmyPoly2 || 7 Damipoli 2 per || The position of another point on the capsule Damipoli. -1 makes it a sphere || - ||
+|| hit8_DmyPoly2 || 8 per Damipoli 2 || The position of another point on the capsule Damipoli. -1 makes it a sphere || - ||
+|| hit9_DmyPoly2 || 9 Damipoli per 2 || The position of another point on the capsule Damipoli. -1 makes it a sphere || - ||
+|| hit10_DmyPoly2 || 10 per Damipoli 2 || The position of another point on the capsule Damipoli. -1 makes it a sphere || - ||
+|| hit11_DmyPoly2 || Per 11 Damipoli 2 || The position of another point on the capsule Damipoli. -1 makes it a sphere || - ||
+|| hit12_DmyPoly2 || 12 per Damipoli 2 || The position of another point on the capsule Damipoli. -1 makes it a sphere || - ||
+|| hit13_DmyPoly2 || Per 13 Damipoli 2 || The position of another point on the capsule Damipoli. -1 makes it a sphere || - ||
+|| hit14_DmyPoly2 || Per 14 Damipoli 2 || The position of another point on the capsule Damipoli. -1 makes it a sphere || - ||
+|| hit15_DmyPoly2 || 15 per Damipoli 2 || The position of another point on the capsule Damipoli. -1 makes it a sphere || - ||
+|| hit4_hitType || 4 parts per || Hit part || ATK_PARAM_HIT_TYPE ||
+|| hit5_hitType || 5 parts per || Hit part || ATK_PARAM_HIT_TYPE ||
+|| hit6_hitType || 6 parts per || Hit part || ATK_PARAM_HIT_TYPE ||
+|| hit7_hitType || 7 parts per || Hit part || ATK_PARAM_HIT_TYPE ||
+|| hit8_hitType || 8 parts per || Hit part || ATK_PARAM_HIT_TYPE ||
+|| hit9_hitType || 9 parts per || Hit part || ATK_PARAM_HIT_TYPE ||
+|| hit10_hitType || 10 parts per || Hit part || ATK_PARAM_HIT_TYPE ||
+|| hit11_hitType || 11 parts per || Hit part || ATK_PARAM_HIT_TYPE ||
+|| hit12_hitType || 12 parts per || Hit part || ATK_PARAM_HIT_TYPE ||
+|| hit13_hitType || 13 parts per || Hit part || ATK_PARAM_HIT_TYPE ||
+|| hit14_hitType || 14 parts per || Hit part || ATK_PARAM_HIT_TYPE ||
+|| hit15_hitType || 15 parts per || Hit part || ATK_PARAM_HIT_TYPE ||
+|| hti4_Priority || 4 priorities per || priority. If there are two or more hits at the same time, the one with the higher priority will be adopted. || - ||
+|| hti5_Priority || 5 priorities per || priority. If there are two or more hits at the same time, the one with the higher priority will be adopted. || - ||
+|| hti6_Priority || 6 priorities per || priority. If there are two or more hits at the same time, the one with the higher priority will be adopted. || - ||
+|| hti7_Priority || 7 priorities per || priority. If there are two or more hits at the same time, the one with the higher priority will be adopted. || - ||
+|| hti8_Priority || 8 priorities per || priority. If there are two or more hits at the same time, the one with the higher priority will be adopted. || - ||
+|| hti9_Priority || 9 priorities per || priority. If there are two or more hits at the same time, the one with the higher priority will be adopted. || - ||
+|| hti10_Priority || 10 priorities per || priority. If there are two or more hits at the same time, the one with the higher priority will be adopted. || - ||
+|| hti11_Priority || 11 priorities per || priority. If there are two or more hits at the same time, the one with the higher priority will be adopted. || - ||
+|| hti12_Priority || 12 priorities per || priority. If there are two or more hits at the same time, the one with the higher priority will be adopted. || - ||
+|| hti13_Priority || 13 priorities per || priority. If there are two or more hits at the same time, the one with the higher priority will be adopted. || - ||
+|| hti14_Priority || 14 priorities per || priority. If there are two or more hits at the same time, the one with the higher priority will be adopted. || - ||
+|| hti15_Priority || 15 priorities per || priority. If there are two or more hits at the same time, the one with the higher priority will be adopted. || - ||
+|| defSfxMaterial1 || Defensive material 1 [SFX] || Used for SFX when guarding. 1 || WEP_MATERIAL_DEF_SFX ||
+|| defSeMaterial2 || Defensive material 2 [SE] || Used for SE when guarding 2 || WEP_MATERIAL_DEF ||
+|| defSfxMaterial2 || Defensive material 2 [SFX] || Used for SFX when guarding. 2 || WEP_MATERIAL_DEF_SFX ||
+|| atkDarkCorrection || Dark attack power correction value || PC only. Multiply the dark attack power (in the case of a bow, correct the missile) || - ||
+|| atkDark || Dark attack power || NPCs only. Additional damage from dark attacks || - ||
+|| pad5 || pad || pad || - ||
+|| isDisableParry || Attack contact parry judgment invalid || This is a flag to disable the new parry control. A process that determines that the damage on the attacking side has been parried when it comes into contact with a character in the parry state on the defending side. || ATK_PARAM_BOOL ||
+|| isDisableBothHandsAtkBonus || Is the attack power bonus invalid when holding both hands? || Avoid using the 1.5x growth status adaptation with both hands || ATK_PARAM_BOOL ||
+|| isInvalidatedByNoDamageInAir || Will it be disabled with limited invincibility (only in the air)? || If "Do you want to penetrate invincibility" is ◯, this setting will be ignored. || ATK_PARAM_BOOL ||
+|| pad2 || pad1 ||  || - ||
+|| dmgLevel_vsPlayer || Damage level vs. player || Damage level to the player. If it is "0 (default)", it is not used. The meaning of the range other than "0 (default)" is the same as "Damage level". || ATKPARAM_REP_DMGTYPE ||
+|| statusAilmentAtkPowerCorrectRate || Abnormal state attack power magnification correction || Magnification correction is performed for the abnormal state attack power of special effects. || - ||
+|| spEffectAtkPowerCorrectRate_byPoint || Special effects attack power multiplier correction (attack power points) || Magnification correction is performed for the special effect ~ ~ attack power [point]. || - ||
+|| spEffectAtkPowerCorrectRate_byRate || Special effect attack power multiplier correction (attack power multiplier) || Magnification is corrected for the special effect's attack power multiplier. || - ||
+|| spEffectAtkPowerCorrectRate_byDmg || Special effect attack power multiplier correction (final attack power multiplier) || Attack side of special effect: ~ ~ Performs magnification correction for damage multiplier. || - ||
+|| atkBehaviorId_2 || Behavior identification value 2 || Behavior identification value: Plays damage motion only at specific times || ATKPARAM_BEHAVIOR_ID ||
+|| throwDamageAttribute || Throw damage attribute || Attribute of throw damage of attack judgment. Corresponding special effects will be applied. It works only when the attack ATK_PATAM_THROWFLAG_TYPE is "2: Throw". || ATKPARAM_THROWATTR_TYPE ||
+|| statusAilmentAtkPowerCorrectRate_byPoint || Special effect status abnormality correction (attack power point) || Magnification correction is performed for the special effect "Whether to apply the abnormal state attack power magnification correction". || - ||
+|| overwriteAttackElementCorrectId || Attack attribute correction ID overwrite || For overwriting the ID of the parameter that corrects the attack attribute || - ||
+|| decalBaseId1 || Decal identifier 1 || Decal identifier 1 (3 digits) || - ||
+|| decalBaseId2 || Decal identifier 2 || Decal identifier 2 (3 digits) || - ||
+|| wepRegainHpScale || Weapon regain amount correction value || Weapon regain amount correction value || - ||
+|| atkRegainHp || Amount of attack regain || Amount of attack regain || - ||
+|| regainableTimeScale || Regainable time correction factor || Regainable time correction factor || - ||
+|| regainableHpRateScale || Regainable rate correction factor || Regainable rate correction factor || - ||
+|| regainableSlotId || Same attack judgment ID || Same attack judgment ID || - ||
+|| spAttributeVariationValue || Special attribute variation value || Value for giving variation to SFX and SE generated by special attribute in combination with "special attribute" (SEQ16473) || - ||
+|| parryForwardOffset || Front angle offset of parry establishment condition || Front angle offset of [collapsed side] of parry establishment condition || - ||
+|| atkSuperArmorCorrection || SA attack power correction value || PC only. Correction value to be applied to the [basic value] set for the weapon || - ||
+|| defSfxMaterialVariationValue || Defensive material variation value || A value to have variations of damage SFX and SE in combination with "defense material 1 or 2" used when guarding. (SEQ16473) || - ||
+|| pad4 || pad ||  || - ||

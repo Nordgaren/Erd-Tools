@@ -1,0 +1,19 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+FFXID,ID on the FFX editor,0,999999999,1,s32,1,%d,s32,Wrap
+Survival time [frame],Survival time.,0,30000,2,u16,1,%d,u16,Wrap
+Hit ball radius [cm],Hit ball radius. Unit cm,0,3000,3,u16,1,%d,u16,Wrap
+Landing damage,Amount of damage at the time of landing,0,30000,4,u16,1,%d,u16,Wrap
+reserve,,,,19,dummy8,,,dummy8,None
+Initial speed [m / s],Initial speed [m / s],0,1000,5,f32,0.5,%f,f32,Wrap
+Range distance,Range distance,0,1000,6,f32,0.5,%f,f32,Wrap
+Gravity within range,Gravity within range,-1000,1000,7,f32,0.1,%f,f32,Wrap
+Out-of-range gravity,Out-of-range gravity,-1000,1000,8,f32,0.5,%f,f32,Wrap
+MP consumption,MP consumption,0,999,9,s32,1,%d,s32,Wrap
+Acceleration within range,Acceleration within range,-1000,1000,10,f32,0.1,%f,f32,Wrap
+Out-of-range acceleration,Out-of-range acceleration,-1000,1000,11,f32,0.1,%f,f32,Wrap
+reserve,,,,20,dummy8,,,dummy8,None
+Landing ID,Landing ID,0,9999,12,u16,1,%d,u16,Wrap
+Will you die at the end of your life?,Will it use up its life without dying even if it lands?,0,1,13,u8,1,%d,ON_OFF,Wrap
+Will it land when the life has expired?,Will it land when the life has expired?,0,1,14,u8,1,%d,ON_OFF,Wrap
+Action ID on hit,Action ID given to the opponent when doing damage,0,999999,15,s32,1,%d,s32,Wrap
+reserve,,,,21,dummy8,,,dummy8,None

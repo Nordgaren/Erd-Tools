@@ -1,0 +1,40 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| lv01_BorderDist || LOD level 0-1 boundary distance [m] || Switching center || - ||
+|| lv01_PlayDist || LOD level 0-1 play distance [m] || ± play at the center of the boundary || - ||
+|| lv12_BorderDist || LOD level 1-2 boundary distance [m] || Switching center || - ||
+|| lv12_PlayDist || LOD level 1-2 play distance [m] || ± play at the center of the boundary || - ||
+|| lv23_BorderDist || LOD level 2-3 Boundary distance [m] || Switching center || - ||
+|| lv23_PlayDist || LOD level 2-3 play distance [m] || ± play at the center of the boundary || - ||
+|| lv34_BorderDist || LOD level 3-4 Boundary distance [m] || Switching center || - ||
+|| lv34_PlayDist || LOD level 3-4 play distance [m] || ± play at the center of the boundary || - ||
+|| lv45_BorderDist || LOD level 4-5 Boundary distance [m] || Switching center || - ||
+|| lv45_PlayDist || LOD level 4-5 play distance [m] || ± play at the center of the boundary || - ||
+|| tex_lv01_BorderDist || Texture LOD Level 0-1 Boundary distance [m] || Texture switching center (Texure LOD disabled at 0) || - ||
+|| tex_lv01_PlayDist || Texture LOD Level 0-1 Play distance [m] || Texture Play around the boundary || - ||
+|| enableCrossFade || Crossfade enabled || Is crossfade enabled (0: disabled, 1: enabled)? || - ||
+|| drawDist || Drawing distance [m] || Maximum drawing distance. In the open, it will be used for the activation distance || - ||
+|| drawFadeRange || Fade range [m] || Fade distance from the maximum drawing distance to the actual disappearance || - ||
+|| shadowDrawDist || Shadow drawing distance [m] || Maximum shadow drawing distance || - ||
+|| shadowFadeRange || Shadow fade range [m] || Fade distance from the maximum shadow drawing distance to the actual disappearance || - ||
+|| motionBlur_BorderDist || Motion blur drawing boundary distance [m] || Distance at which motion blur is enabled || - ||
+|| isPointLightShadowSrc || Cast the shadow of a point light source || Cast the shadow of a point light source || - ||
+|| isDirLightShadowSrc || Cast the shadow of a parallel light source || Cast the shadow of a parallel light source || - ||
+|| isShadowDst || Receive a shadow || Receive a shadow || - ||
+|| isShadowOnly || Shadow drawing only || Shadow drawing only || - ||
+|| drawByReflectCam || Reflected || Reflected || - ||
+|| drawOnlyReflectCam || Reflection drawing only || Reflection drawing only || - ||
+|| IncludeLodMapLv || What level of LodMap to include || What level of LodMap to include || - ||
+|| isNoFarClipDraw || Don't FarClip || Disable fur clips and always draw at the innermost depth of the clip space. Mainly for celestial sphere || - ||
+|| lodType || LOD type || Type and size of LOD target || PARTS_DRAW_LOD_TYPE ||
+|| shadowDrawLodOffset || Shadow drawing LOD level offset || LOD level offset value when drawing shadows || - ||
+|| isTraceCameraXZ || Follow the camera on the XZ plane || Follow the camera on the XZ plane (GR SEQ09242) || - ||
+|| isSkydomeDrawPhase || Switch to the celestial sphere drawing phase || Set the drawing phase to the celestial sphere (GR SEQ09242) || - ||
+|| DistantViewModel_BorderDist || Distance switching distance [m] || Distance switching distance [m] || - ||
+|| DistantViewModel_PlayDist || Distant view switching play distance [m] || Distant view switching play distance [m] || - ||
+|| LimtedActivate_BorderDist_forGrid || Construction limit distance for open [m] || Construction limit distance for open [m]. If the distance to the camera is less than this distance in the open, it will not be built. This is a function for distant view assets. -1: Function disabled (default) || - ||
+|| LimtedActivate_PlayDist_forGrid || Construction limit play distance for open [m] || Open construction limit play distance [m] || - ||
+|| zSortOffsetForNoFarClipDraw || Z sort offset || If the distance from the camera is the same in the same drawing phase, the smaller translucent system is drawn in the foreground, and the opaque system is drawn in the larger value. The base point of the offset is the origin in the celestial sphere drawing phase. Other than that, it is mainly Model AABB. (GR SEQ09242) || - ||
+|| shadowDrawAlphaTestDist || Shadow drawing alpha test effective distance [m] || Distance to perform alpha test when drawing shadow [m] || - ||
+|| fowardDrawEnvmapBlendType || Forward Drawing environment map Blend type || Forward Drawing environment map Blend type || PARTS_DRAW_FOWARD_DRAW_ENVMAP_BLEND_TYPE ||
+|| LBDrawDistScaleParamID || Drawing distance scale parameter ID || Load balancer drawing distance scale parameter ID || - ||
+|| resereve || reserve || reserve || - ||

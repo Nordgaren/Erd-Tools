@@ -1,0 +1,33 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,1000000,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,1000001,dummy8,,%d,dummy8,None
+Single time clear bonus soul amount,Amount of soul that can be obtained when defeating an area boss (in single play),0,99999999,100,u32,1,%d,u32,Wrap
+Clear bonus soul amount during multiplayer,Amount of soul that can be obtained when defeating an area boss (during multiplayer),0,99999999,200,u32,1,%d,u32,Wrap
+Human nature drop point count head flag ID,First flag ID for managing humanity drop points (using 20 Bit),0,-294967297,300,u32,1,%u,u32,Wrap
+Human nature drop required point 1,Threshold for acquiring humanity 1,0,65000,400,u16,1,%d,u16,Wrap
+Human nature drop required point 2,Threshold 2 for acquiring humanity,0,65000,401,u16,1,%d,u16,Wrap
+Human nature drop required point 3,Threshold 3 for acquiring humanity,0,65000,402,u16,1,%d,u16,Wrap
+Human nature drop required point 4,Threshold 4 for acquiring humanity,0,65000,403,u16,1,%d,u16,Wrap
+Human nature drop required point 5,Threshold 5 for acquiring humanity,0,65000,404,u16,1,%d,u16,Wrap
+Human nature drop required point 6,Threshold 6 for acquiring humanity,0,65000,405,u16,1,%d,u16,Wrap
+Human nature drop required point 7,Threshold for acquiring humanity 7,0,65000,406,u16,1,%d,u16,Wrap
+Human nature drop required point 8,Threshold for acquiring humanity 8,0,65000,407,u16,1,%d,u16,Wrap
+Human nature drop required point 9,Threshold for acquiring humanity 9,0,65000,408,u16,1,%d,u16,Wrap
+Humanity drop required points 10,Threshold 10 for acquiring humanity,0,65000,409,u16,1,%d,u16,Wrap
+Solo intrusion point addition lower limit,The minimum value of solo intrusion points to be added when defeating an area boss.,0,999999999,500,u32,1,%d,u32,Wrap
+Solo intrusion point addition value upper limit,The maximum value of solo intrusion points to be added when defeating an area boss.,0,999999999,510,u32,1,%d,u32,Wrap
+Boss defeated flag ID (for displaying purpose when hosting),If this flag is ON, it will not be displayed in the list of purpose settings at the time of hosting. If it is 0, it is always displayed.,0,-294967297,999999,u32,1,%u,u32,Wrap
+Purpose display flag ID,,0,-294967297,999999,u32,1,%u,u32,Wrap
+Boss discovery flag ID,,0,-294967297,999999,u32,1,%u,u32,Wrap
+Text ID at the time of discovery,,-1,999999999,999999,s32,1,%d,s32,Wrap
+Undiscovered text ID,,-1,999999999,999999,s32,1,%d,s32,Wrap
+Boss challengeable flag ID,Boss challengeable flag ID. When selecting the target boss in the intrusion position search when "Is the intrusion point automatically generated?" In the multiplayer area para is ○, the boss with this flag ON is targeted. If it is 0, it is always the target.,0,-294967297,600,u32,1,%u,u32,Wrap
+Boss defeat flag ID,Boss defeat flag ID. When selecting the target boss in the intrusion position search when "Is the intrusion point automatically generated?" In the multiplayer area para is ○, the boss with this flag OFF is targeted.,0,-294967297,610,u32,1,%u,u32,Wrap
+Boss position_X coordinates,Boss position_X coordinates (relative coordinates from the specified map). It is used to check the distance between the host and the boss in the intrusion position search when "Is the intrusion point automatically generated?" In the multiplayer area para.,-20000,20000,630,f32,0.01,%f,f32,Wrap
+Boss position_Y coordinates,Boss position_Y coordinates (relative coordinates from the specified map). It is used to check the distance between the host and the boss in the intrusion position search when "Is the intrusion point automatically generated?" In the multiplayer area para.,-20000,20000,631,f32,0.01,%f,f32,Wrap
+Boss position_Z coordinates,Boss position_Z coordinates (relative coordinates from the specified map). It is used to check the distance between the host and the boss in the intrusion position search when "Is the intrusion point automatically generated?" In the multiplayer area para.,-20000,20000,632,f32,0.01,%f,f32,Wrap
+Boss position_Area number (mXX_00_00_00),Boss position_area number (mXX_00_00_00). It is used to check the distance between the host and the boss in the intrusion position search when "Is the intrusion point automatically generated?" In the multiplayer area para.,0,99,620,u8,1,%u,u8,Wrap
+Boss position_grid X number (m00_XX_00_00),Boss position_grid X number (m00_XX_00_00). It is used to check the distance between the host and the boss in the intrusion position search when "Is the intrusion point automatically generated?" In the multiplayer area para.,0,99,621,u8,1,%u,u8,Wrap
+Boss position_grid Z number (m00_00_XX_00),Boss position_grid Z number (m00_00_XX_00). It is used to check the distance between the host and the boss in the intrusion position search when "Is the intrusion point automatically generated?" In the multiplayer area para.,0,99,622,u8,1,%u,u8,Wrap
+Reserved area,Reserved area,,,1000002,dummy8,,,dummy8,None

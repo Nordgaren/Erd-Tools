@@ -1,0 +1,251 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| sortId || Sort ID || Sort ID (7 digits is the limit for s32 because the enhancement level is added in the program) || - ||
+|| wanderingEquipId || Wandering equipment ID || Replacement equipment ID for wandering ghosts. || - ||
+|| resistSleep || Sleep tolerance || Difficulty in getting sleep abnormalities || - ||
+|| resistMadness || Madness resistance || Difficulty in getting mad || - ||
+|| saDurability || SA durability value || Super armor endurance || - ||
+|| toughnessCorrectRate || Toughness correction factor || It is a magnification that corrects the basic value of toughness. || - ||
+|| fixPrice || Repair price || Basic repair price || - ||
+|| basicPrice || Basic price || Basic price || - ||
+|| sellValue || Sale price || Selling price || - ||
+|| weight || Weight [kg] || Weight [kg]. || - ||
+|| residentSpEffectId || Resident special effect ID1 || Resident special effect ID1 || - ||
+|| residentSpEffectId2 || Resident special effect ID2 || Resident special effect ID2 || - ||
+|| residentSpEffectId3 || Resident special effect ID3 || Resident special effect ID3 || - ||
+|| materialSetId || Material ID || Material parameter ID required for weapon enhancement || - ||
+|| partsDamageRate || Part damage rate || Part damage rate || - ||
+|| corectSARecover || SA recovery time correction value || Super Armor Recovery Time Correction Value || - ||
+|| originEquipPro || Derivation source || Strengthening of this armor Original armor ID || - ||
+|| originEquipPro1 || Derivative source enhancement +1 || Strengthening this armor Original armor ID1 || - ||
+|| originEquipPro2 || Derivative source enhancement +2 || Strengthening this armor Original armor ID2 || - ||
+|| originEquipPro3 || Derivative source enhancement +3 || Strengthening this armor Original armor ID3 || - ||
+|| originEquipPro4 || Derivative source enhancement +4 || Strengthening this armor Original armor ID4 || - ||
+|| originEquipPro5 || Derivative source enhancement +5 || Strengthening this armor Original armor ID5 || - ||
+|| originEquipPro6 || Derivative source enhancement +6 || Strengthening this armor Original armor ID6 || - ||
+|| originEquipPro7 || Derivative source enhancement +7 || Strengthening this armor Original armor ID7 || - ||
+|| originEquipPro8 || Derivative source enhancement +8 || Strengthening this armor Original armor ID8 || - ||
+|| originEquipPro9 || Derivative source enhancement +9 || Strengthening this armor Original armor ID9 || - ||
+|| originEquipPro10 || Derivative source enhancement +10 || Strengthening this armor Original armor ID10 || - ||
+|| originEquipPro11 || Derivative source enhancement +11 || Strengthening this armor Original armor ID11 || - ||
+|| originEquipPro12 || Derivative source enhancement +12 || Strengthening this armor Original armor ID12 || - ||
+|| originEquipPro13 || Derivative source enhancement +13 || Strengthening this armor Original armor ID13 || - ||
+|| originEquipPro14 || Derivative source enhancement +14 || Strengthening this armor Original armor ID14 || - ||
+|| originEquipPro15 || Derivative source enhancement +15 || Strengthening this armor Original armor ID15 || - ||
+|| faceScaleM_ScaleX || Man profile enlargement scale ||  || - ||
+|| faceScaleM_ScaleZ || Male face enlargement scale ||  || - ||
+|| faceScaleM_MaxX || Maximum magnification for male profile enlargement ||  || - ||
+|| faceScaleM_MaxZ || Maximum magnification for man's face enlargement ||  || - ||
+|| faceScaleF_ScaleX || Female profile enlargement scale ||  || - ||
+|| faceScaleF_ScaleZ || Female face enlargement scale ||  || - ||
+|| faceScaleF_MaxX || Female profile enlargement maximum magnification ||  || - ||
+|| faceScaleF_MaxZ || Maximum magnification for female face enlargement ||  || - ||
+|| qwcId || QWCID || QWC parameter ID || - ||
+|| equipModelId || Equipment model number || Equipment model number. || - ||
+|| iconIdM || Icon ID for men || Men's menu icon ID. || - ||
+|| iconIdF || Female icon ID || Women's menu icon ID. || - ||
+|| knockBack || Knockback cut rate || Knockback reduction value. || - ||
+|| knockbackBounceRate || Knockback repulsion rate || Knockback repulsion rate. || - ||
+|| durability || Durability || Initial durability. || - ||
+|| durabilityMax || Maximum durability || New durability. || - ||
+|| pad03 || pad ||  || - ||
+|| defFlickPower || Repellent defense || Used to determine the repulsion of enemy attacks. || - ||
+|| defensePhysics || Physical defense || Physical attack damage protection. || - ||
+|| defenseMagic || Magic defense || Magic attack damage protection. || - ||
+|| defenseFire || Fire defense || Fire attack damage protection. || - ||
+|| defenseThunder || Electric shock defense || Damage protection for electric shock attacks. || - ||
+|| defenseSlash || Slash defense || Look at the attack type, and if it is a slashing attribute, reduce the defense power || - ||
+|| defenseBlow || Strike defense || Look at the attack attribute, and if it is a hit attribute, reduce the defense power. || - ||
+|| defenseThrust || Puncture defense || Look at the attack attribute, and if it is a hit attribute, reduce the defense power. || - ||
+|| resistPoison || Poison resistance || Difficulty in getting poisonous || - ||
+|| resistDisease || Epidemic resistance || Difficulty in getting sick || - ||
+|| resistBlood || Bleeding resistance || Difficulty in getting bleeding abnormalities || - ||
+|| resistCurse || Curse resistance || Difficulty in getting a curse condition || - ||
+|| reinforceTypeId || Enhanced type ID || Enhanced type ID || - ||
+|| trophySGradeId || Trophy || Is it related to the trophy system? || - ||
+|| shopLv || Shop level || Level that can be sold at the store || - ||
+|| knockbackParamId || Knockback parameter ID || ID of the parameter used for knockback || - ||
+|| flickDamageCutRate || Damage attenuation rate when repelling [%] || Used for damage attenuation rate when repelling || - ||
+|| equipModelCategory || Equipment model type || Equipment model type. || EQUIP_MODEL_CATEGORY ||
+|| equipModelGender || Equipment model gender || Gender of equipment model. || EQUIP_MODEL_GENDER ||
+|| protectorCategory || Armor category || Armor category. || PROTECTOR_CATEGORY ||
+|| rarity || Rarity || Rarity used in item acquisition logs || - ||
+|| sortGroupId || Sort item type ID || Sort item type ID. In the sort "Item type order", the same ID is displayed together as the same group. || - ||
+|| partsDmgType || Part damage application attack || Set the attack type to judge the part damage || ATK_PARAM_PARTSDMGTYPE ||
+|| pad04 || Padding ||  || - ||
+|| isDeposit || Can i deposit || Can you leave it in the warehouse? || EQUIP_BOOL ||
+|| headEquip || Head equipment || Is it head equipment? || EQUIP_BOOL ||
+|| bodyEquip || Torso equipment || Is it torso equipment? || EQUIP_BOOL ||
+|| armEquip || Arm equipment || Is it arm equipment? || EQUIP_BOOL ||
+|| legEquip || Leg equipment || Is it leg equipment? || EQUIP_BOOL ||
+|| useFaceScale || Whether to use a face scale || Whether to use a face scale || EQUIP_BOOL ||
+|| isSkipWeakDamageAnim || Do you want to skip the weakness animation? || Weakness damage Whether to skip animation playback. "Part damage rate" and "defense material" are treated as weak points just by not playing the animation. || EQUIP_BOOL ||
+|| pad06 || Padding ||  || - ||
+|| defenseMaterialVariationValue_Weak || Weakness defense material variation value || It is a value used for variation of abnormal condition, damage SFX, SE in combination with weak point defense material. SEQ16473 || - ||
+|| autoFootEffectDecalBaseId2 || Foot decal identifier 2 || Decal ID for automatic foot effects. Floor material is also considered. Only used when the "armor category" is "legs". || - ||
+|| autoFootEffectDecalBaseId3 || Foot decal identifier 3 || Decal ID for automatic foot effects. Floor material is also considered. Only used when the "armor category" is "legs". || - ||
+|| defenseMaterialVariationValue || Defensive material variation value || It is a value used in combination with the defense material to classify abnormal conditions, damage SFX, and SE. SEQ16473 || - ||
+|| isDiscard || Can you throw it away || Can you throw away the item? TRUE = thrown away || EQUIP_BOOL ||
+|| isDrop || Can you put it on the spot || Can I put the item on the spot? TRUE = can be placed || EQUIP_BOOL ||
+|| disableMultiDropShare || Is multi-drop sharing prohibited? || Is multi-drop sharing prohibited? || EQUIP_BOOL ||
+|| simpleModelForDlc || Is there a simple model for DLC? || Is there a simple model for DLC? || EQUIP_BOOL ||
+|| showLogCondType || Acquisition log display condition || Whether to display in the item acquisition log when acquiring the item (not entered: ○) || EQUIP_BOOL ||
+|| showDialogCondType || Acquisition dialog display condition || Whether to display it in the item acquisition dialog when acquiring an item (not entered: new only) || GET_DIALOG_CONDITION_TYPE ||
+|| pad || Padding ||  || - ||
+|| neutralDamageCutRate || Non-attribute damage multiplier || Non-attribute damage multiplier || - ||
+|| slashDamageCutRate || Slash damage multiplier || Slash damage multiplier || - ||
+|| blowDamageCutRate || Batter damage multiplier || Batter damage multiplier || - ||
+|| thrustDamageCutRate || Puncture damage ratio || Puncture damage ratio || - ||
+|| magicDamageCutRate || Magic damage multiplier || Magic damage multiplier || - ||
+|| fireDamageCutRate || Flame damage multiplier || Flame damage multiplier || - ||
+|| thunderDamageCutRate || Electric shock damage ratio || Electric shock damage ratio || - ||
+|| defenseMaterialSfx1 || Defensive material 1 [SFX] || For SFX when moving / defending. 1 || WEP_MATERIAL_DEF_SFX ||
+|| defenseMaterialSfx_Weak1 || Weakness protection material 1 [SFX] || For SFX when weak points are damaged 1 || WEP_MATERIAL_DEF_SFX ||
+|| defenseMaterial1 || Defensive material 1 [SE] || For SE when moving / defending. 1 || WEP_MATERIAL_DEF ||
+|| defenseMaterial_Weak1 || Weakness defense material 1 [SE] || For SE when weak points are damaged 1 || WEP_MATERIAL_DEF ||
+|| defenseMaterialSfx2 || Defensive material 2 [SFX] || For SFX when moving / defending. 2 || WEP_MATERIAL_DEF_SFX ||
+|| defenseMaterialSfx_Weak2 || Weakness protection material 2 [SFX] || 2 for SFX when weak points are damaged || WEP_MATERIAL_DEF_SFX ||
+|| footMaterialSe || Foot equipment material [SE] || Material for foot equipment SE. Only foot equipment is referenced. ([GR] SEQ10061) In the case of "139: None", the defense material 1 [SE] is referred to. || WEP_MATERIAL_DEF ||
+|| defenseMaterial_Weak2 || Weakness defense material 2 [SE] || 2 for SE when weak points are damaged || WEP_MATERIAL_DEF ||
+|| autoFootEffectDecalBaseId1 || Foot decal identifier 1 || Decal ID for automatic foot effects. Floor material is also considered. Only used when the "armor category" is "legs". || - ||
+|| toughnessDamageCutRate || Toughness Damage multiplier || Toughness version cut rate || - ||
+|| toughnessRecoverCorrection || Toughness recovery time correction value || Correction value for toughness recovery time || - ||
+|| darkDamageCutRate || Dark damage multiplier || Dark damage multiplier || - ||
+|| defenseDark || Dark defense || Dark attack damage protection. || - ||
+|| invisibleFlag48 || PAD_original_ # 48 # hidden || Original _ # 48 # hidden || - ||
+|| invisibleFlag49 || PAD_original_ # 49 # hidden || Original _ # 49 # hidden || - ||
+|| invisibleFlag50 || PAD_original_ # 50 # hidden || Original _ # 50 # hidden || - ||
+|| invisibleFlag51 || PAD_original_ # 51 # hidden || Original _ # 51 # hidden || - ||
+|| invisibleFlag52 || PAD_original_ # 52 # hidden || Original _ # 52 # hidden || - ||
+|| invisibleFlag53 || PAD_original_ # 53 # hidden || Original _ # 53 # hidden || - ||
+|| invisibleFlag54 || PAD_original_ # 54 # hidden || Original _ # 54 # hidden || - ||
+|| invisibleFlag55 || PAD_original_ # 55 # hidden || Original _ # 55 # hidden || - ||
+|| invisibleFlag56 || PAD_original_ # 56 # hidden || Original _ # 56 # hidden || - ||
+|| invisibleFlag57 || PAD_original_ # 57 # hidden || Original _ # 57 # hidden || - ||
+|| invisibleFlag58 || PAD_original_ # 58 # hidden || Original _ # 58 # hidden || - ||
+|| invisibleFlag59 || PAD_original_ # 59 # hidden || Original _ # 59 # hidden || - ||
+|| invisibleFlag60 || PAD_original_ # 60 # hidden || Original _ # 60 # hidden || - ||
+|| invisibleFlag61 || PAD_original_ # 61 # hidden || Original _ # 61 # Hidden || - ||
+|| invisibleFlag62 || PAD_original_ # 62 # hidden || Original _ # 62 # hidden || - ||
+|| invisibleFlag63 || PAD_original_ # 63 # hidden || Original _ # 63 # hidden || - ||
+|| invisibleFlag64 || PAD_original_ # 64 # hidden || Original _ # 64 # hidden || - ||
+|| invisibleFlag65 || PAD_original_ # 65 # hidden || Original _ # 65 # hidden || - ||
+|| invisibleFlag66 || PAD_original_ # 66 # hidden || Original _ # 66 # hidden || - ||
+|| invisibleFlag67 || PAD_original_ # 67 # hidden || Original _ # 67 # hidden || - ||
+|| invisibleFlag68 || PAD_original_ # 68 # hidden || Original _ # 68 # hidden || - ||
+|| invisibleFlag69 || PAD_original_ # 69 # hidden || Original _ # 69 # hidden || - ||
+|| invisibleFlag70 || PAD_original_ # 70 # hidden || Original _ # 70 # hidden || - ||
+|| invisibleFlag71 || PAD_original_ # 71 # hidden || Original _ # 71 # hidden || - ||
+|| invisibleFlag72 || PAD_original_ # 72 # hidden || Original _ # 72 # hidden || - ||
+|| invisibleFlag73 || PAD_original_ # 73 # hidden || Original _ # 73 # hidden || - ||
+|| invisibleFlag74 || PAD_original_ # 74 # hidden || Original _ # 74 # hidden || - ||
+|| invisibleFlag75 || PAD_original_ # 75 # hidden || Original _ # 75 # hidden || - ||
+|| invisibleFlag76 || PAD_original_ # 76 # hidden || Original _ # 76 # hidden || - ||
+|| invisibleFlag77 || PAD_original_ # 77 # hidden || Original _ # 77 # hidden || - ||
+|| invisibleFlag78 || PAD_original_ # 78 # hidden || Original _ # 78 # hidden || - ||
+|| invisibleFlag79 || PAD_original_ # 79 # hidden || Original _ # 79 # hidden || - ||
+|| invisibleFlag80 || PAD_original_ # 80 # hidden || Original _ # 80 # hidden || - ||
+|| padbit || Padding ||  || - ||
+|| postureControlId || Attitude control ID (torso) || Attitude control ID (torso) || - ||
+|| pad2 || pad ||  || - ||
+|| saleValue || Selling price || Selling price || - ||
+|| resistFreeze || Cold resistance || Difficulty in getting cold air condition abnormal || - ||
+|| invisibleFlag_SexVer00 || # 00 #Hidden (Gender designation) || Bangs tip || - ||
+|| invisibleFlag_SexVer01 || # 01 #Hidden (Gender designation) || Bangs root || - ||
+|| invisibleFlag_SexVer02 || # 02 #Hidden (Gender designation) || Sideburns || - ||
+|| invisibleFlag_SexVer03 || # 03 #Hidden (Gender designation) || Top of the head || - ||
+|| invisibleFlag_SexVer04 || # 04 #Hidden (Gender designation) || Top of the head || - ||
+|| invisibleFlag_SexVer05 || # 05 #Hidden (Gender designation) || Back hair || - ||
+|| invisibleFlag_SexVer06 || # 06 #Hidden (Gender designation) || The tip of the back hair || - ||
+|| invisibleFlag_SexVer07 || # 07 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer08 || # 08 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer09 || # 09 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer10 || # 10 #Hidden (Gender designation) || collar || - ||
+|| invisibleFlag_SexVer11 || # 11 #Hidden (Gender designation) || Around the collar || - ||
+|| invisibleFlag_SexVer12 || # 12 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer13 || # 13 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer14 || # 14 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer15 || # 15 #Hidden (Gender designation) || Hood hem || - ||
+|| invisibleFlag_SexVer16 || # 16 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer17 || # 17 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer18 || # 18 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer19 || # 19 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer20 || # 20 #Hidden (Gender designation) || Sleeve A || - ||
+|| invisibleFlag_SexVer21 || # 21 #Hidden (Gender designation) || Sleeve B || - ||
+|| invisibleFlag_SexVer22 || # 22 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer23 || # 23 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer24 || # 24 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer25 || # 25 #Hidden (Gender designation) || arm || - ||
+|| invisibleFlag_SexVer26 || # 26 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer27 || # 27 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer28 || # 28 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer29 || # 29 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer30 || # 30 #Hidden (Gender designation) || belt || - ||
+|| invisibleFlag_SexVer31 || # 31 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer32 || # 32 #Hidden (Men and women specified) ||  || - ||
+|| invisibleFlag_SexVer33 || # 33 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer34 || # 34 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer35 || # 35 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer36 || # 36 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer37 || # 37 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer38 || # 38 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer39 || # 39 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer40 || # 40 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer41 || # 41 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer42 || # 42 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer43 || # 43 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer44 || # 44 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer45 || # 45 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer46 || # 46 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer47 || # 47 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer48 || # 48 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer49 || # 49 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer50 || # 50 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer51 || # 51 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer52 || # 52 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer53 || # 53 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer54 || # 54 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer55 || # 55 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer56 || # 56 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer57 || # 57 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer58 || # 58 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer59 || # 59 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer60 || # 60 #Hidden (Men and women specified) ||  || - ||
+|| invisibleFlag_SexVer61 || # 61 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer62 || # 62 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer63 || # 63 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer64 || # 64 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer65 || # 65 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer66 || # 66 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer67 || # 67 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer68 || # 68 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer69 || # 69 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer70 || # 70 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer71 || # 71 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer72 || # 72 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer73 || # 73 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer74 || # 74 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer75 || # 75 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer76 || # 76 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer77 || # 77 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer78 || # 78 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer79 || # 79 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer80 || # 80 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer81 || # 81 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer82 || # 82 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer83 || # 83 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer84 || # 84 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer85 || # 85 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer86 || # 86 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer87 || # 87 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer88 || # 88 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer89 || # 89 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer90 || # 90 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer91 || # 91 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer92 || # 92 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer93 || # 93 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer94 || # 94 #Hidden (Gender designation) ||  || - ||
+|| invisibleFlag_SexVer95 || # 95 #Hidden (Gender designation) ||  || - ||
+|| pad404 || Padding || Padding || - ||

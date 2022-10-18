@@ -1,0 +1,22 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| host || host || Number of host est recovery || - ||
+|| invadeOrb_None || No intrusion route_orb_ || The number of est recovery of the power of the orb whose invasion route is || - ||
+|| invadeOrb_Umbasa || Invasion route_Orb_Sun || The number of est recovery of the power of the orb whose invasion route is || - ||
+|| invadeOrb_Berserker || Intrusion route_Orb_Berserker || The number of est recovery of the power of the orb whose invasion route is || - ||
+|| invadeOrb_Sinners || Invasion route_Orb_Sinner || The number of est recovery of the power of the orb whose invasion route is || - ||
+|| invadeSign_None || No intrusion route_sign_ || The number of est recovery of the power whose invasion route is a sign || - ||
+|| invadeSign_Umbasa || Invasion route_sign_sun || The number of est recovery of the power whose invasion route is a sign || - ||
+|| invadeSign_Berserker || Intrusion route_sign_berserker || The number of est recovery of the power whose invasion route is a sign || - ||
+|| invadeSign_Sinners || Intrusion route_sign_sinner || The number of est recovery of the power whose invasion route is a sign || - ||
+|| invadeRing_Sinners || Invasion route_ring_sinner || The number of est recovery of the power of the ring whose invasion route is || - ||
+|| invadeRing_Rosalia || Invasion route_Ring_Boss guard (Rosalia) || The number of est recovery of the power of the ring whose invasion route is || - ||
+|| invadeRing_Forest || Invasion route_Ring_Map Mamoru (Forest) || The number of est recovery of the power of the ring whose invasion route is || - ||
+|| coopSign_None || Cooperation route_sign_ None || The number of est recovery of the power whose cooperation route is a sign || - ||
+|| coopSign_Umbasa || Cooperation route_sign_sun || The number of est recovery of the power whose cooperation route is a sign || - ||
+|| coopSign_Berserker || Cooperation route_sign_berserker || The number of est recovery of the power whose cooperation route is a sign || - ||
+|| coopSign_Sinners || Cooperation route_sign_sinner || The number of est recovery of the power whose cooperation route is a sign || - ||
+|| coopRing_RedHunter || Cooperation route _ ring _ red hunting || Cooperation route is the number of est recovery of the power of the ring || - ||
+|| invadeRing_Anor || Intrusion route_Ring_Map guard (Anor) || The number of est recovery of the power of the ring whose invasion route is || - ||
+|| paramReplaceRate || Recovery number Parameter replacement rate || Recovery number Parameter replacement rate || - ||
+|| paramReplaceId || Recovery number Parameter replacement destination ID || Recovery number Parameter replacement destination ID || - ||
+|| pad || pad ||  || - ||

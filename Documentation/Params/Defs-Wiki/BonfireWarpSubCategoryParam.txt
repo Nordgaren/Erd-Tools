@@ -1,0 +1,8 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| textId || Text ID || Subcategory display name Text ID [MenuText] || - ||
+|| tabId || Kagaribi Warp Tab ID || Kagaribi Warp Tab ID. ID of the tab to which this subcategory belongs || - ||
+|| sortId || Bonfire Warp Tab Sort ID || Bonfire Warp Tab Sort ID. Display order of subcategories in tabs || - ||
+|| pad || pad ||  || - ||

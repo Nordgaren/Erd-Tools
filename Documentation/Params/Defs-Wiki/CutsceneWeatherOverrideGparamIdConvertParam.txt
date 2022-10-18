@@ -1,0 +1,2 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| weatherOverrideGparamId || Cutscene Weather Overwrite Gparam Suffix ID || The ID of the ?? part of s00_00_0000_WeatherOverride_ ??. Gparam || - ||

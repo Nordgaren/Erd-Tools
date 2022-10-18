@@ -1,0 +1,8 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| textId || Text ID || Tab Display Name Text ID [MenuText] || - ||
+|| sortId || Sort ID || Tab display order sort ID. Line up from the left with aim || - ||
+|| iconId || Icon ID || Tab icon ID. Menu resource compliance || - ||
+|| pad || pad ||  || - ||

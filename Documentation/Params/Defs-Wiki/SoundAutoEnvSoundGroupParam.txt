@@ -1,0 +1,5 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| SoundNo || Sound No || Sound No to play (sound type is fixed to a) || - ||
+|| ExpandRange || Judgment extended distance || Extended distance of playback judgment area || - ||
+|| FollowSpeed || Sound source tracking speed || Follow-up speed (fixed speed) to the target position of the actual sound source || - ||
+|| FollowRate || Sound source follow-up rate || Follow-up speed (difference ratio) to the target position of the actual sound source || - ||

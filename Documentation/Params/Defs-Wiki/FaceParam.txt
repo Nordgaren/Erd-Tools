@@ -1,0 +1,243 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| face_partsId || Face part ID || Face part ID || - ||
+|| skin_color_R || Skin color (R) || Skin color (R) || - ||
+|| skin_color_G || Skin color (G) || Skin color (G) || - ||
+|| skin_color_B || Skin color (B) || Skin color (B) || - ||
+|| skin_gloss || Shiny skin || Shiny skin || - ||
+|| skin_pores || pores || pores || - ||
+|| face_beard || Blue beard || Blue beard || - ||
+|| face_aroundEye || Bear || Bear || - ||
+|| face_aroundEyeColor_R || Bear color (R) || Bear color (R) || - ||
+|| face_aroundEyeColor_G || Bear color (G) || Bear color (G) || - ||
+|| face_aroundEyeColor_B || Bear color (B) || Bear color (B) || - ||
+|| face_cheek || cheek || cheek || - ||
+|| face_cheekColor_R || Teak color (R) || Teak color (R) || - ||
+|| face_cheekColor_G || Teak color (G) || Teak color (G) || - ||
+|| face_cheekColor_B || Teak color (B) || Teak color (B) || - ||
+|| face_eyeLine || Eyeline || Eyeline || - ||
+|| face_eyeLineColor_R || Eyeliner color (R) || Eyeliner color (R) || - ||
+|| face_eyeLineColor_G || Eyeliner color (G) || Eyeliner color (G) || - ||
+|| face_eyeLineColor_B || Eyeliner color (B) || Eyeliner color (B) || - ||
+|| face_eyeShadowDown || Eye shadow (bottom) || Eye shadow (bottom) || - ||
+|| face_eyeShadowDownColor_R || Eyeshadow (bottom) color (R) || Eyeshadow (bottom) color (R) || - ||
+|| face_eyeShadowDownColor_G || Eyeshadow (bottom) color (G) || Eyeshadow (bottom) color (G) || - ||
+|| face_eyeShadowDownColor_B || Eyeshadow (bottom) color (B) || Eyeshadow (bottom) color (B) || - ||
+|| face_eyeShadowUp || Eye shadow (top) || Eye shadow (top) || - ||
+|| face_eyeShadowUpColor_R || Eyeshadow (top) color (R) || Eyeshadow (top) color (R) || - ||
+|| face_eyeShadowUpColor_G || Eyeshadow (top) color (G) || Eyeshadow (top) color (G) || - ||
+|| face_eyeShadowUpColor_B || Eyeshadow (top) color (B) || Eyeshadow (top) color (B) || - ||
+|| face_lip || lipstick || lipstick || - ||
+|| face_lipColor_R || Lipstick color (R) || Lipstick color (R) || - ||
+|| face_lipColor_G || Lipstick color (G) || Lipstick color (G) || - ||
+|| face_lipColor_B || Lipstick color (B) || Lipstick color (B) || - ||
+|| body_hair || Hair thickness || Hair thickness || - ||
+|| body_hairColor_R || Hair color (R) || Hair color (R) || - ||
+|| body_hairColor_G || Hair color (G) || Hair color (G) || - ||
+|| body_hairColor_B || Hair color (B) || Hair color (B) || - ||
+|| eye_partsId || Eyeball part ID || Eyeball part ID || - ||
+|| eyeR_irisColor_R || Iris color (R) || Right eye iris color (R) || - ||
+|| eyeR_irisColor_G || Iris color (G) || Right eye iris color (G) || - ||
+|| eyeR_irisColor_B || Iris color (B) || Right eye iris color (B) || - ||
+|| eyeR_irisScale || The size of the iris || The size of the iris of the right eye || - ||
+|| eyeR_cataract || Cloudiness of the crystalline lens || Cloudiness of the crystalline lens of the right eye || - ||
+|| eyeR_cataractColor_R || The turbid color of the crystalline lens (R) || The turbid color of the crystalline lens of the right eye (R) || - ||
+|| eyeR_cataractColor_G || The turbid color of the crystalline lens (G) || The turbid color of the crystalline lens of the right eye (G) || - ||
+|| eyeR_cataractColor_B || The turbid color of the crystalline lens (B) || The turbid color of the crystalline lens of the right eye (B) || - ||
+|| eyeR_scleraColor_R || White eye color (R) || White eye color of the right eye (R) || - ||
+|| eyeR_scleraColor_G || White eye color (G) || White eye color of the right eye (G) || - ||
+|| eyeR_scleraColor_B || White eye color (B) || White eye color of the right eye (B) || - ||
+|| eyeR_irisDistance || Position of the iris || Position of the iris of the right eye || - ||
+|| eyeL_irisColor_R || Iris color (R) || Left eye iris color (R) || - ||
+|| eyeL_irisColor_G || Iris color (G) || Left eye iris color (G) || - ||
+|| eyeL_irisColor_B || Iris color (B) || Left eye iris color (B) || - ||
+|| eyeL_irisScale || The size of the iris || The size of the iris of the left eye || - ||
+|| eyeL_cataract || Cloudiness of the crystalline lens || Cloudiness of the crystalline lens of the left eye || - ||
+|| eyeL_cataractColor_R || The turbid color of the crystalline lens (R) || The turbid color of the crystalline lens of the left eye (R) || - ||
+|| eyeL_cataractColor_G || The turbid color of the crystalline lens (G) || The turbid color of the crystalline lens of the left eye (G) || - ||
+|| eyeL_cataractColor_B || The turbid color of the crystalline lens (B) || The turbid color of the crystalline lens of the left eye (B) || - ||
+|| eyeL_scleraColor_R || White eye color (R) || White eye color of the left eye (R) || - ||
+|| eyeL_scleraColor_G || White eye color (G) || White eye color of the left eye (G) || - ||
+|| eyeL_scleraColor_B || White eye color (B) || White eye color of the left eye (B) || - ||
+|| eyeL_irisDistance || Position of the iris || Position of the iris of the left eye || - ||
+|| hair_partsId || Hair part ID || Hair part ID || - ||
+|| hair_color_R || Hair color (R) || Hair color (R) || - ||
+|| hair_color_G || Hair color (G) || Hair color (G) || - ||
+|| hair_color_B || Hair color (B) || Hair color (B) || - ||
+|| hair_shininess || Gloss || Hair gloss || - ||
+|| hair_rootBlack || Blackness at the base || Blackness at the base of hair || - ||
+|| hair_whiteDensity || Amount of gray hair || Amount of white hair || - ||
+|| beard_partsId || Beard part ID || Beard part ID || - ||
+|| beard_color_R || Beard color (R) || Beard color (R) || - ||
+|| beard_color_G || Beard color (G) || Beard color (G) || - ||
+|| beard_color_B || Beard color (B) || Beard color (B) || - ||
+|| beard_shininess || Gloss || Beard luster || - ||
+|| beard_rootBlack || Blackness at the base || Blackness at the base of the beard || - ||
+|| beard_whiteDensity || Amount of gray hair || Amount of white hair with a beard || - ||
+|| eyebrow_partsId || Eyebrow part ID || Eyebrow part ID || - ||
+|| eyebrow_color_R || Eyebrow color (R) || Eyebrow color (R) || - ||
+|| eyebrow_color_G || Eyebrow color (G) || Eyebrow color (G) || - ||
+|| eyebrow_color_B || Eyebrow color (B) || Eyebrow color (B) || - ||
+|| eyebrow_shininess || Gloss || Glossy eyebrows || - ||
+|| eyebrow_rootBlack || Blackness at the base || Blackness at the base of the eyebrows || - ||
+|| eyebrow_whiteDensity || Amount of gray hair || Amount of white hair on the eyebrows || - ||
+|| eyelash_partsId || Eyelash parts ID || Eyelash parts ID || - ||
+|| eyelash_color_R || Eyelash color (R) || Eyelash color (R) || - ||
+|| eyelash_color_G || Eyelash color (G) || Eyelash color (G) || - ||
+|| eyelash_color_B || Eyelash color (B) || Eyelash color (B) || - ||
+|| accessories_partsId || Decorative part ID || Decorative part ID || - ||
+|| accessories_color_R || Decoration color (R) || Decoration color (R) || - ||
+|| accessories_color_G || Decoration color (G) || Decoration color (G) || - ||
+|| accessories_color_B || Decorative color (B) || Decorative color (B) || - ||
+|| decal_partsId || Decal part ID || Decal part ID || - ||
+|| decal_posX || Decal position (x) || Decal position (x) || - ||
+|| decal_posY || Decal position (y) || Decal position (y) || - ||
+|| decal_angle || Decal angle || Decal angle || - ||
+|| decal_scale || Decal scale || Decal scale || - ||
+|| decal_color_R || Decal color (R) || Decal color (R) || - ||
+|| decal_color_G || Decal color (G) || Decal color (G) || - ||
+|| decal_color_B || Decal color (B) || Decal color (B) || - ||
+|| decal_gloss || Decal gloss || Decal gloss || - ||
+|| decal_mirror || Decal reversal || Decal reversal || - ||
+|| chrBodyScaleHead || Character body head scale || Character body head scale || - ||
+|| chrBodyScaleBreast || Character body chest scale || Character body chest scale || - ||
+|| chrBodyScaleAbdomen || Character body type abdominal scale || Character body type abdominal scale || - ||
+|| chrBodyScaleRArm || Character body right arm scale || Character body right arm scale || - ||
+|| chrBodyScaleRLeg || Character body right leg scale || Character body right leg scale || - ||
+|| chrBodyScaleLArm || Character body shape left arm scale || Character body shape left arm scale || - ||
+|| chrBodyScaleLLeg || Character body type left leg scale || Character body type left leg scale || - ||
+|| burn_scar || Burn scars || Burn scars || - ||
+|| override_eye_partsId || Eyeball part ID || Whether to overwrite the eyeball part ID || BOOL_CIRCLECROSS_TYPE ||
+|| override_eye_irisColor || Iris color || Do you want to overwrite the color of the iris? || BOOL_CIRCLECROSS_TYPE ||
+|| override_eye_cataract || Cloudiness of the crystalline lens || Do you want to overwrite the turbidity of the crystalline lens? || BOOL_CIRCLECROSS_TYPE ||
+|| override_eye_cataractColor || The turbid color of the crystalline lens || Do you want to overwrite the muddy color of the crystalline lens? || BOOL_CIRCLECROSS_TYPE ||
+|| override_eye_scleraColor || White eye color || Do you want to overwrite the white eye color? || BOOL_CIRCLECROSS_TYPE ||
+|| override_burn_scar || Burn scars || Do you want to overwrite the burn scars? || BOOL_CIRCLECROSS_TYPE ||
+|| pad2 || pad2 ||  || - ||
+|| pad || pad ||  || - ||
+|| age || age || age || - ||
+|| gender || sex || sex || - ||
+|| caricatureGeometry || Exaggeration (model) || Exaggeration (model) || - ||
+|| caricatureTexture || Exaggeration (texture) || Exaggeration (texture) || - ||
+|| faceGeoData00 || Face creation geometry data 00 || Face creation geometry data 00 || - ||
+|| faceGeoData01 || Face creation geometry data 01 || Face creation geometry data 01 || - ||
+|| faceGeoData02 || Face creation geometry data 02 || Face creation geometry data 02 || - ||
+|| faceGeoData03 || Face creation geometry data 03 || Face creation geometry data 03 || - ||
+|| faceGeoData04 || Face creation geometry data 04 || Face creation geometry data 04 || - ||
+|| faceGeoData05 || Face creation geometry data 05 || Face creation geometry data 05 || - ||
+|| faceGeoData06 || Face creation geometry data 06 || Face creation geometry data 06 || - ||
+|| faceGeoData07 || Face creation geometry data 07 || Face creation geometry data 07 || - ||
+|| faceGeoData08 || Face creation geometry data 08 || Face creation geometry data 08 || - ||
+|| faceGeoData09 || Face creation geometry data 09 || Face creation geometry data 09 || - ||
+|| faceGeoData10 || Face creation geometry data 10 || Face creation geometry data 10 || - ||
+|| faceGeoData11 || Face creation geometry data 11 || Face creation geometry data 11 || - ||
+|| faceGeoData12 || Face creation geometry data 12 || Face creation geometry data 12 || - ||
+|| faceGeoData13 || Face creation geometry data 13 || Face creation geometry data 13 || - ||
+|| faceGeoData14 || Face creation geometry data 14 || Face creation geometry data 14 || - ||
+|| faceGeoData15 || Face creation geometry data 15 || Face creation geometry data 15 || - ||
+|| faceGeoData16 || Face creation geometry data 16 || Face creation geometry data 16 || - ||
+|| faceGeoData17 || Face creation geometry data 17 || Face creation geometry data 17 || - ||
+|| faceGeoData18 || Face creation geometry data 18 || Face creation geometry data 18 || - ||
+|| faceGeoData19 || Face creation geometry data 19 || Face creation geometry data 19 || - ||
+|| faceGeoData20 || Face creation geometry data 20 || Face creation geometry data 20 || - ||
+|| faceGeoData21 || Face creation geometry data 21 || Face creation geometry data 21 || - ||
+|| faceGeoData22 || Face creation geometry data 22 || Face creation geometry data 22 || - ||
+|| faceGeoData23 || Face creation geometry data 23 || Face creation geometry data 23 || - ||
+|| faceGeoData24 || Face creation geometry data 24 || Face creation geometry data 24 || - ||
+|| faceGeoData25 || Face creation geometry data 25 || Face creation geometry data 25 || - ||
+|| faceGeoData26 || Face creation geometry data 26 || Face creation geometry data 26 || - ||
+|| faceGeoData27 || Face creation geometry data 27 || Face creation geometry data 27 || - ||
+|| faceGeoData28 || Face creation geometry data 28 || Face creation geometry data 28 || - ||
+|| faceGeoData29 || Face creation geometry data 29 || Face creation geometry data 29 || - ||
+|| faceGeoData30 || Face creation geometry data 30 || Face creation geometry data 30 || - ||
+|| faceGeoData31 || Face creation geometry data 31 || Face creation geometry data 31 || - ||
+|| faceGeoData32 || Face creation geometry data 32 || Face creation geometry data 32 || - ||
+|| faceGeoData33 || Face creation geometry data 33 || Face creation geometry data 33 || - ||
+|| faceGeoData34 || Face creation geometry data 34 || Face creation geometry data 34 || - ||
+|| faceGeoData35 || Face creation geometry data 35 || Face creation geometry data 35 || - ||
+|| faceGeoData36 || Face creation geometry data 36 || Face creation geometry data 36 || - ||
+|| faceGeoData37 || Face creation geometry data 37 || Face creation geometry data 37 || - ||
+|| faceGeoData38 || Face creation geometry data 38 || Face creation geometry data 38 || - ||
+|| faceGeoData39 || Face creation geometry data 39 || Face creation geometry data 39 || - ||
+|| faceGeoData40 || Face creation geometry data 40 || Face creation geometry data 40 || - ||
+|| faceGeoData41 || Face creation geometry data 41 || Face creation geometry data 41 || - ||
+|| faceGeoData42 || Face creation geometry data 42 || Face creation geometry data 42 || - ||
+|| faceGeoData43 || Face creation geometry data 43 || Face creation geometry data 43 || - ||
+|| faceGeoData44 || Face creation geometry data 44 || Face creation geometry data 44 || - ||
+|| faceGeoData45 || Face creation geometry data 45 || Face creation geometry data 45 || - ||
+|| faceGeoData46 || Face creation geometry data 46 || Face creation geometry data 46 || - ||
+|| faceGeoData47 || Face creation geometry data 47 || Face creation geometry data 47 || - ||
+|| faceGeoData48 || Face creation geometry data 48 || Face creation geometry data 48 || - ||
+|| faceGeoData49 || Face creation geometry data 49 || Face creation geometry data 49 || - ||
+|| faceGeoData50 || Face creation geometry data 50 || Face creation geometry data 50 || - ||
+|| faceGeoData51 || Face creation geometry data 51 || Face creation geometry data 51 || - ||
+|| faceGeoData52 || Face creation geometry data 52 || Face creation geometry data 52 || - ||
+|| faceGeoData53 || Face creation geometry data 53 || Face creation geometry data 53 || - ||
+|| faceGeoData54 || Face creation geometry data 54 || Face creation geometry data 54 || - ||
+|| faceGeoData55 || Face creation geometry data 55 || Face creation geometry data 55 || - ||
+|| faceGeoData56 || Face creation geometry data 56 || Face creation geometry data 56 || - ||
+|| faceGeoData57 || Face creation geometry data 57 || Face creation geometry data 57 || - ||
+|| faceGeoData58 || Face creation geometry data 58 || Face creation geometry data 58 || - ||
+|| faceGeoData59 || Face creation geometry data 59 || Face creation geometry data 59 || - ||
+|| faceGeoData60 || Face creation geometry data 60 || Face creation geometry data 60 || - ||
+|| faceTexData00 || Face creation texture data 00 || Face creation texture data 00 || - ||
+|| faceTexData01 || Face creation texture data 01 || Face creation texture data 01 || - ||
+|| faceTexData02 || Face creation texture data 02 || Face creation texture data 02 || - ||
+|| faceTexData03 || Face creation texture data 03 || Face creation texture data 03 || - ||
+|| faceTexData04 || Face creation texture data 04 || Face creation texture data 04 || - ||
+|| faceTexData05 || Face creation texture data 05 || Face creation texture data 05 || - ||
+|| faceTexData06 || Face creation texture data 06 || Face creation texture data 06 || - ||
+|| faceTexData07 || Face creation texture data 07 || Face creation texture data 07 || - ||
+|| faceTexData08 || Face creation texture data 08 || Face creation texture data 08 || - ||
+|| faceTexData09 || Face creation texture data 09 || Face creation texture data 09 || - ||
+|| faceTexData10 || Face creation texture data 10 || Face creation texture data 10 || - ||
+|| faceTexData11 || Face creation texture data 11 || Face creation texture data 11 || - ||
+|| faceTexData12 || Face creation texture data 12 || Face creation texture data 12 || - ||
+|| faceTexData13 || Face creation texture data 13 || Face creation texture data 13 || - ||
+|| faceTexData14 || Face creation texture data 14 || Face creation texture data 14 || - ||
+|| faceTexData15 || Face creation texture data 15 || Face creation texture data 15 || - ||
+|| faceTexData16 || Face creation texture data 16 || Face creation texture data 16 || - ||
+|| faceTexData17 || Face creation texture data 17 || Face creation texture data 17 || - ||
+|| faceTexData18 || Face creation texture data 18 || Face creation texture data 18 || - ||
+|| faceTexData19 || Face creation texture data 19 || Face creation texture data 19 || - ||
+|| faceTexData20 || Face creation texture data 20 || Face creation texture data 20 || - ||
+|| faceTexData21 || Face creation texture data 21 || Face creation texture data 21 || - ||
+|| faceTexData22 || Face creation texture data 22 || Face creation texture data 22 || - ||
+|| faceTexData23 || Face creation texture data 23 || Face creation texture data 23 || - ||
+|| faceTexData24 || Face creation texture data 24 || Face creation texture data 24 || - ||
+|| faceTexData25 || Face creation texture data 25 || Face creation texture data 25 || - ||
+|| faceTexData26 || Face creation texture data 26 || Face creation texture data 26 || - ||
+|| faceTexData27 || Face creation texture data 27 || Face creation texture data 27 || - ||
+|| faceTexData28 || Face creation texture data 28 || Face creation texture data 28 || - ||
+|| faceTexData29 || Face creation texture data 29 || Face creation texture data 29 || - ||
+|| faceTexData30 || Face creation texture data 30 || Face creation texture data 30 || - ||
+|| faceTexData31 || Face creation texture data 31 || Face creation texture data 31 || - ||
+|| faceTexData32 || Face creation texture data 32 || Face creation texture data 32 || - ||
+|| faceTexData33 || Face creation texture data 33 || Face creation texture data 33 || - ||
+|| faceTexData34 || Face creation texture data 34 || Face creation texture data 34 || - ||
+|| faceTexData35 || Face creation texture data 35 || Face creation texture data 35 || - ||
+|| faceGeoAsymData00 || Face creation geometry asymmetric data 00 || Face creation geometry asymmetric data 00 || - ||
+|| faceGeoAsymData01 || Face creation geometry asymmetric data 01 || Face creation geometry asymmetric data 01 || - ||
+|| faceGeoAsymData02 || Face creation geometry asymmetric data 02 || Face creation geometry asymmetric data 02 || - ||
+|| faceGeoAsymData03 || Face creation geometry asymmetric data 03 || Face creation geometry asymmetric data 03 || - ||
+|| faceGeoAsymData04 || Face creation geometry asymmetric data 04 || Face creation geometry asymmetric data 04 || - ||
+|| faceGeoAsymData05 || Face creation geometry asymmetric data 05 || Face creation geometry asymmetric data 05 || - ||
+|| faceGeoAsymData06 || Face creation geometry asymmetric data 06 || Face creation geometry asymmetric data 06 || - ||
+|| faceGeoAsymData07 || Face creation geometry asymmetric data 07 || Face creation geometry asymmetric data 07 || - ||
+|| faceGeoAsymData08 || Face creation geometry asymmetric data 08 || Face creation geometry asymmetric data 08 || - ||
+|| faceGeoAsymData09 || Face creation geometry asymmetric data 09 || Face creation geometry asymmetric data 09 || - ||
+|| faceGeoAsymData10 || Face creation geometry asymmetric data 10 || Face creation geometry asymmetric data 10 || - ||
+|| faceGeoAsymData11 || Face creation geometry asymmetric data 11 || Face creation geometry asymmetric data 11 || - ||
+|| faceGeoAsymData12 || Face creation geometry asymmetric data 12 || Face creation geometry asymmetric data 12 || - ||
+|| faceGeoAsymData13 || Face creation geometry asymmetric data 13 || Face creation geometry asymmetric data 13 || - ||
+|| faceGeoAsymData14 || Face creation geometry asymmetric data 14 || Face creation geometry asymmetric data 14 || - ||
+|| faceGeoAsymData15 || Face creation geometry asymmetric data 15 || Face creation geometry asymmetric data 15 || - ||
+|| faceGeoAsymData16 || Face creation geometry asymmetric data 16 || Face creation geometry asymmetric data 16 || - ||
+|| faceGeoAsymData17 || Face creation geometry asymmetric data 17 || Face creation geometry asymmetric data 17 || - ||
+|| faceGeoAsymData18 || Face creation geometry asymmetric data 18 || Face creation geometry asymmetric data 18 || - ||
+|| faceGeoAsymData19 || Face creation geometry asymmetric data 19 || Face creation geometry asymmetric data 19 || - ||
+|| faceGeoAsymData20 || Face creation geometry asymmetric data 20 || Face creation geometry asymmetric data 20 || - ||
+|| faceGeoAsymData21 || Face creation geometry asymmetric data 21 || Face creation geometry asymmetric data 21 || - ||
+|| faceGeoAsymData22 || Face creation geometry asymmetric data 22 || Face creation geometry asymmetric data 22 || - ||
+|| faceGeoAsymData23 || Face creation geometry asymmetric data 23 || Face creation geometry asymmetric data 23 || - ||
+|| faceGeoAsymData24 || Face creation geometry asymmetric data 24 || Face creation geometry asymmetric data 24 || - ||
+|| faceGeoAsymData25 || Face creation geometry asymmetric data 25 || Face creation geometry asymmetric data 25 || - ||

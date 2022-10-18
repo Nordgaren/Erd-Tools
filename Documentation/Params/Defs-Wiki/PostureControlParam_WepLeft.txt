@@ -1,0 +1,11 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| a000_leftArmFB || Left arm_front and back || Left arm_front and back || - ||
+|| a000_leftWristFB || Left wrist_front and back || Left wrist_front and back || - ||
+|| a000_leftWristIO || Left wrist_inside and outside || Left wrist_inside and outside || - ||
+|| a002_leftArmFB || Left arm_front and back || Left arm_front and back || - ||
+|| a002_leftWristFB || Left wrist_front and back || Left wrist_front and back || - ||
+|| a002_leftWristIO || Left wrist_inside and outside || Left wrist_inside and outside || - ||
+|| a003_leftArmFB || Left arm_front and back || Left arm_front and back || - ||
+|| a003_leftWristFB || Left wrist_front and back || Left wrist_front and back || - ||
+|| a003_leftWristIO || Left wrist_inside and outside || Left wrist_inside and outside || - ||
+|| pad || pad ||  || - ||

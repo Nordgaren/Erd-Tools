@@ -1,0 +1,33 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+《Maximum HP magnification [%]》,Maximum HP magnification [%],0,99,1000,f32,0.01,%f,f32,Wrap
+《Maximum MP magnification [%]》,Maximum MP magnification [%],0,99,1100,f32,0.01,%f,f32,Wrap
+《Maximum stamina magnification [%]》,Maximum stamina magnification [%],0,99,1200,f32,0.01,%f,f32,Wrap
+《Physical attack power multiplier》,Physical attack power multiplier,0,99,1200,f32,0.01,%f,f32,Wrap
+《Slashing attack power multiplier》,Slash attack power multiplier,0,99,1300,f32,0.01,%f,f32,Wrap
+《Batter attack power multiplier》,Batter attack power multiplier,0,99,1400,f32,0.01,%f,f32,Wrap
+《Puncture attack power multiplier》,Puncture attack power multiplier,0,99,1500,f32,0.01,%f,f32,Wrap
+《Non-attribute attack power multiplier》,Non-attribute attack power multiplier,0,99,1600,f32,0.01,%f,f32,Wrap
+《Magic attack power multiplier》,Magic attack power multiplier,0,99,1700,f32,0.01,%f,f32,Wrap
+《Flame attack power multiplier》,Fire attack power multiplier,0,99,1800,f32,0.01,%f,f32,Wrap
+《Electric shock attack power multiplier》,Electric shock attack power multiplier,0,99,1900,f32,0.01,%f,f32,Wrap
+《Dark attack power multiplier》,Dark attack power multiplier,0,99,2000,f32,0.01,%f,f32,Wrap
+《Physical defense multiplier》,Physical defense power multiplier,0,99,2100,f32,0.01,%f,f32,Wrap
+《Magic Defense Multiplier》,Magic defense multiplier,0,99,2200,f32,0.01,%f,f32,Wrap
+《Flame defense multiplier》,Fire defense multiplier,0,99,2300,f32,0.01,%f,f32,Wrap
+《Dengeki Defense Magnification》,Electric shock defense power multiplier,0,99,2400,f32,0.01,%f,f32,Wrap
+《Darkness Defense Multiplier》,Dark defense multiplier,0,99,2500,f32,0.01,%f,f32,Wrap
+《Stamina attack power multiplier》,Stamina attack power multiplier,0,99,2600,f32,0.01,%f,f32,Wrap
+《Soul possession rate》,Possession soul rate,0,99,2700,f32,0.01,%f,f32,Wrap
+《Poison resistance change rate》,Poison resistance change rate,0,99,2800,f32,0.01,%f,f32,Wrap
+《Pesticide resistance change rate》,Epidemic resistance change rate,0,99,2810,f32,0.01,%f,f32,Wrap
+《Bleeding resistance change rate》,Bleeding resistance change rate,0,99,2820,f32,0.01,%f,f32,Wrap
+《Curse resistance change rate》,Curse resistance change rate,0,99,2830,f32,0.01,%f,f32,Wrap
+《Cold air resistance change rate》,Cold resistance change rate,0,99,2840,f32,0.01,%f,f32,Wrap
+《Bleeding damage correction factor》,Bleeding damage correction factor,0,99,3300,f32,0.01,%f,f32,Wrap
+《SA damage correction factor》,SA damage correction factor,0,99,3400,f32,0.01,%f,f32,Wrap
+《Cold air damage correction factor》,Cold damage correction factor,0,99,3310,f32,0.01,%f,f32,Wrap
+《Sleep tolerance change rate》,Sleep tolerance change rate,0,99,2850,f32,0.01,%f,f32,Wrap
+《Madness resistance change rate》,Madness resistance change rate,0,99,2860,f32,0.01,%f,f32,Wrap
+《Sleep damage correction factor》,Sleep damage correction factor,0,99,3320,f32,0.01,%f,f32,Wrap
+《Crazy damage correction factor》,Mad damage correction factor,0,99,3330,f32,0.01,%f,f32,Wrap
+pad,,,,3401,dummy8,,,dummy8,None

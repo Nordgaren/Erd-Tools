@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PARAMDEF XmlVersion="3">
+  <ParamType>CS_SHADOW_QUALITY_DETAIL</ParamType>
+  <DataVersion>2</DataVersion>
+  <BigEndian>False</BigEndian>
+  <Unicode>True</Unicode>
+  <FormatVersion>203</FormatVersion>
+  <Fields>
+    <Field Def="u8 enabled = 1">
+      <DisplayName>Shadow is enabled</DisplayName>
+      <Enum>ON_OFF</Enum>
+      <Description>Shadow is enabled</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <EditFlags>None</EditFlags>
+      <Maximum>1</Maximum>
+    </Field>
+    <Field Def="u8 maxFilterLevel = 1">
+      <DisplayName>Maximum filter quality allowed</DisplayName>
+      <Enum>GX_SHADOW_FILTER_LEVEL</Enum>
+      <Description>Maximum filter quality allowed</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <EditFlags>None</EditFlags>
+      <SortID>100</SortID>
+    </Field>
+    <Field Def="dummy8 dmy[2]">
+      <SortID>9999</SortID>
+    </Field>
+    <Field Def="u32 textureSizeScaler = 1">
+      <DisplayName>Scaler with set shadow map resolution</DisplayName>
+      <Description>Scaler with set shadow map resolution</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <EditFlags>None</EditFlags>
+      <Minimum>1</Minimum>
+      <Maximum>100</Maximum>
+      <SortID>1</SortID>
+    </Field>
+    <Field Def="u32 textureSizeDivider = 2">
+      <DisplayName>Divide the set shadow map resolution</DisplayName>
+      <Description>Divide the set shadow map resolution</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <EditFlags>None</EditFlags>
+      <Minimum>1</Minimum>
+      <Maximum>100</Maximum>
+      <SortID>2</SortID>
+    </Field>
+    <Field Def="u32 textureMinSize = 128">
+      <DisplayName>Minimum resolution</DisplayName>
+      <Description>Clamp resolution</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <EditFlags>None</EditFlags>
+      <Minimum>128</Minimum>
+      <Maximum>4096</Maximum>
+      <SortID>3</SortID>
+    </Field>
+    <Field Def="u32 textureMaxSize = 1024">
+      <DisplayName>Maximum resolution</DisplayName>
+      <Description>Clamp the resolution. It will be the resolution judgment for each cascade</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <EditFlags>None</EditFlags>
+      <Minimum>128</Minimum>
+      <Maximum>4096</Maximum>
+      <SortID>4</SortID>
+    </Field>
+    <Field Def="s32 blurCountBias = -1">
+      <DisplayName>Blur count bias</DisplayName>
+      <Description>Blur count bias (set count bias, unchanged at 0)</Description>
+      <DisplayFormat>%u</DisplayFormat>
+      <EditFlags>None</EditFlags>
+      <Minimum>-4</Minimum>
+      <Maximum>0</Maximum>
+      <SortID>5</SortID>
+    </Field>
+  </Fields>
+</PARAMDEF>

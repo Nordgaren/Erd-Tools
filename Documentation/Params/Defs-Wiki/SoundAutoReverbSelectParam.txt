@@ -1,0 +1,12 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| reverbType || Reverb type || Reverb type || - ||
+|| AreaNo || Area No || Condition: Area No. (-1: Invalid) || - ||
+|| IndoorOutdoor || Indoor and outdoor || Condition: Indoor / outdoor designation (0: outdoor, 1: indoor) (-1: invalid) || - ||
+|| useDistNoA || Evaluation distance number A || Condition: Evaluation distance number A to use (-1: invalid) || - ||
+|| useDistNoB || Evaluation distance number B || Condition: Evaluation distance number B to be used (-1: invalid) || - ||
+|| pad0 || pad0 || pad0 || - ||
+|| DistMinA || Distance MinA [m] || Condition: For evaluation distance minimum specification A (less than 0: invalid) || - ||
+|| DistMaxA || Distance MaxA [m] || Condition: For evaluation distance maximum specification A (less than 0: invalid) || - ||
+|| DistMinB || Distance MinB [m] || Condition: For evaluation distance minimum specification A (less than 0: invalid) || - ||
+|| DistMaxB || Distance MaxB [m] || Condition: For evaluation distance maximum specification A (less than 0: invalid) || - ||
+|| NoHitNumMin || Minimum number of collision points No Hits || Condition: No Hit number (-1: invalid) || - ||

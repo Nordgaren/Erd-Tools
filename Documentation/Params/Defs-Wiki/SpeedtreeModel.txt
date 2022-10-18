@@ -1,0 +1,11 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| MinFadeLeaf || Leaf minimum fade value ||  || - ||
+|| MinFadeFrond || Frond minimum fade value ||  || - ||
+|| MinFadeBranch || Branch minimum fade value ||  || - ||
+|| MinTranslucencyLeaf || Minimum transmitted light of Leaf ||  || - ||
+|| MaxTranslucencyLeaf || Maximum transmitted light of Leaf ||  || - ||
+|| MinTranslucencyFrond || Minimum transmitted light of Frond ||  || - ||
+|| MaxTranslucencyFrond || Maximum transmitted light of Frond ||  || - ||
+|| MinTranslucencyBranch || Minimum transmitted light of Branch ||  || - ||
+|| MaxTranslucencyBranch || Maximum transmitted light of Branch ||  || - ||
+|| BillboardBackSpecularWeakenParam || Billboard Specular suppression value ||  || - ||

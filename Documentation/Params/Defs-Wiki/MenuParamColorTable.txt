@@ -1,0 +1,11 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| lerpMode || Interpolation method || Interpolation method || MENU_COLOR_LERP_MODE ||
+|| pad1 || pad ||  || - ||
+|| h || Hue || Hue. Treat as a fixed value in interpolation || - ||
+|| pad2 || pad ||  || - ||
+|| s1 || saturation || Saturation 1. Treated as the first point of interpolation || - ||
+|| v1 || brightness || Brightness 1. Treated as the first point of interpolation || - ||
+|| s2 || saturation || Saturation 2. Treated as the second point of interpolation || - ||
+|| v2 || brightness || Brightness 2. Treated as the second point of interpolation || - ||
+|| s3 || saturation || Saturation 3. Treated as the third point of interpolation || - ||
+|| v3 || brightness || Brightness 3. Treated as the third point of interpolation || - ||

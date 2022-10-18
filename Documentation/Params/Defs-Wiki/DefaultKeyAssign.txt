@@ -1,0 +1,122 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| priority0 || Pad 0 || Lower suppression pad 0 || DefaultKeyAssignPrioritySuppression ||
+|| priority1 || For GUI framework || Pad for lower suppression GUI framework || DefaultKeyAssignPrioritySuppression ||
+|| priority2 || Pad 2 || Lower suppression pad 2 || DefaultKeyAssignPrioritySuppression ||
+|| priority3 || Debug menu mode switching || Lower suppression debug menu mode switching pad || DefaultKeyAssignPrioritySuppression ||
+|| priority4 || Pad 4 || Lower suppression pad 4 || DefaultKeyAssignPrioritySuppression ||
+|| priority5 || Pad debug menu || Lower suppression pad Debug menu pad || DefaultKeyAssignPrioritySuppression ||
+|| priority6 || Pad 6 || Lower suppression pad 6 || DefaultKeyAssignPrioritySuppression ||
+|| priority7 || Pad 7 || Lower suppression pad 7 || DefaultKeyAssignPrioritySuppression ||
+|| priority8 || Pad 8 || Lower suppression pad 8 || DefaultKeyAssignPrioritySuppression ||
+|| priority9 || Pad 9 || Lower suppression pad 9 || DefaultKeyAssignPrioritySuppression ||
+|| priority10 || Pad 10 || Lower suppression pad 10 || DefaultKeyAssignPrioritySuppression ||
+|| priority11 || Pad 11 || Lower suppression pad 11 || DefaultKeyAssignPrioritySuppression ||
+|| priority12 || Pad 12 || Lower suppression pad 12 || DefaultKeyAssignPrioritySuppression ||
+|| priority13 || Pad 13 || Lower suppression pad 13 || DefaultKeyAssignPrioritySuppression ||
+|| priority14 || Pad 14 || Lower suppression pad 14 || DefaultKeyAssignPrioritySuppression ||
+|| priority15 || Pad 15 || Lower suppression pad 15 || DefaultKeyAssignPrioritySuppression ||
+|| priority16 || Pad 16 || Lower suppression pad 16 || DefaultKeyAssignPrioritySuppression ||
+|| priority17 || Pad 17 || Lower suppression pad 17 || DefaultKeyAssignPrioritySuppression ||
+|| priority18 || Pad 18 || Lower suppression pad 18 || DefaultKeyAssignPrioritySuppression ||
+|| priority19 || Pad 19 || Lower suppression pad 19 || DefaultKeyAssignPrioritySuppression ||
+|| priority20 || Pad 20 || Lower suppression pad 20 || DefaultKeyAssignPrioritySuppression ||
+|| priority21 || Pad 21 || Lower suppression pad 21 || DefaultKeyAssignPrioritySuppression ||
+|| priority22 || Pad 22 || Lower suppression pad 22 || DefaultKeyAssignPrioritySuppression ||
+|| priority23 || Pad 23 || Lower suppression pad 23 || DefaultKeyAssignPrioritySuppression ||
+|| priority24 || Pad 24 || Lower suppression pad 24 || DefaultKeyAssignPrioritySuppression ||
+|| priority25 || Pad 25 || Lower suppression pad 25 || DefaultKeyAssignPrioritySuppression ||
+|| priority26 || Pad 26 || Lower suppression pad 26 || DefaultKeyAssignPrioritySuppression ||
+|| priority27 || Pad 27 || Lower suppression pad 27 || DefaultKeyAssignPrioritySuppression ||
+|| priority28 || Pad 28 || Lower suppression pad 28 || DefaultKeyAssignPrioritySuppression ||
+|| priority29 || Pad 29 || Lower suppression pad 29 || DefaultKeyAssignPrioritySuppression ||
+|| priority30 || Pad 30 || Lower suppression pad 30 || DefaultKeyAssignPrioritySuppression ||
+|| priority31 || Pad 31 || Lower suppression pad 31 || DefaultKeyAssignPrioritySuppression ||
+|| dummy || dummy ||  || - ||
+|| phyisicalKey || Pad physical key || Pad physical key || DefaultKeyAssignPadKey ||
+|| traitsType || How to be pushed || How to be pushed || DefaultKeyAssignTraits ||
+|| a2dOperator || Analog-to-digital conversion method || Analog-to-digital conversion method || DefaultKeyAssignA2DOperator ||
+|| applyTarget || Applicable target || Reflection target || DefaultKeyAssignApplyTarget ||
+|| isAnalog || Digital / analog || Digital or analog || DefaultKeyAssignDigitalAnalog ||
+|| enableWin64 || Win64 || Will it be used in Win64? || BOOL_CIRCLECROSS_TYPE ||
+|| enablePS4 || PS4 || Will it be used on PS4 || BOOL_CIRCLECROSS_TYPE ||
+|| enableXboxOne || Xbox One || Will it be used on Xbox One || BOOL_CIRCLECROSS_TYPE ||
+|| time1 || time || time || - ||
+|| time2 || Interval time for repeat || Interval time for repeat || - ||
+|| a2dThreshold || Analog-to-digital conversion threshold || Analog-to-digital conversion threshold || - ||
+|| phyisicalKey || Pad physical key || Pad physical key || DefaultKeyAssignPadKey ||
+|| traitsType || How to be pushed || How to be pushed || DefaultKeyAssignTraits ||
+|| a2dOperator || Analog-to-digital conversion method || Analog-to-digital conversion method || DefaultKeyAssignA2DOperator ||
+|| applyTarget || Applicable target || Reflection target || DefaultKeyAssignApplyTarget ||
+|| isAnalog || Digital / analog || Digital or analog || DefaultKeyAssignDigitalAnalog ||
+|| enableWin64 || Win64 || Will it be used in Win64? || BOOL_CIRCLECROSS_TYPE ||
+|| enablePS4 || PS4 || Will it be used on PS4 || BOOL_CIRCLECROSS_TYPE ||
+|| enableXboxOne || Xbox One || Will it be used on Xbox One || BOOL_CIRCLECROSS_TYPE ||
+|| time1 || time || time || - ||
+|| time2 || Interval time for repeat || Interval time for repeat || - ||
+|| a2dThreshold || Analog-to-digital conversion threshold || Analog-to-digital conversion threshold || - ||
+|| phyisicalKey || Pad physical key || Pad physical key || DefaultKeyAssignPadKey ||
+|| traitsType || How to be pushed || How to be pushed || DefaultKeyAssignTraits ||
+|| a2dOperator || Analog-to-digital conversion method || Analog-to-digital conversion method || DefaultKeyAssignA2DOperator ||
+|| applyTarget || Applicable target || Reflection target || DefaultKeyAssignApplyTarget ||
+|| isAnalog || Digital / analog || Digital or analog || DefaultKeyAssignDigitalAnalog ||
+|| enableWin64 || Win64 || Will it be used in Win64? || BOOL_CIRCLECROSS_TYPE ||
+|| enablePS4 || PS4 || Will it be used on PS4 || BOOL_CIRCLECROSS_TYPE ||
+|| enableXboxOne || Xbox One || Will it be used on Xbox One || BOOL_CIRCLECROSS_TYPE ||
+|| time1 || time || time || - ||
+|| time2 || Interval time for repeat || Interval time for repeat || - ||
+|| a2dThreshold || Analog-to-digital conversion threshold || Analog-to-digital conversion threshold || - ||
+|| phyisicalKey || Pad physical key || Pad physical key || DefaultKeyAssignPadKey ||
+|| traitsType || How to be pushed || How to be pushed || DefaultKeyAssignTraits ||
+|| a2dOperator || Analog-to-digital conversion method || Analog-to-digital conversion method || DefaultKeyAssignA2DOperator ||
+|| applyTarget || Applicable target || Reflection target || DefaultKeyAssignApplyTarget ||
+|| isAnalog || Digital / analog || Digital or analog || DefaultKeyAssignDigitalAnalog ||
+|| enableWin64 || Win64 || Will it be used in Win64? || BOOL_CIRCLECROSS_TYPE ||
+|| enablePS4 || PS4 || Will it be used on PS4 || BOOL_CIRCLECROSS_TYPE ||
+|| enableXboxOne || Xbox One || Will it be used on Xbox One || BOOL_CIRCLECROSS_TYPE ||
+|| time1 || time || time || - ||
+|| time2 || Interval time for repeat || Interval time for repeat || - ||
+|| a2dThreshold || Analog-to-digital conversion threshold || Analog-to-digital conversion threshold || - ||
+|| phyisicalKey || PC physical key || PC physical key || DefaultKeyAssignPcKey ||
+|| traitsType || How to be pushed || How to be pushed || DefaultKeyAssignTraits ||
+|| a2dOperator || Analog-to-digital conversion method || Analog-to-digital conversion method || DefaultKeyAssignA2DOperator ||
+|| applyTarget || Applicable target || Reflection target || DefaultKeyAssignApplyTarget ||
+|| isAnalog || Digital / analog || Digital or analog || DefaultKeyAssignDigitalAnalog ||
+|| enableWin64 || Win64 || Will it be used in Win64? || BOOL_CIRCLECROSS_TYPE ||
+|| enablePS4 || PS4 || Will it be used on PS4 || BOOL_CIRCLECROSS_TYPE ||
+|| enableXboxOne || Xbox One || Will it be used on Xbox One || BOOL_CIRCLECROSS_TYPE ||
+|| time1 || time || time || - ||
+|| time2 || Interval time for repeat || Interval time for repeat || - ||
+|| a2dThreshold || Analog-to-digital conversion threshold || Analog-to-digital conversion threshold || - ||
+|| phyisicalKey || PC physical key || PC physical key || DefaultKeyAssignPcKey ||
+|| traitsType || How to be pushed || How to be pushed || DefaultKeyAssignTraits ||
+|| a2dOperator || Analog-to-digital conversion method || Analog-to-digital conversion method || DefaultKeyAssignA2DOperator ||
+|| applyTarget || Applicable target || Reflection target || DefaultKeyAssignApplyTarget ||
+|| isAnalog || Digital / analog || Digital or analog || DefaultKeyAssignDigitalAnalog ||
+|| enableWin64 || Win64 || Will it be used in Win64? || BOOL_CIRCLECROSS_TYPE ||
+|| enablePS4 || PS4 || Will it be used on PS4 || BOOL_CIRCLECROSS_TYPE ||
+|| enableXboxOne || Xbox One || Will it be used on Xbox One || BOOL_CIRCLECROSS_TYPE ||
+|| time1 || time || time || - ||
+|| time2 || Interval time for repeat || Interval time for repeat || - ||
+|| a2dThreshold || Analog-to-digital conversion threshold || Analog-to-digital conversion threshold || - ||
+|| phyisicalKey || PC physical key || PC physical key || DefaultKeyAssignPcKey ||
+|| traitsType || How to be pushed || How to be pushed || DefaultKeyAssignTraits ||
+|| a2dOperator || Analog-to-digital conversion method || Analog-to-digital conversion method || DefaultKeyAssignA2DOperator ||
+|| applyTarget || Applicable target || Reflection target || DefaultKeyAssignApplyTarget ||
+|| isAnalog || Digital / analog || Digital or analog || DefaultKeyAssignDigitalAnalog ||
+|| enableWin64 || Win64 || Will it be used in Win64? || BOOL_CIRCLECROSS_TYPE ||
+|| enablePS4 || PS4 || Will it be used on PS4 || BOOL_CIRCLECROSS_TYPE ||
+|| enableXboxOne || Xbox One || Will it be used on Xbox One || BOOL_CIRCLECROSS_TYPE ||
+|| time1 || time || time || - ||
+|| time2 || Interval time for repeat || Interval time for repeat || - ||
+|| a2dThreshold || Analog-to-digital conversion threshold || Analog-to-digital conversion threshold || - ||
+|| phyisicalKey || PC physical key || PC physical key || DefaultKeyAssignPcKey ||
+|| traitsType || How to be pushed || How to be pushed || DefaultKeyAssignTraits ||
+|| a2dOperator || Analog-to-digital conversion method || Analog-to-digital conversion method || DefaultKeyAssignA2DOperator ||
+|| applyTarget || Applicable target || Reflection target || DefaultKeyAssignApplyTarget ||
+|| isAnalog || Digital / analog || Digital or analog || DefaultKeyAssignDigitalAnalog ||
+|| enableWin64 || Win64 || Will it be used in Win64? || BOOL_CIRCLECROSS_TYPE ||
+|| enablePS4 || PS4 || Will it be used on PS4 || BOOL_CIRCLECROSS_TYPE ||
+|| enableXboxOne || Xbox One || Will it be used on Xbox One || BOOL_CIRCLECROSS_TYPE ||
+|| time1 || time || time || - ||
+|| time2 || Interval time for repeat || Interval time for repeat || - ||
+|| a2dThreshold || Analog-to-digital conversion threshold || Analog-to-digital conversion threshold || - ||

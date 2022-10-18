@@ -1,0 +1,362 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Icon ID,Icon ID (When -1, no icon is required),-1,999999,1000,s32,1,%d,s32,Wrap
+Trigger condition: Remaining HP ratio [%],Set what percentage of maxHP the remaining HP will be activated,-1,100,18000,f32,0.1,%f,f32,Wrap
+Effect duration time [s],Change duration / -1 for permanent / 0 for one moment only,-1,9999,19000,f32,0.1,%f,f32,Wrap
+Activation interval [s],Set how many seconds it occurs,-1,999,20000,f32,0.1,%f,f32,Wrap
+Maximum HP magnification [%],Correct the maximum HP,0,99,21000,f32,0.001,%f,f32,Wrap
+Maximum MP magnification [%],Correct the maximum MP,0,99,22000,f32,0.001,%f,f32,Wrap
+Maximum stamina magnification [%],Correct the maximum SP,0,99,23000,f32,0.001,%f,f32,Wrap
+Defender: Slash damage multiplier,Slash damage ratio: Correct the calculated damage by XX times. 1 is normal.,-99,99,29100,f32,0.001,%f,f32,Wrap
+Defender: Batter damage multiplier,Batter damage ratio: The calculated damage is corrected by XX times. 1 is normal.,-99,99,29200,f32,0.001,%f,f32,Wrap
+Defender: Puncture damage multiplier,Puncture damage ratio: Correct the calculated damage by XX times. 1 is normal.,-99,99,29300,f32,0.001,%f,f32,Wrap
+Defender: Non-attribute damage multiplier,Non-attribute damage ratio: Correct the calculated damage by XX times. 1 is normal.,-99,99,29400,f32,0.001,%f,f32,Wrap
+Defender: Magic damage multiplier,Magic damage multiplier: The calculated damage is corrected by XX times. 1 is normal.,-99,99,30000,f32,0.001,%f,f32,Wrap
+Defender: Fire damage multiplier,Flame damage ratio: Correct the calculated damage by XX times. 1 is normal.,-99,99,31000,f32,0.001,%f,f32,Wrap
+Defender: Electric shock damage multiplier,Electric shock damage ratio: Correct the calculated damage by XX times. 1 is normal.,-99,99,31100,f32,0.001,%f,f32,Wrap
+Attacker: Physical damage multiplier,Physical damage ratio: Correct the calculated damage by XX times. 1 is normal.,-99,99,32000,f32,0.001,%f,f32,Wrap
+Attacker: Magic damage multiplier,Magic damage multiplier: The calculated damage is corrected by XX times. 1 is normal.,-99,99,33000,f32,0.001,%f,f32,Wrap
+Attacker: Fire damage multiplier,Flame damage ratio: Correct the calculated damage by XX times. 1 is normal.,-99,99,34000,f32,0.001,%f,f32,Wrap
+Attack side: Electric shock damage ratio,Electric shock damage ratio: Correct the calculated damage by XX times. 1 is normal.,-99,99,34100,f32,0.001,%f,f32,Wrap
+Physical attack power multiplier,Multiply the physical attack power by the set value,-99,99,35000,f32,0.001,%f,f32,Wrap
+Magic attack power multiplier,Multiply the magic attack power by the set value,-99,99,36000,f32,0.001,%f,f32,Wrap
+Fire attack power multiplier,Multiply the fire attack power by the set value,-99,99,37000,f32,0.001,%f,f32,Wrap
+Electric shock attack power multiplier,Multiply the electric shock attack power by the set value,-99,99,37100,f32,0.001,%f,f32,Wrap
+Physical attack power [point],Add or subtract the value set for physical attack power,-9999,9999,38000,s32,1,%d,s32,Wrap
+Magic attack power [point],Add or subtract the value set for the magic attack power,-9999,9999,39000,s32,1,%d,s32,Wrap
+Fire attack power [point],Add or subtract the value set for the flame attack power,-9999,9999,40000,s32,1,%d,s32,Wrap
+Electric shock attack power [point],Add or subtract the value set for the electric shock attack power,-9999,9999,40100,s32,1,%d,s32,Wrap
+Physical defense power multiplier,Multiply the set value for physical defense,-99,99,41000,f32,0.001,%f,f32,Wrap
+Magic defense multiplier,Multiply the value set for magic defense,-99,99,42000,f32,0.001,%f,f32,Wrap
+Fire defense multiplier,Multiply the fire defense by the set value,-99,99,43000,f32,0.001,%f,f32,Wrap
+Electric shock defense power multiplier,Multiply the value set for the electric shock defense,-99,99,43100,f32,0.001,%f,f32,Wrap
+Physical defense [point],Add or subtract the value set for physical defense,-9999,9999,44000,s32,1,%d,s32,Wrap
+Magic defense [point],Add or subtract the value set for magic defense,-9999,9999,45000,s32,1,%d,s32,Wrap
+Fire defense [point],Add or subtract the value set for the fire defense,-9999,9999,46000,s32,1,%d,s32,Wrap
+Electric shock defense [point],Add or subtract the value set for the electric shock defense,-9999,9999,46100,s32,1,%d,s32,Wrap
+Gap damage ratio,Replace the damage ratio at the time of the gap with the set value (set on the damage side),-100,100,47000,f32,0.01,%f,f32,Wrap
+Sweet spot magnification,Replaces the damage calculation of the sweet spot with the specified value (key point damage correction) -Invalid at 1.0,-1,99,48000,f32,0.001,%f,f32,Wrap
+Normal hit magnification,Replaces normal hit damage calculation with the specified number -Invalid at 1.0,-1,99,49000,f32,0.001,%f,f32,Wrap
+LookAt Position Offset [m],Offset the target position when the enemy looks at. Set to crouch or mount on the side to be seen,-99.99,99.99,75600,f32,0.01,%f,f32,Wrap
+Action ID designation frame,Specified -1 when dealing damage using action ID from special effects,-1,99999999,50100,s32,1,%d,s32,Wrap
+HP damage amount [%],Set what percentage of the maximum HP to subtract (or add) with one activation,-100,100,51000,f32,0.1,%f,f32,Wrap
+HP damage [point],Set how many points to subtract (or add) with one activation,-9999,9999,52000,s32,1,%d,s32,Wrap
+MP damage amount [%],Set what percentage of the maximum MP to subtract (or add) with one activation,-100,100,53000,f32,0.1,%f,f32,Wrap
+MP damage [point],Set how many points to subtract (or add) with one activation,-9999,9999,54000,s32,1,%d,s32,Wrap
+MP recovery speed change [point],Change the recovery speed. Add or subtract to the standard recovery speed and initial recovery speed of the recovery formula.,-100,100,55000,s32,1,%d,s32,Wrap
+Stamina damage amount [%],Set what percentage of the maximum stamina to subtract (or add) with one activation,-100,100,56000,f32,1,%f,f32,Wrap
+Stamina damage [point],Set how many points to subtract (or add) with one activation,-9999,9999,57000,s32,1,%d,s32,Wrap
+Stamina recovery speed change [point],Change the recovery speed. Add or subtract to the standard recovery speed and initial recovery speed of the recovery formula.,-100,100,58000,s32,1,%d,s32,Wrap
+Magic effect time change,Add / subtract the time set for the effect duration only for magic that has the effect duration set to 0.1 seconds or more.,-999,999,59000,f32,0.1,%f,f32,Wrap
+Durability change: Internal wear [point],Add or subtract the numerical value to the internal wear degree,-999,999,60000,s32,1,%d,s32,Wrap
+Durability change: Maximum wear change [point],Add the set value to the maximum value of the internal wear degree of durability.,0,999,61000,s32,1,%d,s32,Wrap
+Stamina attack power multiplier,Multiply the stamina attack power by a factor (1.0 1 times 0.5 half),0,99,62000,f32,0.001,%f,f32,Wrap
+Poison resistance attack power [point],A value to be added to the target's [poison resistance value] when it hits,-99999,99999,64000,s32,1,%d,s32,Wrap
+Epidemic resistance attack power [point],Numerical value to be added to the target [Plague resistance value] when hit,-99999,99999,65000,s32,1,%d,s32,Wrap
+Bleeding resistance attack power [point],A value to be added to the target's [bleeding resistance value] when it hits,-99999,99999,66000,s32,1,%d,s32,Wrap
+Curse resistance attack power [point],A number to be added to the target [curse resistance value] when hit,-99999,99999,66100,s32,1,%d,s32,Wrap
+Fall damage ratio,Multiply the damage calculation when falling,0,99,67000,f32,0.001,%f,f32,Wrap
+Get Soul Magnification,The amount of soul acquired when defeating an enemy is added by the specified multiple.,0,99,68000,f32,0.001,%f,f32,Wrap
+Equipment weight change rate,Multiply the maximum equipment weight by the set magnification,0,99,69000,f32,0.001,%f,f32,Wrap
+Possession weight change rate,Multiply the maximum weight you have by the set magnification,0,99,70000,f32,0.001,%f,f32,Wrap
+Soul addition,Add the set value to the possessed soul,-99999999,99999999,71000,s32,1,%d,s32,Wrap
+Anime ID offset (invalid-1),Anime ID offset (invalid-1),-1,999999999,111500,s32,1,%d,s32,Wrap
+Possession soul rate,For enemy lap effect. It is applied when the soul goes out from the set character.,0,99,72000,f32,0.001,%f,f32,Wrap
+Target priority addition,During multiplayer, the enemy will give priority to being targeted as a target. Addition of priority. 0 is the default. It will be often targeted with a positive value. Minus is up to -1.,-1,10,73000,f32,0.01,%f,f32,Wrap
+Those who can see: Visual magnification,Correct the ease of finding by a magnification,0,99,73620,f32,0.001,%f,f32,Wrap
+Who can hear: AI sound radius magnification,Correct the loudness of the AI sound emitted by the magnification,0,99,73920,f32,0.001,%f,f32,Wrap
+Gravity rate,Gravity rate,0,1,87000,f32,0.001,%f,f32,Wrap
+Poison resistance change rate,Multiply the poison resistance value by the set multiplier,-1,99,88000,f32,0.001,%f,f32,Wrap
+Epidemic resistance change rate,Multiply the plague resistance value by the set magnification,-1,99,88100,f32,0.001,%f,f32,Wrap
+Bleeding resistance change rate,Multiply the bleeding resistance value by the set magnification,-1,99,88200,f32,0.001,%f,f32,Wrap
+Curse resistance change rate,Multiply the spell resistance value by the set multiplier,-1,99,88300,f32,0.001,%f,f32,Wrap
+Soul Steel Coefficient,Defense against HP robbed by NPCs in Soul Steel,0,99,91000,f32,0.001,%f,f32,Wrap
+Defense: Life factor,,0,99,100000,f32,0.001,%f,f32,Wrap
+HP recovery coefficient,It doesn't work when HP decreases.,0,99,101000,f32,0.001,%f,f32,Wrap
+Special effects to replace,Special effect ID added at the end of life (-1 is ignored),-1,999999999,111000,s32,1,%d,s32,Wrap
+Periodic special effects,Special effect ID that occurs in each activation cycle (-1 is ignored),-1,999999999,111010,s32,1,%d,s32,Wrap
+Attack occurrence special effect,Special effect ID that occurs when hitting an attack (-1 is ignored),-1,999999999,111020,s32,1,%d,s32,Wrap
+When guarding, the defense power up rate,Repellent defense correction value when guarding,-99,99,27530,f32,0.01,%.2f,f32,Wrap
+Stamina cut magnification when guarding,Stamina cut rate correction value when guarding,-99,99,62100,f32,0.01,%.2f,f32,Wrap
+Passing the line of sight: Activation time [ms],Passing the line of sight: Activation time [ms] (for evil eye),-1,30000,108000,s16,1,%d,s16,Wrap
+Vs to subcategory parameter change 1,Vs to subcategory parameter change 1,0,255,26300,u8,1,%d,ATK_SUB_CATEGORY,Wrap
+Vs to subcategory parameter change 2,Vs to subcategory parameter change 2,0,255,26310,u8,1,%d,ATK_SUB_CATEGORY,Wrap
+Bow distance correction [%],Correction value added to the flight distance correction of the weapon,-100,999,62200,s16,1,%d,s16,Wrap
+Special effects category,Categories that determine behavior such as overwriting special effects,0,60000,2100,u16,1,%d,SP_EFFECT_SPCATEGORY,Wrap
+In-category priority,Priority within the same category (lower one has priority),0,255,2200,u8,1,%d,u8,Wrap
+Save category,Category to save special effects,-1,127,2300,s8,1,%d,SP_EFFECT_SAVE_CATEGORY,Wrap
+Magic registration frame change Magic slot,You can increase the specified number of magic registration slots,0,3,83000,u8,1,%d,u8,Wrap
+Miracle registration frame change Miracle slot,You can increase the specified number of trajectory registration frames.,0,3,84000,u8,1,%d,u8,Wrap
+Human damage value,Damage value given to human nature value,-99,99,112000,s8,1,%d,s8,Wrap
+Repellent Defense_Overwrite,Set a value that overwrites the repelling defense,0,255,27510,u8,1,%d,u8,Wrap
+Damage attenuation rate when repelling [%] _ Overwrite,Set a value that overwrites the damage attenuation rate at the time of repelling,0,100,27520,u8,1,%d,u8,Wrap
+Bleeding damage correction factor,Point damage of state change type [bleeding], correction value used only when% damage,0,255,90000,u8,1,%d,u8,Wrap
+DL_No damage (0),Specify the type to replace the damage Lv0,0,127,27110,s8,1,%d,ATKPARAM_REP_DMGTYPE,Wrap
+DL_Small (1),Specify the type to replace the damage Lv1,0,127,27130,s8,1,%d,ATKPARAM_REP_DMGTYPE,Wrap
+DL_Medium (2),Specify the type to replace the damage Lv2,0,127,27140,s8,1,%d,ATKPARAM_REP_DMGTYPE,Wrap
+DL_Large (3),Specify the type to replace the damage Lv3,0,127,27150,s8,1,%d,ATKPARAM_REP_DMGTYPE,Wrap
+DL_ Blow-off (4),Specify the type to replace the damage Lv4,0,127,27170,s8,1,%d,ATKPARAM_REP_DMGTYPE,Wrap
+DL_push (5),Specify the type to replace the damage Lv5,0,127,27200,s8,1,%d,ATKPARAM_REP_DMGTYPE,Wrap
+DL_Slamming (6),Specify the type to replace the damage Lv6,0,127,27180,s8,1,%d,ATKPARAM_REP_DMGTYPE,Wrap
+DL_Small blow (7),Specify the type to replace the damage Lv7,0,127,27160,s8,1,%d,ATKPARAM_REP_DMGTYPE,Wrap
+DL_minimal (8),Specify the type to replace the damage Lv8,0,127,27120,s8,1,%d,ATKPARAM_REP_DMGTYPE,Wrap
+DL_ Launch (9),Specify the type to replace the damage Lv9,0,127,27190,s8,1,%d,ATKPARAM_REP_DMGTYPE,Wrap
+DL_ Oversized Blowout (10),Specify the type to replace the damage Lv10,0,127,27200,s8,1,%d,ATKPARAM_REP_DMGTYPE,Wrap
+DL_Breath (11),Specify the type to replace the damage Lv11,0,127,27210,s8,1,%d,ATKPARAM_REP_DMGTYPE,Wrap
+Physical attributes,Physical attributes to set for special effects,0,255,27400,u8,1,%d,ATKPARAM_ATKATTR_TYPE,Wrap
+Special attributes,Special attributes to set for special effects,0,255,27500,u8,1,%d,ATKPARAM_SPATTR_TYPE,Wrap
+State change type,State change judgment flag,0,60000,2000,u16,1,%d,SP_EFFECT_TYPE,Wrap
+Weapon parameter change,Specify which weapon is effective. If there is no limit, all attacks and defenses including enemies are targeted,0,255,24000,u8,1,%d,SP_EFE_WEP_CHANGE_PARAM,Wrap
+Movement type,Movement type. Change the movement speed.,0,255,85000,u8,1,%d,SP_EFFECT_MOVE_TYPE,Wrap
+Defense: Life reduction type,,0,255,99000,u16,1,%d,SP_EFFECT_TYPE,Wrap
+Throwing conditions,Throwing conditions. Affects the throwing mask.,0,255,110000,u8,1,%d,SP_EFFECT_THROW_CONDITION_TYPE,Wrap
+Condition value to be added to the action judgment ID,Condition value to add a value to the action judgment ID (Def: -1),-1,9,113000,s8,1,%d,s8,Wrap
+Cold damage correction factor,Correction value used only for point damage and% damage of state change type [cold air],0,255,90100,u8,1,%d,u8,Wrap
+Effect target: Affiliation,Only the target for which this judgment is checked is effective, the default is ×,0,1,3000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Effect target: Affiliation ally,Only the target for which this judgment is checked is effective, the default is ×,0,1,4000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Effect target: Affiliation enemy,Only the target for which this judgment is checked is effective, the default is ×,0,1,5000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Effect target: Operation PC,Only the target for which this judgment is checked is effective, the default is ×,0,1,6000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Effect target: Operation AI,Only the target for which this judgment is checked is effective, the default is ×,0,1,7000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Effect target: State survival,Only the target for which this judgment is checked is effective, the default is ×,0,1,8000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Effect target: State All ghosts,Only the target for which this judgment is checked is effective, the default is ×,0,1,9000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Sleep disabled,If this effect is applied, you will not sleep,0,1,104070,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Madness invalid,With this effect, you won't go mad,0,1,104080,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Effect target: Activated by an attacker,Apply special effects to attackers after damage (cannot enter defenders),0,1,12000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Icon display even if not activated,The icon is displayed even in the state of waiting for activation.,0,1,13000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Whether to generate a regain gauge,Whether to generate a regain gauge,0,1,161000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Do you want to correct the magic power?,Do you want to correct the magic power?,0,1,15000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Do you correct your faith?,Do you correct your faith?,0,1,16000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Is it for a lap bonus?,Whether it is for the game clear lap bonus.,0,1,17000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Anti-magic parameter change,Set whether or not it is effective against magic,0,1,25000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Anti-miracle parameter change,Set whether or not it is effective against miracles,0,1,26000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Do you want to clear your soul?,Possession soul becomes 0.,0,1,27000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+SOS sign judgment flag,If checked, issue an SOS sign request when activated,0,1,76000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Black SOS sign judgment flag,If checked, issue a black SOS sign request when activated,0,1,77000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Intrusion_A request judgment flag,If checked, issue an intrusion_A request when activated,0,1,78000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Kick judgment flag,If checked, a kick request will be issued at the time of activation.,0,1,79000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Exit judgment flag,If checked, an exit request will be issued at the time of activation.,0,1,80000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+NPC intrusion judgment flag,If checked, an intrusion request to the NPC will be issued at the time of activation.,0,1,80100,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Undecidable judgment flag,Whether you can be corpse. With this check, you will not be dead,0,1,81000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Does HP now affect even if the maximum HP increases or decreases?,Does HP now affect even if the maximum HP increases or decreases?,0,1,82000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Ignore corrosion,[State change type] ignores [Durability] decrease due to [Corrosion],0,1,92000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Ignore visual search enemy cuts,Ignore visual search invalidity,0,1,93000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Ignore hearing search enemy cut,Ignore auditory search invalidity,0,1,94000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Anti-magic disabled,You can use magic even in the anti-magic range,0,1,95000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+False target invalid_ hallucination system,Don't get caught in the fake target that occurred,0,1,96000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+False target invalid_human,You will not be caught by the fake target of the human system that occurred,0,1,96500,u8,1,%d,SP_EFFECT_BOOL,Wrap
+False target invalid_beast system,You will not be caught by the fake target of the beast system that occurred,0,1,96600,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Gravity disabled,Gravity effect disabled,0,1,97000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Poison invalid,If this effect is applied, it will not be poisoned.,0,1,102000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Epidemic invalid,If this effect is applied, you will not get plague,0,1,103000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Bleeding disabled,With this effect, you won't get bleeding,0,1,104000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Curse invalid,With this effect, you won't be cursed,0,1,104050,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Enchanting effective,If this effect is applied, you will be fascinated.,0,1,104100,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Do you want to extend your life?,Will the life be extended when the flag is set by TAE?,0,1,105000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Do you want to correct your strength?,Do you want to correct your strength?,0,1,16100,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Do you want to correct your workmanship?,Do you want to correct your workmanship?,0,1,16200,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Will it be extinguished by bonfire recovery?,Will it be extinguished by bonfire recovery?,0,1,20600,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Anti-throw parameter change,Set whether or not it is effective against throwing attacks,0,1,26200,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Exit from the arena Judgment flag,If checked, a request to leave the arena will be issued at the time of activation.,0,1,80000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Will it be extended by the life extension effect?,Whether to be eligible for extension when the life extension effect is applied,0,1,105100,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Do you know the enemy?,Do you know the enemy? : [Activation condition] (for evil eye users),0,1,109000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Do you want to replan when activated?,Whether to replan at the time of activation,0,1,72700,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Pledge 0,Pledge 0,0,1,130000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Pledge 1,Pledge 1,0,1,130100,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Pledge 2,Pledge 2,0,1,130200,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Pledge 3,Pledge 3,0,1,130300,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Pledge 4,Pledge 4,0,1,130400,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Pledge 5,Pledge 5,0,1,130500,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Pledge 6,Pledge 6,0,1,130600,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Pledge 7,Pledge 7,0,1,130700,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Pledge 8,Pledge 8,0,1,130800,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Pledge 9,Pledge 9,0,1,130900,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Pledge 10,Pledge 10,0,1,131000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Pledge 11,Pledge 11,0,1,131100,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Pledge 12,Pledge 12,0,1,131200,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Pledge 13,Pledge 13,0,1,131300,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Pledge 14,Pledge 14,0,1,131400,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Pledge 15,Pledge 15,0,1,131500,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Attack side damage level replacement,The damage level of the attacking side changes to this value,0,127,152000,s8,1,%d,ATKPARAM_REP_DMGTYPE,Wrap
+Viewer: Visual magnification,Correct the ease of finding with a magnification,0,99,73720,f32,0.001,%f,f32,Wrap
+Effect target: ● Hostile,Only the target for which this judgment is checked is effective, the default is ×,0,1,12100,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Effect target: ○ Allies,Only the target for which this judgment is checked is effective, the default is ×,0,1,12200,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Effect target: myself,Only the target for which this judgment is checked is effective, the default is ×,0,1,12300,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Effect target: PC horse,Only the target for which this judgment is checked is effective, the default is ×,0,1,12350,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Effect target: PC dead only,Only the target for which this judgment is checked is effective, the default is ×,0,1,12400,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Will it be shortened by the effect of shortening the life?,Whether it will be shortened when the life shortening effect is applied,0,1,105110,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Deleted when entering the waiting state,Do you want to delete it the moment you are in a waiting state?,0,1,411000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Will it be activated even when it is invincible?,Whether to apply the damage from this special effect even in the invincible state only when the state change type "Apply the activation function even when invincible" is applied.,0,1,411100,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Team type change,Overwrites the specified team type,-1,99,84900,s8,1,%d,SP_EFFECT_CHANGE_TEAM_TYPE,Wrap
+Damipoli ID,Damipoli ID. Damipoli ID range is 0 to 999.1000, 10000 is the category number.,-1,31999,50200,s16,1,%d,s16,Wrap
+Special effect VfxId_0,Special effect VfxId (-1 disabled),-1,99999999,14100,s32,1,%d,s32,Wrap
+Special effect Id activated at the upper limit of the spirit ball,Special effect Id activated at the upper limit of the spirit ball,-1,99999999,114200,s32,1,%d,s32,Wrap
+Genkitama upper limit,Genkitama upper limit,-1,99999999,114100,s32,1,%d,s32,Wrap
+Special effect Id activated at the lower limit of the spirit ball,Special effect Id activated at the lower limit of the spirit ball,-1,99999999,114400,s32,1,%d,s32,Wrap
+Genkitama lower limit,Genkitama lower limit,-1,99999999,114300,s32,1,%d,s32,Wrap
+Genkitama accumulation value,Genkitama accumulation value,-99999999,99999999,114500,s32,1,%d,s32,Wrap
+How to see: Overwrite visual angle (height) [deg],Override the findability angle,0,180,73730,u8,1,%d,u8,Wrap
+How to see: Overwrite visual angle (width) [deg],Override the findability angle,0,180,73740,u8,1,%d,u8,Wrap
+Change the degree of death,Add this value to the degree of death,-999,999,115000,s16,1,%d,s16,Wrap
+Special effect VfxId_1,Special effect VfxId1 (-1 invalid),-1,99999999,14110,s32,1,%d,s32,Wrap
+Special effect VfxId_2,Special effect VfxId2 (-1 invalid),-1,99999999,14120,s32,1,%d,s32,Wrap
+Special effect VfxId_3,Special effect VfxId3 (-1 invalid),-1,99999999,14130,s32,1,%d,s32,Wrap
+Special effect VfxId_4,Special effect VfxId4 (-1 invalid),-1,99999999,14140,s32,1,%d,s32,Wrap
+Special effect VfxId_5,Special effect VfxId5 (-1 invalid),-1,99999999,14150,s32,1,%d,s32,Wrap
+Special effect VfxId_6,Special effect VfxId6 (-1 invalid),-1,99999999,14160,s32,1,%d,s32,Wrap
+Special effect VfxId_7,Special effect VfxId7 (-1 invalid),-1,99999999,14170,s32,1,%d,s32,Wrap
+Cold resistance attack power [point],Numerical value to be added to the target [Cold air resistance value] when hit,-99999,99999,66200,s32,1,%d,s32,Wrap
+Generated AI sound ID,Generates AI sound parameters with set values,0,99999999,75200,s32,1,%d,s32,Wrap
+Additional foot effect identifier,The identifier of the foot effect that is additionally generated during special effects. XYYZZZ ZZZ,-1,999,14500,s16,1,%d,s16,Wrap
+Virtual status for skill cancellation,Add this value when calculating the end timing of the TAE flag of "Skill Cancel".,-99,99,410000,s8,1,%d,s8,Wrap
+Team attack influence_overwrite,Overwrite and change the target [Team Attack Influence] value. Do not change the default value (-1).,-1,100,75300,s8,1,%d,s8,Wrap
+Toughness Damage multiplier,Toughness version cut rate,0,10,90500,f32,0.001,%f,f32,Wrap
+Special attack A damage multiplier correction,Special Attack A Damage multiplier is corrected. 1 is normal.,0,99.999,46500,f32,0.001,%f,f32,Wrap
+Special attack B damage multiplier correction,Special attack B Damage multiplier is corrected. 1 is normal.,0,99.999,46510,f32,0.001,%f,f32,Wrap
+Special attack C damage multiplier correction,Special attack C Damage multiplier is corrected. 1 is normal.,0,99.999,46520,f32,0.001,%f,f32,Wrap
+Special attack D damage multiplier correction,Special attack D Damage multiplier is corrected. 1 is normal.,0,99.999,46530,f32,0.001,%f,f32,Wrap
+Special attack E damage multiplier correction,Special attack E Damage multiplier is corrected. 1 is normal.,0,99.999,46540,f32,0.001,%f,f32,Wrap
+Special attack F damage multiplier correction,Special attack F Damage multiplier is corrected. 1 is normal.,0,99.999,46550,f32,0.001,%f,f32,Wrap
+Defender: Dark damage multiplier,Dark damage multiplier: Correct the calculated damage by XX times. 1 is normal.,-99,99,31200,f32,0.001,%f,f32,Wrap
+Dark defense multiplier,Multiply the darkness defense by the set value,-99,99,43200,f32,0.001,%f,f32,Wrap
+Dark defense [point],Add or subtract the value set for darkness defense,-9999,9999,46200,s32,1,%d,s32,Wrap
+Attacker: Dark damage multiplier,Dark damage multiplier: Correct the calculated damage by XX times. 1 is normal.,-99,99,34200,f32,0.001,%f,f32,Wrap
+Dark attack power multiplier,Multiply the dark attack power by the set value,-99,99,37200,f32,0.001,%f,f32,Wrap
+Dark attack power [point],Add or subtract the value set for the dark attack power,-9999,9999,40200,s32,1,%d,s32,Wrap
+Radius of full view of darkness [m],Radius of full view of darkness [m]. If you are within this distance, you will be able to see at normal distance even in the dark.,0,99,150000,f32,0.01,%0.3f,f32,Wrap
+Damipoli ID with full view of darkness,Damipoli ID (-1: Master) with full view of darkness. Create a full view area around this Damipoli,-1,99999,151000,s32,1,%d,s32,Wrap
+Trigger condition: Remaining HP ratio is above a certain level [%],Activates only when you have HP above the specified value,-1,100,18500,f32,0.01,%f,f32,Wrap
+Consumption stamina magnification,Multiply by multiplying the consumption stamina value of the behavior parameter,0,99.99,55900,f32,0.01,%f,f32,Wrap
+Item drop correction,The set value is added to [Item Drop Correction],-99.99,99.99,72500,f32,0.01,%f,f32,Wrap
+Poison resistance change [point],Increase or decrease the state resistance value,-99999,99999,89000,s32,1,%d,s32,Wrap
+Epidemic resistance change [point],Increase or decrease the state resistance value,-99999,99999,89100,s32,1,%d,s32,Wrap
+Bleeding resistance change [point],Increase or decrease the state resistance value,-99999,99999,89200,s32,1,%d,s32,Wrap
+Curse resistance change [point],Increase or decrease the state resistance value,-99999,99999,89300,s32,1,%d,s32,Wrap
+Change in cold tolerance [point],Increase or decrease the state resistance value,-99999,99999,89400,s32,1,%d,s32,Wrap
+Attacker: Slash damage multiplier,Slash damage ratio: Correct the calculated damage by XX times. 1 is normal.,-99,99,32100,f32,0.001,%f,f32,Wrap
+Attacker: Batter damage multiplier,Batter damage ratio: The calculated damage is corrected by XX times. 1 is normal.,-99,99,32200,f32,0.001,%f,f32,Wrap
+Attack side: piercing damage multiplier,Puncture damage ratio: Correct the calculated damage by XX times. 1 is normal.,-99,99,32300,f32,0.001,%f,f32,Wrap
+Attacker: Non-attribute damage multiplier,Non-attribute damage ratio: Correct the calculated damage by XX times. 1 is normal.,-99,99,32400,f32,0.001,%f,f32,Wrap
+Slash attack power multiplier,Multiply the slashing attack power by the set value,-99,99,35100,f32,0.001,%f,f32,Wrap
+Batter attack power multiplier,Multiply the hit attack power by the set value,-99,99,35200,f32,0.001,%f,f32,Wrap
+Puncture attack power multiplier,Multiply the piercing attack power by the set value,-99,99,35300,f32,0.001,%f,f32,Wrap
+Non-attribute attack power multiplier,Multiply the non-attribute attack power by the set value,-99,99,35400,f32,0.001,%f,f32,Wrap
+Slash attack power [point],Add or subtract the value set for the slashing attack power,-9999,9999,38100,s32,1,%d,s32,Wrap
+Batter attack power [point],Add or subtract the value set for the batter attack power,-9999,9999,38200,s32,1,%d,s32,Wrap
+Puncture attack power [point],Add or subtract the value set for the piercing attack power,-9999,9999,38300,s32,1,%d,s32,Wrap
+Non-attribute attack power [point],Add or subtract the value set for non-attribute attack power,-9999,9999,38400,s32,1,%d,s32,Wrap
+Strength correction change [point],Add or subtract the correction value of the weapon,-9999,9999,46600,s32,1,%d,s32,Wrap
+Agility correction change [point],Add or subtract the correction value of the weapon,-9999,9999,46610,s32,1,%d,s32,Wrap
+Magic correction change [point],Add or subtract the correction value of the weapon,-9999,9999,46700,s32,1,%d,s32,Wrap
+Faith correction change [point],Add or subtract the correction value of the weapon,-9999,9999,46800,s32,1,%d,s32,Wrap
+Luck correction change [point],Add or subtract the correction value of the weapon,-9999,9999,46900,s32,1,%d,s32,Wrap
+Arts point recovery Strength system,Arts Point Restores strength,0,99,153000,s8,1,%d,s8,Wrap
+Arts point recovery workmanship system,Restores arts point workmanship,0,99,153100,s8,1,%d,s8,Wrap
+Arts point recovery magic system,Restores arts point magic,0,99,153200,s8,1,%d,s8,Wrap
+Arts point recovery Miracle system,Recover arts point miracles,0,99,153300,s8,1,%d,s8,Wrap
+Mad damage correction factor,Correction value used only for point damage and% damage of state change type [madness],0,255,90300,u8,1,%d,u8,Wrap
+Whether to apply the abnormal state attack power multiplier correction,If ○, the abnormal state attack power multiplier correction of the attack para is applied.,0,1,17500,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Whether to apply the attack power multiplier correction of the attack parameter,If ○, the attack power multiplier correction of the attack para is applied.,0,1,17550,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Do not delete at death,If it is ○, it will not be deleted even if the character dies. Mainly used for death effects.,0,1,20500,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Cold air invalid,When this effect is applied, it will not be cold,0,1,104060,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Do not synchronize with the net,Do not synchronize with the net. It does not mean that you will be able to call it locally, but simply do not send it online. For example, a remote character does not activate locally, so nothing happens in that case.,0,1,420000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Anti-magic parameter change,Set whether or not it is effective against spells,0,1,26100,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Stop notification of search enemy status,Whether to stop notifications targeting your army (used by EventMaker decisions and buddy platoons),0,1,75500,u8,1,%d,SP_EFFECT_BOOL,Wrap
+It only takes when outside the rain shield,If it is ○, it will not be applied when it is judged to be shielded (× is always applied),0,1,450000,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Addition value to be added to the action judgment ID,If the addition value of the action judgment ID is 0, the action is not switched and the action is stopped.,0,999,114001,u16,1,%d,u16,Wrap
+SA value_damage ratio,Multiplier for SA damage,0,100,90800,f32,0.1,%f,f32,Wrap
+Defending player Physical damage compensation factor,Damage correction for the damage value received from the player.,0,99,46300,f32,0.001,%0.3f,f32,Wrap
+Defending player magic damage correction multiplier,Damage correction for the damage value received from the player.,0,99,46310,f32,0.001,%0.3f,f32,Wrap
+Defending player Fire damage compensation factor,Damage correction for the damage value received from the player.,0,99,46320,f32,0.001,%0.3f,f32,Wrap
+Defending player Lightning damage compensation factor,Damage correction for the damage value received from the player.,0,99,46330,f32,0.001,%0.3f,f32,Wrap
+Defending player Dark damage correction factor,Damage correction for the damage value received from the player.,0,99,46340,f32,0.001,%0.3f,f32,Wrap
+Defender Enemy Physical Damage Compensation Magnification,Damage correction for the damage value received from the enemy.,0,99,46350,f32,0.001,%0.3f,f32,Wrap
+Defender enemy magic damage correction factor,Damage correction for the damage value received from the enemy.,0,99,46360,f32,0.001,%0.3f,f32,Wrap
+Defender enemy flame damage correction factor,Damage correction for the damage value received from the enemy.,0,99,46370,f32,0.001,%0.3f,f32,Wrap
+Defender enemy lightning damage correction factor,Damage correction for the damage value received from the enemy.,0,99,46380,f32,0.001,%0.3f,f32,Wrap
+Defender enemy darkness damage correction factor,Damage correction for the damage value received from the enemy.,0,99,46390,f32,0.001,%0.3f,f32,Wrap
+Defender Object Damage Compensation Magnification,Damage correction for the damage value received from OBJ.,0,99,46400,f32,0.001,%0.3f,f32,Wrap
+Attacking player Physical damage correction factor,Damage correction for the damage value given to the player.,0,99,46290,f32,0.001,%0.3f,f32,Wrap
+Attacking player Magic damage compensation factor,Damage correction for the damage value given to the player.,0,99,46291,f32,0.001,%0.3f,f32,Wrap
+Attacker Player Flame Damage Compensation Multiplier,Damage correction for the damage value given to the player.,0,99,46292,f32,0.001,%0.3f,f32,Wrap
+Attacking player Lightning damage compensation factor,Damage correction for the damage value given to the player.,0,99,46293,f32,0.001,%0.3f,f32,Wrap
+Attacking player Dark damage correction factor,Damage correction for the damage value given to the player.,0,99,46294,f32,0.001,%0.3f,f32,Wrap
+Attacker Enemy Physical Damage Compensation Magnification,Damage correction for the damage value given to the enemy.,0,99,46295,f32,0.001,%0.3f,f32,Wrap
+Attacking side Enemy magic damage correction factor,Damage correction for the damage value given to the enemy.,0,99,46296,f32,0.001,%0.3f,f32,Wrap
+Attacking side Enemy flame damage correction factor,Damage correction for the damage value given to the enemy.,0,99,46297,f32,0.001,%0.3f,f32,Wrap
+Attacking side Enemy lightning damage correction factor,Damage correction for the damage value given to the enemy.,0,99,46298,f32,0.001,%0.3f,f32,Wrap
+Attacking side Enemy darkness damage correction factor,Damage correction for the damage value given to the enemy.,0,99,46299,f32,0.001,%0.3f,f32,Wrap
+Cold resistance change rate,Multiply the cold resistance value by the set magnification,-1,99,88400,f32,0.001,%f,f32,Wrap
+Trigger condition state change type 1,Trigger condition state change type 1,0,60000,165100,u16,1,%d,SP_EFFECT_TYPE,Wrap
+Trigger condition state change type 2,Trigger condition state change type 2,0,60000,165200,u16,1,%d,SP_EFFECT_TYPE,Wrap
+Trigger condition state change type 3,Trigger condition state change type 3,0,60000,165300,u16,1,%d,SP_EFFECT_TYPE,Wrap
+Listener: Overwrite audible AI sound level,Overwrite how good your ears are,-1,128,73850,s16,1,%d,s16,Wrap
+Capsule size magnification,Magnification over the height of the character capsule,0,99,75700,f32,0.01,%0.2f,f32,Wrap
+Search side addition correction_viewer,Search side addition correction_viewer,-9999,9999,73500,f32,0.1,%0.2f,f32,Wrap
+Searching degree addition correction _ side to be seen,Searching degree addition correction _ side to be seen,-9999,9999,73510,f32,0.1,%0.2f,f32,Wrap
+Those who can see: Visual addition,Correct the ease of finding with a real number,-9999,9999,73610,f32,0.1,%0.2f,f32,Wrap
+How to see: Visual addition,Correct the ease of finding with a real number,-9999,9999,73710,f32,0.1,%0.2f,f32,Wrap
+Listener: AI sound radius addition,Correct the hearing of AI sounds with real numbers,-9999,9999,73810,f32,0.1,%0.2f,f32,Wrap
+Listener: AI sound radius magnification,Correct the audibility of AI sound by magnification,0,99,73820,f32,0.001,%f,f32,Wrap
+Those who can hear: AI sound radius addition,Correct the loudness of the emitted AI sound with a real number,-9999,9999,73910,f32,0.1,%0.2f,f32,Wrap
+Sales price correction: Magnification,Sales price correction: Magnification,1,9999,200000,f32,0.1,%f,f32,Wrap
+Arts MP consumption magnification,Arts MP consumption multiplier [%],0,990,300000,f32,0.001,%f,f32,Wrap
+Magic consumption MP magnification,Magic consumption MP multiplier [%],0,990,300010,f32,0.001,%f,f32,Wrap
+Magic consumption MP multiplier,Magic consumption MP multiplier [%],0,990,300020,f32,0.001,%f,f32,Wrap
+Miracle consumption MP magnification,Miracle consumption MP magnification [%],0,990,300030,f32,0.001,%f,f32,Wrap
+Est bottle HP damage amount [%],Set what percentage of the maximum HP to add (or subtract) with one activation,-100,100,55200,s32,1,%d,s32,Wrap
+Est bottle HP damage amount [point],Set how many points to add (or subtract) with one activation,-9999,9999,55210,s32,1,%d,s32,Wrap
+Est Bottle MP Damage Amount [%],Set what percentage of the maximum MP to add (or subtract) with one activation,-100,100,55220,s32,1,%d,s32,Wrap
+Est Bottle MP Damage Amount [point],Set how many points to add (or subtract) with one activation,-9999,9999,55230,s32,1,%d,s32,Wrap
+Est bottle HP damage multiplier,Correct the damage amount of the HP Est bottle,0,99999,55240,f32,0.001,%f,f32,Wrap
+Est bottle MP damage multiplier,Correct the damage amount of MP Est Bottle,0,99999,55250,f32,0.001,%f,f32,Wrap
+HP drain activation special effect,When the special effect of the state change type "HP drain" is enabled, when the enemy is defeated, the special effect ID set in the "HP drain activation special effect" of the same special effect is called (0: ignore).,0,999999999,111030,s32,1,%d,s32,Wrap
+Life extension factor,Extension coefficient of state change type "life extension",0,9900,105101,f32,0.01,%f,f32,Wrap
+Life shortening ratio,Shortening coefficient of state change type "life shortening",0,9900,105111,f32,0.01,%f,f32,Wrap
+Damaged object attack power multiplier,Corrects the attack power against the damage received from OBJ. (Not damage compensation),0,99.999,46450,f32,0.001,%0.3f,f32,Wrap
+Group ID that deletes the character's paint decal when the special effect disappears,When the special effect disappears (lifetime / overwritten / erased ... etc.), the paint decal is deleted if the special effect of the same group ID is not applied.,-1,9999,410000,s16,1,%d,s16,Wrap
+Vitality additional value,Add value to growth status,0,99,401000,s8,1,%d,s8,Wrap
+Mental strength additional value,Add value to growth status,0,99,401100,s8,1,%d,s8,Wrap
+Endurance additional value,Add value to growth status,0,99,401200,s8,1,%d,s8,Wrap
+Additional physical strength,Add value to growth status,0,99,401300,s8,1,%d,s8,Wrap
+Strength addition value,Add value to growth status,0,99,401400,s8,1,%d,s8,Wrap
+Workmanship addition value,Add value to growth status,0,99,401500,s8,1,%d,s8,Wrap
+Force addition value,Add value to growth status,0,99,401600,s8,1,%d,s8,Wrap
+Faith additional value,Add value to growth status,0,99,401700,s8,1,%d,s8,Wrap
+Luck addition value,Add value to growth status,0,99,401800,s8,1,%d,s8,Wrap
+Deletion condition damage,Reason for damage under the condition to remove special effects,0,255,18600,u8,1,%d,SP_EFFECT_PARAM_DELETE_DAMAGE_TYPE,Wrap
+Vs to subcategory parameter change 3,Vs to subcategory parameter change 3,0,255,26320,u8,1,%d,ATK_SUB_CATEGORY,Wrap
+Special attribute variation value,This value is used to give variation to abnormal state SFX, SE, etc. in combination with the special attribute set for the special effect. SEQ16473,0,99,27501,u8,1,%d,u8,Wrap
+Repelling attack power_overwrite,Set a value that overwrites the repelling attack power,0,255,27505,u8,1,%d,u8,Wrap
+Water level setting for wet conditions,TimeAct Determines whether special effects are applied in combination with "at what water level you get wet",0,255,460000,u8,1,%d,SP_EFFECT_WET_CONDITION_DEPTH,Wrap
+SA recovery speed change,Change the recovery speed of SA durability,-99.99,99.99,58300,f32,0.1,%f,f32,Wrap
+Regain magnification,Regain magnification,0,99.99,162000,f32,0.01,%f,f32,Wrap
+SA attack power multiplier,SA attack power multiplier,0,99,58400,f32,0.1,%f,f32,Wrap
+Sleep tolerance attack power [point],Numerical value to be added to the target's [Sleep tolerance] when hit,-99999,99999,66300,s32,1,%d,s32,Wrap
+Madness resistance attack power [point],A number to be added to the target's [madness resistance value] when it hits,-99999,99999,66400,s32,1,%d,s32,Wrap
+Sleep tolerance change rate,Multiply the sleep tolerance value by the set magnification,-1,99,88500,f32,0.001,%f,f32,Wrap
+Madness resistance change rate,Multiply the madness resistance value by the set multiplier,-1,99,88600,f32,0.001,%f,f32,Wrap
+Changes in sleep tolerance [point],Increase or decrease the state resistance value,-99999,99999,89500,s32,1,%d,s32,Wrap
+Madness resistance change [point],Increase or decrease the state resistance value,-99999,99999,89600,s32,1,%d,s32,Wrap
+Sleep damage correction factor,Point damage of state change type [Sleep], correction value used only when% damage,0,255,90200,u8,1,%d,u8,Wrap
+Changes in site parameters,The effect is limited by the part where the attack hits. Only defensive items in damage calculation are subject to restriction,0,31,26400,u8,1,%d,SP_EFFECT_APPLY_PARTS_GROUP,Wrap
+Clear the target,Does not recognize the target while the special effect is applied (excluding the riding target),0,1,72710,u8,1,%d,SP_EFFECT_BOOL,Wrap
+False target invalid_subhuman,You will not be caught by the fake target of the subhuman system that occurred,0,1,96602,u8,1,%d,SP_EFFECT_BOOL,Wrap
+False target invalid_phantom arts system,You will not be caught by the fake target of the phantom arts system that occurred,0,1,96604,u8,1,%d,SP_EFFECT_BOOL,Wrap
+Intrusion_B request judgment flag,If checked, issue an intrusion_B request when activated,0,1,78100,u8,1,%d,SP_EFFECT_BOOL,Wrap
+unk353_4,,0,1,0,u8,1,%d,SP_EFFECT_BOOL,Wrap
+pad,,,,470001,dummy8,,,dummy8,None
+Maximum SA addition value [point],Value to add to the super armor value,-9999,9999,58100,f32,0.1,%f,f32,Wrap
+SA damage amount [point],Set how many points to subtract (or add) with one activation,-9999,9999,58200,f32,0.1,%f,f32,Wrap
+Giant enemy lift height overwrite [m],Giant enemy lift height overwrite [m],0,99.9,470000,f32,0.1,%f,f32,Wrap
+Defender: Poison resistance damage multiplier,Poison resistance damage ratio: Correct the calculated damage by XX times. 1 is normal.,-99,99,31300,f32,0.001,%f,f32,Wrap
+Defender: Epidemic resistance damage multiplier,Epidemic resistance damage ratio: Correct the calculated damage by XX times. 1 is normal.,-99,99,31400,f32,0.001,%f,f32,Wrap
+Defender: Bleeding resistance damage multiplier,Bleeding resistance damage ratio: Correct the calculated damage by XX times. 1 is normal.,-99,99,31500,f32,0.001,%f,f32,Wrap
+Defender: Curse resistance damage multiplier,Curse resistance damage multiplier: Corrects the calculated damage by XX times. 1 is normal.,-99,99,31600,f32,0.001,%f,f32,Wrap
+Defender: Cold resistance damage multiplier,Cold resistance damage ratio: Correct the calculated damage by XX times. 1 is normal.,-99,99,31700,f32,0.001,%f,f32,Wrap
+Defender: Sleep resistance damage multiplier,Sleep resistance damage ratio: Correct the calculated damage by XX times. 1 is normal.,-99,99,31800,f32,0.001,%f,f32,Wrap
+Defender: Madness resistance damage multiplier,Madness resistance damage multiplier: Correct the calculated damage by XX times. 1 is normal.,-99,99,31900,f32,0.001,%f,f32,Wrap
+Distance to go home no matter what [m] _ overwrite,Distance to go home no matter what [m] _ overwrite,0,65535,74000,u16,1,%d,u16,Wrap
+Distance to return home while fighting [m] _ Overwrite,Distance to return home while fighting [m] _ Overwrite,0,65535,74010,u16,1,%d,u16,Wrap
+Distance to give up and fight to return to the nest [m] _ overwrite,Distance to give up and fight to return to the nest [m] _ overwrite,0,65535,74020,u16,1,%d,u16,Wrap
+When returning home: Distance to see the target [m] _ Overwrite,When returning home: Distance to see the target [m] _ Overwrite,0,65535,74030,u16,1,%d,u16,Wrap
+Item consumption MP magnification,Item consumption MP multiplier,0,990,300040,f32,0.001,%f,f32,Wrap
+pad,,,,470002,dummy8,,%f,dummy8,Wrap

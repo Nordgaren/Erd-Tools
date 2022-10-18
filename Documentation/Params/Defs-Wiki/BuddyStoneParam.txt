@@ -1,0 +1,17 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| talkChrEntityId || Conversation character entity ID || Used as a foreign key when referencing from a conversation. || - ||
+|| eliminateTargetEntityId || Defeat Target List Entity ID || Entity ID of the character / group to be defeated by the buddy when summoned from this stele || - ||
+|| summonedEventFlagId || Summoned event flag ID || Flag ID that stands when summoned from a stone monument. When this flag is set, the stone monument cannot be summoned. || - ||
+|| isSpecial || Is it special? || Is the stone monument an SP stone monument or a general-purpose stone monument? A bool that distinguishes. || BOOL_CIRCLECROSS_TYPE ||
+|| pad1 || Padding ||  || - ||
+|| pad2 || Padding ||  || - ||
+|| buddyId || Buddy ID || ID of the buddy parameter. If "Special" is ○, this buddy ID will be summoned. || - ||
+|| dopingSpEffectId || Special effects ID for doping || Special effect ID applied to the buddy when summoning the buddy. || - ||
+|| activateRange || Buddy activation distance [m] || If there is at least one character to be defeated in this range, you can summon a buddy at that stone monument. || - ||
+|| overwriteReturnRange || Buddy homecoming distance overwrite [m] || Buddy's homecoming distance can be overridden || - ||
+|| overwriteActivateRegionEntityId || Launch range overwrite area entity ID || The range where the buddy can be summoned can be overwritten in the area of the specified entity ID. || - ||
+|| warnRegionEntityId || Warning range overwrite area entity ID || Warning area entity ID || - ||
+|| pad3 || Padding ||  || - ||

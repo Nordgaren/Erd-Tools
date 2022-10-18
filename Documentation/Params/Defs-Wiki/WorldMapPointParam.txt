@@ -1,0 +1,88 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| eventFlagId || Release event flag ID || Event flag ID of open condition || - ||
+|| distViewEventFlagId || Far-viewing platform discovery event flag ID || Event flag ID to be set when found on the distant view || - ||
+|| iconId || Icon ID || Icon ID || - ||
+|| bgmPlaceType || BGM location information (inside the entrance area) || Bgm location type || SOUND_BGM_MAP_PLACE_TYPE ||
+|| isAreaIcon || Is it a range icon? || Is it an icon that represents a range? Same size as the map || BOOL_CIRCLECROSS_TYPE ||
+|| isOverrideDistViewMarkPos || Tomidai mark_Coordinates overwrite || Whether to overwrite the coordinates when using it as a distant view marker || BOOL_CIRCLECROSS_TYPE ||
+|| isEnableNoText || Whether to display when there is no text || Do you want to display it even when there is no text? Basically, points are not displayed without text. Display without text when this flag is enabled || BOOL_CIRCLECROSS_TYPE ||
+|| pad3 || Pad 3 ||  || - ||
+|| areaNo_forDistViewMark || Overwrite distant view mark_area number || AA part of mAA_BB_CC_DD || - ||
+|| gridXNo_forDistViewMark || Overwrite distant view mark_Grid X number || BB part of mAA_BB_CC_DD || - ||
+|| gridZNo_forDistViewMark || Overwrite distant view mark_Grid Z number || CC part of mAA_BB_CC_DD || - ||
+|| clearedEventFlagId || Cleared event flag ID || Cleared event flag ID (0: always treated as cleared) || - ||
+|| dispMask00 || Display setting M00 || Whether to display with M00 || BOOL_CIRCLECROSS_TYPE ||
+|| dispMask01 || Display setting M01 || Whether to display with M01 || BOOL_CIRCLECROSS_TYPE ||
+|| pad2_0 || pad || pad2_0 || - ||
+|| pad2 || pad || pad2 || - ||
+|| distViewIconId || Icon ID when distant view is found || Icon ID when distant view is found || - ||
+|| angle || Icon angle [deg] || Display icon rotation angle [deg] || - ||
+|| areaNo || Area number || AA part of mAA_BB_CC_DD || - ||
+|| gridXNo || Grid X number || BB part of mAA_BB_CC_DD || - ||
+|| gridZNo || Grid Z number || CC part of mAA_BB_CC_DD || - ||
+|| pad || Padding || Padding || - ||
+|| posX || X coordinate || X coordinate || - ||
+|| posY || Y coordinate || Y coordinate (not used) || - ||
+|| posZ || Z coordinate || Z coordinate || - ||
+|| textId1 || Text ID || The text ID to display. If the value is invalid (-1), nothing is displayed. || - ||
+|| textEnableFlagId1 || Occurrence event flag ID || Display text Event flag ID. Display if the event flag is On. If the event flag ID (0) is invalid, it will be treated as On. || - ||
+|| textDisableFlagId1 || Hidden event flag ID || Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (0) is invalid, it will be treated as Off. || - ||
+|| textId2 || Text ID || The text ID to display. If it is an invalid value (-2), nothing is displayed. || - ||
+|| textEnableFlagId2 || Occurrence event flag ID || Display text Event flag ID. Display if the event flag is On. If the event flag ID (1) is invalid, it will be treated as On. || - ||
+|| textDisableFlagId2 || Hidden event flag ID || Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (1) is invalid, it will be treated as Off. || - ||
+|| textId3 || Text ID || The text ID to display. If it is an invalid value (-3), nothing is displayed. || - ||
+|| textEnableFlagId3 || Occurrence event flag ID || Display text Event flag ID. Display if the event flag is On. If the event flag ID (2) is invalid, it will be treated as On. || - ||
+|| textDisableFlagId3 || Hidden event flag ID || Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (2) is invalid, it will be treated as Off. || - ||
+|| textId4 || Text ID || The text ID to display. If it is an invalid value (-4), nothing is displayed. || - ||
+|| textEnableFlagId4 || Occurrence event flag ID || Display text Event flag ID. Display if the event flag is On. If the event flag ID (3) is invalid, it will be treated as On. || - ||
+|| textDisableFlagId4 || Hidden event flag ID || Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (3) is invalid, it will be treated as Off. || - ||
+|| textId5 || Text ID || The text ID to display. If it is an invalid value (-5), nothing is displayed. || - ||
+|| textEnableFlagId5 || Occurrence event flag ID || Display text Event flag ID. Display if the event flag is On. If the event flag ID (4) is invalid, it will be treated as On. || - ||
+|| textDisableFlagId5 || Hidden event flag ID || Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (4) is invalid, it will be treated as Off. || - ||
+|| textId6 || Text ID || The text ID to display. If it is an invalid value (-6), nothing is displayed. || - ||
+|| textEnableFlagId6 || Occurrence event flag ID || Display text Event flag ID. Display if the event flag is On. If the event flag ID (5) is invalid, it will be treated as On. || - ||
+|| textDisableFlagId6 || Hidden event flag ID || Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (5) is invalid, it will be treated as Off. || - ||
+|| textId7 || Text ID || The text ID to display. If it is an invalid value (-7), nothing is displayed. || - ||
+|| textEnableFlagId7 || Occurrence event flag ID || Display text Event flag ID. Display if the event flag is On. If the event flag ID (6) is invalid, it will be treated as On. || - ||
+|| textDisableFlagId7 || Hidden event flag ID || Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (6) is invalid, it will be treated as Off. || - ||
+|| textId8 || Text ID || The text ID to display. If it is an invalid value (-8), nothing is displayed. || - ||
+|| textEnableFlagId8 || Occurrence event flag ID || Display text Event flag ID. Display if the event flag is On. If the event flag ID (7) is invalid, it will be treated as On. || - ||
+|| textDisableFlagId8 || Hidden event flag ID || Hidden event flag ID of the text. If the event flag is On, it will not be displayed. It takes precedence over the display event flag ID. If the event flag ID (7) is invalid, it will be treated as Off. || - ||
+|| textType1 || Text type || Text type (place name, NPC name, ...) || WORLD_MAP_POINT_TEXT_TYPE ||
+|| textType2 || Text type || Text type (place name, NPC name, ...) || WORLD_MAP_POINT_TEXT_TYPE ||
+|| textType3 || Text type || Text type (place name, NPC name, ...) || WORLD_MAP_POINT_TEXT_TYPE ||
+|| textType4 || Text type || Text type (place name, NPC name, ...) || WORLD_MAP_POINT_TEXT_TYPE ||
+|| textType5 || Text type || Text type (place name, NPC name, ...) || WORLD_MAP_POINT_TEXT_TYPE ||
+|| textType6 || Text type || Text type (place name, NPC name, ...) || WORLD_MAP_POINT_TEXT_TYPE ||
+|| textType7 || Text type || Text type (place name, NPC name, ...) || WORLD_MAP_POINT_TEXT_TYPE ||
+|| textType8 || Text type || Text type (place name, NPC name, ...) || WORLD_MAP_POINT_TEXT_TYPE ||
+|| distViewId || Distance stand ID0 || Distance stand ID || - ||
+|| posX_forDistViewMark || Distance viewing marker overwrite _X coordinates || X coordinate || - ||
+|| posY_forDistViewMark || Distance viewing mark overwrite Y coordinate || Y coordinate || - ||
+|| posZ_forDistViewMark || Distant mark overwrite Z coordinate || Z coordinate || - ||
+|| distViewId1 || Distance stand ID1 || Distance stand ID || - ||
+|| distViewId2 || Distance stand ID2 || Distance stand ID || - ||
+|| distViewId3 || Distance stand ID3 || Distance stand ID || - ||
+|| dispMinZoomStep || Display zoom step || Zoom step to display map points (0 when zoomed out most, +1 for each zoom). Displayed when "<< Display zoom step >> ≤ Current zoom step". Default is 0 (always displayed) || - ||
+|| selectMinZoomStep || Selectable zoom steps || Zoom step where map points can be selected (0 when zoomed out most, +1 for each zoom). Selectable when "<< Selectable zoom step >> ≤ Current enlargement stage". Default is 0 (always selectable) || - ||
+|| entryFEType || Admission display format || Admission display format. Map points to be displayed at the time of admission Types of admission FE || WORLD_MAP_ENTRY_FE_TYPE ||
+|| pad4 || pad || pad3 || - ||
+|| unkC0 || unkC0 ||  || - ||
+|| unkC4 || unkC4 ||  || - ||
+|| unkC8 || unkC8 ||  || - ||
+|| unkCC || unkCC ||  || - ||
+|| unkD0 || unkD0 ||  || - ||
+|| unkD4 || unkD4 ||  || - ||
+|| unkD8 || unkD8 ||  || - ||
+|| unkDC || unkDC ||  || - ||
+|| unkE0 || unkE0 ||  || - ||
+|| unkE4 || unkE4 ||  || - ||
+|| unkE8 || unkE8 ||  || - ||
+|| unkEC || unkEC ||  || - ||
+|| unkF0 || unkF0 ||  || - ||
+|| unkF4 || unkF4 ||  || - ||
+|| unkF8 || unkF8 ||  || - ||
+|| unkFC || unkFC ||  || - ||

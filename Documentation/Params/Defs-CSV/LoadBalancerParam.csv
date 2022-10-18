@@ -1,0 +1,34 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+lowerFpsThreshold,If it falls below this FPS, increase the load balance level by 1.,0,60,0,f32,0.1,%f,f32,None
+upperFpsThreshold,If you exceed this FPS, lower the load balance level by 1.,0,60,1,f32,0.1,%f,f32,None
+lowerFpsContinousCount,If this frame continues below the threshold, level up,0,999,2,u32,1,%u,u32,None
+upperFpsContinousCount,If the threshold is exceeded continuously for this frame, level down,0,999,3,u32,1,%u,u32,None
+downAfterChangeSleep,Sleep frame count after level down,0,999,4,u32,1,%u,u32,None
+upAfterChangeSleep,Sleep frame count after leveling up,0,999,5,u32,1,%u,u32,None
+Light shaft,Light shaft of filter,0,21,100,u8,1,%u,u8,None
+Bloom,Bloom,0,21,101,u8,1,%u,u8,None
+Glow,Glow,0,21,102,u8,1,%u,u8,None
+AA,Antialiasing,0,21,103,u8,1,%u,u8,None
+SSAO,SSAO,0,21,104,u8,1,%u,u8,None
+DOF,DOF,0,21,105,u8,1,%u,u8,None
+Motion Blur,Motion Blur,0,21,106,u8,1,%u,u8,None
+MotionBlurIteration,Reduce the number of Motion Blur iterations,0,21,107,u8,1,%u,u8,None
+Reserve,Reserve,,,108,dummy8,,%u,dummy8,None
+Shadow Blur,Cut the shadow blur,0,21,109,u8,1,%u,u8,None
+Around the SFX Emit,Emit interval, number of emits, LOD distance halved in graphics config,0,21,110,u8,1,%u,u8,None
+SFX reflection,Omit the reflection scene SFX,0,21,111,u8,1,%u,u8,None
+Water interaction,Omit water surface interact SFX,0,21,112,u8,1,%u,u8,None
+SFX glow,Omit Glow playing with SFX,0,21,113,u8,1,%u,u8,None
+SFX distortion,Omit of distortion applied by SFX,0,21,114,u8,1,%u,u8,None
+Soft sprite,Soft sprite omit with SFX,0,21,115,u8,1,%u,u8,None
+Light shaft,SFX Light Shaft Omit,0,21,116,u8,1,%u,u8,None
+Scale to the distance judgment of the effect dynamically registered in the reduction buffer,Scale to the distance judgment of the effect dynamically registered in the reduction buffer by the distance of SFX,0,21,117,u8,1,%u,u8,None
+Dynamic resolution,Dynamic resolution,0,21,118,u8,1,%u,u8,None
+Shadow Cascade0 Resolution Half,Cut the shadow (cascade 0) resolution in half,0,21,119,u8,1,%u,u8,None
+Shadow Cascade1 Resolution Half,Cut the shadow (cascade 1) resolution in half,0,21,120,u8,1,%u,u8,None
+Local player,Turn off the water wetting process for local players,0,21,121,u8,1,%u,u8,None
+Remote player,Turn off the water wetting process of the remote player,0,21,122,u8,1,%u,u8,None
+Enemy character,Turn off the water wetting process of enemy characters,0,21,123,u8,1,%u,u8,None
+Resolution reduction lower limit (%),Resolution reduction lower limit (%),0,100,10,u8,1,%u,u8,None
+Resolution reduction upper limit (%),Resolution reduction upper limit (%),0,100,11,u8,1,%u,u8,None
+Reserve,Reserve,,,124,dummy8,,,dummy8,None

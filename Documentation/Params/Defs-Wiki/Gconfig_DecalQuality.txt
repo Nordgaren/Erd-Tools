@@ -1,0 +1,3 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| enabled || Decal valid || Decal valid || ON_OFF ||
+|| dmy || dmy ||  || - ||

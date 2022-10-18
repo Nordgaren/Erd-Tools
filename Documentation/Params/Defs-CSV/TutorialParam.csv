@@ -1,0 +1,15 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,501,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,502,dummy8,,%d,dummy8,None
+Display type,Specifies the type of tutorial menu to display,0,255,100,u8,1,%u,TUTORIAL_MENU_TYPE,None
+Display timing,Display timing (default: 0: "-"). You will see this tutorial when you open this menu. Specify 0: "-" if you do not want to display it when you open the menu.,0,255,400,u8,1,%u,TUTORIAL_TRIGGER_TYPE,None
+Impressions,Number of times to display (default: 0: once in the game),0,255,410,u8,1,%u,TUTORIAL_REPEAT_TYPE,None
+Padding,,,,503,dummy8,,,dummy8,None
+Image ID,Specifies the tutorial image ID to display (default: 0). Specify 0 if you do not want to display the image,0,9999,300,u16,1,%u,u16,None
+Padding,,,,504,dummy8,,,dummy8,None
+Display permission flag,Event flag ID for display permission (default: 0). It will not be displayed until this flag is set. Specify 0 if you always want to allow,0,-294967297,500,u32,1,%u,u32,None
+Text ID,ID of the text to be displayed in the tutorial [TutorialText.xlsm]. This text ID is used for both "Title" and "Body",-1,99999999,200,s32,1,%d,s32,None
+at the earliest,Shortest display guaranteed time [seconds]. Even if it is closed due to an event etc., it will be closed after displaying at least this time. It's only for toast, so it's ignored in modals,0.1,600,405,f32,0.1,%.1f,f32,None
+Longest,Display time [seconds]. It will close automatically after this time has passed since the toast was displayed. It's only for toast, so it's ignored in modals,0.1,600,406,f32,0.1,%.1f,f32,None
+Padding,,,,505,dummy8,,,dummy8,None

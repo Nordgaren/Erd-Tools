@@ -1,0 +1,45 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| priority || priority || priority || - ||
+|| forcePlay || Forced interrupt || Forced interrupt || BOOL_YESNO_TYPE ||
+|| pad1 || reserve || reserve || - ||
+|| normalWhite || White spirit (white sign) || White spirit (white sign) || - ||
+|| umbasaWhite || Sun spirit (white sign) || Sun spirit (white sign) || - ||
+|| berserkerWhite || Berserker spirit (white sign) || Berserker spirit (white sign) || - ||
+|| sinnerHeroWhite || Sinner Hero Spirit (white sign) || Sinner Hero Spirit (white sign) || - ||
+|| normalBlack || Dark spirit (red sign) || Dark spirit (red sign) || - ||
+|| umbasaBlack || Sun spirit (red sign) || Sun spirit (red sign) || - ||
+|| berserkerBlack || Berserker spirit (red sign) || Berserker spirit (red sign) || - ||
+|| forceJoinBlack || Intrusion_A || Intrusion_A || - ||
+|| forceJoinUmbasaBlack || Sun spirit (intrusion) || Sun spirit (intrusion) || - ||
+|| forceJoinBerserkerBlack || Berserker spirit (intrusion) || Berserker spirit (intrusion) || - ||
+|| sinnerHunterVisitor || Sinner hunting spirit (visit) || Sinner hunting spirit (visit) || - ||
+|| redHunterVisitor || Red Scare Spirit (Visit) || Red Scare Spirit (Visit) || - ||
+|| guardianOfBossVisitor || Boss guardian spirit (visit) || Boss guardian spirit (visit) || - ||
+|| guardianOfForestMapVisitor || Map Guardian Spirit_Forest (Visit) || Map Guardian Spirit_Forest (Visit) || - ||
+|| guardianOfAnolisVisitor || Map Guardian_Anor (Visit) || Map Guardian_Anor (Visit) || - ||
+|| rosaliaBlack || Rosalia spirit (red sign) || Rosalia spirit (red sign) || - ||
+|| forceJoinRosaliaBlack || Rosalia spirit (intrusion) || Rosalia spirit (intrusion) || - ||
+|| redHunterVisitor2 || Red Scare Spirit 2 (Visit) || Red Scare Spirit 2 (Visit) || - ||
+|| npc1 || NPC Pseudo Multi 1 || NPC Pseudo Multi 1 || - ||
+|| npc2 || NPC Pseudo Multi 2 || NPC Pseudo Multi 2 || - ||
+|| npc3 || NPC Pseudo Multi 3 || NPC Pseudo Multi 3 || - ||
+|| npc4 || NPC Pseudo Multi 4 || NPC Pseudo Multi 4 || - ||
+|| battleRoyal || Battle royale || Battle royale || - ||
+|| npc5 || NPC Pseudo Multi 5 || NPC Pseudo Multi 5 || - ||
+|| npc6 || NPC Pseudo Multi 6 || NPC Pseudo Multi 6 || - ||
+|| npc7 || NPC Pseudo Multi 7 || NPC Pseudo Multi 7 || - ||
+|| npc8 || NPC Pseudo Multi 8 || NPC Pseudo Multi 8 || - ||
+|| npc9 || NPC Pseudo Multi 9 || NPC Pseudo Multi 9 || - ||
+|| npc10 || NPC Pseudo Multi 10 || NPC Pseudo Multi 10 || - ||
+|| npc11 || NPC Pseudo Multi 11 || NPC Pseudo Multi 11 || - ||
+|| npc12 || NPC Pseudo Multi 12 || NPC Pseudo Multi 12 || - ||
+|| npc13 || NPC Pseudo Multi 13 || NPC Pseudo Multi 13 || - ||
+|| npc14 || NPC Pseudo Multi 14 || NPC Pseudo Multi 14 || - ||
+|| npc15 || NPC Pseudo Multi 15 || NPC Pseudo Multi 15 || - ||
+|| npc16 || NPC Pseudo Multi 16 || NPC Pseudo Multi 16 || - ||
+|| forceJoinBlack_B || Intrusion_B || Intrusion_B || - ||
+|| normalWhite_Npc || White spirit (white sign) for NPCs || White spirit (white sign) for NPCs || - ||
+|| forceJoinBlack_Npc || For intrusion_A_NPCs || For intrusion_A_NPCs || - ||
+|| forceJoinBlack_B_Npc || For intrusion_B_NPCs || For intrusion_B_NPCs || - ||
+|| forceJoinBlack_C_Npc || For intrusion_C_NPCs || For intrusion_C_NPCs || - ||
+|| pad2 || reserve || reserve || - ||

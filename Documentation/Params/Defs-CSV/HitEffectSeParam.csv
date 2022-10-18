@@ -1,0 +1,137 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Iron: Slash: Small,Iron: Slash: Small,0,999999999,100,s32,1,%d,s32,Wrap
+Iron: Slash: Large,Iron: Slash: Large,0,999999999,101,s32,1,%d,s32,Wrap
+Iron: Slash: Oversized,Iron: Slash: Oversized,0,999999999,102,s32,1,%d,s32,Wrap
+Iron: piercing: small,Iron: piercing: small,0,999999999,120,s32,1,%d,s32,Wrap
+Made of iron: piercing: large,Made of iron: piercing: large,0,999999999,121,s32,1,%d,s32,Wrap
+Iron: piercing: oversized,Iron: piercing: oversized,0,999999999,122,s32,1,%d,s32,Wrap
+Iron: Batter: Small,Iron: Batter: Small,0,999999999,110,s32,1,%d,s32,Wrap
+Iron: Batter: Large,Iron: Batter: Large,0,999999999,111,s32,1,%d,s32,Wrap
+Iron: Batter: Oversized,Iron: Batter: Oversized,0,999999999,112,s32,1,%d,s32,Wrap
+Flame: Slash: Small,Flame: Slash: Small,0,999999999,200,s32,1,%d,s32,Wrap
+Flame: Slash: Large,Flame: Slash: Large,0,999999999,201,s32,1,%d,s32,Wrap
+Flame: Slash: Oversized,Flame: Slash: Oversized,0,999999999,202,s32,1,%d,s32,Wrap
+Flame: Piercing: Small,Flame: Piercing: Small,0,999999999,220,s32,1,%d,s32,Wrap
+Flame: Piercing: Large,Flame: Piercing: Large,0,999999999,221,s32,1,%d,s32,Wrap
+Flame: Piercing: Oversized,Flame: Piercing: Oversized,0,999999999,222,s32,1,%d,s32,Wrap
+Flame: Batter: Small,Flame: Batter: Small,0,999999999,210,s32,1,%d,s32,Wrap
+Flame: Batter: Large,Flame: Batter: Large,0,999999999,211,s32,1,%d,s32,Wrap
+Flame: Batter: Oversized,Flame: Batter: Oversized,0,999999999,212,s32,1,%d,s32,Wrap
+Wooden: Slash: Small,Wooden: Slash: Small,0,999999999,300,s32,1,%d,s32,Wrap
+Wooden: Slash: Large,Wooden: Slash: Large,0,999999999,301,s32,1,%d,s32,Wrap
+Wooden: Slash: Oversized,Wooden: Slash: Oversized,0,999999999,302,s32,1,%d,s32,Wrap
+Wooden: piercing: small,Wooden: piercing: small,0,999999999,320,s32,1,%d,s32,Wrap
+Wooden: piercing: large,Wooden: piercing: large,0,999999999,321,s32,1,%d,s32,Wrap
+Wooden: piercing: oversized,Wooden: piercing: oversized,0,999999999,322,s32,1,%d,s32,Wrap
+Wooden: Batter: Small,Wooden: Batter: Small,0,999999999,310,s32,1,%d,s32,Wrap
+Wooden: Batter: Large,Wooden: Batter: Large,0,999999999,311,s32,1,%d,s32,Wrap
+Wooden: Batter: Oversized,Wooden: Batter: Oversized,0,999999999,312,s32,1,%d,s32,Wrap
+Meat: Slash: Small,Meat: Slash: Small,0,999999999,400,s32,1,%d,s32,Wrap
+Meat: Slash: Large,Meat: Slash: Large,0,999999999,401,s32,1,%d,s32,Wrap
+Meat: Slash: Oversized,Meat: Slash: Oversized,0,999999999,402,s32,1,%d,s32,Wrap
+Meat: Stab: Small,Meat: Stab: Small,0,999999999,420,s32,1,%d,s32,Wrap
+Meat: Stab: Large,Meat: Stab: Large,0,999999999,421,s32,1,%d,s32,Wrap
+Meat: Stab: Oversized,Meat: Stab: Oversized,0,999999999,422,s32,1,%d,s32,Wrap
+Meat: Batter: Small,Meat: Batter: Small,0,999999999,410,s32,1,%d,s32,Wrap
+Meat: Batter: Large,Meat: Batter: Large,0,999999999,411,s32,1,%d,s32,Wrap
+Meat: Batter: Oversized,Meat: Batter: Oversized,0,999999999,412,s32,1,%d,s32,Wrap
+Corrosion: Slash: Small,Corrosion: Slash: Small,0,999999999,500,s32,1,%d,s32,Wrap
+Eating: Slashing: Large,Eating: Slashing: Large,0,999999999,501,s32,1,%d,s32,Wrap
+Eating: Slashing: Oversized,Eating: Slashing: Oversized,0,999999999,502,s32,1,%d,s32,Wrap
+Corrosion: piercing: small,Corrosion: piercing: small,0,999999999,520,s32,1,%d,s32,Wrap
+Corrosion: Piercing: Large,Corrosion: Piercing: Large,0,999999999,521,s32,1,%d,s32,Wrap
+Corrosion: piercing: oversized,Corrosion: piercing: oversized,0,999999999,522,s32,1,%d,s32,Wrap
+Corrosion: Batter: Small,Corrosion: Batter: Small,0,999999999,510,s32,1,%d,s32,Wrap
+Corrosion: Batter: Large,Corrosion: Batter: Large,0,999999999,511,s32,1,%d,s32,Wrap
+Corrosion: Batter: Oversized,Corrosion: Batter: Oversized,0,999999999,512,s32,1,%d,s32,Wrap
+Energy: Slash: Small,Energy: Slash: Small,0,999999999,600,s32,1,%d,s32,Wrap
+Energy: Slash: Large,Energy: Slash: Large,0,999999999,601,s32,1,%d,s32,Wrap
+Energy: Slash: Oversized,Energy: Slash: Oversized,0,999999999,602,s32,1,%d,s32,Wrap
+Energy: Puncture: Small,Energy: Puncture: Small,0,999999999,620,s32,1,%d,s32,Wrap
+Energy: Puncture: Large,Energy: Puncture: Large,0,999999999,621,s32,1,%d,s32,Wrap
+Energy: Puncture: Oversized,Energy: Puncture: Oversized,0,999999999,622,s32,1,%d,s32,Wrap
+Energy: Batter: Small,Energy: Batter: Small,0,999999999,610,s32,1,%d,s32,Wrap
+Energy: Batter: Large,Energy: Batter: Large,0,999999999,611,s32,1,%d,s32,Wrap
+Energy: Batter: Oversized,Energy: Batter: Oversized,0,999999999,612,s32,1,%d,s32,Wrap
+None: Slash: Small,None: Slash: Small,0,999999999,700,s32,1,%d,s32,Wrap
+None: Slash: Large,None: Slash: Large,0,999999999,701,s32,1,%d,s32,Wrap
+None: Slash: Oversized,None: Slash: Oversized,0,999999999,702,s32,1,%d,s32,Wrap
+None: Piercing: Small,None: Piercing: Small,0,999999999,720,s32,1,%d,s32,Wrap
+None: Piercing: Large,None: Piercing: Large,0,999999999,721,s32,1,%d,s32,Wrap
+None: Piercing: Oversized,None: Piercing: Oversized,0,999999999,722,s32,1,%d,s32,Wrap
+None: Batter: Small,None: Batter: Small,0,999999999,710,s32,1,%d,s32,Wrap
+None: Batter: Large,None: Batter: Large,0,999999999,711,s32,1,%d,s32,Wrap
+None: Batter: Oversized,None: Batter: Oversized,0,999999999,712,s32,1,%d,s32,Wrap
+Dmy1: Slash: Small,Dmy1: Slash: Small,0,999999999,800,s32,1,%d,s32,Wrap
+Dmy1: Slash: Large,Dmy1: Slash: Large,0,999999999,801,s32,1,%d,s32,Wrap
+Dmy1: Slash: Oversized,Dmy1: Slash: Oversized,0,999999999,802,s32,1,%d,s32,Wrap
+Dmy1: Stab: Small,Dmy1: Stab: Small,0,999999999,820,s32,1,%d,s32,Wrap
+Dmy1: Stab: Large,Dmy1: Stab: Large,0,999999999,821,s32,1,%d,s32,Wrap
+Dmy1: Stab: Oversized,Dmy1: Stab: Oversized,0,999999999,822,s32,1,%d,s32,Wrap
+Dmy1: Batter: Small,Dmy1: Batter: Small,0,999999999,810,s32,1,%d,s32,Wrap
+Dmy1: Batter: Large,Dmy1: Batter: Large,0,999999999,811,s32,1,%d,s32,Wrap
+Dmy1: Batter: Oversized,Dmy1: Batter: Oversized,0,999999999,812,s32,1,%d,s32,Wrap
+Dmy2: Slash: Small,Dmy2: Slash: Small,0,999999999,900,s32,1,%d,s32,Wrap
+Dmy2: Slash: Large,Dmy2: Slash: Large,0,999999999,901,s32,1,%d,s32,Wrap
+Dmy2: Slash: Oversized,Dmy2: Slash: Oversized,0,999999999,902,s32,1,%d,s32,Wrap
+Dmy2: Piercing: Small,Dmy2: Piercing: Small,0,999999999,920,s32,1,%d,s32,Wrap
+Dmy2: Piercing: Large,Dmy2: Piercing: Large,0,999999999,921,s32,1,%d,s32,Wrap
+Dmy2: Piercing: Oversized,Dmy2: Piercing: Oversized,0,999999999,922,s32,1,%d,s32,Wrap
+Dmy2: Batter: Small,Dmy2: Batter: Small,0,999999999,910,s32,1,%d,s32,Wrap
+Dmy2: Batter: Large,Dmy2: Batter: Large,0,999999999,911,s32,1,%d,s32,Wrap
+Dmy2: Batter: Oversized,Dmy2: Batter: Oversized,0,999999999,912,s32,1,%d,s32,Wrap
+Dmy3: Slash: Small,Dmy3: Slash: Small,0,999999999,1000,s32,1,%d,s32,Wrap
+Dmy3: Slash: Large,Dmy3: Slash: Large,0,999999999,1001,s32,1,%d,s32,Wrap
+Dmy3: Slash: Oversized,Dmy3: Slash: Oversized,0,999999999,1002,s32,1,%d,s32,Wrap
+Dmy3: Piercing: Small,Dmy3: Piercing: Small,0,999999999,1020,s32,1,%d,s32,Wrap
+Dmy3: Piercing: Large,Dmy3: Piercing: Large,0,999999999,1021,s32,1,%d,s32,Wrap
+Dmy3: Piercing: Oversized,Dmy3: Piercing: Oversized,0,999999999,1022,s32,1,%d,s32,Wrap
+Dmy3: Batter: Small,Dmy3: Batter: Small,0,999999999,1010,s32,1,%d,s32,Wrap
+Dmy3: Batter: Large,Dmy3: Batter: Large,0,999999999,1011,s32,1,%d,s32,Wrap
+Dmy3: Batter: Oversized,Dmy3: Batter: Oversized,0,999999999,1012,s32,1,%d,s32,Wrap
+Uji: Slash: Small,Uji: Slash: Small,0,999999999,1100,s32,1,%d,s32,Wrap
+Uji: Slash: Large,Uji: Slash: Large,0,999999999,1101,s32,1,%d,s32,Wrap
+Uji: Slash: Oversized,Uji: Slash: Oversized,0,999999999,1102,s32,1,%d,s32,Wrap
+Uji: Stab: Small,Uji: Stab: Small,0,999999999,1120,s32,1,%d,s32,Wrap
+Uji: Stab: Large,Uji: Stab: Large,0,999999999,1121,s32,1,%d,s32,Wrap
+Uji: Stab: Oversized,Uji: Stab: Oversized,0,999999999,1122,s32,1,%d,s32,Wrap
+Uji: Batter: Small,Uji: Batter: Small,0,999999999,1110,s32,1,%d,s32,Wrap
+Uji: Batter: Large,Uji: Batter: Large,0,999999999,1111,s32,1,%d,s32,Wrap
+Uji: Batter: Oversized,Uji: Batter: Oversized,0,999999999,1112,s32,1,%d,s32,Wrap
+Wax: Slash: Small,Wax: Slash: Small,0,999999999,1200,s32,1,%d,s32,Wrap
+Wax: Slash: Large,Wax: Slash: Large,0,999999999,1201,s32,1,%d,s32,Wrap
+Wax: Slash: Oversized,Wax: Slash: Oversized,0,999999999,1202,s32,1,%d,s32,Wrap
+Wax: piercing: small,Wax: piercing: small,0,999999999,1220,s32,1,%d,s32,Wrap
+Wax: piercing: large,Wax: piercing: large,0,999999999,1221,s32,1,%d,s32,Wrap
+Wax: piercing: oversized,Wax: piercing: oversized,0,999999999,1222,s32,1,%d,s32,Wrap
+Wax: Batter: Small,Wax: Batter: Small,0,999999999,1210,s32,1,%d,s32,Wrap
+Wax: Batter: Large,Wax: Batter: Large,0,999999999,1211,s32,1,%d,s32,Wrap
+Wax: Batter: Oversized,Wax: Batter: Oversized,0,999999999,1212,s32,1,%d,s32,Wrap
+Burning: Slashing: Small,Burning: Slashing: Small,0,999999999,1300,s32,1,%d,s32,Wrap
+Burning: Slashing: Large,Burning: Slashing: Large,0,999999999,1301,s32,1,%d,s32,Wrap
+Burning: Slashing: Oversized,Burning: Slashing: Oversized,0,999999999,1302,s32,1,%d,s32,Wrap
+Burning: Piercing: Small,Burning: Piercing: Small,0,999999999,1320,s32,1,%d,s32,Wrap
+Burning: Piercing: Large,Burning: Piercing: Large,0,999999999,1321,s32,1,%d,s32,Wrap
+Burning: Piercing: Oversized,Burning: Piercing: Oversized,0,999999999,1322,s32,1,%d,s32,Wrap
+On fire: Batter: Small,On fire: Batter: Small,0,999999999,1310,s32,1,%d,s32,Wrap
+On fire: Batter: Large,On fire: Batter: Large,0,999999999,1311,s32,1,%d,s32,Wrap
+On fire: Batter: Oversized,On fire: Batter: Oversized,0,999999999,1312,s32,1,%d,s32,Wrap
+Corrosion: Gas: Slash: Small,Corrosion: Gas: Slash: Small,0,999999999,1500,s32,1,%d,s32,Wrap
+Corrosion: Gas: Slash: Large,Corrosion: Gas: Slash: Large,0,999999999,1501,s32,1,%d,s32,Wrap
+Corrosion: Gas: Slash: Oversized,Corrosion: Gas: Slash: Oversized,0,999999999,1502,s32,1,%d,s32,Wrap
+Corrosion: Gas: Piercing: Small,Corrosion: Gas: Piercing: Small,0,999999999,1520,s32,1,%d,s32,Wrap
+Corrosion: Gas: Piercing: Large,Corrosion: Gas: Piercing: Large,0,999999999,1521,s32,1,%d,s32,Wrap
+Corrosion: Gas: Piercing: Oversized,Corrosion: Gas: Piercing: Oversized,0,999999999,1522,s32,1,%d,s32,Wrap
+Corrosion: Gas: Batter: Small,Corrosion: Gas: Batter: Small,0,999999999,1510,s32,1,%d,s32,Wrap
+Corrosion: Gas: Batter: Large,Corrosion: Gas: Batter: Large,0,999999999,1511,s32,1,%d,s32,Wrap
+Corrosion: Gas: Batter: Oversized,Corrosion: Gas: Batter: Oversized,0,999999999,1512,s32,1,%d,s32,Wrap
+Energy (strong): Slash: Small,Energy (strong): Slash: Small,0,999999999,1600,s32,1,%d,s32,Wrap
+Energy (strong): Slash: Large,Energy (strong): Slash: Large,0,999999999,1601,s32,1,%d,s32,Wrap
+Energy (strong): Slash: Oversized,Energy (strong): Slash: Oversized,0,999999999,1602,s32,1,%d,s32,Wrap
+Energy (strong): piercing: small,Energy (strong): piercing: small,0,999999999,1620,s32,1,%d,s32,Wrap
+Energy (strong): piercing: large,Energy (strong): piercing: large,0,999999999,1621,s32,1,%d,s32,Wrap
+Energy (strong): piercing: oversized,Energy (strong): piercing: oversized,0,999999999,1622,s32,1,%d,s32,Wrap
+Energy (strong): Batter: Small,Energy (strong): Batter: Small,0,999999999,1610,s32,1,%d,s32,Wrap
+Energy (strong): Batter: Large,Energy (strong): Batter: Large,0,999999999,1611,s32,1,%d,s32,Wrap
+Energy (strong): Batter: Oversized,Energy (strong): Batter: Oversized,0,999999999,1612,s32,1,%d,s32,Wrap
+Reserved area,Reserved area,,,1623,dummy8,,,dummy8,None

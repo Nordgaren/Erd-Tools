@@ -1,0 +1,4 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| GridEnableCreateHeightMin || Grid can be constructed Height Min [m] || Minimum height that can be built in the grid [m]. (LOD 2 units) || - ||
+|| GridEnableCreateHeightMax || Grid can be constructed Height Max [m] || Maximum height that can be constructed in the grid [m]. (LOD 2 units) || - ||
+|| Reserve || Reserve || Reserve || - ||

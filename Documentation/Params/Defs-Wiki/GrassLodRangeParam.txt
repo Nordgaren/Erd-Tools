@@ -1,0 +1,7 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| LOD0_range || LOD0-distance ||  || - ||
+|| LOD0_play || LOD0-play ||  || - ||
+|| LOD1_range || LOD1-distance ||  || - ||
+|| LOD1_play || LOD1-Play ||  || - ||
+|| LOD2_range || LOD2-distance ||  || - ||
+|| LOD2_play || LOD2-Play ||  || - ||

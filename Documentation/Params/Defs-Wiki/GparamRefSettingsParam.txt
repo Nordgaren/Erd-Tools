@@ -1,0 +1,6 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| RefTargetMapId || Referenced map ID || Specify the referenced map number. Legacy: m10_10_00_00-> 10010000, Open: m60_ ?? _ ?? _ ??-> m60000000 || - ||
+|| Reserve || Reserve || Reserve || - ||

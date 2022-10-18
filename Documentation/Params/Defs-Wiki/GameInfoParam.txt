@@ -1,0 +1,7 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| titleMsgId || Title MsgID || Title name || - ||
+|| contentMsgId || Content MsgID || Contents || - ||
+|| value || price || price || - ||
+|| sortId || Sort ID || Sort ID || - ||
+|| eventId || Action ID || This is the action ID that determines the sales status. || - ||
+|| Pad || Padding || Padding || - ||

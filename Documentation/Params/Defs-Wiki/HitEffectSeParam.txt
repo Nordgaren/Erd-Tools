@@ -1,0 +1,137 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| Iron_Slash_S || Iron: Slash: Small || Iron: Slash: Small || - ||
+|| Iron_Slash_L || Iron: Slash: Large || Iron: Slash: Large || - ||
+|| Iron_Slash_LL || Iron: Slash: Oversized || Iron: Slash: Oversized || - ||
+|| Iron_Thrust_S || Iron: piercing: small || Iron: piercing: small || - ||
+|| Iron_Thrust_L || Made of iron: piercing: large || Made of iron: piercing: large || - ||
+|| Iron_Thrust_LL || Iron: piercing: oversized || Iron: piercing: oversized || - ||
+|| Iron_Blow_S || Iron: Batter: Small || Iron: Batter: Small || - ||
+|| Iron_Blow_L || Iron: Batter: Large || Iron: Batter: Large || - ||
+|| Iron_Blow_LL || Iron: Batter: Oversized || Iron: Batter: Oversized || - ||
+|| Fire_Slash_S || Flame: Slash: Small || Flame: Slash: Small || - ||
+|| Fire_Slash_L || Flame: Slash: Large || Flame: Slash: Large || - ||
+|| Fire_Slash_LL || Flame: Slash: Oversized || Flame: Slash: Oversized || - ||
+|| Fire_Thrust_S || Flame: Piercing: Small || Flame: Piercing: Small || - ||
+|| Fire_Thrust_L || Flame: Piercing: Large || Flame: Piercing: Large || - ||
+|| Fire_Thrust_LL || Flame: Piercing: Oversized || Flame: Piercing: Oversized || - ||
+|| Fire_Blow_S || Flame: Batter: Small || Flame: Batter: Small || - ||
+|| Fire_Blow_L || Flame: Batter: Large || Flame: Batter: Large || - ||
+|| Fire_Blow_LL || Flame: Batter: Oversized || Flame: Batter: Oversized || - ||
+|| Wood_Slash_S || Wooden: Slash: Small || Wooden: Slash: Small || - ||
+|| Wood_Slash_L || Wooden: Slash: Large || Wooden: Slash: Large || - ||
+|| Wood_Slash_LL || Wooden: Slash: Oversized || Wooden: Slash: Oversized || - ||
+|| Wood_Thrust_S || Wooden: piercing: small || Wooden: piercing: small || - ||
+|| Wood_Thrust_L || Wooden: piercing: large || Wooden: piercing: large || - ||
+|| Wood_Thrust_LL || Wooden: piercing: oversized || Wooden: piercing: oversized || - ||
+|| Wood_Blow_S || Wooden: Batter: Small || Wooden: Batter: Small || - ||
+|| Wood_Blow_L || Wooden: Batter: Large || Wooden: Batter: Large || - ||
+|| Wood_Blow_LL || Wooden: Batter: Oversized || Wooden: Batter: Oversized || - ||
+|| Body_Slash_S || Meat: Slash: Small || Meat: Slash: Small || - ||
+|| Body_Slash_L || Meat: Slash: Large || Meat: Slash: Large || - ||
+|| Body_Slash_LL || Meat: Slash: Oversized || Meat: Slash: Oversized || - ||
+|| Body_Thrust_S || Meat: Stab: Small || Meat: Stab: Small || - ||
+|| Body_Thrust_L || Meat: Stab: Large || Meat: Stab: Large || - ||
+|| Body_Thrust_LL || Meat: Stab: Oversized || Meat: Stab: Oversized || - ||
+|| Body_Blow_S || Meat: Batter: Small || Meat: Batter: Small || - ||
+|| Body_Blow_L || Meat: Batter: Large || Meat: Batter: Large || - ||
+|| Body_Blow_LL || Meat: Batter: Oversized || Meat: Batter: Oversized || - ||
+|| Eclipse_Slash_S || Corrosion: Slash: Small || Corrosion: Slash: Small || - ||
+|| Eclipse_Slash_L || Eating: Slashing: Large || Eating: Slashing: Large || - ||
+|| Eclipse_Slash_LL || Eating: Slashing: Oversized || Eating: Slashing: Oversized || - ||
+|| Eclipse_Thrust_S || Corrosion: piercing: small || Corrosion: piercing: small || - ||
+|| Eclipse_Thrust_L || Corrosion: Piercing: Large || Corrosion: Piercing: Large || - ||
+|| Eclipse_Thrust_LL || Corrosion: piercing: oversized || Corrosion: piercing: oversized || - ||
+|| Eclipse_Blow_S || Corrosion: Batter: Small || Corrosion: Batter: Small || - ||
+|| Eclipse_Blow_L || Corrosion: Batter: Large || Corrosion: Batter: Large || - ||
+|| Eclipse_Blow_LL || Corrosion: Batter: Oversized || Corrosion: Batter: Oversized || - ||
+|| Energy_Slash_S || Energy: Slash: Small || Energy: Slash: Small || - ||
+|| Energy_Slash_L || Energy: Slash: Large || Energy: Slash: Large || - ||
+|| Energy_Slash_LL || Energy: Slash: Oversized || Energy: Slash: Oversized || - ||
+|| Energy_Thrust_S || Energy: Puncture: Small || Energy: Puncture: Small || - ||
+|| Energy_Thrust_L || Energy: Puncture: Large || Energy: Puncture: Large || - ||
+|| Energy_Thrust_LL || Energy: Puncture: Oversized || Energy: Puncture: Oversized || - ||
+|| Energy_Blow_S || Energy: Batter: Small || Energy: Batter: Small || - ||
+|| Energy_Blow_L || Energy: Batter: Large || Energy: Batter: Large || - ||
+|| Energy_Blow_LL || Energy: Batter: Oversized || Energy: Batter: Oversized || - ||
+|| None_Slash_S || None: Slash: Small || None: Slash: Small || - ||
+|| None_Slash_L || None: Slash: Large || None: Slash: Large || - ||
+|| None_Slash_LL || None: Slash: Oversized || None: Slash: Oversized || - ||
+|| None_Thrust_S || None: Piercing: Small || None: Piercing: Small || - ||
+|| None_Thrust_L || None: Piercing: Large || None: Piercing: Large || - ||
+|| None_Thrust_LL || None: Piercing: Oversized || None: Piercing: Oversized || - ||
+|| None_Blow_S || None: Batter: Small || None: Batter: Small || - ||
+|| None_Blow_L || None: Batter: Large || None: Batter: Large || - ||
+|| None_Blow_LL || None: Batter: Oversized || None: Batter: Oversized || - ||
+|| Dmy1_Slash_S || Dmy1: Slash: Small || Dmy1: Slash: Small || - ||
+|| Dmy1_Slash_L || Dmy1: Slash: Large || Dmy1: Slash: Large || - ||
+|| Dmy1_Slash_LL || Dmy1: Slash: Oversized || Dmy1: Slash: Oversized || - ||
+|| Dmy1_Thrust_S || Dmy1: Stab: Small || Dmy1: Stab: Small || - ||
+|| Dmy1_Thrust_L || Dmy1: Stab: Large || Dmy1: Stab: Large || - ||
+|| Dmy1_Thrust_LL || Dmy1: Stab: Oversized || Dmy1: Stab: Oversized || - ||
+|| Dmy1_Blow_S || Dmy1: Batter: Small || Dmy1: Batter: Small || - ||
+|| Dmy1_Blow_L || Dmy1: Batter: Large || Dmy1: Batter: Large || - ||
+|| Dmy1_Blow_LL || Dmy1: Batter: Oversized || Dmy1: Batter: Oversized || - ||
+|| Dmy2_Slash_S || Dmy2: Slash: Small || Dmy2: Slash: Small || - ||
+|| Dmy2_Slash_L || Dmy2: Slash: Large || Dmy2: Slash: Large || - ||
+|| Dmy2_Slash_LL || Dmy2: Slash: Oversized || Dmy2: Slash: Oversized || - ||
+|| Dmy2_Thrust_S || Dmy2: Piercing: Small || Dmy2: Piercing: Small || - ||
+|| Dmy2_Thrust_L || Dmy2: Piercing: Large || Dmy2: Piercing: Large || - ||
+|| Dmy2_Thrust_LL || Dmy2: Piercing: Oversized || Dmy2: Piercing: Oversized || - ||
+|| Dmy2_Blow_S || Dmy2: Batter: Small || Dmy2: Batter: Small || - ||
+|| Dmy2_Blow_L || Dmy2: Batter: Large || Dmy2: Batter: Large || - ||
+|| Dmy2_Blow_LL || Dmy2: Batter: Oversized || Dmy2: Batter: Oversized || - ||
+|| Dmy3_Slash_S || Dmy3: Slash: Small || Dmy3: Slash: Small || - ||
+|| Dmy3_Slash_L || Dmy3: Slash: Large || Dmy3: Slash: Large || - ||
+|| Dmy3_Slash_LL || Dmy3: Slash: Oversized || Dmy3: Slash: Oversized || - ||
+|| Dmy3_Thrust_S || Dmy3: Piercing: Small || Dmy3: Piercing: Small || - ||
+|| Dmy3_Thrust_L || Dmy3: Piercing: Large || Dmy3: Piercing: Large || - ||
+|| Dmy3_Thrust_LL || Dmy3: Piercing: Oversized || Dmy3: Piercing: Oversized || - ||
+|| Dmy3_Blow_S || Dmy3: Batter: Small || Dmy3: Batter: Small || - ||
+|| Dmy3_Blow_L || Dmy3: Batter: Large || Dmy3: Batter: Large || - ||
+|| Dmy3_Blow_LL || Dmy3: Batter: Oversized || Dmy3: Batter: Oversized || - ||
+|| Maggot_Slash_S || Uji: Slash: Small || Uji: Slash: Small || - ||
+|| Maggot_Slash_L || Uji: Slash: Large || Uji: Slash: Large || - ||
+|| Maggot_Slash_LL || Uji: Slash: Oversized || Uji: Slash: Oversized || - ||
+|| Maggot_Thrust_S || Uji: Stab: Small || Uji: Stab: Small || - ||
+|| Maggot_Thrust_L || Uji: Stab: Large || Uji: Stab: Large || - ||
+|| Maggot_Thrust_LL || Uji: Stab: Oversized || Uji: Stab: Oversized || - ||
+|| Maggot_Blow_S || Uji: Batter: Small || Uji: Batter: Small || - ||
+|| Maggot_Blow_L || Uji: Batter: Large || Uji: Batter: Large || - ||
+|| Maggot_Blow_LL || Uji: Batter: Oversized || Uji: Batter: Oversized || - ||
+|| Wax_Slash_S || Wax: Slash: Small || Wax: Slash: Small || - ||
+|| Wax_Slash_L || Wax: Slash: Large || Wax: Slash: Large || - ||
+|| Wax_Slash_LL || Wax: Slash: Oversized || Wax: Slash: Oversized || - ||
+|| Wax_Thrust_S || Wax: piercing: small || Wax: piercing: small || - ||
+|| Wax_Thrust_L || Wax: piercing: large || Wax: piercing: large || - ||
+|| Wax_Thrust_LL || Wax: piercing: oversized || Wax: piercing: oversized || - ||
+|| Wax_Blow_S || Wax: Batter: Small || Wax: Batter: Small || - ||
+|| Wax_Blow_L || Wax: Batter: Large || Wax: Batter: Large || - ||
+|| Wax_Blow_LL || Wax: Batter: Oversized || Wax: Batter: Oversized || - ||
+|| FireFlame_Slash_S || Burning: Slashing: Small || Burning: Slashing: Small || - ||
+|| FireFlame_Slash_L || Burning: Slashing: Large || Burning: Slashing: Large || - ||
+|| FireFlame_Slash_LL || Burning: Slashing: Oversized || Burning: Slashing: Oversized || - ||
+|| FireFlame_Thrust_S || Burning: Piercing: Small || Burning: Piercing: Small || - ||
+|| FireFlame_Thrust_L || Burning: Piercing: Large || Burning: Piercing: Large || - ||
+|| FireFlame_Thrust_LL || Burning: Piercing: Oversized || Burning: Piercing: Oversized || - ||
+|| FireFlame_Blow_S || On fire: Batter: Small || On fire: Batter: Small || - ||
+|| FireFlame_Blow_L || On fire: Batter: Large || On fire: Batter: Large || - ||
+|| FireFlame_Blow_LL || On fire: Batter: Oversized || On fire: Batter: Oversized || - ||
+|| EclipseGas_Slash_S || Corrosion: Gas: Slash: Small || Corrosion: Gas: Slash: Small || - ||
+|| EclipseGas_Slash_L || Corrosion: Gas: Slash: Large || Corrosion: Gas: Slash: Large || - ||
+|| EclipseGas_Slash_LL || Corrosion: Gas: Slash: Oversized || Corrosion: Gas: Slash: Oversized || - ||
+|| EclipseGas_Thrust_S || Corrosion: Gas: Piercing: Small || Corrosion: Gas: Piercing: Small || - ||
+|| EclipseGas_Thrust_L || Corrosion: Gas: Piercing: Large || Corrosion: Gas: Piercing: Large || - ||
+|| EclipseGas_Thrust_LL || Corrosion: Gas: Piercing: Oversized || Corrosion: Gas: Piercing: Oversized || - ||
+|| EclipseGas_Blow_S || Corrosion: Gas: Batter: Small || Corrosion: Gas: Batter: Small || - ||
+|| EclipseGas_Blow_L || Corrosion: Gas: Batter: Large || Corrosion: Gas: Batter: Large || - ||
+|| EclipseGas_Blow_LL || Corrosion: Gas: Batter: Oversized || Corrosion: Gas: Batter: Oversized || - ||
+|| EnergyStrong_Slash_S || Energy (strong): Slash: Small || Energy (strong): Slash: Small || - ||
+|| EnergyStrong_Slash_L || Energy (strong): Slash: Large || Energy (strong): Slash: Large || - ||
+|| EnergyStrong_Slash_LL || Energy (strong): Slash: Oversized || Energy (strong): Slash: Oversized || - ||
+|| EnergyStrong_Thrust_S || Energy (strong): piercing: small || Energy (strong): piercing: small || - ||
+|| EnergyStrong_Thrust_L || Energy (strong): piercing: large || Energy (strong): piercing: large || - ||
+|| EnergyStrong_Thrust_LL || Energy (strong): piercing: oversized || Energy (strong): piercing: oversized || - ||
+|| EnergyStrong_Blow_S || Energy (strong): Batter: Small || Energy (strong): Batter: Small || - ||
+|| EnergyStrong_Blow_L || Energy (strong): Batter: Large || Energy (strong): Batter: Large || - ||
+|| EnergyStrong_Blow_LL || Energy (strong): Batter: Oversized || Energy (strong): Batter: Oversized || - ||
+|| reserve || Reserved area || Reserved area || - ||

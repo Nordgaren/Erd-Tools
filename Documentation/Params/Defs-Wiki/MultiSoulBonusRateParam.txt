@@ -1,0 +1,18 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| host || host || Host reward soul multiplier || - ||
+|| WhiteGhost_None || White sign || Cooperation sign white spirit reward soul multiplier || - ||
+|| WhiteGhost_Umbasa || Gold spirit (sun) || Cooperative sign gold spirit reward soul multiplier || - ||
+|| WhiteGhost_Berserker || White berserker || Cooperation sign white Berserker reward soul multiplier || - ||
+|| BlackGhost_None_Sign || Red sign || Hostile sign red spirit reward soul multiplier || - ||
+|| BlackGhost_Umbasa_Sign || Red gold spirit (signature) || Hostile sign red gold spirit reward soul multiplier || - ||
+|| BlackGhost_Berserker_Sign || Red berserker (sign) || Hostile sign red berserker reward soul multiplier || - ||
+|| BlackGhost_None_Invade || Invasion || Invasion reward Soul multiplier || - ||
+|| BlackGhost_Umbasa_Invade || Red Gold Spirit (Invasion) || Invasion Orb's Red Gold Spirit Reward Soul Multiplier || - ||
+|| BlackGhost_Berserker_Invade || Red berserker (invasion) || Invasion Orb Red Berserker Reward Soul Multiplier || - ||
+|| RedHunter1 || Relief guest || Relief guest reward soul multiplier || - ||
+|| RedHunter2 || Red Scare Spirit 2 || Red Scare Spirit 2 Reward Soul Multiplier || - ||
+|| GuardianOfForest || Map Guardian Spirit (Forest) || Map Guardian Spirit (Forest) Reward Soul Magnification || - ||
+|| GuardianOfAnor || Map Guardian (Anor) || Map Guardian Spirit (Anor) Reward Soul Multiplier || - ||
+|| BattleRoyal || Arena || Arena reward soul multiplier || - ||
+|| YellowMonk || Yellow robe's old man || Yellow robe's old man's reward soul multiplier || - ||
+|| pad1 || pad ||  || - ||

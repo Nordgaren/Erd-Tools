@@ -1,0 +1,11 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Addition after the first activation pt,A value that is added to the resistance value after the abnormal condition is activated once.,-999.99,999.99,1,f32,0.1,%f,f32,None
+Addition after the second activation pt,A value that is added to the resistance value after the abnormal condition is activated twice.,-999.99,999.99,2,f32,0.1,%f,f32,None
+Addition after the third activation pt,A value that is added to the resistance value after the abnormal condition is activated 3 times.,-999.99,999.99,3,f32,0.1,%f,f32,None
+Addition after the 4th activation pt,A value that is added to the resistance value after the abnormal condition is activated 4 times.,-999.99,999.99,4,f32,0.1,%f,f32,None
+Addition after the 5th activation pt,A value that is added to the resistance value after the abnormal condition is activated 5 times.,-999.99,999.99,5,f32,0.1,%f,f32,None
+Magnification after the first activation,Magnification applied to the resistance value after the abnormal condition is activated once,-999.99,999.99,6,f32,0.1,%f,f32,None
+Magnification after the second activation,Magnification applied to the resistance value after the abnormal condition is activated twice,-999.99,999.99,7,f32,0.1,%f,f32,None
+Magnification after the third activation,Magnification applied to the resistance value after the abnormal condition is activated 3 times,-999.99,999.99,8,f32,0.1,%f,f32,None
+Magnification after the 4th activation,Magnification applied to the resistance value after the abnormal condition is activated 4 times,-999.99,999.99,9,f32,0.1,%f,f32,None
+Magnification after the 5th activation,Magnification applied to the resistance value after the abnormal condition is activated 5 times,-999.99,999.99,10,f32,0.1,%f,f32,None

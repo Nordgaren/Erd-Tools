@@ -1,0 +1,33 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| MaxHpRate || 《Maximum HP magnification [%]》 || Maximum HP magnification [%] || - ||
+|| MaxMpRate || 《Maximum MP magnification [%]》 || Maximum MP magnification [%] || - ||
+|| MaxStaminaRate || 《Maximum stamina magnification [%]》 || Maximum stamina magnification [%] || - ||
+|| PhysicsAttackRate || 《Physical attack power multiplier》 || Physical attack power multiplier || - ||
+|| SlashAttackRate || 《Slashing attack power multiplier》 || Slash attack power multiplier || - ||
+|| BlowAttackRate || 《Batter attack power multiplier》 || Batter attack power multiplier || - ||
+|| ThrustAttackRate || 《Puncture attack power multiplier》 || Puncture attack power multiplier || - ||
+|| NeturalAttackRate || 《Non-attribute attack power multiplier》 || Non-attribute attack power multiplier || - ||
+|| MagicAttackRate || 《Magic attack power multiplier》 || Magic attack power multiplier || - ||
+|| FireAttackRate || 《Flame attack power multiplier》 || Fire attack power multiplier || - ||
+|| ThunderAttackRate || 《Electric shock attack power multiplier》 || Electric shock attack power multiplier || - ||
+|| DarkAttackRate || 《Dark attack power multiplier》 || Dark attack power multiplier || - ||
+|| PhysicsDefenseRate || 《Physical defense multiplier》 || Physical defense power multiplier || - ||
+|| MagicDefenseRate || 《Magic Defense Multiplier》 || Magic defense multiplier || - ||
+|| FireDefenseRate || 《Flame defense multiplier》 || Fire defense multiplier || - ||
+|| ThunderDefenseRate || 《Dengeki Defense Magnification》 || Electric shock defense power multiplier || - ||
+|| DarkDefenseRate || 《Darkness Defense Multiplier》 || Dark defense multiplier || - ||
+|| StaminaAttackRate || 《Stamina attack power multiplier》 || Stamina attack power multiplier || - ||
+|| SoulRate || 《Soul possession rate》 || Possession soul rate || - ||
+|| PoisionResistRate || 《Poison resistance change rate》 || Poison resistance change rate || - ||
+|| DiseaseResistRate || 《Pesticide resistance change rate》 || Epidemic resistance change rate || - ||
+|| BloodResistRate || 《Bleeding resistance change rate》 || Bleeding resistance change rate || - ||
+|| CurseResistRate || 《Curse resistance change rate》 || Curse resistance change rate || - ||
+|| FreezeResistRate || 《Cold air resistance change rate》 || Cold resistance change rate || - ||
+|| BloodDamageRate || 《Bleeding damage correction factor》 || Bleeding damage correction factor || - ||
+|| SuperArmorDamageRate || 《SA damage correction factor》 || SA damage correction factor || - ||
+|| FreezeDamageRate || 《Cold air damage correction factor》 || Cold damage correction factor || - ||
+|| SleepResistRate || 《Sleep tolerance change rate》 || Sleep tolerance change rate || - ||
+|| MadnessResistRate || 《Madness resistance change rate》 || Madness resistance change rate || - ||
+|| SleepDamageRate || 《Sleep damage correction factor》 || Sleep damage correction factor || - ||
+|| MadnessDamageRate || 《Crazy damage correction factor》 || Mad damage correction factor || - ||
+|| pad1 || pad ||  || - ||

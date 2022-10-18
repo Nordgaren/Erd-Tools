@@ -1,0 +1,21 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Appearance condition _ sunny,Will it appear when the weather is "sunny"?,0,1,1000,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Appearance condition _ fine weather,Will it appear when the weather is "clear"?,0,1,1100,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Appearance condition_light cloudy,Will it appear when the weather is "lightly cloudy"?,0,1,2000,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Appearance condition_cloudy,Will it appear when the weather is "cloudy"?,0,1,2100,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Appearance condition_rain,Will it appear when the weather is "rainy"?,0,1,3000,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Appearance condition_heavy rain,Will it appear when the weather is "heavy rain"?,0,1,3100,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Appearance condition_storm,Will it appear when the weather is "stormy"?,0,1,4000,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Appearance condition_Arashi (for battle with the descendants of the guardian),Will it appear when the weather is "storm (for combat with the descendants of the guardian)"?,0,1,4100,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Appearance condition_Snow,Will it appear when the weather is "snow"?,0,1,5000,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Appearance condition _ heavy snow,Will it appear when the weather is "heavy snow"?,0,1,5100,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Appearance condition_fog,Will it appear when the weather is "fog"?,0,1,6000,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Appearance condition_Dense fog,Will it appear when the weather is "dense fog"?,0,1,6100,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Appearance condition_Dense fog (rain),Does it appear when the weather is "dense fog (rain)"?,0,1,6200,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Appearance condition_sandstorm,Will it appear when the weather is a "sandstorm"?,0,1,7000,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+pad,,,,8301,dummy8,,,dummy8,None
+Appearance start in game time_hour,Appearance start in game time_hour,0,23,8000,u8,1,%u,u8,Wrap
+Appearance start in-game time_minutes,Appearance start in-game time_minutes,0,59,8100,u8,1,%u,u8,Wrap
+Appearance end in game time_hour,Appearance end in game time_hour,0,23,8200,u8,1,%u,u8,Wrap
+End of appearance In-game time_minutes,End of appearance In-game time_minutes,0,59,8300,u8,1,%u,u8,Wrap
+pad,,,,8302,dummy8,,,dummy8,None

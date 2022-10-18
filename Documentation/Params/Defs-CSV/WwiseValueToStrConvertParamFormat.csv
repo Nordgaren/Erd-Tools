@@ -1,0 +1,5 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,5,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,6,dummy8,,%d,dummy8,None
+Wwise parameter string,Wwise parameter string,,,1,fixstr,,,fixstr,None

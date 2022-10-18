@@ -1,0 +1,15 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| disableParam_NT || Do you remove it from the NT version output? || Parameters marked with ○ are excluded in the NT version package. || BOOL_CIRCLECROSS_TYPE ||
+|| disableParamReserve1 || Reserve for package output 1 || Reserve for package output 1 || - ||
+|| disableParamReserve2 || Reserve for package output 2 || Reserve for package output 2 || - ||
+|| menuType || Display type || Specifies the type of tutorial menu to display || TUTORIAL_MENU_TYPE ||
+|| triggerType || Display timing || Display timing (default: 0: "-"). You will see this tutorial when you open this menu. Specify 0: "-" if you do not want to display it when you open the menu. || TUTORIAL_TRIGGER_TYPE ||
+|| repeatType || Impressions || Number of times to display (default: 0: once in the game) || TUTORIAL_REPEAT_TYPE ||
+|| pad1 || Padding ||  || - ||
+|| imageId || Image ID || Specifies the tutorial image ID to display (default: 0). Specify 0 if you do not want to display the image || - ||
+|| pad2 || Padding ||  || - ||
+|| unlockEventFlagId || Display permission flag || Event flag ID for display permission (default: 0). It will not be displayed until this flag is set. Specify 0 if you always want to allow || - ||
+|| textId || Text ID || ID of the text to be displayed in the tutorial [TutorialText.xlsm]. This text ID is used for both "Title" and "Body" || - ||
+|| displayMinTime || at the earliest || Shortest display guaranteed time [seconds]. Even if it is closed due to an event etc., it will be closed after displaying at least this time. It's only for toast, so it's ignored in modals || - ||
+|| displayTime || Longest || Display time [seconds]. It will close automatically after this time has passed since the toast was displayed. It's only for toast, so it's ignored in modals || - ||
+|| pad3 || Padding ||  || - ||

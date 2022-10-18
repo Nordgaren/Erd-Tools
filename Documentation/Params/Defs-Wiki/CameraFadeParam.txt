@@ -1,0 +1,7 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| NearMinDist || Distance to be transparent (m) || Near Fade minimum distance (m): Distance where α = 0 || - ||
+|| NearMaxDist || Distance that begins to become transparent (m) || Near fade maximum distance (m): Starting distance between α = Middel Alpha || - ||
+|| FarMinDist || Distance to become translucent (m) || Minimum distance of Far fade (m): End distance between α = Middle Alpha || - ||
+|| FarMaxDist || Distance (m) at which it begins to become translucent || Maximum Far Fade Distance (m): Distance where α = 1 || - ||
+|| MiddleAlpha || Translucent darkness (α value) || Intermediate α value || - ||
+|| dummy || dummy ||  || - ||

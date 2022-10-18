@@ -1,0 +1,40 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| stayId || stand-by || stand-by || - ||
+|| walkF || Before walking || Before walking || - ||
+|| walkB || After walking || After walking || - ||
+|| walkL || Walking left || Walking left || - ||
+|| walkR || Walking right || Walking right || - ||
+|| dashF || Before driving || Before driving || - ||
+|| dashB || After running || After running || - ||
+|| dashL || Driving left || Driving left || - ||
+|| dashR || Driving right || Driving right || - ||
+|| superDash || Dash move || Dash move || - ||
+|| escapeF || Before emergency avoidance || Before emergency avoidance || - ||
+|| escapeB || After emergency avoidance || After emergency avoidance || - ||
+|| escapeL || Emergency avoidance left || Emergency avoidance left || - ||
+|| escapeR || Emergency avoidance right || Emergency avoidance right || - ||
+|| turnL || 90 degree turn left || 90 degree turn left || - ||
+|| trunR || 90 degree turn right || 90 degree turn right || - ||
+|| largeTurnL || 180 degree turn left || 180 degree turn left || - ||
+|| largeTurnR || 180 degree turn right || 180 degree turn right || - ||
+|| stepMove || Step move || 180 degree turn right || - ||
+|| flyStay || Flight standby || Flight standby || - ||
+|| flyWalkF || Flight advance || Flight advance || - ||
+|| flyWalkFL || Fly left forward || Fly left forward. Low rotation || - ||
+|| flyWalkFR || Flight right forward || Fly right forward. Low rotation || - ||
+|| flyWalkFL2 || Flight left forward 2 || Flight left forward 2. High rotation || - ||
+|| flyWalkFR2 || Flight right forward 2 || Flight right forward 2. High rotation || - ||
+|| flyDashF || High speed flight advance || High speed flight advance || - ||
+|| flyDashFL || High speed flight left forward || High-speed flight left forward. Low rotation || - ||
+|| flyDashFR || High speed flight right forward || High speed flight right forward. Low rotation || - ||
+|| flyDashFL2 || High speed flight left forward 2 || High speed flight left forward 2. High rotation || - ||
+|| flyDashFR2 || High speed flight right forward 2 || High speed flight right forward 2. High rotation || - ||
+|| dashEscapeF || Before dash emergency avoidance || Before dash emergency avoidance || - ||
+|| dashEscapeB || After dash emergency avoidance || After dash emergency avoidance || - ||
+|| dashEscapeL || Dash emergency avoidance left || Dash emergency avoidance left || - ||
+|| dashEscapeR || Dash emergency avoidance right || Dash emergency avoidance right || - ||
+|| analogMoveParamId || Analog moving para ID || Mobile animation parameter ID used in mobile animation blend || - ||
+|| turnNoAnimAngle || No animation turning angle [deg] || If the turning angle is less than this value, the turning animation will not be played (only the enemy turning control is effective). || - ||
+|| turn45Angle || 45 degree turning animation angle [deg] || If the turning angle is less than this value, the 45 degree turning animation will be played (only 2 bosses are valid). || - ||
+|| turn90Angle || 90 degree turning animation angle [deg] || If the turning angle is less than this value, the 90 degree turning animation will be played (only the enemy turning control is effective). || - ||
+|| turnWaitNoAnimAngle || No animation when stopped Turning angle [deg] || If the turning angle is less than this value, the turning animation will not be played [when stopped] (only valid for 2 boss legs) || - ||

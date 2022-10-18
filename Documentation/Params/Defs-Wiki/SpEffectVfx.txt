@@ -1,0 +1,66 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| midstSfxId || In effect SfxID || In effect SfxID (-1: invalid) || - ||
+|| midstSeId || In effect SeID || In effect SeID (-1: invalid) || - ||
+|| initSfxId || SfxID at the time of activation || SfxID at activation (-1: invalid) || - ||
+|| initSeId || SeID at the time of activation || When activated SeID (-1: invalid) || - ||
+|| finishSfxId || SfxID at the time of release || SfxID at the time of cancellation (-1: invalid) || - ||
+|| finishSeId || SeID at the time of release || SeID at the time of release (-1: invalid) || - ||
+|| camouflageBeginDist || Hidden start distance [m] || It is the camouflage start distance || - ||
+|| camouflageEndDist || Hidden end distance [m] || It is the camouflage end distance || - ||
+|| transformProtectorId || Makeover Armor ID || Makeover Armor ID (-1: None) || - ||
+|| midstDmyId || Damipoli ID in effect || In effect Damipoli ID (-1: Root) || - ||
+|| initDmyId || Damipoli ID at the time of activation || Damipoli ID at the time of activation (-1: root) || - ||
+|| finishDmyId || Damipoli ID at the time of cancellation || Damipoli ID at the time of cancellation (-1: root) || - ||
+|| effectType || Effect type || Effect type || SP_EFFECT_VFX_EFFECT_TYPE ||
+|| soulParamIdForWepEnchant || Soul Param ID for Weapon Enchantment || Soul Param ID for Weapon Enchantment (-1: None). Change the applied Phantom Param. || SP_EFFECT_VFX_SOUL_PARAM_TYPE ||
+|| playCategory || VFX playback category || Controls effect playback due to duplicate effects || SP_EFFECT_VFX_PLAYCATEGORY ||
+|| playPriority || In-category priority || Set the playback priority when the categories match (lower one has priority) || - ||
+|| existEffectForLarge || Is there a large effect? || Is there a large effect? || SP_EFFECT_BOOL ||
+|| existEffectForSoul || Is there an effect for the soul body? || Is there an effect for the soul body? || SP_EFFECT_BOOL ||
+|| effectInvisibleAtCamouflage || Whether to hide the effect when hiding || Whether to hide the effect when hiding || SP_EFFECT_BOOL ||
+|| useCamouflage || Do you hide || Do you hide || SP_EFFECT_BOOL ||
+|| invisibleAtFriendCamouflage || Is it hidden even by allies when hiding? || Is it hidden even by allies when hiding? || SP_EFFECT_BOOL ||
+|| isHideFootEffect_forCamouflage || Do you want to turn off the foot effect when hiding? || Do you want to turn off the foot effect when hiding? || SP_EFFECT_BOOL ||
+|| halfCamouflage || Only translucent appearance || Only translucent appearance || SP_EFFECT_BOOL ||
+|| isFullBodyTransformProtectorId || Is the transformation armor ID for the whole body? || Is the transformation armor ID for the whole body? || SP_EFFECT_BOOL ||
+|| isInvisibleWeapon || Invisible Weapon for Weapon Enchantment? || Invisible Weapon for Weapon Enchantment (0: Weapon Show, 1: Weapon Hide) || SP_EFFECT_BOOL ||
+|| isSilence || Is it silence? || Is it silence? (0: No, 1: Yes) || SP_EFFECT_BOOL ||
+|| isMidstFullbody || Whole body (in effect) || Do you use whole body Damipoli for equipping SFX during effect? Play SFX from torso: 190, head: 191, hands: 192, legs: 193 at 1 || SP_EFFECT_BOOL ||
+|| isInitFullbody || Whole body (at the time of activation) || Do you use the whole body Damipoli for equipping SFX during activation? Play SFX from torso: 190, head: 191, hands: 192, legs: 193 at 1 || SP_EFFECT_BOOL ||
+|| isFinishFullbody || Whole body (at the time of release) || Do you use the whole body Damipoli for equipping SFX at the time of release? Play SFX from torso: 190, head: 191, hands: 192, legs: 193 at 1 || SP_EFFECT_BOOL ||
+|| isVisibleDeadChr || Do you want to display even when the body is dead? || If ○, VFX will be displayed even when the corpse is dead. || SP_EFFECT_BOOL ||
+|| isUseOffsetEnchantSfxSize || Enchantment SFX size offset adaptation? || Whether to offset the SfxId according to the "enchantment Sfx size" of the weapon para || SP_EFFECT_BOOL ||
+|| pad_1 || Padding || Padding || - ||
+|| decalId1 || Decal ID1 || Decal ID 1 (-1: invalid) || - ||
+|| decalId2 || Decal ID2 || Decal ID 2 (-1: invalid) || - ||
+|| footEffectPriority || Foot effect priority || Foot effect offset priority (lower is higher) || - ||
+|| footEffectOffset || Foot effect offset || Amount offset to foot effect ID when this special effect is applied || - ||
+|| traceSfxIdOffsetType || Sword flash SFX ID offset type || The offset value applied to the sword flash SFX ID. Used for enchantment and sword trajectory effects || SP_EFFECT_VFX_SOUL_PARAM_TYPE ||
+|| forceDeceasedType || Forced overwriting of player appearance || A function that can force the appearance of a character to be alive / dead || SP_EFFECT_VFX_FORCE_DECEASED_TYPE ||
+|| enchantStartDmyId_0 || Enchantment time root Damipoli ID_0 || Damipoli ID generated at the base of enchantment || - ||
+|| enchantEndDmyId_0 || Damipoli ID_0 at the time of enchantment || Damipoli ID generated at the tip of the sword at the time of enchantment. -1 If specified, it will be automatically put out to the point where it is a serial number. || - ||
+|| enchantStartDmyId_1 || Enchantment time root Damipoli ID_1 || Damipoli ID generated at the base of enchantment || - ||
+|| enchantEndDmyId_1 || Damipoli ID_1 at the time of enchantment || Damipoli ID generated at the tip of the sword at the time of enchantment. -1 If specified, it will be automatically put out to the point where it is a serial number. || - ||
+|| enchantStartDmyId_2 || Enchantment time root Damipoli ID_2 || Damipoli ID generated at the base of enchantment || - ||
+|| enchantEndDmyId_2 || Enchantment time sword tip Damipoli ID_2 || Damipoli ID generated at the tip of the sword at the time of enchantment. -1 If specified, it will be automatically put out to the point where it is a serial number. || - ||
+|| enchantStartDmyId_3 || Enchantment time root Damipoli ID_3 || Damipoli ID generated at the base of enchantment || - ||
+|| enchantEndDmyId_3 || Damipoli ID_3 at the time of enchantment || Damipoli ID generated at the tip of the sword at the time of enchantment. -1 If specified, it will be automatically put out to the point where it is a serial number. || - ||
+|| enchantStartDmyId_4 || Enchantment time root Damipoli ID_4 || Damipoli ID generated at the base of enchantment || - ||
+|| enchantEndDmyId_4 || Damipoli ID_4 at the time of enchantment || Damipoli ID generated at the tip of the sword at the time of enchantment. -1 If specified, it will be automatically put out to the point where it is a serial number. || - ||
+|| enchantStartDmyId_5 || Enchantment time root Damipoli ID_5 || Damipoli ID generated at the base of enchantment || - ||
+|| enchantEndDmyId_5 || Damipoli ID_5 at the time of enchantment || Damipoli ID generated at the tip of the sword at the time of enchantment. -1 If specified, it will be automatically put out to the point where it is a serial number. || - ||
+|| enchantStartDmyId_6 || Enchantment time root Damipoli ID_6 || Damipoli ID generated at the base of enchantment || - ||
+|| enchantEndDmyId_6 || Damipoli ID_6 at the time of enchantment || Damipoli ID generated at the tip of the sword at the time of enchantment. -1 If specified, it will be automatically put out to the point where it is a serial number. || - ||
+|| enchantStartDmyId_7 || Enchantment time root Damipoli ID_7 || Damipoli ID generated at the base of enchantment || - ||
+|| enchantEndDmyId_7 || Damipoli ID_7 at the time of enchantment || Damipoli ID generated at the tip of the sword at the time of enchantment. -1 If specified, it will be automatically put out to the point where it is a serial number. || - ||
+|| SfxIdOffsetType || SfxID offset type || SfxID offset type || SP_EFFECT_VFX_SFX_ID_OFFSET_TYPE ||
+|| phantomParamOverwriteType || Forced specification of phantom parameters || Forced overwrite type of phantom parameters || SP_EFFECT_OVERWRITE_PHANTOM_PARAM_TYPE ||
+|| camouflageMinAlpha || Minimum α value when hiding [%] || Minimum α value when hiding [%] || - ||
+|| wetAspectType || Water wet effect || Generate a wet expression by referring to the wet parameter || SP_EFFECT_VFX_WET_ASPECT_TYPE ||
+|| phantomParamOverwriteId || Phantom parameter overwrite ID || Forced Id of phantom parameter || - ||
+|| materialParamId || Material extension parameter ID || ID0-99 are GS reservation IDs. If ID100 or later is specified, the material extension parameter is referenced (-1: invalid value). || - ||
+|| materialParamInitValue || Initial values of material parameters || The value at the start of the fade of the material parameter. The target is specified by the material parameter ID. If the material parameter ID is -1, do nothing || - ||
+|| materialParamTargetValue || Material parameter target value || The value at the end of the fade of the material parameter. The target is specified by the material parameter ID. If the material parameter ID is -1, do nothing || - ||
+|| materialParamFadeTime || Fade time of material parameter values || Fade time for material parameter values. Gradually reach the target value over this time. If the material parameter ID is -1, do nothing || - ||
+|| footDecalMaterialOffsetOverwriteId || Foot Decal Material Offset Forced Overwrite ID || Forcibly rewrite the floor material ID offset of the foot decal (-1 unused) || - ||
+|| pad || Padding || Padding || - ||

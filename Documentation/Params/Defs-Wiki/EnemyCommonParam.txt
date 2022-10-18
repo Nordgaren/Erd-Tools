@@ -1,0 +1,10 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| reserved0 || reserve || (dummy8) || - ||
+|| soundTargetTryApproachTime || Time to try to approach the sound target ||  || - ||
+|| searchTargetTryApproachTime || Time to try to approach the search target ||  || - ||
+|| memoryTargetTryApproachTime || Time to try to approach the memory target ||  || - ||
+|| reserved5 || reserve || (dummy8) || - ||
+|| activateChrByTime_PhantomId || Phantom shader ID used for directing the appearance and disappearance of enemies placed in a specific time zone || Fade the phantom shader with the appearance / disappearance effect, || - ||
+|| findUnfavorableFailedPointDist || Distance to generate an interrupt, which turns out that the enemy is likely to be cut off when going to the end of the path || At the time of Unreach pass, if the end and the target are within this distance, an interrupt is generated. || - ||
+|| findUnfavorableFailedPointHeight || The height that causes an interrupt, which turns out that the enemy is likely to be cut off when going to the end of the path || At the time of Unreach pass, if the end and the target are more than this distance, an interrupt is generated. || - ||
+|| reserved18 || reserve || (dummy8) || - ||

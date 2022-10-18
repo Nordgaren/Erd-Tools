@@ -1,0 +1,12 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,10000,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,10001,dummy8,,%d,dummy8,None
+Reverb type in cutscenes,Specifies the reverb type to apply during the cutscene,0,16,0,u8,1,%d,u8,None
+pad0,,,,9999,dummy8,,,dummy8,None
+Normal BGM behavior at the start of cutscenes,Specifies normal BGM behavior at the start of cutscenes,0,8,10,s16,1,%d,SOUND_CUTSCENE_BGM_BEHAVIOR_TYPE,None
+One-shot BGM behavior at the start of the cutscene,Specifies the one-shot BGM behavior at the start of the cutscene,0,8,11,s16,1,%d,SOUND_CUTSCENE_BGM_BEHAVIOR_TYPE,None
+SEID (category: p) specification to post at the end of the cutscene (-1: do not post),SEID (category: p) specification to post at the end of the cutscene (-1: do not post),-1,999999999,12,s32,1,%d,s32,None
+Post at the end of the cutscene SEID_Skip (category: p) specified (-1: do not post),SEID_ for skipping to post at the end of the cutscene (category: p) specified (-1: not posted),-1,999999999,13,s32,1,%d,s32,None
+Cutscene drawing time to unmute immediately after entering [seconds] (less than 0: not canceled in drawing time),Cutscene drawing time to unmute immediately after entering [seconds] (less than 0: not canceled in drawing time),-1,9999,14,f32,0.1,%f,f32,None
+Reserve,Reserve,,,10002,dummy8,,,dummy8,None

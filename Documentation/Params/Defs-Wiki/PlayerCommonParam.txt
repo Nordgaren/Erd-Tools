@@ -1,0 +1,66 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| playerFootEffect_bySFX || Player's automatic foot effect SFX identifier [3 digits] || The identifier used for the SFX ID of the automatic foot effect. It corresponds to ZZZ of XYYZZZ. || - ||
+|| snipeModeDrawAlpha_FadeTime || Player hidden fade time during precision shooting || The fade time when hiding the player during precision shooting. The unit is seconds || - ||
+|| toughnessRecoverCorrection || Player toughness recovery time correction value || A correction value used to calculate the player's toughness recovery time. || - ||
+|| baseMagicSlotSize || Magic memory slot initial value || Magic memory slot initial value || - ||
+|| baseAccSlotNum || Talisman equipment slot initial value || Talisman equipment slot initial value || - ||
+|| reserved02 || reserve || (dummy8) || - ||
+|| animeID_DropItemPick || Drop item acquisition animation ID || Animation ID when picking up a drop item || - ||
+|| resistRecoverPoint_Sleep_Player || Player resistance value recovery amount_sleep [point / s] || Player resistance value recovery amount_sleep [point / s] || - ||
+|| flareOverrideHomingAngle || Flare overwrite induction performance [deg / s] || Flare overwrite guidance performance [deg / s] (-1: no overwrite) || - ||
+|| flareOverrideHomingStopRange || Flare overwrite guidance stop distance [m] || Flare overwrite guidance stop distance [m] (-1: no overwrite) || - ||
+|| animeID_SleepCollectorItemPick || Animation ID when acquiring Nemuri item || Animation ID when acquiring Nemuri item || - ||
+|| unlockEventFlagBaseId_forWepAttr || Weapon attribute ban event flag base ID || Weapon attribute ban event flag base ID || - ||
+|| systemEnchant_BigRune || Special effect ID for activating large runes via the system || Special effect Id to call when a large rune is activated from the system || - ||
+|| lowStatus_AtkPowDown || Insufficient status Basic attack power reduction || Insufficient status Basic attack power reduction || - ||
+|| lowStatus_ConsumeStaminaRate || Insufficient status Stamina consumption ratio || Insufficient status Stamina consumption ratio || - ||
+|| lowStatus_AtkGuardBreak || Insufficient status Playing attack power || Insufficient status Playing attack power || - ||
+|| guardStatusCorrect_MaxStatusVal || Shield status correction Judgment status maximum value || Maximum status value to increase performance used when calculating the status correction value of shield performance || - ||
+|| unlockEventFlagStepNum_forWepAttr || Weapon attribute ban event flag number of steps || How much space is left for each weapon attribute ID from the base ID. Weapon attribute ban event flag ID = << Weapon attribute ban event flag base ID >> + Weapon attribute ID x << Weapon attribute ban event flag number of steps >> || - ||
+|| retributionMagic_damageCountNum || Causal Retribution_Number of Damages Before Counterattack || Causal Retribution_Number of Damages Before Counterattack || - ||
+|| retributionMagic_damageCountRemainTime || Causal response_Number of damages until counterattack Duration [s] || Causal response_Number of damages until counterattack Duration [s] || - ||
+|| retributionMagic_burstDmypolyId || Causal Retribution_Counterattack Magic Damipoli ID || Causal Retribution_Counterattack Magic Damipoli ID || - ||
+|| retributionMagic_burstMagicParamId || Causal Retribution_Counterattack Magic Param ID || Causal Retribution_Counterattack Magic Param ID || - ||
+|| chrAimCam_rideOffsetHeight || Riding precision shooting camera offset height || Riding precision shooting camera offset height || - ||
+|| reserved23 || reserve || (dummy8) || - ||
+|| arrowCaseWepBindDmypolyId || Quiver adsorption Damipoly ID || Quiver adsorption Damipoly ID || - ||
+|| boltPouchWepBindDmypolyId || Bolt tube adsorption Damipoly ID || Bolt cylinder adsorption Damipoly ID (However, if the bolt cylinder is used alone, the quiver Damipoly ID is used) || - ||
+|| estusFlaskAllocateRate || Multi-time client bottle correction magnification || Multi-time client bottle correction magnification (0.5 specified to halve the number of possessions) || - ||
+|| reserved38 || reserve || (dummy8) || - ||
+|| kickAcceptanceDeg || Angle at which a kick can be taken when viewed from the front of the player || Angle at which a kick can be taken when viewed from the front of the player || - ||
+|| npcPlayerAnalogWeightRate_Light || Analog Weight Ratio for NPC Players_Lightweight || Analog weight ratio for NPC players [%]. lightweight. || - ||
+|| npcPlayerAnalogWeightRate_Normal || Analog Weight Ratio for NPC Players_Medium Weight || Analog weight ratio for NPC players [%]. Medium weight. || - ||
+|| npcPlayerAnalogWeightRate_Heavy || Analog Weight Ratio for NPC Players_Weight || Analog weight ratio for NPC players [%]. weight. || - ||
+|| npcPlayerAnalogWeightRate_WeightOver || Analog Weight Ratio for NPC Players_Overweight || Analog weight ratio for NPC players [%]. Overweight. || - ||
+|| npcPlayerAnalogWeightRate_SuperLight || Analog Weight Ratio for NPC Players_Ultra Lightweight || Analog weight ratio for NPC players [%]. Super lightweight. || - ||
+|| reserved45 || reserve || (dummy8) || - ||
+|| clearCountCorrectBaseSpEffectId || Orbit correction special effect standard ID || Criteria ID for special effects applied for lap correction || - ||
+|| arrowBoltModelIdOffset || Arrow, bolt model Id offset || Offset added to the model ID when equipped in slot 1 when displaying the arrow and bolt models. (Model Id + offset value) || - ||
+|| arrowBoltRemainingNumModelMaskThreshold1 || Threshold for the remaining number of model masks based on the remaining amount of arrows and bolts _1 step [%] || When displaying the arrow and bolt models, the one-step judgment value [%] of the threshold value when applying the display mask by the number. (If it is more than this value, it is displayed in one step) || - ||
+|| arrowBoltRemainingNumModelMaskThreshold2 || Threshold for the remaining number of model masks based on the remaining amount of arrows and bolts _2 steps [%] || Two-step judgment value [%] of the threshold value when applying a display mask based on the number of arrows and bolt models. (If it is more than this value, it is displayed in 2 steps) || - ||
+|| reserved27 || reserve || (dummy8) || - ||
+|| resistRecoverPoint_Poision_Player || Player resistance recovery amount_poison [point / s] || Player resistance recovery amount_poison [point / s] || - ||
+|| resistRecoverPoint_Desease_Player || Player resistance value recovery amount_plague [point / s] || Player resistance value recovery amount_plague [point / s] || - ||
+|| resistRecoverPoint_Blood_Player || Player resistance recovery amount_bleeding [point / s] || Player resistance recovery amount_bleeding [point / s] || - ||
+|| resistRecoverPoint_Curse_Player || Player resistance recovery amount_curse [point / s] || Player resistance recovery amount_curse [point / s] || - ||
+|| resistRecoverPoint_Freeze_Player || Player resistance value recovery amount_cold air [point / s] || Player resistance value recovery amount_cold air [point / s] || - ||
+|| resistRecoverPoint_Poision_Enemy || Enemy resistance recovery amount_poison [point / s] || Enemy resistance recovery amount_poison [point / s] || - ||
+|| resistRecoverPoint_Desease_Enemy || Enemy resistance value recovery amount_plague [point / s] || Enemy resistance value recovery amount_plague [point / s] || - ||
+|| resistRecoverPoint_Blood_Enemy || Enemy resistance recovery amount_bleeding [point / s] || Enemy resistance recovery amount_bleeding [point / s] || - ||
+|| resistRecoverPoint_Curse_Enemy || Enemy resistance recovery amount_curse [point / s] || Enemy resistance recovery amount_curse [point / s] || - ||
+|| resistRecoverPoint_Freeze_Enemy || Enemy resistance value recovery amount_cold air [point / s] || Enemy resistance value recovery amount_cold air [point / s] || - ||
+|| requestTimeLeftBothHand || Left hand two-handed request button long press time [s] || Button input time when holding both left hand || - ||
+|| resistRecoverPoint_Madness_Player || Player resistance value recovery amount_madness [point / s] || Player resistance value recovery amount_madness [point / s] || - ||
+|| animeID_MaterialItemPick || Material Item acquisition animation ID || Animation ID when picking up a material item || - ||
+|| hpEstusFlaskAllocateRateForYellowMonk || Yellow Cloth HP Est Bottle Correction Magnification || Yellow Cloth HP Est Bottle Correction Magnification || - ||
+|| hpEstusFlaskAllocateOffsetForYellowMonk || Yellow Cloth HP Est Bottle Offset || Yellow Cloth HP Est Bottle Offset || - ||
+|| mpEstusFlaskAllocateRateForYellowMonk || Yellow Cloth MP Est Bottle Correction Magnification || Yellow Cloth MP Est Bottle Correction Magnification || - ||
+|| mpEstusFlaskAllocateOffsetForYellowMonk || Yellow Cloth MP Est Bottle Offset || Yellow Cloth MP Est Bottle Offset || - ||
+|| resistRecoverPoint_Sleep_Enemy || Enemy resistance value recovery amount_sleep [point / s] || Enemy resistance value recovery amount_sleep [point / s] || - ||
+|| resistRecoverPoint_Madness_Enemy || Enemy resistance value recovery amount_madness [point / s] || Enemy resistance value recovery amount_madness [point / s] || - ||
+|| resistCurseItemId || Abnormal condition_immediate death_immediate death Item ID || Abnormal condition_immediate death_immediate death Item ID || - ||
+|| resistCurseItemMaxNum || Abnormal condition_immediate death_maximum number of instant death items || Abnormal condition_immediate death_maximum number of instant death items || - ||
+|| reserved_123 || reserve || (dummy8) || - ||
+|| resistCurseItemSpEffectBaseId || Abnormal condition_Instant death_Instant death Item possession Special effect base ID || Abnormal condition_Instant death_Instant death Item possession Special effect base ID || - ||
+|| resistCurseItemLotParamId_map || Abnormal condition_immediate death_immediate death item lottery ID_for map || Abnormal condition_immediate death_immediate death item lottery ID_for map || - ||
+|| reserved41 || reserve || (dummy8) || - ||

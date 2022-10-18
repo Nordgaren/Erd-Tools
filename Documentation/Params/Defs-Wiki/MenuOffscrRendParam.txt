@@ -1,0 +1,17 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| camAtPosX || Camera gaze point X || Camera gaze point X || - ||
+|| camAtPosY || Camera gaze point Y || Camera gaze point Y || - ||
+|| camAtPosZ || Camera gaze point Z || Camera gaze point Z || - ||
+|| camDist || Camera distance || Camera distance || - ||
+|| camRotX || Camera oriented X || Camera oriented X || - ||
+|| camRotY || Suitable for camera Y || Suitable for camera Y || - ||
+|| camFov || Camera angle of view || Camera angle of view || - ||
+|| camDistMin || Shortest distance when operating the camera || Shortest distance when operating the camera || - ||
+|| camDistMax || Longest distance when operating the camera || Longest distance when operating the camera || - ||
+|| camRotXMin || Minimum orientation when operating the camera || Minimum orientation when operating the camera || - ||
+|| camRotXMax || Maximum orientation when operating the camera || Maximum orientation when operating the camera || - ||
+|| GparamID || GparamID || GparamID || - ||
+|| envTexId || Environment map texture ID || Environment map texture ID. It corresponds to 4 digits of N: \ GR \ data \ Other \ SysEnvTex \ GILM ???? _rem.dds. || - ||
+|| Grapm_ID_forPS4 || Gparam ID (for PS4) || Gparam ID (for PS4) || - ||
+|| Grapm_ID_forXB1 || Gparam ID (for Xbox One) || Gparam ID (for Xbox One) || - ||
+|| pad || reserve || reserve || - ||

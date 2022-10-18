@@ -1,0 +1,251 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Do you remove it from the NT version output?,Parameters marked with ○ are excluded in the NT version package.,0,1,0,u8,1,%d,BOOL_CIRCLECROSS_TYPE,None
+Reserve for package output 1,Reserve for package output 1,,,998801,dummy8,,%d,dummy8,None
+Reserve for package output 2,Reserve for package output 2,,,998802,dummy8,,%d,dummy8,None
+Sort ID,Sort ID (7 digits is the limit for s32 because the enhancement level is added in the program),-1,9999999,1300,s32,1,%d,s32,Wrap
+Wandering equipment ID,Replacement equipment ID for wandering ghosts.,0,99999999,1400,u32,1,%d,u32,Wrap
+Sleep tolerance,Difficulty in getting sleep abnormalities,0,999,4150,u16,1,%d,u16,Wrap
+Madness resistance,Difficulty in getting mad,0,999,4160,u16,1,%d,u16,Wrap
+SA durability value,Super armor endurance,-1,9999,3000,f32,0.1,%f,f32,Wrap
+Toughness correction factor,It is a magnification that corrects the basic value of toughness.,0,10,3160,f32,0.01,%.2f,f32,Wrap
+Repair price,Basic repair price,0,99999999,2500,s32,1,%d,s32,Wrap
+Basic price,Basic price,0,99999999,2600,s32,1,%d,s32,Wrap
+Sale price,Selling price,-1,99999999,2610,s32,1,%d,s32,Wrap
+Weight [kg],Weight [kg].,0,1000,2700,f32,0.1,%0.3f,f32,Wrap
+Resident special effect ID1,Resident special effect ID1,-1,999999999,4500,s32,1,%d,s32,Wrap
+Resident special effect ID2,Resident special effect ID2,-1,999999999,4600,s32,1,%d,s32,Wrap
+Resident special effect ID3,Resident special effect ID3,-1,999999999,4700,s32,1,%d,s32,Wrap
+Material ID,Material parameter ID required for weapon enhancement,-1,999999,4800,s32,1,%d,s32,Wrap
+Part damage rate,Part damage rate,0,99,1900,f32,0.01,%.2f,f32,Wrap
+SA recovery time correction value,Super Armor Recovery Time Correction Value,-1,99.99,3100,f32,0.01,%0.3f,f32,Wrap
+Derivation source,Strengthening of this armor Original armor ID,-1,99999999,5000,s32,1,%d,s32,Wrap
+Derivative source enhancement +1,Strengthening this armor Original armor ID1,-1,99999999,5100,s32,1,%d,s32,Wrap
+Derivative source enhancement +2,Strengthening this armor Original armor ID2,-1,99999999,5200,s32,1,%d,s32,Wrap
+Derivative source enhancement +3,Strengthening this armor Original armor ID3,-1,99999999,5300,s32,1,%d,s32,Wrap
+Derivative source enhancement +4,Strengthening this armor Original armor ID4,-1,99999999,5400,s32,1,%d,s32,Wrap
+Derivative source enhancement +5,Strengthening this armor Original armor ID5,-1,99999999,5500,s32,1,%d,s32,Wrap
+Derivative source enhancement +6,Strengthening this armor Original armor ID6,-1,99999999,5600,s32,1,%d,s32,Wrap
+Derivative source enhancement +7,Strengthening this armor Original armor ID7,-1,99999999,5700,s32,1,%d,s32,Wrap
+Derivative source enhancement +8,Strengthening this armor Original armor ID8,-1,99999999,5800,s32,1,%d,s32,Wrap
+Derivative source enhancement +9,Strengthening this armor Original armor ID9,-1,99999999,5900,s32,1,%d,s32,Wrap
+Derivative source enhancement +10,Strengthening this armor Original armor ID10,-1,99999999,6000,s32,1,%d,s32,Wrap
+Derivative source enhancement +11,Strengthening this armor Original armor ID11,-1,99999999,6100,s32,1,%d,s32,Wrap
+Derivative source enhancement +12,Strengthening this armor Original armor ID12,-1,99999999,6200,s32,1,%d,s32,Wrap
+Derivative source enhancement +13,Strengthening this armor Original armor ID13,-1,99999999,6300,s32,1,%d,s32,Wrap
+Derivative source enhancement +14,Strengthening this armor Original armor ID14,-1,99999999,6400,s32,1,%d,s32,Wrap
+Derivative source enhancement +15,Strengthening this armor Original armor ID15,-1,99999999,6500,s32,1,%d,s32,Wrap
+Man profile enlargement scale,,0,5,9900,f32,0.01,%0.3f,f32,Wrap
+Male face enlargement scale,,0,5,10000,f32,0.01,%0.3f,f32,Wrap
+Maximum magnification for male profile enlargement,,1,2,10100,f32,0.01,%0.3f,f32,Wrap
+Maximum magnification for man's face enlargement,,1,2,10200,f32,0.01,%0.3f,f32,Wrap
+Female profile enlargement scale,,0,5,10300,f32,0.01,%0.3f,f32,Wrap
+Female face enlargement scale,,0,5,10400,f32,0.01,%0.3f,f32,Wrap
+Female profile enlargement maximum magnification,,1,2,10500,f32,0.01,%0.3f,f32,Wrap
+Maximum magnification for female face enlargement,,1,2,10600,f32,0.01,%0.3f,f32,Wrap
+QWCID,QWC parameter ID,-1,99999999,10800,s32,1,%d,s32,Wrap
+Equipment model number,Equipment model number.,0,9999,300,u16,1,%d,u16,Wrap
+Icon ID for men,Men's menu icon ID.,0,65535,1100,u16,1,%d,u16,Wrap
+Female icon ID,Women's menu icon ID.,0,65535,1200,u16,1,%d,u16,Wrap
+Knockback cut rate,Knockback reduction value.,0,100,2200,u16,1,%d,u16,Wrap
+Knockback repulsion rate,Knockback repulsion rate.,0,100,2300,u16,1,%d,u16,Wrap
+Durability,Initial durability.,0,999,2800,u16,1,%d,u16,Wrap
+Maximum durability,New durability.,0,999,2900,u16,1,%d,u16,Wrap
+pad,,,,998803,dummy8,,%d,dummy8,Wrap
+Repellent defense,Used to determine the repulsion of enemy attacks.,0,99,3200,u16,1,%d,u16,Wrap
+Physical defense,Physical attack damage protection.,0,9999,3400,u16,1,%d,u16,Wrap
+Magic defense,Magic attack damage protection.,0,9999,3500,u16,1,%d,u16,Wrap
+Fire defense,Fire attack damage protection.,0,9999,3600,u16,1,%d,u16,Wrap
+Electric shock defense,Damage protection for electric shock attacks.,0,9999,3700,u16,1,%d,u16,Wrap
+Slash defense,Look at the attack type, and if it is a slashing attribute, reduce the defense power,-100,9999,3800,s16,1,%d,s16,Wrap
+Strike defense,Look at the attack attribute, and if it is a hit attribute, reduce the defense power.,-100,9999,3900,s16,1,%d,s16,Wrap
+Puncture defense,Look at the attack attribute, and if it is a hit attribute, reduce the defense power.,-100,9999,4000,s16,1,%d,s16,Wrap
+Poison resistance,Difficulty in getting poisonous,0,999,4100,u16,1,%d,u16,Wrap
+Epidemic resistance,Difficulty in getting sick,0,999,4110,u16,1,%d,u16,Wrap
+Bleeding resistance,Difficulty in getting bleeding abnormalities,0,999,4120,u16,1,%d,u16,Wrap
+Curse resistance,Difficulty in getting a curse condition,0,999,4130,u16,1,%d,u16,Wrap
+Enhanced type ID,Enhanced type ID,0,9999,4900,s16,1,%d,s16,Wrap
+Trophy,Is it related to the trophy system?,-1,9999,4750,s16,1,%d,s16,Wrap
+Shop level,Level that can be sold at the store,-1,9999,10900,s16,1,%d,s16,Wrap
+Knockback parameter ID,ID of the parameter used for knockback,0,255,2400,u8,1,%d,u8,Wrap
+Damage attenuation rate when repelling [%],Used for damage attenuation rate when repelling,0,100,3300,u8,1,%d,u8,Wrap
+Equipment model type,Equipment model type.,0,99,100,u8,1,%d,EQUIP_MODEL_CATEGORY,Wrap
+Equipment model gender,Gender of equipment model.,0,99,200,u8,1,%d,EQUIP_MODEL_GENDER,Wrap
+Armor category,Armor category.,0,99,400,u8,1,%d,PROTECTOR_CATEGORY,Wrap
+Rarity,Rarity used in item acquisition logs,0,99,12010,u8,1,%d,u8,Wrap
+Sort item type ID,Sort item type ID. In the sort "Item type order", the same ID is displayed together as the same group.,0,255,1310,u8,1,%d,u8,Wrap
+Part damage application attack,Set the attack type to judge the part damage,0,2,1800,u8,1,%d,ATK_PARAM_PARTSDMGTYPE,Wrap
+Padding,,,,998804,dummy8,,,dummy8,None
+Can i deposit,Can you leave it in the warehouse?,0,1,4775,u8,1,%d,EQUIP_BOOL,Wrap
+Head equipment,Is it head equipment?,0,1,500,u8,1,%d,EQUIP_BOOL,Wrap
+Torso equipment,Is it torso equipment?,0,1,600,u8,1,%d,EQUIP_BOOL,Wrap
+Arm equipment,Is it arm equipment?,0,1,700,u8,1,%d,EQUIP_BOOL,Wrap
+Leg equipment,Is it leg equipment?,0,1,800,u8,1,%d,EQUIP_BOOL,Wrap
+Whether to use a face scale,Whether to use a face scale,0,1,6600,u8,1,%d,EQUIP_BOOL,Wrap
+Do you want to skip the weakness animation?,Weakness damage Whether to skip animation playback. "Part damage rate" and "defense material" are treated as weak points just by not playing the animation.,0,1,1850,u8,1,%d,EQUIP_BOOL,Wrap
+Padding,,,,998000,dummy8,,%d,dummy8,Wrap
+Weakness defense material variation value,It is a value used for variation of abnormal condition, damage SFX, SE in combination with weak point defense material. SEQ16473,0,99,2102,u8,1,%d,u8,Wrap
+Foot decal identifier 2,Decal ID for automatic foot effects. Floor material is also considered. Only used when the "armor category" is "legs".,-1,999,1051,s16,1,%d,s16,Wrap
+Foot decal identifier 3,Decal ID for automatic foot effects. Floor material is also considered. Only used when the "armor category" is "legs".,-1,999,1052,s16,1,%d,s16,Wrap
+Defensive material variation value,It is a value used in combination with the defense material to classify abnormal conditions, damage SFX, and SE. SEQ16473,0,99,1002,u8,1,%d,u8,Wrap
+Can you throw it away,Can you throw away the item? TRUE = thrown away,0,1,4760,u8,1,%d,EQUIP_BOOL,Wrap
+Can you put it on the spot,Can I put the item on the spot? TRUE = can be placed,0,1,4770,u8,1,%d,EQUIP_BOOL,Wrap
+Is multi-drop sharing prohibited?,Is multi-drop sharing prohibited?,0,1,4780,u8,1,%d,EQUIP_BOOL,Wrap
+Is there a simple model for DLC?,Is there a simple model for DLC?,0,1,4785,u8,1,%d,EQUIP_BOOL,Wrap
+Acquisition log display condition,Whether to display in the item acquisition log when acquiring the item (not entered: ○),0,1,12000,u8,1,%d,EQUIP_BOOL,Wrap
+Acquisition dialog display condition,Whether to display it in the item acquisition dialog when acquiring an item (not entered: new only),0,2,11900,u8,1,%d,GET_DIALOG_CONDITION_TYPE,Wrap
+Padding,,,,998805,dummy8,,%d,dummy8,Wrap
+Non-attribute damage multiplier,Non-attribute damage multiplier,0,99.999,4010,f32,0.001,%0.3f,f32,Wrap
+Slash damage multiplier,Slash damage multiplier,0,99.999,4020,f32,0.001,%0.3f,f32,Wrap
+Batter damage multiplier,Batter damage multiplier,0,99.999,4030,f32,0.001,%0.3f,f32,Wrap
+Puncture damage ratio,Puncture damage ratio,0,99.999,4040,f32,0.001,%0.3f,f32,Wrap
+Magic damage multiplier,Magic damage multiplier,0,99.999,4050,f32,0.001,%0.3f,f32,Wrap
+Flame damage multiplier,Flame damage multiplier,0,99.999,4060,f32,0.001,%0.3f,f32,Wrap
+Electric shock damage ratio,Electric shock damage ratio,0,99.999,4070,f32,0.001,%0.3f,f32,Wrap
+Defensive material 1 [SFX],For SFX when moving / defending. 1,0,9999,1000,u16,1,%d,WEP_MATERIAL_DEF_SFX,Wrap
+Weakness protection material 1 [SFX],For SFX when weak points are damaged 1,0,9999,2100,u16,1,%d,WEP_MATERIAL_DEF_SFX,Wrap
+Defensive material 1 [SE],For SE when moving / defending. 1,0,9999,900,u16,1,%d,WEP_MATERIAL_DEF,Wrap
+Weakness defense material 1 [SE],For SE when weak points are damaged 1,0,9999,2000,u16,1,%d,WEP_MATERIAL_DEF,Wrap
+Defensive material 2 [SFX],For SFX when moving / defending. 2,0,9999,1001,u16,1,%d,WEP_MATERIAL_DEF_SFX,Wrap
+Weakness protection material 2 [SFX],2 for SFX when weak points are damaged,0,9999,2101,u16,1,%d,WEP_MATERIAL_DEF_SFX,Wrap
+Foot equipment material [SE],Material for foot equipment SE. Only foot equipment is referenced. ([GR] SEQ10061) In the case of "139: None", the defense material 1 [SE] is referred to.,0,9999,901,u16,1,%d,WEP_MATERIAL_DEF,Wrap
+Weakness defense material 2 [SE],2 for SE when weak points are damaged,0,9999,2001,u16,1,%d,WEP_MATERIAL_DEF,Wrap
+Foot decal identifier 1,Decal ID for automatic foot effects. Floor material is also considered. Only used when the "armor category" is "legs".,-1,999,1050,s32,1,%d,s32,Wrap
+Toughness Damage multiplier,Toughness version cut rate,0,10,3150,f32,0.01,%.2f,f32,Wrap
+Toughness recovery time correction value,Correction value for toughness recovery time,0,99.99,3170,f32,0.01,%.2f,f32,Wrap
+Dark damage multiplier,Dark damage multiplier,0,99.999,4080,f32,0.001,%0.3f,f32,Wrap
+Dark defense,Dark attack damage protection.,0,9999,3710,u16,1,%d,u16,Wrap
+PAD_original_ # 48 # hidden,Original _ # 48 # hidden,,,998480,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 49 # hidden,Original _ # 49 # hidden,,,998490,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 50 # hidden,Original _ # 50 # hidden,,,998500,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 51 # hidden,Original _ # 51 # hidden,,,998510,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 52 # hidden,Original _ # 52 # hidden,,,998520,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 53 # hidden,Original _ # 53 # hidden,,,998530,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 54 # hidden,Original _ # 54 # hidden,,,998540,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 55 # hidden,Original _ # 55 # hidden,,,998550,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 56 # hidden,Original _ # 56 # hidden,,,998560,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 57 # hidden,Original _ # 57 # hidden,,,998570,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 58 # hidden,Original _ # 58 # hidden,,,998580,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 59 # hidden,Original _ # 59 # hidden,,,998590,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 60 # hidden,Original _ # 60 # hidden,,,998600,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 61 # hidden,Original _ # 61 # Hidden,,,998610,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 62 # hidden,Original _ # 62 # hidden,,,998620,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 63 # hidden,Original _ # 63 # hidden,,,998630,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 64 # hidden,Original _ # 64 # hidden,,,998640,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 65 # hidden,Original _ # 65 # hidden,,,998650,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 66 # hidden,Original _ # 66 # hidden,,,998660,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 67 # hidden,Original _ # 67 # hidden,,,998670,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 68 # hidden,Original _ # 68 # hidden,,,998680,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 69 # hidden,Original _ # 69 # hidden,,,998690,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 70 # hidden,Original _ # 70 # hidden,,,998700,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 71 # hidden,Original _ # 71 # hidden,,,998710,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 72 # hidden,Original _ # 72 # hidden,,,998720,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 73 # hidden,Original _ # 73 # hidden,,,998730,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 74 # hidden,Original _ # 74 # hidden,,,998740,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 75 # hidden,Original _ # 75 # hidden,,,998750,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 76 # hidden,Original _ # 76 # hidden,,,998760,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 77 # hidden,Original _ # 77 # hidden,,,998770,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 78 # hidden,Original _ # 78 # hidden,,,998780,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 79 # hidden,Original _ # 79 # hidden,,,998790,dummy8,,%d,dummy8,Wrap
+PAD_original_ # 80 # hidden,Original _ # 80 # hidden,,,998800,dummy8,,%d,dummy8,Wrap
+Padding,,,,998806,dummy8,,%d,dummy8,Wrap
+Attitude control ID (torso),Attitude control ID (torso),0,99,11000,u8,1,%u,u8,Wrap
+pad,,,,998807,dummy8,,%d,dummy8,Wrap
+Selling price,Selling price,-1,99999999,2620,s32,1,%d,s32,Wrap
+Cold resistance,Difficulty in getting cold air condition abnormal,0,999,4140,u16,1,%d,u16,Wrap
+# 00 #Hidden (Gender designation),Bangs tip,0,255,8000,u8,1,%u,u8,Wrap
+# 01 #Hidden (Gender designation),Bangs root,0,255,8010,u8,1,%u,u8,Wrap
+# 02 #Hidden (Gender designation),Sideburns,0,255,8020,u8,1,%u,u8,Wrap
+# 03 #Hidden (Gender designation),Top of the head,0,255,8030,u8,1,%u,u8,Wrap
+# 04 #Hidden (Gender designation),Top of the head,0,255,8040,u8,1,%u,u8,Wrap
+# 05 #Hidden (Gender designation),Back hair,0,255,8050,u8,1,%u,u8,Wrap
+# 06 #Hidden (Gender designation),The tip of the back hair,0,255,8060,u8,1,%u,u8,Wrap
+# 07 #Hidden (Gender designation),,0,255,8070,u8,1,%u,u8,Wrap
+# 08 #Hidden (Gender designation),,0,255,8080,u8,1,%u,u8,Wrap
+# 09 #Hidden (Gender designation),,0,255,8090,u8,1,%u,u8,Wrap
+# 10 #Hidden (Gender designation),collar,0,255,8100,u8,1,%u,u8,Wrap
+# 11 #Hidden (Gender designation),Around the collar,0,255,8110,u8,1,%u,u8,Wrap
+# 12 #Hidden (Gender designation),,0,255,8120,u8,1,%u,u8,Wrap
+# 13 #Hidden (Gender designation),,0,255,8130,u8,1,%u,u8,Wrap
+# 14 #Hidden (Gender designation),,0,255,8140,u8,1,%u,u8,Wrap
+# 15 #Hidden (Gender designation),Hood hem,0,255,8150,u8,1,%u,u8,Wrap
+# 16 #Hidden (Gender designation),,0,255,8160,u8,1,%u,u8,Wrap
+# 17 #Hidden (Gender designation),,0,255,8170,u8,1,%u,u8,Wrap
+# 18 #Hidden (Gender designation),,0,255,8180,u8,1,%u,u8,Wrap
+# 19 #Hidden (Gender designation),,0,255,8190,u8,1,%u,u8,Wrap
+# 20 #Hidden (Gender designation),Sleeve A,0,255,8200,u8,1,%u,u8,Wrap
+# 21 #Hidden (Gender designation),Sleeve B,0,255,8210,u8,1,%u,u8,Wrap
+# 22 #Hidden (Gender designation),,0,255,8220,u8,1,%u,u8,Wrap
+# 23 #Hidden (Gender designation),,0,255,8230,u8,1,%u,u8,Wrap
+# 24 #Hidden (Gender designation),,0,255,8240,u8,1,%u,u8,Wrap
+# 25 #Hidden (Gender designation),arm,0,255,8250,u8,1,%u,u8,Wrap
+# 26 #Hidden (Gender designation),,0,255,8260,u8,1,%u,u8,Wrap
+# 27 #Hidden (Gender designation),,0,255,8270,u8,1,%u,u8,Wrap
+# 28 #Hidden (Gender designation),,0,255,8280,u8,1,%u,u8,Wrap
+# 29 #Hidden (Gender designation),,0,255,8290,u8,1,%u,u8,Wrap
+# 30 #Hidden (Gender designation),belt,0,255,8300,u8,1,%u,u8,Wrap
+# 31 #Hidden (Gender designation),,0,255,8310,u8,1,%u,u8,Wrap
+# 32 #Hidden (Men and women specified),,0,255,8320,u8,1,%u,u8,Wrap
+# 33 #Hidden (Gender designation),,0,255,8330,u8,1,%u,u8,Wrap
+# 34 #Hidden (Gender designation),,0,255,8340,u8,1,%u,u8,Wrap
+# 35 #Hidden (Gender designation),,0,255,8350,u8,1,%u,u8,Wrap
+# 36 #Hidden (Gender designation),,0,255,8360,u8,1,%u,u8,Wrap
+# 37 #Hidden (Gender designation),,0,255,8370,u8,1,%u,u8,Wrap
+# 38 #Hidden (Gender designation),,0,255,8380,u8,1,%u,u8,Wrap
+# 39 #Hidden (Gender designation),,0,255,8390,u8,1,%u,u8,Wrap
+# 40 #Hidden (Gender designation),,0,255,8400,u8,1,%u,u8,Wrap
+# 41 #Hidden (Gender designation),,0,255,8410,u8,1,%u,u8,Wrap
+# 42 #Hidden (Gender designation),,0,255,8420,u8,1,%u,u8,Wrap
+# 43 #Hidden (Gender designation),,0,255,8430,u8,1,%u,u8,Wrap
+# 44 #Hidden (Gender designation),,0,255,8440,u8,1,%u,u8,Wrap
+# 45 #Hidden (Gender designation),,0,255,8450,u8,1,%u,u8,Wrap
+# 46 #Hidden (Gender designation),,0,255,8460,u8,1,%u,u8,Wrap
+# 47 #Hidden (Gender designation),,0,255,8470,u8,1,%u,u8,Wrap
+# 48 #Hidden (Gender designation),,0,255,8480,u8,1,%u,u8,Wrap
+# 49 #Hidden (Gender designation),,0,255,8490,u8,1,%u,u8,Wrap
+# 50 #Hidden (Gender designation),,0,255,8500,u8,1,%u,u8,Wrap
+# 51 #Hidden (Gender designation),,0,255,8510,u8,1,%u,u8,Wrap
+# 52 #Hidden (Gender designation),,0,255,8520,u8,1,%u,u8,Wrap
+# 53 #Hidden (Gender designation),,0,255,8530,u8,1,%u,u8,Wrap
+# 54 #Hidden (Gender designation),,0,255,8540,u8,1,%u,u8,Wrap
+# 55 #Hidden (Gender designation),,0,255,8550,u8,1,%u,u8,Wrap
+# 56 #Hidden (Gender designation),,0,255,8560,u8,1,%u,u8,Wrap
+# 57 #Hidden (Gender designation),,0,255,8570,u8,1,%u,u8,Wrap
+# 58 #Hidden (Gender designation),,0,255,8580,u8,1,%u,u8,Wrap
+# 59 #Hidden (Gender designation),,0,255,8590,u8,1,%u,u8,Wrap
+# 60 #Hidden (Men and women specified),,0,255,8600,u8,1,%u,u8,Wrap
+# 61 #Hidden (Gender designation),,0,255,8610,u8,1,%u,u8,Wrap
+# 62 #Hidden (Gender designation),,0,255,8620,u8,1,%u,u8,Wrap
+# 63 #Hidden (Gender designation),,0,255,8630,u8,1,%u,u8,Wrap
+# 64 #Hidden (Gender designation),,0,255,8640,u8,1,%u,u8,Wrap
+# 65 #Hidden (Gender designation),,0,255,8650,u8,1,%u,u8,Wrap
+# 66 #Hidden (Gender designation),,0,255,8660,u8,1,%u,u8,Wrap
+# 67 #Hidden (Gender designation),,0,255,8670,u8,1,%u,u8,Wrap
+# 68 #Hidden (Gender designation),,0,255,8680,u8,1,%u,u8,Wrap
+# 69 #Hidden (Gender designation),,0,255,8690,u8,1,%u,u8,Wrap
+# 70 #Hidden (Gender designation),,0,255,8700,u8,1,%u,u8,Wrap
+# 71 #Hidden (Gender designation),,0,255,8710,u8,1,%u,u8,Wrap
+# 72 #Hidden (Gender designation),,0,255,8720,u8,1,%u,u8,Wrap
+# 73 #Hidden (Gender designation),,0,255,8730,u8,1,%u,u8,Wrap
+# 74 #Hidden (Gender designation),,0,255,8740,u8,1,%u,u8,Wrap
+# 75 #Hidden (Gender designation),,0,255,8750,u8,1,%u,u8,Wrap
+# 76 #Hidden (Gender designation),,0,255,8760,u8,1,%u,u8,Wrap
+# 77 #Hidden (Gender designation),,0,255,8770,u8,1,%u,u8,Wrap
+# 78 #Hidden (Gender designation),,0,255,8780,u8,1,%u,u8,Wrap
+# 79 #Hidden (Gender designation),,0,255,8790,u8,1,%u,u8,Wrap
+# 80 #Hidden (Gender designation),,0,255,8800,u8,1,%u,u8,Wrap
+# 81 #Hidden (Gender designation),,0,255,8810,u8,1,%u,u8,Wrap
+# 82 #Hidden (Gender designation),,0,255,8820,u8,1,%u,u8,Wrap
+# 83 #Hidden (Gender designation),,0,255,8830,u8,1,%u,u8,Wrap
+# 84 #Hidden (Gender designation),,0,255,8840,u8,1,%u,u8,Wrap
+# 85 #Hidden (Gender designation),,0,255,8850,u8,1,%u,u8,Wrap
+# 86 #Hidden (Gender designation),,0,255,8860,u8,1,%u,u8,Wrap
+# 87 #Hidden (Gender designation),,0,255,8870,u8,1,%u,u8,Wrap
+# 88 #Hidden (Gender designation),,0,255,8880,u8,1,%u,u8,Wrap
+# 89 #Hidden (Gender designation),,0,255,8890,u8,1,%u,u8,Wrap
+# 90 #Hidden (Gender designation),,0,255,8900,u8,1,%u,u8,Wrap
+# 91 #Hidden (Gender designation),,0,255,8910,u8,1,%u,u8,Wrap
+# 92 #Hidden (Gender designation),,0,255,8920,u8,1,%u,u8,Wrap
+# 93 #Hidden (Gender designation),,0,255,8930,u8,1,%u,u8,Wrap
+# 94 #Hidden (Gender designation),,0,255,8940,u8,1,%u,u8,Wrap
+# 95 #Hidden (Gender designation),,0,255,8950,u8,1,%u,u8,Wrap
+Padding,Padding,,,998808,dummy8,,%d,dummy8,Wrap

@@ -1,0 +1,21 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| mapId || Map number || Specify the map number in 8 digits. Only open and legacy celestial sphere placement maps can be specified || - ||
+|| TransitionSrcWeather || weather || Specifies the assets that will be valid in this weather. || WEATHER_TYPE ||
+|| padding0 || reserved0 ||  || - ||
+|| isFireAsh || After "fire ashes"? || Specifies whether or not to adapt to the "fire ash" state of the map. || BOOL_CIRCLECROSS_TYPE ||
+|| padding1 || padding0 ||  || - ||
+|| reserved2 || reserved2 ||  || - ||
+|| AssetId0 || Display Asset 1 || -1: Invalid Specify the asset ID to generate. AEG999_999-> 999999 || - ||
+|| AssetId1 || Display asset 2 || -1: Invalid Specify the asset ID to generate. AEG999_999-> 999999 || - ||
+|| AssetId2 || Display assets 3 || -1: Invalid Specify the asset ID to generate. AEG999_999-> 999999 || - ||
+|| AssetId3 || Display assets 4 || -1: Invalid Specify the asset ID to generate. AEG999_999-> 999999 || - ||
+|| AssetId4 || Display assets 5 || -1: Invalid Specify the asset ID to generate. AEG999_999-> 999999 || - ||
+|| AssetId5 || Display assets 6 || -1: Invalid Specify the asset ID to generate. AEG999_999-> 999999 || - ||
+|| AssetId6 || Display assets 7 || -1: Invalid Specify the asset ID to generate. AEG999_999-> 999999 || - ||
+|| AssetId7 || Display assets 8 || -1: Invalid Specify the asset ID to generate. AEG999_999-> 999999 || - ||
+|| reserved0 || reserved0 ||  || - ||
+|| CreateAssetLimitId0 || Generation limit ID 0 || ID for production restriction. -1: Unlimited. Generation is allowed only if it matches the generation limit ID in "Map default parameter .xlsm" (SEQ08921). || - ||
+|| CreateAssetLimitId1 || Generation limit ID1 || ID for production restriction. -1: Unlimited. Generation is allowed only if it matches the generation limit ID in "Map default parameter .xlsm" (SEQ08921). || - ||
+|| CreateAssetLimitId2 || Generation limit ID2 || ID for production restriction. -1: Unlimited. Generation is allowed only if it matches the generation limit ID in "Map default parameter .xlsm" (SEQ08921). || - ||
+|| CreateAssetLimitId3 || Generation limit ID3 || ID for production restriction. -1: Unlimited. Generation is allowed only if it matches the generation limit ID in "Map default parameter .xlsm" (SEQ08921). || - ||
+|| reserved1 || reserved1 ||  || - ||

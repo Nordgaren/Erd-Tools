@@ -1,0 +1,14 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Command type,Command type,-1,999999999,10,s32,1,%d,CHARMAKEMENU_CMD_TYPE,Wrap
+Item text ID,ID of the text to be displayed,-1,999999999,20,s32,1,%d,s32,Wrap
+Face Param ID,Face Param ID,-1,999999999,30,s32,1,%d,FACE_PARAM,Wrap
+Table ID (male),First ID (male) in the list of items to select. The command type is [Slider: Text ID of minimum label (n) and maximum label (n + 1), Color: ID of color table, Grid or text: First ID of character make list item, Other: Ignore],-1,999999999,40,s32,1,%d,s32,Wrap
+Display conditions,Conditions for displaying this command,-1,999999999,60,s32,1,%d,CHARMAKEMENU_VIEW_CONDITION,Wrap
+Preview mode,Display mode of the character model displayed in preview,-1,127,70,s8,1,%d,CHARMAKEMENU_PREVIEW_MODE,Wrap
+reserve,,,,201,dummy8,,,dummy8,None
+Table ID (female),For women with table ID. If -1, refer to for men,-1,999999999,50,s32,1,%d,s32,Wrap
+Referenced face Param ID,Face param ID of the matching destination for "matching to XX",-1,999999999,100,s32,1,%d,FACE_PARAM,Wrap
+Referenced text ID,Display text ID for "fit to XX",-1,999999999,110,s32,1,%d,s32,Wrap
+1 line help text ID (overwrite),1-line help text ID (-1: Get 1-line help with item text ID). Basically, item text ID = 1 line help text ID, but if you want to overwrite part of it, specify it with this parameter.,-1,999999999,25,s32,1,%d,s32,Wrap
+Event flag ID,Event flag to unlock this item (0: invalid value). Invalid value will always be unlocked,0,-294967297,200,u32,1,%u,u32,Wrap
+reserve,,,,202,dummy8,,%d,dummy8,Wrap

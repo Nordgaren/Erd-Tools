@@ -1,0 +1,21 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Threshold point 0,Those with "nth threshold [point]" written in the specifications,0,999,100,f32,0.1,%f,f32,Wrap
+Threshold point 1,Those with "nth threshold [point]" written in the specifications,0,999,200,f32,0.1,%f,f32,Wrap
+Threshold point 2,Those with "nth threshold [point]" written in the specifications,0,999,300,f32,0.1,%f,f32,Wrap
+Threshold point 3,Those with "nth threshold [point]" written in the specifications,0,999,400,f32,0.1,%f,f32,Wrap
+Threshold point 4,Those with "nth threshold [point]" written in the specifications,0,999,500,f32,0.1,%f,f32,Wrap
+Threshold coefficient 0,Those with "nth threshold [coefficient]" written in the specifications,0,9999,700,f32,0.1,%f,f32,Wrap
+Threshold coefficient 1,Those with "nth threshold [coefficient]" written in the specifications,0,9999,800,f32,0.1,%f,f32,Wrap
+Threshold coefficient 2,Those with "nth threshold [coefficient]" written in the specifications,0,9999,900,f32,0.1,%f,f32,Wrap
+Threshold coefficient 3,Those with "nth threshold [coefficient]" written in the specifications,0,9999,1000,f32,0.1,%f,f32,Wrap
+Threshold coefficient 4,Those with "nth threshold [coefficient]" written in the specifications,0,9999,1100,f32,0.1,%f,f32,Wrap
+Adjustment factor 0,Adjustment factor,-99,99,1300,f32,0.01,%f,f32,Wrap
+Adjustment factor 1,Adjustment factor,-99,99,1400,f32,0.01,%f,f32,Wrap
+Adjustment factor 2,Adjustment factor,-99,99,1500,f32,0.01,%f,f32,Wrap
+Adjustment factor 3,Adjustment factor,-99,99,1600,f32,0.01,%f,f32,Wrap
+Adjustment factor 4,Adjustment factor,-99,99,1700,f32,0.01,%f,f32,Wrap
+Growth Soul Slope of the early graph α1,Growth Soul Slope of the early graph α1,-99,99,1800,f32,0.01,%f,f32,Wrap
+Growth soul Early soul adjustment α2,Growth soul Early soul adjustment α2,-99,99,1900,f32,0.01,%f,f32,Wrap
+Affects the slope of the graph after the growth soul threshold α3,Affects the slope of the graph after the growth soul threshold α3,-99,99,2000,f32,0.01,%f,f32,Wrap
+Growth soul threshold t,Growth soul threshold t,0,1000000,2100,f32,1,%f,f32,Wrap
+Padding,,,,2101,dummy8,,,dummy8,None

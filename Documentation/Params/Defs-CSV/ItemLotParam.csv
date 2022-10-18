@@ -1,0 +1,74 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+1: Item ID,Item ID that can be obtained,-1,999999999,400,s32,1,%d,s32,Wrap
+2: Item ID,Item ID that can be obtained,-1,999999999,1200,s32,1,%d,s32,Wrap
+3: Item ID,Item ID that can be obtained,-1,999999999,2000,s32,1,%d,s32,Wrap
+4: Item ID,Item ID that can be obtained,-1,999999999,2800,s32,1,%d,s32,Wrap
+5: Item ID,Item ID that can be obtained,-1,999999999,3600,s32,1,%d,s32,Wrap
+6: Item ID,Item ID that can be obtained,-1,999999999,4400,s32,1,%d,s32,Wrap
+7: Item ID,Item ID that can be obtained,-1,999999999,5200,s32,1,%d,s32,Wrap
+8: Item ID,Item ID that can be obtained,-1,999999999,6000,s32,1,%d,s32,Wrap
+1: Item category,Category of items that can be obtained,0,6,300,s32,1,%d,ITEMLOT_ITEMCATEGORY,Wrap, Lock
+2: Item category,Category of items that can be obtained,0,6,1100,s32,1,%d,ITEMLOT_ITEMCATEGORY,Wrap, Lock
+3: Item category,Category of items that can be obtained,0,6,1900,s32,1,%d,ITEMLOT_ITEMCATEGORY,Wrap, Lock
+4: Item category,Category of items that can be obtained,0,6,2700,s32,1,%d,ITEMLOT_ITEMCATEGORY,Wrap, Lock
+5: Item category,Category of items that can be obtained,0,6,3500,s32,1,%d,ITEMLOT_ITEMCATEGORY,Wrap, Lock
+6: Item category,Category of items that can be obtained,0,6,4300,s32,1,%d,ITEMLOT_ITEMCATEGORY,Wrap, Lock
+7: Item category,Category of items that can be obtained,0,6,5100,s32,1,%d,ITEMLOT_ITEMCATEGORY,Wrap, Lock
+8: Item category,Category of items that can be obtained,0,6,5900,s32,1,%d,ITEMLOT_ITEMCATEGORY,Wrap, Lock
+Basic appearance point,Appearance point at normal time,0,2000,600,u16,1,%d,u16,Wrap
+Basic appearance point,Appearance point at normal time,0,2000,1400,u16,1,%d,u16,Wrap
+Basic appearance point,Appearance point at normal time,0,2000,2200,u16,1,%d,u16,Wrap
+Basic appearance point,Appearance point at normal time,0,2000,3000,u16,1,%d,u16,Wrap
+Basic appearance point,Appearance point at normal time,0,2000,3800,u16,1,%d,u16,Wrap
+Basic appearance point,Appearance point at normal time,0,2000,4600,u16,1,%d,u16,Wrap
+Basic appearance point,Appearance point at normal time,0,2000,5400,u16,1,%d,u16,Wrap
+Basic appearance point,Appearance point at normal time,0,2000,6200,u16,1,%d,u16,Wrap
+Appearance points after accumulation,Appearance point at maximum cumulative,0,2000,700,u16,1,%d,u16,Wrap
+Appearance points after accumulation,Appearance point at maximum cumulative,0,2000,1500,u16,1,%d,u16,Wrap
+Cumulative post-appearance points,Appearance point at maximum cumulative,0,2000,2300,u16,1,%d,u16,Wrap
+Appearance points after accumulation,Appearance point at maximum cumulative,0,2000,3100,u16,1,%d,u16,Wrap
+Appearance points after accumulation,Appearance point at maximum cumulative,0,2000,3900,u16,1,%d,u16,Wrap
+Appearance points after accumulation,Appearance point at maximum cumulative,0,2000,4700,u16,1,%d,u16,Wrap
+Cumulative post-appearance points,Appearance point at maximum cumulative,0,2000,5500,u16,1,%d,u16,Wrap
+Cumulative post-appearance points,Appearance point at maximum cumulative,0,2000,6300,u16,1,%d,u16,Wrap
+Another crunchy flag ID,Combined use of acquired flag and crunchy frame (0: common use),0,-294967297,800,u32,1,%u,u32,Wrap, Lock
+Another crunchy flag ID,Combined use of acquired flag and crunchy frame (0: common use),0,-294967297,1600,u32,1,%u,u32,Wrap, Lock
+Another crunchy flag ID,Combined use of acquired flag and crunchy frame (0: common use),0,-294967297,2400,u32,1,%u,u32,Wrap, Lock
+Another crunchy flag ID,Combined use of acquired flag and crunchy frame (0: common use),0,-294967297,3200,u32,1,%u,u32,Wrap, Lock
+Another crunchy flag ID,Combined use of acquired flag and crunchy frame (0: common use),0,-294967297,4000,u32,1,%u,u32,Wrap, Lock
+Another crunchy flag ID,Combined use of acquired flag and crunchy frame (0: common use),0,-294967297,4800,u32,1,%u,u32,Wrap, Lock
+Another crunchy flag ID,Combined use of acquired flag and crunchy frame (0: common use),0,-294967297,5600,u32,1,%u,u32,Wrap, Lock
+Another crunchy flag ID,Combined use of acquired flag and crunchy frame (0: common use),0,-294967297,6400,u32,1,%u,u32,Wrap, Lock
+Crunchy flag ID,Combined use of acquired flag and crunchy frame (0: flag invalid),0,-294967297,150,u32,1,%u,u32,Wrap, Lock
+Lottery cumulative save flag ID,For saving the number of lottery (* 8 flag serial number used),0,-294967297,160,u32,1,%u,u32,Wrap, Lock
+Maximum number of lottery cumulative,Maximum number of lottery cumulative (0: no cumulative),0,255,170,u8,1,%d,u8,Wrap
+Rarity overwrite,Specify how valuable items are in the treasure chest. When -1, use the rarity of the equipment para without overwriting,-1,10,100,s8,1,%d,s8,Wrap
+Quantity,Number of items that can be acquired,0,99,500,u8,1,%d,u8,Wrap
+Quantity,Number of items that can be acquired,0,99,1300,u8,1,%d,u8,Wrap
+Quantity,Number of items that can be acquired,0,99,2100,u8,1,%d,u8,Wrap
+Quantity,Number of items that can be acquired,0,99,2900,u8,1,%d,u8,Wrap
+Quantity,Number of items that can be acquired,0,99,3700,u8,1,%d,u8,Wrap
+Quantity,Number of items that can be acquired,0,99,4500,u8,1,%d,u8,Wrap
+Quantity,Number of items that can be acquired,0,99,5300,u8,1,%d,u8,Wrap
+Quantity,Number of items that can be acquired,0,99,6100,u8,1,%d,u8,Wrap
+Luck parameter valid,Whether the probability of lottery reflects the player's luck,0,1,900,u16,1,%d,ITEMLOT_ENABLE_LUCK,Wrap
+Luck parameter valid,Whether the probability of lottery reflects the player's luck,0,1,1700,u16,1,%d,ITEMLOT_ENABLE_LUCK,Wrap
+Luck parameter valid,Whether the probability of lottery reflects the player's luck,0,1,2500,u16,1,%d,ITEMLOT_ENABLE_LUCK,Wrap
+Luck parameter valid,Whether the probability of lottery reflects the player's luck,0,1,3300,u16,1,%d,ITEMLOT_ENABLE_LUCK,Wrap
+Luck parameter valid,Whether the probability of lottery reflects the player's luck,0,1,4100,u16,1,%d,ITEMLOT_ENABLE_LUCK,Wrap
+Luck parameter valid,Whether the probability of lottery reflects the player's luck,0,1,4900,u16,1,%d,ITEMLOT_ENABLE_LUCK,Wrap
+Luck parameter valid,Whether the probability of lottery reflects the player's luck,0,1,5700,u16,1,%d,ITEMLOT_ENABLE_LUCK,Wrap
+Luck parameter valid,Whether the probability of lottery reflects the player's luck,0,1,6500,u16,1,%d,ITEMLOT_ENABLE_LUCK,Wrap
+Cumulative reset,Whether to reset cumulatively,0,1,950,u16,1,%d,ITEMLOT_CUMULATE_RESET,Wrap
+Cumulative reset,Whether to reset cumulatively,0,1,1750,u16,1,%d,ITEMLOT_CUMULATE_RESET,Wrap
+Cumulative reset,Whether to reset cumulatively,0,1,2550,u16,1,%d,ITEMLOT_CUMULATE_RESET,Wrap
+Cumulative reset,Whether to reset cumulatively,0,1,3350,u16,1,%d,ITEMLOT_CUMULATE_RESET,Wrap
+Cumulative reset,Whether to reset cumulatively,0,1,4150,u16,1,%d,ITEMLOT_CUMULATE_RESET,Wrap
+Cumulative reset,Whether to reset cumulatively,0,1,4950,u16,1,%d,ITEMLOT_CUMULATE_RESET,Wrap
+Cumulative reset,Whether to reset cumulatively,0,1,5750,u16,1,%d,ITEMLOT_CUMULATE_RESET,Wrap
+Cumulative reset,Whether to reset cumulatively,0,1,6550,u16,1,%d,ITEMLOT_CUMULATE_RESET,Wrap
+Offset after X week,Offset during lap play,-1,7,155,s8,1,%d,ITEMLOT_ROUND_COUNT,Wrap
+Do you draw lots even with cooperating spirits?,Do you draw lots even when you are a cooperating spirit?,0,1,180,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+Do you draw even hostile spirits?,Do you draw lots even when you are a hostile spirit?,0,1,181,u8,1,%d,BOOL_CIRCLECROSS_TYPE,Wrap
+PAD1,PAD1,0,0,9999,u8,0,%d,u8,Wrap
+PAD2,PAD2,0,0,9999,u16,0,%d,u16,Wrap

@@ -1,0 +1,124 @@
+||~ Field ||~ DisplayName ||~ Description ||~ Enum ||~
+|| soundBankId || Sound bank ID || Sound bank ID (-1: no bank, other: bank with specified ID) || - ||
+|| soundBreakSEId || Destruction sound SEID || Destruction sound SEID (9 digits) -1: Generated from assetId || - ||
+|| refDrawParamId || Drawing parameter reference ID || Drawing parameter reference ID. The reference ID for the part drawing parameter .xlsm. || - ||
+|| hitCreateType || Static asset hit build settings || Sets the hit build type for static assets. Ignored for dynamic assets. || ASSET_HIT_CREATE_TYPE_ENUM ||
+|| behaviorType || Asset behavior type || Dynamic (all asset features available), static (light assets with limited functionality treated as old maps), partially static (partially destroyed assets) || ASSET_BEHAVIOR_TYPE ||
+|| collisionType || Collision detection type || Collision detection type. You can set what the asset will hit. || ASSET_COLLISION_TYPE ||
+|| rainBlockingType || Rain cutoff setting || It is a type of rain blocking. You can set the blocking of SFX and wet expression. || RAIN_BLOCKING_TYPE ||
+|| hp || HP || Durability until destruction (-1: Indestructible) || - ||
+|| defense || Defense power || Attack power below this value is no damage || - ||
+|| breakStopTime || Forced stop time after destruction || Time from destruction to forced stop of rigid body (do not force stop at 0) || - ||
+|| breakSfxId || SFX ID at the time of destruction || SFX ID on destruction (-1: default (810030)) || - ||
+|| breakSfxCpId || SFX Damipoli ID at the time of destruction || SFX generation position at the time of destruction Damipoly ID (-1: placement position) || - ||
+|| breakLandingSfxId || SFX identifier when landing after destruction || Object material-dependent SFX identifier that regenerates when first landing after being destroyed (-1: does not occur) || - ||
+|| breakBulletBehaviorId || Bomb generation at the time of destruction Action parameter ID || Action parameter of [bullet] at the time of destruction (-1: does not occur). Please note that there is an offset specification due to laps. ([GR] SEQ35556) || - ||
+|| breakBulletCpId || Damipoli ID || Location of [bullet] at the time of destruction Damipoli ID (-1: placement position) || - ||
+|| FragmentInvisibleWaitTime || Hidden debris Wait time (seconds) || Hidden debris Waiting time (seconds) || - ||
+|| FragmentInvisibleTime || Debris non-display time (seconds) || Time to hide debris (seconds) || - ||
+|| BreakAiSoundID || AI sound ID generated at the time of destruction || AI sound ID generated at the time of destruction || - ||
+|| breakItemLotType || At the time of destruction_Item lottery type || A type that decides how to obtain items drawn at the time of destruction || ASSET_BREAK_ITEM_LOT_TYPE_ENUM ||
+|| animBreakIdMax || Anime destruction ID maximum value || What is the animation destruction ID from 0 to what? || - ||
+|| breakBulletAttributeDamageType || Bomb generation attribute damage condition at the time of destruction || Generates a bullet if the last damage received when destroying an asset meets the conditions of this setting. || ASSET_BREAK_ATTRIBUTE_DAMAGE_TYPE ||
+|| isBreakByPlayerCollide || Will it break in a player collision? || Broken when the player touches (0: no, 1:) || - ||
+|| isBreakByEnemyCollide || Will it be destroyed by an enemy character collision? || Broken when an enemy character touches (0: No, 1: Ru) || - ||
+|| isBreak_ByChrRide || Will it break if the character gets on it? || Will it break if the character gets on (0: it won't break 1: it will break) || - ||
+|| isDisableBreakForFirstAppear || No destruction for initial appearance || Broken at the initial appearance of the player (0: ru, 1: no) || - ||
+|| isAnimBreak || Is it anime destruction? || Is it animation destruction (0: physical destruction, 1: animation destruction) || - ||
+|| isDamageCover || Do you want to shield the damage? || Whether to pass the damage to the other side when receiving damage (0: pass, 1: do not pass) || - ||
+|| isAttackBacklash || Do you play the attack || Do you play the attack (0: do not play, 1: play) || - ||
+|| Reserve_2 || Reserve 2 ||  || - ||
+|| isLadder || Is it a ladder? || Is it a ladder (0: different, 1: yes) || - ||
+|| isMoveObj || Is it a moving object? || Is it a moving object? It is a flag used for branching of movement processing at the time of multi (0: different, 1: yes) || - ||
+|| isSkydomeFlag || Is it treated as a celestial sphere? || Processing that treats the celestial sphere (player tracking, etc.) is performed (0: different, 1: yes) || - ||
+|| isAnimPauseOnRemoPlay || Do you want to stop the animation during the poly play? || Do you want to stop the animation during the poly play (0: not, 1: do) || - ||
+|| isBurn || Will it burn || Will it burn (0: not, 1:) || - ||
+|| isEnableRepick || Is there a change during recollection? || If this flag is ○, the parameter "At the time of recollection _ ***" will be used for the assets to be collected again in units of placement. || BOOL_CIRCLECROSS_TYPE ||
+|| isBreakOnPickUp || Is it destroyed at the time of collection? || If ×, play the animation at the time of collection, if ○, destroy at the time of collection (destroy in all cases including replacement) || BOOL_CIRCLECROSS_TYPE ||
+|| isBreakByHugeenemyCollide || Will it be destroyed by a huge enemy collision? || Broken when a giant enemy touches (0: No, 1:) || - ||
+|| navimeshFlag || Pre-destruction navigation mesh flag || Navigation mesh flag set from assets before destruction || ASSET_NAVIMESH_FLAG ||
+|| burnBulletInterval || Combustion bullet generation interval (frame) || Interval (frame) to generate bullets for spreading fire || - ||
+|| clothUpdateDist || Cross update distance (m) || Distance from the camera to update havokCloth (0: always update) || - ||
+|| lifeTime_forRuntimeCreate || Lifetime of runtime generated assets (seconds) || Runtime-generated time after creation until disappearance (0: does not disappear) || - ||
+|| contactSeId || SE ID when contacting a player || SE ID to play when touched by a local player operated by you (-1: Do not play) || - ||
+|| repickAnimIdOffset || At the time of recollection_animation offset || When recollecting assets with "Is there a change at the time of recollection?" In units of placement, play the uncollected / collected animation with the anime ID offset by this value. || - ||
+|| windEffectRate_0 || Wind coefficient (before destruction) || Wind coefficient (before destruction) || - ||
+|| windEffectRate_1 || Wind coefficient (after destruction) || Wind coefficient (after destruction) || - ||
+|| windEffectType_0 || Wind effect type (before destruction) || Wind effect type (before destruction) || ASSET_WIND_EFFECT_TYPE ||
+|| windEffectType_1 || Wind effect type (after destruction) || Wind effect type (after destruction) || ASSET_WIND_EFFECT_TYPE ||
+|| overrideMaterialId || Overwrite material ID || Asset material ID overwrite setting (-1: Do not overwrite model material ID 0 or more: Material ID overwrite) On the ladder, the material ID is reflected only with this setting || - ||
+|| autoCreateOffsetHeight || Height offset during automatic generation (m) || Height offset of how much it floats from where the raycast hits the map when it is automatically generated [m] || - ||
+|| burnTime || Burning time (seconds) || Burning time (seconds) (continues to burn at 0) || - ||
+|| burnBraekRate || Combustion fracture judgment progress || Burnup threshold for switching to the ruptured state || - ||
+|| burnSfxId || Combustion SFXID: 0 || SFX ID at the time of combustion: 0 (-1: No SFX) || - ||
+|| burnSfxId_1 || Combustion SFXID: 1 || SFX ID at the time of combustion: 1 (-1: No SFX) || - ||
+|| burnSfxId_2 || Combustion SFXID: 2 || SFX ID at the time of combustion: 2 (-1: No SFX) || - ||
+|| burnSfxId_3 || Combustion SFXID: 3 || SFX ID at the time of combustion: 3 (-1: No SFX) || - ||
+|| burnSfxDelayTimeMin || Combustion SFX generation delay Start time (seconds): 0 || SFX generation delay time during combustion Randomly determined between start and end times || - ||
+|| burnSfxDelayTimeMin_1 || Combustion SFX generation delay Start time (seconds): 1 || SFX generation delay time during combustion Randomly determined between start and end times || - ||
+|| burnSfxDelayTimeMin_2 || Combustion SFX generation delay Start time (seconds): 2 || SFX generation delay time during combustion Randomly determined between start and end times || - ||
+|| burnSfxDelayTimeMin_3 || Combustion SFX generation delay Start time (seconds): 3 || SFX generation delay time during combustion Randomly determined between start and end times || - ||
+|| burnSfxDelayTimeMax || Combustion SFX generation delay End time (seconds): 0 || SFX generation delay time during combustion Randomly determined between start and end times || - ||
+|| burnSfxDelayTimeMax_1 || Combustion SFX generation delay End time (seconds): 1 || SFX generation delay time during combustion Randomly determined between start and end times || - ||
+|| burnSfxDelayTimeMax_2 || Combustion SFX generation delay End time (seconds): 2 || SFX generation delay time during combustion Randomly determined between start and end times || - ||
+|| burnSfxDelayTimeMax_3 || Combustion SFX generation delay End time (seconds): 3 || SFX generation delay time during combustion Randomly determined between start and end times || - ||
+|| burnBulletBehaviorId || Combustion bullet generation Behavior parameter: 0 || Bullet generation behavior parameter at the time of burning: 0 (-1: does not occur) || - ||
+|| burnBulletBehaviorId_1 || Combustion bullet generation Behavior parameter: 1 || Bullet generation behavior parameter at the time of burning: 1 (-1: does not occur) || - ||
+|| burnBulletBehaviorId_2 || Combustion bullet generation Behavior parameter: 2 || Bullet generation behavior parameter at the time of burning: 2 (-1: does not occur) || - ||
+|| burnBulletBehaviorId_3 || Combustion bullet generation Behavior parameters: 3 || Bullet generation behavior parameter at the time of burning: 3 (-1: does not occur) || - ||
+|| burnBulletDelayTime || Combustion bullet generation delay time (seconds) || Time to delay the generation of bullets for fire spread (seconds) || - ||
+|| paintDecalTargetTextureSize || Paint decal target size || Paint decal target size 0: Decal disabled (0 to 4096 power of 2 0, 2, 4, 8,… 2048 only valid) || - ||
+|| navimeshFlag_after || Post-destruction navigation mesh flag || Navimesh flag set from the destroyed asset || ASSET_NAVIMESH_FLAG ||
+|| camNearBehaviorType || Drawing when approaching the camera || Drawing settings when approaching the camera. [GR] SEQ07529 || ASSET_CAM_NEAR_BEHAVIOR_TYPE ||
+|| breakItemLotParamId || At the time of destruction_item lottery ID_for map || Item to be drawn at the time of destruction Lottery ID_for map-1: No lottery || - ||
+|| pickUpActionButtonParamId || At the time of collection_action button ID || Action button ID issued for collection-1: Collection function is disabled || - ||
+|| pickUpItemLotParamId || At the time of collection_item lottery ID_for map || Item to be drawn at the time of collection For lottery ID_map-1: Collection function is invalid || - ||
+|| autoDrawGroupBackFaceCheck || Automatic drawing group_Back side check || Automatic drawing group_Back side check || ASSET_AUTO_DRAW_GROUP_BACKFACE_CHECK_TYPE ||
+|| autoDrawGroupDepthWrite || Auto drawing group_shield || Auto drawing group_shield || ASSET_AUTO_DRAW_GROUP_DEPTH_WRITE_TYPE ||
+|| autoDrawGroupShadowTest || Automatic drawing group_shadow test || Automatic drawing group_shadow test || ASSET_AUTO_DRAW_GROUP_SHADOW_TEST_TYPE ||
+|| debug_isHeightCheckEnable || Debug_allowable ground height check || Debug_Allow Ground Height Check See SEQ07876 for details || BOOL_CIRCLECROSS_TYPE ||
+|| hitCarverCancelAreaFlag || Underfloor navigation mesh not subject to clipping || If it is placed lower than the hit on the floor (ground), set whether to exclude it from the underfloor navigation mesh deletion target Refer to from the tool || HIT_CARVER_CANCEL_AREA_FLAG ||
+|| assetNavimeshNoCombine || Navigation mesh join control || The set assets are excluded from the target of joining hit parts when building the Nav Mesh. || ASSET_NAVIMESH_GENERATE_ATTRIBUTE ||
+|| navimeshFlagApply || Navimesh flag application destination || Where to apply the navigation mesh flag set from the asset || ASSET_NAVIMESH_FLAG_APPLY_TYPE ||
+|| navimeshFlagApply_after || Post-destruction navigation mesh flag application destination || Where to apply the navigation mesh flag set from the destroyed asset || ASSET_NAVIMESH_FLAG_APPLY_TYPE ||
+|| autoDrawGroupPassPixelNum || Auto-draw group_passing pixels || Automatic drawing group_Pass pixel (set to 0.0-1.0 to enlarge at the time of shooting) || - ||
+|| pickUpReplacementEventFlag || At the time of collection_replacement flag condition || When this event flag is ON, use the ID of the subsequent replacement 0: Do not always replace || - ||
+|| pickUpReplacementAnimIdOffset || At the time of collection_replacement animation offset || When "Collecting_replacement flag condition" is ON, play the uncollected / collected animation with the animation ID offset by this value. || - ||
+|| pickUpReplacementActionButtonParamId || At the time of collection_replacement action button ID || This action button ID is used when "Collecting_replacement flag condition" is ON. || - ||
+|| pickUpReplacementItemLotParamId || At the time of collection_replacement item lottery ID_for map || When "Collecting_replacement flag condition" is ON, this item lottery ID_map is used. || - ||
+|| slidingBulletHitType || Behavior when a bullet crawling on the ground lands || When a bullet of the follow-up type "Crawling on the ground even if it collides" collides with an asset, does it bend in the direction along the landing point? Behavior || ASSET_SLIDING_BULLET_HIT_TYPE ||
+|| isBushesForDamage || Will it break due to bush damage? || ◯ Assets can only be damaged by "damage to bushes" ◯ and "object attack power> defense power" attacks [GR] SEQ20617 || BOOL_CIRCLECROSS_TYPE ||
+|| penetrationBulletType || Bullet penetration type || Will the bullet hit and land? Which bullet para to refer to when deciding? The value that determines. || ASSET_PENETRATION_BULLET_TYPE ||
+|| Reserve_3 || Reserve 3 ||  || - ||
+|| Reserve_4 || Reserve 4 ||  || - ||
+|| soundBreakSECpId || Destruction sound Damipoli ID || Damipoli ID of the place where the destruction sound is played (-1: Placement position) || - ||
+|| debug_HeightCheckCapacityMin || Debug_Allowable ground height_Minimum [m] || Debug_Allowable ground height_Minimum [m] See SEQ07876 for details. Must be smaller than maximum || - ||
+|| debug_HeightCheckCapacityMax || Debug_Allowable ground height_Max [m] || Debug_Allowable ground height_Max [m] See SEQ07876 for details. Must be larger than minimum || - ||
+|| repickActionButtonParamId || At the time of recollection_action button ID || This action button ID is used when recollecting assets whose "Is there a change at the time of recollection?" || - ||
+|| repickItemLotParamId || At the time of recollection_item lottery ID_for map || Assets with "Is there a change at the time of recollection?" Are used for this item lottery ID_map when recollecting in units of placement. || - ||
+|| repickReplacementAnimIdOffset || At the time of recollection_replacement animation offset || Use this parameter instead of "At the time of collection_replacement animation offset" at the time of recollection for assets whose "Is there a change at the time of recollection?" || - ||
+|| repickReplacementActionButtonParamId || At the time of recollection_replacement action button ID || Use this parameter instead of "At the time of collection_replacement action button ID" when recollecting assets whose "Is there a change at the time of recollection?" || - ||
+|| repickReplacementItemLotParamId || At the time of recollection_replacement item lottery ID_for map || Use this parameter instead of "At the time of collection_Replacement item lottery ID_For map" when recollecting assets whose "Is there a change at the time of recollection?" || - ||
+|| noGenerateCarver || Navimesh terrain judgment invalidation || Asset with this set does not create Carver || BOOL_CIRCLECROSS_TYPE ||
+|| noHitHugeAfterBreak || Do not hit huge enemies after destruction || Overwrite the hit filter after destruction with a collision detection type that does not hit a huge enemy (static ○ dynamic ○) || BOOL_CIRCLECROSS_TYPE ||
+|| isEnabledBreakSync || Do you want to synchronize the destruction || If this is x, do not perform initial synchronization, map activation synchronization, asset destruction synchronization during in-game, and the attack of the remote PC will not hit. || BOOL_CIRCLECROSS_TYPE ||
+|| isHiddenOnRepick || When recollecting _ hidden || Hide assets if you can't get them by lottery when recollecting by placement unit || BOOL_CIRCLECROSS_TYPE ||
+|| isCreateMultiPlayOnly || Is it valid only during multi (dynamic only)? || Is it valid only during multi? Only valid for dynamic assets. (Details: SEQ15087) || - ||
+|| isDisableBulletHitSfx || Does not generate bullet landing SFX || In the case of ○, the landing SFX does not occur regardless of whether the hit bullet penetrates or lands. || BOOL_CIRCLECROSS_TYPE ||
+|| isEnableSignPreBreak || Is it possible to create a sign / blood character (before destroying the asset)? || Set whether sign / blood character can be created when on the asset (before destruction) 〇: Possible, ×: Impossible (Details: SEQ122568) || BOOL_CIRCLECROSS_TYPE ||
+|| isEnableSignPostBreak || Is it possible to create a sign / blood character (after destroying the asset)? || Set whether sign / blood character can be created when on the asset (after destruction) 〇: Possible, ×: Impossible (Details: SEQ122568) || BOOL_CIRCLECROSS_TYPE ||
+|| Reserve_1 || Reserve 1 ||  || - ||
+|| generateMultiForbiddenRegion || Summoning prohibited / intrusion prohibited area generation (Damipoli) || Summoning prohibited / intrusion prohibited area generation (Damipoli) || MULTI_FORBIDDEN_REGION_GENERATE_ATTRIBUTE ||
+|| residentSeId0 || Resident SEID0 || Sound ID 0 (9 digits) to be resident in the asset (-1: No resident) || - ||
+|| residentSeId1 || Resident SEID1 || Sound ID 1 (9 digits) to be resident in the asset (-1: No resident) || - ||
+|| residentSeId2 || Resident SEID2 || Sound ID 2 (9 digits) to be resident in the asset (-1: No resident) || - ||
+|| residentSeId3 || Resident SEID3 || Sound ID 3 (9 digits) to be resident in the asset (-1: not resident) || - ||
+|| residentSeDmypolyId0 || Resident SE Damipoli ID0 || Damipoli ID0 to attach resident sound (-1: placement position) || - ||
+|| residentSeDmypolyId1 || Resident SE Damipoli ID1 || Damipoli ID1 to attach resident sound (-1: placement position) || - ||
+|| residentSeDmypolyId2 || Resident SE Damipoli ID2 || Damipoli ID2 to attach resident sound (-1: placement position) || - ||
+|| residentSeDmypolyId3 || Resident SE Damipoli ID3 || Damipoli ID3 to attach resident sound (-1: placement position) || - ||
+|| excludeActivateRatio_Xboxone_Grid || Open_XB1 exclusion rate || Open_XB1 exclusion rate [GR] SEQ25310 || ASSET_EXCLUDE_ACTIVATE_RATIO_TYPE ||
+|| excludeActivateRatio_Xboxone_Legacy || Legacy_XB1 exclusion rate || Legacy_XB1 exclusion rate [GR] SEQ25310 || ASSET_EXCLUDE_ACTIVATE_RATIO_TYPE ||
+|| excludeActivateRatio_PS4_Grid || Open_PS4 exclusion rate || Open_PS4 exclusion rate [GR] SEQ25310 || ASSET_EXCLUDE_ACTIVATE_RATIO_TYPE ||
+|| excludeActivateRatio_PS4_Legacy || Legacy_PS4 exclusion rate || Legacy_PS4 exclusion rate [GR] SEQ25310 || ASSET_EXCLUDE_ACTIVATE_RATIO_TYPE ||
+|| Reserve_0 || Reserve 0 || Reserve 0 || - ||

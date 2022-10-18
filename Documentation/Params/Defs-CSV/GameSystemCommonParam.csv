@@ -1,0 +1,285 @@
+DisplayName,Description,Minimum,Maximum,SortID,DisplayType,Increment,DisplayFormat,InternalType,EditFlags
+Basic toughness durability recovery time,This is the basic value of toughness recovery time. (Seconds),0,999,100,f32,0.1,%.1f,f32,None
+Character event turning animation (90 ° left),This is a 90 ° left turn animation for the "Character Turn" event.,0,9999999,200,s32,1,%d,s32,None
+Character event turning animation (right 90 °),This is a 90 ° right turn animation for the "Character Turn" event.,0,9999999,300,s32,1,%d,s32,None
+Character event turning animation (180 ° left),This is a 180 ° left turn animation for the "Character Turn" event.,0,9999999,400,s32,1,%d,s32,None
+Character event turning animation (right 180 °),This is a 180 ° right turn animation for the "Character Turn" event.,0,9999999,500,s32,1,%d,s32,None
+Character event turning 90 ° Animation start angle,The starting angle of the angle to which the 90 ° swivel animation for the "Character Swirl" event is applied. If the event starts at an angle smaller than this angle, a system turn will occur.,0,360,600,s16,1,%d,s16,None
+Character event turning 180 ° Animation start angle,The starting angle of the angle to which the 180 ° swivel animation for the "Character Swirl" event is applied.,0,360,700,s16,1,%d,s16,None
+Stealth attack damage multiplier,Stealth attack damage multiplier,0,99,13650,f32,0.01,%f,f32,None
+Damage cut rate when the guard is successful when repelled,Damage cut rate when the guard is successful when repelled. Multiply the final damage,0,99,900,f32,0.01,%.2f,f32,None
+Difference angle to start playing NPC conversation animation,This is the difference angle at which the animation playback of the motion during the conversation of the NPC conversation starts.,0,180,1000,f32,0.1,%.1f,f32,None
+Difference angle to stop animation playback of NPC conversation,This is the difference angle at which the animation playback of the motion during the conversation of the NPC conversation is stopped.,0,180,1100,f32,0.1,%.1f,f32,None
+Nemuri Item Acquisition Range_Action Button Para ID,Nemuri Item Acquisition Range_Action Button Para ID. TAE flag Used as the default value when not overwriting with "Event> Nemuri item registration".,-1,999999999,1110,s32,1,%d,s32,None
+Buddy item permission_SFX occurrence interval [s],Buddy item permission_SFX occurrence interval [s],0,99,18000,f32,0.01,%.2f,f32,None
+Buddy Item Permission_SFX Occurrence PC Damipoli ID,Buddy Item Permission_SFX Occurrence PC Damipoli ID,-1,999999999,18010,s32,1,%d,s32,None
+Buddy item permission_SFX generated horse Damipoli ID_when riding,Buddy item permission_SFX generated horse Damipoli ID_when riding,-1,999999999,18020,s32,1,%d,s32,None
+Buddy Item Permission_Occurrence SFXID,Buddy Item Permission_Occurrence SFXID,-1,999999999,18030,s32,1,%d,s32,None
+Buddy Summoning_Initial Range_SFX Occurrence Interval [s],Buddy Summoning_Initial Range_SFX Occurrence Interval [s],0,99,18040,f32,0.01,%f,f32,None
+Buddy Summoning_Initial Range_SFX Occurrence PC Damipoli ID,Buddy Summoning_Initial Range_SFX Occurrence PC Damipoli ID,-1,999999999,18050,s32,1,%d,s32,None
+Buddy Summoning_Initial Range_SFX Generated Horse Damipoli ID_When Riding,Buddy Summoning_Initial Range_SFX Generated Horse Damipoli ID_When Riding,-1,999999999,18060,s32,1,%d,s32,None
+Buddy Summoning_Initial Range_Occurrence SFXID,Buddy Summoning_Initial Range_Occurrence SFXID,-1,999999999,18070,s32,1,%d,s32,None
+Buddy Summoning_Initial range Special effect ID_For PC,Buddy Summoning_Initial range Special effect ID_For PC,-1,999999999,18080,s32,1,%d,s32,None
+Buddy Summoning_Warning Range Special Effect ID_For PC,Buddy Summoning_Warning Range Special Effect ID_For PC,-1,999999999,18090,s32,1,%d,s32,None
+Buddy Summoning_Buddy Return Special Effect ID_For PC,Buddy Summoning_Buddy Return Special Effect ID_For PC,-1,999999999,18100,s32,1,%d,s32,None
+Buddy Summoning_Warning Range Special Effect ID_For Buddy,Buddy Summoning_Warning Range Special Effect ID_For Buddy,-1,999999999,18110,s32,1,%d,s32,None
+Morning in-game time (hours),Morning in-game time (hours). Used in conversation.,0,23,19000,u8,1,%d,u8,None
+Morning in-game time (minutes),Morning in-game time (minutes). Used in conversation.,0,59,19010,u8,1,%d,u8,None
+Morning in-game time (seconds),Morning in-game time (seconds). Used in conversation.,0,59,19020,u8,1,%d,u8,None
+Daytime in-game time (hours),Daytime in-game time (hours). Used in conversation.,0,23,19030,u8,1,%d,u8,None
+Daytime in-game time (minutes),Daytime in-game time (minutes). Used in conversation.,0,59,19040,u8,1,%d,u8,None
+Daytime in-game time (seconds),Daytime in-game time (seconds). Used in conversation.,0,59,19050,u8,1,%d,u8,None
+Night in-game time (hours),Night in-game time (hours). Used in conversation.,0,23,19060,u8,1,%d,u8,None
+Night in-game time (minutes),Night in-game time (minutes). Used in conversation.,0,59,19070,u8,1,%d,u8,None
+Night in-game time (seconds),Night in-game time (seconds). Used in conversation.,0,59,19080,u8,1,%d,u8,None
+AI visibility magnification_morning_start time (hour),AI visibility magnification_morning_start time (hour),0,23,20610,u8,1,%d,u8,None
+AI visibility magnification_morning_start time (minutes),AI visibility magnification_morning_start time (minutes),0,59,20611,u8,1,%d,u8,None
+AI visibility magnification_day_start time (hour),AI visibility magnification_day_start time (hour),0,23,20620,u8,1,%d,u8,None
+AI visibility magnification_day_start time (minutes),AI visibility magnification_day_start time (minutes),0,59,20621,u8,1,%d,u8,None
+AI visibility magnification_evening_start time (hour),AI visibility magnification_evening_start time (hour),0,23,20630,u8,1,%d,u8,None
+AI visibility magnification_evening_start time (minutes),AI visibility magnification_evening_start time (minutes),0,59,20631,u8,1,%d,u8,None
+AI visibility magnification_night_start time (hour),AI visibility magnification_night_start time (hour),0,23,20640,u8,1,%d,u8,None
+AI visibility magnification_night_start time (minutes),AI visibility magnification_night_start time (minutes),0,59,20641,u8,1,%d,u8,None
+AI visibility magnification_midnight_start time (hour),AI visibility magnification_midnight_start time (hour),0,23,20650,u8,1,%d,u8,None
+AI visibility magnification_midnight_start time (minutes),AI visibility magnification_midnight_start time (minutes),0,59,20651,u8,1,%d,u8,None
+SA large damage hit production SFX_ Occurrence condition SA damage threshold ratio [%],SA large damage hit production SFX_ Occurrence condition SA damage threshold ratio [%],0,100,35100,u8,1,%d,u8,None
+SA heavy damage hit production SFX_SFXID,SA heavy damage hit production SFX_SFXID,0,999999999,35000,s32,1,%d,s32,None
+Distance to create a sign away from a safe position [m],Distance at which you can create a sign away from the last safe position on your PC [m],0,9999,4910,f32,0.1,%f,f32,None
+Distance between host and guest where resummoning occurs [m],Distance between host and guest where resummoning occurs [m],0,999999,3700,f32,0.1,%f,f32,None
+Distance to notify the guest that they are about to leave the host [m],Distance [m] to notify the guest that they are about to leave the host. Notify me when I'm farther than this distance.,0,999999,3710,f32,0.1,%f,f32,None
+Distance that allows guests to be re-notified that they are about to leave the host [m],Distance [m] that allows the guest to be re-notified that they are about to leave the host. Do not re-notify until closer than this distance.,0,999999,3720,f32,0.1,%f,f32,None
+Maximum distance the guest can be away from the host [m],Maximum distance [m] that a guest can leave the host. If a certain period of time elapses while the distance is longer than this distance, the session will be withdrawn.,0,999999,3730,f32,0.1,%f,f32,None
+Retry area radius_default value (m),Retry area radius_default value (m). It is used as the default value when the radius and area are not set in the event type "Retry Point" of MapStudio.,-1,9999,1130,f32,0.1,%f,f32,None
+Special effect ID that activates when Nemuri items can be acquired,A special effect ID that activates when a Nemuri item can be acquired. TAE flag Used as the default value when not overwriting with "Event> Nemuri item registration".,-1,999999999,1120,s32,1,%d,s32,None
+"Recover below HP maximum" Special effect completion notification Special effect ID,ID of the special effect that notifies that "Recovery below HP maximum" is completed. Mainly used for multi synchronization.,0,999999999,3800,s32,1,%d,s32,None
+HP Est absorption production SFXID,Absorption effect SFXID when recovering the number of times the HP Est bottle has been used when defeating an intruder,0,999999999,3900,s32,1,%d,s32,None
+MP Est Absorption Production SFXID,Absorption effect SFXID when recovering the number of times the MP Est bottle has been used when defeating an intruder,0,999999999,4000,s32,1,%d,s32,None
+Special effect ID for determining the activation of the resurrection special effect,ID of the special effect that notifies that the resurrection special effect has been activated. Mainly used for multi synchronization.,0,999999999,4100,s32,1,%d,s32,None
+Buddy Summoning_Initial Range Special Effect ID_For Buddy,Buddy Summoning_Initial Range Special Effect ID_For Buddy,-1,999999999,18120,s32,1,%d,s32,None
+Time from the start of est absorption SFX playback to the start of est addition processing,Time from the start of est absorption SFX playback to the start of est addition processing,0,10,4050,f32,0.001,%.3f,f32,None
+Soul correction value acquired when defeating enemies at multi time_host,Correction value of the amount of soul acquired by the host when defeating a normal enemy in multiplayer,0,99,4400,f32,0.001,%.3f,f32,None
+Soul correction value acquired when defeating enemies at multi time_cooperative spirit,Correction value of the amount of soul acquired by cooperating spirits when defeating a normal enemy in multiplayer,0,99,4500,f32,0.001,%.3f,f32,None
+Soul correction value acquired when defeating the boss at the time of multi _ host,Correction value of the amount of soul acquired by the host when defeating the boss in multiplayer,0,99,4600,f32,0.001,%.3f,f32,None
+Soul correction value acquired when defeating the boss at the time of multi _ cooperation spirit,Correction value of the amount of soul acquired when the boss is defeated in multiplayer,0,99,4700,f32,0.001,%.3f,f32,None
+Offset to prevent the HP gauge of the enemy character from being cut off on the screen,Offset value [pixel] (FullHD standard) that fits in the screen when the enemy's HP gauge is cut off on the screen,0,9999,4800,u16,1,%d,u16,None
+Play area collection radius,Collection radius of the play area around the PC,0,999,4900,u16,1,%d,u16,None
+Bullet firing position during "enemy detection" Damipoli ID,Detect bullet firing position Damipoli ID,0,9999,5000,u16,1,%d,u16,None
+Large Rune: Number of tools granted when the Greater Demon invades,Large Rune: Number of tools granted when the Greater Demon invades,0,9999,5110,u16,1,%d,u16,None
+Large Rune: Greater Demon Invasion Tool Item ID,Large Rune: Greater Demon Invasion Tool Item ID,-1,999999999,5100,s32,1,%d,s32,None
+Large jump area SFXID,SFX ID in the riding large jump area,0,999999999,5300,s32,1,%d,s32,None
+Common_Riding special attack magnification,Magnification to be corrected at the time of riding special attack,0,99,950,f32,0.1,%f,f32,None
+Special effects on the enemy side when drawing Nemuri items,Special effects on the enemy side when drawing Nemuri items,-1,999999999,1121,s32,1,%d,s32,None
+Map UID on hold,Map UID on hold for lap, enter in 8 digits (example ... m60_42_36_00-> 60423600),0,99999999,1300,s32,1,%d,s32,None
+Return point when lap is on hold,Entity ID of return point on hold,0,-294967297,1400,u32,1,%u,u32,None
+Bullet ID_cooperation ring_red hunting fired during "enemy detection",Bullet ID to fly depending on enemy power / type (also used for multi-automatic firing),-1,999999999,5800,s32,1,%d,s32,None
+No bullet ID_invasion orb_ fired during "enemy detection",Bullet ID to fly depending on enemy power / type (also used for multi-automatic firing),-1,999999999,5900,s32,1,%d,s32,None
+For tutorial judgment: Event flag to turn on when accessing the distant view,For tutorial judgment: Event flag to turn on when accessing the distant view,0,-294967297,6000,u32,1,%u,u32,None
+For tutorial judgment: Event flag to turn on when accessing the retry point,For tutorial judgment: Event flag to turn on when accessing the retry point,0,-294967297,6100,u32,1,%u,u32,None
+For tutorial judgment: Event flag to turn on when group reward is entered after defeating a group,For tutorial judgment: Event flag to turn on when group reward is entered after defeating a group,0,-294967297,6200,u32,1,%u,u32,None
+For tutorial judgment: Event flag to turn on when entering the riding big jump point,For tutorial judgment: Event flag to turn on when entering the riding big jump point,0,-294967297,6300,u32,1,%u,u32,None
+For tutorial judgment: Expand the riding large jump point by ○ [m] to judge inside and outside,For tutorial judgment: The riding large jump point is expanded by ○ [m] to judge inside and outside. ○ Set the value of [m] here.,-9999,9999,6400,f32,0.1,%f,f32,None
+PC animation ID when retry point is activated,PC animation ID when retry point is started. If it is -1, it will not be played.,-1,999999999,6500,s32,1,%d,s32,None
+Delay time of dialog display when retry point is started [seconds],Delay time of dialog display when retry point is started [seconds],0,999,6600,f32,0.1,%f,f32,None
+Text ID of the dialog when starting the retry point,The text ID of the dialog when the retry point is started. Set the text in EventText_ForMap.xlsm. If it is -1, the dialog is not displayed.,-1,999999999,6700,s32,1,%d,s32,None
+PC animation ID at the time of sign accumulation startup,PC animation ID at the time of sign accumulation startup. If it is -1, it will not be played.,-1,999999999,6800,s32,1,%d,s32,None
+Delay time of dialog display at startup of sign accumulation [seconds],Delay time of dialog display at startup of sign accumulation [seconds],0,999,6900,f32,0.1,%f,f32,None
+Bullet ID when the "Activity of the Dead" special effect is activated,Bullet ID fired when the "Activity of the Dead" special effect is activated,-1,999999999,7000,s32,1,%d,s32,None
+Bullet generation position when the "Activity of the Dead" special effect is activated Damipoli ID,Damipoli ID at the position where the bullet is generated when the "Activity of the Dead" special effect is activated,-1,999999999,7100,s32,1,%d,s32,None
+Fade out time of the corpse when the "Activity of the Dead" special effect is activated,Fade time when the corpse fades out when the "Activity of the Dead" special effect is activated,0,100,7200,f32,0.01,%f,f32,None
+Time to ignore transitions due to network information at the start of throwing,Time to ignore transitions due to network information at the start of throwing,0,10,7300,f32,0.001,%f,f32,None
+Multi-pre-penalty: LAN disconnection,Multi-pre-penalty: LAN disconnection,0,10000,7400,u16,1,%d,u16,None
+Multi-pre-penalty: Profile sign-out,Multi-pre-penalty: Profile sign-out,0,10000,7500,u16,1,%d,u16,None
+Multi-pre-penalty: Power off,Multi-pre-penalty: Power off,0,10000,7600,u16,1,%d,u16,None
+Multi-pre-penalty: Suspend / Pause,Multi-pre-penalty: Suspend / Pause,0,10000,7700,u16,1,%d,u16,None
+Multi-pre-penalty: Waiting time to start the generation (sale) of the bone of reason,Multi-pre-penalty: Waiting time (seconds) to start the generation (sale) of the bone of reason,0,1E+09,7800,f32,1,%f,f32,None
+Multi-pre-penalty: Penalty judgment points,Multi-pre-penalty: Penalty judgment points,0,10000,7900,u16,1,%d,u16,None
+No operation judgment time,It is for leaving people who have not operated for a certain period of time in multiplayer. The unit is seconds.,0,9999,8000,u16,1,%d,u16,None
+Bullet ID_hostile NPC / enemy character fired during "enemy detection",Bullet ID to shoot to hostile NPCs / enemy characters when hostility detection fails,-1,999999999,8100,s32,1,%d,s32,None
+Special effect ID to be applied to the target of "Activity target search of the dead",Special effects applied to the searched target,-1,999999999,8200,s32,1,%d,s32,None
+"Search for active targets of the dead" distance,Maximum searchable distance,0,1000,8300,f32,0.01,%.2f,f32,None
+Field of view_Minimum guaranteed distance [magnification conversion],Field of view_Minimum guaranteed distance [magnification conversion],0,1,20000,f32,0.01,%.2f,f32,None
+SA large damage hit production SFX_ Occurrence condition SA damage minimum required [pt],SA large damage hit production SFX_ Occurrence condition SA damage minimum required [pt],-1,9999,35200,s16,1,%d,s16,None
+SA large damage hit production SFX_ Occurrence condition SA damage forced occurrence minimum value [pt],SA large damage hit production SFX_ Occurrence condition SA damage forced occurrence minimum value [pt],-1,9999,35300,s16,1,%d,s16,None
+Maximum solo intrusion point,Maximum solo intrusion point. When this value is exceeded, it will be invaded solo.,0,999999999,8600,u32,1,%d,u32,None
+NPC conversation voice playback timeout time,Voice playback timeout for NPC conversations. If voice playback does not end after this time, proceed to the next message.,-1,180,8700,f32,0.1,%f,f32,None
+Playlog transmission interval,Interval to send item usage log etc. to the server,0,300,8800,f32,0.1,%f,f32,None
+Maximum number of seven-colored stones installed,Maximum number of seven-colored stones installed,0,255,8900,u8,1,%d,u8,None
+Distance allowed to activate during character deactivation [m],Distance allowed to activate during character deactivation (valid only for open placement characters),0,100,9000,u8,1,%d,u8,None
+Multi-weakening level correction factor 1,Weakened stats when multiplayer. Host level addition correction,0,999,9100,s16,1,%d,s16,None
+Multi-weakening level correction factor 2,Weakened stats when multiplayer. Host level magnification correction,0,999,9200,s16,1,%d,s16,None
+Multi-weapon maximum weapon correction factor,Weakened stats when multiplayer. Maximum weapon enhancement level correction,0,999,9300,s16,1,%d,s16,None
+Bullet ID for the effect when picking up the Berserker sign,Bullet ID when generating a bullet for special effects at the sign position,-1,999999999,9400,s32,1,%d,s32,None
+Berserker succeeds in killing PC by himself Special effect ID for directing,Special effect to play a special effect when Berserker succeeds in killing the PC by himself,-1,999999999,9500,s32,1,%d,s32,None
+Level sync application coefficient of determination 1 white,Soul level coefficient of whether to apply level sync,0,255,9600,u8,1,%d,u8,None
+Level sync application coefficient of determination 2 white,Soul level coefficient of whether to apply level sync,0,255,9700,u8,1,%d,u8,None
+Level sync application coefficient of determination 1 red,Soul level coefficient of whether to apply level sync,0,255,9800,u8,1,%d,u8,None
+Level sync application coefficient of determination 2 red,Soul level coefficient of whether to apply level sync,0,255,9900,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 0 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10000,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 1 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10010,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 2 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10020,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 3 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10030,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 4 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10040,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 5 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10050,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 6 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10060,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 7 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10070,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 8 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10080,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 9 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10090,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 10 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10100,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 0 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11000,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 1 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11010,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 2 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11020,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 3 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11030,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 4 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11040,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 5 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11050,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 6 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11060,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 7 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11070,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 8 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11080,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 9 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11090,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 10 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11100,u8,1,%d,u8,None
+Automatic placement interval of intrusion points,Automatic placement interval of intrusion points,0,99,31000,u8,1,%d,u8,None
+Intrusion point automatic placement cancellation range,Intrusion point automatic placement cancellation range,0,99,31010,u8,1,%d,u8,None
+Global event log transmission interval,Interval to send global event log to server,0,600,12300,f32,0.1,%f,f32,None
+Solo intrusion point addition value_white sign,Solo intrusion point addition value_white sign,0,9999,12400,u16,1,%d,u16,None
+Solo intrusion point addition value_red sign,Solo intrusion point addition value_red sign,0,9999,12500,u16,1,%d,u16,None
+Solo intrusion point addition value_intrusion,Solo intrusion point addition value_intrusion,0,9999,12600,u16,1,%d,u16,None
+Solo intrusion point addition value_Map guardian visit,Solo intrusion point addition value_Map guardian visit,0,9999,12700,u16,1,%d,u16,None
+Solo intrusion point addition value_Red Scare visit,Solo intrusion point addition value_Red Scare visit,0,9999,12800,u16,1,%d,u16,None
+Invincible timer for initial sync PC,Invincible timer for initial sync PC,0,60,12900,u8,1,%d,u8,None
+Invincible timer for non-initial sync PCs,Invincible timer for non-initial sync PCs,0,60,12910,u8,1,%d,u8,None
+[Red Scare] Soul rate received when the host passes through the white door,Soul that you can get red hunting when the host passes through the white door = Soul required for red hunting to change from the previous Lv to the current Lv * This magnification,0,10,13000,f32,0.01,%f,f32,None
+Decal parameter ID of the trace of wandering illusion,Decal parameter ID of the trace that the wandering illusion puts out while moving,0,999999999,13100,s32,1,%d,s32,None
+Counting time for warning message display outside the multiplayer limit [seconds],If this count time elapses while you are out of the multiplayer limit distance, the multiplayer will be disbanded.,0,999,13200,f32,1,%f,f32,None
+Hosting cost Item ID,ID of the cost item consumed when hosting is turned on,0,999999999,13300,s32,1,%d,s32,None
+AI jump deceleration parameter,Deceleration parameters for AI jump (0.0: constant velocity motion, 1.0: maximum deceleration, speed 0 at target point),0,1,13400,f32,0.01,%f,f32,None
+Buddy Instance Deletion Guarantee Time,The time from the death flag to the actual disappearance of the instance,0,10,13500,f32,0.01,%f,f32,None
+AI jump jumping Y movement amount correction factor,AI jump jumping Y movement amount correction factor,0,99,13600,f32,0.01,%f,f32,None
+Stealth visibility magnification_Crouching without stealth effect,Stealth visibility magnification_Crouching without stealth effect,0,1,13700,f32,0.01,%f,f32,None
+Stealth visibility magnification_Standing in stealth ray shielded area,Stealth visibility magnification_Standing in stealth ray shielded area,0,1,13800,f32,0.01,%f,f32,None
+Stealth visibility magnification_Crouching in stealth ray shielded area,Stealth visibility magnification_Crouching in stealth ray shielded area,0,1,13900,f32,0.01,%f,f32,None
+Stealth visibility magnification_Standing within a stealth hit,Stealth visibility magnification_Standing within a stealth hit,0,1,14000,f32,0.01,%f,f32,None
+Stealth visibility magnification_Crouching within a stealth hit,Stealth visibility magnification_Crouching within a stealth hit,0,1,14100,f32,0.01,%f,f32,None
+Stealth visibility magnification_Stealth ray shielded area + standing in stealth hit,Stealth visibility magnification_Stealth ray shielded area + standing in stealth hit,0,1,14200,f32,0.01,%f,f32,None
+Stealth visibility magnification_Stealth ray shielded area + crouching in stealth hit,Stealth visibility magnification_Stealth ray shielded area + crouching in stealth hit,0,1,14300,f32,0.01,%f,f32,None
+Treasure corpse default action button parameter ID,Default action button parameter ID when "Treasure corpse" is selected in the treasure box type of treasure box information for OBJ of MapStudio event,-1,999999999,14400,s32,1,%d,s32,None
+Anime ID when acquiring the default item of the treasure corpse,When "Treasure corpse" is selected in the treasure box type of the treasure box information for OBJ of the MapStudio event, the default item is acquired. Animation ID,-1,999999999,14500,s32,1,%d,s32,None
+Treasure chest default action button parameter ID,Default action button parameter ID when "Treasure chest" is selected in the treasure chest type of treasure chest information for OBJ of MapStudio event,-1,999999999,14600,s32,1,%d,s32,None
+Anime ID when acquiring the default item of the treasure box,When "Treasure chest" is selected in the treasure chest type of the treasure chest information for OBJ of the MapStudio event, the default item acquisition animation ID,-1,999999999,14700,s32,1,%d,s32,None
+Item light default action button parameter ID,Default action button parameter ID when "Item light" is selected in the treasure chest type of treasure chest information for OBJ of MapStudio event,-1,999999999,14800,s32,1,%d,s32,None
+Item Hikari's default item acquisition animation ID,When "Item Hikari" is selected as the treasure chest type of the treasure chest information for OBJ of the MapStudio event, the default item acquisition animation ID,-1,999999999,14900,s32,1,%d,s32,None
+Sign pool: Asset ID,Assets used for sign collection,0,999999,15000,s32,1,%d,s32,None
+Sign accumulation: Sign appearance Damipoli 0,Damipoli used to determine the display position of the sign in the sign pool,-1,999999999,15100,s32,1,%d,s32,None
+Sign accumulation: Sign appearance Damipoli 1,Damipoli used to determine the display position of the sign in the sign pool,-1,999999999,15200,s32,1,%d,s32,None
+Sign accumulation: Sign appearance Damipoli 2,Damipoli used to determine the display position of the sign in the sign pool,-1,999999999,15300,s32,1,%d,s32,None
+Sign accumulation: Sign appearance Damipoli 3,Damipoli used to determine the display position of the sign in the sign pool,-1,999999999,15400,s32,1,%d,s32,None
+Rider's fall damage multiplier correction_for PC,Rider's fall damage multiplier correction_for PC,0,1,16000,f32,0.01,%f,f32,None
+Rider's Fall Damage Multiplier Correction_for NPCs,Rider's Fall Damage Multiplier Correction_for NPCs,0,1,16100,f32,0.01,%f,f32,None
+Special effect ID when creating the old man sign of yellow robe,Special effect ID when creating the old man sign of yellow robe,-1,999999999,16200,s32,1,%d,s32,None
+Defeated soldier activation distance,Defeated soldier activation distance,0,999,16300,f32,1,%f,f32,None
+Permission to use defeated soldier items_Special effects for PC,Permission to use defeated soldier items_Special effects for PC,-1,999999999,16400,s32,1,%d,s32,None
+Activate defeated soldiers_Special effects for defeated soldier characters,Activate defeated soldiers_Special effects for defeated soldier characters,-1,999999999,16500,s32,1,%d,s32,None
+Defeated soldiers_Special effects for subjugation targets,Defeated soldiers_Special effects for subjugation targets,-1,999999999,16600,s32,1,%d,s32,None
+Defeated soldiers_Special effects after hostility,Defeated soldiers_Special effects after hostility,-1,999999999,16700,s32,1,%d,s32,None
+Time for a buddy to warp a player with a ray block [s],Time for a buddy to warp a player with a ray block [s],0,999.9,17000,f32,0.1,%d,f32,None
+Distance at which the buddy warps the player at a straight line distance [m],Distance at which the buddy warps the player at a straight line distance [m],0,999.9,17100,f32,0.1,%d,f32,None
+Time to judge that the buddy is stuck in the pass movement [s],Judgment time when the buddy is stuck in the pass movement [s],0,999.9,17200,f32,0.1,%d,f32,None
+Distance [m] that the buddy considers to be clogged with a pass move,Distance [m] that the buddy considers to be clogged with a pass move,0,999.9,17300,f32,0.1,%d,f32,None
+[Morning] AI visibility magnification,[Morning] AI visibility magnification,0,1,20000,f32,0.01,%f,f32,None
+[Day] AI visibility magnification,[Day] AI visibility magnification,0,1,20100,f32,0.01,%f,f32,None
+Time when the buddy and the player collide and start slipping through [s],Time when the buddy and the player collide and start slipping through [s],0,999.9,30300,f32,0.1,%f,f32,None
+[Evening] AI visibility magnification,[Evening] AI visibility magnification,0,1,20300,f32,0.01,%f,f32,None
+[Night] AI visibility magnification,[Night] AI visibility magnification,0,1,20400,f32,0.01,%f,f32,None
+[Midnight] AI visibility magnification,[Midnight] AI visibility magnification,0,1,20500,f32,0.01,%f,f32,None
+Reserve,(dummy8),,,70001,dummy8,,%f,dummy8,None
+AI visibility magnification_place where the sun cannot be seen (bright),AI visibility magnification_place where the sun cannot be seen (bright),0,1,20700,f32,0.01,%f,f32,None
+AI visibility magnification_place where the sun cannot be seen (darkness),AI visibility magnification_place where the sun cannot be seen (darkness),0,1,20800,f32,0.01,%f,f32,None
+AI visibility magnification_place where the sun cannot be seen (total darkness),AI visibility magnification_place where the sun cannot be seen (total darkness),0,1,20900,f32,0.01,%f,f32,None
+Stealth view angle attenuation factor_ crouching without stealth effect,Stealth view angle attenuation factor_ crouching without stealth effect,0,100,14310,f32,0.1,%f,f32,None
+Stealth view angle attenuation rate_Standing in stealth ray shielded area,Stealth view angle attenuation rate_Standing in stealth ray shielded area,0,100,14320,f32,0.1,%f,f32,None
+Stealth visibility angle attenuation _ crouching in stealth ray shielded area,Stealth visibility angle attenuation _ crouching in stealth ray shielded area,0,100,14330,f32,0.1,%f,f32,None
+Stealth view angle attenuation rate_Standing within stealth hit,Stealth view angle attenuation rate_Standing within stealth hit,0,100,14340,f32,0.1,%f,f32,None
+Stealth field of view angle attenuation rate_ crouching within stealth hit,Stealth view angle attenuation rate_ crouching within stealth hit,0,100,14350,f32,0.1,%f,f32,None
+Stealth view angle attenuation rate_Stealth ray shielded area + standing in stealth hit,Stealth view angle attenuation rate_Stealth ray shielded area + standing in stealth hit,0,100,14360,f32,0.1,%f,f32,None
+Stealth view angle attenuation rate_Stealth ray shielded area + crouching in stealth hit,Stealth view angle attenuation rate_Stealth ray shielded area + crouching in stealth hit,0,100,14370,f32,0.1,%f,f32,None
+Weather lottery conditions_morning_start time_hour,Weather lottery conditions_morning_start time_hour (SEQ09371),0,23,30000,u8,1,%d,u8,None
+Weather lottery conditions_morning_start time_minutes,Weather lottery conditions_morning_start time_minutes (SEQ09371),0,59,30001,u8,1,%d,u8,None
+Weather lottery conditions_day_start time_hour,Weather lottery conditions_day_start time_hour (SEQ09371),0,23,30002,u8,1,%d,u8,None
+Weather lottery conditions_day_start time_minutes,Weather lottery conditions_day_start time_minutes (SEQ09371),0,59,30003,u8,1,%d,u8,None
+Weather lottery conditions_evening_start time_hour,Weather lottery conditions_evening_start time_hour (SEQ09371),0,23,30004,u8,1,%d,u8,None
+Weather lottery conditions_evening_start time_minutes,Weather lottery conditions_evening_start time_minutes (SEQ09371),0,59,30005,u8,1,%d,u8,None
+Weather lottery conditions_night_start time_hour,Weather lottery conditions_night_start time_hour (SEQ09371),0,23,30006,u8,1,%d,u8,None
+Weather lottery conditions_night_start time_minutes,Weather lottery conditions_night_start time_minutes (SEQ09371),0,59,30007,u8,1,%d,u8,None
+Weather lottery conditions_dawn_start time_hour,Weather lottery conditions_dawn_start time_hour (SEQ09371),0,23,30008,u8,1,%d,u8,None
+Weather lottery conditions_dawn_start time_minutes,Weather lottery conditions_dawn_start time_minutes (SEQ09371),0,59,30009,u8,1,%d,u8,None
+Weather lottery conditions_reservation,(dummy8),,,70002,dummy8,,,dummy8,None
+Player Light intensity scale change time zone_start time_hour,Player Light Intensity Scale Change Time Zone_Start Time_Hour (SEQ16562),0,23,30101,u8,1,%d,u8,None
+Player Light intensity scale change time zone_start time_minute,Player Light Intensity Scale Change Time Zone_Start Time_Minute (SEQ16562),0,59,30102,u8,1,%d,u8,None
+Player Light intensity scale change time zone_end time_hour,Player Light intensity scale change time zone_end time_hour (SEQ16562),0,23,30103,u8,1,%d,u8,None
+Player Light intensity scale change time zone_end time_minute,Player Light Intensity Scale Change Time Zone_End Time_Minute (SEQ16562),0,59,30104,u8,1,%d,u8,None
+Time zone Player light intensity scale change value,Time zone Player light intensity scale change value (SEQ16562),0.1,10,30120,f32,0.01,%f,f32,None
+Large Rune: Greater Demon Buddy Summon Buddy Special Effect ID,Large Rune: Greater Demon Buddy Summon Buddy Special Effect ID,-1,999999999,30200,s32,1,%d,s32,None
+Large Rune: Special effect ID given to PC when summoning Greater Demon Buddy,Large Rune: Special effect ID given to PC when summoning Greater Demon Buddy,-1,999999999,30201,s32,1,%d,s32,None
+Base Bonfire Warp ID,Base bonfire bonfire warp parameter ID,0,999999999,40000,s32,1,%d,s32,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 11 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10110,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 12 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10120,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 13 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10130,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 14 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10140,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 15 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10150,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 16 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10160,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 17 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10170,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 18 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10180,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 19 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10190,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 20 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10200,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 21 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10210,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 22 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10220,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 23 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10230,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 24 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10240,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 25 White,Maximum weapon enhancement level factor for whether to apply level sync,0,25,10250,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 11 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11110,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 12 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11120,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 13 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11130,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 14 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11140,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 15 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11150,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 16 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11160,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 17 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11170,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 18 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11180,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 19 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11190,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 20 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11200,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 21 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11210,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 22 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11220,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 23 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11230,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 24 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11240,u8,1,%d,u8,None
+Level Sync Applicability Judgment Maximum Weapon Enhancement Level Coefficient 25 Red,Maximum weapon enhancement level factor for whether to apply level sync,0,25,11250,u8,1,%d,u8,None
+Menu time zone display_morning_start time_hour,Menu time zone display_morning_start time_hour (SEQ22108),0,23,30150,u8,1,%d,u8,None
+Menu time zone display_morning_start time_minute,Menu time zone display_morning_start time_minute (SEQ22108),0,59,30151,u8,1,%d,u8,None
+Menu time zone display_day 1_start time_hour,Menu time zone display_day 1_start time_hour (SEQ22108),0,23,30152,u8,1,%d,u8,None
+Time zone display for menu_Lunch 1_Start time_Minute,Menu time zone display_day 1_start time_minute (SEQ22108),0,59,30153,u8,1,%d,u8,None
+Menu time zone display_day 2_start time_hour,Menu time zone display_day 2_start time_hour (SEQ22108),0,23,30154,u8,1,%d,u8,None
+Time zone display for menu_Lunch 2_Start time_Minute,Time zone display for menu_Lunch 2_Start time_Minute (SEQ22108),0,59,30155,u8,1,%d,u8,None
+Menu time zone display_evening_start time_hour,Menu time zone display_evening_start time_hour (SEQ22108),0,23,30156,u8,1,%d,u8,None
+Menu time zone display_evening_start time_minute,Menu time zone display_evening_start time_minute (SEQ22108),0,59,30157,u8,1,%d,u8,None
+Menu time zone display_night_start time_hour,Menu time zone display_night_start time_hour (SEQ22108),0,23,30158,u8,1,%d,u8,None
+Menu time zone display_night_start time_minute,Menu time zone display_night_start time_minute (SEQ22108),0,59,30159,u8,1,%d,u8,None
+Menu time zone display_midnight_start time_hour,Menu time zone display_midnight_start time_hour (SEQ22108),0,23,30160,u8,1,%d,u8,None
+Menu time zone display_midnight_start time_minute,Menu time zone display_midnight_start time_minute (SEQ22108),0,59,30161,u8,1,%d,u8,None
+Network PC threat level notification_threat level,Network PC Threat Level Notification_Threat Level (SEQ21950),0,31,50020,u16,1,%d,u16,None
+Network PC threat level notification_notification distance [m],Network PC Threat Level Notification_Notification Distance [m] (SEQ21950),0,999.9,50000,f32,0.1,%f,f32,None
+Network PC threat level notification_notification end distance [m],Network PC threat level notification_notification end distance [m] (SEQ21950),0,999.9,50010,f32,0.1,%f,f32,None
+Default extended distance of map point discovery area [m],The default extended distance for the map point discovery area. When the "discovery area overwrite area" of the map point is invalid (-1), the discovery area is generated by expanding from its own area. Its extended distance,0,999.9,41000,f32,0.1,%.1f,f32,None
+Map point participation area default extended distance [m],The default extended distance for the map point's entry area. When the "participation area overwrite area" of the map point is invalid (-1), the participation area is generated by expanding from its own area. Its extended distance,0,999.9,41010,f32,0.1,%.1f,f32,None
+Network PC threat level notification_Notification time [seconds],Network PC Threat Level Notification_Notification Time [seconds] (SEQ21950),0,65535,50030,u16,1,%d,u16,None
+Number of "re-invasion items" to be given at the time of intrusion: Intrusion item_Greater system (ID102),Number of "re-invasion items" to be given at the time of intrusion: Intrusion item_Greater system (ID102),0,9999,5210,u16,1,%d,u16,None
+Tool item ID of "re-invasion item" given at the time of intrusion: Invasion item_Greater system (ID102),Tool item ID of "re-invasion item" given at the time of intrusion: Invasion item_Greater system (ID102),-1,999999999,5200,s32,1,%d,s32,None
+Big jump to get off _ sky SFXID,Big jump to get off _ sky SFXID,-1,999999999,60000,s32,1,%d,s32,None
+Big jump to get off_SFX base point offset in the sky,Big jump to get off_SFX base point offset in the sky,0,999,60100,f32,0.1,%f,f32,None
+In the big jump area to get off _ Special effect ID for PC horse,In the big jump area to get off _ Special effect ID for PC horse,-1,999999999,60200,s32,1,%d,s32,None
+Special effect ID applied to _PC in the large jump area to get off,Special effect ID for _PC in the big jump area to get off,-1,999999999,60300,s32,1,%d,s32,None
+Main menu_Item creation_Open event flag,Main menu → Event flag to unlock the item creation menu,0,-294967297,42000,u32,1,%u,u32,None
+Main menu_message_open event flag,Main menu → Event flag to unlock the message menu,0,-294967297,42010,u32,1,%u,u32,None
+Number of "re-invasion items" to be given at the time of intrusion: Intrusion item_Greater disposable (ID111),Number of "re-invasion items" to be given at the time of intrusion: Intrusion item_Greater disposable (ID111),0,9999,5230,u16,1,%d,u16,None
+Number of "re-invasion items" to be given at the time of invasion: Invasion item_Volcano building system (ID112),Number of "re-invasion items" to be given at the time of invasion: Invasion item_Volcano building system (ID112),0,9999,5250,u16,1,%d,u16,None
+Tool item ID of "re-invasion item" given at the time of intrusion: Invasion item_Greater disposable (ID111),Tool item ID of "re-invasion item" given at the time of intrusion: Invasion item_Greater disposable (ID111),-1,999999999,5220,s32,1,%d,s32,None
+Tool item ID of "re-invasion item" given at the time of invasion: Invasion item_Volcano building system (ID112),Tool item ID of "re-invasion item" given at the time of invasion: Invasion item_Volcano building system (ID112),-1,999999999,5240,s32,1,%d,s32,None
+Time to disable action button operation by holding down the action button,Time to disable action button operation by holding down the action button,-1,999,14390,f32,0.1,%f,f32,None
+Clear bonus acquisition delay time after boss defeat processing,Clear bonus acquisition delay time after boss defeat processing,0,99.9,70000,f32,0.1,%f,f32,None
+[Unused] (Refer to SEQ25048) Distance from the PC to determine the bonfire invalidation by the enemy [m],[Unused] (Refer to SEQ25048) Distance from PC to bonfire that determines invalidation of bonfire by enemy [m] (0 or less: PC distance is not checked. Checked at all distances),-1,99999,40001,f32,0.1,%f,f32,None
+reserve,(dummy8),,,70003,dummy8,,,dummy8,None
