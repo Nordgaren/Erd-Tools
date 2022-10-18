@@ -48,6 +48,7 @@ D0:EquipParamProtector
 790:FaceParam
 7D8:FaceRangeParam
 2CF8:FeTextEffectParam
+3448:FinalDamageRateParam
 1510:FootSfxParam
 8B0:GameAreaParam
 2830:GameSystemCommonParam
@@ -59,7 +60,7 @@ D0:EquipParamProtector
 1240:GrassTypeParam
 1288:GrassTypeParam_Lv1:GrassTypeParam
 12D0:GrassTypeParam_Lv2:GrassTypeParam
-3448:HitEffectSeParam
+3490:HitEffectSeParam
 F70:HitEffectSfxConceptParam
 FB8:HitEffectSfxParam
 9D0:HitMtrlParam

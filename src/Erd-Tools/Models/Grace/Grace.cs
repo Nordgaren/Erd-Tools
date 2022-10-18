@@ -35,7 +35,6 @@ namespace Erd_Tools.Models
 
         public static void GetContinents()
         {
-            XmlSerializer xmlSerializer = new(typeof(List<Continent>));
             List<Continent>? c = Util.DeserializeXml<List<Continent>>(@"Resources\Systems\SitesOfGrace.xml");
             All = c ?? throw new NullReferenceException("Continent list is null."); 
         }

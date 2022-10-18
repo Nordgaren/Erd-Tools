@@ -35,7 +35,7 @@
         {
             MaximumNormalItems = 0x414,
             InventoryCount = 0x420,
-            MaximumSpecialItems = 0x424, 
+            MaximumSpecialItems = 0x424,
             InventoryLength = 0x488,
             HeldNormalItems = 0x450,
             HeldSpecialItems = 0x460
@@ -175,27 +175,27 @@
             /// <summary>
             /// int EnemyHandle
             /// </summary>
-            EnemyHandle = 0x8, 
+            EnemyHandle = 0x8,
             /// <summary>
             /// int EnemyArea
             /// </summary>
-            EnemyArea = 0xC,   
+            EnemyArea = 0xC,
             /// <summary>
             /// IntPtr EnemyCtrl
             /// </summary>
-            EnemyCtrl = 0x58,   
+            EnemyCtrl = 0x58,
             /// <summary>
             /// int NpcParamID
             /// </summary>
-            NpcParam = 0x60,  
+            NpcParam = 0x60,
             /// <summary>
             /// int ModelNumber
             /// </summary>
-            ModelNumber = 0x64, 
+            ModelNumber = 0x64,
             /// <summary>
             /// int ChrType
             /// </summary>
-            ChrType = 0x68,     
+            ChrType = 0x68,
             /// <summary>
             /// byte TeamType
             /// </summary>
@@ -203,7 +203,7 @@
             /// <summary>
             /// IntPtr ModuleBase
             /// </summary>
-            ModuleBase = 0x190 
+            ModuleBase = 0x190
         }
 
         public enum ModuleBase
@@ -219,7 +219,7 @@
             /// <summary>
             /// IntPtr StaggerData
             /// </summary>
-            StaggerData = 0x40,   
+            StaggerData = 0x40,
             /// <summary>
             /// IntPtr PhysicsData
             /// </summary>
@@ -235,7 +235,7 @@
             /// <summary>
             /// UnicodeString[16] Model
             /// </summary>
-            Model = 0xC8, 
+            Model = 0xC8,
             /// <summary>
             /// int Hp
             /// </summary>
@@ -243,7 +243,7 @@
             /// <summary>
             /// int HpMax
             /// </summary>
-            HpMax = 0x140,  
+            HpMax = 0x140,
             /// <summary>
             /// int HpBase
             /// </summary>
@@ -251,23 +251,23 @@
             /// <summary>
             /// int Fp
             /// </summary>
-            Fp = 0x148, 
+            Fp = 0x148,
             /// <summary>
             /// int FpMax
             /// </summary>
-            FpMax = 0x14C, 
+            FpMax = 0x14C,
             /// <summary>
             /// int FpBase
             /// </summary>
-            FpBase = 0x150, 
+            FpBase = 0x150,
             /// <summary>
             /// int Stam
             /// </summary>
-            Stam = 0x154, 
+            Stam = 0x154,
             /// <summary>
             /// int StamMax
             /// </summary>
-            StamMax = 0x158, 
+            StamMax = 0x158,
             /// <summary>
             /// int StamBase
             /// </summary>
@@ -275,7 +275,7 @@
             /// <summary>
             /// UnicodeString[20]
             /// </summary>
-            Name = 0x1A0 
+            Name = 0x1A0
         }
 
         public enum ResistenceData
@@ -283,7 +283,7 @@
             /// <summary>
             /// int Poison
             /// </summary>
-            Poison = 0x10,  
+            Poison = 0x10,
             /// <summary>
             /// int Rot
             /// </summary>
@@ -291,47 +291,47 @@
             /// <summary>
             /// int Bleed
             /// </summary>
-            Bleed = 0x18, 
+            Bleed = 0x18,
             /// <summary>
             /// int Blight
             /// </summary>
-            Blight = 0x1C, 
+            Blight = 0x1C,
             /// <summary>
             /// int Frost
             /// </summary>
-            Frost = 0x20,     
+            Frost = 0x20,
             /// <summary>
             /// int Sleep
             /// </summary>
-            Sleep = 0x24,     
+            Sleep = 0x24,
             /// <summary>
             /// int Madness
             /// </summary>
-            Madness = 0x28,   
+            Madness = 0x28,
             /// <summary>
             /// int PoisonMax
             /// </summary>
-            PoisonMax = 0x2C, 
+            PoisonMax = 0x2C,
             /// <summary>
             /// int RotMax
             /// </summary>
-            RotMax = 0x30,    
+            RotMax = 0x30,
             /// <summary>
             /// int BleedMax
             /// </summary>
-            BleedMax = 0x34,  
+            BleedMax = 0x34,
             /// <summary>
             /// int BlightMax
             /// </summary>
-            BlightMax = 0x38, 
+            BlightMax = 0x38,
             /// <summary>
             /// int FrostMax
             /// </summary>
-            FrostMax = 0x3C, 
+            FrostMax = 0x3C,
             /// <summary>
             /// int SleepMax
             /// </summary>
-            SleepMax = 0x40,  
+            SleepMax = 0x40,
             /// <summary>
             /// int MadnessMax
             /// </summary>
@@ -339,59 +339,59 @@
             /// <summary>
             /// float PoisonMod
             /// </summary>
-            PoisonMod = 0x80, 
+            PoisonMod = 0x80,
             /// <summary>
             /// float RotMod
             /// </summary>
-            RotMod = 0x84,    
+            RotMod = 0x84,
             /// <summary>
             /// float BleedMod
             /// </summary>
-            BleedMod = 0x88,  
+            BleedMod = 0x88,
             /// <summary>
             /// float BlightMod
             /// </summary>
-            BlightMod = 0x8C, 
+            BlightMod = 0x8C,
             /// <summary>
             /// float FrostMod
             /// </summary>
-            ForstMod = 0x90,  
+            ForstMod = 0x90,
             /// <summary>
             /// float SleepMod
             /// </summary>
-            SleepMod = 0x94, 
+            SleepMod = 0x94,
             /// <summary>
             /// float MadnessMod
             /// </summary>
-            MadnessMod = 0x98, 
+            MadnessMod = 0x98,
             /// <summary>
             /// float PoisonMul
             /// </summary>
-            PoisonMul = 0x9C,  
+            PoisonMul = 0x9C,
             /// <summary>
             /// float RotMul
             /// </summary>
-            RotMul = 0xA0,  
+            RotMul = 0xA0,
             /// <summary>
             /// float BleedMul
             /// </summary>
-            BleedMul = 0xA4,  
+            BleedMul = 0xA4,
             /// <summary>
             /// float BlightMul
             /// </summary>
-            BlightMul = 0xA8, 
+            BlightMul = 0xA8,
             /// <summary>
             /// float FrostMul
             /// </summary>
-            ForstMul = 0xAC,  
+            ForstMul = 0xAC,
             /// <summary>
             /// float SleepMul
             /// </summary>
-            SleepMul = 0xB0, 
+            SleepMul = 0xB0,
             /// <summary>
             /// float MadnessMul
             /// </summary>
-            MadnessMul = 0xB4, 
+            MadnessMul = 0xB4,
         }
 
         public enum StaggerData
@@ -407,7 +407,7 @@
             /// <summary>
             /// float ResetTimer
             /// </summary>
-            ResetTime = 0x1C   
+            ResetTime = 0x1C
         }
 
         public enum ActionRequest
@@ -418,7 +418,7 @@
             CurrentAnimation = 0x90
         }
 
-        public const int PlayerInsOffset = 0x18468;
+        public const int PlayerInsOffset = 0x1E508;
 
         public enum PlayerIns
         {
@@ -442,5 +442,6 @@
         public const string CSLuaEventManagerAoB = "48 83 3D ? ? ? ? 00 48 8B F9 0F 84 ? ? ? ? 48";
         public const string LuaWarp_01AoB = "C3 ? ? ? ? ? ? 57 48 83 EC ? 48 8B FA 44";
 
+        public const string GetChrInsFromHandle = "48 83 EC 28 E8 17 FF FF FF 48 85 C0 74 08 48 8B 00 48 83 C4 28 C3";
     }
 }

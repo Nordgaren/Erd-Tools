@@ -112,10 +112,21 @@ namespace Erd_Tools.Utils
 
         public static T? DeserializeXml<T>(string filePath)
         {
-            var xml = new XmlDocument();
             TextReader textReader = new StreamReader(@$"{ExeDir}/{filePath}");
             XmlSerializer serializer = new(typeof(T));
             return (T?)serializer.Deserialize(textReader);
+        }
+
+        public static void SerializeXml<T>(T obj,string filePath)
+        {
+            XmlSerializer ser = new(typeof(T));
+            XmlWriterSettings settings = new() { Indent = true };
+            TextWriter writer = new StreamWriter(filePath);
+
+            using (XmlWriter xw = XmlWriter.Create(writer, settings))
+            {
+                ser.Serialize(xw, obj);
+            }
         }
     }
 }

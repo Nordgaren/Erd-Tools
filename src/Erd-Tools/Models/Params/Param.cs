@@ -49,27 +49,35 @@ namespace Erd_Tools.Models
                 throw new InvalidOperationException($"Incorrect Param Pointer: {paramType} should be {Type}");
 
             Bytes = Pointer.ReadBytes(0x0, (uint)Length);
+            int endOfParam = Length + Type.Length + 1;
 
             int tableLength = BitConverter.ToInt32(Bytes ,(int)Offsets.Param.TableLength);
-            int Param = 0x40;
-            int ParamID = 0x0;
-            int ParamOffset = 0x8;
-            int nextParam = 0x18;
+            int param = 0x40;
+            int paramID = 0x0;
+            int paramOffset = 0x8;
+            int nameOffset = 0x10;
+            int paramSize = 0x18;
 
-            while (Param < tableLength)
+            while (param < tableLength)
             {
-                int itemID = BitConverter.ToInt32(Bytes, Param + ParamID);
-                int itemParamOffset = BitConverter.ToInt32(Bytes, Param + ParamOffset);
-                string name = $"{itemID} - ";
+                int itemID = BitConverter.ToInt32(Bytes, param + paramID);
+                int itemParamOffset = BitConverter.ToInt32(Bytes, param + paramOffset);
+                string name = string.Empty;
                 if (NameDictionary.ContainsKey(itemID))
                     name += $"{NameDictionary[itemID]}";
 
                 if (!OffsetDict.ContainsKey(itemID))
                     OffsetDict.Add(itemID, itemParamOffset);
 
+                int runtimeOffset = BitConverter.ToInt32(Bytes, param + nameOffset);
+                
+                if (runtimeOffset != 0)
+                    name = Pointer.ReadString(runtimeOffset, Encoding.Unicode, 0x100);
+
+
                 Rows.Add(new(this ,name, itemID, itemParamOffset));
 
-                Param += nextParam;
+                param += paramSize;
             }
         }
         private void BuildNameDictionary()
@@ -118,7 +126,7 @@ namespace Erd_Tools.Models
             public Row(Param param, string name, int id, int offset)
             {
                 Param = param;
-                Name = name;
+                Name = $"{id} - {name}";
                 ID = id;
                 DataOffset = offset;
             }

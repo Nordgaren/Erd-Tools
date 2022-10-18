@@ -1830,6 +1830,8 @@
     <EmbeddedResource Include="Assembly\IsEventFlag.asm" />
     <EmbeddedResource Include="Assembly\SetEventFlag.asm" />
     <EmbeddedResource Include="Assembly\Warp.asm" />
+    <None Remove="Assembly\GetChrInsByHandle.asm" />
+    <EmbeddedResource Include="Assembly\GetChrInsByHandle.asm" />
   </ItemGroup>
 
   <ItemGroup>
