@@ -2193,9 +2193,9 @@
       <Increment>0.1</Increment>
       <SortID>40001</SortID>
     </Field>
-    <Field Def="dummy8 reserved_124[48]">
-      <DisplayName>reserve - 予約</DisplayName>
-      <Description>(dummy8) - (dummy8)</Description>
+    <Field Def="dummy8 reserved_124[128]">
+      <DisplayName>予約</DisplayName>
+      <Description>(dummy8)</Description>
       <SortID>70003</SortID>
     </Field>
   </Fields>

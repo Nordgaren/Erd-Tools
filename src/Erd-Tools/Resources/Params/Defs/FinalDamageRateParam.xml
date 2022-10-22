@@ -9,58 +9,30 @@
     <Field Def="f32 physrate">
       <DisplayName>Physical Rate</DisplayName>
       <Description>Unk</Description>
-      <Minimum>0</Minimum>
-      <Maximum>1E+09</Maximum>
-      <Increment>0.1</Increment>
-      <SortID>100</SortID>
     </Field>
     <Field Def="f32 magrate">
       <DisplayName>Magic Rate</DisplayName>
       <Description>Unk</Description>
-      <Minimum>0</Minimum>
-      <Maximum>1E+09</Maximum>
-      <Increment>0.1</Increment>
-      <SortID>100</SortID>
     </Field>
     <Field Def="f32 firerate">
       <DisplayName>Fire Rate</DisplayName>
       <Description>Unk</Description>
-      <Minimum>0</Minimum>
-      <Maximum>1E+09</Maximum> 
-      <Increment>0.1</Increment>
-      <SortID>200</SortID>
     </Field>
     <Field Def="f32 thunrate">
       <DisplayName>Lightning Rate</DisplayName>
       <Description>Unk</Description>
-      <Minimum>0</Minimum>
-      <Maximum>1E+09</Maximum>
-      <Increment>0.1</Increment>
-      <SortID>300</SortID>
     </Field>
     <Field Def="f32 darkrate">
       <DisplayName>Dark Rate</DisplayName>
       <Description>Unk</Description>
-      <Minimum>0</Minimum>
-      <Maximum>1E+09</Maximum>
-      <Increment>0.1</Increment>
-      <SortID>400</SortID>
     </Field>
     <Field Def="f32 staminarate">
       <DisplayName>Stamina Rate</DisplayName>
       <Description>Unk</Description>
-      <Minimum>0</Minimum>
-      <Maximum>1E+09</Maximum>
-      <Increment>0.1</Increment>
-      <SortID>500</SortID>
     </Field>
     <Field Def="f32 sarate">
       <DisplayName>Super Armor Rate</DisplayName>
       <Description>Unk</Description>
-      <Minimum>0</Minimum>
-      <Maximum>1E+09</Maximum>
-      <Increment>0.1</Increment>
-      <SortID>600</SortID>
     </Field>
   </Fields>
 </PARAMDEF>

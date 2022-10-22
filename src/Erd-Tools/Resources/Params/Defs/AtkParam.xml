@@ -1396,5 +1396,9 @@
       <DisplayName>pad - pad</DisplayName>
       <SortID>12005</SortID>
     </Field>
+    <Field Def="s32 finalDamageRateId">
+    </Field>
+    <Field Def="dummy8 pad7[12]">
+    </Field>
   </Fields>
 </PARAMDEF>
