@@ -11,10 +11,13 @@ namespace Erd_Tools.Models
         public byte[] Bytes { get;  }
         public string Name { get;  }
         public int GaItemHandle { get; }
+        public uint RawItemId { get; }
         public int ItemID { get; }
         public Category Category { get; }
         public int Quantity {  get; }
         public int DisplayID { get; }
+
+        private const bool LOL = uint.MaxValue > 0xF0000000;
 
         public InventoryEntry(PHPointer pointer, byte[] bytes, ErdHook hook)
         {
@@ -23,16 +26,11 @@ namespace Erd_Tools.Models
             Name = "Unknown";
             GaItemHandle = BitConverter.ToInt32(Bytes, (int)Offsets.InventoryEntry.GaItemHandle);
 
-            byte[] buffer = new byte[4];
-            Array.Copy(Bytes, (int)Offsets.InventoryEntry.ItemID, buffer, 0, buffer.Length);
-            buffer[3] &= 0xF;
-            ItemID = BitConverter.ToInt32(buffer);
-
-            byte cat = Bytes[(int)Offsets.InventoryEntry.ItemCategory];
-            byte mask = 0xF0;
-            cat &= mask;
-            Category =  (Category)(cat * 0x1000000);
-
+            RawItemId = BitConverter.ToUInt32(Bytes, (int)Offsets.InventoryEntry.ItemID);
+            
+            ItemID = (int) (RawItemId & 0x0FFFFFFF);
+            Category = (Category) (RawItemId & 0xF0000000);
+            
             Quantity = BitConverter.ToInt32(Bytes, (int)Offsets.InventoryEntry.Quantity);
 
             DisplayID = BitConverter.ToInt32(Bytes, (int)Offsets.InventoryEntry.DispalyID);

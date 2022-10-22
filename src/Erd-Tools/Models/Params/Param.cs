@@ -63,17 +63,16 @@ namespace Erd_Tools.Models
                 int itemID = BitConverter.ToInt32(Bytes, param + paramID);
                 int itemParamOffset = BitConverter.ToInt32(Bytes, param + paramOffset);
                 string name = string.Empty;
-                if (NameDictionary.ContainsKey(itemID))
-                    name += $"{NameDictionary[itemID]}";
-
+             
                 if (!OffsetDict.ContainsKey(itemID))
                     OffsetDict.Add(itemID, itemParamOffset);
 
                 int runtimeOffset = BitConverter.ToInt32(Bytes, param + nameOffset);
                 
-                if (runtimeOffset != 0)
-                    name = Pointer.ReadString(runtimeOffset, Encoding.Unicode, 0x100);
-
+                name = Pointer.ReadString(runtimeOffset, Encoding.Unicode, 0x100);
+                
+                if (string.IsNullOrWhiteSpace(name) && NameDictionary.ContainsKey(itemID))
+                    name = NameDictionary[itemID];
 
                 Rows.Add(new(this ,name, itemID, itemParamOffset));
 

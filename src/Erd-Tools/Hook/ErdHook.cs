@@ -42,7 +42,6 @@ namespace Erd_Tools
         private PHPointer GameDataMan { get; set; }
         private PHPointer GameMan { get; set; }
         private PHPointer PlayerGameData { get; set; }
-        private PHPointer ClassWhereTheNameIsStored { get; set; }
         private PHPointer PlayerInventory { get; set; }
         private PHPointer HeldNormalItemsPtr { get; set; }
         private PHPointer HeldSpecialItemsPtr { get; set; }
@@ -83,16 +82,16 @@ namespace Erd_Tools
 
             GameDataMan = RegisterRelativeAOB(Offsets.GameDataManAoB, Offsets.RelativePtrAddressOffset,
                 Offsets.RelativePtrInstructionSize, 0x0);
-            ClassWhereTheNameIsStored =
-                CreateChildPointer(GameDataMan, (int)Offsets.GameDataMan.ClassWhereTheNameIsStored);
+
             GameMan = RegisterRelativeAOB(Offsets.GameManAoB, Offsets.RelativePtrAddressOffset,
                 Offsets.RelativePtrInstructionSize, 0x0);
-            PlayerGameData = CreateChildPointer(GameDataMan, Offsets.PlayerGameData);
+            PlayerGameData = CreateChildPointer(GameDataMan, (int)Offsets.GameDataMan.PlayerGameData);
             PlayerInventory = CreateChildPointer(PlayerGameData, Offsets.EquipInventoryDataOffset,
                 Offsets.PlayerInventoryOffset);
-            HeldNormalItemsPtr = CreateChildPointer(PlayerGameData, (int)Offsets.PlayerGameDataStruct.HeldNormalItems);
+            HeldNormalItemsPtr = CreateChildPointer(PlayerGameData, 
+                (int)Offsets.PlayerGameData.HeldNormalItems);
             HeldSpecialItemsPtr =
-                CreateChildPointer(PlayerGameData, (int)Offsets.PlayerGameDataStruct.HeldSpecialItems);
+                CreateChildPointer(PlayerGameData, (int)Offsets.PlayerGameData.HeldSpecialItems);
 
             SoloParamRepository = RegisterRelativeAOB(Offsets.SoloParamRepositoryAoB, Offsets.RelativePtrAddressOffset,
                 Offsets.RelativePtrInstructionSize, 0x0);
@@ -147,6 +146,7 @@ namespace Erd_Tools
             IntPtr worldChrMan = WorldChrMan.Resolve();
             IntPtr playeIns = PlayerIns.Resolve();
             IntPtr warp = LuaWarp_01AoB.Resolve();
+            IntPtr inv = PlayerInventory.Resolve();
             ulong paramOffset =
                 (ulong)(paramss.ToInt64() -
                         Process.MainModule.BaseAddress
@@ -423,8 +423,8 @@ namespace Erd_Tools
 
         #region Inventory
 
-        public int MaxNormalItems => PlayerGameData.ReadInt32((int)Offsets.PlayerGameDataStruct.MaximumNormalItems);
-        public int MaxSpecialItems => PlayerGameData.ReadInt32((int)Offsets.PlayerGameDataStruct.MaximumSpecialItems);
+        public int MaxNormalItems => PlayerGameData.ReadInt32((int)Offsets.PlayerGameData.MaximumNormalItems);
+        public int MaxSpecialItems => PlayerGameData.ReadInt32((int)Offsets.PlayerGameData.MaximumSpecialItems);
 
         public int HeldNormalItems
         {
@@ -599,9 +599,9 @@ namespace Erd_Tools
         }
 
         List<InventoryEntry>? Inventory;
-        public int InventoryEntries => PlayerGameData.ReadInt32((int)Offsets.PlayerGameDataStruct.InventoryCount);
+        public int InventoryEntries => PlayerGameData.ReadInt32((int)Offsets.PlayerGameData.InventoryCount);
 
-        public int InventoryLength => PlayerGameData.ReadInt32((int)Offsets.PlayerGameDataStruct.InventoryLength);
+        public int InventoryLength => PlayerGameData.ReadInt32((int)Offsets.PlayerGameData.InventoryLength);
         //public int LastInventoryCount => GetInventoryCount();
 
         private int _inventoryLength;
@@ -645,13 +645,13 @@ namespace Erd_Tools
         public string Name
         {
             get =>
-                ClassWhereTheNameIsStored.ReadString((int)Offsets.ClassWhereTheNameIsStored.Name, Encoding.Unicode,
+                PlayerGameData.ReadString((int)Offsets.PlayerGameData.Name, Encoding.Unicode,
                     32);
             set
             {
                 if (value.Length > 16) return;
 
-                ClassWhereTheNameIsStored.WriteString((int)Offsets.ClassWhereTheNameIsStored.Name, Encoding.Unicode,
+                PlayerGameData.WriteString((int)Offsets.PlayerGameData.Name, Encoding.Unicode,
                     32, value);
             }
         }

@@ -1,4 +1,5 @@
-﻿namespace Erd_Tools
+﻿
+namespace Erd_Tools
 {
     public class Offsets
     {
@@ -22,17 +23,12 @@
 
         public enum GameDataMan
         {
-            ClassWhereTheNameIsStored = 0x8
+            PlayerGameData = 0x8
         }
 
-        public enum ClassWhereTheNameIsStored
+        public enum PlayerGameData
         {
-            Name = 0x9C
-        }
-
-        public const int PlayerGameData = 0x8;
-        public enum PlayerGameDataStruct
-        {
+            Name = 0x9C,
             MaximumNormalItems = 0x414,
             InventoryCount = 0x420,
             MaximumSpecialItems = 0x424,
@@ -40,6 +36,7 @@
             HeldNormalItems = 0x450,
             HeldSpecialItems = 0x460
         }
+
         public enum ChrIns
         {
             ArmStyle = 0x328,

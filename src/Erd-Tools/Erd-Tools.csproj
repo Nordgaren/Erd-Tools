@@ -19,6 +19,9 @@
 	  <ItemGroup>
 	    <None Remove="Assembly\IsEventFlag.asm" />
 	    <None Remove="Assembly\Warp.asm" />
+	    <None Update="Resources\Items\Magic.txt">
+	      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	    </None>
 	  </ItemGroup>
 
 	<!--Move below code and uncomment for single file distro-->
@@ -101,9 +104,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
     <None Update="Resources\Items\Goods\UpgradeMaterials.txt">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </None>
-    <None Update="Resources\Items\Magic.txt">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
     <None Update="Resources\Items\Talismans.txt">
