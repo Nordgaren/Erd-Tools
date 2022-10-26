@@ -72,13 +72,23 @@ namespace Erd_Tools.Models
             BallistaBolt = 86
         }
         public int RealID { get; set; }
+        public short IconID { get; set; }
         public bool Unique { get; set; }
         public int SwordArtId { get; set; }
-        public bool Infisible { get; set; }
+        public bool Infusible { get; set; }
         public int MaxUpgrade { get; set; }
         public WeaponType Type { get; set; }
         public AmmoType TypeAmmo { get; set; }
         public Gem DefaultGem { get; set; }
+
+        public Weapon(Weapon source) : base(source) {
+            RealID = source.RealID;
+            Infusible = source.Infusible;
+            IconID = source.IconID;
+            Unique = source.Unique;
+            SwordArtId = source.SwordArtId;
+            Type = source.Type;
+        }
         public Weapon(string config, Category category, bool showIDs) : base(config, category, showIDs)
         {
             RealID = Util.DeleteFromEnd(ID, 4);
@@ -92,7 +102,7 @@ namespace Erd_Tools.Models
             byte bitfield = param.Bytes[param.OffsetDict[ID] + (int)Offsets.EquipParamWeapon.DisableMultiDropShare];
             IsMultiplayerShare = (bitfield & (1 << 0)) == 0;
             IsDrop = (bitfield & (1 << 2)) != 0;
-            Infisible = (bitfield & (1 << 7)) == 0;
+            Infusible = (bitfield & (1 << 7)) == 0;
 
             if (!param.OffsetDict.ContainsKey(ID))
                 return;
@@ -101,7 +111,7 @@ namespace Erd_Tools.Models
             Unique = BitConverter.ToInt32(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamWeapon.MaterialSetID) == 2200;
 
             SwordArtId = BitConverter.ToInt32(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamWeapon.SwordArtsParamId);
-
+            
 
             Type = (WeaponType)BitConverter.ToInt16(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamWeapon.WepType);
             TypeAmmo = (AmmoType)BitConverter.ToInt16(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamWeapon.WepType);
@@ -121,7 +131,9 @@ namespace Erd_Tools.Models
                 if (val != -1)
                     MaxUpgrade++;
             }
-
+            
+            IconID = BitConverter.ToInt16(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamWeapon.IconID);
         }
+        
     }
 }

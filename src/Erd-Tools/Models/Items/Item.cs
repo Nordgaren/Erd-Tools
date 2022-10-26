@@ -26,6 +26,16 @@ namespace Erd_Tools.Models
         public bool IsMultiplayerShare;
         public bool CanAquireFromOtherPlayers => IsDrop && IsMultiplayerShare;
 
+        public Item(Item source) {
+            Name = source.Name;
+            ID = source.ID;
+            ItemCategory = source.ItemCategory;
+            ShowID = source.ShowID;
+            MaxQuantity = source.MaxQuantity;
+            EventID = source.EventID;
+            IsDrop = source.IsDrop;
+            IsMultiplayerShare = source.IsMultiplayerShare;
+        }
         public Item(string config, Category category, bool showID)
         {
             Match itemEntry = ItemEntryRx.Match(config);
