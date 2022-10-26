@@ -49,7 +49,7 @@ namespace Erd_Tools.Models
                 throw new InvalidOperationException($"Incorrect Param Pointer: {paramType} should be {Type}");
 
             Bytes = Pointer.ReadBytes(0x0, (uint)Length);
-            int endOfParam = Length + Type.Length + 1;
+            int endOfParam = (Pointer.ReadInt32((int)Offsets.Param.ParamFileSize) + 0xF) & -0x10;
 
             int tableLength = BitConverter.ToInt32(Bytes ,(int)Offsets.Param.TableLength);
             int param = 0x40;
@@ -68,8 +68,8 @@ namespace Erd_Tools.Models
                     OffsetDict.Add(itemID, itemParamOffset);
 
                 int runtimeOffset = BitConverter.ToInt32(Bytes, param + nameOffset);
-                
-                name = Pointer.ReadString(runtimeOffset, Encoding.Unicode, 0x100);
+                uint maxLen = (uint) (endOfParam - runtimeOffset);
+                name = Pointer.ReadString(runtimeOffset, Encoding.Unicode, maxLen);
                 
                 if (string.IsNullOrWhiteSpace(name) && NameDictionary.ContainsKey(itemID))
                     name = NameDictionary[itemID];

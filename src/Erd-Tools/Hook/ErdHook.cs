@@ -21,6 +21,7 @@ using System.Xml.Serialization;
 using Erd_Tools.Models;
 using Erd_Tools.Models.Items;
 using Erd_Tools.Utils;
+using Erd_Tools.ErdToolsException;
 using Grace = Erd_Tools.Models.Grace;
 
 namespace Erd_Tools
@@ -189,8 +190,8 @@ namespace Erd_Tools
                 if (paramType == paramTypeName) break;
 
                 if (DateTime.Now - start > LoadTimeout)
-                    throw new Exception("Timed out waiting for params to load.\n " +
-                                        "Either param pointer is broken or you need to add more time to the timeout in the settings tab after launching debug tool after the game has fully loaded.");
+                    throw new ParamLoadedTimeoutException("Timed out waiting for params to load.\n " +
+                                                          "Either param pointer is broken or you need to add more time to the timeout in the settings tab after launching debug tool after the game has fully loaded.");
             }
         }
 

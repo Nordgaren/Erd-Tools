@@ -13,12 +13,12 @@ namespace Erd_Tools.Models
         public Chr(PHPointer chrIns, ErdHook hook)
         {
             _hook = hook;
-            _chrIns = _hook.CreateBasePointer(chrIns.Resolve());
-            _chrModuleBase = _hook.CreateBasePointer(_chrIns.ReadIntPtr((int)Offsets.EnemyIns.ModuleBase));
-            _chrData = _hook.CreateBasePointer(_chrModuleBase.ReadIntPtr((int)Offsets.ModuleBase.EnemyData));
-            _chrResistance = _hook.CreateBasePointer(_chrModuleBase.ReadIntPtr((int)Offsets.ModuleBase.ResistenceData));
-            _chrStagger = _hook.CreateBasePointer(_chrModuleBase.ReadIntPtr((int)Offsets.ModuleBase.StaggerData));
-            _chrActionRequest = _hook.CreateBasePointer(_chrModuleBase.ReadIntPtr((int)Offsets.ModuleBase.ActionRequest));
+            _chrIns = chrIns;
+            _chrModuleBase = _hook.CreateChildPointer(_chrIns ,(int)Offsets.EnemyIns.ModuleBase);
+            _chrData = _hook.CreateChildPointer(_chrModuleBase, (int)Offsets.ModuleBase.EnemyData);
+            _chrResistance = _hook.CreateChildPointer(_chrModuleBase, (int)Offsets.ModuleBase.ResistenceData);
+            _chrStagger = _hook.CreateChildPointer(_chrModuleBase,(int)Offsets.ModuleBase.StaggerData);
+            _chrActionRequest = _hook.CreateChildPointer(_chrModuleBase,(int)Offsets.ModuleBase.ActionRequest);
         }
         private PHPointer _chrIns { get; }
 

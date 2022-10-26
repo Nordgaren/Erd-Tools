@@ -64,6 +64,7 @@ namespace Erd_Tools
 
         public enum Param
         {
+            ParamFileSize = -0x10,
             TotalParamLength = 0x0,
             NameOffset = 0x10,
             TableLength = 0x30,
