@@ -1,4 +1,5 @@
 ﻿//Format: Item Category; Weapons = 0x00000000, Armor = 0x10000000, Talismans = 0x20000000, Goods = 0x40000000, Ashes = 0x80000000
+
 0x00000000 false Items/Weapons/MeleeWeapons.txt Melee Weapons
 0x00000000 false Items/Weapons/RangedWeapons.txt Ranged Weapons
 0x80000000 false Items/Gems.txt Gems
@@ -15,20 +16,22 @@
 0x40000000 false Items/Goods/CrystalTears.txt Crystal Tears
 0x40000000 false Items/Goods/Flasks.txt Flasks
 0x40000000 false Items/Goods/Ashes.txt Ashes
-0x40000000 false Items/Goods/Emotes.txt Emotes
 0x40000000 false Items/Goods/NotesPaintings.txt Notes and Paintings
 0x40000000 false Items/Goods/Gestures.txt Gestures
 0x40000000 false Items/Goods/Cookbooks.txt Cookbooks
 0x40000000 false Items/Goods/MerchantItems.txt Merchant Items
 0x40000000 false Items/Magic.txt Magic
+
 //0x10000000 false Items/CutContent/Armor.txt Cut Content Armor
 //0x20000000 false Items/CutContent/Talismans.txt Cut Content Talismans
 
-//Uncomment the lines below for Seamless Coop items
+//Uncomment the lines below for Seamless Coop items.
 //0x40000000 false Items/Goods/SeamlessCoop.txt Seamless Coop
 
 // Uncomment the lines below for Elden Ring Reforged items.
-//0x40000000 false Items/Goods/ERRAshes.txt Elden Ring Reforged: Ashes
-//0x40000000 false Items/Goods/ERRFortunes.txt Elden Ring Reforged: Fortunes
-//0x40000000 false Items/Goods/ERRGoods.txt Elden Ring Reforged: Goods
-//0x40000000 false Items/ERRMagic.txt Elden Ring Reforged: Magic
+//0x10000000 false Items/EldenRingReforged/Armor.txt Elden Ring Reforged: Armor
+//0x40000000 false Items/EldenRingReforged/CrystalTears.txt Elden Ring Reforged: Crystal Tears
+//0x40000000 false Items/EldenRingReforged/Fortunes.txt Elden Ring Reforged: Fortunes
+//0x40000000 false Items/EldenRingReforged/Goods.txt Elden Ring Reforged: Goods
+//0x40000000 false Items/EldenRingReforged/Magic.txt Elden Ring Reforged: Magic
+//0x40000000 false Items/EldenRingReforged/SpiritAshes.txt Elden Ring Reforged: Spirit Ashes
