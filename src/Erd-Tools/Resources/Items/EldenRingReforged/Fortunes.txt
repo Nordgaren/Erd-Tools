@@ -1,3 +1,5 @@
+900000 Oracle's Effigy
+900010 Oracle's Remedy
 900108 Fortune of the Barbarian
 900118 Fortune of the Rogue
 900128 Fortune of the Wizard
@@ -12,3 +14,6 @@
 900218 Fortune of the Houses
 900228 Fortune of the Spellsword
 900238 Fortune of the Godslayers
+900248 Fortune of the Commoner
+900258 Fortune of Haima
+900268 Fortune of the Crucible
