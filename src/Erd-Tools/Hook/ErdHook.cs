@@ -914,7 +914,7 @@ namespace Erd_Tools
                 ForceWeatherParamID = (short)_lastSelectedWeather;
         }
 
-        public void ForceWeather()
+        public async Task ForceWeather()
         {
             ForceWeatherParamID = (short)_selectedWeather;
         }
