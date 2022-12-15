@@ -46,6 +46,7 @@ namespace Erd_Tools
         private PHPointer PlayerInventory { get; set; }
         private PHPointer HeldNormalItemsPtr { get; set; }
         private PHPointer HeldSpecialItemsPtr { get; set; }
+        private PHPointer SoloParamRepositoryPtr { get; set; }
         private PHPointer SoloParamRepository { get; set; }
         private PHPointer CapParamCall { get; set; }
         public PHPointer ItemGive { get; set; }
@@ -94,8 +95,11 @@ namespace Erd_Tools
             HeldSpecialItemsPtr =
                 CreateChildPointer(PlayerGameData, (int)Offsets.PlayerGameData.HeldSpecialItems);
 
+            SoloParamRepositoryPtr = RegisterRelativeAOB(Offsets.SoloParamRepositoryAoB, Offsets.RelativePtrAddressOffset,
+                Offsets.RelativePtrInstructionSize);
             SoloParamRepository = RegisterRelativeAOB(Offsets.SoloParamRepositoryAoB, Offsets.RelativePtrAddressOffset,
                 Offsets.RelativePtrInstructionSize, 0x0);
+            
 
             ItemGive = RegisterAbsoluteAOB(Offsets.ItemGiveAoB);
             MapItemMan = RegisterRelativeAOB(Offsets.MapItemManAoB, Offsets.RelativePtrAddressOffset,
@@ -139,7 +143,8 @@ namespace Erd_Tools
 #if DEBUG
             //LuaWarp_01 = CreateBasePointer(LuaWarp_01AoB.Resolve() + 2);
             IntPtr gameDataMan = GameDataMan.Resolve();
-            IntPtr paramss = SoloParamRepository.Resolve();
+            IntPtr pParam = SoloParamRepositoryPtr.Resolve();
+            IntPtr param = SoloParamRepository.Resolve();
             IntPtr itemGive = ItemGive.Resolve();
             IntPtr mapItemMan = MapItemMan.Resolve();
             IntPtr eventFlagMan = EventFlagMan.Resolve();
@@ -149,9 +154,9 @@ namespace Erd_Tools
             IntPtr warp = LuaWarp_01AoB.Resolve();
             IntPtr inv = PlayerInventory.Resolve();
             ulong paramOffset =
-                (ulong)(paramss.ToInt64() -
+                (ulong)(pParam.ToInt64() -
                         Process.MainModule.BaseAddress
-                            .ToInt64()); //Make sure Solo Param Repository is no being dereferenced.
+                            .ToInt64()); //Make sure Solo Param Repository is no being de-referenced.
 
             IntPtr disableOpenMap = DisableOpenMap.Resolve();
             IntPtr combatCloseMap = CombatCloseMap.Resolve();
