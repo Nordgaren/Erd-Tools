@@ -141,7 +141,6 @@ namespace Erd_Tools
         private async Task ErdHook_OnHooked(object? sender, PHEventArgs e)
         {
 #if DEBUG
-            //LuaWarp_01 = CreateBasePointer(LuaWarp_01AoB.Resolve() + 2);
             IntPtr gameDataMan = GameDataMan.Resolve();
             IntPtr pParam = SoloParamRepositoryPtr.Resolve();
             IntPtr param = SoloParamRepository.Resolve();
@@ -164,7 +163,6 @@ namespace Erd_Tools
 #endif
 
             await AsyncSetup();
-
             //GetInventoryList();
 
             //LogABunchOfStuff();
