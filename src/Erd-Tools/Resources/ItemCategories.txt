@@ -27,11 +27,3 @@
 
 //Uncomment the lines below for Seamless Coop items.
 //0x40000000 false Items/Goods/SeamlessCoop.txt Seamless Coop
-
-// Uncomment the lines below for Elden Ring Reforged items.
-//0x10000000 false Items/EldenRingReforged/Armor.txt Elden Ring Reforged: Armor
-//0x40000000 false Items/EldenRingReforged/CrystalTears.txt Elden Ring Reforged: Crystal Tears
-//0x40000000 false Items/EldenRingReforged/Fortunes.txt Elden Ring Reforged: Fortunes
-//0x40000000 false Items/EldenRingReforged/Goods.txt Elden Ring Reforged: Goods
-//0x40000000 false Items/EldenRingReforged/Magic.txt Elden Ring Reforged: Magic
-//0x40000000 false Items/EldenRingReforged/SpiritAshes.txt Elden Ring Reforged: Spirit Ashes
