@@ -18,8 +18,6 @@ namespace Erd_Tools.Models
         public int Quantity { get; }
         public int DisplayID { get; }
 
-        private const bool LOL = uint.MaxValue > 0xF0000000;
-
         public InventoryEntry(PHPointer pointer, byte[] bytes, ErdHook hook)
         {
             Pointer = pointer;
