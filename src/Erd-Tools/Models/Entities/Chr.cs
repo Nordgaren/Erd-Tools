@@ -16,7 +16,7 @@ namespace Erd_Tools.Models
             _chrIns = chrIns;
             _chrModuleBase = _hook.CreateChildPointer(_chrIns ,(int)Offsets.EnemyIns.ModuleBase);
             _chrData = _hook.CreateChildPointer(_chrModuleBase, (int)Offsets.ModuleBase.EnemyData);
-            _chrResistance = _hook.CreateChildPointer(_chrModuleBase, (int)Offsets.ModuleBase.ResistenceData);
+            _chrResistance = _hook.CreateChildPointer(_chrModuleBase, (int)Offsets.ModuleBase.ResistanceData);
             _chrStagger = _hook.CreateChildPointer(_chrModuleBase,(int)Offsets.ModuleBase.StaggerData);
             _chrActionRequest = _hook.CreateChildPointer(_chrModuleBase,(int)Offsets.ModuleBase.ActionRequest);
         }
