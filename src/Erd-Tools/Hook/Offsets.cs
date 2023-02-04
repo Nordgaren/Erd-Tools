@@ -211,9 +211,13 @@ namespace Erd_Tools
             /// </summary>
             EnemyData = 0x0,
             /// <summary>
+            /// IntPtr Module0x18
+            /// </summary>
+            Module0x18 = 0x18,
+            /// <summary>
             /// IntPtr ResistanceData
             /// </summary>
-            ResistenceData = 0x20,
+            ResistanceData = 0x20,
             /// <summary>
             /// IntPtr StaggerData
             /// </summary>
@@ -273,7 +277,16 @@ namespace Erd_Tools
             /// <summary>
             /// UnicodeString[20]
             /// </summary>
-            Name = 0x1A0
+            Name = 0x1A0,
+        }
+        
+        public enum Module0x18
+        {
+            /// <summary>
+            /// int CurrentAnimation
+            /// Current animation, but not effected by frame blending
+            /// </summary>
+            CurrentAnimation = 0x20,
         }
 
         public enum ResistenceData
