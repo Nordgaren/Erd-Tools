@@ -9,7 +9,7 @@ namespace Erd_Tools.Models
 {
     public abstract class Chr
     {
-        private ErdHook _hook;
+        protected ErdHook _hook;
         public Chr(PHPointer chrIns, ErdHook hook)
         {
             _hook = hook;

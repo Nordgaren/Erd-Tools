@@ -22,6 +22,9 @@ using Erd_Tools.Models;
 using Erd_Tools.Models.Items;
 using Erd_Tools.Utils;
 using Erd_Tools.ErdToolsException;
+using Erd_Tools.Structs;
+using System.Runtime.InteropServices;
+using Architecture = Keystone.Architecture;
 using Grace = Erd_Tools.Models.Grace;
 
 namespace Erd_Tools
@@ -64,6 +67,9 @@ namespace Erd_Tools
         public PHPointer LuaWarp_01AoB { get; set; }
         public PHPointer Crash { get; set; }
         public PHPointer GetChrInsFromHandle { get; set; }
+        public PHPointer ChrDebug { get; set; }
+        public PHPointer ChrDebugFlags { get; set; }
+        public PHPointer LevelUp { get; set; }
         public static bool Reading { get; set; }
         public string ID => Process?.Id.ToString() ?? "Not Hooked";
 
@@ -78,7 +84,6 @@ namespace Erd_Tools
         public ErdHook(int refreshInterval, int minLifetime, Func<Process, bool> processSelector)
             : base(refreshInterval, minLifetime, processSelector)
         {
-            Process p = new Process();
             OnHooked += async (s, e) => await ErdHook_OnHooked(s, e);
             OnUnhooked += ErdHook_OnUnhooked;
 
@@ -127,7 +132,14 @@ namespace Erd_Tools
             LuaWarp_01AoB = RegisterAbsoluteAOB(Offsets.LuaWarp_01AoB);
 
             GetChrInsFromHandle = RegisterAbsoluteAOB(Offsets.GetChrInsFromHandle);
+            
+            ChrDebug = RegisterRelativeAOB(Offsets.GetChrInsFromHandle, Offsets.RelativePtrAddressOffset,
+                Offsets.RelativePtrInstructionSize, 0x0);
+            ChrDebugFlags = RegisterRelativeAOB(Offsets.GetChrInsFromHandle, Offsets.RelativePtrAddressOffset2,
+                Offsets.RelativePtrInstructionSize, 0x0);
 
+            LevelUp = RegisterAbsoluteAOB(Offsets.LevelUpAoB);
+            
             ItemEventDictionary = BuildItemEventDictionary();
             ItemCategory.GetItemCategories();
             Continent.GetContinents();
@@ -151,6 +163,7 @@ namespace Erd_Tools
             IntPtr worldChrMan = WorldChrMan.Resolve();
             IntPtr playeIns = PlayerIns.Resolve();
             IntPtr warp = LuaWarp_01AoB.Resolve();
+            IntPtr pgd = PlayerGameData.Resolve();
             IntPtr inv = PlayerInventory.Resolve();
             ulong paramOffset =
                 (ulong)(pParam.ToInt64() -
@@ -605,7 +618,7 @@ namespace Erd_Tools
         List<InventoryEntry>? Inventory;
         public int InventoryEntries => PlayerGameData.ReadInt32((int)Offsets.PlayerGameData.InventoryCount);
 
-        public int InventoryLength => PlayerGameData.ReadInt32((int)Offsets.PlayerGameData.InventoryLength);
+        public int InventoryLength => PlayerGameData.ReadInt32((int)Offsets.PlayerGameData.MaximumNormalItems);
         //public int LastInventoryCount => GetInventoryCount();
 
         private int _inventoryLength;
@@ -1112,5 +1125,31 @@ namespace Erd_Tools
         }
 
         #endregion
+
+        #region Player
+
+        public void LevelUpPlayer(int vigor, int mind, int endurance, int strength, int dexterity, int intelligence, int faith, int arcane)
+        {
+            LevelUpStruct levelUpStruct = new();
+            levelUpStruct.Vigor = vigor;
+            levelUpStruct.Mind = mind;
+            levelUpStruct.Endurance = endurance;
+            levelUpStruct.Strength = strength;
+            levelUpStruct.Dexterity = dexterity;
+            levelUpStruct.Intelligence = intelligence;
+            levelUpStruct.Faith = faith;
+            levelUpStruct.Arcane = arcane;
+            
+            IntPtr buf = Marshal.AllocHGlobal(
+                Marshal.SizeOf(levelUpStruct));
+            Marshal.StructureToPtr(levelUpStruct,
+                buf, false);
+            string asmString = Util.GetEmbededResource("Assembly.LevelUp.asm");
+            string asm = string.Format(asmString, buf.ToString("X2"), LevelUp.Resolve());
+            
+            Marshal.FreeHGlobal(buf);
+        }
+        
+  #endregion
     }
 }

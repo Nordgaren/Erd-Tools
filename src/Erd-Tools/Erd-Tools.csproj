@@ -1832,6 +1832,8 @@
     <EmbeddedResource Include="Assembly\Warp.asm" />
     <None Remove="Assembly\GetChrInsByHandle.asm" />
     <EmbeddedResource Include="Assembly\GetChrInsByHandle.asm" />
+    <None Remove="Assembly\LevelUp.asm" />
+    <EmbeddedResource Include="Assembly\LevelUp.asm" />
   </ItemGroup>
 
   <ItemGroup>

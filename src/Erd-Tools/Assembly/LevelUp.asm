@@ -1,0 +1,3 @@
+﻿mov dl ,0x0
+lea rcx, 0x{0:X2}	
+call 0x{1:X2}	 

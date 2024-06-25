@@ -25,6 +25,7 @@ E50:Ceremony:CeremonyParam
 F28:CharMakeMenuListItemParam
 EE0:CharMakeMenuTopParam
 2AB8:ChrActivateConditionParam
+3688:ChrEquipModelParam
 1A20:ChrModelParam
 16C0:ClearCountCorrectParam
 2D40:CoolTimeParam
@@ -60,7 +61,7 @@ D0:EquipParamProtector
 1240:GrassTypeParam
 1288:GrassTypeParam_Lv1:GrassTypeParam
 12D0:GrassTypeParam_Lv2:GrassTypeParam
-3490:HitEffectSeParam
+36D0:HitEffectSeParam:HitEffectSeParam
 F70:HitEffectSfxConceptParam
 FB8:HitEffectSfxParam
 9D0:HitMtrlParam
@@ -94,10 +95,13 @@ A18:KnockBackParam
 25F0:MapDefaultInfoParam
 2FC8:MapGdRegionDrawParam
 2F80:MapGdRegionInfoParam:MapGdRegionInfo
+3520:MapGridCreateHeightDetailLimitInfo
 2560:MapGridCreateHeightLimitInfoParam:MapGridCreateHeightLimitInfo
 1708:MapMimicryEstablishmentParam
 2E18:MapNameTexParam
+35B0:MapNameTexParam_m61:MapNameTexParam
 2DD0:MapPieceTexParam
+3568:MapPieceTexParam_m61:MapPieceTexParam
 1558:MaterialExParam:MaterialEx
 5E0:MenuColorTableParam:MenuParamColorTable
 28C0:MenuCommonParam
@@ -106,6 +110,7 @@ DC0:MenuPropertyLayoutParam
 D78:MenuPropertySpecParam
 E08:MenuValueTableParam:MenuValueTableSpecParam
 33B8:MimicryEstablishmentTexParam
+3640:MimicryEstablishmentTexParam_m61:MimicryEstablishmentTexParam
 6B8:MoveParam
 15E8:MPEstusFlaskRecoveryParam:EstusFlaskRecoveryParam
 1828:MultiHPEstusFlaskBonusParam:MultiEstusFlaskBonusParam
@@ -142,6 +147,8 @@ B38:PlayRegionParam
 820:ShopLineupParam
 868:ShopLineupParam_Recipe:ShopLineupParam
 30A0:SignPuddleParam
+34D8:SignPuddleSubCategoryParam
+3490:SignPuddleTabParam
 3058:SoundAssetSoundObjEnableDistParam
 2710:SoundAutoEnvSoundGroupParam
 2758:SoundAutoReverbEvaluationDistParam
@@ -164,6 +171,7 @@ B38:PlayRegionParam
 22D8:WeatherAssetReplaceParam
 2248:WeatherLotParam
 2E60:WeatherLotTexParam
+35F8:WeatherLotTexParam_m61:WeatherLotTexParam
 2200:WeatherParam
 1000:WepAbsorpPosParam
 1750:WetAspectParam

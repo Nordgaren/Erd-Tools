@@ -1392,7 +1392,7 @@
       <Maximum>99</Maximum>
       <SortID>1802</SortID>
     </Field>
-    <Field Def="dummy8 pad4[19]">
+    <Field Def="dummy8 pad4[3]">
       <DisplayName>pad - pad</DisplayName>
       <SortID>12005</SortID>
     </Field>

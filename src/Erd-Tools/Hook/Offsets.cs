@@ -1,7 +1,7 @@
 ﻿
 namespace Erd_Tools
 {
-    public class Offsets
+    internal class Offsets
     {
         public const int IsLoadedOffset1 = 0x320;
         public const int IsLoadedOffset2 = 0xC8;
@@ -10,6 +10,7 @@ namespace Erd_Tools
         public const int IsLoaded = 0x48;
 
         public const int RelativePtrAddressOffset = 0x3;
+        public const int RelativePtrAddressOffset2 = 0x2;
         public const int RelativePtrInstructionSize = 0x7;
         public const int LargeRelativePtrInstructionSize = 0x8;
 
@@ -29,6 +30,7 @@ namespace Erd_Tools
         public enum PlayerGameData
         {
             Name = 0x9C,
+            MaximumItems = 0x410,
             MaximumNormalItems = 0x414,
             InventoryCount = 0x420,
             MaximumSpecialItems = 0x424,
@@ -128,9 +130,11 @@ namespace Erd_Tools
             Gem = 0x30
         }
 
-        public const int EquipInventoryDataOffset = 0x5B8;
+        public const int EquipInventoryDataOffset = 0x5D0;
+        public const int MaxInventoryLimit = 0x8;
+        public const int NormalInventoryLimit = 0xC;
         public const int PlayerInventoryOffset = 0x10;
-        public const int PlayInventoryEntrySize = 0x14;
+        public const int PlayInventoryEntrySize = 0x18;
 
         public enum InventoryEntry
         {
@@ -139,7 +143,8 @@ namespace Erd_Tools
             ItemCategory = 0x7,
             Quantity = 0x8,
             DispalyID = 0xC,
-            Unk = 0x10
+            Unk = 0x10,
+            Unk2 = 0x14,
         }
 
         public const string EventFlagManAoB = "48 8B 3D ? ? ? ? 48 85 FF ? ? 32 C0 E9";
@@ -439,7 +444,7 @@ namespace Erd_Tools
 
 
         public const string DisableOpenMapAoB = "74 ?? C7 45 ?? ?? ?? ?? ?? C7 45 ?? ?? ?? ?? ?? C7 45 ?? ?? ?? ?? ?? 48 8D 05 ?? ?? ?? ?? 48 89 45 ?? 48 8D 4D ?? E8 ?? ?? ?? ?? E9 ?? ?? ?? ?? 48 83 BF";
-        public const string CombatCloseMapAoB = "E8 ?? ?? ?? ?? 84 C0 75 ?? 38 83 ?? ?? ?? ?? 75 ?? 83 E7 FE";
+        public const string CombatCloseMapAoB = "E8 ?? ?? ?? ?? 84 C0 75 ?? 38 83 ?? ?? ?? ?? 75 ?? 83 E6 FE";
         public const string WorldAreaWeatherAoB = "48 8B 15 ? ? ? ? 32 C0 48 85 D2 ? ? 8B 82";
 
         public enum WorldAreaWeather
@@ -454,5 +459,9 @@ namespace Erd_Tools
         public const string LuaWarp_01AoB = "C3 ? ? ? ? ? ? 57 48 83 EC ? 48 8B FA 44";
 
         public const string GetChrInsFromHandle = "48 83 EC 28 E8 17 FF FF FF 48 85 C0 74 08 48 8B 00 48 83 C4 28 C3";
+
+        public const string ChrDebug = "48 8B 05 ?? ?? ?? ?? 41 83 FF 02 ?? ?? 48 85 C0";
+        public const string ChrDebugFlags = "80 3D ?? ?? ?? ?? 00 0F 85 ?? ?? ?? ?? 32 C0 48";
+        public const string LevelUpAoB = "DE AD BE EF"; // needs AoB
     }
 }
