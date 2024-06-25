@@ -36,7 +36,9 @@ namespace Erd_Tools
             MaximumSpecialItems = 0x424,
             InventoryLength = 0x488,
             HeldNormalItems = 0x450,
-            HeldSpecialItems = 0x460
+            HeldSpecialItems = 0x460,
+            HeldRunes = 0x6C,
+            TotalRunes = 0x70
         }
 
         public enum ChrIns
