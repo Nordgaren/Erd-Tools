@@ -45,7 +45,7 @@ namespace Erd_Tools
 
         public PHPointer GameDataMan { get; set; }
         public PHPointer GameMan { get; set; }
-        private PHPointer PlayerGameData { get; set; }
+        public PHPointer PlayerGameData { get; set; }
         private PHPointer PlayerInventory { get; set; }
         private PHPointer HeldNormalItemsPtr { get; set; }
         private PHPointer HeldSpecialItemsPtr { get; set; }

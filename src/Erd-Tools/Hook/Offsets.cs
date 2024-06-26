@@ -441,7 +441,11 @@ namespace Erd_Tools
         public enum PlayerIns
         {
             TargetHandle = 0x6B0,
-            TargetArea = 0x6B4
+            TargetArea = 0x6B4,
+            Instance = 0x10EF8,
+            Data = 0x0*10,
+            ChrData = 0x580,
+            Name = 0x9C
         }
 
 
