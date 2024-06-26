@@ -242,13 +242,13 @@ namespace Erd_Tools
             if (error != KeystoneError.KS_ERR_OK)
                 throw new("Something went wrong during assembly. Code could not be assembled.");
 
-            IntPtr insertPtr = GetPrefferedIntPtr(bytes.Buffer.Length, flProtect: Kernel32.PAGE_EXECUTE_READWRITE);
+            IntPtr insertPtr = GetPrefferedIntPtr(bytes.Buffer.Length, flProtect: PropertyHook.Kernel32.PAGE_EXECUTE_READWRITE);
 
             //Reassemble with the location of the isertPtr to support relative instructions
             bytes = Engine.Assemble(asm, (ulong)insertPtr);
             error = Engine.GetLastKeystoneError();
 
-            Kernel32.WriteBytes(Handle, insertPtr, bytes.Buffer);
+            PropertyHook.Kernel32.WriteBytes(Handle, insertPtr, bytes.Buffer);
 #if DEBUG
             DebugPrintArray(bytes.Buffer);
 #endif
@@ -411,7 +411,7 @@ namespace Erd_Tools
         public void SetEventFlag(int flag, bool state)
         {
             IntPtr idPointer = GetPrefferedIntPtr(sizeof(int));
-            Kernel32.WriteInt32(Handle, idPointer, flag);
+            PropertyHook.Kernel32.WriteInt32(Handle, idPointer, flag);
 
             string asmString = Util.GetEmbededResource("Assembly.SetEventFlag.asm");
             string asm = string.Format(asmString, EventFlagMan.Resolve(), (state ? 1 : 0), idPointer.ToString("X2"),
@@ -424,14 +424,14 @@ namespace Erd_Tools
         {
             IntPtr returnPtr = GetPrefferedIntPtr(sizeof(bool));
             IntPtr idPointer = GetPrefferedIntPtr(sizeof(int));
-            Kernel32.WriteInt32(Handle, idPointer, flag);
+            PropertyHook.Kernel32.WriteInt32(Handle, idPointer, flag);
 
             string asmString = Util.GetEmbededResource("Assembly.IsEventFlag.asm");
             string asm = string.Format(asmString, EventFlagMan.Resolve(), idPointer.ToString("X2"),
                 IsEventFlagFunction.Resolve(), returnPtr.ToString("X2"));
 
             AsmExecute(asm);
-            bool state = Kernel32.ReadBoolean(Handle, returnPtr);
+            bool state = PropertyHook.Kernel32.ReadBoolean(Handle, returnPtr);
             Free(returnPtr);
             Free(idPointer);
 
@@ -542,7 +542,7 @@ namespace Erd_Tools
             bytes = BitConverter.GetBytes(item.Gem);
             Array.Copy(bytes, 0x0, itemInfobytes, (int)Offsets.ItemGiveStruct.Gem, bytes.Length);
 
-            Kernel32.WriteBytes(Handle, itemInfo, itemInfobytes);
+            PropertyHook.Kernel32.WriteBytes(Handle, itemInfo, itemInfobytes);
 
             string asmString = Util.GetEmbededResource("Assembly.ItemGib.asm");
             string asm = string.Format(asmString, itemInfo.ToString("X2"), MapItemMan.Resolve(),
@@ -598,7 +598,7 @@ namespace Erd_Tools
                 bytes = BitConverter.GetBytes(count);
                 Array.Copy(bytes, 0x0, itemInfoBytes, (int)Offsets.ItemGiveStruct.Count, bytes.Length);
 
-                Kernel32.WriteBytes(Handle, itemInfo, itemInfoBytes);
+                PropertyHook.Kernel32.WriteBytes(Handle, itemInfo, itemInfoBytes);
 
                 string asmString = Util.GetEmbededResource("Assembly.ItemGib.asm");
                 string asm = string.Format(asmString, itemInfo.ToString("X2"), MapItemMan.Resolve(),
@@ -708,7 +708,7 @@ namespace Erd_Tools
         public Enemy GetTarget()
         {
             IntPtr handlePtr = GetPrefferedIntPtr(sizeof(long));
-            Kernel32.WriteBytes(Handle, handlePtr, BitConverter.GetBytes(CurrentTargetHandle));
+            PropertyHook.Kernel32.WriteBytes(Handle, handlePtr, BitConverter.GetBytes(CurrentTargetHandle));
             IntPtr returnPtr = GetPrefferedIntPtr(sizeof(long));
 
             string asmString = Util.GetEmbededResource("Assembly.GetChrInsByHandle.asm");
@@ -716,7 +716,7 @@ namespace Erd_Tools
                 returnPtr);
             AsmExecute(asm);
 
-            IntPtr returnVal = Kernel32.ReadIntPtr(Handle, returnPtr, true);
+            IntPtr returnVal = PropertyHook.Kernel32.ReadIntPtr(Handle, returnPtr, true);
             if (returnPtr != IntPtr.Zero)
             {
                 return new Enemy(CreateBasePointer(returnVal), this);
@@ -1117,7 +1117,7 @@ namespace Erd_Tools
         public void Warp(int bonfireID)
         {
             IntPtr warpLocation = GetPrefferedIntPtr(sizeof(int));
-            Kernel32.WriteInt32(Handle, warpLocation, bonfireID);
+            PropertyHook.Kernel32.WriteInt32(Handle, warpLocation, bonfireID);
 
             string asmString = Util.GetEmbededResource("Assembly.Warp.asm");
             string asm = string.Format(asmString, CSLuaEventManager.Resolve(), bonfireID, LuaWarp_01AoB.Resolve() + 2);
