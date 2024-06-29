@@ -36,7 +36,9 @@ namespace Erd_Tools
             MaximumSpecialItems = 0x424,
             InventoryLength = 0x488,
             HeldNormalItems = 0x450,
-            HeldSpecialItems = 0x460
+            HeldSpecialItems = 0x460,
+            HeldRunes = 0x6C,
+            TotalRunes = 0x70
         }
 
         public enum ChrIns
@@ -82,21 +84,25 @@ namespace Erd_Tools
             CanMountWep_BowSmall = 0x3B,
             CanMountWep_ShieldSmall = 0x3C,
             IsDiscard = 0x34,
-            Default_WepAttr = 0x35
+            Default_WepAttr = 0x35,
+            IconID = 0x4
         }
         public enum EquipParamAccessory
         {
-            IsDeposit = 0x40
+            IsDeposit = 0x40,
+            IconID = 0x26
         }
         public enum EquipParamGoods
         {
             MaxNum = 0x3A,
             IsFullSuppleItem = 0x4A,
-            IsDrop = 0x6F
+            IsDrop = 0x6F,
+            IconID = 0x30
         }
         public enum EquipParamProtector
         {
-            IsDiscard = 0xE3
+            IsDiscard = 0xE3,
+            IconID = 0xA8
         }
         public enum EquipParamWeapon
         {
@@ -439,7 +445,11 @@ namespace Erd_Tools
         public enum PlayerIns
         {
             TargetHandle = 0x6B0,
-            TargetArea = 0x6B4
+            TargetArea = 0x6B4,
+            Instance = 0x10EF8,
+            Data = 0x0*10,
+            ChrData = 0x580,
+            Name = 0x9C
         }
 
 

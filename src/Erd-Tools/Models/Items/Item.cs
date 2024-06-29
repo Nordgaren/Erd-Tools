@@ -26,6 +26,8 @@ namespace Erd_Tools.Models
         public bool IsMultiplayerShare;
         public bool CanAquireFromOtherPlayers => IsDrop && IsMultiplayerShare;
 
+        public short IconID;
+
         public Item(Item source) {
             Name = source.Name;
             ID = source.ID;
@@ -70,11 +72,13 @@ namespace Erd_Tools.Models
                     bitfield = param.Bytes[param.OffsetDict[ID] + (int)Offsets.EquipParamProtector.IsDiscard];
                     IsDrop = (bitfield & (1 << 1)) != 0;
                     IsMultiplayerShare = (bitfield & (1 << 2)) == 0;
+                    IconID = BitConverter.ToInt16(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamProtector.IconID);
                     break;
                 case Category.Accessory:
                     bitfield = param.Bytes[param.OffsetDict[ID] + (int)Offsets.EquipParamAccessory.IsDeposit];
                     IsMultiplayerShare = (bitfield & (1 << 2)) == 0;
                     IsDrop = (bitfield & (1 << 4)) != 0;
+                    IconID = BitConverter.ToInt16(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamAccessory.IconID);
                     break;
                 case Category.Goods:
                     MaxQuantity = BitConverter.ToInt16(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamGoods.MaxNum);
@@ -84,6 +88,7 @@ namespace Erd_Tools.Models
 
                     bitfield = param.Bytes[param.OffsetDict[ID] + (int)Offsets.EquipParamGoods.IsDrop];
                     IsDrop = (bitfield & (1 << 0)) != 0;
+                    IconID = BitConverter.ToInt16(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamGoods.IconID);
                     break;
                 case Category.Gem:
                 case Category.Weapons:

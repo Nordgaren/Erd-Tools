@@ -62,6 +62,7 @@ namespace Erd_Tools.Models
             SwordArtID = BitConverter.ToInt32(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamGem.SwordArtsParamId);
             CanMountBitfield = BitConverter.ToInt64(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamGem.CanMountWep_Dagger);
             WeaponAttr = BitConverter.ToInt16(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamGem.ConfigurableWepAttr);
+            IconID = BitConverter.ToInt16(param.Bytes, param.OffsetDict[ID] + (int)Offsets.EquipParamGem.IconID);
             GetWeapons();
             GetInfusions();
         }
