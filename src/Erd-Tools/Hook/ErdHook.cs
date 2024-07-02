@@ -43,9 +43,9 @@ namespace Erd_Tools
             OnSetup?.Invoke(this, new(this));
         }
 
-        private PHPointer GameDataMan { get; set; }
-        private PHPointer GameMan { get; set; }
-        private PHPointer PlayerGameData { get; set; }
+        public PHPointer GameDataMan { get; set; }
+        public PHPointer GameMan { get; set; }
+        public PHPointer PlayerGameData { get; set; }
         private PHPointer PlayerInventory { get; set; }
         private PHPointer HeldNormalItemsPtr { get; set; }
         private PHPointer HeldSpecialItemsPtr { get; set; }
@@ -233,7 +233,7 @@ namespace Erd_Tools
         private Engine Engine = new(Architecture.X86, Mode.X64);
 
         //TKCode
-        private void AsmExecute(string asm)
+        public void AsmExecute(string asm)
         {
             //Assemble once to get the size
             EncodedData? bytes = Engine.Assemble(asm, (ulong)Process.MainModule.BaseAddress);

@@ -1,0 +1,4 @@
+52520000 - Piquebone Bolt
+53500000 - Rabbath's Greatbolt
+50540000 - Piquebone Arrow (Fletched)
+50550000 - Piquebone Arrow

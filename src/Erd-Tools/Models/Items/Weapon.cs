@@ -18,7 +18,7 @@ namespace Erd_Tools.Models
             Sacred = 700,
             Magic = 800,
             Cold = 900,
-            Posion = 1000,
+            Poison = 1000,
             Blood = 1100,
             Occult = 1200,
         };
@@ -60,7 +60,15 @@ namespace Erd_Tools.Models
             SmallShield = 65, //ShieldSmall
             MediumShield = 67, //ShieldNormal
             Greatshield = 69, //SheildLarge
-            Torch = 87 //Torch
+            Torch = 87,//Torch
+            HandToHand = 88,
+            PerfumeBottles = 89,
+            ThrustingShield = 90,
+            ThowingBlades = 91,
+            BackhandBlade = 92,
+            LightGreatsword = 93,
+            GreatKatana = 94,
+            BeastClaws = 95,
         }
 
         public enum AmmoType
@@ -72,7 +80,6 @@ namespace Erd_Tools.Models
             BallistaBolt = 86
         }
         public int RealID { get; set; }
-        public short IconID { get; set; }
         public bool Unique { get; set; }
         public int SwordArtId { get; set; }
         public bool Infusible { get; set; }

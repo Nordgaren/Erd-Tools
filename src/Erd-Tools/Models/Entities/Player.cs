@@ -9,15 +9,22 @@ namespace Erd_Tools.Models.Entities
 {
     public class Player : Chr
     {
+        public PHPointer _instance;
+        public PHPointer Data;
+        public PHPointer ChrData;
         public Player(PHPointer enemyIns, ErdHook hook) : base(enemyIns, hook)
         {
-
+            _instance = hook.CreateChildPointer(hook.WorldChrMan, (int)Offsets.PlayerIns.Instance);
+            Data = hook.CreateChildPointer(_instance, (int)Offsets.PlayerIns.Data);
+            ChrData = hook.CreateChildPointer(Data, (int)Offsets.PlayerIns.ChrData);
         }
 
         public void LevelUpPlayer(int vigor, int mind, int endurance, int strength, int dexterity, int intelligence, int faith, int arcane)
         {
             _hook.LevelUpPlayer(vigor, mind, endurance, strength, dexterity, intelligence, faith, arcane);
         }
+
+        public string PlayerName => ChrData.ReadString(0x9C, Encoding.Unicode, 32);
 
         private int _vigor;
         public int Vigor
