@@ -165,6 +165,7 @@ namespace Erd_Tools
             IntPtr warp = LuaWarp_01AoB.Resolve();
             IntPtr pgd = PlayerGameData.Resolve();
             IntPtr inv = PlayerInventory.Resolve();
+            IntPtr flags = CSFD4VirtualMemoryFlag.Resolve();
             ulong paramOffset =
                 (ulong)(pParam.ToInt64() -
                         Process.MainModule.BaseAddress
