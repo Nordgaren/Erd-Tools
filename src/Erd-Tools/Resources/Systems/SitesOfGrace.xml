@@ -2266,6 +2266,526 @@
 		</Hubs>
 	</Continent>
 	<Continent>
+		<Name>Limgrave</Name>
+		<RowId>61000</RowId>
+		<Hubs>
+			<Hub>
+				<Name>Stranded Graveyard</Name>
+				<RowId>18000</RowId>
+				<Graces>
+					<Grace>
+						<Name>Cave of Knowledge</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stranded Graveyard</Hub>
+						<EntityID>18001950</EntityID>
+						<EventFlagID>71800</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>2725</DataOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Stranded Graveyard</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stranded Graveyard</Hub>
+						<EntityID>18001951</EntityID>
+						<EventFlagID>71801</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>2725</DataOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Limgrave</Name>
+				<RowId>61000</RowId>
+				<Graces>
+					<Grace>
+						<Name>Stormfoot Catacombs</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>30021950</EntityID>
+						<EventFlagID>73002</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>2875</DataOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Murkwater Catacombs</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>30041950</EntityID>
+						<EventFlagID>73004</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>2875</DataOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Murkwater Cave</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>31001950</EntityID>
+						<EventFlagID>73100</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>2887</DataOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Groveside Cave</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>31031950</EntityID>
+						<EventFlagID>73103</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>2887</DataOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Coastal Cave</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>31151950</EntityID>
+						<EventFlagID>73115</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>2889</DataOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Highroad Cave</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>31171950</EntityID>
+						<EventFlagID>73117</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>2889</DataOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Limgrave Tunnels</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>32011950</EntityID>
+						<EventFlagID>73201</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>2900</DataOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Church of Dragon Communion</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1041351950</EntityID>
+						<EventFlagID>76110</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3263</DataOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Church of Elleh</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1042361950</EntityID>
+						<EventFlagID>76100</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3262</DataOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>The First Step</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1042361951</EntityID>
+						<EventFlagID>76101</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3262</DataOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Gatefront</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1042371950</EntityID>
+						<EventFlagID>76111</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3263</DataOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Seaside Ruins</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1043351950</EntityID>
+						<EventFlagID>76113</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3264</DataOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Agheel Lake North</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1043371950</EntityID>
+						<EventFlagID>76108</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3263</DataOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Murkwater Coast</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1043381950</EntityID>
+						<EventFlagID>76116</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3264</DataOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Agheel Lake South</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1044351950</EntityID>
+						<EventFlagID>76106</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3263</DataOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Waypoint Ruins Cellar</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1044361950</EntityID>
+						<EventFlagID>76120</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3265</DataOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Mistwood Outskirts</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1044371950</EntityID>
+						<EventFlagID>76114</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3264</DataOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Artist's Shack</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1044381950</EntityID>
+						<EventFlagID>76103</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3262</DataOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Summonwater Village Outskirts</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1044391950</EntityID>
+						<EventFlagID>76119</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3264</DataOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Fort Haight West</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1045361950</EntityID>
+						<EventFlagID>76105</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3263</DataOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Third Church of Marika</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Limgrave</Hub>
+						<EntityID>1046381950</EntityID>
+						<EventFlagID>76104</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3263</DataOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Stormhill</Name>
+				<RowId>61001</RowId>
+				<Graces>
+					<Grace>
+						<Name>Margit, the Fell Omen</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormhill</Hub>
+						<EntityID>10001951</EntityID>
+						<EventFlagID>71001</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>2625</DataOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Castleward Tunnel</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormhill</Hub>
+						<EntityID>10001952</EntityID>
+						<EventFlagID>71002</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>2625</DataOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Deathtouched Catacombs</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormhill</Hub>
+						<EntityID>30111950</EntityID>
+						<EventFlagID>73011</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>2876</DataOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Limgrave Tower Bridge</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormhill</Hub>
+						<EntityID>34101950</EntityID>
+						<EventFlagID>73410</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>2926</DataOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Divine Tower of Limgrave</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormhill</Hub>
+						<EntityID>34101952</EntityID>
+						<EventFlagID>73412</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>2926</DataOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Stormhill Shack</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormhill</Hub>
+						<EntityID>1041381950</EntityID>
+						<EventFlagID>76102</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3262</DataOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Warmaster's Shack</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormhill</Hub>
+						<EntityID>1042381950</EntityID>
+						<EventFlagID>76118</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3264</DataOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Saintsbridge</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Stormhill</Hub>
+						<EntityID>1043391950</EntityID>
+						<EventFlagID>76117</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3264</DataOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+			<Hub>
+				<Name>Weeping Peninsula</Name>
+				<RowId>61002</RowId>
+				<Graces>
+					<Grace>
+						<Name>Tombsward Catacombs</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>30001950</EntityID>
+						<EventFlagID>73000</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>2875</DataOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Impaler's Catacombs</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>30011950</EntityID>
+						<EventFlagID>73001</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>2875</DataOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Earthbore Cave</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>31011950</EntityID>
+						<EventFlagID>73101</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>2887</DataOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Tombsward Cave</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>31021950</EntityID>
+						<EventFlagID>73102</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>2887</DataOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Morne Tunnel</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>32001950</EntityID>
+						<EventFlagID>73200</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>2900</DataOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Isolated Merchant's Shack</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1041321950</EntityID>
+						<EventFlagID>76156</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3269</DataOffset>
+						<BitStart>3</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Fourth Church of Marika</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1041331950</EntityID>
+						<EventFlagID>76162</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3270</DataOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Tombsward</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1042331950</EntityID>
+						<EventFlagID>76152</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3269</DataOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Morne Moangrave</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1043301950</EntityID>
+						<EventFlagID>76161</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3270</DataOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Castle Morne Lift</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1043311950</EntityID>
+						<EventFlagID>76158</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3269</DataOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Behind the Castle</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1043311951</EntityID>
+						<EventFlagID>76159</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3269</DataOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Beside the Rampart Gaol</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1043311952</EntityID>
+						<EventFlagID>76160</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3270</DataOffset>
+						<BitStart>7</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Church of Pilgrimage</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1043341950</EntityID>
+						<EventFlagID>76150</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3268</DataOffset>
+						<BitStart>1</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Castle Morne Rampart</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1044331950</EntityID>
+						<EventFlagID>76151</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3268</DataOffset>
+						<BitStart>0</BitStart>
+					</Grace>
+					<Grace>
+						<Name>South of the Lookout Tower</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1044331951</EntityID>
+						<EventFlagID>76153</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3269</DataOffset>
+						<BitStart>6</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Ailing Village Outskirts</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1044331952</EntityID>
+						<EventFlagID>76154</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3269</DataOffset>
+						<BitStart>5</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Bridge of Sacrifice</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1044341950</EntityID>
+						<EventFlagID>76157</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3269</DataOffset>
+						<BitStart>2</BitStart>
+					</Grace>
+					<Grace>
+						<Name>Beside the Crater-Pocked Glade</Name>
+						<Continent>Limgrave</Continent>
+						<Hub>Weeping Peninsula</Hub>
+						<EntityID>1045331950</EntityID>
+						<EventFlagID>76155</EventFlagID>
+						<PtrOffset>40</PtrOffset>
+						<DataOffset>3269</DataOffset>
+						<BitStart>4</BitStart>
+					</Grace>
+				</Graces>
+			</Hub>
+		</Hubs>
+	</Continent>
+	<Continent>
 		<Name>Liurnia of the Lakes</Name>
 		<RowId>62000</RowId>
 		<Hubs>
