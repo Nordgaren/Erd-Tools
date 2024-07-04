@@ -62,7 +62,6 @@ namespace Erd_Tools.Models.Game
 
         public bool SetGesture(int id, bool state)
         {
-            IntPtr p = _gameGestureData.Resolve();
             for (int i = 0; i < GESTURE_LIMIT; i++)
             {
                 int offset = 0x8 + (i * 4); 
