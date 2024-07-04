@@ -1,5 +1,4 @@
-﻿
-namespace Erd_Tools
+﻿namespace Erd_Tools
 {
     internal class Offsets
     {
@@ -38,7 +37,8 @@ namespace Erd_Tools
             HeldNormalItems = 0x450,
             HeldSpecialItems = 0x460,
             HeldRunes = 0x6C,
-            TotalRunes = 0x70
+            TotalRunes = 0x70,
+            GestureGameData = 0x8D8,
         }
 
         public enum ChrIns
@@ -64,7 +64,9 @@ namespace Erd_Tools
         }
 
         public const string SoloParamRepositoryAoB = "48 8B 0D ? ? ? ? 48 85 C9 0F 84 ? ? ? ? 45 33 C0 BA 8E 00 00 00";
-        public const string CapParamCallAoB = "48 8B C4 55 41 56 41 57 48 8D 68 A1 48 81 EC A0 00 00 00 48 C7 45 E7 FE FF FF FF 48 89 58 08 48 89 70 10";
+
+        public const string CapParamCallAoB =
+            "48 8B C4 55 41 56 41 57 48 8D 68 A1 48 81 EC A0 00 00 00 48 C7 45 E7 FE FF FF FF 48 89 58 08 48 89 70 10";
 
         public enum Param
         {
@@ -87,11 +89,13 @@ namespace Erd_Tools
             Default_WepAttr = 0x35,
             IconID = 0x4
         }
+
         public enum EquipParamAccessory
         {
             IsDeposit = 0x40,
             IconID = 0x26
         }
+
         public enum EquipParamGoods
         {
             MaxNum = 0x3A,
@@ -99,11 +103,13 @@ namespace Erd_Tools
             IsDrop = 0x6F,
             IconID = 0x30
         }
+
         public enum EquipParamProtector
         {
             IsDiscard = 0xE3,
             IconID = 0xA8
         }
+
         public enum EquipParamWeapon
         {
             SortID = 0x8,
@@ -120,8 +126,11 @@ namespace Erd_Tools
         }
 
         public const string ItemGiveAoB = "8B 02 83 F8 0A";
+
         //public const string ItemGiveAoB = "40 55 56 57 41 54 41 55 41 56 41 57 48 8D 6C 24 B0 48 81 EC 50 01 00 00 48 C7 45 C0 FE FF FF FF";
-        public const string MapItemManAoB = "48 8B 0D ? ? ? ? C7 44 24 50 FF FF FF FF C7 45 A0 FF FF FF FF 48 85 C9 75 2E";
+        public const string MapItemManAoB =
+            "48 8B 0D ? ? ? ? C7 44 24 50 FF FF FF FF C7 45 A0 FF FF FF FF 48 85 C9 75 2E";
+
         public const int ItemGiveOffset = -0x52;
 
         public const int ItemInfoArraySize = 0xA0;
@@ -155,7 +164,9 @@ namespace Erd_Tools
 
         public const string EventFlagManAoB = "48 8B 3D ? ? ? ? 48 85 FF ? ? 32 C0 E9";
         public const string IsEventCallAoB = "48 83 EC 28 8B 12 85 D2";
-        public const string SetEventCallAoB = "? ? ? ? ? 48 89 74 24 18 57 48 83 EC 30 48 8B DA 41 0F B6 F8 8B 12 48 8B F1 85 D2 0F 84 ? ? ? ? 45 84 C0";
+
+        public const string SetEventCallAoB =
+            "? ? ? ? ? 48 89 74 24 18 57 48 83 EC 30 48 8B DA 41 0F B6 F8 8B 12 48 8B F1 85 D2 0F 84 ? ? ? ? 45 84 C0";
 
         public const string WorldChrManAoB = "48 8B 05 ?? ?? ?? ?? 48 85 C0 74 0F 48 39 88";
 
@@ -185,30 +196,37 @@ namespace Erd_Tools
             /// int EnemyHandle
             /// </summary>
             EnemyHandle = 0x8,
+
             /// <summary>
             /// int EnemyArea
             /// </summary>
             EnemyArea = 0xC,
+
             /// <summary>
             /// IntPtr EnemyCtrl
             /// </summary>
             EnemyCtrl = 0x58,
+
             /// <summary>
             /// int NpcParamID
             /// </summary>
             NpcParam = 0x60,
+
             /// <summary>
             /// int ModelNumber
             /// </summary>
             ModelNumber = 0x64,
+
             /// <summary>
             /// int ChrType
             /// </summary>
             ChrType = 0x68,
+
             /// <summary>
             /// byte TeamType
             /// </summary>
             TeamType = 0x6C,
+
             /// <summary>
             /// IntPtr ModuleBase
             /// </summary>
@@ -221,22 +239,27 @@ namespace Erd_Tools
             /// IntPtr EnemyData
             /// </summary>
             EnemyData = 0x0,
+
             /// <summary>
             /// IntPtr Module0x18
             /// </summary>
             Module0x18 = 0x18,
+
             /// <summary>
             /// IntPtr ResistanceData
             /// </summary>
             ResistanceData = 0x20,
+
             /// <summary>
             /// IntPtr StaggerData
             /// </summary>
             StaggerData = 0x40,
+
             /// <summary>
             /// IntPtr PhysicsData
             /// </summary>
             PhysicsData = 0x68,
+
             /// <summary>
             /// IntPtr ChrActionRequestModule
             /// </summary>
@@ -249,48 +272,58 @@ namespace Erd_Tools
             /// UnicodeString[16] Model
             /// </summary>
             Model = 0xC8,
+
             /// <summary>
             /// int Hp
             /// </summary>
             Hp = 0x138,
+
             /// <summary>
             /// int HpMax
             /// </summary>
             HpMax = 0x140,
+
             /// <summary>
             /// int HpBase
             /// </summary>
             HpBase = 0x144,
+
             /// <summary>
             /// int Fp
             /// </summary>
             Fp = 0x148,
+
             /// <summary>
             /// int FpMax
             /// </summary>
             FpMax = 0x14C,
+
             /// <summary>
             /// int FpBase
             /// </summary>
             FpBase = 0x150,
+
             /// <summary>
             /// int Stam
             /// </summary>
             Stam = 0x154,
+
             /// <summary>
             /// int StamMax
             /// </summary>
             StamMax = 0x158,
+
             /// <summary>
             /// int StamBase
             /// </summary>
             StamBase = 0x15C,
+
             /// <summary>
             /// UnicodeString[20]
             /// </summary>
             Name = 0x1A0,
         }
-        
+
         public enum Module0x18
         {
             /// <summary>
@@ -306,110 +339,137 @@ namespace Erd_Tools
             /// int Poison
             /// </summary>
             Poison = 0x10,
+
             /// <summary>
             /// int Rot
             /// </summary>
             Rot = 0x14,
+
             /// <summary>
             /// int Bleed
             /// </summary>
             Bleed = 0x18,
+
             /// <summary>
             /// int Blight
             /// </summary>
             Blight = 0x1C,
+
             /// <summary>
             /// int Frost
             /// </summary>
             Frost = 0x20,
+
             /// <summary>
             /// int Sleep
             /// </summary>
             Sleep = 0x24,
+
             /// <summary>
             /// int Madness
             /// </summary>
             Madness = 0x28,
+
             /// <summary>
             /// int PoisonMax
             /// </summary>
             PoisonMax = 0x2C,
+
             /// <summary>
             /// int RotMax
             /// </summary>
             RotMax = 0x30,
+
             /// <summary>
             /// int BleedMax
             /// </summary>
             BleedMax = 0x34,
+
             /// <summary>
             /// int BlightMax
             /// </summary>
             BlightMax = 0x38,
+
             /// <summary>
             /// int FrostMax
             /// </summary>
             FrostMax = 0x3C,
+
             /// <summary>
             /// int SleepMax
             /// </summary>
             SleepMax = 0x40,
+
             /// <summary>
             /// int MadnessMax
             /// </summary>
             MadnessMax = 0x44,
+
             /// <summary>
             /// float PoisonMod
             /// </summary>
             PoisonMod = 0x80,
+
             /// <summary>
             /// float RotMod
             /// </summary>
             RotMod = 0x84,
+
             /// <summary>
             /// float BleedMod
             /// </summary>
             BleedMod = 0x88,
+
             /// <summary>
             /// float BlightMod
             /// </summary>
             BlightMod = 0x8C,
+
             /// <summary>
             /// float FrostMod
             /// </summary>
             ForstMod = 0x90,
+
             /// <summary>
             /// float SleepMod
             /// </summary>
             SleepMod = 0x94,
+
             /// <summary>
             /// float MadnessMod
             /// </summary>
             MadnessMod = 0x98,
+
             /// <summary>
             /// float PoisonMul
             /// </summary>
             PoisonMul = 0x9C,
+
             /// <summary>
             /// float RotMul
             /// </summary>
             RotMul = 0xA0,
+
             /// <summary>
             /// float BleedMul
             /// </summary>
             BleedMul = 0xA4,
+
             /// <summary>
             /// float BlightMul
             /// </summary>
             BlightMul = 0xA8,
+
             /// <summary>
             /// float FrostMul
             /// </summary>
             ForstMul = 0xAC,
+
             /// <summary>
             /// float SleepMul
             /// </summary>
             SleepMul = 0xB0,
+
             /// <summary>
             /// float MadnessMul
             /// </summary>
@@ -422,10 +482,12 @@ namespace Erd_Tools
             /// float Stagger
             /// </summary>
             Stagger = 0x10,
+
             /// <summary>
             /// float StaggerMax
             /// </summary>
             StaggerMax = 0x14,
+
             /// <summary>
             /// float ResetTimer
             /// </summary>
@@ -447,13 +509,15 @@ namespace Erd_Tools
             TargetHandle = 0x6B0,
             TargetArea = 0x6B4,
             Instance = 0x10EF8,
-            Data = 0x0*10,
+            Data = 0x0 * 10,
             ChrData = 0x580,
             Name = 0x9C
         }
 
 
-        public const string DisableOpenMapAoB = "74 ?? C7 45 ?? ?? ?? ?? ?? C7 45 ?? ?? ?? ?? ?? C7 45 ?? ?? ?? ?? ?? 48 8D 05 ?? ?? ?? ?? 48 89 45 ?? 48 8D 4D ?? E8 ?? ?? ?? ?? E9 ?? ?? ?? ?? 48 83 BF";
+        public const string DisableOpenMapAoB =
+            "74 ?? C7 45 ?? ?? ?? ?? ?? C7 45 ?? ?? ?? ?? ?? C7 45 ?? ?? ?? ?? ?? 48 8D 05 ?? ?? ?? ?? 48 89 45 ?? 48 8D 4D ?? E8 ?? ?? ?? ?? E9 ?? ?? ?? ?? 48 83 BF";
+
         public const string CombatCloseMapAoB = "E8 ?? ?? ?? ?? 84 C0 75 ?? 38 83 ?? ?? ?? ?? 75 ?? 83 E6 FE";
         public const string WorldAreaWeatherAoB = "48 8B 15 ? ? ? ? 32 C0 48 85 D2 ? ? 8B 82";
 
@@ -473,5 +537,20 @@ namespace Erd_Tools
         public const string ChrDebug = "48 8B 05 ?? ?? ?? ?? 41 83 FF 02 ?? ?? 48 85 C0";
         public const string ChrDebugFlags = "80 3D ?? ?? ?? ?? 00 0F 85 ?? ?? ?? ?? 32 C0 48";
         public const string LevelUpAoB = "DE AD BE EF"; // needs AoB
+
+        public const string MsgRepositoryImpAoB = "48 8B 3D ?? ?? ?? ?? 44 0F B6 30 48 85 FF 75";
+
+        public enum MsgRepositoryImp
+        {
+            Categories = 0x8,
+            VersionCount = 0x10,
+            CategoryCount = 0x14,
+        }
+
+        public enum FmgFile
+        {
+            FileSize = 0x4,
+            StringOffsetsOffset = 0x18,
+        }
     }
 }

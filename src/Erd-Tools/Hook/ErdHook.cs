@@ -11,21 +11,19 @@ using System.Text;
 using Category = Erd_Tools.Models.Item.Category;
 using static SoulsFormats.PARAMDEF;
 using System.Collections;
-using System.Globalization;
 using System.Text.RegularExpressions;
 using SoulsFormats;
 using System.Threading.Tasks;
 using System.Threading;
-using System.Xml;
-using System.Xml.Serialization;
 using Erd_Tools.Models;
 using Erd_Tools.Models.Items;
 using Erd_Tools.Utils;
 using Erd_Tools.ErdToolsException;
+using Erd_Tools.Models.Game;
+using Erd_Tools.Models.Msg;
 using Erd_Tools.Structs;
 using System.Runtime.InteropServices;
 using Architecture = Keystone.Architecture;
-using Grace = Erd_Tools.Models.Grace;
 
 namespace Erd_Tools
 {
@@ -70,6 +68,8 @@ namespace Erd_Tools
         public PHPointer ChrDebug { get; set; }
         public PHPointer ChrDebugFlags { get; set; }
         public PHPointer LevelUp { get; set; }
+        private MsgRepositoryImp MsgRepository { get; set; }
+
         public static bool Reading { get; set; }
         public string ID => Process?.Id.ToString() ?? "Not Hooked";
 
@@ -104,7 +104,8 @@ namespace Erd_Tools
                 Offsets.RelativePtrInstructionSize);
             SoloParamRepository = RegisterRelativeAOB(Offsets.SoloParamRepositoryAoB, Offsets.RelativePtrAddressOffset,
                 Offsets.RelativePtrInstructionSize, 0x0);
-            
+
+            MsgRepository = new MsgRepositoryImp(RegisterRelativeAOB(Offsets.MsgRepositoryImpAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0), this);
 
             ItemGive = RegisterAbsoluteAOB(Offsets.ItemGiveAoB);
             MapItemMan = RegisterRelativeAOB(Offsets.MapItemManAoB, Offsets.RelativePtrAddressOffset,
@@ -182,11 +183,15 @@ namespace Erd_Tools
             //LogABunchOfStuff();
         }
 
+        public GestureGameData GestureGameData;
+
         private async Task AsyncSetup()
         {
             CheckParamsLoaded();
             Params = GetParams();
             await ReadParams();
+            GestureGameData = new GestureGameData(CreateChildPointer(PlayerGameData, (int)Offsets.PlayerGameData.GestureGameData), GestureParam, MsgRepository);
+            var g = GestureGameData.GetGestures();
             Setup = true;
             RaiseOnSetup();
         }
@@ -230,6 +235,7 @@ namespace Erd_Tools
         public Param? MagicParam;
         public Param? NpcParam;
         public Param? BonfireWarpParam;
+        public Param? GestureParam;
 
         private Engine Engine = new(Architecture.X86, Mode.X64);
 
@@ -350,6 +356,9 @@ namespace Erd_Tools
                     break;
                 case "BonfireWarpParam":
                     BonfireWarpParam = param;
+                    break;
+                case "GestureParam":
+                    GestureParam = param;
                     break;
                 default:
                     break;
@@ -1152,5 +1161,6 @@ namespace Erd_Tools
         }
         
   #endregion
+  
     }
 }

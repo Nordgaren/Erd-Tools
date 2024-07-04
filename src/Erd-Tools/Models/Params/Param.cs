@@ -1,9 +1,11 @@
 ﻿using Erd_Tools.Utils;
+using Org.BouncyCastle.Math.Field;
 using PropertyHook;
 using SoulsFormats;
 using System;
 using System.Collections.Generic;
 using System.Reflection.Metadata;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.RegularExpressions;
 using static SoulsFormats.PARAMDEF;
@@ -25,7 +27,9 @@ namespace Erd_Tools.Models
         public Dictionary<int, string> NameDictionary { get; private set; }
         public Dictionary<int, int> OffsetDict { get; private set; }
         public int RowLength { get; private set; }
-       
+        public Row? this[int rowId] => Rows.Find((r) => r.ID == rowId);
+
+
         public Param(PHPointer pointer, int offset, PARAMDEF Paramdef, string name)
         {
             Pointer = pointer;
@@ -121,6 +125,7 @@ namespace Erd_Tools.Models
             public string Name { get; private set; }
             public int ID { get; private set; }
             public int DataOffset { get; private set; }
+            public Field? this[string fieldName] => Param.Fields.Find((f) => f.InternalName == fieldName);
 
             public Row(Param param, string name, int id, int offset)
             {
@@ -241,6 +246,7 @@ namespace Erd_Tools.Models
             {
                 return InternalName;
             }
+            
         }
 
         public class FixedStr : Field
