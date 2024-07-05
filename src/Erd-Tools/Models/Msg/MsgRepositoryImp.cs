@@ -10,23 +10,27 @@ namespace Erd_Tools.Models.Msg
         private ErdHook _hook { get; }
         private FMG?[]? _cache { get; set;  }
 
+        /// <summary>
+        /// MsgRepositoryImp class responsible for interacting with the games `MsgRepositoryImp`.  
+        /// </summary>
+        /// <param name="msgRepositoryImpPtr"></param>
+        /// <param name="hook"></param>
         public MsgRepositoryImp(PHPointer msgRepositoryImpPtr, ErdHook hook)
         {
             _msgRepositoryImp = msgRepositoryImpPtr;
             _hook = hook;
         }
 
+        /// <summary>
+        /// Gets the FMG entry from the specified FMG. FMGs are cached. Call `ClearCache()` if you need to re-read the
+        /// FMGs.  
+        /// </summary>
+        /// <param name="fmgId">The FMG for the string lookup.</param>
+        /// <param name="id">Id of the string entry</param>
+        /// <returns>string entry if it exists, otherwise null</returns>
         public string? GetEntry(FmgId fmgId, int id)
         {
-            if (_cache == null)
-            {
-                int count = _msgRepositoryImp.ReadInt32((int)Offsets.MsgRepositoryImp.CategoryCount);
-                FMG[] cache = Array.Empty<FMG>();
-                Array.Resize(ref cache, count);
-                _cache = cache;
-            }
-
-            var cached = _cache[(int)fmgId];
+            FMG? cached = GetCachedFmg(fmgId);
             if (cached != null)
             {
                 return cached[id];
@@ -47,9 +51,31 @@ namespace Erd_Tools.Models.Msg
             Array.Copy(BitConverter.GetBytes(offset), 0x0, bytes, (int)Offsets.FmgFile.StringOffsetsOffset, 0x8);
             FMG fmg = FMG.Read(bytes);
 
-            _cache[(int)fmgId] = fmg;
+            // I know it's not null, cause GetCachedFmg will initialize it.
+            _cache![(int)fmgId] = fmg;
 
             return fmg[id];
+        }
+
+        private FMG? GetCachedFmg(FmgId fmgId) {
+            if (_cache != null)
+            {
+                return _cache[(int)fmgId];
+            }
+
+            ClearCache();
+            return _cache[(int)fmgId];
+        }
+
+        /// <summary>
+        /// Clears the fmg cache, so that FMGs will be re-read from memory.  
+        /// </summary>
+        public void ClearCache()
+        {
+            int count = _msgRepositoryImp.ReadInt32((int)Offsets.MsgRepositoryImp.CategoryCount);
+            FMG[] cache = Array.Empty<FMG>();
+            Array.Resize(ref cache, count);
+            _cache = cache;
         }
     }
 

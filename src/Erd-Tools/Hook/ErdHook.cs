@@ -191,7 +191,6 @@ namespace Erd_Tools
             Params = GetParams();
             await ReadParams();
             GestureGameData = new GestureGameData(CreateChildPointer(PlayerGameData, (int)Offsets.PlayerGameData.GestureGameData), GestureParam, MsgRepository);
-            var g = GestureGameData.GetGestures();
             Setup = true;
             RaiseOnSetup();
         }
@@ -219,11 +218,13 @@ namespace Erd_Tools
 
         private void LogABunchOfStuff()
         {
-            List<string> list = new List<string>();
-            list.Add($"WorldChrMan {WorldChrMan.Resolve():X2}");
-            list.Add($"ItemGib {ItemGive.Resolve():X2}");
-            list.Add($"GameDataMan {GameDataMan.Resolve():X2}");
-            list.Add($"SoloParamRepository {SoloParamRepository.Resolve():X2}");
+            List<string> list = new List<string>
+            {
+                $"WorldChrMan {WorldChrMan.Resolve().ToInt64() - Process.MainModule.BaseAddress.ToInt64():X2}", 
+                $"ItemGib {ItemGive.Resolve().ToInt64() -  - Process.MainModule.BaseAddress.ToInt64():X2}", 
+                $"GameDataMan {GameDataMan.Resolve(). ToInt64()  - Process.MainModule.BaseAddress.ToInt64():X2}",
+                $"SoloParamRepository {SoloParamRepository.Resolve().ToInt64()  - Process.MainModule.BaseAddress.ToInt64():X2}"
+            };
             File.WriteAllLines(Environment.CurrentDirectory + @"\HookLog.txt", list);
         }
 

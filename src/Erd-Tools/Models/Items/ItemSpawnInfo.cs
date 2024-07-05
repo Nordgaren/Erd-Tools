@@ -17,7 +17,7 @@ namespace Erd_Tools.Models.Items
         public int Upgrade { get;  }
         public int Gem { get;  }
         public int EventID { get;  }
-        public ItemSpawnInfo(int id, Category category, int quantity, int maxQuantity, int infusion, int upgrade, int gem, int eventId)
+        public ItemSpawnInfo(int id, Category category, int quantity, int maxQuantity, int infusion, int upgrade, int gem = -1, int eventId = -1)
         {
             ID = id;
             Category = category;
