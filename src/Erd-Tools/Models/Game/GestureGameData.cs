@@ -1,4 +1,5 @@
 ﻿using Erd_Tools.Models.Msg;
+using Erd_Tools.Models.System.Dlc;
 using PropertyHook;
 using System;
 using System.Collections.Generic;
@@ -11,8 +12,24 @@ namespace Erd_Tools.Models.Game
     /// <param name="Id">The gesture ID, used for unlocking the gesture</param>
     /// <param name="Name">Name of the gesture</param>
     /// <param name="ItemId">Item id of the gesture, used for displaying aquisition</param>
-    public record class Gesture(int Id, string Name, int ItemId);
+    public record Gesture(int Id, string Name, int ItemId)
+    {
+        /// <summary>
+        /// Returns the `DlcName` of the Gesture. Includes pre-order gestures.  
+        /// </summary>
+        public DlcName Dlc =>
+            Id switch
+            {
+                108 => DlcName.PreOrderGesture,
+                113 => DlcName.ShadowOfTheErdtreePreOrderGesture,
+                >= 111 and <= 116 => DlcName.ShadowOfTheErdtree,
+                _ => DlcName.None
+            };
+    };
     
+    /// <summary>
+    /// A class that interacts with the games `GestureGameData`.
+    /// </summary>
     public class GestureGameData
     {
         private const int GESTURE_LIMIT = 0x40;

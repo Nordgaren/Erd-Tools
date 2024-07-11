@@ -5,9 +5,9 @@ namespace Erd_Tools.Structs
     [StructLayout(LayoutKind.Explicit)]
     public struct LevelUpStruct
     {
-        [FieldOffset(0x3C)]public int Vigor;
-        [FieldOffset(0x40)]public int Mind;
-        [FieldOffset(0x44)]public int Endurance;
+        [FieldOffset(0x3C)] public int Vigor;
+        [FieldOffset(0x40)] public int Mind;
+        [FieldOffset(0x44)] public int Endurance;
         [FieldOffset(0x48)] public int Strength;
         [FieldOffset(0x4C)] public int Dexterity;
         [FieldOffset(0x50)] public int Intelligence;

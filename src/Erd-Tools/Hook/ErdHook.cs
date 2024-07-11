@@ -21,6 +21,8 @@ using Erd_Tools.Utils;
 using Erd_Tools.ErdToolsException;
 using Erd_Tools.Models.Game;
 using Erd_Tools.Models.Msg;
+using Erd_Tools.Models.System;
+using Erd_Tools.Models.System.Dlc;
 using Erd_Tools.Structs;
 using System.Runtime.InteropServices;
 using Architecture = Keystone.Architecture;
@@ -30,12 +32,14 @@ namespace Erd_Tools
     public class ErdHook : PHook, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler? PropertyChanged;
+
         protected void OnPropertyChanged([CallerMemberName] string? name = null)
         {
             PropertyChanged?.Invoke(this, new(name));
         }
 
         public event EventHandler<PHEventArgs>? OnSetup;
+
         private void RaiseOnSetup()
         {
             OnSetup?.Invoke(this, new(this));
@@ -68,8 +72,9 @@ namespace Erd_Tools
         public PHPointer ChrDebug { get; set; }
         public PHPointer ChrDebugFlags { get; set; }
         public PHPointer LevelUp { get; set; }
-        private MsgRepositoryImp MsgRepository { get; set; }
+        public MsgRepositoryImp MsgRepository { get; private set; }
 
+        public CSDlcImp CSDlc { get; private set; }
         public static bool Reading { get; set; }
         public string ID => Process?.Id.ToString() ?? "Not Hooked";
 
@@ -95,17 +100,21 @@ namespace Erd_Tools
             PlayerGameData = CreateChildPointer(GameDataMan, (int)Offsets.GameDataMan.PlayerGameData);
             PlayerInventory = CreateChildPointer(PlayerGameData, Offsets.EquipInventoryDataOffset,
                 Offsets.PlayerInventoryOffset);
-            HeldNormalItemsPtr = CreateChildPointer(PlayerGameData, 
+            HeldNormalItemsPtr = CreateChildPointer(PlayerGameData,
                 (int)Offsets.PlayerGameData.HeldNormalItems);
             HeldSpecialItemsPtr =
                 CreateChildPointer(PlayerGameData, (int)Offsets.PlayerGameData.HeldSpecialItems);
 
-            SoloParamRepositoryPtr = RegisterRelativeAOB(Offsets.SoloParamRepositoryAoB, Offsets.RelativePtrAddressOffset,
+            SoloParamRepositoryPtr = RegisterRelativeAOB(Offsets.SoloParamRepositoryAoB,
+                Offsets.RelativePtrAddressOffset,
                 Offsets.RelativePtrInstructionSize);
             SoloParamRepository = RegisterRelativeAOB(Offsets.SoloParamRepositoryAoB, Offsets.RelativePtrAddressOffset,
                 Offsets.RelativePtrInstructionSize, 0x0);
 
-            MsgRepository = new MsgRepositoryImp(RegisterRelativeAOB(Offsets.MsgRepositoryImpAoB, Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0), this);
+            MsgRepository =
+                new MsgRepositoryImp(
+                    RegisterRelativeAOB(Offsets.MsgRepositoryImpAoB, Offsets.RelativePtrAddressOffset,
+                        Offsets.RelativePtrInstructionSize, 0x0), this);
 
             ItemGive = RegisterAbsoluteAOB(Offsets.ItemGiveAoB);
             MapItemMan = RegisterRelativeAOB(Offsets.MapItemManAoB, Offsets.RelativePtrAddressOffset,
@@ -133,17 +142,20 @@ namespace Erd_Tools
             LuaWarp_01AoB = RegisterAbsoluteAOB(Offsets.LuaWarp_01AoB);
 
             GetChrInsFromHandle = RegisterAbsoluteAOB(Offsets.GetChrInsFromHandle);
-            
+
             ChrDebug = RegisterRelativeAOB(Offsets.GetChrInsFromHandle, Offsets.RelativePtrAddressOffset,
                 Offsets.RelativePtrInstructionSize, 0x0);
             ChrDebugFlags = RegisterRelativeAOB(Offsets.GetChrInsFromHandle, Offsets.RelativePtrAddressOffset2,
                 Offsets.RelativePtrInstructionSize, 0x0);
 
             LevelUp = RegisterAbsoluteAOB(Offsets.LevelUpAoB);
-            
+
             ItemEventDictionary = BuildItemEventDictionary();
             ItemCategory.GetItemCategories();
             Continent.GetContinents();
+
+            CSDlc = new CSDlcImp(RegisterRelativeAOB(Offsets.CSDlcImpAoB, Offsets.CSDlcImpOffset,
+                Offsets.CSDlcImpInstructionSize, 0));
         }
 
         private void ErdHook_OnUnhooked(object? sender, PHEventArgs e)
@@ -190,7 +202,9 @@ namespace Erd_Tools
             CheckParamsLoaded();
             Params = GetParams();
             await ReadParams();
-            GestureGameData = new GestureGameData(CreateChildPointer(PlayerGameData, (int)Offsets.PlayerGameData.GestureGameData), GestureParam, MsgRepository);
+            GestureGameData =
+                new GestureGameData(CreateChildPointer(PlayerGameData, (int)Offsets.PlayerGameData.GestureGameData),
+                    GestureParam, MsgRepository);
             Setup = true;
             RaiseOnSetup();
         }
@@ -218,12 +232,12 @@ namespace Erd_Tools
 
         private void LogABunchOfStuff()
         {
-            List<string> list = new List<string>
+            List<string> list = new()
             {
-                $"WorldChrMan {WorldChrMan.Resolve().ToInt64() - Process.MainModule.BaseAddress.ToInt64():X2}", 
-                $"ItemGib {ItemGive.Resolve().ToInt64() -  - Process.MainModule.BaseAddress.ToInt64():X2}", 
-                $"GameDataMan {GameDataMan.Resolve(). ToInt64()  - Process.MainModule.BaseAddress.ToInt64():X2}",
-                $"SoloParamRepository {SoloParamRepository.Resolve().ToInt64()  - Process.MainModule.BaseAddress.ToInt64():X2}"
+                $"WorldChrMan {WorldChrMan.Resolve().ToInt64() - Process.MainModule.BaseAddress.ToInt64():X2}",
+                $"ItemGib {ItemGive.Resolve().ToInt64() - -Process.MainModule.BaseAddress.ToInt64():X2}",
+                $"GameDataMan {GameDataMan.Resolve().ToInt64() - Process.MainModule.BaseAddress.ToInt64():X2}",
+                $"SoloParamRepository {SoloParamRepository.Resolve().ToInt64() - Process.MainModule.BaseAddress.ToInt64():X2}"
             };
             File.WriteAllLines(Environment.CurrentDirectory + @"\HookLog.txt", list);
         }
@@ -250,7 +264,8 @@ namespace Erd_Tools
             if (error != KeystoneError.KS_ERR_OK)
                 throw new("Something went wrong during assembly. Code could not be assembled.");
 
-            IntPtr insertPtr = GetPrefferedIntPtr(bytes.Buffer.Length, flProtect: PropertyHook.Kernel32.PAGE_EXECUTE_READWRITE);
+            IntPtr insertPtr = GetPrefferedIntPtr(bytes.Buffer.Length,
+                flProtect: PropertyHook.Kernel32.PAGE_EXECUTE_READWRITE);
 
             //Reassemble with the location of the isertPtr to support relative instructions
             bytes = Engine.Assemble(asm, (ulong)insertPtr);
@@ -368,7 +383,7 @@ namespace Erd_Tools
 
         internal PHPointer GetParamPointer(int offset)
         {
-            return CreateChildPointer(SoloParamRepository, new int[] {offset, 0x80, 0x80});
+            return CreateChildPointer(SoloParamRepository, new int[] { offset, 0x80, 0x80 });
         }
 
         public void SaveParam(Param param)
@@ -809,7 +824,7 @@ namespace Erd_Tools
         private void EnableMapInCombat()
         {
             OriginalCombatCloseMap = CombatCloseMap.ReadBytes(0x0, 0x5);
-            byte[]? assembly = new byte[] {0x48, 0x31, 0xC0, 0x90, 0x90};
+            byte[]? assembly = new byte[] { 0x48, 0x31, 0xC0, 0x90, 0x90 };
 
             DisableOpenMap.WriteByte(0x0, 0xEB); //Write Jump
             CombatCloseMap.WriteBytes(0x0, assembly);
@@ -1139,7 +1154,8 @@ namespace Erd_Tools
 
         #region Player
 
-        public void LevelUpPlayer(int vigor, int mind, int endurance, int strength, int dexterity, int intelligence, int faith, int arcane)
+        public void LevelUpPlayer(int vigor, int mind, int endurance, int strength, int dexterity, int intelligence,
+            int faith, int arcane)
         {
             LevelUpStruct levelUpStruct = new();
             levelUpStruct.Vigor = vigor;
@@ -1150,18 +1166,17 @@ namespace Erd_Tools
             levelUpStruct.Intelligence = intelligence;
             levelUpStruct.Faith = faith;
             levelUpStruct.Arcane = arcane;
-            
+
             IntPtr buf = Marshal.AllocHGlobal(
                 Marshal.SizeOf(levelUpStruct));
             Marshal.StructureToPtr(levelUpStruct,
                 buf, false);
             string asmString = Util.GetEmbededResource("Assembly.LevelUp.asm");
             string asm = string.Format(asmString, buf.ToString("X2"), LevelUp.Resolve());
-            
+
             Marshal.FreeHGlobal(buf);
         }
-        
-  #endregion
-  
+
+        #endregion
     }
 }

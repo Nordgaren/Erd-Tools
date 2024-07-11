@@ -20,6 +20,7 @@ namespace Erd_Tools.Models
         public int PtrOffset { get; set; }
         public int DataOffset { get; set; }
         public int BitStart { get; set; }
+        public DlcName Dlc  => DlcName.None;
     }
     public class Hub
     {

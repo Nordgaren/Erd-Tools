@@ -4,6 +4,9 @@ using System;
 
 namespace Erd_Tools.Models.Msg
 {
+    /// <summary>
+    /// MsgRepositoryImp class that 
+    /// </summary>
     public class MsgRepositoryImp
     {
         private PHPointer _msgRepositoryImp { get; }
@@ -79,6 +82,10 @@ namespace Erd_Tools.Models.Msg
         }
     }
 
+    /// <summary>
+    /// Enum that represents the Fmg by name. The value is the index into the array that the MsgRepositoryImp stores the
+    /// files in.  
+    /// </summary>
     public enum FmgId
     {
         GoodsName = 0x0A,
