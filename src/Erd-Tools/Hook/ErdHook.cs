@@ -187,6 +187,7 @@ namespace Erd_Tools
             IntPtr disableOpenMap = DisableOpenMap.Resolve();
             IntPtr combatCloseMap = CombatCloseMap.Resolve();
             IntPtr getChrInsFromHandle = GetChrInsFromHandle.Resolve();
+            IntPtr csDlc = CSDlc.Resolve();
 #endif
 
             await AsyncSetup();

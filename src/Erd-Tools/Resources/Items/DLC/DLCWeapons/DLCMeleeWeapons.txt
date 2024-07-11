@@ -1,4 +1,5 @@
 1500000 Main-gauche
+1510000 Fire Knight's Shortsword
 2510000 Velvet Sword of St. Trina
 2520000 Star-Lined Sword
 2530000 Carian Sorcery Sword
@@ -10,6 +11,7 @@
 3520000 Lizard Greatsword
 3550000 Greatsword of Solitude
 4500000 Ancient Meteoric Ore Greatsword
+4520000	Fire Knight's Greatsword
 4530000 Greatsword of Radahn (Lord)
 4540000 Moonrithyll's Knight Sword
 4550000 Greatsword of Radahn (Light)
@@ -28,6 +30,7 @@
 12500000 Smithscript Greathammer
 12510000 Anvil Hammer
 12520000 Black Steel Greathammer
+12530000 Bloodfiend's Arm
 13500000 Serpent Flail
 14500000 Smithscript Axe
 14510000 Death Knight's Twin Axes
@@ -37,6 +40,7 @@
 15510000 Bonny Butchering Knife
 16500000 Smithscript Spear
 16520000 Swift Spear
+16540000 Bloodfiend's Fork
 17500000 Spear of the Impaler
 17510000 Messmer Soldier's Spear
 17520000 Barbed Staff-Spear
@@ -55,7 +59,6 @@
 23520000 Gazing Finger
 24500000 Nanaya's Torch
 24510000 Lamenting Visage
-51500000 Igon's Harpoon
 60500000 Dryleaf Arts
 60510000 Dane's Footwork
 61500000 Firespark Perfume Bottle
