@@ -92,7 +92,7 @@ namespace Erd_Tools.Models.CSFD4
             int? cached = _cache[group];
             if (cached != null)
             {
-                return _isEventFlagFast(cached.Value, bitPos);
+                return _readEventFlag(cached.Value, bitPos);
             }
 
             IntPtr root = _csfd4VirtualMemoryFlag.ReadIntPtr((int)Offsets.CSFD4VirtualMemoryFlag.FlagGroupRootNode);
@@ -126,11 +126,6 @@ namespace Erd_Tools.Models.CSFD4
 
             if (foundPtr.Resolve() == rootPtr.Resolve() || group < foundPtr.ReadInt32((int)Offsets.EventFlagGroupNode.Group))
             {
-                foundPtr = rootPtr;
-            }
-
-            if (foundPtr.Resolve() == rootPtr.Resolve())
-            {
                 return false;
             }
 
@@ -138,11 +133,16 @@ namespace Erd_Tools.Models.CSFD4
                 _csfd4VirtualMemoryFlag.ReadInt32((int)Offsets.CSFD4VirtualMemoryFlag.FlagHolderEntrySize);
             int groupIndex = foundPtr.ReadInt32((int)Offsets.EventFlagGroupNode.Location) * entrySize;
             _cache[group] = groupIndex;
-            return _isEventFlagFast(groupIndex, bitPos);
+            return _readEventFlag(groupIndex, bitPos);
 
         }
-        
-        private bool _isEventFlagFast(int groupIndex, int bitPos)
+        /// <summary>
+        /// Helper method that reads the event flag with the specified group index and bit position information.
+        /// </summary>
+        /// <param name="groupIndex">Group index in bytes. Location * EntrySize</param>
+        /// <param name="bitPos">The bit position information of the flag. FlagId % Divisor</param>
+        /// <returns>Flag State</returns>
+        private bool _readEventFlag(int groupIndex, int bitPos)
         {
             int bitIndex = bitPos >> 3;
             byte bitfield = _flagHolder.ReadByte(groupIndex + bitIndex);

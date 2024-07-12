@@ -443,16 +443,10 @@ namespace Erd_Tools
         /// </summary>
         /// <param name="flag">Flag Id</param>
         /// <param name="state">On or off</param>
+        [Obsolete("This function is deprecated. Use CSFD4VirtualMemoryFlag.SetEventFlag, instead")]
         public void SetEventFlag(int flag, bool state)
         {
-            IntPtr idPointer = GetPrefferedIntPtr(sizeof(int));
-            PropertyHook.Kernel32.WriteInt32(Handle, idPointer, flag);
-
-            string asmString = Util.GetEmbededResource("Assembly.SetEventFlag.asm");
-            string asm = string.Format(asmString, CSFD4VirtualMemoryFlagPtr.Resolve(), (state ? 1 : 0), idPointer.ToString("X2"),
-                SetEventFlagFunction.Resolve());
-            AsmExecute(asm);
-            Free(idPointer);
+            CSFD4VirtualMemoryFlag.SetEventFlag(flag, state);
         }
 
         /// <summary>
@@ -460,22 +454,10 @@ namespace Erd_Tools
         /// </summary>
         /// <param name="flag">Flag Id</param>
         /// <returns>Flag state</returns>
+        [Obsolete("This function is deprecated. Use CSFD4VirtualMemoryFlag.IsEventFlag, instead.")]
         public bool IsEventFlag(int flag)
         {
-            IntPtr returnPtr = GetPrefferedIntPtr(sizeof(bool));
-            IntPtr idPointer = GetPrefferedIntPtr(sizeof(int));
-            PropertyHook.Kernel32.WriteInt32(Handle, idPointer, flag);
-
-            string asmString = Util.GetEmbededResource("Assembly.IsEventFlag.asm");
-            string asm = string.Format(asmString, CSFD4VirtualMemoryFlagPtr.Resolve(), idPointer.ToString("X2"),
-                IsEventFlagFunction.Resolve(), returnPtr.ToString("X2"));
-
-            AsmExecute(asm);
-            bool state = PropertyHook.Kernel32.ReadBoolean(Handle, returnPtr);
-            Free(returnPtr);
-            Free(idPointer);
-
-            return state;
+            return CSFD4VirtualMemoryFlag.IsEventFlag(flag);
         }
 
         #region Inventory
@@ -1146,7 +1128,7 @@ namespace Erd_Tools
             get => GameMan.ReadInt32((int)Offsets.GameMan.LastGrace);
             set => GameMan.WriteInt32((int)Offsets.GameMan.LastGrace, value);
         }
-
+        [Obsolete("This function is deprecated. Use CSFD4VirtualMemoryFlag.IsEventFlagFast, instead.")]
         public bool CheckGraceStatus(int ptrOffset, int dataOffset, int bitStart)
         {
             PHPointer bonfireInfo = CreateChildPointer(CSFD4VirtualMemoryFlagPtr, ptrOffset);
