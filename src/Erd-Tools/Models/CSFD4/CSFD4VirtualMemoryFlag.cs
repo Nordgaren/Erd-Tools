@@ -4,6 +4,9 @@ using System;
 
 namespace Erd_Tools.Models.CSFD4
 {
+    /// <summary>
+    /// A class that deals with the games `CSFD4VirtualMemoryFlag` class. Can lookup and set flags.
+    /// </summary>
     public class CSFD4VirtualMemoryFlag
     {
         private PHPointer _csfd4VirtualMemoryFlag;
@@ -76,7 +79,6 @@ namespace Erd_Tools.Models.CSFD4
 
             return state;
         }
-
         /// <summary>
         /// Returns the state of the flag in game by checking the flag bit manually. Is faster than `IsEventFlag`
         /// </summary>
@@ -90,7 +92,7 @@ namespace Erd_Tools.Models.CSFD4
             int? cached = _cache[group];
             if (cached != null)
             {
-                return IsEventFlagFast(cached.Value, bitPos);
+                return _isEventFlagFast(cached.Value, bitPos);
             }
 
             IntPtr root = _csfd4VirtualMemoryFlag.ReadIntPtr((int)Offsets.CSFD4VirtualMemoryFlag.FlagGroupRootNode);
@@ -136,11 +138,11 @@ namespace Erd_Tools.Models.CSFD4
                 _csfd4VirtualMemoryFlag.ReadInt32((int)Offsets.CSFD4VirtualMemoryFlag.FlagHolderEntrySize);
             int groupIndex = foundPtr.ReadInt32((int)Offsets.EventFlagGroupNode.Location) * entrySize;
             _cache[group] = groupIndex;
-            return IsEventFlagFast(groupIndex, bitPos);
+            return _isEventFlagFast(groupIndex, bitPos);
 
         }
         
-        public bool IsEventFlagFast(int groupIndex, int bitPos)
+        private bool _isEventFlagFast(int groupIndex, int bitPos)
         {
             int bitIndex = bitPos >> 3;
             byte bitfield = _flagHolder.ReadByte(groupIndex + bitIndex);
