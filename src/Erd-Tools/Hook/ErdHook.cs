@@ -19,6 +19,7 @@ using Erd_Tools.Models;
 using Erd_Tools.Models.Items;
 using Erd_Tools.Utils;
 using Erd_Tools.ErdToolsException;
+using Erd_Tools.Models.CSFD4;
 using Erd_Tools.Models.Game;
 using Erd_Tools.Models.Msg;
 using Erd_Tools.Models.System;
@@ -56,7 +57,6 @@ namespace Erd_Tools
         private PHPointer CapParamCall { get; set; }
         public PHPointer ItemGive { get; set; }
         public PHPointer MapItemMan { get; set; }
-        public PHPointer EventFlagMan { get; set; }
         public PHPointer SetEventFlagFunction { get; set; }
         public PHPointer IsEventFlagFunction { get; set; }
         public PHPointer WorldChrMan { get; set; }
@@ -64,7 +64,6 @@ namespace Erd_Tools
         public PHPointer DisableOpenMap { get; set; }
         public PHPointer CombatCloseMap { get; set; }
         public PHPointer WorldAreaWeather { get; set; }
-        public PHPointer CSFD4VirtualMemoryFlag { get; set; }
         public PHPointer CSLuaEventManager { get; set; }
         public PHPointer LuaWarp_01AoB { get; set; }
         public PHPointer Crash { get; set; }
@@ -73,6 +72,8 @@ namespace Erd_Tools
         public PHPointer ChrDebugFlags { get; set; }
         public PHPointer LevelUp { get; set; }
         public MsgRepositoryImp MsgRepository { get; private set; }
+        public PHPointer CSFD4VirtualMemoryFlagPtr { get; set; }
+        public CSFD4VirtualMemoryFlag CSFD4VirtualMemoryFlag { get; private set; }
 
         public CSDlcImp CSDlc { get; private set; }
         public static bool Reading { get; set; }
@@ -119,8 +120,6 @@ namespace Erd_Tools
             ItemGive = RegisterAbsoluteAOB(Offsets.ItemGiveAoB);
             MapItemMan = RegisterRelativeAOB(Offsets.MapItemManAoB, Offsets.RelativePtrAddressOffset,
                 Offsets.RelativePtrInstructionSize);
-            EventFlagMan = RegisterRelativeAOB(Offsets.EventFlagManAoB, Offsets.RelativePtrAddressOffset,
-                Offsets.RelativePtrInstructionSize, 0x0);
             SetEventFlagFunction = RegisterAbsoluteAOB(Offsets.SetEventCallAoB);
             IsEventFlagFunction = RegisterAbsoluteAOB(Offsets.IsEventCallAoB);
 
@@ -135,7 +134,7 @@ namespace Erd_Tools
             WorldAreaWeather = RegisterRelativeAOB(Offsets.WorldAreaWeatherAoB, Offsets.RelativePtrAddressOffset,
                 Offsets.RelativePtrInstructionSize, 0x0);
 
-            CSFD4VirtualMemoryFlag = RegisterRelativeAOB(Offsets.CSFD4VirtualMemoryFlagAoB,
+            CSFD4VirtualMemoryFlagPtr = RegisterRelativeAOB(Offsets.CSFD4VirtualMemoryFlagAoB,
                 Offsets.RelativePtrAddressOffset, Offsets.RelativePtrInstructionSize, 0x0);
             CSLuaEventManager = RegisterRelativeAOB(Offsets.CSLuaEventManagerAoB, Offsets.RelativePtrAddressOffset,
                 Offsets.LargeRelativePtrInstructionSize);
@@ -152,7 +151,7 @@ namespace Erd_Tools
 
             ItemEventDictionary = BuildItemEventDictionary();
             ItemCategory.GetItemCategories();
-            Continent.GetContinents();
+
 
             CSDlc = new CSDlcImp(RegisterRelativeAOB(Offsets.CSDlcImpAoB, Offsets.CSDlcImpOffset,
                 Offsets.CSDlcImpInstructionSize, 0));
@@ -171,14 +170,13 @@ namespace Erd_Tools
             IntPtr param = SoloParamRepository.Resolve();
             IntPtr itemGive = ItemGive.Resolve();
             IntPtr mapItemMan = MapItemMan.Resolve();
-            IntPtr eventFlagMan = EventFlagMan.Resolve();
+            IntPtr eventFlagMan = CSFD4VirtualMemoryFlagPtr.Resolve();
             IntPtr capParamCall = CapParamCall.Resolve();
             IntPtr worldChrMan = WorldChrMan.Resolve();
             IntPtr playeIns = PlayerIns.Resolve();
             IntPtr warp = LuaWarp_01AoB.Resolve();
             IntPtr pgd = PlayerGameData.Resolve();
             IntPtr inv = PlayerInventory.Resolve();
-            IntPtr flags = CSFD4VirtualMemoryFlag.Resolve();
             ulong paramOffset =
                 (ulong)(pParam.ToInt64() -
                         Process.MainModule.BaseAddress
@@ -197,7 +195,7 @@ namespace Erd_Tools
         }
 
         public GestureGameData GestureGameData;
-
+        
         private async Task AsyncSetup()
         {
             CheckParamsLoaded();
@@ -206,6 +204,7 @@ namespace Erd_Tools
             GestureGameData =
                 new GestureGameData(CreateChildPointer(PlayerGameData, (int)Offsets.PlayerGameData.GestureGameData),
                     GestureParam, MsgRepository);
+            CSFD4VirtualMemoryFlag = new CSFD4VirtualMemoryFlag(CSFD4VirtualMemoryFlagPtr, this);
             Setup = true;
             RaiseOnSetup();
         }
@@ -250,6 +249,8 @@ namespace Erd_Tools
         public Param? EquipParamWeapon;
         public Param? MagicParam;
         public Param? NpcParam;
+        public Param? BonfireWarpTabParam;
+        public Param? BonfireWarpSubCategoryParam;
         public Param? BonfireWarpParam;
         public Param? GestureParam;
 
@@ -371,6 +372,12 @@ namespace Erd_Tools
                 case "NpcParam":
                     NpcParam = param;
                     break;
+                case "BonfireWarpTabParam":
+                    BonfireWarpTabParam = param;
+                    break;
+                case "BonfireWarpSubCategoryParam":
+                    BonfireWarpSubCategoryParam = param;
+                    break;
                 case "BonfireWarpParam":
                     BonfireWarpParam = param;
                     break;
@@ -404,7 +411,7 @@ namespace Erd_Tools
 
         private async Task ReadParams()
         {
-            List<Task> tasks = new List<Task>();
+            List<Task> tasks = new();
 
             foreach (ItemCategory category in ItemCategory.All)
             {
@@ -434,19 +441,25 @@ namespace Erd_Tools
         /// <summary>
         /// Sets the event flag in game by calling the "Set Event Flag" function.
         /// </summary>
-        /// <param name="flag"></param>
+        /// <param name="flag">Flag Id</param>
+        /// <param name="state">On or off</param>
         public void SetEventFlag(int flag, bool state)
         {
             IntPtr idPointer = GetPrefferedIntPtr(sizeof(int));
             PropertyHook.Kernel32.WriteInt32(Handle, idPointer, flag);
 
             string asmString = Util.GetEmbededResource("Assembly.SetEventFlag.asm");
-            string asm = string.Format(asmString, EventFlagMan.Resolve(), (state ? 1 : 0), idPointer.ToString("X2"),
+            string asm = string.Format(asmString, CSFD4VirtualMemoryFlagPtr.Resolve(), (state ? 1 : 0), idPointer.ToString("X2"),
                 SetEventFlagFunction.Resolve());
             AsmExecute(asm);
             Free(idPointer);
         }
 
+        /// <summary>
+        /// Returns the state of the flag in game by calling the "Is Event Flag" function.
+        /// </summary>
+        /// <param name="flag">Flag Id</param>
+        /// <returns>Flag state</returns>
         public bool IsEventFlag(int flag)
         {
             IntPtr returnPtr = GetPrefferedIntPtr(sizeof(bool));
@@ -454,7 +467,7 @@ namespace Erd_Tools
             PropertyHook.Kernel32.WriteInt32(Handle, idPointer, flag);
 
             string asmString = Util.GetEmbededResource("Assembly.IsEventFlag.asm");
-            string asm = string.Format(asmString, EventFlagMan.Resolve(), idPointer.ToString("X2"),
+            string asm = string.Format(asmString, CSFD4VirtualMemoryFlagPtr.Resolve(), idPointer.ToString("X2"),
                 IsEventFlagFunction.Resolve(), returnPtr.ToString("X2"));
 
             AsmExecute(asm);
@@ -1136,7 +1149,7 @@ namespace Erd_Tools
 
         public bool CheckGraceStatus(int ptrOffset, int dataOffset, int bitStart)
         {
-            PHPointer bonfireInfo = CreateChildPointer(CSFD4VirtualMemoryFlag, ptrOffset);
+            PHPointer bonfireInfo = CreateChildPointer(CSFD4VirtualMemoryFlagPtr, ptrOffset);
             byte bitfield = bonfireInfo.ReadByte(dataOffset);
             return (bitfield & (1 << bitStart)) != 0;
         }
@@ -1149,6 +1162,87 @@ namespace Erd_Tools
             string asmString = Util.GetEmbededResource("Assembly.Warp.asm");
             string asm = string.Format(asmString, CSLuaEventManager.Resolve(), bonfireID, LuaWarp_01AoB.Resolve() + 2);
             AsmExecute(asm);
+        }
+
+        /// <summary>
+        /// Gets the bonfire "Continents" or "Tabs". Contains all continents, hubs and graces.
+        /// </summary>
+        /// <returns></returns>
+        public List<Continent> GetContinents()
+        {
+            if (Continent.All == null)
+            {
+                Continent.All = _populateContinents();
+            }
+
+            return Continent.All;
+        }
+
+        private List<Continent> _populateContinents()
+        {
+            List<Continent> continents = new();
+            foreach (Param.Row row in BonfireWarpTabParam.Rows)
+            {
+                DlcName dlc = DlcName.None;
+                int textId = BonfireWarpTabParam.Pointer.ReadInt32(row.DataOffset + row["textId"].FieldOffset);
+                string? name = MsgRepository.GetEntry(FmgId.GR_MenuText, textId);
+                if (name == null)
+                {
+                    name = MsgRepository.GetEntry(FmgId.GR_MenuText_dlc01, textId);
+                    dlc = DlcName.ShadowOfTheErdtree;
+                }
+
+                if (name != null)
+                {
+                    continents.Add(new Continent(name, row.ID, new List<Hub>(), textId, dlc));
+                }
+            }
+
+            foreach (Param.Row row in BonfireWarpSubCategoryParam.Rows)
+            {
+                DlcName dlc = DlcName.None;
+                ushort tabId =
+                    BonfireWarpSubCategoryParam.Pointer.ReadUInt16(row.DataOffset + row["tabId"].FieldOffset);
+                int textId = BonfireWarpSubCategoryParam.Pointer.ReadInt32(row.DataOffset + row["textId"].FieldOffset);
+                string? name = MsgRepository.GetEntry(FmgId.GR_MenuText, textId);
+                if (name == null)
+                {
+                    name = MsgRepository.GetEntry(FmgId.GR_MenuText_dlc01, textId);
+                    dlc = DlcName.ShadowOfTheErdtree;
+                }
+
+                if (name != null)
+                {
+                    continents.Find((c) => c.RowId == tabId)!.Hubs
+                        .Add(new Hub(Name = name, row.ID, tabId, dlc, new()));
+                }
+            }
+
+            foreach (Param.Row row in BonfireWarpParam.Rows)
+            {
+                DlcName dlc = DlcName.None;
+                int eventFlagId =
+                    (int)BonfireWarpParam.Pointer.ReadUInt32(row.DataOffset + row["eventflagId"].FieldOffset);
+                int entityId =
+                    (int)BonfireWarpParam.Pointer.ReadUInt32(row.DataOffset + row["bonfireEntityId"].FieldOffset);
+                int subCategoryId =
+                    BonfireWarpParam.Pointer.ReadInt32(row.DataOffset + row["bonfireSubCategoryId"].FieldOffset);
+                int textId = BonfireWarpParam.Pointer.ReadInt32(row.DataOffset + row["textId1"].FieldOffset);
+                string name = MsgRepository.GetEntry(FmgId.PlaceName, textId);
+                if (name == null)
+                {
+                    name = MsgRepository.GetEntry(FmgId.PlaceName_dlc01, textId);
+                    dlc = DlcName.ShadowOfTheErdtree;
+                }
+
+                if (name == null) continue;
+                Continent continent = continents.Find((c) => c.Hubs.Find((h) => h.RowId == subCategoryId) != null);
+                Hub hub = continent.Hubs.Find((h) => h.RowId == subCategoryId);
+
+                hub.Graces.Add(new Grace(name, hub.Name, continent.Name, eventFlagId, entityId, dlc));
+            }
+
+            return continents;
         }
 
         #endregion

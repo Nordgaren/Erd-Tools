@@ -75,7 +75,7 @@ namespace Erd_Tools.Models.Game
                     _gestures.Add(new Gesture(row.ID, name, itemId));
                 }
             }
-
+            
             return _gestures;
         }
 

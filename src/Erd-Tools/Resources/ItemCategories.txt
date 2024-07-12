@@ -47,6 +47,3 @@
 
 //0x10000000 false Items/CutContent/Armor.txt Cut Content Armor
 //0x20000000 false Items/CutContent/Talismans.txt Cut Content Talismans
-
-//Uncomment the lines below for Seamless Coop items.
-//0x40000000 false Items/Goods/SeamlessCoop.txt Seamless Coop

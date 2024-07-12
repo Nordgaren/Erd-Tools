@@ -162,7 +162,6 @@
             Unk2 = 0x14,
         }
 
-        public const string EventFlagManAoB = "48 8B 3D ? ? ? ? 48 85 FF ? ? 32 C0 E9";
         public const string IsEventCallAoB = "48 83 EC 28 8B 12 85 D2";
 
         public const string SetEventCallAoB =
@@ -529,6 +528,29 @@
         }
 
         public const string CSFD4VirtualMemoryFlagAoB = "48 8B 3D ? ? ? ? 48 85 FF 74 ? 48 8B 49";
+
+        public enum CSFD4VirtualMemoryFlag
+        {
+            EventFlagDivisor = 0x1C,
+            FlagHolderEntrySize = 0x20,
+            FlagHolderEntryCount = 0x24,
+            FlagHolder = 0x28,
+            FlagGroupAllocator= 0x30,
+            FlagGroupRootNode = 0x38,
+            FlagGroupEntryCount = 0x40
+        }
+
+        public enum EventFlagGroupNode
+        {
+            Left = 0x0,
+            Parent = 0x8,
+            Right = 0x10,
+            IsLeaf = 0x19,
+            Group = 0x20,
+            LocationMode = 0x28,
+            Location = 0x30,
+        }
+        
         public const string CSLuaEventManagerAoB = "48 83 3D ? ? ? ? 00 48 8B F9 0F 84 ? ? ? ? 48";
         public const string LuaWarp_01AoB = "C3 ? ? ? ? ? ? 57 48 83 EC ? 48 8B FA 44";
 
