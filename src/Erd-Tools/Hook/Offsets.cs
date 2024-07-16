@@ -126,6 +126,8 @@
         }
 
         public const string ItemGiveAoB = "8B 02 83 F8 0A";
+        public const string RemoveItemAoB = "?? 83 ec ?? 8b f2 ?? 8b e9 ?? 85 c0 74";
+        public const int RemoveItemOffset = -0x10;
 
         //public const string ItemGiveAoB = "40 55 56 57 41 54 41 55 41 56 41 57 48 8D 6C 24 B0 48 81 EC 50 01 00 00 48 C7 45 C0 FE FF FF FF";
         public const string MapItemManAoB =
@@ -146,10 +148,17 @@
         }
 
         public const int EquipInventoryDataOffset = 0x5D0;
+        public const int EquipStorageDataOffset = 0x8D0;
         public const int MaxInventoryLimit = 0x8;
         public const int NormalInventoryLimit = 0xC;
-        public const int PlayerInventoryOffset = 0x10;
-        public const int PlayInventoryEntrySize = 0x18;
+        public const int InventoryEntrySize = 0x18;
+
+        public enum EquipInventoryData
+        {
+            InventoryOffset = 0x10,
+            InventoryCount = 0x18,
+            TailIndex = 0x1C,
+        }
 
         public enum InventoryEntry
         {
@@ -535,7 +544,7 @@
             FlagHolderEntrySize = 0x20,
             FlagHolderEntryCount = 0x24,
             FlagHolder = 0x28,
-            FlagGroupAllocator= 0x30,
+            FlagGroupAllocator = 0x30,
             FlagGroupRootNode = 0x38,
             FlagGroupEntryCount = 0x40
         }
@@ -550,7 +559,7 @@
             LocationMode = 0x28,
             Location = 0x30,
         }
-        
+
         public const string CSLuaEventManagerAoB = "48 83 3D ? ? ? ? 00 48 8B F9 0F 84 ? ? ? ? 48";
         public const string LuaWarp_01AoB = "C3 ? ? ? ? ? ? 57 48 83 EC ? 48 8B FA 44";
 
@@ -580,5 +589,9 @@
 
         public const int CSDlcImpOffset = 0x29;
         public const int CSDlcImpInstructionSize = CSDlcImpOffset + 0x4;
+
+        public const string ChrDebugFlagsAoB = "80 3D ?? ?? ?? ?? 00 0F 85 ?? ?? ?? ?? 32 C0 48";
+        public const string ChrDebugsAoB = "48 8B 05 ?? ?? ?? ?? 41 83 FF 02 ?? ?? 48 85 C0";
+
     }
 }

@@ -1834,6 +1834,8 @@
     <EmbeddedResource Include="Assembly\GetChrInsByHandle.asm" />
     <None Remove="Assembly\LevelUp.asm" />
     <EmbeddedResource Include="Assembly\LevelUp.asm" />
+    <None Remove="Assembly\RemoveItem.asm" />
+    <EmbeddedResource Include="Assembly\RemoveItem.asm" />
   </ItemGroup>
 
   <ItemGroup>

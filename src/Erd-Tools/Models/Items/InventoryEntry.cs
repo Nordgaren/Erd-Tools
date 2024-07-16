@@ -9,6 +9,7 @@ namespace Erd_Tools.Models
     public class InventoryEntry
     {
         private PHPointer Pointer { get; }
+        public uint Index { get; }
         public byte[] Bytes { get; }
         public string Name { get; }
         public int GaItemHandle { get; }
@@ -18,9 +19,10 @@ namespace Erd_Tools.Models
         public int Quantity { get; }
         public int DisplayID { get; }
 
-        public InventoryEntry(PHPointer pointer, byte[] bytes, ErdHook hook)
+        public InventoryEntry(PHPointer pointer, uint index, byte[] bytes, ErdHook hook)
         {
             Pointer = pointer;
+            Index = index;
             Bytes = bytes;
             Name = "Unknown";
             GaItemHandle = BitConverter.ToInt32(Bytes, (int)Offsets.InventoryEntry.GaItemHandle);

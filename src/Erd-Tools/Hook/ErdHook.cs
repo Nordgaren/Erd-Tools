@@ -50,12 +50,16 @@ namespace Erd_Tools
         public PHPointer GameMan { get; set; }
         public PHPointer PlayerGameData { get; set; }
         private PHPointer PlayerInventory { get; set; }
+        private PHPointer EquipInventoryDataInventory { get; set; }
+        private PHPointer PlayerStorage { get; set; }
+        private PHPointer EquipInventoryDataStorage { get; set; }
         private PHPointer HeldNormalItemsPtr { get; set; }
         private PHPointer HeldSpecialItemsPtr { get; set; }
         private PHPointer SoloParamRepositoryPtr { get; set; }
         private PHPointer SoloParamRepository { get; set; }
         private PHPointer CapParamCall { get; set; }
         public PHPointer ItemGive { get; set; }
+        private PHPointer RemoveItemFunction { get; set; } 
         public PHPointer MapItemMan { get; set; }
         public PHPointer SetEventFlagFunction { get; set; }
         public PHPointer IsEventFlagFunction { get; set; }
@@ -99,8 +103,14 @@ namespace Erd_Tools
             GameMan = RegisterRelativeAOB(Offsets.GameManAoB, Offsets.RelativePtrAddressOffset,
                 Offsets.RelativePtrInstructionSize, 0x0);
             PlayerGameData = CreateChildPointer(GameDataMan, (int)Offsets.GameDataMan.PlayerGameData);
+            EquipInventoryDataInventory = CreateChildPointer(PlayerGameData, Offsets.EquipInventoryDataOffset);
             PlayerInventory = CreateChildPointer(PlayerGameData, Offsets.EquipInventoryDataOffset,
-                Offsets.PlayerInventoryOffset);
+                (int)Offsets.EquipInventoryData.InventoryOffset);
+            
+            EquipInventoryDataStorage = CreateChildPointer(PlayerGameData, Offsets.EquipStorageDataOffset);
+            PlayerStorage = CreateChildPointer(PlayerGameData, Offsets.EquipStorageDataOffset,
+                (int)Offsets.EquipInventoryData.InventoryOffset);
+            
             HeldNormalItemsPtr = CreateChildPointer(PlayerGameData,
                 (int)Offsets.PlayerGameData.HeldNormalItems);
             HeldSpecialItemsPtr =
@@ -118,6 +128,8 @@ namespace Erd_Tools
                         Offsets.RelativePtrInstructionSize, 0x0), this);
 
             ItemGive = RegisterAbsoluteAOB(Offsets.ItemGiveAoB);
+            RemoveItemFunction = RegisterAbsoluteAOB(Offsets.RemoveItemAoB);
+            
             MapItemMan = RegisterRelativeAOB(Offsets.MapItemManAoB, Offsets.RelativePtrAddressOffset,
                 Offsets.RelativePtrInstructionSize);
             SetEventFlagFunction = RegisterAbsoluteAOB(Offsets.SetEventCallAoB);
@@ -637,13 +649,27 @@ namespace Erd_Tools
             }
         }
 
+        public void RemoveItem(bool storage, uint index)
+        {
+            PHPointer inventory = EquipInventoryDataInventory;
+            if (storage)
+            {
+                inventory = EquipInventoryDataStorage;
+            }
+            
+            string asmString = Util.GetEmbededResource("Assembly.RemoveItem.asm");
+            index += inventory.ReadUInt32((int)Offsets.EquipInventoryData.TailIndex);
+            string asm = string.Format(asmString, index, inventory.Resolve(), RemoveItemFunction.Resolve() + Offsets.RemoveItemOffset);
+            AsmExecute(asm);
+        }
+
         List<InventoryEntry>? Inventory;
-        public int InventoryEntries => PlayerGameData.ReadInt32((int)Offsets.PlayerGameData.InventoryCount);
+        List<InventoryEntry>? Storage;
+        public uint InventoryEntries => EquipInventoryDataInventory.ReadUInt32((int)Offsets.EquipInventoryData.InventoryCount);
+        public uint StorageEntries => EquipInventoryDataStorage.ReadUInt32((int)Offsets.EquipInventoryData.InventoryCount);
 
-        public int InventoryLength => PlayerGameData.ReadInt32((int)Offsets.PlayerGameData.MaximumNormalItems);
-        //public int LastInventoryCount => GetInventoryCount();
+        public uint InventoryLength => PlayerGameData.ReadUInt32((int)Offsets.PlayerGameData.MaximumNormalItems);
 
-        private int _inventoryLength;
 
 
         public IEnumerable GetInventory()
@@ -651,22 +677,38 @@ namespace Erd_Tools
             Inventory = GetInventoryList();
             return Inventory;
         }
+        
+        public IEnumerable GetStorage()
+        {
+            Storage = GetStorageList();
+            return Storage;
+        }
 
         private List<InventoryEntry> GetInventoryList()
         {
-            List<InventoryEntry> inventory = new();
-            uint inventoryEntries = (uint)InventoryEntries;
-            byte[] bytes = PlayerInventory.ReadBytes(0x0, (uint)InventoryLength * Offsets.PlayInventoryEntrySize);
+            byte[] bytes = PlayerInventory.ReadBytes(0x0, InventoryLength * Offsets.InventoryEntrySize);
 
+            return GetInventoryList(InventoryEntries, bytes);
+        }
+        
+        private List<InventoryEntry> GetStorageList()
+        {
+            byte[] bytes = PlayerStorage.ReadBytes(0x0, InventoryLength * Offsets.InventoryEntrySize);
+
+            return GetInventoryList(StorageEntries, bytes);
+        }
+
+        private List<InventoryEntry> GetInventoryList(uint inventoryEntries, byte[] bytes) {
+            List<InventoryEntry> inventory = new();
             for (int i = 0; inventory.Count < inventoryEntries; i++)
             {
-                byte[] entry = new byte[Offsets.PlayInventoryEntrySize];
-                Array.Copy(bytes, i * Offsets.PlayInventoryEntrySize, entry, 0, entry.Length);
+                byte[] entry = new byte[Offsets.InventoryEntrySize];
+                Array.Copy(bytes, i * Offsets.InventoryEntrySize, entry, 0, entry.Length);
 
                 if (BitConverter.ToInt32(entry, (int)Offsets.InventoryEntry.ItemID) == -1) continue;
 
-                inventory.Add(new(CreateBasePointer(PlayerInventory.Resolve() + i * Offsets.PlayInventoryEntrySize),
-                    entry, this));
+                inventory.Add(new InventoryEntry(CreateBasePointer(PlayerInventory.Resolve() + i * Offsets.InventoryEntrySize),
+                    (uint)i, entry, this));
             }
 
             return inventory;
