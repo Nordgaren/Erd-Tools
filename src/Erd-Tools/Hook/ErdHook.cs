@@ -103,13 +103,12 @@ namespace Erd_Tools
             GameMan = RegisterRelativeAOB(Offsets.GameManAoB, Offsets.RelativePtrAddressOffset,
                 Offsets.RelativePtrInstructionSize, 0x0);
             PlayerGameData = CreateChildPointer(GameDataMan, (int)Offsets.GameDataMan.PlayerGameData);
+            
             EquipInventoryDataInventory = CreateChildPointer(PlayerGameData, Offsets.EquipInventoryDataOffset);
-            PlayerInventory = CreateChildPointer(PlayerGameData, Offsets.EquipInventoryDataOffset,
-                (int)Offsets.EquipInventoryData.InventoryOffset);
+            PlayerInventory = CreateChildPointer(EquipInventoryDataInventory, (int)Offsets.EquipInventoryData.InventoryOffset);
             
             EquipInventoryDataStorage = CreateChildPointer(PlayerGameData, Offsets.EquipStorageDataOffset);
-            PlayerStorage = CreateChildPointer(PlayerGameData, Offsets.EquipStorageDataOffset,
-                (int)Offsets.EquipInventoryData.InventoryOffset);
+            PlayerStorage = CreateChildPointer(EquipInventoryDataStorage, (int)Offsets.EquipInventoryData.InventoryOffset);
             
             HeldNormalItemsPtr = CreateChildPointer(PlayerGameData,
                 (int)Offsets.PlayerGameData.HeldNormalItems);
@@ -665,6 +664,7 @@ namespace Erd_Tools
 
         List<InventoryEntry>? Inventory;
         List<InventoryEntry>? Storage;
+        public uint TotalInventoryEntries => PlayerGameData.ReadUInt32((int)Offsets.PlayerGameData.InventoryCount);
         public uint InventoryEntries => EquipInventoryDataInventory.ReadUInt32((int)Offsets.EquipInventoryData.InventoryCount);
         public uint StorageEntries => EquipInventoryDataStorage.ReadUInt32((int)Offsets.EquipInventoryData.InventoryCount);
 
