@@ -14,16 +14,42 @@ namespace Erd_Tools.Models
         public string Name { get; }
         public int GaItemHandle { get; }
         public uint RawItemId { get; }
-        public int ItemID { get; }
+        private int _itemId;
+
+        public int ItemID
+        {
+            get => _itemId;
+            set
+            {
+                _itemId = value;
+                Pointer.WriteInt32((int)Offsets.InventoryEntry.ItemID, (int)Category | value);
+            }
+        }
+
         public Category Category { get; }
-        public int Quantity { get; }
+        private int _quantity;
+
+        public int Quantity
+        {
+            get => _quantity;
+            set
+            {
+                _quantity = value;
+                Pointer.WriteInt32((int)Offsets.InventoryEntry.Quantity, value);
+            }
+        }
+
         public int DisplayID { get; }
 
-        public InventoryEntry(PHPointer pointer, uint index, byte[] bytes, ErdHook hook)
+        [Obsolete("This property is deprecated and will gone, soon. Use InventoryEntry(PHPointer pointer, uint index, ErdHook hook), instead.")]
+        public InventoryEntry(PHPointer pointer, uint index, byte[] bytes, ErdHook hook) : this(pointer, index, hook) { }
+
+        public InventoryEntry(PHPointer pointer, uint index, ErdHook hook)
         {
             Pointer = pointer;
             Index = index;
-            Bytes = bytes;
+            Bytes = Pointer.ReadBytes(0, Offsets.InventoryEntrySize);
+
             Name = "Unknown";
             GaItemHandle = BitConverter.ToInt32(Bytes, (int)Offsets.InventoryEntry.GaItemHandle);
 
@@ -44,7 +70,7 @@ namespace Erd_Tools.Models
                     string levelString = upgradeLevel > 0 ? $"+{upgradeLevel}" : "";
                     if (hook.EquipParamWeapon?.NameDictionary.ContainsKey(id) ?? false)
                         Name = $"{hook.EquipParamWeapon.NameDictionary[id]}{levelString}";
-                    break; 
+                    break;
                 case Category.Protector:
                     if (hook.EquipParamProtector?.NameDictionary.ContainsKey(ItemID) ?? false)
                         Name = hook.EquipParamProtector.NameDictionary[ItemID];
@@ -67,6 +93,4 @@ namespace Erd_Tools.Models
             }
         }
     }
-
-
 }

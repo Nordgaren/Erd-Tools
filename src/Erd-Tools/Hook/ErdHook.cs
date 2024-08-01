@@ -781,7 +781,7 @@ namespace Erd_Tools
             AsmExecute(asm);
 
             IntPtr returnVal = PropertyHook.Kernel32.ReadIntPtr(Handle, returnPtr, true);
-            if (returnPtr != IntPtr.Zero)
+            if (returnVal != IntPtr.Zero)
             {
                 return new Enemy(CreateBasePointer(returnVal), this);
             }
@@ -1238,7 +1238,7 @@ namespace Erd_Tools
                 if (name != null)
                 {
                     continents.Find((c) => c.RowId == tabId)!.Hubs
-                        .Add(new Hub(Name = name, row.ID, tabId, dlc, new()));
+                        .Add(new Hub(name, row.ID, tabId, dlc, new()));
                 }
             }
 
