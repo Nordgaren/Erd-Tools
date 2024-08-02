@@ -59,7 +59,7 @@ namespace Erd_Tools
         private PHPointer SoloParamRepository { get; set; }
         private PHPointer CapParamCall { get; set; }
         public PHPointer ItemGive { get; set; }
-        private PHPointer RemoveItemFunction { get; set; } 
+        private PHPointer RemoveItemFunction { get; set; }
         public PHPointer MapItemMan { get; set; }
         public PHPointer SetEventFlagFunction { get; set; }
         public PHPointer IsEventFlagFunction { get; set; }
@@ -103,13 +103,15 @@ namespace Erd_Tools
             GameMan = RegisterRelativeAOB(Offsets.GameManAoB, Offsets.RelativePtrAddressOffset,
                 Offsets.RelativePtrInstructionSize, 0x0);
             PlayerGameData = CreateChildPointer(GameDataMan, (int)Offsets.GameDataMan.PlayerGameData);
-            
+
             EquipInventoryDataInventory = CreateChildPointer(PlayerGameData, Offsets.EquipInventoryDataOffset);
-            PlayerInventory = CreateChildPointer(EquipInventoryDataInventory, (int)Offsets.EquipInventoryData.InventoryOffset);
-            
+            PlayerInventory = CreateChildPointer(EquipInventoryDataInventory,
+                (int)Offsets.EquipInventoryData.InventoryOffset);
+
             EquipInventoryDataStorage = CreateChildPointer(PlayerGameData, Offsets.EquipStorageDataOffset);
-            PlayerStorage = CreateChildPointer(EquipInventoryDataStorage, (int)Offsets.EquipInventoryData.InventoryOffset);
-            
+            PlayerStorage =
+                CreateChildPointer(EquipInventoryDataStorage, (int)Offsets.EquipInventoryData.InventoryOffset);
+
             HeldNormalItemsPtr = CreateChildPointer(PlayerGameData,
                 (int)Offsets.PlayerGameData.HeldNormalItems);
             HeldSpecialItemsPtr =
@@ -128,7 +130,7 @@ namespace Erd_Tools
 
             ItemGive = RegisterAbsoluteAOB(Offsets.ItemGiveAoB);
             RemoveItemFunction = RegisterAbsoluteAOB(Offsets.RemoveItemAoB);
-            
+
             MapItemMan = RegisterRelativeAOB(Offsets.MapItemManAoB, Offsets.RelativePtrAddressOffset,
                 Offsets.RelativePtrInstructionSize);
             SetEventFlagFunction = RegisterAbsoluteAOB(Offsets.SetEventCallAoB);
@@ -188,6 +190,7 @@ namespace Erd_Tools
             IntPtr warp = LuaWarp_01AoB.Resolve();
             IntPtr pgd = PlayerGameData.Resolve();
             IntPtr inv = PlayerInventory.Resolve();
+            IntPtr str = PlayerStorage.Resolve();
             ulong paramOffset =
                 (ulong)(pParam.ToInt64() -
                         Process.MainModule.BaseAddress
@@ -206,7 +209,7 @@ namespace Erd_Tools
         }
 
         public GestureGameData GestureGameData;
-        
+
         private async Task AsyncSetup()
         {
             CheckParamsLoaded();
@@ -655,21 +658,25 @@ namespace Erd_Tools
             {
                 inventory = EquipInventoryDataStorage;
             }
-            
+
             string asmString = Util.GetEmbededResource("Assembly.RemoveItem.asm");
             index += inventory.ReadUInt32((int)Offsets.EquipInventoryData.TailIndex);
-            string asm = string.Format(asmString, index, inventory.Resolve(), RemoveItemFunction.Resolve() + Offsets.RemoveItemOffset);
+            string asm = string.Format(asmString, index, inventory.Resolve(),
+                RemoveItemFunction.Resolve() + Offsets.RemoveItemOffset);
             AsmExecute(asm);
         }
 
         List<InventoryEntry>? Inventory;
         List<InventoryEntry>? Storage;
         public uint TotalInventoryEntries => PlayerGameData.ReadUInt32((int)Offsets.PlayerGameData.InventoryCount);
-        public uint InventoryEntries => EquipInventoryDataInventory.ReadUInt32((int)Offsets.EquipInventoryData.InventoryCount);
-        public uint StorageEntries => EquipInventoryDataStorage.ReadUInt32((int)Offsets.EquipInventoryData.InventoryCount);
+
+        public uint InventoryEntries =>
+            EquipInventoryDataInventory.ReadUInt32((int)Offsets.EquipInventoryData.InventoryCount);
+
+        public uint StorageEntries =>
+            EquipInventoryDataStorage.ReadUInt32((int)Offsets.EquipInventoryData.InventoryCount);
 
         public uint InventoryLength => PlayerGameData.ReadUInt32((int)Offsets.PlayerGameData.MaximumNormalItems);
-
 
 
         public IEnumerable GetInventory()
@@ -677,7 +684,7 @@ namespace Erd_Tools
             Inventory = GetInventoryList();
             return Inventory;
         }
-        
+
         public IEnumerable GetStorage()
         {
             Storage = GetStorageList();
@@ -686,19 +693,17 @@ namespace Erd_Tools
 
         private List<InventoryEntry> GetInventoryList()
         {
-            byte[] bytes = PlayerInventory.ReadBytes(0x0, InventoryLength * Offsets.InventoryEntrySize);
-
-            return GetInventoryList(InventoryEntries, bytes);
+            return GetInventoryList(PlayerInventory, InventoryEntries);
         }
-        
+
         private List<InventoryEntry> GetStorageList()
         {
-            byte[] bytes = PlayerStorage.ReadBytes(0x0, InventoryLength * Offsets.InventoryEntrySize);
-
-            return GetInventoryList(StorageEntries, bytes);
+            return GetInventoryList(PlayerStorage, StorageEntries);
         }
 
-        private List<InventoryEntry> GetInventoryList(uint inventoryEntries, byte[] bytes) {
+        private List<InventoryEntry> GetInventoryList(PHPointer inventoryPointer, uint inventoryEntries)
+        {
+            byte[] bytes = inventoryPointer.ReadBytes(0x0, InventoryLength * Offsets.InventoryEntrySize);
             List<InventoryEntry> inventory = new();
             for (int i = 0; inventory.Count < inventoryEntries; i++)
             {
@@ -707,8 +712,8 @@ namespace Erd_Tools
 
                 if (BitConverter.ToInt32(entry, (int)Offsets.InventoryEntry.ItemID) == -1) continue;
 
-                inventory.Add(new InventoryEntry(CreateBasePointer(PlayerInventory.Resolve() + i * Offsets.InventoryEntrySize),
-                    (uint)i, entry, this));
+                inventory.Add(new InventoryEntry(
+                    CreateBasePointer(inventoryPointer.Resolve() + i * Offsets.InventoryEntrySize), (uint)i, this));
             }
 
             return inventory;
@@ -716,7 +721,12 @@ namespace Erd_Tools
 
         public void ResetInventory()
         {
-            Inventory = new();
+            Inventory = new List<InventoryEntry>();
+        }
+
+        public void ResetStorage()
+        {
+            Storage = new List<InventoryEntry>();
         }
 
         #endregion
@@ -1170,6 +1180,7 @@ namespace Erd_Tools
             get => GameMan.ReadInt32((int)Offsets.GameMan.LastGrace);
             set => GameMan.WriteInt32((int)Offsets.GameMan.LastGrace, value);
         }
+
         [Obsolete("This function is deprecated. Use CSFD4VirtualMemoryFlag.IsEventFlagFast, instead.")]
         public bool CheckGraceStatus(int ptrOffset, int dataOffset, int bitStart)
         {

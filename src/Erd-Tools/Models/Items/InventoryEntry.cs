@@ -41,7 +41,7 @@ namespace Erd_Tools.Models
 
         public int DisplayID { get; }
 
-        [Obsolete("This property is deprecated and will gone, soon. Use InventoryEntry(PHPointer pointer, uint index, ErdHook hook), instead.")]
+        [Obsolete("This property is deprecated and will be gone, soon. Use InventoryEntry(PHPointer pointer, uint index, ErdHook hook), instead.")]
         public InventoryEntry(PHPointer pointer, uint index, byte[] bytes, ErdHook hook) : this(pointer, index, hook) { }
 
         public InventoryEntry(PHPointer pointer, uint index, ErdHook hook)
@@ -55,10 +55,10 @@ namespace Erd_Tools.Models
 
             RawItemId = BitConverter.ToUInt32(Bytes, (int)Offsets.InventoryEntry.ItemID);
 
-            ItemID = (int)(RawItemId & 0x0FFFFFFF);
+            _itemId = (int)(RawItemId & 0x0FFFFFFF);
             Category = (Category)(RawItemId & 0xF0000000);
 
-            Quantity = BitConverter.ToInt32(Bytes, (int)Offsets.InventoryEntry.Quantity);
+            _quantity = BitConverter.ToInt32(Bytes, (int)Offsets.InventoryEntry.Quantity);
 
             DisplayID = BitConverter.ToInt32(Bytes, (int)Offsets.InventoryEntry.DispalyID);
 
