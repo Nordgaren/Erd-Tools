@@ -41,13 +41,13 @@ namespace Erd_Tools.Models
                 case Category.Protector:
                 case Category.Accessory:
                 case Category.Goods:
-                    Items.Add(new(line, category, showIDs));
+                    Items.Add(new Item(line, category, showIDs));
                     break;
                 case Category.Gem:
                     Items.Add(new Gem(line, category, showIDs));
                     break;
                 default:
-                    throw new("Incorrect Category");
+                    throw new Exception("Incorrect Category");
             }
         }
 
