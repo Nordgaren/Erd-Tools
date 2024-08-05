@@ -956,7 +956,10 @@ namespace Erd_Tools
             Weather4251 = 4251,
             Weather4252 = 4252,
             Weather4260 = 4260,
+            
         }
+
+
 
         private WeatherTypes _selectedWeather;
 

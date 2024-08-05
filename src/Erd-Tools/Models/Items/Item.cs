@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Text.RegularExpressions;
 
 namespace Erd_Tools.Models
@@ -12,6 +13,19 @@ namespace Erd_Tools.Models
             Accessory = 0x20000000,
             Goods = 0x40000000,
             Gem = 0x80000000
+        }
+
+        public enum PotType
+        {
+            [Description("Cracked Pot")]
+            CrackedPot = 1,
+            [Description("Perfume Bottle")]
+            PerfumeBottle = 2,
+            [Description("Ritual Pot")]
+            RitualPot = 3,
+            [Description("Hefty Cracked Pot")]
+            HeftyCrackedPot = 4,
+            None = -1,
         }
         private static Regex ItemEntryRx = new(@"^\s*(?<id>\S+)\s+(?<name>.*)$", RegexOptions.CultureInvariant);
 

@@ -162,13 +162,30 @@
 
         public enum InventoryEntry
         {
+            /// <summary>
+            /// int GaItemHandle
+            /// </summary>
             GaItemHandle = 0x0,
+            /// <summary>
+            /// int ItemID
+            /// </summary>
             ItemID = 0x4,
-            ItemCategory = 0x7,
+            /// <summary>
+            /// int Quantity
+            /// </summary>
             Quantity = 0x8,
-            DispalyID = 0xC,
-            Unk = 0x10,
-            Unk2 = 0x14,
+            /// <summary>
+            /// int DisplayId
+            /// </summary>
+            DisplayID = 0xC,
+            /// <summary>
+            /// int as bool IsNew 
+            /// </summary>
+            IsNew = 0x10,
+            /// <summary>
+            /// int PotType
+            /// </summary>
+            PotType = 0x14,
         }
 
         public const string IsEventCallAoB = "48 83 EC 28 8B 12 85 D2";

@@ -41,6 +41,10 @@ namespace Erd_Tools.Models
         }
 
         public int DisplayID { get; }
+        
+        public bool IsNew { get; }
+        
+        public PotType PotType { get; }
 
         [Obsolete(
             "This property is deprecated and will be gone, soon. Use InventoryEntry(PHPointer pointer, uint index, ErdHook hook), instead.")]
@@ -64,7 +68,11 @@ namespace Erd_Tools.Models
 
             _quantity = BitConverter.ToInt32(Bytes, (int)Offsets.InventoryEntry.Quantity);
 
-            DisplayID = BitConverter.ToInt32(Bytes, (int)Offsets.InventoryEntry.DispalyID);
+            DisplayID = BitConverter.ToInt32(Bytes, (int)Offsets.InventoryEntry.DisplayID);
+            
+            IsNew = BitConverter.ToInt32(Bytes, (int)Offsets.InventoryEntry.IsNew) != 0;
+            
+            PotType = (PotType)BitConverter.ToInt32(Bytes, (int)Offsets.InventoryEntry.PotType);
 
             switch (Category)
             {
