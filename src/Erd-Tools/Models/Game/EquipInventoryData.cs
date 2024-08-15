@@ -14,77 +14,43 @@ namespace Erd_Tools.Models.Game
         private PHPointer _equipInventoryData;
         private PHPointer _normalItems;
         private PHPointer _keyItems;
-        List<InventoryEntry> _normalInventory;
-        List<InventoryEntry> _keyInventory;
-        
+
         public EquipInventoryData(PHPointer equipInventoryData, ErdHook hook)
         {
             _equipInventoryData = equipInventoryData;
             _hook = hook;
-            _normalItems = _hook.CreateChildPointer(equipInventoryData, (int)Offsets.EquipInventoryData.NormalInventoryOffset);
-            _keyItems = _hook.CreateChildPointer(equipInventoryData, (int)Offsets.EquipInventoryData.KeyInventoryOffset);
+            NormalItems =
+                new InventoryItemList(equipInventoryData, (int)Offsets.EquipInventoryData.NormalInventory, _hook);
+            KeyItems = new InventoryItemList(equipInventoryData, (int)Offsets.EquipInventoryData.KeyInventory, _hook);
+            UnkItems = new InventoryItemList(equipInventoryData, (int)Offsets.EquipInventoryData.UnkInventory, _hook);
+            Unk2Items = new InventoryItemList(equipInventoryData, (int)Offsets.EquipInventoryData.Unk2Inventory, _hook);
         }
+
         public IntPtr Resolve() => _equipInventoryData.Resolve();
         public PHPointer GetPointer() => _equipInventoryData;
+        public InventoryItemList NormalItems;
+        public InventoryItemList KeyItems;
+        /// Not really sure what this is
+        internal InventoryItemList UnkItems;
+        /// Not really sure what this is
+        internal InventoryItemList Unk2Items;
+
         public uint TotalInventoryCap =>
             _equipInventoryData.ReadUInt32((int)Offsets.EquipInventoryData.TotalInventoryCap);
-        public uint NormalInventoryEntries =>
-            _equipInventoryData.ReadUInt32((int)Offsets.EquipInventoryData.NormalInventoryCount);
-        public uint NormalInventoryCap =>
-            _equipInventoryData.ReadUInt32((int)Offsets.EquipInventoryData.NormalInventoryCap);
-        public uint KeyInventoryEntries =>
-            _equipInventoryData.ReadUInt32((int)Offsets.EquipInventoryData.KeyInventoryCount);
-        public uint KeyInventoryCap =>
-            _equipInventoryData.ReadUInt32((int)Offsets.EquipInventoryData.KeyInventoryCap);
-        
+
+        public uint NormalInventoryEntries => NormalItems.Entries;
+        public uint NormalInventoryCap => NormalItems.Cap;
+        public uint KeyInventoryEntries => KeyItems.Entries;
+        public uint KeyInventoryCap => KeyItems.Cap;
+
         public List<InventoryEntry> GetNormalInventory()
         {
-            return GetInventoryList();
+            return NormalItems.GetInventoryList();
         }
 
         public List<InventoryEntry> GetKeyInventory()
         {
-            return GetStorageList();
+            return KeyItems.GetInventoryList();
         }
-
-        private List<InventoryEntry> GetInventoryList()
-        {
-            return GetInventoryList(_normalItems, NormalInventoryEntries, NormalInventoryCap);
-        }
-
-        private List<InventoryEntry> GetStorageList()
-        {
-            return GetInventoryList(_keyItems, KeyInventoryEntries, KeyInventoryCap);
-        }
-
-        private List<InventoryEntry> GetInventoryList(PHPointer inventoryPointer, uint inventoryEntries, uint inventoryCap)
-        {
-            byte[] bytes = inventoryPointer.ReadBytes(0x0, inventoryCap * Offsets.InventoryEntrySize);
-            List<InventoryEntry> inventory = new();
-            for (int i = 0; inventory.Count < inventoryEntries; i++)
-            {
-                byte[] entry = new byte[Offsets.InventoryEntrySize];
-                Array.Copy(bytes, i * Offsets.InventoryEntrySize, entry, 0, entry.Length);
-
-                if (BitConverter.ToInt32(entry, (int)Offsets.InventoryEntry.ItemID) == -1) continue;
-
-                inventory.Add(new InventoryEntry(
-                    _hook.CreateBasePointer(inventoryPointer.Resolve() + i * Offsets.InventoryEntrySize), (uint)i, _hook)
-                );
-            }
-
-            return inventory;
-        }
-
-        public void ResetInventory()
-        {
-            _normalInventory = new List<InventoryEntry>();
-        }
-
-        public void ResetKeyInventory()
-        {
-            _keyInventory = new List<InventoryEntry>();
-        }
-
     }
 }

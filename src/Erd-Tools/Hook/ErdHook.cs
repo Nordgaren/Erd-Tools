@@ -698,17 +698,17 @@ namespace Erd_Tools
         }
 
         [Obsolete(
-            "This property is deprecated, and will be removed, soon. Use PlayerGameData.Storage.ResetInventory(), instead.")]
+            "This property is deprecated, and will be removed, soon.")]
         public void ResetInventory()
         {
-            PlayerGameData.Inventory.ResetInventory();
+            
         }
 
         [Obsolete(
-            "This property is deprecated, and will be removed, soon. Use PlayerGameData.Storage.GetNormalInventory(), instead.")]
+            "This property is deprecated, and will be removed, soon.")]
         public void ResetStorage()
         {
-            PlayerGameData.Storage.ResetInventory();
+            
         }
 
         #endregion
