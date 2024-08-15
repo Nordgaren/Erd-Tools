@@ -5,7 +5,8 @@ using System;
 namespace Erd_Tools.Models.Msg
 {
     /// <summary>
-    /// MsgRepositoryImp class that 
+    /// MsgRepositoryImp class that can be used to get strings from the game. This class caches FMGs that have already
+    /// been read, for faster access.  
     /// </summary>
     public class MsgRepositoryImp
     {
@@ -88,6 +89,7 @@ namespace Erd_Tools.Models.Msg
     /// </summary>
     public enum FmgId
     {
+        // Item FMGs
         GoodsName = 0x0A,
         WeaponName = 0x0B,
         ProtectorName = 0x0C,
@@ -173,6 +175,7 @@ namespace Erd_Tools.Models.Msg
         ActionButtonText = 0x20,
         EventTextForTalk = 0x21,
         EventTextForMap = 0x22,
+        // Menu FMGs
         GR_MenuText = 0xC8,
         GR_LineHelp = 0xC9,
         GR_KeyGuide = 0xCA,

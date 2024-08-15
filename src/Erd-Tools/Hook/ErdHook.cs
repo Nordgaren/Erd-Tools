@@ -48,13 +48,7 @@ namespace Erd_Tools
 
         public PHPointer GameDataMan { get; set; }
         public PHPointer GameMan { get; set; }
-        public PHPointer PlayerGameData { get; set; }
-        private PHPointer PlayerInventory { get; set; }
-        private PHPointer EquipInventoryDataInventory { get; set; }
-        private PHPointer PlayerStorage { get; set; }
-        private PHPointer EquipInventoryDataStorage { get; set; }
-        private PHPointer HeldNormalItemsPtr { get; set; }
-        private PHPointer HeldSpecialItemsPtr { get; set; }
+        public PlayerGameData PlayerGameData { get; set; }
         private PHPointer SoloParamRepositoryPtr { get; set; }
         private PHPointer SoloParamRepository { get; set; }
         private PHPointer CapParamCall { get; set; }
@@ -102,20 +96,9 @@ namespace Erd_Tools
 
             GameMan = RegisterRelativeAOB(Offsets.GameManAoB, Offsets.RelativePtrAddressOffset,
                 Offsets.RelativePtrInstructionSize, 0x0);
-            PlayerGameData = CreateChildPointer(GameDataMan, (int)Offsets.GameDataMan.PlayerGameData);
 
-            EquipInventoryDataInventory = CreateChildPointer(PlayerGameData, Offsets.EquipInventoryDataOffset);
-            PlayerInventory = CreateChildPointer(EquipInventoryDataInventory,
-                (int)Offsets.EquipInventoryData.InventoryOffset);
-
-            EquipInventoryDataStorage = CreateChildPointer(PlayerGameData, Offsets.EquipStorageDataOffset);
-            PlayerStorage =
-                CreateChildPointer(EquipInventoryDataStorage, (int)Offsets.EquipInventoryData.InventoryOffset);
-
-            HeldNormalItemsPtr = CreateChildPointer(PlayerGameData,
-                (int)Offsets.PlayerGameData.HeldNormalItems);
-            HeldSpecialItemsPtr =
-                CreateChildPointer(PlayerGameData, (int)Offsets.PlayerGameData.HeldSpecialItems);
+            PlayerGameData =
+                new PlayerGameData(CreateChildPointer(GameDataMan, (int)Offsets.GameDataMan.PlayerGameData), this);
 
             SoloParamRepositoryPtr = RegisterRelativeAOB(Offsets.SoloParamRepositoryAoB,
                 Offsets.RelativePtrAddressOffset,
@@ -189,8 +172,8 @@ namespace Erd_Tools
             IntPtr playeIns = PlayerIns.Resolve();
             IntPtr warp = LuaWarp_01AoB.Resolve();
             IntPtr pgd = PlayerGameData.Resolve();
-            IntPtr inv = PlayerInventory.Resolve();
-            IntPtr str = PlayerStorage.Resolve();
+            IntPtr inv = PlayerGameData.Inventory.Resolve();
+            IntPtr str = PlayerGameData.Storage.Resolve();
             ulong paramOffset =
                 (ulong)(pParam.ToInt64() -
                         Process.MainModule.BaseAddress
@@ -204,7 +187,9 @@ namespace Erd_Tools
 
             await AsyncSetup();
             //GetInventoryList();
-
+            Param.Row? r = EquipParamWeapon[2000000];
+            IntPtr p = EquipParamWeapon.Pointer.Resolve();
+            Console.WriteLine();
             //LogABunchOfStuff();
         }
 
@@ -216,7 +201,8 @@ namespace Erd_Tools
             Params = GetParams();
             await ReadParams();
             GestureGameData =
-                new GestureGameData(CreateChildPointer(PlayerGameData, (int)Offsets.PlayerGameData.GestureGameData),
+                new GestureGameData(
+                    CreateChildPointer(PlayerGameData.GetPointer(), (int)Offsets.PlayerGameData.GestureGameData),
                     GestureParam, MsgRepository);
             CSFD4VirtualMemoryFlag = new CSFD4VirtualMemoryFlag(CSFD4VirtualMemoryFlagPtr, this);
             Setup = true;
@@ -476,19 +462,30 @@ namespace Erd_Tools
 
         #region Inventory
 
-        public int MaxNormalItems => PlayerGameData.ReadInt32((int)Offsets.PlayerGameData.MaximumNormalItems);
-        public int MaxSpecialItems => PlayerGameData.ReadInt32((int)Offsets.PlayerGameData.MaximumSpecialItems);
+        [Obsolete(
+            "This property is deprecated, and will be removed, soon. Use PlayerGameData.MaxNormalItems, instead.")]
+        public int MaxNormalItems =>
+            PlayerGameData.GetPointer().ReadInt32((int)Offsets.PlayerGameData.MaximumNormalItems);
 
+        [Obsolete(
+            "This property is deprecated, and will be removed, soon. Use PlayerGameData.MaxSpecialItems, instead.")]
+        public int MaxSpecialItems =>
+            PlayerGameData.GetPointer().ReadInt32((int)Offsets.PlayerGameData.MaximumSpecialItems);
+
+        [Obsolete(
+            "This property is deprecated, and will be removed, soon. Use PlayerGameData.HeldNormalItems, instead.")]
         public int HeldNormalItems
         {
-            get => HeldNormalItemsPtr.ReadInt32(0x0);
-            set => HeldNormalItemsPtr.WriteInt32(0x0, value);
+            get => PlayerGameData.HeldNormalItems;
+            set => PlayerGameData.HeldNormalItems = value;
         }
 
+        [Obsolete(
+            "This property is deprecated, and will be removed, soon. Use PlayerGameData.HeldSpecialItems, instead.")]
         public int HeldSpecialItems
         {
-            get => HeldSpecialItemsPtr.ReadInt32(0x0);
-            set => HeldSpecialItemsPtr.WriteInt32(0x0, value);
+            get => PlayerGameData.HeldSpecialItems;
+            set => PlayerGameData.HeldSpecialItems = value;
         }
 
         //HeldNormalItemsPtr = 0x414,
@@ -591,7 +588,7 @@ namespace Erd_Tools
 
         public void GetItem(List<ItemSpawnInfo> items, CancellationToken token)
         {
-            List<InventoryEntry> inventory = GetInventoryList();
+            List<InventoryEntry> inventory = PlayerGameData.Inventory.GetNormalInventory();
 
             IEnumerable<IEnumerable<ItemSpawnInfo>> chunks = items.Chunk(10);
 
@@ -653,10 +650,10 @@ namespace Erd_Tools
 
         public void RemoveItem(bool storage, uint index)
         {
-            PHPointer inventory = EquipInventoryDataInventory;
+            PHPointer inventory = PlayerGameData.Inventory.GetPointer();
             if (storage)
             {
-                inventory = EquipInventoryDataStorage;
+                inventory = PlayerGameData.Storage.GetPointer();
             }
 
             string asmString = Util.GetEmbededResource("Assembly.RemoveItem.asm");
@@ -666,85 +663,62 @@ namespace Erd_Tools
             AsmExecute(asm);
         }
 
-        List<InventoryEntry>? Inventory;
-        List<InventoryEntry>? Storage;
-        public uint TotalInventoryEntries => PlayerGameData.ReadUInt32((int)Offsets.PlayerGameData.InventoryCount);
 
+        [Obsolete(
+            "This property is deprecated, and will be removed, soon. Use PlayerGameData.Inventory.InventoryEntries, instead.")]
+        public uint TotalInventoryEntries => PlayerGameData.Inventory.NormalInventoryEntries +
+                                             PlayerGameData.Inventory.KeyInventoryEntries;
+
+        [Obsolete(
+            "This property is deprecated, and will be removed, soon. Use PlayerGameData.Inventory.InventoryEntries, instead.")]
         public uint InventoryEntries =>
-            EquipInventoryDataInventory.ReadUInt32((int)Offsets.EquipInventoryData.InventoryCount);
+            PlayerGameData.Inventory.NormalInventoryEntries;
 
-        public uint StorageEntries =>
-            EquipInventoryDataStorage.ReadUInt32((int)Offsets.EquipInventoryData.InventoryCount);
+        [Obsolete(
+            "This property is deprecated, and will be removed, soon. Use PlayerGameData.Storage.InventoryEntries, instead.")]
+        public uint StorageEntries => PlayerGameData.Storage.NormalInventoryEntries;
 
-        public uint InventoryLength => PlayerGameData.ReadUInt32((int)Offsets.PlayerGameData.MaximumNormalItems);
+        [Obsolete(
+            "This property is deprecated, and will be removed, soon. Use PlayerGameData.InventoryLength, instead.")]
+        public uint InventoryLength => PlayerGameData.InventoryLength;
 
 
+        [Obsolete(
+            "This property is deprecated, and will be removed, soon. Use PlayerGameData.Inventory.GetNormalInventory(), instead.")]
         public IEnumerable GetInventory()
         {
-            Inventory = GetInventoryList();
-            return Inventory;
+            return PlayerGameData.Inventory.GetNormalInventory();
         }
 
+        [Obsolete(
+            "This property is deprecated, and will be removed, soon. Use PlayerGameData.Storage.GetNormalInventory(), instead.")]
         public IEnumerable GetStorage()
         {
-            Storage = GetStorageList();
-            return Storage;
+            return PlayerGameData.Storage.GetNormalInventory();
         }
 
-        private List<InventoryEntry> GetInventoryList()
-        {
-            return GetInventoryList(PlayerInventory, InventoryEntries);
-        }
-
-        private List<InventoryEntry> GetStorageList()
-        {
-            return GetInventoryList(PlayerStorage, StorageEntries);
-        }
-
-        private List<InventoryEntry> GetInventoryList(PHPointer inventoryPointer, uint inventoryEntries)
-        {
-            byte[] bytes = inventoryPointer.ReadBytes(0x0, InventoryLength * Offsets.InventoryEntrySize);
-            List<InventoryEntry> inventory = new();
-            for (int i = 0; inventory.Count < inventoryEntries; i++)
-            {
-                byte[] entry = new byte[Offsets.InventoryEntrySize];
-                Array.Copy(bytes, i * Offsets.InventoryEntrySize, entry, 0, entry.Length);
-
-                if (BitConverter.ToInt32(entry, (int)Offsets.InventoryEntry.ItemID) == -1) continue;
-
-                inventory.Add(new InventoryEntry(
-                    CreateBasePointer(inventoryPointer.Resolve() + i * Offsets.InventoryEntrySize), (uint)i, this));
-            }
-
-            return inventory;
-        }
-
+        [Obsolete(
+            "This property is deprecated, and will be removed, soon. Use PlayerGameData.Storage.ResetInventory(), instead.")]
         public void ResetInventory()
         {
-            Inventory = new List<InventoryEntry>();
+            PlayerGameData.Inventory.ResetInventory();
         }
 
+        [Obsolete(
+            "This property is deprecated, and will be removed, soon. Use PlayerGameData.Storage.GetNormalInventory(), instead.")]
         public void ResetStorage()
         {
-            Storage = new List<InventoryEntry>();
+            PlayerGameData.Storage.ResetInventory();
         }
 
         #endregion
 
         #region Target
-
+        [Obsolete("This property is deprecated, and will be removed, soon. Use PlayerGameData.Name, instead.")]
         public string Name
         {
-            get =>
-                PlayerGameData.ReadString((int)Offsets.PlayerGameData.Name, Encoding.Unicode,
-                    32);
-            set
-            {
-                if (value.Length > 16) return;
-
-                PlayerGameData.WriteString((int)Offsets.PlayerGameData.Name, Encoding.Unicode,
-                    32, value);
-            }
+            get => PlayerGameData.Name;
+            set => PlayerGameData.Name = value;
         }
 
         public enum PhantomParam
@@ -852,8 +826,12 @@ namespace Erd_Tools
 
         #endregion
 
-        public int Level => PlayerGameData.ReadInt32((int)Offsets.Player.Level);
-        public string LevelString => PlayerGameData?.ReadInt32((int)Offsets.Player.Level).ToString() ?? "";
+        [Obsolete(
+            "This property is deprecated, and will be removed, soon. Use PlayerGameData.Level, instead.")]
+        public int Level => PlayerGameData.Level;
+
+        [Obsolete("This property is deprecated, and will be removed, soon. Use PlayerGameData.LevelString, instead.")]
+        public string LevelString => PlayerGameData.LevelString;
 
         #region Cheats
 
@@ -956,9 +934,7 @@ namespace Erd_Tools
             Weather4251 = 4251,
             Weather4252 = 4252,
             Weather4260 = 4260,
-            
         }
-
 
 
         private WeatherTypes _selectedWeather;
@@ -1018,134 +994,95 @@ namespace Erd_Tools
 
         #region ChrAsm
 
+        [Obsolete("Please use PlayerGameData for this field. It will me removed, soon.")]
         public byte ArmStyle
         {
-            get => PlayerGameData.ReadByte((int)Offsets.ChrIns.ArmStyle);
-            set
-            {
-                if (!Loaded) return;
-                PlayerGameData.WriteByte((int)Offsets.ChrIns.ArmStyle, value);
-            }
+            get => PlayerGameData.ArmStyle;
+            set => PlayerGameData.ArmStyle = value;
         }
 
+        [Obsolete("Please use PlayerGameData for this field. It will me removed, soon.")]
         public int CurrWepSlotOffsetLeft
         {
-            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.CurrWepSlotOffsetLeft);
-            set
-            {
-                if (!Loaded) return;
-                PlayerGameData.WriteInt32((int)Offsets.ChrIns.CurrWepSlotOffsetLeft, value);
-            }
+            get => PlayerGameData.CurrWepSlotOffsetLeft;
+            set => PlayerGameData.CurrWepSlotOffsetLeft = value;
         }
 
+        [Obsolete("Please use PlayerGameData for this field. It will me removed, soon.")]
         public int CurrWepSlotOffsetRight
         {
-            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.CurrWepSlotOffsetRight);
-            set
-            {
-                if (!Loaded) return;
-                PlayerGameData.WriteInt32((int)Offsets.ChrIns.CurrWepSlotOffsetRight, value);
-            }
+            get => PlayerGameData.CurrWepSlotOffsetRight;
+            set => PlayerGameData.CurrWepSlotOffsetRight = value;
         }
 
+        [Obsolete("Please use PlayerGameData for this field. It will me removed, soon.")]
         public int RHandWeapon1
         {
-            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.RHandWeapon1);
-            set
-            {
-                if (!Loaded) return;
-                PlayerGameData.WriteInt32((int)Offsets.ChrIns.RHandWeapon1, value);
-            }
+            get => PlayerGameData.RHandWeapon1;
+            set => PlayerGameData.RHandWeapon1 = value;
         }
 
+        [Obsolete("Please use PlayerGameData for this field. It will me removed, soon.")]
         public int RHandWeapon2
         {
-            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.RHandWeapon2);
-            set
-            {
-                if (!Loaded) return;
-                PlayerGameData.WriteInt32((int)Offsets.ChrIns.RHandWeapon2, value);
-            }
+            get => PlayerGameData.RHandWeapon2;
+            set => PlayerGameData.RHandWeapon2 = value;
         }
 
+        [Obsolete("Please use PlayerGameData for this field. It will me removed, soon.")]
         public int RHandWeapon3
         {
-            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.RHandWeapon3);
-            set
-            {
-                if (!Loaded) return;
-                PlayerGameData.WriteInt32((int)Offsets.ChrIns.RHandWeapon3, value);
-            }
+            get => PlayerGameData.RHandWeapon3;
+            set => PlayerGameData.RHandWeapon3 = value;
         }
 
+        [Obsolete("Please use PlayerGameData for this field. It will me removed, soon.")]
         public int LHandWeapon1
         {
-            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.LHandWeapon1);
-            set
-            {
-                if (!Loaded) return;
-                PlayerGameData.WriteInt32((int)Offsets.ChrIns.LHandWeapon1, value);
-            }
+            get => PlayerGameData.LHandWeapon1;
+            set => PlayerGameData.LHandWeapon1 = value;
         }
 
+        [Obsolete("Please use PlayerGameData for this field. It will me removed, soon.")]
         public int LHandWeapon2
         {
-            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.LHandWeapon2);
-            set
-            {
-                if (!Loaded) return;
-                PlayerGameData.WriteInt32((int)Offsets.ChrIns.LHandWeapon2, value);
-            }
+            get => PlayerGameData.LHandWeapon2;
+            set => PlayerGameData.LHandWeapon2 = value;
         }
 
+        [Obsolete("Please use PlayerGameData for this field. It will me removed, soon.")]
         public int LHandWeapon3
         {
-            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.LHandWeapon3);
-            set
-            {
-                if (!Loaded) return;
-                PlayerGameData.WriteInt32((int)Offsets.ChrIns.LHandWeapon3, value);
-            }
+            get => PlayerGameData.LHandWeapon3;
+            set => PlayerGameData.LHandWeapon3 = value;
         }
 
+        [Obsolete("Please use PlayerGameData for this field. It will me removed, soon.")]
         public int Arrow1
         {
-            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.Arrow1);
-            set
-            {
-                if (!Loaded) return;
-                PlayerGameData.WriteInt32((int)Offsets.ChrIns.Arrow1, value);
-            }
+            get => PlayerGameData.Arrow1;
+            set => PlayerGameData.Arrow1 = value;
         }
 
+        [Obsolete("Please use PlayerGameData for this field. It will me removed, soon.")]
         public int Arrow2
         {
-            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.Arrow2);
-            set
-            {
-                if (!Loaded) return;
-                PlayerGameData.WriteInt32((int)Offsets.ChrIns.Arrow2, value);
-            }
+            get => PlayerGameData.Arrow2;
+            set => PlayerGameData.Arrow2 = value;
         }
 
+        [Obsolete("Please use PlayerGameData for this field. It will me removed, soon.")]
         public int Bolt1
         {
-            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.Bolt1);
-            set
-            {
-                if (!Loaded) return;
-                PlayerGameData.WriteInt32((int)Offsets.ChrIns.Bolt1, value);
-            }
+            get => PlayerGameData.Bolt1;
+            set => PlayerGameData.Bolt1 = value;
         }
 
+        [Obsolete("Please use PlayerGameData for this field. It will me removed, soon.")]
         public int Bolt2
         {
-            get => PlayerGameData.ReadInt32((int)Offsets.ChrIns.Bolt2);
-            set
-            {
-                if (!Loaded) return;
-                PlayerGameData.WriteInt32((int)Offsets.ChrIns.Bolt2, value);
-            }
+            get => PlayerGameData.Bolt2;
+            set => PlayerGameData.Bolt2 = value;
         }
 
         #endregion

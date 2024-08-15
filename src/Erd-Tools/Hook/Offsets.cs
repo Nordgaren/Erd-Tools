@@ -155,8 +155,13 @@
 
         public enum EquipInventoryData
         {
-            InventoryOffset = 0x10,
-            InventoryCount = 0x18,
+            TotalInventoryCap = 0x0,
+            NormalInventoryCap = 0xC,
+            NormalInventoryOffset = 0x10,
+            NormalInventoryCount = 0x18,
+            KeyInventoryCap = 0x1C,
+            KeyInventoryOffset = 0x20,
+            KeyInventoryCount = 0x28,
             TailIndex = 0x1C,
         }
 
