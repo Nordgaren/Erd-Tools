@@ -11,10 +11,10 @@ namespace Erd_Tools.Models
         public string Continent { get; init; }
         public string Hub { get; init; }
         public int EntityID { get; init; }
-        public int EventFlagID { get; init; }
+        public uint EventFlagID { get; init; }
         public DlcName Dlc { get; init; }
 
-        public Grace(string name, string hub, string continent, int eventFlagId, int entityId, DlcName dlc) {
+        public Grace(string name, string hub, string continent, uint eventFlagId, int entityId, DlcName dlc) {
             Name = name;
             Hub = hub;
             Continent = continent;

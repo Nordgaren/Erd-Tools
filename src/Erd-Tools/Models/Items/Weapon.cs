@@ -101,6 +101,12 @@ namespace Erd_Tools.Models
             RealID = Util.DeleteFromEnd(ID, 4);
             DefaultGem = Gem.All.FirstOrDefault(g => g.ID == -1);
         }
+        
+        public Weapon(string name, int id, Category category, bool showIDs) : base(name, id, category, showIDs)
+        {
+            RealID = Util.DeleteFromEnd(ID, 4);
+            DefaultGem = Gem.All.FirstOrDefault(g => g.ID == -1);
+        }
 
         public override void SetupItem(Param param)
         {

@@ -27,7 +27,17 @@ namespace Erd_Tools.Models
             }
         }
 
-        public Category Category { get; }
+        private Category _category;
+        public Category Category
+        {
+            get => _category;                                                       
+            set             
+            {
+                _category = value;
+                Pointer.WriteInt32((int)Offsets.InventoryEntry.ItemID, (int)value | _itemId);
+            }
+        }
+
         private int _quantity;
 
         public int Quantity
@@ -47,10 +57,8 @@ namespace Erd_Tools.Models
         public PotType PotType { get; }
 
         [Obsolete(
-            "This property is deprecated and will be gone, soon. Use InventoryEntry(PHPointer pointer, uint index, ErdHook hook), instead.")]
-        public InventoryEntry(PHPointer pointer, uint index, byte[] bytes, ErdHook hook) : this(pointer, index, hook)
-        {
-        }
+            "This constructor is deprecated and will be gone, soon. Use InventoryEntry(PHPointer pointer, uint index, ErdHook hook), instead.")]
+        public InventoryEntry(PHPointer pointer, uint index, byte[] bytes, ErdHook hook) : this(pointer, index, hook) { }
 
         public InventoryEntry(PHPointer pointer, uint index, ErdHook hook)
         {
@@ -80,8 +88,8 @@ namespace Erd_Tools.Models
                     int id = Util.DeleteFromEnd(ItemID, 2) * 100;
                     int upgradeLevel = ItemID - id;
                     string levelString = upgradeLevel > 0 ? $"+{upgradeLevel}" : "";
-                    string? wep = (hook.MsgRepository.GetEntry(FmgId.WeaponName, id) ??
-                                   hook.MsgRepository.GetEntry(FmgId.WeaponName_dlc01, id)) ??
+                    string? wep = hook.MsgRepository.GetEntry(FmgId.WeaponName, id) ??
+                                   hook.MsgRepository.GetEntry(FmgId.WeaponName_dlc01, id) ??
                                   hook.MsgRepository.GetEntry(FmgId.WeaponName_dlc02, id);
 
                     if (wep != null)
@@ -91,8 +99,8 @@ namespace Erd_Tools.Models
                     
                     break;
                 case Category.Protector:
-                    string? prot = (hook.MsgRepository.GetEntry(FmgId.ProtectorName, ItemID) ??
-                                    hook.MsgRepository.GetEntry(FmgId.ProtectorName_dlc01, ItemID)) ??
+                    string? prot = hook.MsgRepository.GetEntry(FmgId.ProtectorName, ItemID) ??
+                                    hook.MsgRepository.GetEntry(FmgId.ProtectorName_dlc01, ItemID) ??
                                    hook.MsgRepository.GetEntry(FmgId.ProtectorName_dlc02, ItemID);
 
                     if (prot != null)
@@ -102,18 +110,18 @@ namespace Erd_Tools.Models
                     
                     break;
                 case Category.Accessory:
-                    string? acc = (hook.MsgRepository.GetEntry(FmgId.AccessoryName, ItemID) ??
-                                   hook.MsgRepository.GetEntry(FmgId.AccessoryName_dlc01, ItemID)) ??
+                    string? acc = hook.MsgRepository.GetEntry(FmgId.AccessoryName, ItemID) ??
+                                   hook.MsgRepository.GetEntry(FmgId.AccessoryName_dlc01, ItemID) ??
                                   hook.MsgRepository.GetEntry(FmgId.AccessoryName_dlc02, ItemID);
 
                     if (acc != null)
                     {
-                        Name = hook.EquipParamAccessory.NameDictionary[ItemID];
+                        Name = acc;
                     }
                     break;
                 case Category.Goods:
-                    string? good = (hook.MsgRepository.GetEntry(FmgId.GoodsName, ItemID) ??
-                                   hook.MsgRepository.GetEntry(FmgId.GoodsName_dlc01, ItemID)) ??
+                    string? good = hook.MsgRepository.GetEntry(FmgId.GoodsName, ItemID) ??
+                                   hook.MsgRepository.GetEntry(FmgId.GoodsName_dlc01, ItemID) ??
                                   hook.MsgRepository.GetEntry(FmgId.GoodsName_dlc02, ItemID);
 
                     if (good != null)
@@ -122,8 +130,8 @@ namespace Erd_Tools.Models
                     }
                     break;
                 case Category.Gem:
-                    string? gem = (hook.MsgRepository.GetEntry(FmgId.GemName, ItemID) ??
-                                    hook.MsgRepository.GetEntry(FmgId.GemName_dlc01, ItemID)) ??
+                    string? gem = hook.MsgRepository.GetEntry(FmgId.GemName, ItemID) ??
+                                    hook.MsgRepository.GetEntry(FmgId.GemName_dlc01, ItemID) ??
                                    hook.MsgRepository.GetEntry(FmgId.GemName_dlc02, ItemID);
 
                     if (gem != null)
@@ -135,6 +143,11 @@ namespace Erd_Tools.Models
                     throw new InvalidEntryException(
                         $"Invalid Category for Item Entry {RawItemId:X2} Category: {Category:X2}");
             }
+        }
+
+        public IntPtr GetAddress()
+        {
+            return Pointer.Resolve();
         }
     }
 }

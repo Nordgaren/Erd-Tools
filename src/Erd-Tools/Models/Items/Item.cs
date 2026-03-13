@@ -35,7 +35,7 @@ namespace Erd_Tools.Models
         public bool ShowID;
 
         public short MaxQuantity;
-        public int EventID;
+        public uint EventID;
         public bool IsDrop;
         public bool IsMultiplayerShare;
         public bool CanAquireFromOtherPlayers => IsDrop && IsMultiplayerShare;
@@ -57,6 +57,15 @@ namespace Erd_Tools.Models
             Match itemEntry = ItemEntryRx.Match(config);
             Name = itemEntry.Groups["name"].Value.Replace("\r", "");
             ID = Convert.ToInt32(itemEntry.Groups["id"].Value);
+            ShowID = showID;
+            ItemCategory = category;
+            MaxQuantity = 1;
+        }
+        
+        public Item(string name, int id, Category category, bool showID)
+        {
+            Name = name;
+            ID = id;
             ShowID = showID;
             ItemCategory = category;
             MaxQuantity = 1;

@@ -72,6 +72,15 @@ namespace Erd_Tools.Models
             All.Add(this);
         }
 
+        public Gem(string name, int id, Category category, bool showID) : base(name, id, category, showID)
+        {
+            Name = name;
+            ID = id;
+            ShowID = showID;
+            ItemCategory = category;
+            All.Add(this);
+        }
+
         public static List<WeaponType> Weapons = Enum.GetValues(typeof(WeaponType)).Cast<WeaponType>().ToList();
 
         public static List<Infusion> AllInfusions = Enum.GetValues(typeof(Infusion)).Cast<Infusion>().ToList();

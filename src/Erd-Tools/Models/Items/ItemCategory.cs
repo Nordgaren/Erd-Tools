@@ -4,7 +4,7 @@ using Erd_Tools.Utils;
 using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
-using Category = Erd_Tools.Models.Item.Category;
+using GoodsCategory = Erd_Tools.Models.Item.Category;
 
 namespace Erd_Tools.Models
 {
@@ -13,13 +13,14 @@ namespace Erd_Tools.Models
 
         public string Name;
         public List<Item> Items;
-        public Category Category;
+        public GoodsCategory Category;
         public bool ShowID;
         public static List<ItemCategory> All = new();
+        public static List<ItemCategory> Live = new();
 
         private static Regex CategoryEntryRx = new(@"^(?<category>\S+) (?<show>\S+) (?<path>\S+) (?<name>.+)$", RegexOptions.CultureInvariant);
 
-        private ItemCategory(string name, Category category, string[] itemList, bool showIDs)
+        private ItemCategory(string name, GoodsCategory category, string[] itemList, bool showIDs)
         {
             Name = name;
             Items = new();
@@ -30,21 +31,28 @@ namespace Erd_Tools.Models
                     AddItem(line.TrimComment(), category, showIDs);
             };
         }
-
-        private void AddItem(string line, Category category, bool showIDs)
+        
+        public ItemCategory(string name, GoodsCategory category, List<Item> items)
         {
-            switch (category)
+            Name = name;
+            Category = category;
+            Items = items;
+        }
+
+        private void AddItem(string line, GoodsCategory goodsCategory, bool showIDs)
+        {
+            switch (goodsCategory)
             {
-                case Category.Weapons:
-                    Items.Add(new Weapon(line, category, showIDs));
+                case GoodsCategory.Weapons:
+                    Items.Add(new Weapon(line, goodsCategory, showIDs));
                     break;
-                case Category.Protector:
-                case Category.Accessory:
-                case Category.Goods:
-                    Items.Add(new Item(line, category, showIDs));
+                case GoodsCategory.Protector:
+                case GoodsCategory.Accessory:
+                case GoodsCategory.Goods:
+                    Items.Add(new Item(line, goodsCategory, showIDs));
                     break;
-                case Category.Gem:
-                    Items.Add(new Gem(line, category, showIDs));
+                case GoodsCategory.Gem:
+                    Items.Add(new Gem(line, goodsCategory, showIDs));
                     break;
                 default:
                     throw new Exception("Incorrect Category");
@@ -65,9 +73,19 @@ namespace Erd_Tools.Models
                 string name = itemEntry.Groups["name"].Value;
                 bool show = Convert.ToBoolean(itemEntry.Groups["show"].Value);
                 string cat = itemEntry.Groups["category"].Value;
-                Category category = (Category)Convert.ToUInt32(cat, 16);
+                GoodsCategory category = (GoodsCategory)Convert.ToUInt32(cat, 16);
                 string path = itemEntry.Groups["path"].Value;
                 All.Add(new(name, category, Util.GetListResource($"Resources/{path}"), show));
+            };
+        }
+        
+        public static void GetInMemoryItemCategories(ErdHook hook)
+        {
+            List<Item> items = new();
+
+            foreach (Item item in items)
+            {
+               
             };
         }
 

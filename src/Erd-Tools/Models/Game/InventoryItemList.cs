@@ -7,7 +7,7 @@ namespace Erd_Tools.Models.Game
     /// <summary>
     /// InventoryItemList class that handles the games inventory lists.
     /// </summary>
-    public class InventoryItemList
+    internal class InventoryItemList
     {
         private readonly int _offset;
         private readonly PHPointer _equipInventoryData;
@@ -22,16 +22,21 @@ namespace Erd_Tools.Models.Game
             _hook = hook;
             _offset = offset;
         }
-        public PHPointer? GetPointer()
+        internal PHPointer? GetPointer()
         {
             return _equipInventoryData.Resolve() == IntPtr.Zero ? null : _list;
         }
-        public IntPtr Resolve()
+        internal IntPtr Resolve()
         {
-            return _equipInventoryData.Resolve() == IntPtr.Zero ? IntPtr.Zero : _list.Resolve();
+            return GetPointer()?.Resolve() ?? IntPtr.Zero;
         }
         public uint Cap => _list.ReadUInt32((int)Offsets.InventoryItemList.Cap);
         public uint Entries => _list.ReadUInt32((int)Offsets.InventoryItemList.Entries);
+
+        internal byte[] GetInventoryData()
+        {
+            return _inventory.ReadBytes(0x0, Cap * Offsets.InventoryEntrySize);
+        }
         
         public List<InventoryEntry> GetInventoryList()
         {
@@ -42,11 +47,11 @@ namespace Erd_Tools.Models.Game
                 byte[] entry = new byte[Offsets.InventoryEntrySize];
                 Array.Copy(bytes, i * Offsets.InventoryEntrySize, entry, 0, entry.Length);
 
-                if (BitConverter.ToInt32(entry, (int)Offsets.InventoryEntry.ItemID) == -1) continue;
+                if (BitConverter.ToInt32(entry, (int)Offsets.InventoryEntry.ItemID) is -1 or 0) continue;
 
                 inventory.Add(new InventoryEntry(
-                    _hook.CreateBasePointer(_inventory.Resolve() + i * Offsets.InventoryEntrySize), (uint)i, _hook)
-                );
+                    _hook.CreateBasePointer(_inventory.Resolve() + i * Offsets.InventoryEntrySize), (uint)i, _hook
+                    ));
             }
 
             return inventory;

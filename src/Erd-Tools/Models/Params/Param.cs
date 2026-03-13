@@ -52,8 +52,8 @@ namespace Erd_Tools.Models
             if (paramType != Type)
                 throw new InvalidOperationException($"Incorrect Param Pointer: {paramType} should be {Type}");
 
-            Bytes = Pointer.ReadBytes(0x0, (uint)Length);
             int endOfParam = (Pointer.ReadInt32((int)Offsets.Param.ParamFileSize) + 0xF) & -0x10;
+            Bytes = Pointer.ReadBytes(0x0, (uint)endOfParam);
 
             int tableLength = BitConverter.ToInt32(Bytes ,(int)Offsets.Param.TableLength);
             int param = 0x40;

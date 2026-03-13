@@ -1,7 +1,9 @@
-﻿using PropertyHook;
+﻿using Erd_Tools.Utils;
+using PropertyHook;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Erd_Tools.Models.Game
 {
@@ -28,8 +30,8 @@ namespace Erd_Tools.Models.Game
 
         public IntPtr Resolve() => _equipInventoryData.Resolve();
         public PHPointer GetPointer() => _equipInventoryData;
-        public InventoryItemList NormalItems;
-        public InventoryItemList KeyItems;
+        internal InventoryItemList NormalItems;
+        internal InventoryItemList KeyItems;
         /// Not really sure what this is
         internal InventoryItemList UnkItems;
         /// Not really sure what this is
@@ -43,14 +45,23 @@ namespace Erd_Tools.Models.Game
         public uint KeyInventoryEntries => KeyItems.Entries;
         public uint KeyInventoryCap => KeyItems.Cap;
 
-        public List<InventoryEntry> GetNormalInventory()
+        public List<InventoryEntry> GetInventory()
         {
-            return NormalItems.GetInventoryList();
+            List<InventoryEntry> inventory = KeyItems.GetInventoryList();
+            inventory.AddRange(NormalItems.GetInventoryList());
+            return inventory;
         }
 
-        public List<InventoryEntry> GetKeyInventory()
+        public List<InventoryEntry> GetNormalInventory() => NormalItems.GetInventoryList();
+
+        public List<InventoryEntry> GetKeyInventory() => KeyItems.GetInventoryList();
+
+        public void RemoveItem(InventoryEntry item)
         {
-            return KeyItems.GetInventoryList();
+            string asmString = Util.GetEmbededResource("Assembly.RemoveItem.asm");
+            string asm = string.Format(asmString, item.Index, _equipInventoryData.Resolve(),
+                _hook.RemoveItemFunction.Resolve() + Offsets.RemoveItemOffset);
+            _hook.AsmExecute(asm);
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Erd_Tools.Utils;
 using PropertyHook;
 using System;
+using System.Collections.Generic;
 
 namespace Erd_Tools.Models.CSFD4
 {
@@ -12,18 +13,23 @@ namespace Erd_Tools.Models.CSFD4
         private PHPointer _csfd4VirtualMemoryFlag;
         private ErdHook _hook;
         private PHPointer _flagHolder;
-        private int?[] _cache;
+        private Dictionary<uint, uint> _cache;
+
+        private uint _numFlagsInBlock;
+        //private uint?[] _cache;
 
         public CSFD4VirtualMemoryFlag(PHPointer csfd4VirtualMemoryFlag, ErdHook hook)
         {
             _csfd4VirtualMemoryFlag = csfd4VirtualMemoryFlag;
             _hook = hook;
-            int entryCount =
-                _csfd4VirtualMemoryFlag.ReadInt32((int)Offsets.CSFD4VirtualMemoryFlag.FlagGroupEntryCount);
+            // int entryCount =
+            //     _csfd4VirtualMemoryFlag.ReadInt32((int)Offsets.CSFD4VirtualMemoryFlag.FlagGroupEntryCount);
+            _numFlagsInBlock =
+                 _csfd4VirtualMemoryFlag.ReadUInt32((int)Offsets.CSFD4VirtualMemoryFlag.NumFlagsInBlock);
             _flagHolder =
                 _hook.CreateBasePointer(
                     _csfd4VirtualMemoryFlag.ReadIntPtr((int)Offsets.CSFD4VirtualMemoryFlag.FlagHolder));
-            _cache = new int?[entryCount];
+            _cache = new Dictionary<uint, uint>();
             ClearCache();
         }
         /// <summary>
@@ -39,17 +45,17 @@ namespace Erd_Tools.Models.CSFD4
         /// </summary>
         public void ClearCache()
         {
-           Array.Clear(_cache);
+           _cache.Clear();
         }
         /// <summary>
         /// Sets the event flag in game by calling the "Set Event Flag" function.
         /// </summary>
         /// <param name="flag">Flag Id</param>
         /// <param name="state">On or off</param>
-        public void SetEventFlag(int flag, bool state)
+        public void SetEventFlag(uint flag, bool state)
         {
             IntPtr idPointer = _hook.GetPrefferedIntPtr(sizeof(int));
-            PropertyHook.Kernel32.WriteInt32(_hook.Handle, idPointer, flag);
+            Kernel32.WriteUInt32(_hook.Handle, idPointer, flag);
 
             string asmString = Util.GetEmbededResource("Assembly.SetEventFlag.asm");
             string asm = string.Format(asmString, _csfd4VirtualMemoryFlag.Resolve(), (state ? 1 : 0), idPointer.ToString("X2"),
@@ -62,37 +68,38 @@ namespace Erd_Tools.Models.CSFD4
         /// </summary>
         /// <param name="flag">Flag Id</param>
         /// <returns>Flag state</returns>
-        public bool IsEventFlag(int flag)
+        public bool IsEventFlag(uint flag)
         {
             IntPtr returnPtr = _hook.GetPrefferedIntPtr(sizeof(bool));
             IntPtr idPointer = _hook.GetPrefferedIntPtr(sizeof(int));
-            PropertyHook.Kernel32.WriteInt32(_hook.Handle, idPointer, flag);
+            Kernel32.WriteUInt32(_hook.Handle, idPointer, flag);
 
             string asmString = Util.GetEmbededResource("Assembly.IsEventFlag.asm");
             string asm = string.Format(asmString, _csfd4VirtualMemoryFlag.Resolve(), idPointer.ToString("X2"),
                 _hook.IsEventFlagFunction.Resolve(), returnPtr.ToString("X2"));
 
             _hook.AsmExecute(asm);
-            bool state = PropertyHook.Kernel32.ReadBoolean(_hook.Handle, returnPtr);
+            bool state = Kernel32.ReadBoolean(_hook.Handle, returnPtr);
             _hook.Free(returnPtr);
             _hook.Free(idPointer);
 
             return state;
         }
         /// <summary>
-        /// Returns the state of the flag in game by checking the flag bit manually. Is faster than `IsEventFlag`
+        /// Returns the state of the flag in game by checking the flag bit manually. This is faster than `IsEventFlag`,
+        /// because it keeps a cache of the group locations.
         /// </summary>
         /// <param name="flagId">Flag Id</param>
+        /// <param name="bits">Number of bits for flag. Default: 1</param>
         /// <returns>Flag state</returns>
-        public bool IsEventFlagFast(int flagId)
+        public uint IsEventFlagFast(uint flagId, uint bits = 1)
         {
-            int group = flagId / 1000;
-            int bitPos = flagId % 1000;
+            uint groupId = flagId / _numFlagsInBlock;
+            uint bitPos = flagId - _numFlagsInBlock * groupId;
 
-            int? cached = _cache[group];
-            if (cached != null)
+            if (_cache.TryGetValue(groupId, out uint cached))
             {
-                return _readEventFlag(cached.Value, bitPos);
+                return _readEventFlag(cached, bitPos, bits);
             }
 
             IntPtr root = _csfd4VirtualMemoryFlag.ReadIntPtr((int)Offsets.CSFD4VirtualMemoryFlag.FlagGroupRootNode);
@@ -107,7 +114,7 @@ namespace Erd_Tools.Models.CSFD4
             {
                 int currentGroup = currentPtr.ReadInt32((int)Offsets.EventFlagGroupNode.Group);
                 PHPointer nextPtr;
-                if (currentGroup < group)
+                if (currentGroup < groupId)
                 {
                     IntPtr next = currentPtr.ReadIntPtr((int)Offsets.EventFlagGroupNode.Right);
                     nextPtr = _hook.CreateBasePointer(next);
@@ -124,16 +131,19 @@ namespace Erd_Tools.Models.CSFD4
                 isLeaf = nextPtr.ReadBoolean((int)Offsets.EventFlagGroupNode.IsLeaf);
             }
 
-            if (foundPtr.Resolve() == rootPtr.Resolve() || group < foundPtr.ReadInt32((int)Offsets.EventFlagGroupNode.Group))
+            if (foundPtr.Resolve() == rootPtr.Resolve() || groupId < foundPtr.ReadInt32((int)Offsets.EventFlagGroupNode.Group))
             {
-                return false;
+                return 0;
             }
+            
+            uint locationMode = _csfd4VirtualMemoryFlag.ReadUInt32((int)Offsets.EventFlagGroupNode.LocationMode);
 
-            int entrySize =
-                _csfd4VirtualMemoryFlag.ReadInt32((int)Offsets.CSFD4VirtualMemoryFlag.FlagHolderEntrySize);
-            int groupIndex = foundPtr.ReadInt32((int)Offsets.EventFlagGroupNode.Location) * entrySize;
-            _cache[group] = groupIndex;
-            return _readEventFlag(groupIndex, bitPos);
+            uint entrySize =
+                _csfd4VirtualMemoryFlag.ReadUInt32((int)Offsets.CSFD4VirtualMemoryFlag.FlagHolderEntrySize);
+            uint groupIndex = foundPtr.ReadUInt32((int)Offsets.EventFlagGroupNode.Location) * entrySize;
+  
+            _cache[groupId] = groupIndex;
+            return _readEventFlag(groupIndex, bitPos, bits);
 
         }
         /// <summary>
@@ -142,13 +152,13 @@ namespace Erd_Tools.Models.CSFD4
         /// <param name="groupIndex">Group index in bytes. Location * EntrySize</param>
         /// <param name="bitPos">The bit position information of the flag. FlagId % Divisor</param>
         /// <returns>Flag State</returns>
-        private bool _readEventFlag(int groupIndex, int bitPos)
+        private uint _readEventFlag(uint groupIndex, uint bitPos, uint bits)
         {
-            int bitIndex = bitPos >> 3;
-            byte bitfield = _flagHolder.ReadByte(groupIndex + bitIndex);
+            uint bitIndex = bitPos >> 3;
+            byte bitfield = _flagHolder.ReadByte((int)(groupIndex + bitIndex));
             
-            int bitStart = 7 - (bitPos & 0b00000111);
-            return (bitfield & (1 << bitStart)) != 0;
+            uint bitStart = 7 - (bitPos & 0b00000111);
+            return (uint)((bitfield >> (int)bitStart) & bits);
         }
     }
 }

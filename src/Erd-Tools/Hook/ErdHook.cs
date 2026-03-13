@@ -22,6 +22,7 @@ using Erd_Tools.ErdToolsException;
 using Erd_Tools.Models.CSFD4;
 using Erd_Tools.Models.Game;
 using Erd_Tools.Models.Msg;
+using Erd_Tools.Models.Params.Defs;
 using Erd_Tools.Models.System;
 using Erd_Tools.Models.System.Dlc;
 using Erd_Tools.Structs;
@@ -53,7 +54,7 @@ namespace Erd_Tools
         private PHPointer SoloParamRepository { get; set; }
         private PHPointer CapParamCall { get; set; }
         public PHPointer ItemGive { get; set; }
-        private PHPointer RemoveItemFunction { get; set; }
+        internal PHPointer RemoveItemFunction { get; set; }
         public PHPointer MapItemMan { get; set; }
         public PHPointer SetEventFlagFunction { get; set; }
         public PHPointer IsEventFlagFunction { get; set; }
@@ -148,7 +149,6 @@ namespace Erd_Tools
             ItemEventDictionary = BuildItemEventDictionary();
             ItemCategory.GetItemCategories();
 
-
             CSDlc = new CSDlcImp(RegisterRelativeAOB(Offsets.CSDlcImpAoB, Offsets.CSDlcImpOffset,
                 Offsets.CSDlcImpInstructionSize, 0));
         }
@@ -167,6 +167,7 @@ namespace Erd_Tools
             IntPtr itemGive = ItemGive.Resolve();
             IntPtr mapItemMan = MapItemMan.Resolve();
             IntPtr eventFlagMan = CSFD4VirtualMemoryFlagPtr.Resolve();
+            IntPtr eventFlagMan2 = SetEventFlagFunction.Resolve();
             IntPtr capParamCall = CapParamCall.Resolve();
             IntPtr worldChrMan = WorldChrMan.Resolve();
             IntPtr playeIns = PlayerIns.Resolve();
@@ -187,9 +188,6 @@ namespace Erd_Tools
 
             await AsyncSetup();
             //GetInventoryList();
-            Param.Row? r = EquipParamWeapon[2000000];
-            IntPtr p = EquipParamWeapon.Pointer.Resolve();
-            Console.WriteLine();
             //LogABunchOfStuff();
         }
 
@@ -257,7 +255,7 @@ namespace Erd_Tools
         private Engine Engine = new(Architecture.X86, Mode.X64);
 
         //TKCode
-        public void AsmExecute(string asm)
+        internal void AsmExecute(string asm)
         {
             //Assemble once to get the size
             EncodedData? bytes = Engine.Assemble(asm, (ulong)Process.MainModule.BaseAddress);
@@ -294,6 +292,12 @@ namespace Erd_Tools
             Debug.WriteLine("");
         }
 #endif
+
+        public uint ClearCount
+        {
+            get => GameDataMan.ReadUInt32((int)Offsets.WorldChrMan.ClearCount);
+            set => GameDataMan.WriteUInt32((int)Offsets.WorldChrMan.ClearCount, value);
+        }
 
         #region Params
 
@@ -405,15 +409,226 @@ namespace Erd_Tools
         {
             if (!Setup) return;
 
-            EquipParamWeapon.RestoreParam();
+            EquipParamAccessory.RestoreParam();
             EquipParamGem.RestoreParam();
+            EquipParamGoods.RestoreParam();
+            EquipParamProtector.RestoreParam();
+            EquipParamWeapon.RestoreParam();
+            MagicParam.RestoreParam();
+            NpcParam.RestoreParam();
+            BonfireWarpTabParam.RestoreParam();
+            BonfireWarpSubCategoryParam.RestoreParam();
+            BonfireWarpParam.RestoreParam();
+            GestureParam.RestoreParam();
         }
 
         private async Task ReadParams()
         {
-            List<Task> tasks = new();
+            await ReadLiveItems();
+            // await SetupItemCategories(ItemCategory.All);
+            await SetupItemCategories(ItemCategory.Live);
+        }
 
-            foreach (ItemCategory category in ItemCategory.All)
+        private async Task ReadLiveItems()
+        {
+            List<ItemCategory> itemCategories = GetWeaponCategories();
+            itemCategories.AddRange(await GetGoodsCategories());
+            itemCategories.Add(await GetAccessoryCategories());
+            itemCategories.Add(await GetGemCategories());
+            itemCategories.Add(await GetProtectorCategories());
+            
+            ItemCategory.Live =  itemCategories;
+        }
+
+        private Task<ItemCategory> GetGemCategories()
+        {
+            List<Item> gems = new();
+            foreach (Param.Row row in EquipParamGem.Rows)
+            {
+                string? name = MsgRepository.GetEntry(FmgId.GemName,row.ID) ??
+                               MsgRepository.GetEntry(FmgId.GemName_dlc01,row.ID) ??
+                               MsgRepository.GetEntry(FmgId.GemName_dlc02,row.ID);
+                if (name == null) continue;
+                gems.Add(new Gem(name, row.ID, Category.Gem, false));
+            }
+
+            return Task.FromResult(new ItemCategory("Ash of War", Category.Gem, gems));
+        }
+        
+        private Task<ItemCategory> GetProtectorCategories()
+        {
+            List<Item> gems = new();
+            foreach (Param.Row row in EquipParamProtector.Rows)
+            {
+                string? name = MsgRepository.GetEntry(FmgId.ProtectorName,row.ID) ??
+                               MsgRepository.GetEntry(FmgId.ProtectorName_dlc01,row.ID) ??
+                               MsgRepository.GetEntry(FmgId.ProtectorName_dlc02,row.ID);
+                if (name == null) continue;
+                gems.Add(new Item(name, row.ID, Category.Protector, false));
+            }
+
+            return Task.FromResult(new ItemCategory("Armor", Category.Protector, gems));
+        }
+
+        private Task<List<ItemCategory>> GetGoodsCategories()
+        {
+            FSParam.Param param = FSParam.Param.Read(EquipParamGoods.Bytes);
+            param.ApplyParamdef(EquipParamGoods.ParamDef);
+            Dictionary<string, ItemCategory> categories = new();
+            
+            foreach (FSParam.Param.Row row in param.Rows)
+            {
+                string? name = MsgRepository.GetEntry(FmgId.GoodsName,row.ID) ??
+                               MsgRepository.GetEntry(FmgId.GoodsName_dlc01,row.ID) ??
+                               MsgRepository.GetEntry(FmgId.GoodsName_dlc02,row.ID);
+                if (name == null) continue;
+
+                EquipParamGoods item = new(row);
+                string itemTypeName = item.getGoodsTypeName();
+                if (categories.TryGetValue(itemTypeName, out ItemCategory category))
+                {
+                    category.Items.Add(new Item(name, row.ID, Category.Goods, false));
+                }
+                else
+                {
+                    ItemCategory cat = new(itemTypeName, Category.Goods, new List<Item>
+                    {
+                        new(name, row.ID, Category.Goods, false)
+                    });
+                    categories.Add(itemTypeName, cat);
+                }
+                
+            }
+
+            return Task.FromResult(categories.Values.ToList());
+        }
+
+        private Task<ItemCategory> GetAccessoryCategories()
+        {
+            List<Item> talismans = new();
+            foreach (Param.Row row in EquipParamAccessory.Rows)
+            {
+                string? name = MsgRepository.GetEntry(FmgId.AccessoryName,row.ID) ??
+                               MsgRepository.GetEntry(FmgId.AccessoryName_dlc01,row.ID) ??
+                               MsgRepository.GetEntry(FmgId.AccessoryName_dlc02,row.ID);
+                if (name == null) continue;
+                talismans.Add(new Item(name, row.ID, Category.Accessory, false));
+            }
+
+            return Task.FromResult(new ItemCategory("Talismans", Category.Accessory, talismans));
+        }
+
+        private List<ItemCategory> GetWeaponCategories()
+        {
+            FSParam.Param? equipParamWeapon = FSParam.Param.Read(EquipParamWeapon!.Bytes);
+            equipParamWeapon.ApplyParamdef(EquipParamWeapon.ParamDef);
+            List<Item> none = new();
+            List<Item> melee = new();
+            List<Item> ranged = new();
+            List<Item> spellTools = new();
+            List<Item> shields = new();
+            List<Item> ammo = new();
+            
+            foreach (FSParam.Param.Row row in equipParamWeapon.Rows)
+            {
+                string? name = MsgRepository.GetEntry(FmgId.WeaponName,row.ID) ??
+                               MsgRepository.GetEntry(FmgId.WeaponName_dlc01,row.ID) ??
+                               MsgRepository.GetEntry(FmgId.WeaponName_dlc02,row.ID);
+                if (string.IsNullOrWhiteSpace(name)) continue;
+                if (name.Contains('<') || name.Contains('>') || name.Contains("ERROR")) continue;
+                
+                EquipParamWeapon wep = new(row);
+                switch (wep.wepType)
+                {
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.None:
+                        // None
+                        none.Add(new Weapon(name, row.ID, Category.Weapons, false));
+                        break;
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Dagger:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.StraightSword:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Greatsword:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.ColossalSword:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.CurvedSword:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.CurvedGreatsword:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Katana:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Twinblade:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.ThrustingSword:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.HeavyThrustingSword:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Axe:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Greataxe:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Hammer:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.GreatHammer:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Flail:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Spear:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.SpearLarge:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.GreatSpear:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Halberd:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Reaper:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Unarmed:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Fist:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Claws:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Whip:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.ColossalWeapon:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.ReverseHandBlade:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.LightGreatsword:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.GreatKatana:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.BeastClaw:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Torch:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.HandToHand:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.PerfumeBottle:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.ThrowingBlade:
+                        // Melee
+                        melee.Add(new Weapon(name, row.ID, Category.Weapons, false));
+                        break;
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.LightBow:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Bow:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Greatbow:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Crossbow:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Ballista:
+                        // Ranged
+                        ranged.Add(new Weapon(name, row.ID, Category.Weapons, false));
+                        break;
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.GlintstoneStaff:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Sorcery:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.FingerSeal:
+                        // Spell Tools
+                        spellTools.Add(new Weapon(name, row.ID, Category.Weapons, false));
+                        break;
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.SmallShield:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.MediumShield:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Greatshield:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.ThrustingShield:
+                        // Shield
+                        shields.Add(new Weapon(name, row.ID, Category.Weapons, false));
+                        break;
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Arrow:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.GreatArrow:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.Bolt:
+                    case Models.Params.Defs.EquipParamWeapon.WeaponType.BallistaBolt:
+                        // Ammo
+                        ammo.Add(new Weapon(name, row.ID, Category.Weapons, false));
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException($"Unknown Weapon Type: {wep.wepType}");
+                }
+            }
+            
+            List<ItemCategory> itemCategories = new()
+            {
+                new ItemCategory("None", Category.Weapons, none), new ItemCategory("Melee", Category.Weapons, melee),
+                new ItemCategory("Ranged", Category.Weapons, ranged),
+                new ItemCategory("Spell Tools", Category.Weapons, spellTools),
+                new ItemCategory("Shields", Category.Weapons, shields),
+                new ItemCategory("Ammo", Category.Weapons, ammo)
+            };
+
+            return itemCategories;
+        }
+
+        private async Task SetupItemCategories(List<ItemCategory> categories)
+        {
+            List<Task> tasks = new();
+            foreach (ItemCategory category in categories)
             {
                 tasks.Add(Task.Run(() => SetupItems(category)));
             }
@@ -424,7 +639,7 @@ namespace Erd_Tools
 
             tasks.Clear();
 
-            foreach (ItemCategory category in ItemCategory.All)
+            foreach (ItemCategory category in categories)
             {
                 if (category.Category == Category.Weapons) tasks.Add(Task.Run(() => SetupGems(category)));
             }
@@ -444,7 +659,7 @@ namespace Erd_Tools
         /// <param name="flag">Flag Id</param>
         /// <param name="state">On or off</param>
         [Obsolete("This function is deprecated. Use CSFD4VirtualMemoryFlag.SetEventFlag, instead")]
-        public void SetEventFlag(int flag, bool state)
+        public void SetEventFlag(uint flag, bool state)
         {
             CSFD4VirtualMemoryFlag.SetEventFlag(flag, state);
         }
@@ -455,7 +670,7 @@ namespace Erd_Tools
         /// <param name="flag">Flag Id</param>
         /// <returns>Flag state</returns>
         [Obsolete("This function is deprecated. Use CSFD4VirtualMemoryFlag.IsEventFlag, instead.")]
-        public bool IsEventFlag(int flag)
+        public bool IsEventFlag(uint flag)
         {
             return CSFD4VirtualMemoryFlag.IsEventFlag(flag);
         }
@@ -495,18 +710,18 @@ namespace Erd_Tools
 
         private static Regex ItemEventEntryRx = new(@"^(?<event>\S+) (?<item>\S+)$", RegexOptions.CultureInvariant);
 
-        private static Dictionary<int, int> ItemEventDictionary;
+        private static Dictionary<int, uint> ItemEventDictionary;
 
-        private Dictionary<int, int> BuildItemEventDictionary()
+        private Dictionary<int, uint> BuildItemEventDictionary()
         {
-            Dictionary<int, int> itemEventDictionary = new Dictionary<int, int>();
+            Dictionary<int, uint> itemEventDictionary = new Dictionary<int, uint>();
             string[] goodsEvents = Util.GetListResource("Resources/Events/GoodsEvents.txt");
             foreach (string line in goodsEvents)
             {
                 if (!Util.IsValidTxtResource(line)) continue;
 
                 Match itemEntry = ItemEventEntryRx.Match(line.TrimComment());
-                int eventID = Convert.ToInt32(itemEntry.Groups["event"].Value);
+                uint eventID = Convert.ToUInt32(itemEntry.Groups["event"].Value);
                 int itemID = Convert.ToInt32(itemEntry.Groups["item"].Value);
                 itemEventDictionary.Add(itemID + (int)Category.Goods, eventID);
             }
@@ -528,8 +743,10 @@ namespace Erd_Tools
             foreach (Item item in category.Items)
             {
                 SetupItem(item);
+                if (item.ItemCategory != Category.Goods) continue;
+                
                 int fullID = item.ID + (int)Category.Goods;
-                item.EventID = ItemEventDictionary.ContainsKey(fullID) ? ItemEventDictionary[fullID] : -1;
+                item.EventID = ItemEventDictionary.ContainsKey(fullID) ? ItemEventDictionary[fullID] : uint.MaxValue;
             }
         }
 
@@ -594,7 +811,7 @@ namespace Erd_Tools
 
             foreach (IEnumerable<ItemSpawnInfo> chunk in chunks)
             {
-                List<int> eventIDs = new();
+                List<uint> eventIDs = new();
                 int position = 0;
                 byte[] itemInfoBytes = new byte[(int)Offsets.ItemGiveStruct.ItemStructHeaderSize +
                                                 (chunk.Count() * (int)Offsets.ItemGiveStruct.ItemStructEntrySize)];
@@ -639,7 +856,7 @@ namespace Erd_Tools
                 AsmExecute(asm);
                 Free(itemInfo);
 
-                foreach (int eventID in eventIDs)
+                foreach (uint eventID in eventIDs)
                 {
                     SetEventFlag(eventID, true);
                 }
@@ -647,7 +864,7 @@ namespace Erd_Tools
                 token.ThrowIfCancellationRequested();
             }
         }
-
+        [Obsolete("This function is deprecated. Use the PlayerGameData.Inventory.RemoveItem() and PlayerGameData.Storage.RemoveItem(), Instead.")]
         public void RemoveItem(bool storage, uint index)
         {
             PHPointer inventory = PlayerGameData.Inventory.GetPointer();
@@ -1196,8 +1413,8 @@ namespace Erd_Tools
             foreach (Param.Row row in BonfireWarpParam.Rows)
             {
                 DlcName dlc = DlcName.None;
-                int eventFlagId =
-                    (int)BonfireWarpParam.Pointer.ReadUInt32(row.DataOffset + row["eventflagId"].FieldOffset);
+                uint eventFlagId =
+                    BonfireWarpParam.Pointer.ReadUInt32(row.DataOffset + row["eventflagId"].FieldOffset);
                 int entityId =
                     (int)BonfireWarpParam.Pointer.ReadUInt32(row.DataOffset + row["bonfireEntityId"].FieldOffset);
                 int subCategoryId =

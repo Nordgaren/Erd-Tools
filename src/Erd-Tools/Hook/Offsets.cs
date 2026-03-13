@@ -207,6 +207,7 @@
 
         public enum WorldChrMan
         {
+            ClearCount = 0x120,
             NumWorldBlockChr = 0xb528,
             WorldBlockChr = 0x330,
             ChrSet1 = 0x17420,
@@ -567,7 +568,7 @@
 
         public enum CSFD4VirtualMemoryFlag
         {
-            EventFlagDivisor = 0x1C,
+            NumFlagsInBlock = 0x1C,
             FlagHolderEntrySize = 0x20,
             FlagHolderEntryCount = 0x24,
             FlagHolder = 0x28,
