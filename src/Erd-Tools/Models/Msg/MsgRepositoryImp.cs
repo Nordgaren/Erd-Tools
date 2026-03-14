@@ -37,10 +37,11 @@ namespace Erd_Tools.Models.Msg
             FMG? cached = GetCachedFmg(fmgId);
             if (cached != null)
             {
-                return cached[id];
+                return getString(cached, id);
             }
-            
-            PHPointer versionArray = _hook.CreateChildPointer(_msgRepositoryImp, (int)Offsets.MsgRepositoryImp.Categories);
+
+            PHPointer versionArray =
+                _hook.CreateChildPointer(_msgRepositoryImp, (int)Offsets.MsgRepositoryImp.Categories);
             PHPointer categoryArray = _hook.CreateChildPointer(versionArray, 0x0);
             PHPointer fmgEntry = _hook.CreateChildPointer(categoryArray, (int)fmgId * 8);
             if (fmgEntry.Resolve() == IntPtr.Zero)
@@ -58,10 +59,24 @@ namespace Erd_Tools.Models.Msg
             // I know it's not null, cause GetCachedFmg will initialize it.
             _cache![(int)fmgId] = fmg;
 
-            return fmg[id];
+            return getString(fmg, id);
         }
 
-        private FMG? GetCachedFmg(FmgId fmgId) {
+        private string? getString(FMG fmg, int id)
+        {
+            string? entry = fmg[id];
+            if (string.IsNullOrWhiteSpace(entry))
+            {
+                return entry;
+            }
+
+            if (entry.Contains('<') || entry.Contains('>') || entry.Contains("ERROR")) return null;
+
+            return entry;
+        }
+
+        private FMG? GetCachedFmg(FmgId fmgId)
+        {
             if (_cache != null)
             {
                 return _cache[(int)fmgId];
@@ -175,6 +190,7 @@ namespace Erd_Tools.Models.Msg
         ActionButtonText = 0x20,
         EventTextForTalk = 0x21,
         EventTextForMap = 0x22,
+
         // Menu FMGs
         GR_MenuText = 0xC8,
         GR_LineHelp = 0xC9,

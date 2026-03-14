@@ -49,6 +49,8 @@ namespace Erd_Tools.Models.Game
             }
         }
         
+        public byte[] FaceData => _playerGameData.ReadBytes(Offsets.FaceDataDataOffset, Offsets.FaceDataLength);
+        
         public int Level => _playerGameData.ReadInt32((int)Offsets.Player.Level);
         public string LevelString => _playerGameData?.ReadInt32((int)Offsets.Player.Level).ToString() ?? "";
         

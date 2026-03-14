@@ -149,6 +149,8 @@
 
         public const int EquipInventoryDataOffset = 0x5D0;
         public const int EquipStorageDataOffset = 0x8D0;
+        public const int FaceDataDataOffset = 0x754;
+        public const int FaceDataLength = 0x108;
         public const int MaxInventoryLimit = 0x8;
         public const int NormalInventoryLimit = 0xC;
         public const int InventoryEntrySize = 0x18;

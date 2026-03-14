@@ -535,7 +535,6 @@ namespace Erd_Tools
                                MsgRepository.GetEntry(FmgId.WeaponName_dlc01,row.ID) ??
                                MsgRepository.GetEntry(FmgId.WeaponName_dlc02,row.ID);
                 if (string.IsNullOrWhiteSpace(name)) continue;
-                if (name.Contains('<') || name.Contains('>') || name.Contains("ERROR")) continue;
                 
                 EquipParamWeapon wep = new(row);
                 switch (wep.wepType)

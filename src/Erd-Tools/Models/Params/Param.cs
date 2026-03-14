@@ -8,12 +8,16 @@ using System.Reflection.Metadata;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using static SoulsFormats.PARAMDEF;
 
 namespace Erd_Tools.Models
 {
     public class Param : IComparable<Param>
     {
+        private readonly object _loadLock = new();
+        private bool _isLoaded;
+
         public PHPointer Pointer { get; private set; }
         public int Offset { get; private set; }
         public PARAMDEF ParamDef { get; private set; }
@@ -21,14 +25,75 @@ namespace Erd_Tools.Models
         public string Type { get; private set; }
         public int Length { get; private set; }
         public byte[] Bytes { get; private set; }
-        public List<Row> Rows { get; private set; }
-        public List<Field> Fields { get; private set; }
+        public List<Row> _rows { get; private set; }
+        public List<Field> _fields { get; private set; }
+        public Dictionary<int, string> _nameDictionary { get; private set; }
+        public Dictionary<int, int> _offsetDict { get; private set; }
+        public List<Row> Rows 
+        { 
+            get 
+            { 
+                EnsureLoaded(); 
+                return _rows; 
+            } 
+        }
+
+        public List<Field> Fields 
+        { 
+            get 
+            { 
+                EnsureLoaded(); 
+                return _fields; 
+            } 
+        }
+
+        public Dictionary<int, string> NameDictionary 
+        { 
+            get 
+            { 
+                EnsureLoaded(); 
+                return _nameDictionary; 
+            } 
+        }
+
+        public Dictionary<int, int> OffsetDict 
+        { 
+            get 
+            { 
+                EnsureLoaded(); 
+                return _offsetDict; 
+            } 
+        }
         private static Regex _paramEntryRx { get; } = new(@"^\s*(?<id>\S+)\s+(?<name>.*)$", RegexOptions.CultureInvariant);
-        public Dictionary<int, string> NameDictionary { get; private set; }
-        public Dictionary<int, int> OffsetDict { get; private set; }
         public int RowLength { get; private set; }
         public Row? this[int rowId] => Rows.Find((r) => r.ID == rowId);
+        private void EnsureLoaded()
+        {
+            if (_isLoaded) return;
 
+            lock (_loadLock)
+            {
+                if (_isLoaded) return; 
+        
+                // Note: Since you do Length and Bytes in the constructor now, 
+                // make sure you removed them from BuildOffsetDictionary!
+                BuildNameDictionary(); 
+                BuildOffsetDictionary();
+                BuildCells();
+        
+                _isLoaded = true;
+            }
+        }
+        public async Task LoadAsync()
+        {
+            if (_isLoaded) return;
+
+            // We push the synchronous lock onto a background thread
+            await Task.Run(() => 
+            {
+                EnsureLoaded(); 
+            });
+        }
 
         public Param(PHPointer pointer, int offset, PARAMDEF Paramdef, string name)
         {
@@ -37,23 +102,19 @@ namespace Erd_Tools.Models
             ParamDef = Paramdef;
             Name = name;
             Type = Paramdef.ParamType;
-            BuildNameDictionary();
-            BuildOffsetDictionary();
             RowLength = ParamDef.GetRowSize();
-            BuildCells();
+            Length = (Pointer.ReadInt32((int)Offsets.Param.ParamFileSize) + 0xF) & -0x10;
+            Bytes = Pointer.ReadBytes(0x0, (uint)Length);
         }
         private void BuildOffsetDictionary()
         {
-            Rows = new();
-            OffsetDict = new();
-            Length = Pointer.ReadInt32((int)Offsets.Param.NameOffset);
+            _rows = new();
+            _offsetDict = new();
+            int typeNameOffset = Pointer.ReadInt32((int)Offsets.Param.NameOffset);
             
-            string paramType = Pointer.ReadString(Length, Encoding.UTF8, (uint)Type.Length);
+            string paramType = Pointer.ReadString(typeNameOffset, Encoding.UTF8, (uint)Type.Length);
             if (paramType != Type)
                 throw new InvalidOperationException($"Incorrect Param Pointer: {paramType} should be {Type}");
-
-            int endOfParam = (Pointer.ReadInt32((int)Offsets.Param.ParamFileSize) + 0xF) & -0x10;
-            Bytes = Pointer.ReadBytes(0x0, (uint)endOfParam);
 
             int tableLength = BitConverter.ToInt32(Bytes ,(int)Offsets.Param.TableLength);
             int param = 0x40;
@@ -68,24 +129,24 @@ namespace Erd_Tools.Models
                 int itemParamOffset = BitConverter.ToInt32(Bytes, param + paramOffset);
                 string name = string.Empty;
              
-                if (!OffsetDict.ContainsKey(itemID))
-                    OffsetDict.Add(itemID, itemParamOffset);
+                if (!_offsetDict.ContainsKey(itemID))
+                    _offsetDict.Add(itemID, itemParamOffset);
 
                 int runtimeOffset = BitConverter.ToInt32(Bytes, param + nameOffset);
-                uint maxLen = (uint) (endOfParam - runtimeOffset);
+                uint maxLen = (uint) (Length - runtimeOffset);
                 name = Pointer.ReadString(runtimeOffset, Encoding.Unicode, maxLen);
                 
-                if (string.IsNullOrWhiteSpace(name) && NameDictionary.ContainsKey(itemID))
-                    name = NameDictionary[itemID];
+                if (string.IsNullOrWhiteSpace(name) && _nameDictionary.ContainsKey(itemID))
+                    name = _nameDictionary[itemID];
 
-                Rows.Add(new(this ,name, itemID, itemParamOffset));
+                _rows.Add(new(this ,name, itemID, itemParamOffset));
 
                 param += paramSize;
             }
         }
         private void BuildNameDictionary()
         {
-            NameDictionary = new();
+            _nameDictionary = new();
             string[] result = Util.GetListResource(@$"Resources/Params/Names/{Name}.txt");
             if (result.Length == 0)
                 return;
@@ -98,10 +159,10 @@ namespace Erd_Tools.Models
                 Match itemEntry = _paramEntryRx.Match(line);
                 string name = itemEntry.Groups["name"].Value;//.Replace("\r", "");
                 int id = Convert.ToInt32(itemEntry.Groups["id"].Value);
-                if (NameDictionary.ContainsKey(id))
+                if (_nameDictionary.ContainsKey(id))
                     continue;
 
-                NameDictionary.Add(id, name);
+                _nameDictionary.Add(id, name);
             };
         }
         public override string ToString()
@@ -142,7 +203,7 @@ namespace Erd_Tools.Models
 
         private void BuildCells()
         {
-            Fields = new();
+            _fields = new();
             int totalSize = 0;
             for (int i = 0; i < ParamDef.Fields.Count; i++)
             {
@@ -159,7 +220,7 @@ namespace Erd_Tools.Models
                     int bitOffset = field.BitSize;
                     DefType bitType = type == DefType.dummy8 ? DefType.u8 : type;
                     int bitLimit = ParamUtil.GetBitLimit(bitType);
-                    Fields.Add(GetBitField(field, totalSize, size, bitOffset));
+                    _fields.Add(GetBitField(field, totalSize, size, bitOffset));
 
 
                     for (; i < ParamDef.Fields.Count - 1; i++)
@@ -170,7 +231,7 @@ namespace Erd_Tools.Models
                             || (nextType == DefType.dummy8 ? DefType.u8 : nextType) != bitType)
                             break;
                         bitOffset += nextField.BitSize;
-                        Fields.Add(GetBitField(nextField, totalSize, size, bitOffset));
+                        _fields.Add(GetBitField(nextField, totalSize, size, bitOffset));
                     }
                     continue;
                 }
@@ -180,22 +241,22 @@ namespace Erd_Tools.Models
                     case DefType.s8:
                     case DefType.s16:
                     case DefType.s32:
-                        Fields.Add(new NumericField(field, totalSize - size, true));
+                        _fields.Add(new NumericField(field, totalSize - size, true));
                         break;
                     case DefType.u8:
                     case DefType.dummy8:
                     case DefType.u16:
                     case DefType.u32:
-                        Fields.Add(new NumericField(field, totalSize - size, false));
+                        _fields.Add(new NumericField(field, totalSize - size, false));
                         break;
                     case DefType.f32:
-                        Fields.Add(new SingleField(field, totalSize - size));
+                        _fields.Add(new SingleField(field, totalSize - size));
                         break;
                     case DefType.fixstr:
-                        Fields.Add(new FixedStr(field, totalSize - size, Encoding.ASCII));
+                        _fields.Add(new FixedStr(field, totalSize - size, Encoding.ASCII));
                         break;
                     case DefType.fixstrW:
-                        Fields.Add(new FixedStr(field, totalSize - size, Encoding.Unicode));
+                        _fields.Add(new FixedStr(field, totalSize - size, Encoding.Unicode));
                         break;
                     default:
                         throw new($"Unknown type: {field.DisplayType}");
