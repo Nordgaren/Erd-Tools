@@ -1,0 +1,422 @@
+<Items xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <Item>
+        <EventID>400230</EventID>
+        <ItemID>102310</ItemID>
+        <Description>Gurranq - 9th Deathroot</Description>
+        <ItemType>Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168252</URL>
+    </Item>
+    <Item>
+        <EventID>400230</EventID>
+        <ItemID>102310</ItemID>
+        <Description>[Gurranq - 9th Deathroot]</Description>
+        <ItemType>Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168252</URL>
+    </Item>
+    <Item>
+        <EventID>400400</EventID>
+        <ItemID>104000</ItemID>
+        <Description>[Witch-Hunter Jerren]</Description>
+        <ItemType>Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=170417</URL>
+    </Item>
+    <Item>
+        <EventID>400422</EventID>
+        <ItemID>104220</ItemID>
+        <Description>[Nepheli Loux]</Description>
+        <ItemType>Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=177297</URL>
+    </Item>
+    <Item>
+        <EventID>400230</EventID>
+        <ItemID>112301</ItemID>
+        <Description>[Corpse - Gurranq]</Description>
+        <ItemType>Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168252</URL>
+    </Item>
+    <Item>
+        <EventID>13007480</EventID>
+        <ItemID>13000480</ItemID>
+        <Description>[LD - Crumbling Farum Azula]</Description>
+        <ItemType>Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=176482</URL>
+    </Item>
+    <Item>
+        <EventID>13007991</EventID>
+        <ItemID>13002091</ItemID>
+        <Description>[LD - Crumbling Farum Azula]</Description>
+        <ItemType>Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=170317</URL>
+    </Item>
+    <Item>
+        <EventID>13007993</EventID>
+        <ItemID>13002093</ItemID>
+        <Description>[LD - Crumbling Farum Azula]</Description>
+        <ItemType>Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=175504</URL>
+    </Item>
+    <Item>
+        <EventID>15007270</EventID>
+        <ItemID>15000270</ItemID>
+        <Description>[LD - Elphael / Miquella's Haligtree]</Description>
+        <ItemType>Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=176631</URL>
+    </Item>
+    <Item>
+        <EventID>15007460</EventID>
+        <ItemID>15000460</ItemID>
+        <Description>[LD - Elphael / Miquella's Haligtree]</Description>
+        <ItemType>Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=169439</URL>
+    </Item>
+    <Item>
+        <EventID>32117030</EventID>
+        <ItemID>32110030</ItemID>
+        <Description>[Consecrated Snowfield - Yelough Anix Tunnel]</Description>
+        <ItemType>Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=169041</URL>
+    </Item>
+    <Item>
+        <EventID>1048557700</EventID>
+        <ItemID>1048550700</ItemID>
+        <Description>[Consecrated Snowfield - Northwest Foggy Area]</Description>
+        <ItemType>Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=169465</URL>
+    </Item>
+    <Item>
+        <EventID>1050567600</EventID>
+        <ItemID>1050560600</ItemID>
+        <Description>[Mountaintops of the Giants - Shack of the Lofty]</Description>
+        <ItemType>Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168781</URL>
+    </Item>
+    <Item>
+        <EventID>1051537000</EventID>
+        <ItemID>1051530000</ItemID>
+        <Description>[Mountaintops of the Giants - Giants' Gravepost]</Description>
+        <ItemType>Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=169290</URL>
+    </Item>
+    <Item>
+        <EventID>510340</EventID>
+        <ItemID>10340</ItemID>
+        <Description>[Nokron - Mimic Tear]</Description> 
+        <ItemType>Larval Tear</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168447</URL>
+    </Item>
+    <Item>
+        <EventID>580310</EventID>
+        <ItemID>80312</ItemID>
+        <Description>[Reward - "Resurrection" Painting]</Description> 
+        <ItemType>Larval Tear</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167689</URL>
+    </Item>
+    <Item>
+        <EventID>12077480</EventID>
+        <ItemID>12070480</ItemID>
+        <Description>[LD - Nokron / Siofra]</Description> 
+        <ItemType>Larval Tear</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168848</URL>
+    </Item>
+    <Item>
+        <EventID>12077490</EventID>
+        <ItemID>12070490</ItemID>
+        <Description>[LD - Nokron / Siofra]</Description> 
+        <ItemType>Larval Tear</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168847</URL>
+    </Item>
+    <Item>
+        <EventID>1034427060</EventID>
+        <ItemID>1034420060</ItemID>
+        <Description>[Moonlight Altar - Moonfolk Ruins]</Description> 
+        <ItemType>Larval Tear</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166790</URL>
+    </Item>
+    <Item>
+        <EventID>1035437100</EventID>
+        <ItemID>1035430100</ItemID>
+        <Description>[Liurnia of the Lakes - South Rose Church]</Description> 
+        <ItemType>Larval Tear</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167324</URL>
+    </Item>
+    <Item>
+        <EventID>1036547100</EventID>
+        <ItemID>1036540100</ItemID>
+        <Description>[Mt. Gelmir - Volcano Manor Entrance]</Description> 
+        <ItemType>Larval Tear</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=171194</URL>
+    </Item>
+    <Item>
+        <EventID>1043537100</EventID>
+        <ItemID>1043530100</ItemID>
+        <Description>[Leyndell - Northeast Outer Wall Battleground]</Description> 
+        <ItemType>Larval Tear</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167594</URL>
+    </Item>
+    <Item>
+        <EventID>1044357100</EventID>
+        <ItemID>1044350100</ItemID>
+        <Description>[Limgrave - Agheel Lake South]</Description> 
+        <ItemType>Larval Tear</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165133</URL>
+    </Item>
+    <Item>
+        <EventID>1047377100</EventID>
+        <ItemID>1047370100</ItemID>
+        <Description>[Caelid - West of Caelid Highway South]</Description> 
+        <ItemType>Larval Tear</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166529</URL>
+    </Item>
+    <Item>
+        <EventID>1049557700</EventID>
+        <ItemID>1049550700</ItemID>
+        <Description>[Consecrated Snowfield - Northeast Foggy Area]</Description> 
+        <ItemType>Larval Tear</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=170292</URL>
+    </Item>
+    <Item>
+        <EventID>130360</EventID>
+        <ItemID>100336</ItemID>
+        <Description>[Pidia, Carian Servant]</Description> 
+        <ItemType>Larval Tear</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=174402</URL>
+    </Item>
+    <Item>
+        <EventID>190360</EventID>
+        <ItemID>100936</ItemID>
+        <Description>[Merchant - Siofra River]</Description> 
+        <ItemType>Larval Tear</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=170191</URL>
+    </Item>
+    <Item>
+        <EventID>12017985</EventID>
+        <ItemID>333062001</ItemID>
+        <Description>[Silver Tear Orb]</Description> 
+        <ItemType>Larval Tear</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=170188</URL>
+    </Item>
+    <Item>
+        <EventID>12017975</EventID>
+        <ItemID>333062011</ItemID>
+        <Description>[Silver Tear Orb]</Description> 
+        <ItemType>Larval Tear</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=170189</URL>
+    </Item>
+    <Item>
+        <EventID>12017965</EventID>
+        <ItemID>333062021</ItemID>
+        <Description>[Silver Tear Orb - Bridge]</Description> 
+        <ItemType>Larval Tear</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168458</URL>
+    </Item>
+    <Item>
+        <EventID>12027985</EventID>
+        <ItemID>333065001</ItemID>
+        <Description>[Silver Tear Orb]</Description> 
+        <ItemType>Larval Tear</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168618</URL>
+    </Item>
+    <Item>
+        <EventID>400325</EventID>
+        <ItemID>103241</ItemID>
+        <Description>Millicent</Description>
+        <ItemType>Somber Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=176809</URL>
+    </Item>
+    <Item>
+        <EventID>400411</EventID>
+        <ItemID>104110</ItemID>
+        <Description>Latenna</Description>
+        <ItemType>Somber Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=170299</URL>
+    </Item>
+    <Item>
+        <EventID>11057010</EventID>
+        <ItemID>11050010</ItemID>
+        <Description>LD - Ashen Leyndell</Description>
+        <ItemType>Somber Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=176588</URL>
+    </Item>
+    <Item>
+        <EventID>12057900</EventID>
+        <ItemID>12050900</ItemID>
+        <Description>LD - Mohgwyn</Description>
+        <ItemType>Somber Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=170420</URL>
+    </Item>
+    <Item>
+        <EventID>13007005</EventID>
+        <ItemID>13000005</ItemID>
+        <Description>LD - Crumbling Farum Azula</Description>
+        <ItemType>Somber Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=175505</URL>
+    </Item>
+    <Item>
+        <EventID>15007590</EventID>
+        <ItemID>15000590</ItemID>
+        <Description>LD - Elphael / Miquella's Haligtree</Description>
+        <ItemType>Somber Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=170274</URL>
+    </Item>
+    <Item>
+        <EventID>15007610</EventID>
+        <ItemID>15000610</ItemID>
+        <Description>LD - Elphael / Miquella's Haligtree</Description>
+        <ItemType>Somber Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=170280</URL>
+    </Item>
+    <Item>
+        <EventID>1048567800</EventID>
+        <ItemID>1048560800</ItemID>
+        <Description>Consecrated Snowfield - South of Ordina</Description>
+        <ItemType>Somber Ancient Dragon Smithing Stone</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=171320</URL>
+    </Item>
+    <Item>
+        <EventID>11007570</EventID>
+        <ItemID>11000570</ItemID>
+        <Description>LD - Leyndell</Description>
+        <ItemType>Lost Ashes of War</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=175084</URL>
+    </Item>
+    <Item>
+        <EventID>14007870</EventID>
+        <ItemID>14000870</ItemID>
+        <Description>LD - Academy of Raya Lucaria</Description>
+        <ItemType>Lost Ashes of War</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165903</URL>
+    </Item>
+    <Item>
+        <EventID>15007160</EventID>
+        <ItemID>15000160</ItemID>
+        <Description>LD - Elphael / Miquella's Haligtree</Description>
+        <ItemType>Lost Ashes of War</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=176630</URL>
+    </Item>
+    <Item>
+        <EventID>31117010</EventID>
+        <ItemID>31110010</ItemID>
+        <Description>Greyoll's Dragonbarrow - Sellia Hideaway</Description>
+        <ItemType>Lost Ashes of War</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=176166</URL>
+    </Item>
+    <Item>
+        <EventID>31197010</EventID>
+        <ItemID>31190010</ItemID>
+        <Description>Altus Plateau - Sage's Cave</Description>
+        <ItemType>Lost Ashes of War</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=176453</URL>
+    </Item>
+    <Item>
+        <EventID>35007130</EventID>
+        <ItemID>35000130</ItemID>
+        <Description>Subterranean Shunning-Grounds</Description>
+        <ItemType>Lost Ashes of War</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=175371</URL>
+    </Item>
+    <Item>
+        <EventID>39207120</EventID>
+        <ItemID>39200120</ItemID>
+        <Description>Ruin-Strewn Precipice</Description>
+        <ItemType>Lost Ashes of War</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=169281</URL>
+    </Item>
+    <Item>
+        <EventID>1043527000</EventID>
+        <ItemID>1043520000</ItemID>
+        <Description>Leyndell - Southeast Outer Wall Battleground</Description>
+        <ItemType>Lost Ashes of War</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168648</URL>
+    </Item>
+    <Item>
+        <EventID>1050547000</EventID>
+        <ItemID>1050540000</ItemID>
+        <Description>Mountaintops of the Giants - North of Zamor Ruins</Description>
+        <ItemType>Lost Ashes of War</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=170290</URL>
+    </Item>
+    <Item>
+        <EventID>160590</EventID>
+        <ItemID>100659</ItemID>
+        <Description>Isolated Merchant - Weeping Peninsula</Description>
+        <ItemType>Lost Ashes of War</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=179331</URL>
+    </Item>
+    <Item>
+        <EventID>160810</EventID>
+        <ItemID>100681</ItemID>
+        <Description>Merchant - Academy of Raya Lucaria</Description>
+        <ItemType>Lost Ashes of War</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=179333</URL>
+    </Item>
+    <Item>
+        <EventID>180770</EventID>
+        <ItemID>100877</ItemID>
+        <Description>Isolated Merchant - Dragonbarrow</Description>
+        <ItemType>Lost Ashes of War</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=179337</URL>
+    </Item>
+    <Item>
+        <EventID>190530</EventID>
+        <ItemID>100953</ItemID>
+        <Description>Merchant - Ainsel River</Description>
+        <ItemType>Lost Ashes of War</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=179404</URL>
+    </Item>
+    <Item>
+        <EventID>190770</EventID>
+        <ItemID>100977</ItemID>
+        <Description>Imprisoned Merchant - Mohgwyn</Description>
+        <ItemType>Lost Ashes of War</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=177434</URL>
+    </Item>
+    <Item>
+        <EventID>12017690</EventID>
+        <ItemID>12010690</ItemID>
+        <Description>LD - Ainsel/Lake of Rot</Description>
+        <ItemType>Great Ghost Glovewort</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=171027</URL>
+    </Item>
+    <Item>
+        <EventID>12017910</EventID>
+        <ItemID>12010910</ItemID>
+        <Description>LD - Ainsel/Lake of Rot</Description>
+        <ItemType>Great Ghost Glovewort</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167627</URL>
+    </Item>
+    <Item>
+        <EventID>12027080</EventID>
+        <ItemID>12020081</ItemID>
+        <Description>LD - Nokron / Siofra</Description>
+        <ItemType>Great Ghost Glovewort</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=171079</URL>
+    </Item>
+    <Item>
+        <EventID>520190</EventID>
+        <ItemID>20190</ItemID>
+        <Description>Consecrated Snowfiled Catacombs - Putrid Grave Warden Duelist</Description>
+        <ItemType>Great Grave Glovewort</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=176690</URL>
+    </Item>
+    <Item>
+        <EventID>13007025</EventID>
+        <ItemID>13000025</ItemID>
+        <Description>LD - Crumbling Farum Azula</Description>
+        <ItemType>Great Grave Glovewort</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=170195</URL>
+    </Item>
+    <Item>
+        <EventID>13007035</EventID>
+        <ItemID>13000035</ItemID>
+        <Description>LD - Crumbling Farum Azula</Description>
+        <ItemType>Great Grave Glovewort</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=169287</URL>
+    </Item>
+    <Item>
+        <EventID>15007890</EventID>
+        <ItemID>15000890</ItemID>
+        <Description>LD - Elphael / Miquella's Haligtree</Description>
+        <ItemType>Great Grave Glovewort</ItemType>
+        <URL>https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=176828</URL>
+    </Item>
+</Items>
